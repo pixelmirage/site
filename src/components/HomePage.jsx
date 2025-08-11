@@ -53,7 +53,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                İzmir'de Kira Hukuku Uzmanı
+                İzmir'de Kira Hukuku Uzmanı <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
               </h1>
               <p className="text-xl mb-8 text-white/90">
                 Kira tespit, tahliye davaları ve kira uyuşmazlıklarında 
