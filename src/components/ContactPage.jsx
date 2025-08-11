@@ -233,78 +233,7 @@ const ContactPage = () => {
               </CardContent>
             </Card>
 
-            {/* Map and Office Info */}
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl text-primary">
-                    Ofis Konumumuz
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-4">
-                    <div className="text-center text-gray-600">
-                      <MapPin className="w-12 h-12 mx-auto mb-2" />
-                      <p>Google Haritalar</p>
-                      <p className="text-sm">Kültür Mah. Şevket Özçelik Sk.</p>
-                      <p className="text-sm">Konak/İzmir</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">Ulaşım</h4>
-                      <p className="text-gray-600 text-sm">
-                        Konak metro istasyonuna 5 dakika yürüme mesafesinde. 
-                        Alsancak ve Karşıyaka'dan kolay ulaşım imkanı.
-                      </p>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">Otopark</h4>
-                      <p className="text-gray-600 text-sm">
-                        Binada kapalı otopark bulunmaktadır. 
-                        Çevrede ücretli sokak otoparkları mevcuttur.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl text-primary">
-                    Acil Durum İletişim
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <Phone className="w-5 h-5 text-accent" />
-                      <div>
-                        <p className="font-medium">7/24 Acil Hat</p>
-                        <p className="text-sm text-gray-600">0532 123 45 67</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Mail className="w-5 h-5 text-accent" />
-                      <div>
-                        <p className="font-medium">Acil E-posta</p>
-                        <p className="text-sm text-gray-600">acil@izmirkiravukati.com</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
-                    <p className="text-sm text-yellow-800">
-                      <strong>Not:</strong> Acil durumlarda (tahliye, haciz vb.) 
-                      7/24 ulaşabilirsiniz. Normal danışmanlık için 
-                      çalışma saatleri içinde arayınız.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
