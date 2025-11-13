@@ -5,15 +5,15 @@ import ReactMarkdown from 'react-markdown';
 // Markdown dosyasını okumak için basit bir fonksiyon
 const fetchMarkdown = async (slug) => {
   try {
-    // Makale dosyasının yolu: /src/makaleler/slug.md
-    const response = await fetch(`/src/makaleler/${slug}.md`);
+    // Makale dosyasının yolu: /makaleler/slug.md (public klasöründen)
+    const response = await fetch(`/makaleler/${slug}.md`);
     if (!response.ok) {
       throw new Error(`Makale bulunamadı: ${slug}`);
     }
     const text = await response.text();
     return text;
   } catch (error) {
-    console.error(error);
+    console.error('Makale yükleme hatası:', error);
     return `# Hata: Makale Yüklenemedi\n\nMakale bulunamadı veya yüklenirken bir hata oluştu.`;
   }
 };
@@ -56,6 +56,18 @@ const MakaleDetay = () => {
     return <div className="container mx-auto px-4 py-12 text-center">Yükleniyor...</div>;
   }
 
+  if (!content || content.includes('Hata: Makale Yüklenemedi')) {
+    return (
+      <div className="container mx-auto px-4 py-12 text-center">
+        <h1 className="text-2xl font-bold text-red-600">Makale Yüklenemedi</h1>
+        <p className="text-gray-600 mt-4">Lütfen daha sonra tekrar deneyiniz.</p>
+        <Link to="/makaleler" className="text-blue-600 hover:text-blue-800 font-medium mt-6 inline-block">
+          &larr; Tüm Makalelere Geri Dön
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       <div className="bg-white p-8 rounded-lg shadow-xl">
@@ -66,7 +78,7 @@ const MakaleDetay = () => {
           <span>Tarih: {meta.date || 'Bilinmiyor'}</span>
         </div>
         
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
 
