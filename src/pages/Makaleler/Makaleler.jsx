@@ -10,6 +10,12 @@ const makaleListesi = [
     summary: 'İzmir bölgesinde kira hukuku uyuşmazlıkları, tahliye süreçleri ve güncel yasal düzenlemeler hakkında bilmeniz gerekenler.',
     date: '2025-11-14',
   },
+  {
+    slug: 'izmir-kira-bedelinin-tespiti-davasi',
+    title: 'İzmir Kira Bedelinin Tespiti Davası: Süreç, Şartlar ve 5 Yıl Kuralı',
+    summary: 'Kira bedelinin tespiti davası açma şartları, süreçleri ve Türk Borçlar Kanunu\'nun 344. maddesindeki 5 yıl kuralının detayları.',
+    date: '2025-11-14',
+  },
 ];
 
 const Makaleler = () => {

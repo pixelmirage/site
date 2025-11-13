@@ -124,6 +124,8 @@ Kira hukuku davaları, teknik detaylar ve sık değişen yasal düzenlemeler ned
 
 Kira uyuşmazlıklarında profesyonel destek almak ve hak kaybı yaşamamak için bizimle iletişime geçebilirsiniz.
 
+**İlgili Makale:** Kira bedelinin tespiti davası süreçleri hakkında detaylı bilgi için [İzmir Kira Bedelinin Tespiti Davası: Süreç, Şartlar ve 5 Yıl Kuralı](/makaleler/izmir-kira-bedelinin-tespiti-davasi) başlıklı makalemizi okuyabilirsiniz.
+
 ---
 
 ---
