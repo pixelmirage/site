@@ -53,11 +53,10 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                İzmir'de Kira Hukuku Uzmanı <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
+                İzmir Kira Avukatı: Kira Hukuku ve Tahliye Davalarında Güvenilir Çözüm Ortağınız <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
               </h1>
               <p className="text-xl mb-8 text-white/90">
-                Kira tespit, tahliye davaları ve kira uyuşmazlıklarında 
-                profesyonel hukuki hizmet. Kiracı ve ev sahiplerinin haklarını koruyoruz.
+Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kiracı ve ev sahiplerine kira tespit, tahliye davaları ve sözleşme hazırlama konularında profesyonel hukuki destek sunar. Haklarınızı korumak için doğru adrestesiniz.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -93,11 +92,10 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Hizmetlerimiz
+              İzmir Kira Hukuku Avukatlık Hizmetlerimiz
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Kira hukuku alanında kapsamlı hukuki hizmetler sunarak, 
-              müvekkillerimizin haklarını en iyi şekilde koruyoruz.
+              Kira hukuku alanında kapsamlı hukuki hizmetler sunarak, müvekkillerimizin haklarını en iyi şekilde koruyoruz. Kiracı Tahliye Davaları, Kira Tespit Davaları ve Sözleşme Hazırlama konularında uzman desteği alın.
             </p>
           </div>
           
@@ -127,11 +125,10 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Neden Bizi Tercih Etmelisiniz?
+                Neden Av. Mert Kağan Çetin'i Tercih Etmelisiniz? (Otorite ve Güven)
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                İzmir'de kira hukuku alanında uzman kadromuz ile 
-                müvekkillerimize en kaliteli hukuki hizmeti sunuyoruz.
+                İzmir'de kira hukuku alanında uzman kadromuz ile müvekkillerimize en kaliteli hukuki hizmeti sunuyoruz. Yerel mahkeme tecrübemiz ve çözüm odaklı yaklaşımımızla yanınızdayız.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
