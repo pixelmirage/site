@@ -57,6 +57,9 @@ const Header = () => {
               <Link to="/iletisim" className="text-gray-700 hover:text-primary transition-colors">
                 İletişim
               </Link>
+              <Link to="/makaleler" className="text-gray-700 hover:text-primary transition-colors">
+                Makaleler
+              </Link>
             </nav>
           </div>
 
@@ -101,6 +104,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 İletişim
+              </Link>
+              <Link 
+                to="/makaleler" 
+                className="text-gray-700 hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Makaleler
               </Link>
             </div>
           </div>

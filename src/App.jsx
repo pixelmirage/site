@@ -5,7 +5,9 @@ import Footer from './components/Footer'
 import HomePage from './components/HomePage'
 import AboutPage from './components/AboutPage'
 import ServicesPage from './components/ServicesPage'
-import ContactPage from './components/ContactPage'
+import ContactPage from './components/ContactPage';
+import Makaleler from './pages/Makaleler/Makaleler';
+import MakaleDetay from './pages/Makaleler/MakaleDetay';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/hakkimizda" element={<AboutPage />} />
             <Route path="/hizmetlerimiz" element={<ServicesPage />} />
             <Route path="/iletisim" element={<ContactPage />} />
+            <Route path="/makaleler" element={<Makaleler />} />
+            <Route path="/makaleler/:slug" element={<MakaleDetay />} />
           </Routes>
         </main>
         <Footer />
