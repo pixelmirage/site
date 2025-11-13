@@ -11,7 +11,7 @@ description: İzmir'de kira hukuku alanında uzman bir avukat olarak, kiracı ta
 
 Kira hukuku, hem kiracılar hem de ev sahipleri için karmaşık ve hassas bir alandır. Özellikle **İzmir** gibi büyük şehirlerdeki yoğun nüfus ve konut piyasası hareketliliği, kira uyuşmazlıklarını artırmaktadır. Bu süreçlerde hak kaybı yaşamamak ve yasal prosedürleri doğru uygulamak için bir **İzmir kira avukatı** ile çalışmak büyük önem taşır.
 
-Bu makalede, en çok karşılaşılan kira uyuşmazlığı konularından biri olan **kiracı tahliyesi** sürecini ve bu konudaki yasal haklarınızı detaylıca inceleyeceğiz.
+Bu kapsamlı makalede, en çok karşılaşılan kira uyuşmazlığı konularından biri olan **kiracı tahliyesi** sürecini ve bu konudaki yasal haklarınızı detaylıca inceleyeceğiz. Metin boyunca, hukuki bilgileri daha anlaşılır kılmak için **kalın** ve **madde işaretli** listeler kullandık.
 
 ## Kiracı Tahliyesi Nedir ve Nasıl Gerçekleşir?
 
@@ -53,7 +53,7 @@ Kiracının, kiralananı belirli bir tarihte boşaltmayı yazılı olarak taahh�
 
 ### 1. Ev sahibi kira artışını yasal sınırın üzerinde talep edebilir mi?
 
-Hayır. 1 Temmuz 2024 tarihine kadar konut kiralarında artış oranı, bir önceki kira yılının kira bedelinin **%25'ini geçemez**. Bu düzenleme, TBK'ya geçici madde eklenerek getirilmiştir. İşyeri kiralarında ise bu sınır uygulanmaz, TÜFE (Tüketici Fiyat Endeksi) on iki aylık ortalaması baz alınır.
+Hayır. **1 Temmuz 2024 tarihi itibarıyla konut kiralarındaki %25 artış sınırı kalkmıştır.** Artık hem konut hem de işyeri kiralarında yasal artış tavanı, **Türk Borçlar Kanunu'nun 344. maddesi** uyarınca belirlenir. Buna göre, kira artış oranı, bir önceki kira yılının aynı ayına göre **TÜFE'nin (Tüketici Fiyat Endeksi) on iki aylık ortalamasını** geçemez. Ev sahibi, sözleşmede daha düşük bir oran belirtilmediği sürece, bu oranın üzerinde zam talep edemez.
 
 ### 2. Kiramı elden ödemek zorunda mıyım?
 
