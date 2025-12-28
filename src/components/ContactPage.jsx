@@ -238,8 +238,17 @@ const ContactPage = () => {
                 Hukuk büromuz İzmir'in Bayraklı ilçesinde, adliye sarayına ve ulaşım noktalarına oldukça yakın bir konumda yer almaktadır. 
                 **Dedemhan Plaza** içerisinde müvekkillerimizi ağırlamaktayız.
               </p>
-              <div className="bg-gray-200 w-full h-64 rounded-lg flex items-center justify-center text-gray-500 italic">
-                [Google Haritalar Entegrasyonu Buraya Gelecek]
+              <div className="w-full h-64 rounded-lg overflow-hidden shadow-md border border-gray-200">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.5558616591056!2d27.1845286!3d38.4517266!2m3!1f0!2m2!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd87a2b16be11%3A0x5f6419cacaf7ed94!2sDedemhan%20Plaza!5e0!3m2!1str!2str!4v1735483146000!5m2!1str!2str" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen="" 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Dedemhan Plaza Konumu"
+                ></iframe>
               </div>
               <div className="mt-8 space-y-4">
                 <p className="flex items-start space-x-3">
