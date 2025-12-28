@@ -19,7 +19,7 @@ import {
 const ServicesPage = () => {
   const services = [
     {
-      icon: <Scale className="w-12 h-12 text-accent" />,
+      icon: <Scale className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kira Tespit Davaları" title="İzmir Kira Avukatı" />,
       title: "Kira Tespit Davaları",
       description: "Kira bedelinin güncel piyasa koşullarına göre belirlenmesi için açılan davalar.",
       details: [
@@ -31,7 +31,7 @@ const ServicesPage = () => {
       process: "Öncelikle mevcut kira sözleşmesi ve piyasa koşulları analiz edilir. Gerekli belgeler hazırlanarak mahkemeye başvuru yapılır."
     },
     {
-      icon: <Home className="w-12 h-12 text-accent" />,
+      icon: <Home className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Tahliye Davaları" title="İzmir Kira Avukatı" />,
       title: "Tahliye Davaları",
       description: "İhtiyaç, temerrüt ve taahhüt sebebiyle tahliye süreçlerinde hukuki destek.",
       details: [
@@ -43,7 +43,7 @@ const ServicesPage = () => {
       process: "Tahliye sebebi belirlenerek gerekli ihtar ve bildirimler yapılır. Mahkeme süreci boyunca müvekkil temsil edilir."
     },
     {
-      icon: <FileText className="w-12 h-12 text-accent" />,
+      icon: <FileText className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kira Sözleşmesi Hazırlama" title="İzmir Kira Avukatı" />,
       title: "Kira Sözleşmesi Hazırlama",
       description: "Hukuka uygun konut ve işyeri kira sözleşmelerinin hazırlanması ve incelenmesi.",
       details: [
@@ -55,7 +55,7 @@ const ServicesPage = () => {
       process: "Tarafların ihtiyaçları belirlenerek, hukuka uygun ve kapsamlı sözleşme metni hazırlanır."
     },
     {
-      icon: <DollarSign className="w-12 h-12 text-accent" />,
+      icon: <DollarSign className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kira Alacaklarının Tahsili" title="İzmir Kira Avukatı" />,
       title: "Kira Alacaklarının Tahsili",
       description: "Ödenmeyen kira bedellerinin icra yoluyla tahsil edilmesi süreçleri.",
       details: [
@@ -67,7 +67,7 @@ const ServicesPage = () => {
       process: "Borç miktarı belirlenerek icra müdürlüğüne başvuru yapılır. Takip süreci boyunca müvekkil bilgilendirilir."
     },
     {
-      icon: <Users className="w-12 h-12 text-accent" />,
+      icon: <Users className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kiracı ve Ev Sahibi Hakları" title="İzmir Kira Avukatı" />,
       title: "Kiracı ve Ev Sahibi Hakları",
       description: "Tarafların yasal hak ve yükümlülükleri konusunda kapsamlı danışmanlık.",
       details: [
@@ -79,7 +79,7 @@ const ServicesPage = () => {
       process: "Mevcut durum analiz edilerek tarafların hak ve yükümlülükleri detaylı olarak açıklanır."
     },
     {
-      icon: <Building className="w-12 h-12 text-accent" />,
+      icon: <Building className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kentsel Dönüşüm" title="İzmir Kira Avukatı" />,
       title: "Kentsel Dönüşüm ve Kira Hukuku",
       description: "Kentsel dönüşüm süreçlerinin kira ilişkilerine etkisi konusunda danışmanlık.",
       details: [
@@ -91,7 +91,7 @@ const ServicesPage = () => {
       process: "Kentsel dönüşüm projesi incelenerek kiracı haklarının korunması için gerekli adımlar atılır."
     },
     {
-      icon: <HandHeart className="w-12 h-12 text-accent" />,
+      icon: <HandHeart className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Arabuluculuk" title="İzmir Kira Avukatı" />,
       title: "Arabuluculuk Hizmetleri",
       description: "Kira uyuşmazlıklarında dava öncesi arabuluculuk süreçleri.",
       details: [
@@ -103,7 +103,7 @@ const ServicesPage = () => {
       process: "Tarafların bir araya getirilmesi sağlanarak, karşılıklı müzakere ile çözüm aranır."
     },
     {
-      icon: <Heart className="w-12 h-12 text-accent" />,
+      icon: <Heart className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Boşanma Hukuku" title="İzmir Kira Avukatı" />,
       title: "Boşanma Hukuku",
       description: "Boşanma, çocukların velayeti, tazminat, mal paylaşımı ve nafaka konularında hukuki destek.",
       details: [
@@ -116,7 +116,7 @@ const ServicesPage = () => {
       process: "Boşanma süreci analiz edilerek, tarafların haklarının korunması için gerekli tüm işlemler yapılır."
     },
     {
-      icon: <Briefcase className="w-12 h-12 text-accent" />,
+      icon: <Briefcase className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Miras Hukuku" title="İzmir Kira Avukatı" />,
       title: "Miras Hukuku",
       description: "Miras hukukunu ilgilendiren davalar ve danışmanlık hizmetleri.",
       details: [
