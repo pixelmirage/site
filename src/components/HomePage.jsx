@@ -20,41 +20,41 @@ const HomePage = () => {
     {
       icon: <Scale className="w-8 h-8 text-accent" />,
       title: "Kira Tespit Davaları",
-      description: "Kira bedelinin güncel piyasa koşullarına göre belirlenmesi için hukuki destek."
+      description: "Kira bedelinin güncel piyasa koşullarına göre belirlenmesi için İzmir kira avukatı olarak profesyonel hukuki destek sağlıyoruz."
     },
     {
       icon: <Home className="w-8 h-8 text-accent" />,
       title: "Tahliye Davaları",
-      description: "İhtiyaç, temerrüt ve taahhüt sebebiyle tahliye süreçlerinde profesyonel temsil."
+      description: "İhtiyaç, temerrüt ve tahliye taahhütnamesi nedeniyle kiracı tahliyesi süreçlerinde İzmir'de uzman avukatlık hizmeti."
     },
     {
       icon: <FileText className="w-8 h-8 text-accent" />,
       title: "Kira Sözleşmesi Hazırlama",
-      description: "Hukuka uygun konut ve işyeri kira sözleşmelerinin hazırlanması."
+      description: "Hukuka uygun, haklarınızı koruyan konut ve işyeri kira sözleşmelerinin hazırlanması ve incelenmesi."
     },
     {
       icon: <Users className="w-8 h-8 text-accent" />,
       title: "Arabuluculuk Hizmetleri",
-      description: "Kira uyuşmazlıklarında dava öncesi arabuluculuk süreçleri."
+      description: "Kira uyuşmazlıklarında zorunlu arabuluculuk süreçlerinde İzmir kira avukatı danışmanlığı."
     },
     {
       icon: <Heart className="w-8 h-8 text-accent" />,
       title: "Boşanma Hukuku",
-      description: "Boşanma, çocukların velayeti, tazminat, mal paylaşımı ve nafaka konularında destek."
+      description: "Anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında İzmir boşanma avukatı desteği."
     },
     {
       icon: <Briefcase className="w-8 h-8 text-accent" />,
       title: "Miras Hukuku",
-      description: "Miras hukukunu ilgilendiren davalarınızda profesyonel destek ve danışmanlık."
+      description: "İzmir miras avukatı olarak veraset ilamı, izale-i şuyu ve tenkis davalarında profesyonel danışmanlık."
     }
   ]
 
   const features = [
-    "Müvekkil odaklı yaklaşım",
-    "Şeffaf ücretlendirme",
-    "7/24 hukuki danışmanlık",
-    "Hızlı çözüm odaklı hizmet",
-    "İzmir genelinde hizmet"
+    "Uzman İzmir Kira Avukatı",
+    "Şeffaf ve Adil Ücretlendirme",
+    "7/24 Hukuki Danışmanlık Hattı",
+    "Hızlı ve Çözüm Odaklı Hizmet",
+    "Bayraklı ve İzmir Geneli Hizmet"
   ]
 
   return (
@@ -65,10 +65,10 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                İzmir Avukatı: Kira, Boşanma ve Miras Hukuku Davalarında Güvenilir Çözüm Ortağınız <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
+                İzmir Kira Avukatı ve Hukuki Danışmanlık <span className="block text-2xl mt-2 font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
               </h1>
               <p className="text-xl mb-8 text-white/90">
-                Av. Mert Kağan Çetin, İzmir'de kira hukuku, boşanma hukuku ve miras hukuku alanlarındaki uzmanlığıyla müvekkillerine profesyonel hukuki destek sunar. Kira tespit, tahliye davaları, boşanma danışmanlığı, miras hukuku ve gayrimenkul hukuku konularında haklarınızı korumak için doğru adrestesiniz.
+                İzmir'de **kira hukuku**, **tahliye davaları**, **boşanma** ve **miras hukuku** alanlarında uzman kadromuzla yanınızdayız. Haklarınızı korumak ve hızlı çözümler üretmek için profesyonel avukatlık hizmeti sunuyoruz.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -91,7 +91,7 @@ const HomePage = () => {
             <div className="hidden lg:block">
               <img 
                 src={heroImage} 
-                alt="İzmir Avukatı Mert Kağan Çetin Hukuk Bürosu" 
+                alt="İzmir Kira Avukatı Mert Kağan Çetin - Hukuk Bürosu" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>
@@ -104,10 +104,10 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Avukatlık Hizmetlerimiz
+              İzmir Avukatlık ve Danışmanlık Hizmetleri
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Kira hukuku, boşanma hukuku, miras hukuku ve gayrimenkul hukuku alanında kapsamlı hukuki hizmetler sunarak, müvekkillerimizin haklarını en iyi şekilde koruyoruz.
+              Özellikle **kira hukuku**, **tahliye süreçleri** ve **gayrimenkul uyuşmazlıkları** konularında İzmir Bayraklı'da uzmanlaşmış hukuk büromuzla hizmetinizdeyiz.
             </p>
           </div>
           
@@ -137,10 +137,10 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Neden Av. Mert Kağan Çetin'i Tercih Etmelisiniz?
+                Neden İzmir Kira Avukatı Mert Kağan Çetin?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                İzmir'de kira hukuku, boşanma hukuku ve miras hukuku alanında uzman kadromuz ile müvekkillerimize en kaliteli hukuki hizmeti sunuyoruz. Yerel mahkeme tecrübemiz ve çözüm odaklı yaklaşımımızla yanınızdayız.
+                İzmir'de kira hukuku, boşanma ve miras davalarında edindiğimiz tecrübe ile müvekkillerimize en şeffaf ve etkili hukuki desteği sağlıyoruz. Bayraklı'daki ofisimizde yerel mahkeme süreçlerine hakimiyetimizle fark yaratıyoruz.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -157,19 +157,19 @@ const HomePage = () => {
               <div className="text-center">
                 <Shield className="w-16 h-16 text-accent mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">
-                  Güvenilir Hukuki Destek
+                  Güvenilir İzmir Avukatı
                 </h3>
                 <p className="mb-6">
-                  Kira hukuku, boşanma hukuku, miras hukuku ve gayrimenkul hukuku konularında yaşadığınız sorunları deneyimli avukat kadromuz ile çözüme kavuşturun.
+                  Kira tespiti, tahliye davası, boşanma ve miras hukuku konularında profesyonel destek almak için hemen arayın.
                 </p>
                 <Button 
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
                   asChild
                 >
-                  <Link to="/iletisim">
+                  <a href="tel:+905445854645">
                     <Phone className="w-4 h-4 mr-2" />
-                    Hemen Arayın
-                  </Link>
+                    0544 585 46 45
+                  </a>
                 </Button>
               </div>
             </div>
@@ -182,10 +182,10 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Müvekkil Görüşleri
+              Müvekkil Deneyimleri
             </h2>
             <p className="text-lg text-gray-600">
-              Hizmet verdiğimiz müvekkillerimizin deneyimleri
+              İzmir'de hizmet verdiğimiz müvekkillerimizin yorumları
             </p>
           </div>
           
@@ -193,17 +193,17 @@ const HomePage = () => {
             {[
               {
                 name: "Ahmet K.",
-                text: "Tahliye davamda çok profesyonel destek aldım. Süreç boyunca her aşamada bilgilendirildim.",
+                text: "İzmir'deki tahliye davamda Mert Bey'den profesyonel destek aldım. Süreç çok hızlı ilerledi.",
                 rating: 5
               },
               {
                 name: "Fatma S.",
-                text: "Kira tespit davamı başarıyla sonuçlandırdılar. Şeffaf ücretlendirme ve kaliteli hizmet.",
+                text: "Kira tespit davamda haklarımı en iyi şekilde savundular. İzmir kira avukatı arayanlara tavsiye ederim.",
                 rating: 5
               },
               {
                 name: "Mehmet Y.",
-                text: "Kira sözleşmesi hazırlama konusunda çok detaylı ve dikkatli çalıştılar. Teşekkürler.",
+                text: "Kira sözleşmesi hazırlama ve hukuki danışmanlık konusunda çok titiz bir çalışma yürüttüler.",
                 rating: 5
               }
             ].map((testimonial, index) => (
@@ -231,10 +231,10 @@ const HomePage = () => {
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Hukuki Desteğe İhtiyacınız mı Var?
+            Hukuki Danışmanlık İçin Bize Ulaşın
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Kira hukuku, boşanma hukuku, miras hukuku ve gayrimenkul hukuku konularında yaşadığınız sorunları çözmek için hemen bizimle iletişime geçin.
+            İzmir'de kira, boşanma veya miras hukuku konularında yardıma mı ihtiyacınız var? Hemen iletişime geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -248,9 +248,12 @@ const HomePage = () => {
               size="lg" 
               variant="outline" 
               className="border-white text-white hover:bg-white hover:text-primary"
+              asChild
             >
-              <Phone className="w-4 h-4 mr-2" />
-              544 585 46 45
+              <a href="tel:+905445854645">
+                <Phone className="w-4 h-4 mr-2" />
+                544 585 46 45
+              </a>
             </Button>
           </div>
         </div>

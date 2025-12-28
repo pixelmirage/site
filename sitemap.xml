@@ -3,69 +3,45 @@
    <!-- Ana Sayfalar -->
    <url>
       <loc>https://mertkagancetin.com/</loc>
-      <lastmod>2025-01-01</lastmod>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
       <loc>https://mertkagancetin.com/hakkimizda</loc>
-      <lastmod>2025-01-01</lastmod>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
       <loc>https://mertkagancetin.com/hizmetlerimiz</loc>
-      <lastmod>2025-01-01</lastmod>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
       <loc>https://mertkagancetin.com/iletisim</loc>
-      <lastmod>2025-01-01</lastmod>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
       <loc>https://mertkagancetin.com/makaleler</loc>
-      <lastmod>2025-01-01</lastmod>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
    </url>
    
    <!-- Makaleler -->
    <url>
-      <loc>https://mertkagancetin.com/makaleler/ihtiyac-nedeniyle-tahliye-davasinda-davacinin-uzerine-kayitli-birden-fazla-tasinmaz-bulunmasi</loc>
-      <lastmod>2025-01-01</lastmod>
+      <loc>https://mertkagancetin.com/makaleler/izmir-kira-avukati-tahliye-rehberi</loc>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://mertkagancetin.com/makaleler/iki-hakli-ihtar-nedeniyle-kiracinin-tahliyesi</loc>
-      <lastmod>2025-01-02</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://mertkagancetin.com/makaleler/kiraya-verenden-habersiz-klima-taktirmak-tahliye-sebebi-midir</loc>
-      <lastmod>2025-01-03</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://mertkagancetin.com/makaleler/mirasta-tenkis-davasi-rehberi</loc>
-      <lastmod>2025-01-04</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://mertkagancetin.com/makaleler/kira-bedelinde-kararlaştirilan-artis-oraninda-daha-az-zam-yapilmasi-ve-zimni-kabul</loc>
-      <lastmod>2025-01-05</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://mertkagancetin.com/makaleler/izmir-bosanma-avukatiyla-anlasmali-bosanma-protokolu</loc>
-      <lastmod>2025-01-06</lastmod>
+      <loc>https://mertkagancetin.com/makaleler/izmir-kira-bedelinin-tespiti-davasi</loc>
+      <lastmod>2025-12-28</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>

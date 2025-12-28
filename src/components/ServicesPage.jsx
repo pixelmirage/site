@@ -20,122 +20,84 @@ const ServicesPage = () => {
   const services = [
     {
       icon: <Scale className="w-12 h-12 text-accent" />,
-      title: "Kira Tespit Davaları",
-      description: "Kira bedelinin güncel piyasa koşullarına göre belirlenmesi için açılan davalar.",
+      title: "İzmir Kira Tespit Davaları",
+      description: "Kira bedelinin güncel piyasa rayiçlerine göre belirlenmesi için İzmir kira avukatı desteği.",
       details: [
-        "Piyasa araştırması ve değerlendirme",
-        "Uzman bilirkişi raporları",
-        "Mahkeme sürecinde temsil",
-        "Kira artış oranlarının belirlenmesi"
+        "Rayiç kira bedeli araştırması",
+        "Bilirkişi raporlarının analizi",
+        "5 yıl kuralı ve kira uyarlama",
+        "Mahkeme sürecinde profesyonel temsil"
       ],
-      process: "Öncelikle mevcut kira sözleşmesi ve piyasa koşulları analiz edilir. Gerekli belgeler hazırlanarak mahkemeye başvuru yapılır."
+      process: "Mevcut kira sözleşmesi ve bölgedeki emsal kira bedelleri analiz edilerek dava stratejisi oluşturulur."
     },
     {
       icon: <Home className="w-12 h-12 text-accent" />,
-      title: "Tahliye Davaları",
-      description: "İhtiyaç, temerrüt ve taahhüt sebebiyle tahliye süreçlerinde hukuki destek.",
+      title: "Kiracı Tahliye Davaları",
+      description: "İhtiyaç, temerrüt, iki haklı ihtar veya tahliye taahhüdü nedeniyle tahliye süreçleri.",
       details: [
-        "İhtiyaç sebebiyle tahliye",
-        "Kira borcundan dolayı tahliye",
-        "Taahhüt sebebiyle tahliye",
-        "Yasadışı tahliye savunması"
+        "İhtiyaç nedeniyle tahliye davası",
+        "Tahliye taahhütnamesi icrası",
+        "Kira borcu nedeniyle tahliye",
+        "Yeni malikin ihtiyacı nedeniyle tahliye"
       ],
-      process: "Tahliye sebebi belirlenerek gerekli ihtar ve bildirimler yapılır. Mahkeme süreci boyunca müvekkil temsil edilir."
+      process: "Yasal süreler ve ihtarname şartları kontrol edilerek en hızlı tahliye yolu belirlenir."
     },
     {
       icon: <FileText className="w-12 h-12 text-accent" />,
-      title: "Kira Sözleşmesi Hazırlama",
-      description: "Hukuka uygun konut ve işyeri kira sözleşmelerinin hazırlanması ve incelenmesi.",
+      title: "Kira Sözleşmesi Danışmanlığı",
+      description: "İleride yaşanabilecek uyuşmazlıkları önlemek adına profesyonel sözleşme hazırlama.",
       details: [
-        "Konut kira sözleşmeleri",
-        "İşyeri kira sözleşmeleri",
-        "Mevcut sözleşme inceleme",
-        "Sözleşme tadil ve ekleri"
+        "Özel şartların düzenlenmesi",
+        "Tahliye taahhütnamesi hazırlama",
+        "Depozito ve kefalet hükümleri",
+        "Ticari işyeri kira sözleşmeleri"
       ],
-      process: "Tarafların ihtiyaçları belirlenerek, hukuka uygun ve kapsamlı sözleşme metni hazırlanır."
+      process: "Müvekkilin haklarını en üst düzeyde koruyan, güncel mevzuata uygun metinler hazırlanır."
     },
     {
       icon: <DollarSign className="w-12 h-12 text-accent" />,
-      title: "Kira Alacaklarının Tahsili",
-      description: "Ödenmeyen kira bedellerinin icra yoluyla tahsil edilmesi süreçleri.",
+      title: "Kira Alacakları ve İcra Takibi",
+      description: "Ödenmeyen kira bedellerinin ve aidat borçlarının icra yoluyla tahsil edilmesi.",
       details: [
-        "İcra takibi başlatma",
-        "Haciz işlemleri",
-        "Ödeme planı müzakereleri",
-        "Alacak güvence altına alma"
+        "Örnek No: 13 tahliye talepli takip",
+        "Maaş ve banka hacizleri",
+        "İtirazın kaldırılması davaları",
+        "Haciz ve muhafaza işlemleri"
       ],
-      process: "Borç miktarı belirlenerek icra müdürlüğüne başvuru yapılır. Takip süreci boyunca müvekkil bilgilendirilir."
-    },
-    {
-      icon: <Users className="w-12 h-12 text-accent" />,
-      title: "Kiracı ve Ev Sahibi Hakları",
-      description: "Tarafların yasal hak ve yükümlülükleri konusunda kapsamlı danışmanlık.",
-      details: [
-        "Kiracı hakları danışmanlığı",
-        "Ev sahibi yükümlülükleri",
-        "Depozito iadesi süreçleri",
-        "Onarım ve bakım sorumlulukları"
-      ],
-      process: "Mevcut durum analiz edilerek tarafların hak ve yükümlülükleri detaylı olarak açıklanır."
-    },
-    {
-      icon: <Building className="w-12 h-12 text-accent" />,
-      title: "Kentsel Dönüşüm ve Kira Hukuku",
-      description: "Kentsel dönüşüm süreçlerinin kira ilişkilerine etkisi konusunda danışmanlık.",
-      details: [
-        "Dönüşüm sürecinde kiracı hakları",
-        "Geçici konut sağlanması",
-        "Tazminat hesaplamaları",
-        "Yeni sözleşme düzenlemeleri"
-      ],
-      process: "Kentsel dönüşüm projesi incelenerek kiracı haklarının korunması için gerekli adımlar atılır."
-    },
-    {
-      icon: <HandHeart className="w-12 h-12 text-accent" />,
-      title: "Arabuluculuk Hizmetleri",
-      description: "Kira uyuşmazlıklarında dava öncesi arabuluculuk süreçleri.",
-      details: [
-        "Uyuşmazlık analizi",
-        "Taraflar arası müzakere",
-        "Anlaşma metni hazırlama",
-        "Dava öncesi çözüm arayışı"
-      ],
-      process: "Tarafların bir araya getirilmesi sağlanarak, karşılıklı müzakere ile çözüm aranır."
+      process: "Alacak miktarı hesaplanarak hızlıca icra takibi başlatılır ve tahsilat süreci yönetilir."
     },
     {
       icon: <Heart className="w-12 h-12 text-accent" />,
-      title: "Boşanma Hukuku",
-      description: "Boşanma, çocukların velayeti, tazminat, mal paylaşımı ve nafaka konularında hukuki destek.",
+      title: "İzmir Boşanma Avukatı",
+      description: "Anlaşmalı ve çekişmeli boşanma süreçlerinde profesyonel hukuki destek.",
       details: [
-        "Anlaşmalı boşanma protokolü",
-        "Çocuk velayeti davası",
-        "Nafaka belirleme",
-        "Mal paylaşımı danışmanlığı",
-        "Boşanma sonrası hukuki işlemler"
+        "Boşanma protokolü hazırlama",
+        "Velayet ve nafaka davaları",
+        "Maddi ve manevi tazminat",
+        "Mal rejimi tasfiyesi"
       ],
-      process: "Boşanma süreci analiz edilerek, tarafların haklarının korunması için gerekli tüm işlemler yapılır."
+      process: "Müvekkilin özel hayatının gizliliği korunarak, hak kaybı yaşanmadan süreç tamamlanır."
     },
     {
       icon: <Briefcase className="w-12 h-12 text-accent" />,
-      title: "Miras Hukuku",
-      description: "Miras hukukunu ilgilendiren davalar ve danışmanlık hizmetleri.",
+      title: "İzmir Miras Avukatı",
+      description: "Veraset ilamı, miras paylaşımı ve tenkis davalarında uzman danışmanlık.",
       details: [
-        "Miras payı hesaplaması",
-        "Tenkis davası",
-        "Miras sözleşmesi hazırlama",
-        "Saklı pay koruması",
-        "Vasiyetname düzenlemesi"
+        "Mirasçılık belgesi alınması",
+        "İzale-i şuyu (ortaklığın giderilmesi)",
+        "Muris muvazaası davaları",
+        "Vasiyetname ve miras sözleşmesi"
       ],
-      process: "Miras hukuku konularında detaylı analiz yapılarak, mirasçıların haklarının korunması sağlanır."
+      process: "Miras kalan malvarlığı tespit edilerek, yasal payların korunması için gerekli davalar açılır."
     }
   ]
 
   const advantages = [
-    "Şeffaf ücretlendirme sistemi",
-    "Deneyimli avukat kadrosu",
-    "Hızlı süreç yönetimi",
-    "7/24 iletişim imkanı",
-    "Başarı odaklı yaklaşım"
+    "Kira Hukukunda Uzmanlaşmış Kadro",
+    "Şeffaf ve Öngörülebilir Ücretlendirme",
+    "Hızlı ve Sonuç Odaklı Süreç Yönetimi",
+    "Düzenli Bilgilendirme ve Raporlama",
+    "İzmir ve Ege Bölgesi Genelinde Hizmet"
   ]
 
   return (
@@ -145,11 +107,10 @@ const ServicesPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Hizmetlerimiz
+              Hukuki Hizmetlerimiz ve Uzmanlık Alanlarımız
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Kira hukuku alanında kapsamlı hukuki hizmetler sunarak, 
-              müvekkillerimizin haklarını en iyi şekilde koruyoruz.
+              İzmir'de **kira hukuku**, **tahliye davaları**, **boşanma** ve **miras** konularında profesyonel avukatlık hizmeti sunuyoruz.
             </p>
           </div>
         </div>
@@ -187,7 +148,7 @@ const ServicesPage = () => {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">Süreç:</h4>
+                      <h4 className="font-semibold text-primary mb-2">Çalışma Yöntemimiz:</h4>
                       <p className="text-gray-600 text-sm">
                         {service.process}
                       </p>
@@ -205,10 +166,10 @@ const ServicesPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Avantajlarımız
+              Neden Bizi Tercih Etmelisiniz?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hizmet kalitemizi artıran ve müvekkillerimizi memnun eden özelliklerimiz
+              İzmir'de kira ve gayrimenkul hukuku alanındaki tecrübemizle fark yaratıyoruz.
             </p>
           </div>
           
@@ -223,86 +184,35 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Çalışma Sürecimiz
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Müvekkillerimizle nasıl çalıştığımız ve süreçlerimiz
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "1",
-                title: "İlk Görüşme",
-                description: "Ücretsiz ön değerlendirme ve durum analizi"
-              },
-              {
-                step: "2",
-                title: "Strateji Belirleme",
-                description: "En uygun hukuki yol haritasının çizilmesi"
-              },
-              {
-                step: "3",
-                title: "Süreç Yönetimi",
-                description: "Tüm hukuki işlemlerin takibi ve yürütülmesi"
-              },
-              {
-                step: "4",
-                title: "Sonuç",
-                description: "Başarılı sonuç ve müvekkil memnuniyeti"
-              }
-            ].map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-xl font-semibold text-primary mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Sıkça Sorulan Sorular
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hizmetlerimiz hakkında merak edilen konular
+              Kira hukuku ve tahliye süreçleri hakkında merak edilenler
             </p>
           </div>
           
           <div className="max-w-4xl mx-auto space-y-6">
             {[
               {
-                question: "Kira tespit davası ne kadar sürer?",
-                answer: "Kira tespit davaları genellikle 6-12 ay arasında sonuçlanır. Süre, mahkemenin iş yoğunluğu ve davanın karmaşıklığına bağlı olarak değişebilir."
+                question: "İzmir'de kira tespit davası ne kadar sürer?",
+                answer: "Kira tespit davaları İzmir mahkemelerinin iş yüküne göre genellikle 8-14 ay arasında sonuçlanmaktadır. 5 yılı dolan kiracılar için rayiç bedel tespiti istenebilir."
               },
               {
-                question: "Tahliye davası açmak için hangi belgeler gerekir?",
-                answer: "Kira sözleşmesi, tapu senedi, kimlik belgesi ve tahliye sebebini gösteren belgeler (ihtar, fesih bildirimi vb.) gereklidir."
+                question: "Tahliye taahhütnamesi ile kiracı nasıl çıkarılır?",
+                answer: "Geçerli bir tahliye taahhütnamesi varsa, taahhüt edilen tarihten itibaren 1 ay içinde icra takibi başlatılarak tahliye süreci yönetilir."
               },
               {
-                question: "Avukat ücretleri nasıl belirlenir?",
-                answer: "Ücretlerimiz davanın türü, karmaşıklığı ve süresine göre belirlenir. İlk görüşmede şeffaf bir şekilde ücret bilgisi verilir."
+                question: "Kira uyuşmazlıklarında arabuluculuk zorunlu mu?",
+                answer: "Evet, 1 Eylül 2023 itibarıyla kira uyuşmazlıklarında dava açmadan önce arabulucuya başvurmak yasal bir zorunluluktur."
               },
               {
-                question: "Arabuluculuk hizmeti nasıl işler?",
-                answer: "Taraflar arasında anlaşmazlık çözümü için dava öncesi müzakere süreci yürütülür. Bu süreç hem zaman hem de maliyet tasarrufu sağlar."
+                question: "İzmir kira avukatı ücretleri ne kadardır?",
+                answer: "Avukatlık ücretleri, davanın niteliğine ve Türkiye Barolar Birliği'nin asgari ücret tarifesine göre belirlenir. Detaylı bilgi için iletişime geçebilirsiniz."
               }
             ].map((faq, index) => (
               <Card key={index}>
@@ -319,9 +229,37 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-primary text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Hukuki Desteğe mi İhtiyacınız Var?
+          </h2>
+          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+            İzmir'de kira, boşanma veya miras hukuku konularında uzman desteği almak için hemen randevu oluşturun.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              asChild
+            >
+              <Link to="/iletisim">İletişime Geçin</Link>
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-primary"
+              asChild
+            >
+              <a href="tel:+905445854645">Hemen Arayın</a>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
 
 export default ServicesPage
-

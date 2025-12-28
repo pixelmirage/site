@@ -49,6 +49,19 @@ const MakaleDetay = () => {
       setMeta(metadata);
       setContent(contentBody);
       setLoading(false);
+
+      // SEO Meta Güncelleme
+      if (metadata.title) {
+        document.title = `${metadata.title} | Av. Mert Kağan Çetin`;
+      }
+      if (metadata.description) {
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.setAttribute('content', metadata.description);
+      }
+      if (metadata.keywords) {
+        const metaKeywords = document.querySelector('meta[name="keywords"]');
+        if (metaKeywords) metaKeywords.setAttribute('content', metadata.keywords);
+      }
     });
   }, [slug]);
 

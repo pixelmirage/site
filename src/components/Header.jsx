@@ -19,11 +19,11 @@ const Header = () => {
             <div className="flex items-center space-x-4 mb-1 md:mb-0">
               <div className="flex items-center space-x-1">
                 <Phone size={14} />
-                <span>544 585 46 45</span>
+                <a href="tel:+905445854645">544 585 46 45</a>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail size={14} />
-                <span>mertkagancetin@gmail.com</span>
+                <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a>
               </div>
             </div>
             <div className="flex items-center space-x-1">
@@ -38,27 +38,28 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary">
-            İzmir Kira Avukatı
+          <Link to="/" className="text-xl md:text-2xl font-bold text-primary flex flex-col">
+            <span>Av. Mert Kağan Çetin</span>
+            <span className="text-xs md:text-sm font-normal text-gray-600">İzmir Kira & Gayrimenkul Avukatı</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-primary transition-colors">
+              <Link to="/" className="text-gray-700 hover:text-primary transition-colors font-medium">
                 Ana Sayfa
               </Link>
-              <Link to="/hakkimizda" className="text-gray-700 hover:text-primary transition-colors">
+              <Link to="/hakkimizda" className="text-gray-700 hover:text-primary transition-colors font-medium">
                 Hakkımızda
               </Link>
-              <Link to="/hizmetlerimiz" className="text-gray-700 hover:text-primary transition-colors">
+              <Link to="/hizmetlerimiz" className="text-gray-700 hover:text-primary transition-colors font-medium">
                 Hizmetlerimiz
               </Link>
-              <Link to="/iletisim" className="text-gray-700 hover:text-primary transition-colors">
-                İletişim
-              </Link>
-              <Link to="/makaleler" className="text-gray-700 hover:text-primary transition-colors">
+              <Link to="/makaleler" className="text-gray-700 hover:text-primary transition-colors font-medium">
                 Makaleler
+              </Link>
+              <Link to="/iletisim" className="text-gray-700 hover:text-primary transition-colors font-medium">
+                İletişim
               </Link>
             </nav>
           </div>
@@ -79,38 +80,38 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               <Link 
                 to="/" 
-                className="text-gray-700 hover:text-primary transition-colors"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ana Sayfa
               </Link>
               <Link 
                 to="/hakkimizda" 
-                className="text-gray-700 hover:text-primary transition-colors"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Hakkımızda
               </Link>
               <Link 
                 to="/hizmetlerimiz" 
-                className="text-gray-700 hover:text-primary transition-colors"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Hizmetlerimiz
               </Link>
               <Link 
-                to="/iletisim" 
-                className="text-gray-700 hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                İletişim
-              </Link>
-              <Link 
                 to="/makaleler" 
-                className="text-gray-700 hover:text-primary transition-colors"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Makaleler
+              </Link>
+              <Link 
+                to="/iletisim" 
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                İletişim
               </Link>
             </div>
           </div>
@@ -121,4 +122,3 @@ const Header = () => {
 }
 
 export default Header
-

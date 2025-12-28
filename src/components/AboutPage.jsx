@@ -17,40 +17,41 @@ const AboutPage = () => {
     {
       icon: <Scale className="w-8 h-8 text-accent" />,
       title: "Adalet",
-      description: "Her müvekkilimizin hakkını savunmak ve adaleti sağlamak en temel değerimizdir."
+      description: "İzmir kira avukatı olarak her müvekkilimizin hakkını savunmak ve adaleti sağlamak en temel değerimizdir."
     },
     {
       icon: <Heart className="w-8 h-8 text-accent" />,
       title: "Empati",
-      description: "Müvekkillerimizin durumunu anlayarak, onların yanında olmaya özen gösteririz."
+      description: "Müvekkillerimizin hukuki süreçlerdeki hassasiyetini anlayarak, onlara en uygun çözümleri sunarız."
     },
     {
       icon: <Shield className="w-8 h-8 text-accent" />,
       title: "Güvenilirlik",
-      description: "Sözümüzün arkasında durarak, güvenilir hukuki hizmet sunmayı ilke ediniriz."
+      description: "Şeffaf iletişim ve dürüstlük ilkesiyle İzmir'de güvenilir avukatlık hizmeti sağlıyoruz."
     },
     {
       icon: <Target className="w-8 h-8 text-accent" />,
       title: "Çözüm Odaklılık",
-      description: "Her soruna pratik ve etkili çözümler üreterek sonuç almaya odaklanırız."
+      description: "Kira uyuşmazlıkları ve tahliye davalarında pratik, hızlı ve sonuç odaklı stratejiler geliştiriyoruz."
     }
   ]
 
   const stats = [
     { number: "500+", label: "Başarılı Dava" },
     { number: "1000+", label: "Memnun Müvekkil" },
-    { number: "24/7", label: "Hukuki Destek" }
+    { number: "24/7", label: "Hukuki Destek" },
+    { number: "10+", label: "Yıllık Tecrübe" }
   ]
 
   const expertise = [
-    "Kira Tespit Davaları",
+    "İzmir Kira Tespit Davaları",
     "Tahliye Davaları (İhtiyaç, Temerrüt, Taahhüt)",
-    "Kira Sözleşmesi Hazırlama ve İnceleme",
-    "Kira Alacaklarının Tahsili",
+    "Kira Sözleşmesi Hazırlama ve Hukuki İnceleme",
+    "Kira Alacaklarının İcra Yoluyla Tahsili",
     "Kiracı ve Ev Sahibi Hakları Danışmanlığı",
-    "Kentsel Dönüşüm ve Kira Hukuku",
-    "Arabuluculuk Hizmetleri",
-    "Kira Uyuşmazlıkları Çözümü"
+    "Gayrimenkul Hukuku ve Tapu Davaları",
+    "Zorunlu Arabuluculuk Süreçleri",
+    "İzmir Boşanma ve Miras Davaları"
   ]
 
   return (
@@ -60,11 +61,10 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Hakkımızda
+              İzmir Kira Avukatı Mert Kağan Çetin Hakkında
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              İzmir'de kira hukuku alanında uzmanlaşmış, deneyimli ve güvenilir 
-              avukat kadromuz ile müvekkillerimizin haklarını koruyoruz.
+              İzmir Bayraklı merkezli hukuk büromuzda, özellikle **kira hukuku**, **gayrimenkul hukuku** ve **aile hukuku** alanlarında uzmanlaşmış ekibimizle profesyonel danışmanlık sunuyoruz.
             </p>
           </div>
         </div>
@@ -76,43 +76,37 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Misyonumuz
+                Misyonumuz ve Vizyonumuz
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                İzmir'de kira hukuku alanında faaliyet gösteren hukuk büromuz, 
-                kiracı ve ev sahiplerinin yaşadığı hukuki sorunları çözmek ve 
-                haklarını en iyi şekilde korumak amacıyla kurulmuştur.
+                İzmir'de faaliyet gösteren hukuk büromuz, müvekkillerine sadece hukuki temsil değil, aynı zamanda stratejik danışmanlık sağlamayı amaçlar. **İzmir kira avukatı** olarak önceliğimiz, uyuşmazlıkları en hızlı ve en az maliyetle çözüme kavuşturmaktır.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-gray-700">Müvekkil memnuniyeti odaklı hizmet</span>
+                  <span className="text-gray-700">Müvekkil Haklarının Üstünlüğü</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-gray-700">Şeffaf ve adil ücretlendirme</span>
+                  <span className="text-gray-700">Güncel Mevzuat ve Yargıtay Kararları Takibi</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-gray-700">Hızlı ve etkili çözümler</span>
+                  <span className="text-gray-700">Etik ve Şeffaf Avukatlık İlkeleri</span>
                 </div>
               </div>
             </div>
             
             <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Vizyonumuz
+                Neden Biz?
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                İzmir'de kira hukuku alanında en güvenilir ve tercih edilen 
-                hukuk bürosu olmak, müvekkillerimize en kaliteli hukuki hizmeti 
-                sunarak sektörde öncü konumda yer almaktır.
+                Kira hukuku, teknik detayların ve sürelerin hayati önem taşıdığı bir alandır. İzmir'deki yerel mahkemelerin işleyişine ve güncel kira piyasasına hakimiyetimizle, müvekkillerimize avantaj sağlıyoruz.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Sürekli gelişen hukuk dünyasında kendimizi güncel tutarak, 
-                müvekkillerimizin değişen ihtiyaçlarına en iyi şekilde 
-                cevap verebilmeyi hedefliyoruz.
+                **Avukat Mert Kağan Çetin** liderliğindeki ekibimiz, tahliye süreçlerinden kira tespitine kadar her aşamada yanınızdadır.
               </p>
             </div>
           </div>
@@ -124,10 +118,10 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Rakamlarla Başarımız
+              Deneyim ve Başarılarımız
             </h2>
             <p className="text-xl text-white/90">
-              Yıllar içinde elde ettiğimiz başarılar ve deneyimlerimiz
+              İzmir ve çevresinde yürüttüğümüz hukuki süreçlerdeki tecrübemiz
             </p>
           </div>
           
@@ -151,10 +145,10 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Değerlerimiz
+              Temel İlkelerimiz
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hukuki hizmet verirken benimsediğimiz temel değerler ve ilkeler
+              Hukuki hizmet verirken taviz vermediğimiz profesyonel değerlerimiz
             </p>
           </div>
           
@@ -184,11 +178,10 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Uzmanlık Alanlarımız
+                Uzmanlık ve Hizmet Alanları
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Kira hukuku alanında geniş bir yelpazede hizmet sunarak, 
-                müvekkillerimizin her türlü hukuki ihtiyacını karşılıyoruz.
+                İzmir'de kira hukuku başta olmak üzere, gayrimenkul ve aile hukuku alanlarında kapsamlı hizmet sunuyoruz.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -205,18 +198,17 @@ const AboutPage = () => {
               <div className="text-center">
                 <Award className="w-16 h-16 text-accent mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">
-                  Deneyimli Kadro
+                  Uzman İzmir Avukatı
                 </h3>
                 <p className="mb-6">
-                  Kira hukuku alanında uzmanlaşmış, deneyimli avukat kadromuz 
-                  ile en kaliteli hukuki hizmeti sunuyoruz.
+                  Kira hukuku uyuşmazlıklarında hak kaybı yaşamamak için uzman desteği alın.
                 </p>
                 <Button 
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
                   asChild
                 >
                   <Link to="/iletisim">
-                    Randevu Alın
+                    Hemen Randevu Alın
                   </Link>
                 </Button>
               </div>
@@ -229,11 +221,10 @@ const AboutPage = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Bizimle Çalışmaya Hazır mısınız?
+            Hukuki Sorunlarınıza Profesyonel Çözümler
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Kira hukuku konularında yaşadığınız sorunları çözmek için 
-            deneyimli ekibimizle tanışın.
+            İzmir'de kira, tahliye veya diğer hukuki konularda yardıma ihtiyacınız varsa bizimle iletişime geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -258,4 +249,3 @@ const AboutPage = () => {
 }
 
 export default AboutPage
-
