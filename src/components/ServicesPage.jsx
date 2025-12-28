@@ -13,7 +13,9 @@ import {
   Clock,
   Phone,
   Heart,
-  Briefcase
+  Briefcase,
+  Gavel,
+  ShieldCheck
 } from 'lucide-react'
 
 const ServicesPage = () => {
@@ -116,8 +118,49 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Deep SEO Content Section - NEW */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold text-primary mb-6">Neden Bir İzmir Kira Avukatı İle Çalışmalısınız?</h2>
+                <div className="prose prose-lg text-gray-600">
+                  <p>
+                    Kira hukuku, Türk Borçlar Kanunu'nda yer alan oldukça teknik ve süreye dayalı kurallar bütünüdür. Bir ihtarın bir gün geç çekilmesi veya tahliye taahhütnamesindeki bir usul hatası, davanın reddine ve yıllarca sürecek hak kayıplarına neden olabilir.
+                  </p>
+                  <p>
+                    **İzmir kira avukatı** olarak biz, müvekkillerimizin bu karmaşık süreçleri en az hasarla atlatmasını sağlıyoruz. İzmir'deki kira piyasasının dinamiklerini, mahalle bazlı rayiç bedelleri ve yerel mahkemelerin güncel eğilimlerini yakından takip ediyoruz.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-4 flex items-center">
+                  <ShieldCheck className="w-6 h-6 mr-2 text-accent" />
+                  Hukuki Güvenceniz
+                </h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 mr-3 text-accent mt-1" />
+                    <span className="text-gray-700">**Süre Takibi:** İhtar ve dava açma sürelerinin kaçırılmaması.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 mr-3 text-accent mt-1" />
+                    <span className="text-gray-700">**Usul Hatalarının Önlenmesi:** Geçersiz tahliye taahhütnameleriyle vakit kaybetmemek.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-5 h-5 mr-3 text-accent mt-1" />
+                    <span className="text-gray-700">**Stratejik Danışmanlık:** Arabuluculuk aşamasında en avantajlı anlaşmanın yapılması.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
@@ -162,7 +205,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Advantages Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
@@ -175,7 +218,7 @@ const ServicesPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {advantages.map((advantage, index) => (
-              <div key={index} className="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+              <div key={index} className="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                 <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
                 <span className="text-gray-700 font-medium">{advantage}</span>
               </div>
@@ -185,7 +228,7 @@ const ServicesPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">

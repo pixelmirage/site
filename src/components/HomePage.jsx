@@ -11,7 +11,9 @@ import {
   Phone,
   Star,
   Heart,
-  Briefcase
+  Briefcase,
+  Gavel,
+  Info
 } from 'lucide-react'
 import heroImage from '../assets/homepage_hero.png'
 
@@ -99,6 +101,25 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* SEO Content Section - NEW */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-primary mb-6">İzmir Kira Hukuku ve Tahliye Süreçlerinde Uzman Desteği</h2>
+            <div className="prose prose-lg text-gray-600 max-w-none">
+              <p>
+                Günümüzde kira uyuşmazlıkları, özellikle İzmir gibi metropol şehirlerde en sık karşılaşılan hukuki sorunların başında gelmektedir. 
+                **İzmir kira avukatı** olarak, hem kiracıların hem de kiraya verenlerin haklarını korumak adına güncel mevzuat ve Yargıtay kararları ışığında profesyonel hizmet sunuyoruz.
+              </p>
+              <p>
+                Kira bedelinin tespiti, tahliye taahhütnamesinin geçerliliği, ihtiyaç nedeniyle tahliye ve kira alacaklarının icra yoluyla tahsili gibi konularda teknik bilgi ve tecrübe hayati önem taşır. 
+                Bayraklı'da bulunan ofisimizde, İzmir Adliyesi'ne yakınlığımız ve yerel mahkeme uygulamalarına hakimiyetimizle müvekkillerimize hızlı çözümler üretiyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -173,6 +194,44 @@ const HomePage = () => {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - NEW */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              İzmir Kira Hukuku Hakkında Sıkça Sorulanlar
+            </h2>
+            <p className="text-lg text-gray-600">
+              Müvekkillerimizin en çok merak ettiği konular
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto grid gap-6">
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold text-primary mb-2 flex items-center">
+                  <Info className="w-5 h-5 mr-2 text-accent" />
+                  İzmir'de kira tahliye davası ne kadar sürer?
+                </h3>
+                <p className="text-gray-600">
+                  Tahliye davaları, davanın türüne ve mahkemenin iş yüküne bağlı olarak İzmir'de ortalama 8 ay ile 1.5 yıl arasında sonuçlanmaktadır. Bir **İzmir kira avukatı** ile çalışmak, usul hatalarını önleyerek sürecin uzamasını engeller.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold text-primary mb-2 flex items-center">
+                  <Info className="w-5 h-5 mr-2 text-accent" />
+                  Kira tespit davası hangi durumlarda açılır?
+                </h3>
+                <p className="text-gray-600">
+                  Kira sözleşmesinin üzerinden 5 yıl geçmişse, taraflar kira bedelinin emsal rayiçlere göre yeniden belirlenmesi için kira tespit davası açabilirler. Bu süreçte doğru bilirkişi raporu ve emsal sunumu kritik önem taşır.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
