@@ -18,32 +18,32 @@ import heroImage from '../assets/homepage_hero.png'
 const HomePage = () => {
   const services = [
     {
-      icon: <Scale className="w-8 h-8 text-accent" />,
+      icon: <Scale className="w-8 h-8 text-accent" aria-label="İzmir Kira Avukatı - Kira Tespit Davaları" title="İzmir Kira Avukatı" />,
       title: "Kira Tespit Davaları",
       description: "Kira bedelinin güncel piyasa koşullarına göre belirlenmesi için hukuki destek."
     },
     {
-      icon: <Home className="w-8 h-8 text-accent" />,
+      icon: <Home className="w-8 h-8 text-accent" aria-label="İzmir Kira Avukatı - Tahliye Davaları" title="İzmir Kira Avukatı" />,
       title: "Tahliye Davaları",
       description: "İhtiyaç, temerrüt ve taahhüt sebebiyle tahliye süreçlerinde profesyonel temsil."
     },
     {
-      icon: <FileText className="w-8 h-8 text-accent" />,
+      icon: <FileText className="w-8 h-8 text-accent" aria-label="İzmir Kira Avukatı - Kira Sözleşmesi Hazırlama" title="İzmir Kira Avukatı" />,
       title: "Kira Sözleşmesi Hazırlama",
       description: "Hukuka uygun konut ve işyeri kira sözleşmelerinin hazırlanması."
     },
     {
-      icon: <Users className="w-8 h-8 text-accent" />,
+      icon: <Users className="w-8 h-8 text-accent" aria-label="İzmir Kira Avukatı - Arabuluculuk Hizmetleri" title="İzmir Kira Avukatı" />,
       title: "Arabuluculuk Hizmetleri",
       description: "Kira uyuşmazlıklarında dava öncesi arabuluculuk süreçleri."
     },
     {
-      icon: <Heart className="w-8 h-8 text-accent" />,
+      icon: <Heart className="w-8 h-8 text-accent" aria-label="İzmir Kira Avukatı - Boşanma Hukuku" title="İzmir Kira Avukatı" />,
       title: "Boşanma Hukuku",
       description: "Boşanma, çocukların velayeti, tazminat, mal paylaşımı ve nafaka konularında destek."
     },
     {
-      icon: <Briefcase className="w-8 h-8 text-accent" />,
+      icon: <Briefcase className="w-8 h-8 text-accent" aria-label="İzmir Kira Avukatı - Miras Hukuku" title="İzmir Kira Avukatı" />,
       title: "Miras Hukuku",
       description: "Miras hukukunu ilgilendiren davalarınızda profesyonel destek ve danışmanlık."
     }
@@ -91,7 +91,7 @@ const HomePage = () => {
             <div className="hidden lg:block">
               <img 
                 src={heroImage} 
-                alt="İzmir Avukatı Mert Kağan Çetin Hukuk Bürosu" 
+                alt="İzmir Kira Avukatı - Av. Mert Kağan Çetin Hukuk Bürosu" title="İzmir Kira Avukatı Mert Kağan Çetin" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>
