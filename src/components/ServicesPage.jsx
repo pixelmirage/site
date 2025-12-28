@@ -11,7 +11,9 @@ import {
   HandHeart,
   CheckCircle,
   Clock,
-  Phone
+  Phone,
+  Heart,
+  Briefcase
 } from 'lucide-react'
 
 const ServicesPage = () => {
@@ -99,6 +101,32 @@ const ServicesPage = () => {
         "Dava öncesi çözüm arayışı"
       ],
       process: "Tarafların bir araya getirilmesi sağlanarak, karşılıklı müzakere ile çözüm aranır."
+    },
+    {
+      icon: <Heart className="w-12 h-12 text-accent" />,
+      title: "Boşanma Hukuku",
+      description: "Boşanma, çocukların velayeti, tazminat, mal paylaşımı ve nafaka konularında hukuki destek.",
+      details: [
+        "Anlaşmalı boşanma protokolü",
+        "Çocuk velayeti davası",
+        "Nafaka belirleme",
+        "Mal paylaşımı danışmanlığı",
+        "Boşanma sonrası hukuki işlemler"
+      ],
+      process: "Boşanma süreci analiz edilerek, tarafların haklarının korunması için gerekli tüm işlemler yapılır."
+    },
+    {
+      icon: <Briefcase className="w-12 h-12 text-accent" />,
+      title: "Miras Hukuku",
+      description: "Miras hukukunu ilgilendiren davalar ve danışmanlık hizmetleri.",
+      details: [
+        "Miras payı hesaplaması",
+        "Tenkis davası",
+        "Miras sözleşmesi hazırlama",
+        "Saklı pay koruması",
+        "Vasiyetname düzenlemesi"
+      ],
+      process: "Miras hukuku konularında detaylı analiz yapılarak, mirasçıların haklarının korunması sağlanır."
     }
   ]
 

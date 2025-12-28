@@ -9,7 +9,9 @@ import {
   Shield, 
   CheckCircle,
   Phone,
-  Star
+  Star,
+  Heart,
+  Briefcase
 } from 'lucide-react'
 import heroImage from '../assets/homepage_hero.png'
 
@@ -34,6 +36,16 @@ const HomePage = () => {
       icon: <Users className="w-8 h-8 text-accent" />,
       title: "Arabuluculuk Hizmetleri",
       description: "Kira uyuşmazlıklarında dava öncesi arabuluculuk süreçleri."
+    },
+    {
+      icon: <Heart className="w-8 h-8 text-accent" />,
+      title: "Boşanma Hukuku",
+      description: "Boşanma, çocukların velayeti, tazminat, mal paylaşımı ve nafaka konularında destek."
+    },
+    {
+      icon: <Briefcase className="w-8 h-8 text-accent" />,
+      title: "Miras Hukuku",
+      description: "Miras hukukunu ilgilendiren davalarınızda profesyonel destek ve danışmanlık."
     }
   ]
 
@@ -53,10 +65,10 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                İzmir Kira Avukatı: Kira Hukuku ve Tahliye Davalarında Güvenilir Çözüm Ortağınız <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
+                İzmir Avukatı: Kira, Boşanma ve Miras Hukuku Davalarında Güvenilir Çözüm Ortağınız <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
               </h1>
               <p className="text-xl mb-8 text-white/90">
-Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kiracı ve ev sahiplerine kira tespit, tahliye davaları ve sözleşme hazırlama konularında profesyonel hukuki destek sunar. Haklarınızı korumak için doğru adrestesiniz.
+                Av. Mert Kağan Çetin, İzmir'de kira hukuku, boşanma hukuku ve miras hukuku alanlarındaki uzmanlığıyla müvekkillerine profesyonel hukuki destek sunar. Kira tespit, tahliye davaları, boşanma danışmanlığı, miras hukuku ve gayrimenkul hukuku konularında haklarınızı korumak için doğru adrestesiniz.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -79,7 +91,7 @@ Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kirac�
             <div className="hidden lg:block">
               <img 
                 src={heroImage} 
-                alt="İzmir Kira Avukatı Ofisi" 
+                alt="İzmir Avukatı Mert Kağan Çetin Hukuk Bürosu" 
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>
@@ -92,14 +104,14 @@ Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kirac�
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              İzmir Kira Hukuku Avukatlık Hizmetlerimiz
+              Avukatlık Hizmetlerimiz
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Kira hukuku alanında kapsamlı hukuki hizmetler sunarak, müvekkillerimizin haklarını en iyi şekilde koruyoruz. Kiracı Tahliye Davaları, Kira Tespit Davaları ve Sözleşme Hazırlama konularında uzman desteği alın.
+              Kira hukuku, boşanma hukuku, miras hukuku ve gayrimenkul hukuku alanında kapsamlı hukuki hizmetler sunarak, müvekkillerimizin haklarını en iyi şekilde koruyoruz.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
@@ -125,10 +137,10 @@ Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kirac�
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                Neden Av. Mert Kağan Çetin'i Tercih Etmelisiniz? (Otorite ve Güven)
+                Neden Av. Mert Kağan Çetin'i Tercih Etmelisiniz?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                İzmir'de kira hukuku alanında uzman kadromuz ile müvekkillerimize en kaliteli hukuki hizmeti sunuyoruz. Yerel mahkeme tecrübemiz ve çözüm odaklı yaklaşımımızla yanınızdayız.
+                İzmir'de kira hukuku, boşanma hukuku ve miras hukuku alanında uzman kadromuz ile müvekkillerimize en kaliteli hukuki hizmeti sunuyoruz. Yerel mahkeme tecrübemiz ve çözüm odaklı yaklaşımımızla yanınızdayız.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -148,8 +160,7 @@ Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kirac�
                   Güvenilir Hukuki Destek
                 </h3>
                 <p className="mb-6">
-                  Kira hukuku konularında yaşadığınız sorunları 
-                  deneyimli avukat kadromuz ile çözüme kavuşturun.
+                  Kira hukuku, boşanma hukuku, miras hukuku ve gayrimenkul hukuku konularında yaşadığınız sorunları deneyimli avukat kadromuz ile çözüme kavuşturun.
                 </p>
                 <Button 
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
@@ -223,8 +234,7 @@ Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kirac�
             Hukuki Desteğe İhtiyacınız mı Var?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Kira hukuku konularında yaşadığınız sorunları çözmek için 
-            hemen bizimle iletişime geçin.
+            Kira hukuku, boşanma hukuku, miras hukuku ve gayrimenkul hukuku konularında yaşadığınız sorunları çözmek için hemen bizimle iletişime geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -250,4 +260,3 @@ Av. Mert Kağan Çetin, İzmir'de kira hukuku alanındaki uzmanlığıyla kirac�
 }
 
 export default HomePage
-
