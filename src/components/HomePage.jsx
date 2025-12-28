@@ -65,10 +65,10 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                İzmir Avukatı: Kira, Boşanma ve Miras Hukuku Davalarında Güvenilir Çözüm Ortağınız <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
+                İzmir Kira ve Tahliye Davası Avukatı: Güvenilir Çözüm Ortağınız <span className="block text-lg font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
               </h1>
               <p className="text-xl mb-8 text-white/90">
-                Av. Mert Kağan Çetin, İzmir'de kira hukuku, boşanma hukuku ve miras hukuku alanlarındaki uzmanlığıyla müvekkillerine profesyonel hukuki destek sunar. Kira tespit, tahliye davaları, boşanma danışmanlığı, miras hukuku ve gayrimenkul hukuku konularında haklarınızı korumak için doğru adrestesiniz.
+                İzmir kira avukatı olarak Av. Mert Kağan Çetin, kira tespiti, kiracı tahliyesi ve tahliye taahhütnamesi süreçlerinde uzmanlaşmıştır. İzmir'de kira hukuku, boşanma ve miras hukuku alanlarında profesyonel hukuki destek sunarak haklarınızı en etkili şekilde koruyoruz.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 

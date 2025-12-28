@@ -20,27 +20,27 @@ const ServicesPage = () => {
   const services = [
     {
       icon: <Scale className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kira Tespit Davaları" title="İzmir Kira Avukatı" />,
-      title: "Kira Tespit Davaları",
-      description: "Kira bedelinin güncel piyasa koşullarına göre belirlenmesi için açılan davalar.",
+      title: "İzmir Kira Tespit Davaları",
+      description: "Kira bedelinin güncel piyasa koşullarına ve rayiç bedellere göre yeniden belirlenmesi için açılan davalar.",
       details: [
-        "Piyasa araştırması ve değerlendirme",
-        "Uzman bilirkişi raporları",
-        "Mahkeme sürecinde temsil",
-        "Kira artış oranlarının belirlenmesi"
+        "5. yılını dolduran kira sözleşmeleri için rayiç bedel tespiti",
+        "Kira artış oranlarının hukuki sınırlara göre belirlenmesi",
+        "Bilirkişi raporlarına itiraz ve teknik takip",
+        "İzmir yerel mahkeme emsal kararları analizi"
       ],
-      process: "Öncelikle mevcut kira sözleşmesi ve piyasa koşulları analiz edilir. Gerekli belgeler hazırlanarak mahkemeye başvuru yapılır."
+      process: "Mevcut kira sözleşmesi incelenir, bölgedeki rayiç bedeller araştırılır ve İzmir Sulh Hukuk Mahkemelerinde dava süreci yönetilir."
     },
     {
       icon: <Home className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Tahliye Davaları" title="İzmir Kira Avukatı" />,
-      title: "Tahliye Davaları",
-      description: "İhtiyaç, temerrüt ve taahhüt sebebiyle tahliye süreçlerinde hukuki destek.",
+      title: "İzmir Tahliye Davaları",
+      description: "İzmir'de ihtiyaç, temerrüt ve tahliye taahhütnamesi sebebiyle kiracı tahliyesi süreçlerinde uzman hukuki destek.",
       details: [
-        "İhtiyaç sebebiyle tahliye",
-        "Kira borcundan dolayı tahliye",
-        "Taahhüt sebebiyle tahliye",
-        "Yasadışı tahliye savunması"
+        "TBK m. 350 uyarınca ihtiyaç sebebiyle tahliye",
+        "TBK m. 352 uyarınca tahliye taahhütnamesi ile tahliye",
+        "Kira borcunun ödenmemesi (temerrüt) nedeniyle tahliye",
+        "İki haklı ihtar nedeniyle tahliye davası"
       ],
-      process: "Tahliye sebebi belirlenerek gerekli ihtar ve bildirimler yapılır. Mahkeme süreci boyunca müvekkil temsil edilir."
+      process: "İzmir kira avukatı ekibimizle tahliye sebebi analiz edilir, gerekli ihtarnameler gönderilir ve mahkeme süreci hızlıca başlatılır."
     },
     {
       icon: <FileText className="w-12 h-12 text-accent" aria-label="İzmir Kira Avukatı - Kira Sözleşmesi Hazırlama" title="İzmir Kira Avukatı" />,
