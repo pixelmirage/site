@@ -13,7 +13,9 @@ import {
   Heart,
   Briefcase,
   Gavel,
-  Info
+  Info,
+  Building2,
+  Gavel as GavelIcon
 } from 'lucide-react'
 import heroImage from '../assets/homepage_hero.png'
 
@@ -70,7 +72,7 @@ const HomePage = () => {
                 İzmir Kira Avukatı ve Hukuki Danışmanlık <span className="block text-2xl mt-2 font-semibold text-white/90">Avukat Mert Kağan Çetin</span>
               </h1>
               <p className="text-xl mb-8 text-white/90">
-                İzmir'de **kira hukuku**, **tahliye davaları**, **boşanma** ve **miras hukuku** alanlarında uzman kadromuzla yanınızdayız. Haklarınızı korumak ve hızlı çözümler üretmek için profesyonel avukatlık hizmeti sunuyoruz.
+                İzmir'de <Link to="/hizmetlerimiz" className="underline hover:text-accent transition-colors">kira hukuku</Link>, <Link to="/hizmetlerimiz" className="underline hover:text-accent transition-colors">tahliye davaları</Link>, <Link to="/hizmetlerimiz" className="underline hover:text-accent transition-colors">boşanma</Link> ve <Link to="/hizmetlerimiz" className="underline hover:text-accent transition-colors">miras hukuku</Link> alanlarında uzman kadromuzla yanınızdayız. Haklarınızı korumak ve hızlı çözümler üretmek için profesyonel avukatlık hizmeti sunuyoruz.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -101,7 +103,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* SEO Content Section - NEW */}
+      {/* SEO Content Section - EXPANDED */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -109,11 +111,18 @@ const HomePage = () => {
             <div className="prose prose-lg text-gray-600 max-w-none">
               <p>
                 Günümüzde kira uyuşmazlıkları, özellikle İzmir gibi metropol şehirlerde en sık karşılaşılan hukuki sorunların başında gelmektedir. 
-                **İzmir kira avukatı** olarak, hem kiracıların hem de kiraya verenlerin haklarını korumak adına güncel mevzuat ve Yargıtay kararları ışığında profesyonel hizmet sunuyoruz.
+                <strong>İzmir kira avukatı</strong> olarak, hem kiracıların hem de kiraya verenlerin haklarını korumak adına güncel mevzuat ve Yargıtay kararları ışığında profesyonel hizmet sunuyoruz. 
+                Özellikle Bayraklı, Bornova, Karşıyaka ve Konak gibi kira hareketliliğinin yoğun olduğu bölgelerde, taraflar arasındaki dengenin korunması büyük önem taşımaktadır.
               </p>
               <p>
                 Kira bedelinin tespiti, tahliye taahhütnamesinin geçerliliği, ihtiyaç nedeniyle tahliye ve kira alacaklarının icra yoluyla tahsili gibi konularda teknik bilgi ve tecrübe hayati önem taşır. 
-                Bayraklı'da bulunan ofisimizde, İzmir Adliyesi'ne yakınlığımız ve yerel mahkeme uygulamalarına hakimiyetimizle müvekkillerimize hızlı çözümler üretiyoruz.
+                Bayraklı'da bulunan ofisimizde, İzmir Adliyesi'ne yakınlığımız ve yerel mahkeme uygulamalarına hakimiyetimizle müvekkillerimize hızlı çözümler üretiyoruz. 
+                Hukuki süreçlerin doğru yönetilmesi, sadece davanın kazanılmasını değil, aynı zamanda sürecin en kısa sürede tamamlanmasını da sağlar.
+              </p>
+              <p>
+                Kira hukuku sadece dava açmaktan ibaret değildir; aynı zamanda uyuşmazlıkları önleyici hukuki danışmanlık hizmetini de kapsar. 
+                Doğru hazırlanmış bir kira sözleşmesi, ileride yaşanabilecek pek çok sorunu henüz başlamadan çözebilir. 
+                Bu nedenle, sözleşme aşamasından tahliye aşamasına kadar her adımda profesyonel bir <Link to="/hakkimizda" className="text-primary font-semibold hover:underline">İzmir avukatı</Link> ile çalışmak hak kaybını önleyecektir.
               </p>
             </div>
           </div>
@@ -128,7 +137,7 @@ const HomePage = () => {
               İzmir Avukatlık ve Danışmanlık Hizmetleri
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Özellikle **kira hukuku**, **tahliye süreçleri** ve **gayrimenkul uyuşmazlıkları** konularında İzmir Bayraklı'da uzmanlaşmış hukuk büromuzla hizmetinizdeyiz.
+              Özellikle <Link to="/hizmetlerimiz" className="text-primary hover:underline">kira hukuku</Link>, <strong>tahliye süreçleri</strong> ve <strong>gayrimenkul uyuşmazlıkları</strong> konularında İzmir Bayraklı'da uzmanlaşmış hukuk büromuzla hizmetinizdeyiz.
             </p>
           </div>
           
@@ -152,8 +161,74 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Real Estate Law Section - NEW */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Gayrimenkul Hukuku ve Danışmanlık
+              </h2>
+              <div className="prose prose-lg text-gray-600">
+                <p>
+                  Gayrimenkul hukuku, mülkiyet hakkının korunmasından tapu iptal ve tescil davalarına kadar geniş bir yelpazeyi kapsar. 
+                  İzmir'de kentsel dönüşüm projelerinin artması ve gayrimenkul değerlerinin hızla değişmesi, bu alandaki hukuki desteği daha da kritik hale getirmiştir.
+                </p>
+                <p>
+                  Ofisimiz, gayrimenkul satış vaadi sözleşmeleri, kat karşılığı inşaat sözleşmeleri ve ortaklığın giderilmesi (izale-i şuyu) davalarında müvekkillerine kapsamlı hizmet sunmaktadır. 
+                  Taşınmazların hukuki durumunun analizi ve risk yönetimi konularında profesyonel danışmanlık sağlıyoruz.
+                </p>
+                <ul className="list-none space-y-3 mt-6">
+                  <li className="flex items-center gap-2">
+                    <Building2 className="w-5 h-5 text-accent" />
+                    <span>Tapu İptal ve Tescil Davaları</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Building2 className="w-5 h-5 text-accent" />
+                    <span>Kat Karşılığı İnşaat Sözleşmeleri</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Building2 className="w-5 h-5 text-accent" />
+                    <span>Müdahalenin Men-i ve Ecrimisil Davaları</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="lg:w-1/2 bg-gray-50 p-8 rounded-2xl border border-gray-100">
+              <h3 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                <GavelIcon className="w-6 h-6 text-accent" />
+                Hukuki Süreç Nasıl İşler?
+              </h3>
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h4 className="font-bold text-primary">Ön Görüşme ve Analiz</h4>
+                    <p className="text-gray-600 text-sm">Durumunuzu dinliyor, belgelerinizi inceliyor ve hukuki riskleri analiz ediyoruz.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h4 className="font-bold text-primary">Strateji Belirleme</h4>
+                    <p className="text-gray-600 text-sm">Dava veya uzlaşma yolunda en hızlı ve etkili stratejiyi belirliyoruz.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h4 className="font-bold text-primary">Uygulama ve Takip</h4>
+                    <p className="text-gray-600 text-sm">Dava sürecini başlatıyor ve her aşamada sizi düzenli olarak bilgilendiriyoruz.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -161,7 +236,8 @@ const HomePage = () => {
                 Neden İzmir Kira Avukatı Mert Kağan Çetin?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                İzmir'de kira hukuku, boşanma ve miras davalarında edindiğimiz tecrübe ile müvekkillerimize en şeffaf ve etkili hukuki desteği sağlıyoruz. Bayraklı'daki ofisimizde yerel mahkeme süreçlerine hakimiyetimizle fark yaratıyoruz.
+                İzmir'de kira hukuku, boşanma ve miras davalarında edindiğimiz tecrübe ile müvekkillerimize en şeffaf ve etkili hukuki desteği sağlıyoruz. Bayraklı'daki ofisimizde yerel mahkeme süreçlerine hakimiyetimizle fark yaratıyoruz. 
+                Daha fazla bilgi için <Link to="/makaleler" className="text-primary font-semibold hover:underline">hukuki makalelerimizi</Link> inceleyebilirsiniz.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -198,7 +274,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* FAQ Section - NEW */}
+      {/* FAQ Section - EXPANDED */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -217,7 +293,7 @@ const HomePage = () => {
                   İzmir'de kira tahliye davası ne kadar sürer?
                 </h3>
                 <p className="text-gray-600">
-                  Tahliye davaları, davanın türüne ve mahkemenin iş yüküne bağlı olarak İzmir'de ortalama 8 ay ile 1.5 yıl arasında sonuçlanmaktadır. Bir **İzmir kira avukatı** ile çalışmak, usul hatalarını önleyerek sürecin uzamasını engeller.
+                  Tahliye davaları, davanın türüne ve mahkemenin iş yüküne bağlı olarak İzmir'de ortalama 8 ay ile 1.5 yıl arasında sonuçlanmaktadır. Bir <strong>İzmir kira avukatı</strong> ile çalışmak, usul hatalarını önleyerek sürecin uzamasını engeller.
                 </p>
               </CardContent>
             </Card>
@@ -229,6 +305,28 @@ const HomePage = () => {
                 </h3>
                 <p className="text-gray-600">
                   Kira sözleşmesinin üzerinden 5 yıl geçmişse, taraflar kira bedelinin emsal rayiçlere göre yeniden belirlenmesi için kira tespit davası açabilirler. Bu süreçte doğru bilirkişi raporu ve emsal sunumu kritik önem taşır.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold text-primary mb-2 flex items-center">
+                  <Info className="w-5 h-5 mr-2 text-accent" />
+                  Arabuluculuk süreci zorunlu mu?
+                </h3>
+                <p className="text-gray-600">
+                  Evet, 1 Eylül 2023 tarihinden itibaren kira uyuşmazlıklarında dava açmadan önce arabuluculuğa başvurmak zorunludur. Arabuluculuk aşamasında bir avukatla temsil edilmek, haklarınızı korumak adına tavsiye edilir.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold text-primary mb-2 flex items-center">
+                  <Info className="w-5 h-5 mr-2 text-accent" />
+                  Tahliye taahhütnamesi ne zaman imzalanmalıdır?
+                </h3>
+                <p className="text-gray-600">
+                  Tahliye taahhütnamesinin geçerli olması için kira sözleşmesinin imza tarihinden sonraki bir tarihte düzenlenmiş olması gerekir. Sözleşme ile aynı gün imzalanan taahhütnameler genellikle geçersiz sayılmaktadır.
                 </p>
               </CardContent>
             </Card>
@@ -266,7 +364,7 @@ const HomePage = () => {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="bg-white">
                 <CardContent className="p-6">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -276,7 +374,7 @@ const HomePage = () => {
                   <p className="text-gray-600 mb-4 italic">
                     "{testimonial.text}"
                   </p>
-                  <p className="font-semibold text-primary">
+                  <p className="font-bold text-primary">
                     {testimonial.name}
                   </p>
                 </CardContent>
@@ -286,33 +384,30 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Final CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Hukuki Danışmanlık İçin Bize Ulaşın
+            Hukuki Sorunlarınıza Profesyonel Çözümler
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            İzmir'de kira, boşanma veya miras hukuku konularında yardıma mı ihtiyacınız var? Hemen iletişime geçin.
+            İzmir'de kira, gayrimenkul, boşanma veya miras hukuku konularında uzman desteği almak için hemen iletişime geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground"
               asChild
             >
               <Link to="/iletisim">İletişime Geçin</Link>
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
+              variant="outline"
               className="border-white text-white hover:bg-white hover:text-primary"
               asChild
             >
-              <a href="tel:+905445854645">
-                <Phone className="w-4 h-4 mr-2" />
-                544 585 46 45
-              </a>
+              <a href="tel:+905445854645">Hemen Arayın</a>
             </Button>
           </div>
         </div>
