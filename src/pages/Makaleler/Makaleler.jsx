@@ -22,6 +22,12 @@ const makaleListesi = [
     summary: 'kiracinin haklari nelerdir: kapsamlı rehber kira artışı, depozito iadesi ve tahliye süreçlerinde yasal korunma yollarını anlatır; haklarınızı hemen öğrenin.',
     date: '2026-01-08',
   },
+  {
+    slug: 'tahliye-taahhutnamesi-pdf',
+    title: 'Tahliye Taahhütnamesi PDF Doldurma ve Hukuki Süreç Rehberi',
+    summary: 'Geçerli bir tahliye taahhütnamesi PDF formatında nasıl hazırlanır? Noter onayı, icra takibi ve Yargıtay kararlarıyla tüm hukuki süreci öğrenin.',
+    date: '2026-01-08',
+  },
 ];
 
 const Makaleler = () => {
