@@ -149,7 +149,53 @@ const MakaleDetay = () => {
       if (featured) {
         const ogImage = document.querySelector('meta[property="og:image"]');
         if (ogImage) ogImage.setAttribute('content', featured);
+
+        // Twitter card image
+        let twitterImage = document.querySelector('meta[name="twitter:image"]');
+        if (!twitterImage) {
+          twitterImage = document.createElement('meta');
+          twitterImage.setAttribute('name', 'twitter:image');
+          document.head.appendChild(twitterImage);
+        }
+        twitterImage.setAttribute('content', featured);
       }
+
+      // Author meta
+      if (metadata.author) {
+        const metaAuthor = document.querySelector('meta[name="author"]');
+        if (metaAuthor) metaAuthor.setAttribute('content', metadata.author);
+      }
+
+      // Ensure twitter card meta exists
+      let tw = document.querySelector('meta[name="twitter:card"]');
+      if (!tw) {
+        tw = document.createElement('meta');
+        tw.setAttribute('name', 'twitter:card');
+        tw.setAttribute('content', 'summary_large_image');
+        document.head.appendChild(tw);
+      }
+
+      // JSON-LD Article schema
+      try {
+        const ld = {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": metadata.title || '',
+          "author": metadata.author ? {"@type": "Person", "name": metadata.author} : {"@type": "Organization", "name": "Av. Mert Kağan Çetin"},
+          "datePublished": metadata.date || '',
+          "image": featured || '',
+          "description": metadata.description || ''
+        };
+
+        let script = document.querySelector('#article-ldjson');
+        if (!script) {
+          script = document.createElement('script');
+          script.setAttribute('type', 'application/ld+json');
+          script.id = 'article-ldjson';
+          document.head.appendChild(script);
+        }
+        script.textContent = JSON.stringify(ld);
+      } catch (e) {}
 
     }).catch(() => {
       setLoading(false);
