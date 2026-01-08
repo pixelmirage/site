@@ -40,6 +40,18 @@ const MakaleDetay = () => {
     setLoading(true);
     let mounted = true;
 
+    const stripMarkdown = (md) => {
+      return md
+        .replace(/```[\s\S]*?```/g, '') // code blocks
+        .replace(/`[^`]*`/g, '') // inline code
+        .replace(/!\[[^\]]*\]\([^)]*\)/g, '') // images
+        .replace(/\[[^\]]*\]\([^)]*\)/g, '') // links
+        .replace(/^#{1,6}\s*/gm, '') // headings
+        .replace(/[*_>{}-]/g, '') // other markdown chars
+        .replace(/\n{2,}/g, '\n')
+        .trim();
+    };
+
     fetchMarkdown(slug).then(text => {
       if (!mounted) return;
 
@@ -51,7 +63,7 @@ const MakaleDetay = () => {
       if (frontmatterMatch) {
         const frontmatter = frontmatterMatch[1];
         contentBody = text.replace(frontmatterMatch[0], '').trim();
-        
+
         // Basit frontmatter ayrıştırma
         frontmatter.split('\n').forEach(line => {
           const [key, ...valueParts] = line.split(':');
@@ -68,6 +80,30 @@ const MakaleDetay = () => {
         if (imgMatch) featured = imgMatch[1];
       }
 
+      // Başlık (H1) çıkarma: frontmatter yoksa içerikteki ilk H1'i kullan
+      let finalTitle = metadata.title || '';
+      if (!finalTitle) {
+        const h1match = contentBody.match(/^#\s+(.+)$/m);
+        if (h1match) {
+          finalTitle = h1match[1].trim();
+          // İçerikteki H1'i gösterimden kaldırıyoruz (başlığı component'ta göstereceğiz)
+          contentBody = contentBody.replace(/^#\s+(.+)\n?/, '').trim();
+        }
+      }
+
+      // Açıklama (meta description) çıkarma: frontmatter yoksa ilk paragrafı al
+      let finalDescription = metadata.description || '';
+      if (!finalDescription) {
+        const paragraphs = contentBody.split(/\n\s*\n/);
+        if (paragraphs.length > 0) {
+          finalDescription = stripMarkdown(paragraphs[0]).slice(0, 160);
+        }
+      }
+
+      // Güncellenmiş metadata set et
+      if (finalTitle) metadata.title = finalTitle;
+      if (finalDescription) metadata.description = finalDescription;
+
       setMeta(metadata);
       setContent(contentBody);
       setFeaturedImage(featured);
@@ -76,19 +112,48 @@ const MakaleDetay = () => {
       // SEO Meta Güncelleme
       if (metadata.title) {
         document.title = `${metadata.title} | Av. Mert Kağan Çetin`;
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', metadata.title);
       }
+
       if (metadata.description) {
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) metaDesc.setAttribute('content', metadata.description);
+
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) ogDesc.setAttribute('content', metadata.description);
       }
+
+      // Keywords
       if (metadata.keywords) {
         const metaKeywords = document.querySelector('meta[name="keywords"]');
         if (metaKeywords) metaKeywords.setAttribute('content', metadata.keywords);
       }
+
+      // Canonical
+      try {
+        const canonicalHref = `https://mertkagancetin.com/makaleler/${slug}`;
+        let linkCanonical = document.querySelector('link[rel="canonical"]');
+        if (!linkCanonical) {
+          linkCanonical = document.createElement('link');
+          linkCanonical.setAttribute('rel', 'canonical');
+          document.head.appendChild(linkCanonical);
+        }
+        linkCanonical.setAttribute('href', canonicalHref);
+
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute('content', canonicalHref);
+      } catch (e) {}
+
+      // OpenGraph image
+      if (featured) {
+        const ogImage = document.querySelector('meta[property="og:image"]');
+        if (ogImage) ogImage.setAttribute('content', featured);
+      }
+
     }).catch(() => {
       setLoading(false);
     });
-
 
     return () => { mounted = false; };
   }, [slug]);
@@ -120,7 +185,7 @@ const MakaleDetay = () => {
 
         <div className="flex items-center justify-between gap-4 mb-8">
           <div>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">{meta.title || 'Makale Başlığı'}</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">{meta.title}</h1>
             <div className="mt-2 text-sm text-gray-500">
               {meta.author && <span>{meta.author} • </span>}
               {meta.date && <span>Yayın Tarihi: {meta.date}</span>}
