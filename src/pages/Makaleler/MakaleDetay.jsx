@@ -10,6 +10,13 @@ const fetchMarkdown = async (slug) => {
     if (!response.ok) {
       throw new Error(`Makale bulunamadı: ${slug}`);
     }
+
+    // Eğer sunucu HTML döndürdüyse (ör. index.html), bu markdown değil demektir
+    const contentType = response.headers.get('content-type') || '';
+    if (contentType.includes('text/html')) {
+      throw new Error(`Makale dosyası yerine HTML döndü: ${slug}`);
+    }
+
     const text = await response.text();
     return text;
   } catch (error) {
