@@ -1,11 +1,3 @@
----
-title: Yasal Bilgiler: Kiracı Hakları Nelerdir ve Ev Sahibine Karşı Nasıl Korunulur?
-author: Av. Mert Kağan Çetin
-date: 2026-01-08
-description: kiracinin haklari nelerdir: kapsamlı rehber kira artışı, depozito iadesi ve tahliye süreçlerinde yasal korunma yollarını anlatır; haklarınızı hemen öğrenin.
-keywords: kiracı hakları, kira artışı, depozito iadesi, tahliye davası, kira hukuku, izmir kira avukatı
----
-
 # Yasal Bilgiler: kiracinin haklari nelerdir ve ev sahibine karşı nasıl korunulur
 
 Bir ev kiralamak, sadece başınızı sokacak bir çatı bulmak anlamına gelmez. Bu süreç, aynı zamanda kanunlarla çerçevesi çizilmiş hak ve sorumlulukları da beraberinde getirir. **"Kiracının hakları nelerdir?"** diye sorduğunuzda, işin özü aslında birkaç temel noktaya dayanıyor: *fahiş kira artışlarına karşı korunma hakkı*, *ödediğiniz depozitonun güvence altında olması* ve *keyfi ya da haksız tahliye taleplerine karşı sahip olduğunuz yasal kalkan*.
