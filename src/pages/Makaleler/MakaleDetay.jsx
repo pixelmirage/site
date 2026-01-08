@@ -35,7 +35,6 @@ const MakaleDetay = () => {
   const [meta, setMeta] = useState({});
   const [loading, setLoading] = useState(true);
   const [featuredImage, setFeaturedImage] = useState('');
-  const [hasPdf, setHasPdf] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -90,13 +89,6 @@ const MakaleDetay = () => {
       setLoading(false);
     });
 
-    // PDF var mı kontrol et
-    (async () => {
-      try {
-        const head = await fetch(`/makaleler/${slug}.pdf`, { method: 'HEAD' });
-        if (head.ok) setHasPdf(true);
-      } catch (e) {}
-    })();
 
     return () => { mounted = false; };
   }, [slug]);
@@ -136,15 +128,9 @@ const MakaleDetay = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            {hasPdf ? (
-              <a href={`/makaleler/${slug}.pdf`} className="inline-flex items-center gap-2 px-4 py-2 border rounded-md text-sm bg-gray-100 hover:bg-gray-200" download>
-                PDF İndir
-              </a>
-            ) : (
-              <button onClick={() => window.print()} className="inline-flex items-center gap-2 px-4 py-2 border rounded-md text-sm bg-gray-100 hover:bg-gray-200">
-                Yazdır / PDF Olarak Kaydet
-              </button>
-            )}
+            <button onClick={() => window.print()} className="inline-flex items-center gap-2 px-4 py-2 border rounded-md text-sm bg-gray-100 hover:bg-gray-200">
+              Yazdır
+            </button>
           </div>
         </div>
 
