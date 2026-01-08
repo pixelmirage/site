@@ -7,11 +7,27 @@ const manifestPath = 'public/images/makaleler/manifest.json';
 const siteBase = 'https://mertkagancetin.com';
 
 function extractTitle(md) {
-  const m = md.match(/^#\s+(.+)$/m);
+  // Skip YAML frontmatter (between --- ... ---)
+  let content = md;
+  if (md.startsWith('---')) {
+    const endFrontmatter = md.indexOf('---', 3);
+    if (endFrontmatter > 0) {
+      content = md.substring(endFrontmatter + 3);
+    }
+  }
+  const m = content.match(/^#\s+(.+)$/m);
   return m ? m[1].trim() : null;
 }
 function extractFirstParagraph(md) {
-  const parts = md.split(/\n\s*\n/);
+  // Skip YAML frontmatter (between --- ... ---)
+  let content = md;
+  if (md.startsWith('---')) {
+    const endFrontmatter = md.indexOf('---', 3);
+    if (endFrontmatter > 0) {
+      content = md.substring(endFrontmatter + 3);
+    }
+  }
+  const parts = content.split(/\n\s*\n/);
   for (const p of parts) {
     const t = p.trim();
     if (!t) continue;
@@ -22,7 +38,15 @@ function extractFirstParagraph(md) {
   return null;
 }
 function extractFirstImage(md) {
-  const m = md.match(/!\[[^\]]*\]\(([^)]+)\)/);
+  // Skip YAML frontmatter (between --- ... ---)
+  let content = md;
+  if (md.startsWith('---')) {
+    const endFrontmatter = md.indexOf('---', 3);
+    if (endFrontmatter > 0) {
+      content = md.substring(endFrontmatter + 3);
+    }
+  }
+  const m = content.match(/!\[[^\]]*\]\(([^)]+)\)/);
   return m ? m[1] : null;
 }
 
