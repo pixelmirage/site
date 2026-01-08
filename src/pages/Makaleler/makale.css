@@ -1,0 +1,61 @@
+/* Makale sayfası özel stilleri */
+.article-prose {
+  max-width: 65ch;
+  margin: 0 auto;
+  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+  color: var(--foreground);
+}
+
+.article-prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.article-prose blockquote {
+  border-left: 4px solid rgba(0,0,0,0.08);
+  padding-left: 1rem;
+  color: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.02);
+}
+
+.article-prose table {
+  border-collapse: collapse;
+}
+
+.article-prose th,
+.article-prose td {
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+/* Make the page look good when printed / saved as PDF */
+@media print {
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  header, footer, .site-nav, .site-footer, .no-print {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .article-prose {
+    max-width: 100% !important;
+    font-size: 12pt !important;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  pre, code {
+    font-size: 10pt !important;
+  }
+}
