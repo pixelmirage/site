@@ -143,7 +143,7 @@ const MakaleDetay = () => {
 
         const ogUrl = document.querySelector('meta[property="og:url"]');
         if (ogUrl) ogUrl.setAttribute('content', canonicalHref);
-      } catch (e) {}
+      } catch { /* ignore */ }
 
       // OpenGraph image
       if (featured) {
@@ -195,7 +195,7 @@ const MakaleDetay = () => {
           document.head.appendChild(script);
         }
         script.textContent = JSON.stringify(ld);
-      } catch (e) {}
+      } catch { /* ignore */ }
 
     }).catch(() => {
       setLoading(false);
@@ -247,17 +247,17 @@ const MakaleDetay = () => {
 
         <article className="article-prose">
           <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={{
-            img: ({node, ...props}) => <img {...props} className="mx-auto rounded-lg shadow-lg" />,
-            a: ({node, ...props}) => <a {...props} className="text-blue-600 underline" />,
-            p: ({node, ...props}) => <p {...props} className="text-gray-800 leading-relaxed mb-6 text-lg md:text-xl" />,
-            blockquote: ({node, ...props}) => <blockquote {...props} className="border-l-4 pl-4 italic text-gray-700 mb-6" />,
-            h2: ({node, ...props}) => <h2 {...props} className="text-2xl font-semibold mt-10 mb-4" />,
-            h3: ({node, ...props}) => <h3 {...props} className="text-xl font-semibold mt-8 mb-3" />,
-            ul: ({node, ...props}) => <ul {...props} className="list-disc ml-6 mb-6" />,
-            ol: ({node, ...props}) => <ol {...props} className="list-decimal ml-6 mb-6" />,
-            table: ({node, ...props}) => <table {...props} className="w-full table-auto mb-6 border" />,
-            thead: ({node, ...props}) => <thead {...props} className="bg-gray-50" />,
-            code: ({node, inline, className, children, ...props}) => (
+            img: ({src, alt, ...props}) => <img src={src} alt={alt || meta.title || ''} className="mx-auto rounded-lg shadow-lg" {...props} />,
+            a: ({...props}) => <a {...props} className="text-blue-600 underline" />,
+            p: ({...props}) => <p {...props} className="text-gray-800 leading-relaxed mb-6 text-lg md:text-xl" />,
+            blockquote: ({...props}) => <blockquote {...props} className="border-l-4 pl-4 italic text-gray-700 mb-6" />,
+            h2: ({...props}) => <h2 {...props} className="text-2xl font-semibold mt-10 mb-4" />,
+            h3: ({...props}) => <h3 {...props} className="text-xl font-semibold mt-8 mb-3" />,
+            ul: ({...props}) => <ul {...props} className="list-disc ml-6 mb-6" />,
+            ol: ({...props}) => <ol {...props} className="list-decimal ml-6 mb-6" />,
+            table: ({...props}) => <table {...props} className="w-full table-auto mb-6 border" />,
+            thead: ({...props}) => <thead {...props} className="bg-gray-50" />,
+            code: ({inline, children, ...props}) => (
               <code className={`bg-gray-100 px-1 rounded ${inline ? 'text-sm' : 'block p-4 rounded'}`} {...props}>{children}</code>
             ),
           }}>{content}</ReactMarkdown>

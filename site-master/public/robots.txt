@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://izmirkiravukati.com/sitemap.xml
+Sitemap: https://mertkagancetin.com/sitemap.xml
 
 # Disallow admin pages
 Disallow: /admin/

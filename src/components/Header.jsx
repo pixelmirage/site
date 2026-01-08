@@ -12,6 +12,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-3 focus:py-2 focus:rounded-md focus:text-primary">İçeriğe atla</a>
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4">

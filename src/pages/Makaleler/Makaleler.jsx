@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Makale verilerini okumak için basit bir fonksiyon
@@ -25,7 +25,7 @@ const makaleListesi = [
 ];
 
 const Makaleler = () => {
-  const [makaleler, setMakaleler] = useState(makaleListesi);
+  const [makaleler] = useState(makaleListesi);
 
   return (
     <div className="container mx-auto px-4 py-12">
