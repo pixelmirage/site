@@ -14,7 +14,7 @@ Bir ev kiralamak, sadece başınızı sokacak bir çatı bulmak anlamına gelmez
 
 Kira sözleşmesine imza attığınız an, aslında mülk sahibiyle yasal bir ilişki başlatmış olursunuz. Bu ilişkinin kurallarını da büyük ölçüde Türk Borçlar Kanunu belirler ve kanun, genellikle daha zayıf konumda görülen kiracıyı koruyucu bir yaklaşım sergiler. Ne var ki, pek çok kiracı bu haklarını bilmediği için kendini çaresiz hissedebiliyor. İşte haklarınızı bilmek, sizi ev sahibiniz karşısında daha sağlam ve dengeli bir pozisyona taşır.
 
-![Bir adam evde masada kira sözleşmesi imzalarken, anahtarlar ve 'Kiracı Hakları' yazısı görünüyor.](https://cdn.outrank.so/9e7a979d-e236-4c2e-9c42-7435515be81a/892987a8-5a16-4543-a55d-34f78cac473d/what-are-tenant-rights-rental-agreement.jpg)
+![Bir adam evde masada kira sözleşmesi imzalarken, anahtarlar ve 'Kiracı Hakları' yazısı görünüyor.](/images/makaleler/what-are-tenant-rights-rental-agreement.jpg)
 
 Basit bir örnek verelim. Ev sahibiniz yasal sınırın çok üzerinde bir zam talep ettiğinde ne yapmanız gerektiğini bilirseniz, aile bütçenizi korumuş olursunuz. Benzer şekilde, evden ayrılırken depozitonuzdan haksız kesintiler yapılmasının önüne geçebilir veya aniden gelen bir tahliye talebi karşısında yasal sürecin nasıl işlediğini bilerek büyük bir stresten kurtulabilirsiniz.
 
@@ -32,7 +32,7 @@ Bu yasal çerçeve, kiracı-ev sahibi ilişkisini adil ve dengeli bir zemine otu
 
 Kiracı olarak belki de en çok endişe duyduğunuz konu, her yıl kapınızı çalan kira artış talepleridir. Bu durum karşısında kendinizi hazırlıksız ve baskı altında hissetmeniz çok doğal. Ancak unutmayın, ev sahibinizin kirayı ne kadar artırabileceği tamamen kendi insiyatifinde olan bir karar değil. Aksine, kanunlarla net bir şekilde sınırları çizilmiş bir durumdur. Bu yasal çerçeveyi bilmek, bütçenizi korumak için en güçlü kalkanınızdır.
 
-![Kira artışını hesaplayan bir kişi, kalem, belge ve grafikler içeren bir tablet ile çalışıyor.](https://cdn.outrank.so/9e7a979d-e236-4c2e-9c42-7435515be81a/84551586-f397-4bb8-8007-c0c7a8548eca/tenant-rights-rent-calculation.jpg)
+![Kira artışını hesaplayan bir kişi, kalem, belge ve grafikler içeren bir tablet ile çalışıyor.](/images/makaleler/tenant-rights-rent-calculation.jpg)
 
 "Kiracının hakları nelerdir?" sorusunun en can alıcı cevaplarından biri, işte bu kira artış oranının yasal sınırıdır. Ev sahibinizle aranızda daha yüksek bir oran belirlemiş olsanız bile, kanun sizi korur. Kira sözleşmeniz yenilendiği dönemde uygulanabilecek en yüksek zam oranı yasalarla sabitlenmiştir. Bu, sizin haklarınızı korumaya yönelik temel bir güvencedir.
 
@@ -90,6 +90,7 @@ Mahkemenin nihai kararını şekillendiren temel faktörler şunlardır:
 Bu süreç, ev sahibinin tek taraflı talepleriyle ilerlemez. Eğer size karşı bir kira tespit davası açıldıysa, haklarınızı korumak için süreci doğru yönetmeniz hayati önem taşır. Konuyla ilgili profesyonel bir yol haritası çizmek ve stratejinizi belirlemek için kira hukuku hizmetlerimiz hakkında bilgi alabilirsiniz. Unutmayın, yasal süreci bilmek ve doğru adımları atmak, bu davalarda elinizi inanılmaz derecede güçlendirir.
 
 ## Depozito iadesi ve tadilat masraflarında sorumluluklar
+
 Kira ilişkisinde ipin en çok gerildiği iki konu vardır: biri taşınırken ödenen depozitonun geri alınması, diğeri ise evde çıkan arızaların masraflarını kimin karşılayacağı. Başlangıçta bir güvence olarak verilen o depozito, kira sözleşmesi bittiğinde tatsız bir pazarlığın konusu olabilir. Ya da aniden bozulan bir kombi, "bunu kim ödeyecek?" sorusuyla kiracı ile ev sahibini karşı karşıya getirebilir. Neyse ki kanunlarımız bu konuda oldukça net ve "kiracının hakları nelerdir?" sorusuna en somut cevapları bu alanlarda veriyor.
 
 Gelin önce şu meşhur depozito, yani güvence bedeli meselesini bir açıklığa kavuşturalım. Ev sahibinizin sizden isteyebileceği depozito, kanunen **en fazla üç aylık kira bedeli** olabilir. Bundan fazlasını talep etmesi yasal değildir. Dahası, ev sahibi bu parayı alıp kendi cebine koyamaz. Yasal prosedür, kiracının onayı olmadan paranın çekilemeyeceği, bankada açılmış vadeli bir hesaba yatırılmasını gerektirir. Bu basit ama önemli kural, paranızın hem güvende kalmasını hem de enflasyon karşısında bir nebze olsun erimesini engeller.
@@ -99,6 +100,87 @@ Gelin önce şu meşhur depozito, yani güvence bedeli meselesini bir açıklı�
 Asıl kritik soru şu: Ev sahibi hangi durumlarda depozitodan kesinti yapabilir? Kural basit: Depozito, sadece ve sadece kiracının kusurundan kaynaklanan bir zarar varsa ya da ödenmemiş kira, fatura gibi borçlar mevcutsa kullanılabilir. Zamanla duvarların kirlenmesi, parkelerin renginin biraz solması gibi durumlar ise **olağan kullanımdan kaynaklanan eskimeler** olarak kabul edilir.
 
 > Yargıtay'ın bu konudaki kararları son derece istikrarlıdır. Kiracı evi özenle kullanmak zorundadır, evet. Ama zamanın ve normal yaşamın getirdiği yıpranmalardan sorumlu tutulamaz. Ev sahibi, bu tür eskimeleri bahane ederek depozitodan tek kuruş kesemez.
+
+Peki, ev sahibiniz olağan eskimeleri "hasar" olarak nitendirip depozitonuzu vermiyorsa ne yapmalısınız? Öncelikle noterden bir ihtarname çekerek paranızı talep edebilir, eğer bu da işe yaramazsa icra takibi başlatarak ya da dava açarak depozitonuzu yasal faiziyle birlikte geri alabilirsiniz.
+
+### Evdeki arızalar ve tadilat masrafları: Kim sorumlu?
+
+Kiracılık hayatının bir diğer klasiği de evdeki demirbaşlarda, yani kombi, su tesisatı, elektrik altyapısı gibi unsurlarda çıkan arızalardır. Buradaki altın kural şudur: Kiracının hatalı kullanımından kaynaklanmayan, binanın yapısıyla veya demirbaşın ömrüyle ilgili olan **tüm zorunlu ve önemli onarımlar ev sahibinin sorumluluğundadır.**
+
+Konuyu birkaç örnekle netleştirelim ki havada kalmasın:
+
+*   **Kombi Arızası:** Kombinin yıllık bakımlarını aksatmadığınız halde, cihazın ekonomik ömrünü tamamlaması nedeniyle ana kartı yanarsa, bu masraf tamamen ev sahibine aittir. Ama kışın orta yerinde donmaya karşı hiçbir önlem almadığınız için kombi zarar görürse, işte o zaman sorumluluk size ait olur.
+*   **Su Tesisatı Patlaması:** Binanın yıllanmış su borularından biri patlarsa, ortaya çıkan tüm tamirat masrafı ve bu nedenle komşulara verilen zararlar ev sahibinin yükümlülüğündedir.
+*   **Çatı Akması:** Çatıdaki izolasyon problemi yüzünden tavanınız akıyor, boyalar dökülüyorsa bunu gidermek ev sahibinin görevidir.
+
+Bu gibi büyük ve acil bir sorunla karşılaştığınızda, yapmanız gereken ilk şey durumu derhal ev sahibine yazılı olarak bildirmektir. WhatsApp mesajı veya e-posta delil niteliği taşır. Eğer ev sahibiniz makul bir sürede sorunu çözmezse, masrafları cebinden karşılayıp bu tutarı **kiradan düşme hakkınız doğar.** Unutmayın, bu hakkı kullanmadan önce ev sahibini uyardığınızı ve ona çözüm için zaman tanıdığınızı kanıtlayabilmeniz hayati önem taşır.
+
+Sıkça karşılaşılan sorunlarda sorumluluğun kime ait olduğunu daha iyi anlamak için aşağıdaki tabloyu inceleyebilirsiniz.
+
+#### Onarım ve Tadilat Sorumluluk Dağılımı
+
+Kiralanan bir mülkte hangi onarımın kime ait olduğu konusu, en sık yaşanan anlaşmazlıklardan biridir. Aşağıdaki tablo, yaygın sorunlarda yasal sorumluluğun kimde olduğunu net bir şekilde özetlemektedir.
+
+| Sorun / Onarım Türü | Sorumlu Taraf | Açıklama ve Yasal Dayanak |
+| :--- | :--- | :--- |
+| **Kırılan priz, lamba anahtarı** | Kiracı | Gündelik kullanım sırasında oluşan ve küçük müdahale gerektiren bu tip arızalar, kiracının özen yükümlülüğü kapsamındadır. |
+| **Ömrü dolan kombinin arızalanması** | Ev Sahibi | Mülkün demirbaşı sayılan kombi gibi cihazların ekonomik ömrünü tamamlamasından kaynaklanan büyük arızalar ev sahibine aittir. |
+| **Mutfak/banyo lavabosu tıkanıklığı** | Kiracı | Genellikle hatalı kullanımdan (yemek artığı, saç, yağ dökülmesi vb.) kaynaklandığı için açtırma masrafı kiracıya aittir. |
+| **Binanın ana su borusunun patlaması** | Ev Sahibi | Mülkün ayrılmaz bir parçası olan ana tesisattaki sorunlar, doğrudan ev sahibinin sorumluluk alanına girer. |
+| **Zamanla oluşan parke çizikleri** | Ev Sahibi | Bu durum "olağan eskime" sayılır. Kiracının kasıtlı bir zararı yoksa, bu tür yıpranmalar için depozitodan kesinti yapılamaz. |
+
+Bu tablo, olası bir anlaşmazlık durumunda elinizi güçlendirecek ve haklarınızı daha net bir şekilde ortaya koymanıza yardımcı olacaktır.
+
+Unutmayın, haklarınızı bilmek sizi hem gereksiz masraflardan hem de ev sahibinizle yaşayacağınız can sıkıcı tartışmalardan korur. Bu bilgiler, kiralama sürecinin başından sonuna kadar sizin en önemli güvenceniz olacaktır.
+
+## Ev sahibinin kiracıyı tahliye edebileceği yasal durumlar
+
+"Acaba ev sahibi beni istediği zaman evden çıkarabilir mi?" Bu soru, eminim ki pek çok kiracının aklını kurcalayan, hatta uykularını kaçıran en büyük endişelerden biridir. Kiracı olarak en temel güvenceniz, oturduğunuz çatı altında kendinizi güvende hissetmektir. Neyse ki hukuk sistemimiz bu konuda sizi yalnız bırakmıyor. Türk Borçlar Kanunu, kiracıyı ev sahibinin keyfi hamlelerine karşı sağlam bir zırhla korur. Ev sahibinizin sizi tahliye etmesi, öyle sandığınız gibi kolay bir süreç değildir; kanunda tek tek sayılmış, net ve somut sebeplere dayanmak zorundadır.
+
+Şimdi gelin, ev sahibine hangi durumlarda ve hangi şartlar altında tahliye hakkı tanındığını birlikte inceleyelim. Bu yasal sebepleri bilmek, olası bir tahliye talebiyle karşılaştığınızda paniğe kapılmak yerine ne yapacağınızı bilerek dimdik durmanızı sağlayacaktır.
+
+### Kiranın ödenmemesi veya geç ödenmesi durumu
+
+En sık karşılaşılan ve en bilinen tahliye sebebi, elbette kiranın zamanında ödenmemesidir. Fakat hemen endişelenmeyin; kirayı bir gün geciktirmeniz, ev sahibinizin sizi anında kapının önüne koyma hakkı vermez. Bu sürecin işlemesi için kanunun aradığı belli adımlar var.
+
+Kirayı vadesinde ödemediğinizde, ev sahibi size noter kanalıyla bir ihtarname göndermekle yükümlüdr. Bu resmi belgede, borcunuzu kapatmanız için size **en az 30 gün yasal süre** tanımak zorundadır.
+
+Bu **30 günlük** mühlet içinde borcunuzu ödediğiniz takdirde, ev sahibinin o ihtara dayanarak sizi çıkarma hakkı kalmaz. Ama bu süreyi de kaçırırsanız, işte o zaman ev sahibi "temerrüt" yani borcunu ödemede direnmeniz nedeniyle tahliye davası açma yoluna gidebilir.
+
+Bir de şu var: Bir kira yılı içinde kiranızı iki defa geç ödediğiniz için haklı ihtar alırsanız, ev sahibiniz kira döneminin sonunda size karşı tahliye davası açabilir. Bu yüzden kirayı düzenli ödemek ve bir aksilik olacaksa ev sahibiyle önceden konuşmak her zaman en doğrusu.
+
+Aşağıdaki görsel, evdeki bir başka yaygın anlaşmazlık konusu olan tadilat masraflarının kime ait olduğunu basit bir dille açıklıyor:
+
+![Karar Ağacı: Tadilat Masrafı Kime Ait?](/images/makaleler/tadilat-masrafi-karar-agaci.png)
+
+Grafikte de görebileceğiniz gibi, ayrım aslında çok net: Sizin kullanımınızdan kaynaklanan bir kırılma size, demirbaşın zamanla eskiyip bozulması ise ev sahibine aittir.
+
+### Ev sahibinin veya yakınının ihtiyacı nedeniyle tahliye
+
+Sıkça duyduğunuz bir diğer tahliye gerekçesi de ev sahibinin veya kanunda sayılan yakınlarının eve ihtiyacı olmasıdır. Bu yakınlar; ev sahibinin kendisi, eşi, çocukları, torunları, anne-babası veya kanunen bakmakla yükümlü olduğu kişilerdir.
+
+Ancak bu durum, "benim eve ihtiyacım var" demekle olmuyor. Ev sahibinin bu ihtiyacının **gerçek, samimi ve zorunlu** olduğunu mahkeme önünde kanıtlaması şart. Örneğin, başka bir şehirde evi olan bir ev sahibinin sırf daha yüksek kira almak için "oğlum Almanya'dan gelecek, eve o yerleşecek" demesi tek başına yeterli bir kanıt sayılmaz. Hakimler bu tür iddiaların altının dolu olup olmadığını dikkatle araştırır.
+
+Bu sebeple tahliye davası açmanın da belli zaman kuralları vardır. Belirli süreli sözleşmelerde dönem sonunda, belirsiz sürelilerde ise yasal fesih dönemlerine uyularak dava açılabilir. Süreç karmaşıklaşabildiği için bu noktada bir uzmandan destek almak hayat kurtarabilir.
+
+### Geçerli bir tahliye taahhütnamesinin varlığı
+
+Tahliye taahhütnamesi, kiracının evi belli bir tarihte boşaltacağına dair imzaladığı yazılı bir belgedir. Pratikte çok tehlikeli olabilen bu belgenin geçerli sayılması için kanun çok katı kurallar koymuştur:
+
+1.  **Yazılı Olmalı:** Sözlü taahhütlerin hiçbir hükmü yoktur.
+2.  **Kiracının Kendisi İmzalamalı:** Sizin yerinize başkasının attığı imza geçersizdir.
+3.  **Net Bir Tahliye Tarihi İçermeli:** "İleride bir gün boşaltacağım" gibi belirsiz ifadeler olmaz.
+4.  **Ve En Kritik Kural:** Bu belge, kira sözleşmesiyle aynı anda veya ondan daha önce imzalanmış olmamalıdır. Kanun, taahhüdün kiralanan ev **size teslim edildikten sonra**, yani özgür iradenizle verilmiş olmasını arar.
+
+Ne yazık ki birçok ev sahibi, kira sözleşmesini imzalatırken araya bir de boş tarihli tahliye taahhütnamesi sıkıştırır. Unutmayın, kira sözleşmesiyle aynı gün imzalanan veya tarih kısımları sonradan doldurulan bu belgeler **hukuken geçersizdir**. Böyle bir belgeye dayanarak size icra takibi başlatılırsa, yasal süresi içinde itiraz etme hakkınız sonuna kadar mevcuttur.
+
+### Diğer yasal tahliye nedenleri
+
+Yukarıda saydığımız en yaygın sebeplerin dışında, kanunun tahliyeye izin verdiği başka özel durumlar da vardır:
+
+*   **10 Yıllık Uzama Süresinin Dolması:** Kira sözleşmeniz, ilk yapıldığı tarihten sonra on yıl boyunca uzar. Bu **10 yıllık** sürenin sonunda ev sahibi, artık hiçbir gerekçe göstermeden, uzama yılının bitiminden en az üç ay önce size haber vermek şartıyla sözleşmeyi sonlandırabilir.
+*   **Esaslı Tadilat veya Yıkım:** Evinizde kapsamlı bir onarım veya yeniden inşa yapılması gerekiyorsa ve bu çalışmalar sırasında evde oturmanız mümkün değilse, ev sahibi mahkeme yoluyla tahliye talep edebilir.
+*   **Sözleşmeye Aykırılık:** Evi kötü kullanmak, komşuları sürekli rahatsız etmek gibi sözleşmeye aykırı davranışlarınız varsa ve ev sahibinin yazılı uyarısına rağmen bu durumu düzeltmiyorsanız, bu da bir tahliye sebebi olabilir.
 
 Gördüğünüz gibi, ev sahibinin sizi evden çıkarabilmesinin yolları kanunla net bir şekilde çizilmiştir. Bu sınırları bilmek, haksız bir taleple karşılaştığınızda en büyük güvenceniz olacaktır.
 
