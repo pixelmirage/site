@@ -16,6 +16,12 @@ const makaleListesi = [
     summary: 'Kira bedelinin tespiti davası açma şartları, süreçleri ve Türk Borçlar Kanunu\'nun 344. maddesindeki 5 yıl kuralının detayları.',
     date: '2025-11-14',
   },
+  {
+    slug: 'kiraci-haklari-ve-ev-sahibine-karsi-korunma',
+    title: 'Yasal Bilgiler: Kiracı Hakları Nelerdir ve Ev Sahibine Karşı Nasıl Korunulur?',
+    summary: 'Kiracı hakları, kira artış oranları, tahliye süreçleri ve depozito iadesi gibi konularda yasal haklarınızı öğrenin ve kendinizi koruyun.',
+    date: '2026-01-08',
+  },
 ];
 
 const Makaleler = () => {
