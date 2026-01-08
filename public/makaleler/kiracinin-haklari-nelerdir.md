@@ -149,7 +149,7 @@ Ancak burada "ihtiyaç" kavramı çok kritiktir. İhtiyacın **gerçek, samimi v
 
 ## İki haklı ihtar ile tahliye
 
-Eğer bir kira yılı içinde kira bedelini zamanında ödemediğiniz için size iki kez haklı ihtar çekilmişse, ev sahibi kira döneminin sonunda tahliye davası açma hakkı kazanır. Bu nedenle, kiralarınızı her ay düzenli ödemek ve dekontları saklamak, tahliye riskine karşı en büyük savunmanızdır.
+Eğer bir kira yılı içinde kira bedelini zamanında ödemediğiniz için size iki kez haklı ihtar çekilmişse, ev sahibi kira döneminin sonunda tahliye davası açama hakkı kazanır. Bu nedenle, kiralarınızı her ay düzenli ödemek ve dekontları saklamak, tahliye riskine karşı en büyük savunmanızdır.
 
 ## Yazılı tahliye taahhütnamesi
 
@@ -195,4 +195,4 @@ Kesinlikle hayır. Kira sözleşmesi size sadece o evi kullanma hakkı vermez, a
 
 Eğer kira sözleşmenizde "alt kiraya verebilir" şeklinde açık ve net bir madde yoksa, ev sahibinizden yazılı bir izin almadan kiraladığınız mülkün tamamını veya bir bölümünü başkasına kiralayamazsınız. Buna "alt kira" denir ve tamamen ev sahibinin rızasına bağlıdır. Ev sahibinden yazılı onay almadan böyle bir şeye kalkışmanız, kira sözleşmesine ciddi bir aykırılık sayılır ve ev sahibinize haklı nedenle tahliye davası açma hakkı verir.
 
-Kira hukuku, hem kiracının hem de ev sahibinin haklarını koruyan hassas dengeler üzerine kuruludur. Karşılaştığınız herhangi bir sorunda doğru adımları atmak ve haklarınızı en etkili şekilde savunmak için profesyonel hukuki destek almak hayati önem taşır. Av. Mert Kağan Çetin, İzmir'deki kira uyuşmazlıkları ve gaymerkül davalarında size yol gösterebilir. Daha fazla bilgi için [https://mertkagancetin.com](https://mertkagancetin.com) adresini ziyaret edebilirsiniz.
+Kira hukuku, hem kiracının hem de ev sahibinin haklarını koruyan hassas dengeler üzerine kuruludur. Karşılaştığınız herhangi bir sorunda doğru adımları atmak ve haklarınızı en etkili şekilde savunmak için profesyonel hukuki destek almak hayati önem taşır. Av. Mert Kağan Çetin, İzmir'deki kira uyuşmazlıkları ve gayrimenkul davalarında size yol gösterebilir. Daha fazla bilgi için [https://mertkagancetin.com](https://mertkagancetin.com) adresini ziyaret edebilirsiniz.
