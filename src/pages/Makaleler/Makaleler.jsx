@@ -17,9 +17,9 @@ const makaleListesi = [
     date: '2025-11-14',
   },
   {
-    slug: 'kiraci-haklari-ve-ev-sahibine-karsi-korunma',
+    slug: 'kiracinin-haklari-nelerdir',
     title: 'Yasal Bilgiler: Kiracı Hakları Nelerdir ve Ev Sahibine Karşı Nasıl Korunulur?',
-    summary: 'Kiracı hakları, kira artış oranları, tahliye süreçleri ve depozito iadesi gibi konularda yasal haklarınızı öğrenin ve kendinizi koruyun.',
+    summary: 'kiracinin haklari nelerdir: kapsamlı rehber kira artışı, depozito iadesi ve tahliye süreçlerinde yasal korunma yollarını anlatır; haklarınızı hemen öğrenin.',
     date: '2026-01-08',
   },
 ];

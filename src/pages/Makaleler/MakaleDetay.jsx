@@ -82,16 +82,11 @@ const MakaleDetay = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <div className="bg-white p-8 rounded-lg shadow-xl">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-4">{meta.title || 'Makale Başlığı'}</h1>
-        <div className="text-sm text-gray-500 mb-6 border-b pb-4">
-          <span>Yazar: {meta.author || 'Bilinmiyor'}</span>
-          <span className="mx-3">|</span>
-          <span>Tarih: {meta.date || 'Bilinmiyor'}</span>
-        </div>
+    <div className="container mx-auto px-4 py-12 max-w-5xl">
+      <div className="bg-white p-4 md:p-12 rounded-lg">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">{meta.title || 'Makale Başlığı'}</h1>
         
-        <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900 prose-p:text-justify">
+        <div className="prose prose-xl max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-headings:mt-12 prose-headings:mb-6 prose-p:text-gray-800 prose-p:leading-relaxed prose-p:text-lg md:prose-p:text-xl prose-a:text-blue-600 prose-strong:text-gray-900 prose-img:rounded-xl prose-img:shadow-lg">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
 

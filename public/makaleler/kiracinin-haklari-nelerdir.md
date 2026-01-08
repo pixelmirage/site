@@ -2,8 +2,8 @@
 title: Yasal Bilgiler: Kiracı Hakları Nelerdir ve Ev Sahibine Karşı Nasıl Korunulur?
 author: Av. Mert Kağan Çetin
 date: 2026-01-08
-description: Kiracı hakları, kira artış oranları, tahliye süreçleri ve depozito iadesi gibi konularda yasal haklarınızı öğrenin ve kendinizi koruyun.
-keywords: kiracı hakları, kira artışı, tahliye davası, depozito iadesi, kira hukuku, izmir kira avukatı
+description: kiracinin haklari nelerdir: kapsamlı rehber kira artışı, depozito iadesi ve tahliye süreçlerinde yasal korunma yollarını anlatır; haklarınızı hemen öğrenin.
+keywords: kiracı hakları, kira artışı, depozito iadesi, tahliye davası, kira hukuku, izmir kira avukatı
 ---
 
 # Yasal Bilgiler: kiracinin haklari nelerdir ve ev sahibine karşı nasıl korunulur
