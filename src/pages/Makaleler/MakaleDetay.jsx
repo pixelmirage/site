@@ -35,6 +35,7 @@ const MakaleDetay = () => {
   const [meta, setMeta] = useState({});
   const [loading, setLoading] = useState(true);
   const [featuredImage, setFeaturedImage] = useState('');
+  const [imageManifest, setImageManifest] = useState({});
 
   useEffect(() => {
     setLoading(true);
@@ -51,6 +52,11 @@ const MakaleDetay = () => {
         .replace(/\n{2,}/g, '\n')
         .trim();
     };
+
+    // Fetch image manifest (if any)
+    fetch('/images/makaleler/manifest.json').then(r => r.ok ? r.json() : {}).then(man => {
+      if (mounted) setImageManifest(man || {});
+    }).catch(() => {});
 
     fetchMarkdown(slug).then(text => {
       if (!mounted) return;
@@ -145,19 +151,48 @@ const MakaleDetay = () => {
         if (ogUrl) ogUrl.setAttribute('content', canonicalHref);
       } catch { /* ignore */ }
 
-      // OpenGraph image
+      // OpenGraph & Twitter meta for featured image (prefer optimized manifest WebP)
       if (featured) {
-        const ogImage = document.querySelector('meta[property="og:image"]');
-        if (ogImage) ogImage.setAttribute('content', featured);
+        try {
+          let imageUrl = featured || '';
+          let w, h;
+          try {
+            const key = featured.split('/').pop();
+            const m = imageManifest && imageManifest[key];
+            if (m && m.largestWebp) {
+              imageUrl = `https://mertkagancetin.com${m.largestWebp}`;
+              w = m.width; h = m.height;
+            } else if (featured && featured.startsWith('/')) {
+              imageUrl = `https://mertkagancetin.com${featured}`;
+            }
+          } catch(e) { /* ignore */ }
 
-        // Twitter card image
-        let twitterImage = document.querySelector('meta[name="twitter:image"]');
-        if (!twitterImage) {
-          twitterImage = document.createElement('meta');
-          twitterImage.setAttribute('name', 'twitter:image');
-          document.head.appendChild(twitterImage);
-        }
-        twitterImage.setAttribute('content', featured);
+          // og:image
+          let ogImage = document.querySelector('meta[property="og:image"]');
+          if (!ogImage) { ogImage = document.createElement('meta'); ogImage.setAttribute('property','og:image'); document.head.appendChild(ogImage); }
+          ogImage.setAttribute('content', imageUrl);
+
+          // og:image:width / og:image:height
+          if (w) {
+            let ogw = document.querySelector('meta[property="og:image:width"]');
+            if (!ogw) { ogw = document.createElement('meta'); ogw.setAttribute('property','og:image:width'); document.head.appendChild(ogw); }
+            ogw.setAttribute('content', String(w));
+          }
+          if (h) {
+            let ogh = document.querySelector('meta[property="og:image:height"]');
+            if (!ogh) { ogh = document.createElement('meta'); ogh.setAttribute('property','og:image:height'); document.head.appendChild(ogh); }
+            ogh.setAttribute('content', String(h));
+          }
+
+          // Twitter card
+          let twCard = document.querySelector('meta[name="twitter:card"]');
+          if (!twCard) { twCard = document.createElement('meta'); twCard.setAttribute('name','twitter:card'); twCard.setAttribute('content','summary_large_image'); document.head.appendChild(twCard); }
+          else twCard.setAttribute('content','summary_large_image');
+
+          let twImage = document.querySelector('meta[name="twitter:image"]');
+          if (!twImage) { twImage = document.createElement('meta'); twImage.setAttribute('name','twitter:image'); document.head.appendChild(twImage); }
+          twImage.setAttribute('content', imageUrl);
+        } catch(e) { /* ignore */ }
       }
 
       // Author meta
@@ -175,18 +210,99 @@ const MakaleDetay = () => {
         document.head.appendChild(tw);
       }
 
-      // JSON-LD Article schema
+      // JSON-LD Article schema (injected later by the effect below where we have manifest)
+      // keep this here for now; actual injection will happen in a dedicated effect
       try {
+        const existing = document.querySelector('#article-ldjson');
+        if (!existing) {
+          const placeholder = document.createElement('script');
+          placeholder.setAttribute('type', 'application/ld+json');
+          placeholder.id = 'article-ldjson';
+          placeholder.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "Article" });
+          document.head.appendChild(placeholder);
+        }
+      } catch (e) { /* ignore */ }
+
+
+    }).catch(() => {
+      setLoading(false);
+    });
+
+    return () => { mounted = false; };
+  }, [slug]);
+
+  // Add a preload link for featured image when manifest becomes available
+  useEffect(() => {
+    if (!featuredImage || !imageManifest) return;
+    try {
+      const key = featuredImage.split('/').pop();
+      const m = imageManifest && imageManifest[key];
+      if (m && m.largestWebp) {
+        const existing = document.querySelector(`link[rel=\"preload\"][href=\"${m.largestWebp}\"]`);
+        if (!existing) {
+          const link = document.createElement('link');
+          link.setAttribute('rel', 'preload');
+          link.setAttribute('as', 'image');
+          link.setAttribute('href', m.largestWebp);
+          document.head.appendChild(link);
+          return () => { try { document.head.removeChild(link) } catch(e){} };
+        }
+      }
+    } catch(e) { /* ignore */ }
+  }, [featuredImage, imageManifest]);
+
+  // Inject full Article JSON-LD once we have metadata and (optionally) image manifest available
+  useEffect(() => {
+    if (!meta || !Object.keys(meta).length) return;
+
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const canonicalHref = `https://mertkagancetin.com/makaleler/${slug}`;
+
+        // Ensure we have the manifest: fall back to fetching it if state is empty
+        let manifest = imageManifest;
+        if (!manifest || Object.keys(manifest).length === 0) {
+          try {
+            const res = await fetch('/images/makaleler/manifest.json');
+            if (res.ok) manifest = await res.json();
+            if (!cancelled) setImageManifest(manifest || {});
+          } catch (e) { /* ignore */ }
+        }
+
+        // Compute image URL preferring manifest webp
+        let imageUrl = featuredImage || '';
+        try {
+          const key = (featuredImage || '').split('/').pop();
+          const m = manifest && manifest[key];
+          if (m && m.largestWebp) imageUrl = `https://mertkagancetin.com${m.largestWebp}`;
+          else if (featuredImage && featuredImage.startsWith('/')) imageUrl = `https://mertkagancetin.com${featuredImage}`;
+        } catch (e) { /* ignore */ }
+
         const ld = {
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": metadata.title || '',
-          "author": metadata.author ? {"@type": "Person", "name": metadata.author} : {"@type": "Organization", "name": "Av. Mert Kağan Çetin"},
-          "datePublished": metadata.date || '',
-          "image": featured || '',
-          "description": metadata.description || ''
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": canonicalHref
+          },
+          "headline": meta.title || '',
+          "description": meta.description || '',
+          "image": imageUrl || '',
+          "author": meta.author ? {"@type": "Person", "name": meta.author} : {"@type": "Organization", "name": "Av. Mert Kağan Çetin"},
+          "publisher": {
+            "@type": "Organization",
+            "name": "Av. Mert Kağan Çetin Hukuk Bürosu",
+            "logo": { "@type": "ImageObject", "url": "https://mertkagancetin.com/logo.png" }
+          },
+          "datePublished": meta.date || '',
+          "dateModified": meta.updated || meta.modified || undefined,
+          "url": canonicalHref
         };
+        if (meta.keywords) ld.keywords = meta.keywords;
 
+        if (cancelled) return;
         let script = document.querySelector('#article-ldjson');
         if (!script) {
           script = document.createElement('script');
@@ -195,14 +311,11 @@ const MakaleDetay = () => {
           document.head.appendChild(script);
         }
         script.textContent = JSON.stringify(ld);
-      } catch { /* ignore */ }
+      } catch(e) { console.error('article ld injection error', e) }
+    })();
 
-    }).catch(() => {
-      setLoading(false);
-    });
-
-    return () => { mounted = false; };
-  }, [slug]);
+    return () => { cancelled = true };
+  }, [meta, featuredImage, imageManifest, slug]);
 
   if (loading) {
     return <div className="container mx-auto px-4 py-12 text-center">Yükleniyor...</div>;
@@ -223,11 +336,22 @@ const MakaleDetay = () => {
   return (
     <div className="container mx-auto px-4 py-12 max-w-5xl">
       <div className="bg-white p-4 md:p-12 rounded-lg">
-        {featuredImage && (
-          <div className="mb-8 overflow-hidden rounded-xl shadow-lg">
-            <img src={featuredImage} alt={meta.title || 'featured'} className="w-full h-64 object-cover md:h-96" />
-          </div>
-        )}
+        {featuredImage && (() => {
+          const key = featuredImage.split('/').pop();
+          const m = imageManifest && imageManifest[key];
+          return (
+            <div className="mb-8 overflow-hidden rounded-xl shadow-lg" style={{ backgroundImage: m ? `url(${m.placeholder})` : undefined, backgroundSize: 'cover' }}>
+              {m ? (
+                <picture>
+                  <source type="image/webp" srcSet={m.srcsetWebp} sizes="(max-width: 768px) 100vw, 800px" />
+                  <img src={m.largestWebp} alt={meta.title || 'featured'} className="w-full h-64 object-cover md:h-96" width={m.width || undefined} height={m.height || undefined} loading="eager" />
+                </picture>
+              ) : (
+                <img src={featuredImage} alt={meta.title || 'featured'} className="w-full h-64 object-cover md:h-96" loading="eager" />
+              )}
+            </div>
+          )
+        })()}
 
         <div className="flex items-center justify-between gap-4 mb-8">
           <div>
@@ -247,7 +371,20 @@ const MakaleDetay = () => {
 
         <article className="article-prose">
           <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={{
-            img: ({src, alt, ...props}) => <img src={src} alt={alt || meta.title || ''} className="mx-auto rounded-lg shadow-lg" {...props} />,
+            img: ({src, alt, ...props}) => {
+              const key = (src || '').split('/').pop();
+              const m = imageManifest && imageManifest[key];
+              if (m) {
+                return (
+                  <picture className="mx-auto block">
+                    <source type="image/webp" srcSet={m.srcsetWebp} sizes="(max-width: 768px) 100vw, 800px" />
+                    <img src={m.largestWebp} alt={alt || meta.title || ''} className="mx-auto rounded-lg shadow-lg" loading="lazy" width={m.width || undefined} height={m.height || undefined} {...props} />
+                  </picture>
+                )
+              }
+
+              return <img src={src} alt={alt || meta.title || ''} className="mx-auto rounded-lg shadow-lg" loading="lazy" {...props} />
+            },
             a: ({...props}) => <a {...props} className="text-blue-600 underline" />,
             p: ({...props}) => <p {...props} className="text-gray-800 leading-relaxed mb-6 text-lg md:text-xl" />,
             blockquote: ({...props}) => <blockquote {...props} className="border-l-4 pl-4 italic text-gray-700 mb-6" />,

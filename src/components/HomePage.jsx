@@ -93,11 +93,10 @@ const HomePage = () => {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img 
-                src={heroImage} 
-                alt="İzmir Kira Avukatı Mert Kağan Çetin - Hukuk Bürosu" 
-                className="rounded-lg shadow-2xl w-full h-auto"
-              />
+              <picture>
+                <source type="image/webp" srcSet="/images/homepage_hero-1600.webp 1600w, /images/homepage_hero-1200.webp 1200w, /images/homepage_hero-800.webp 800w" sizes="(min-width:1024px) 600px, 100vw" />
+                <img src="/images/homepage_hero-800.png" alt="İzmir Kira Avukatı Mert Kağan Çetin - Hukuk Bürosu" className="rounded-lg shadow-2xl w-full h-auto" loading="eager" decoding="sync" />
+              </picture>
             </div>
           </div>
         </div>
@@ -110,19 +109,13 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold text-primary mb-6">İzmir Kira Hukuku ve Tahliye Süreçlerinde Uzman Desteği</h2>
             <div className="prose prose-lg text-gray-600 max-w-none">
               <p>
-                Günümüzde kira uyuşmazlıkları, özellikle İzmir gibi metropol şehirlerde en sık karşılaşılan hukuki sorunların başında gelmektedir. 
-                <strong>İzmir kira avukatı</strong> olarak, hem kiracıların hem de kiraya verenlerin haklarını korumak adına güncel mevzuat ve Yargıtay kararları ışığında profesyonel hizmet sunuyoruz. 
-                Özellikle Bayraklı, Bornova, Karşıyaka ve Konak gibi kira hareketliliğinin yoğun olduğu bölgelerde, taraflar arasındaki dengenin korunması büyük önem taşımaktadır.
+                Günümüzde kira uyuşmazlukları, özellikle İzmir gibi büyük şehirlerde sık görülen hukuki sorunlardır. <strong>İzmir kira avukatı</strong> olarak hem kiracıların hem de kiraya verenlerin haklarını, güncel mevzuat ve Yargıtay içtihatları doğrultusunda koruyoruz. Özellikle <strong>Bayraklı, Bornova, Karşıyaka</strong> ve <strong>Konak</strong> gibi hareketli bölgelerde taraflar arasındaki dengenin sağlanması önem taşır.
               </p>
               <p>
-                Kira bedelinin tespiti, tahliye taahhütnamesinin geçerliliği, ihtiyaç nedeniyle tahliye ve kira alacaklarının icra yoluyla tahsili gibi konularda teknik bilgi ve tecrübe hayati önem taşır. 
-                Bayraklı'da bulunan ofisimizde, İzmir Adliyesi'ne yakınlığımız ve yerel mahkeme uygulamalarına hakimiyetimizle müvekkillerimize hızlı çözümler üretiyoruz. 
-                Hukuki süreçlerin doğru yönetilmesi, sadece davanın kazanılmasını değil, aynı zamanda sürecin en kısa sürede tamamlanmasını da sağlar.
+                <strong>Kira bedelinin tespiti</strong>, tahliye taahhütnamesinin geçerliliği, <strong>ihtiyaç nedeniyle tahliye</strong> ve kira alacaklarının <strong>icra yoluyla tahsili</strong> gibi konular teknik bilgi ve deneyim gerektirir. Bayraklı’daki ofisimiz ve İzmir Adliyesi uygulamalarına hâkimiyetimiz sayesinde müvekkillerimize pratik ve hızlı hukuki çözümler sunuyoruz. Doğru süreç yönetimi yalnızca davayı kazanmakla kalmaz, sürecin daha kısa sürede sonuçlanmasını da sağlar.
               </p>
               <p>
-                Kira hukuku sadece dava açmaktan ibaret değildir; aynı zamanda uyuşmazlıkları önleyici hukuki danışmanlık hizmetini de kapsar. 
-                Doğru hazırlanmış bir kira sözleşmesi, ileride yaşanabilecek pek çok sorunu henüz başlamadan çözebilir. 
-                Bu nedenle, sözleşme aşamasından tahliye aşamasına kadar her adımda profesyonel bir <Link to="/hakkimizda" className="text-primary font-semibold hover:underline">İzmir avukatı</Link> ile çalışmak hak kaybını önleyecektir.
+                Kira hukuku yalnızca dava açmak değildir; <strong>önleyici hukuki danışmanlık</strong> da aynı derecede önemlidir. İyi hazırlanmış bir kira sözleşmesi gelecekte çıkabilecek pek çok sorunu baştan önler. Sözleşme hazırlamadan tahliye süreçlerinin yönetimine kadar her aşamada profesyonel bir <Link to="/hakkimizda" className="text-primary font-semibold hover:underline">İzmir avukatı</Link> ile çalışmak, hak kayıplarını önler ve sürecin daha hızlı tamamlanmasını sağlar.
               </p>
             </div>
           </div>

@@ -1,8 +1,14 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/(?!.*\\..*$)(.*)",
-      "destination": "/index.html"
+      "source": "/makaleler/:slug",
+      "destination": "/makaleler/:slug/",
+      "permanent": false,
+      "statusCode": 308
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "^/(.*)$", "dest": "/index.html" }
   ]
 }
