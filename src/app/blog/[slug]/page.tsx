@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { RelatedPosts } from "@/components/blog/RelatedPosts";
+import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
@@ -113,10 +115,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             <div className="container mx-auto px-4 mt-12">
                 <div className="max-w-3xl mx-auto">
-                    <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary transition-colors mb-12 group">
-                        <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                        Tüm Makalelere Dön
-                    </Link>
+                    {/* Breadcrumb Navigation */}
+                    <BreadcrumbNav
+                        items={[
+                            { label: "Blog", href: "/blog" },
+                            { label: post.title }
+                        ]}
+                    />
 
                     {/* MDX Content Rendering */}
                     <div className="prose prose-slate prose-xl max-w-none 
@@ -157,6 +162,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             </Link>
                         </Button>
                     </div>
+
+                    {/* Related Posts - Internal Linking */}
+                    <RelatedPosts
+                        currentSlug={slug}
+                        currentTags={post.tags || []}
+                    />
                 </div>
             </div>
         </article>
