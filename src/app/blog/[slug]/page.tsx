@@ -4,15 +4,47 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { Calendar, Clock, ChevronLeft, Share2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ArticleSchema } from "@/components/seo/ArticleSchema";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const post = getPostBySlug(slug);
     if (!post) return {};
 
+    const url = `https://mertkagancetin.com/blog/${slug}`;
+
     return {
         title: post.title,
         description: post.excerpt,
+        authors: [{ name: "Av. Mert Kağan Çetin" }],
+        openGraph: {
+            type: 'article',
+            locale: 'tr_TR',
+            url: url,
+            title: post.title,
+            description: post.excerpt,
+            siteName: 'Av. Mert Kağan Çetin - İzmir Kira Avukatı',
+            publishedTime: post.date,
+            authors: ['Av. Mert Kağan Çetin'],
+            images: [
+                {
+                    url: post.coverImage || '/og-image.jpg',
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.excerpt,
+            images: [post.coverImage || '/og-image.jpg'],
+        },
+        alternates: {
+            canonical: url,
+        },
     };
 }
 
@@ -31,8 +63,26 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         notFound();
     }
 
+    const articleUrl = `https://mertkagancetin.com/blog/${slug}`;
+
     return (
         <article className="bg-white min-h-screen pb-24">
+            {/* SEO Schemas */}
+            <ArticleSchema
+                title={post.title}
+                description={post.excerpt}
+                datePublished={post.date}
+                image={post.coverImage}
+                url={articleUrl}
+            />
+            <BreadcrumbSchema
+                items={[
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "Blog", url: "https://mertkagancetin.com/blog" },
+                    { name: post.title, url: articleUrl }
+                ]}
+            />
+
             {/* Background Decor */}
             <div className="h-[400px] w-full bg-slate-50 border-b border-slate-100 flex items-center justify-center overflow-hidden relative">
                 <div className="absolute inset-0 opacity-5 pointer-events-none select-none">

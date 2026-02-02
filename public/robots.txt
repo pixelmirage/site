@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mertkagancetin.com/sitemap.xml
+
+# Block crawling of admin/system paths
+Disallow: /_next/
+Disallow: /api/
