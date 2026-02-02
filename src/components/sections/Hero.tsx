@@ -78,15 +78,6 @@ export function Hero() {
                         </Button>
                     </motion.div>
 
-                    {/* Subtext contact */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1 }}
-                        className="text-[11px] font-bold uppercase tracking-[0.3em] text-muted-foreground mt-12"
-                    >
-                        İzmir Bayraklı • Mansuroğlu • Karşıyaka
-                    </motion.div>
                 </div>
             </div>
 

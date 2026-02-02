@@ -31,7 +31,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    İzmir merkezli faaliyet gösteren hukuk büromuzun kurucusu olan Avukat Mert Kağan Çetin, meslek hayatı boyunca özellikle **gayrimenkul hukuku**, **kira hukuku** ve **tazminat hukuku** alanlarında derinlemesine uzmanlaşmıştır.
+                                    İzmir merkezli faaliyet gösteren hukuk büromuzun kurucusu olan Avukat Mert Kağan Çetin, meslek hayatı boyunca özellikle gayrimenkul hukuku, kira hukuku ve tazminat hukuku alanlarında derinlemesine uzmanlaşmıştır.
                                 </p>
                                 <p>
                                     Kira uyuşmazlıklarının toplumsal ve ekonomik boyutlarını yakından takip ederek, müvekkillerine yalnızca mahkeme süreçlerinde değil, aynı zamanda uyuşmazlık öncesi danışmanlık aşamasında da stratejik yönlendirmeler sunmaktadır.
@@ -54,7 +54,6 @@ export default function AboutPage() {
                                     </div>
                                     <ul className="space-y-2 text-sm text-muted-foreground">
                                         <li>• İzmir Barosu Üyeliği</li>
-                                        <li>• Kira Hukuku Uzmanlık Sertifikası</li>
                                         <li>• Arabuluculuk Süreç Yönetimi Eğitimi</li>
                                         <li>• Gayrimenkul Mevzuatı Güncelleme Panelleri</li>
                                     </ul>
@@ -84,7 +83,7 @@ export default function AboutPage() {
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-center border-b pb-4">
                                             <span className="text-muted-foreground">Tecrübe</span>
-                                            <span className="font-bold text-primary">10+ Yıl</span>
+                                            <span className="font-bold text-primary">7+ Yıl</span>
                                         </div>
                                         <div className="flex justify-between items-center border-b pb-4">
                                             <span className="text-muted-foreground">Dava Sayısı</span>
