@@ -9,11 +9,7 @@ export const districts = [
     "Balçova",
     "Narlıdere",
     "Karabağlar",
-    "Güzelbahçe",
-    "Urla",
-    "Menemen",
-    "Aliağa",
-    "Torbalı"
+    "Güzelbahçe"
 ];
 
 export function getSlugFromDistrict(district: string) {
