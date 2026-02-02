@@ -70,10 +70,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     {/* MDX Content Rendering */}
                     <div className="prose prose-slate prose-xl max-w-none 
-            prose-headings:font-playfair prose-headings:font-extrabold prose-headings:text-primary
+            prose-headings:font-playfair prose-headings:font-black prose-headings:text-slate-900
             prose-h1:text-5xl prose-h1:mb-10 prose-h1:mt-14 prose-h1:leading-tight
-            prose-h2:text-4xl prose-h2:mb-8 prose-h2:mt-14 prose-h2:border-b-2 prose-h2:border-primary/20 prose-h2:pb-4
-            prose-h3:text-2xl prose-h3:mb-6 prose-h3:mt-10 prose-h3:text-primary/90
+            prose-h2:text-4xl prose-h2:mb-8 prose-h2:mt-14 prose-h2:border-b-2 prose-h2:border-slate-300 prose-h2:pb-4
+            prose-h3:text-2xl prose-h3:mb-6 prose-h3:mt-10
             prose-p:text-slate-700 prose-p:leading-relaxed prose-p:text-lg prose-p:mb-6
             prose-strong:text-primary prose-strong:font-bold
             prose-a:text-secondary-foreground prose-a:font-bold hover:prose-a:underline
