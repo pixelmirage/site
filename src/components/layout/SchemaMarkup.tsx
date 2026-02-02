@@ -38,7 +38,32 @@ export function SchemaMarkup() {
             "https://www.linkedin.com/in/mertkagancetin"
         ],
         "priceRange": "$$",
-        "description": "İzmir'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıkları alanında uzman avukatlık hizmeti."
+        "description": "İzmir'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıkları alanında uzman avukatlık hizmeti.",
+        "knowsAbout": [
+            "Kira Hukuku",
+            "Tahliye Davaları",
+            "Gayrimenkul Hukuku",
+            "Kira Tespit Davası",
+            "Tahliye Taahhütnamesi"
+        ],
+        "memberOf": {
+            "@type": "Organization",
+            "name": "İzmir Barosu"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "İzmir"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Bayraklı"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Karşıyaka"
+            }
+        ]
     };
 
     return (

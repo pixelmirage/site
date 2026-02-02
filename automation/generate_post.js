@@ -98,18 +98,21 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
 2. GÖRSEL YERLEŞTİRME:
    - Makalenin ortasına (yaklaşık 3. veya 4. başlıktan sonra) şu şekilde bir görsel ekle:
    ![${selected.imageAlt}](${selected.image})
-   
-3. İÇERİK DERİNLİĞİ:
+
+3. İÇERİK YAPISI (GEO - YAPAY ZEKAYI OPTİMİZASYONU):
+   - **YÖNETİCİ ÖZETİ (Executive Summary):** Yazının en başına, "Özet" başlığı altında 3-4 maddelik, okuyucunun ve yapay zekaların içeriği hızlıca anlamasını sağlayacak hap bilgiler ekle. Bu çok önemli.
+    
+4. İÇERİK DERİNLİĞİ:
    - Yazı en az 1200-1500 kelime olmalı.
    - İlgili kanun maddelerini (TBK m. 350, 351 vb.) açıkla.
    - Pratik örnekler ver.
    - Sık Sorulan Sorular bölümü ekle (en az 3 soru).
 
-4. SEO STRATEJİSİ:
+5. SEO STRATEJİSİ:
    - "İzmir Kira Avukatı" anahtar kelimesini doğal şekilde 3-4 kez kullan.
    - Başlık ve alt başlıklarda anahtar kelime olsun.
 
-5. İÇ LİNKLER (ÇOK ÖNEMLİ - SEO İÇİN KRİTİK):
+6. İÇ LİNKLER (ÇOK ÖNEMLİ - SEO İÇİN KRİTİK):
    - Makale içinde EN AZ 3 iç link kullan.
    - Linkleri şu formatta yaz: [link metni](/sayfa-yolu)
    
@@ -125,7 +128,7 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    "Bu konuda detaylı bilgi için [hizmetlerimiz](/hizmetler) sayfamızı inceleyebilirsiniz."
    "Profesyonel destek almak için [bizimle iletişime geçin](/iletisim)."
 
-6. FORMAT (MDX):
+7. FORMAT (MDX):
 ---
 title: "[Konu ile ilgili SEO odaklı başlık]"
 date: "${dateString}"
