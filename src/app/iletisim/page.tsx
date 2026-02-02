@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "İletişim | Av. Mert Kağan Çetin",
+    title: "İletişim",
     description: "İzmir Bayraklı'da kira hukuku üzerine uzman hukuk büromuza ulaşın. Randevu ve danışmanlık talepleriniz için iletişim bilgilerimiz.",
 };
 

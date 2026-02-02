@@ -12,7 +12,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),
   title: {
-    template: "%s | İzmir Kira Avukatı Mert Kağan Çetin",
+    template: "%s | Av. Mert Kağan Çetin",
     default: "İzmir Kira Avukatı | Av. Mert Kağan Çetin - Gayrimenkul Hukuku",
   },
   description: "İzmir Bayraklı ve Karşıyaka bölgesinde kira hukuku, tahliye davaları ve gayrimenkul danışmanlığı alanında uzman Avukat Mert Kağan Çetin. Ücretsiz ön görüşme için hemen arayın.",

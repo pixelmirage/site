@@ -6,7 +6,9 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-    title: "İzmir Kira Avukatı | Tahliye Davası & Kira Tespit | Av. Mert Kağan Çetin",
+    title: {
+        absolute: "İzmir Kira Avukatı | Tahliye Davası & Kira Tespit | Av. Mert Kağan Çetin",
+    },
     description: "İzmir kira avukatı Mert Kağan Çetin ile kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında profesyonel hukuki destek alın. 2025 güncel fiyatlar.",
     keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı"],
     openGraph: {

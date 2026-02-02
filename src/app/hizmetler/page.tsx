@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hizmetlerimiz | İzmir Kira & Gayrimenkul Hukuku",
+    title: "Hizmetlerimiz",
     description: "Av. Mert Kağan Çetin tarafından sunulan kira hukuku, tahliye davaları ve gayrimenkul danışmanlığı hizmetleri.",
 };
 
