@@ -35,43 +35,55 @@ async function generatePost() {
 
     const dateString = new Date().toISOString().split('T')[0];
     const prompt = `
-    Sen uzman bir Türkiye Cumhuriyeti hukukçusu ve SEO uzmanısın. 
-    Aşağıdaki konu başlığı hakkında, 'İzmir Kira Avukatı' anahtar kelimesini doğal bir şekilde içeren, 
-    yüksek kaliteli, bilgilendirici ve profesyonel bir blog yazısı hazırla.
+    Sen, Türkiye'nin önde gelen hukuk büroları için içerik üreten kıdemli bir hukuk editörü ve SEO stratejistisin. 
+    Hedefimiz, "İzmir Kira Avukatı" anahtar kelimesinde Google'da 1. sıraya yükselmek.
     
     Konu: ${topic}
-    Hedef: Mert Kağan Çetin Hukuk Bürosu web sitesi.
-    Bugünün Tarihi: ${dateString} (Lütfen bu tarihi kullan)
+    Hedef Web Sitesi: Mert Kağan Çetin Hukuk Bürosu
+    Bugünün Tarihi: ${dateString}
     
-    Yazı şu formatta (MDX) olmalı:
-    ---
-    title: "[SEO Uyumlu Başlık]"
-    date: "${dateString}"
-    excerpt: "[160 karakterlik SEO açıklaması]"
-    tags: ["kira hukuku", "tahliye davası", "izmir avukat"]
-    imagePrompt: "[Banana Nano Pro için 2026 standartlarında ultra-detaylı görsel üretim komutu]"
-    ---
+    Lütfen aşağıdaki kurallara göre kapsamlı bir REHBER (Guide) hazırla:
     
-    # [Başlık]
-    ![[Görsel Açıklaması]](/api/placeholder-image)
+    1. İÇERİK DERİNLİĞİ: 
+       - Yazı en az 1000-1500 kelime aralığında, konu hakkında yazılmış en kapsamlı Türkçe kaynak olmalı.
+       - Sadece yüzeysel bilgi verme; ilgili kanun maddelerini (TBK m. 350, 351 vb.), Yargıtay emsal karar referanslarını ve uygulama örneklerini ekle.
+       - Sıkça Sorulan Sorular (SSS) bölümü ekle.
     
-    [Giriş Paragrafı - İzmir Kira Avukatı vurgulu]
+    2. SEO STRATEJİSİ:
+       - "İzmir Kira Avukatı" anahtar kelimesini ve "İzmir tahliye davası", "kira tespit davası avukatı İzmir" gibi LSI (Latent Semantic Indexing) kelimeleri başlıklar ve paragraflar içinde DOĞAL bir şekilde kullan.
+       - Okuyucuyu ikna edici, otoriter ama anlaşılır bir dil kullan.
     
-    ## [Alt Başlık 1]
-    [Detaylı Bilgi]
-    
-    ## [Alt Başlık 2]
-    [Detaylı Bilgi]
-    
-    ### Sonuç
-    [Özet ve Mert Kağan Çetin ile iletişime geçme çağrısı]
-    
+    3. FORMAT (MDX):
+       ---
+       title: "[SEO Odaklı, Tıklanma Oranı Yüksek Başlık]"
+       date: "${dateString}"
+       excerpt: "[160 karakterlik, merak uyandıran ve anahtar kelime içeren meta açıklama]"
+       tags: ["kira hukuku", "tahliye davası", "İzmir kira avukatı", "Mert Kağan Çetin"]
+       coverImage: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1200&auto=format&fit=crop"
+       ---
+       
+       # [Başlık]
+       
+       [Etkileyici bir giriş paragrafı - İzmir Kira Avukatı Mert Kağan Çetin vurgulu]
+       
+       ## [Kapsamlı Alt Başlık 1]
+       [Detaylı analiz...]
+       
+       ## [Kapsamlı Alt Başlık 2]
+       [Detaylı analiz...]
+       
+       [...En az 5-6 Alt Başlık...]
+       
+       ## Sıkça Sorulan Sorular
+       - **Soru...**: Cevap...
+       
+       ### Sonuç ve Profesyonel Destek
+       [İzmir'de gayrimenkul davalarınız için Mert Kağan Çetin ile iletişime geçin.]
+       
     Kurallar:
-    1. Dil bilgisi kusursuz olmalı.
-    2. Hukuki terimler doğru kullanılmalı.
-    3. Okunabilirlik için kısa paragraflar kullan.
-    4. Markdown formatında çıktı ver.
-    5. Başka bir açıklama yazma, sadece MDX içeriğini döndür.
+    - Başka açıklama yapma. Sadece MDX kodunu ver.
+    - Markdown hiyerarşisine dikkat et (H1, H2, H3).
+    - Maddeli listeler ve tablo (mümkünse) kullanarak okunabilirliği artır.
   `;
 
     try {
