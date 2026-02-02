@@ -33,6 +33,7 @@ async function generatePost() {
     const topic = topics[Math.floor(Math.random() * topics.length)];
     console.log(`Target Topic: ${topic}`);
 
+    const dateString = new Date().toISOString().split('T')[0];
     const prompt = `
     Sen uzman bir Türkiye Cumhuriyeti hukukçusu ve SEO uzmanısın. 
     Aşağıdaki konu başlığı hakkında, 'İzmir Kira Avukatı' anahtar kelimesini doğal bir şekilde içeren, 
@@ -40,11 +41,12 @@ async function generatePost() {
     
     Konu: ${topic}
     Hedef: Mert Kağan Çetin Hukuk Bürosu web sitesi.
+    Bugünün Tarihi: ${dateString} (Lütfen bu tarihi kullan)
     
     Yazı şu formatta (MDX) olmalı:
     ---
     title: "[SEO Uyumlu Başlık]"
-    date: "[Bugünün Tarihi: YYYY-MM-DD]"
+    date: "${dateString}"
     excerpt: "[160 karakterlik SEO açıklaması]"
     tags: ["kira hukuku", "tahliye davası", "izmir avukat"]
     imagePrompt: "[Banana Nano Pro için 2026 standartlarında ultra-detaylı görsel üretim komutu]"
