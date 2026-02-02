@@ -44,46 +44,72 @@ async function generatePost() {
     
     Lütfen aşağıdaki kurallara göre kapsamlı bir REHBER (Guide) hazırla:
     
-    1. İÇERİK DERİNLİĞİ: 
-       - Yazı en az 1000-1500 kelime aralığında, konu hakkında yazılmış en kapsamlı Türkçe kaynak olmalı.
-       - Sadece yüzeysel bilgi verme; ilgili kanun maddelerini (TBK m. 350, 351 vb.), Yargıtay emsal karar referanslarını ve uygulama örneklerini ekle.
+    1. OKUNUŞ KOLAYLIĞI (ÇOK ÖNEMLİ): 
+       - Her bölüm arasında "---" (yatay çizgi) ile ayrım yap.
+       - Paragraflar kısa olsun, en fazla 2-3 cümle.
+       - Emojiler kullan (✅ ❌ 💡 ⚠️ 📝 🏠 ⚖️ 📞 gibi).
+       - Maddeli listeler kullan (- veya 1. 2. 3. ile).
+       - Karmaşık bilgileri tablolarla sun.
+       - "Salağa anlatır gibi" basit, anlaşılır bir dil kullan.
+       - Her başlıktan sonra kısa bir özet cümle ver.
+    
+    2. İÇERİK DERİNLİĞİ: 
+       - Yazı en az 1000-1500 kelime aralığında olmalı.
+       - İlgili kanun maddelerini (TBK m. 350, 351 vb.) ekle ama basitçe açıkla.
+       - Pratik örnekler ver (Örnek: "Oğlunuz evleniyor ve bu eve ihtiyacı var...").
        - Sıkça Sorulan Sorular (SSS) bölümü ekle.
     
-    2. SEO STRATEJİSİ:
-       - "İzmir Kira Avukatı" anahtar kelimesini ve "İzmir tahliye davası", "kira tespit davası avukatı İzmir" gibi LSI (Latent Semantic Indexing) kelimeleri başlıklar ve paragraflar içinde DOĞAL bir şekilde kullan.
+    3. SEO STRATEJİSİ:
+       - "İzmir Kira Avukatı" ve ilgili anahtar kelimeleri doğal şekilde kullan.
        - Okuyucuyu ikna edici, otoriter ama anlaşılır bir dil kullan.
     
-    3. FORMAT (MDX):
+    4. FORMAT (MDX):
        ---
-       title: "[SEO Odaklı, Tıklanma Oranı Yüksek Başlık]"
+       title: "[Kısa, Net Başlık - SEO Odaklı]"
        date: "${dateString}"
-       excerpt: "[160 karakterlik, merak uyandıran ve anahtar kelime içeren meta açıklama]"
+       excerpt: "[160 karakterlik, merak uyandıran açıklama]"
        tags: ["kira hukuku", "tahliye davası", "İzmir kira avukatı", "Mert Kağan Çetin"]
        coverImage: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1200&auto=format&fit=crop"
        ---
        
        # [Başlık]
        
-       [Etkileyici bir giriş paragrafı - İzmir Kira Avukatı Mert Kağan Çetin vurgulu]
+       [Sorulu bir giriş - okuyucunun ilgisini çek]
        
-       ## [Kapsamlı Alt Başlık 1]
-       [Detaylı analiz...]
+       **Bu rehberde şunları öğreneceksiniz:** basitçe açıkla.
        
-       ## [Kapsamlı Alt Başlık 2]
-       [Detaylı analiz...]
+       ---
        
-       [...En az 5-6 Alt Başlık...]
+       ## 🏠 [Alt Başlık 1]
        
-       ## Sıkça Sorulan Sorular
-       - **Soru...**: Cevap...
+       [Kısa paragraf]
        
-       ### Sonuç ve Profesyonel Destek
-       [İzmir'de gayrimenkul davalarınız için Mert Kağan Çetin ile iletişime geçin.]
+       - ✅ Madde 1
+       - ✅ Madde 2
+       
+       > 💡 **İpucu:** [Pratik bilgi]
+       
+       ---
+       
+       [... Benzer formatta devam et ...]
+       
+       ## ❓ Sık Sorulan Sorular
+       
+       ### "Soru 1?"
+       
+       **Cevap:** Basit açıklama.
+       
+       ---
+       
+       ## 📞 Profesyonel Destek
+       
+       [İzmir kira avukatı Mert Kağan Çetin ile iletişime geçin.]
        
     Kurallar:
-    - Başka açıklama yapma. Sadece MDX kodunu ver.
-    - Markdown hiyerarşisine dikkat et (H1, H2, H3).
-    - Maddeli listeler ve tablo (mümkünse) kullanarak okunabilirliği artır.
+    - Sadece MDX kodunu ver, başka açıklama yapma.
+    - Her bölümü "---" ile ayır.
+    - Paragraflar KISA olsun.
+    - Emojiler kullan.
   `;
 
     try {
@@ -91,12 +117,13 @@ async function generatePost() {
         const response = await result.response;
         let text = response.text();
 
-        // Clean up response (sometimes AI adds markdown blocks ```mdx ... ```)
-        text = text.replace(/```mdx/g, "").replace(/```/g, "").trim();
+        // Clean up response (sometimes AI adds markdown blocks \`\`\`mdx ... \`\`\`)
+        text = text.replace(/\`\`\`mdx/g, "").replace(/\`\`\`/g, "").trim();
 
         const date = new Date().toISOString().split('T')[0];
         const slug = slugify(topic, { lower: true, strict: true, locale: 'tr' });
-        const fileName = `${date}-${slug}.mdx`;
+        // Don't include date in filename for cleaner URLs
+        const fileName = `${slug}.mdx`;
         const filePath = path.join(process.cwd(), "src/content/blog", fileName);
 
         // Create dir if not exists
