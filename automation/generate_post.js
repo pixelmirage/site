@@ -47,9 +47,12 @@ async function generatePost() {
     date: "[Bugünün Tarihi: YYYY-MM-DD]"
     excerpt: "[160 karakterlik SEO açıklaması]"
     tags: ["kira hukuku", "tahliye davası", "izmir avukat"]
+    imagePrompt: "[Banana Nano Pro için 2026 standartlarında ultra-detaylı görsel üretim komutu]"
     ---
     
     # [Başlık]
+    ![[Görsel Açıklaması]](/api/placeholder-image)
+    
     [Giriş Paragrafı - İzmir Kira Avukatı vurgulu]
     
     ## [Alt Başlık 1]
