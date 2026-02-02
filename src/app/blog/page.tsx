@@ -33,10 +33,19 @@ export default function BlogPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {posts.map((post) => (
                                 <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
-                                    <Card className="h-full border-none shadow-sm group-hover:shadow-xl transition-all duration-300 bg-white overflow-hidden">
-                                        <div className="aspect-video bg-slate-100 relative flex items-center justify-center overflow-hidden">
-                                            <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/0 transition-colors" />
-                                            <span className="text-primary/10 font-playfair font-bold text-6xl">Law</span>
+                                    <Card className="h-full border border-border/50 shadow-sm group-hover:shadow-2xl transition-all duration-500 bg-white overflow-hidden rounded-sm">
+                                        <div className="aspect-[16/10] bg-slate-100 relative overflow-hidden">
+                                            <img
+                                                src={post.coverImage || `https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop`}
+                                                alt={post.title}
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            />
+                                            <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors" />
+                                            <div className="absolute bottom-4 left-4">
+                                                <div className="px-3 py-1 bg-white/90 backdrop-blur-sm text-[10px] font-bold uppercase tracking-widest text-primary">
+                                                    Hukuk & Mevzuat
+                                                </div>
+                                            </div>
                                         </div>
                                         <CardHeader className="p-6 pb-2">
                                             <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4 font-bold uppercase tracking-wider">

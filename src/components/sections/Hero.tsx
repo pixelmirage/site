@@ -63,7 +63,7 @@ export function Hero() {
                             className="bg-primary text-white hover:bg-primary/95 px-12 h-16 text-lg font-serif tracking-wide transition-all shadow-xl hover:shadow-2xl"
                             asChild
                         >
-                            <Link href="/iletisim">Kurumsal İletişim</Link>
+                            <Link href="/iletisim">İletişim</Link>
                         </Button>
                         <Button
                             variant="outline"
