@@ -109,7 +109,23 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    - "İzmir Kira Avukatı" anahtar kelimesini doğal şekilde 3-4 kez kullan.
    - Başlık ve alt başlıklarda anahtar kelime olsun.
 
-5. FORMAT (MDX):
+5. İÇ LİNKLER (ÇOK ÖNEMLİ - SEO İÇİN KRİTİK):
+   - Makale içinde EN AZ 3 iç link kullan.
+   - Linkleri şu formatta yaz: [link metni](/sayfa-yolu)
+   
+   Kullanabileceğin sayfalar:
+   - [hizmetlerimiz](/hizmetler) - Hizmetler sayfası
+   - [iletişim](/iletisim) - İletişim sayfası  
+   - [hakkımızda](/hakkimda) - Hakkımızda sayfası
+   - [tahliye davası hakkında](/blog/ihtiyac-nedeniyle-tahliye-davasi) - Tahliye blog yazısı
+   - [işyeri kira sözleşmesi](/blog/isyeri-kira-sozlesmesi-rehberi) - İşyeri kira blog yazısı
+   - [arabuluculuk süreci](/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci) - Arabuluculuk blog yazısı
+   
+   Örnek kullanım:
+   "Bu konuda detaylı bilgi için [hizmetlerimiz](/hizmetler) sayfamızı inceleyebilirsiniz."
+   "Profesyonel destek almak için [bizimle iletişime geçin](/iletisim)."
+
+6. FORMAT (MDX):
 ---
 title: "[Konu ile ilgili SEO odaklı başlık]"
 date: "${dateString}"
