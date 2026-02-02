@@ -6,11 +6,12 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/ui/logo";
 import { MobileNav } from "./MobileNav";
 import { cn } from "@/lib/utils";
+import { Phone } from "lucide-react";
 
 const navigation = [
     { name: "Anasayfa", href: "/" },
-    { name: "Hukuki Makaleler", href: "/blog" },
-    { name: "Hizmetlerimiz", href: "/hizmetler" },
+    { name: "Makaleler", href: "/blog" },
+    { name: "Hizmetler", href: "/hizmetler" },
     { name: "Hakkımızda", href: "/hakkimda" },
     { name: "İletişim", href: "/iletisim" },
 ];
@@ -21,7 +22,7 @@ export function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 10);
+            setIsScrolled(window.scrollY > 20);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -30,29 +31,29 @@ export function Header() {
     return (
         <header
             className={cn(
-                "fixed top-0 w-full z-50 transition-all duration-300",
+                "fixed top-0 w-full z-50 transition-all duration-500",
                 isScrolled
-                    ? "bg-white/80 backdrop-blur-md border-b border-border py-4"
-                    : "bg-white border-b border-transparent py-6"
+                    ? "bg-white/95 backdrop-blur-md border-b border-border shadow-sm py-3"
+                    : "bg-transparent py-6"
             )}
         >
             <div className="container mx-auto px-4">
                 <nav className="flex items-center justify-between">
                     <div className="flex-shrink-0">
-                        <Link href="/" className="hover:opacity-80 transition-opacity">
+                        <Link href="/" className="hover:opacity-90 transition-opacity">
                             <Logo />
                         </Link>
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-10">
+                    <div className="hidden md:flex items-center gap-12">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
-                                    pathname === item.href ? "text-primary" : "text-muted-foreground"
+                                    "text-xs font-bold uppercase tracking-[0.25em] transition-all hover:text-secondary",
+                                    pathname === item.href ? "text-primary border-b border-secondary" : "text-primary/70"
                                 )}
                             >
                                 {item.name}
@@ -60,12 +61,15 @@ export function Header() {
                         ))}
                     </div>
 
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex items-center gap-6">
                         <Link
                             href="tel:+905445854645"
-                            className="text-xs font-bold uppercase tracking-widest text-primary border-b border-primary pb-0.5 hover:text-muted-foreground hover:border-muted-foreground transition-all"
+                            className="flex items-center gap-2 text-sm font-serif font-bold text-primary group"
                         >
-                            0544 585 46 45
+                            <div className="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                                <Phone className="w-3.5 h-3.5" />
+                            </div>
+                            <span className="tracking-widest">0544 585 46 45</span>
                         </Link>
                     </div>
 
