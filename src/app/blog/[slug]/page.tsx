@@ -69,18 +69,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     </Link>
 
                     {/* MDX Content Rendering */}
-                    <div className="prose prose-slate prose-lg max-w-none 
-            prose-headings:font-playfair prose-headings:font-bold prose-headings:text-primary
-            prose-h1:text-4xl prose-h1:mb-8 prose-h1:mt-12
-            prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-10 prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-4
-            prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-8
-            prose-p:text-slate-600 prose-p:leading-relaxed prose-p:text-lg prose-p:mb-6
+                    <div className="prose prose-slate prose-xl max-w-none 
+            prose-headings:font-playfair prose-headings:font-extrabold prose-headings:text-primary
+            prose-h1:text-5xl prose-h1:mb-10 prose-h1:mt-14 prose-h1:leading-tight
+            prose-h2:text-4xl prose-h2:mb-8 prose-h2:mt-14 prose-h2:border-b-2 prose-h2:border-primary/20 prose-h2:pb-4
+            prose-h3:text-2xl prose-h3:mb-6 prose-h3:mt-10 prose-h3:text-primary/90
+            prose-p:text-slate-700 prose-p:leading-relaxed prose-p:text-lg prose-p:mb-6
             prose-strong:text-primary prose-strong:font-bold
             prose-a:text-secondary-foreground prose-a:font-bold hover:prose-a:underline
             prose-img:rounded-3xl prose-img:shadow-xl
-            prose-li:text-slate-600 prose-li:mb-3
+            prose-li:text-slate-700 prose-li:mb-3 prose-li:text-lg
             prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:bg-slate-50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic
-            prose-hr:my-12 prose-hr:border-slate-200
+            prose-hr:my-16 prose-hr:border-slate-300
             prose-table:border-collapse prose-table:w-full prose-table:my-8
             prose-th:bg-primary prose-th:text-white prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-bold
             prose-td:border prose-td:border-slate-200 prose-td:px-4 prose-td:py-3
