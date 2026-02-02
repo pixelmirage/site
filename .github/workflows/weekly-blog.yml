@@ -1,0 +1,37 @@
+name: Weekly Blog Automation
+
+on:
+  schedule:
+    # Runs every Monday at 09:00 UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  generate-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install @google/generative-ai slugify
+
+      - name: Generate New Blog Post
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node automation/generate_post.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Mert Kagan AI"
+          git config --global user.email "ai@mertkagancetin.com"
+          git add src/content/blog/*.mdx
+          git commit -m "Auto-generated weekly blog post [skip ci]" || echo "No changes to commit"
+          git push
