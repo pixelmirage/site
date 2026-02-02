@@ -11,7 +11,7 @@ if (!API_KEY) {
 }
 
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 const topics = [
     "İzmir'de Kira Artış Oranı Hesaplama ve Kanuni Sınırlar",
