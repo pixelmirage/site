@@ -11,7 +11,7 @@ if (!API_KEY) {
 }
 
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-3.0-flash" });
 
 // Topics with matching Unsplash images
 const topicsWithImages = [
