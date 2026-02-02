@@ -37,4 +37,5 @@ jobs:
           git config --global user.email "ai@mertkagancetin.com"
           git add src/content/blog/*.mdx
           git commit -m "Auto-generated weekly blog post [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin master
           git push
