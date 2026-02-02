@@ -1,97 +1,82 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-    Home,
-    Key,
-    Gavel,
-    FileText,
-    Users2,
-    Scale
-} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Scale, Key, Home, FileText, Gavel, Users2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const services = [
     {
         title: "Kira Tespit Davası",
-        description: "Kira bedelinin güncel piyasa koşullarına göre yeniden belirlenmesi süreçlerinde teknik ve hukuki destek.",
+        description: "Kira bedelinin güncel piyasa ve emsal değerlerine göre yeniden belirlenmesi.",
         icon: Scale,
-        href: "/hizmetler/kira-tespit-davasi"
+        href: "/hizmetler#kira-tespit"
     },
     {
-        title: "Tahliye Davaları",
-        description: "İhtiyaç, temerrüt veya iki haklı ihtar nedeniyle tahliye süreçlerinin yönetimi ve takibi.",
+        title: "Tahliye Süreçleri",
+        description: "İhtiyaç, temerrüt veya ihlal nedeniyle tahliye davalarının yönetimi.",
         icon: Key,
-        href: "/hizmetler/tahliye-davasi"
+        href: "/hizmetler#tahliye"
     },
     {
         title: "Tahliye Taahhütnamesi",
-        description: "Geçerli tahliye taahhütnamesi hazırlanması ve uygulama süreçlerinde hak kaybının önlenmesi.",
+        description: "Geçerli taahhütname hazırlığı ve icra takiplerinin profesyonel yönetimi.",
         icon: FileText,
-        href: "/hizmetler/tahliye-taahhudu"
+        href: "/hizmetler#taahhut"
     },
     {
-        title: "Gayrimenkul Hukuku",
-        description: "Tapu iptal tescil, el atmanın önlenmesi ve ortaklığın giderilmesi davalarında uzman temsil.",
+        title: "Tapu & Mülkiyet",
+        description: "Tapu iptal, tescil ve taşınmaz mülkiyetine dair tüm uyuşmazlıklar.",
         icon: Home,
-        href: "/hizmetler/gayrimenkul-hukuku"
+        href: "/hizmetler#gayrimenkul"
     },
     {
-        title: "Kira Sözleşmesi",
-        description: "İleride doğabilecek uyuşmazlıkları minimize eden, dinamik ve kapsamlı kira sözleşmeleri.",
+        title: "Sözleşme Hazırlığı",
+        description: "İşyeri ve konut kira sözleşmelerinin risk yönetimi odaklı hazırlanması.",
         icon: Gavel,
-        href: "/hizmetler/kira-sozlesmesi"
+        href: "/hizmetler#sozlesme"
     },
     {
-        title: "Hukuki Danışmanlık",
-        description: "Mülk yönetimi ve kira hukuku alanında önleyici hukuk hizmetleri ve stratejik çözüm önerileri.",
+        title: "Arabuluculuk",
+        description: "Kira uyuşmazlıklarında zorunlu arabuluculuk süreçlerinde profesyonel temsil.",
         icon: Users2,
-        href: "/hizmetler/danismanlik"
+        href: "/hizmetler#arabuluculuk"
     }
 ];
 
 export function ServicesGrid() {
     return (
-        <section className="py-24 bg-slate-50">
+        <section className="py-32 bg-slate-50/50">
             <div className="container mx-auto px-4">
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-sm uppercase tracking-[0.3em] font-bold text-secondary-foreground mb-4">
-                        Uzmanlık Alanlarımız
-                    </h2>
-                    <h3 className="text-3xl md:text-5xl font-playfair font-bold text-primary mb-6">
-                        Kira ve Gayrimenkul Hukukunda Profesyonel Çözümler
-                    </h3>
-                    <p className="text-muted-foreground text-lg">
-                        İzmir'de kira uyuşmazlıkları ve gayrimenkul hukuku alanında uzman kadromuzla, her müvekkile özel stratejiler geliştiriyoruz.
-                    </p>
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
+                    <div className="max-w-2xl space-y-4">
+                        <h2 className="text-12 font-medium tracking-widest uppercase text-muted-foreground">Uzmanlık Alanları</h2>
+                        <h3 className="text-4xl font-playfair font-bold text-primary">Profesyonel Hukuki Hizmetler</h3>
+                    </div>
+                    <Link href="/hizmetler" className="text-sm font-bold uppercase tracking-widest text-primary hover:text-muted-foreground transition-colors pb-1 flex items-center gap-2 border-b border-primary">
+                        Tüm Hizmetler
+                        <ArrowRight className="w-4 h-4" />
+                    </Link>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <Link href={service.href}>
-                                <Card className="h-full border-none shadow-sm hover:shadow-xl transition-all duration-300 group bg-white">
-                                    <CardHeader>
-                                        <div className="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
-                                            <service.icon className="w-6 h-6 text-primary group-hover:text-white" />
-                                        </div>
-                                        <CardTitle className="font-playfair text-xl text-primary group-hover:text-primary/80 transition-colors">
-                                            {service.title}
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            {service.description}
-                                        </p>
-                                    </CardContent>
-                                </Card>
+                            <Link href={service.href} className="group block h-full bg-white hover:bg-slate-50 transition-colors p-10">
+                                <service.icon className="w-8 h-8 text-primary/40 mb-8 group-hover:text-primary transition-colors" />
+                                <h4 className="text-xl font-playfair font-bold text-primary mb-4">{service.title}</h4>
+                                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                                    {service.description}
+                                </p>
+                                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                                    İncele <ArrowRight className="w-3 h-3" />
+                                </div>
                             </Link>
                         </motion.div>
                     ))}

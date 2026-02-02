@@ -1,17 +1,25 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { MobileNav } from "./MobileNav";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Logo } from "@/components/ui/logo";
-import { PhoneCall } from "lucide-react";
+import { MobileNav } from "./MobileNav";
+import { cn } from "@/lib/utils";
+
+const navigation = [
+    { name: "Anasayfa", href: "/" },
+    { name: "Hukuki Makaleler", href: "/blog" },
+    { name: "Hizmetlerimiz", href: "/hizmetler" },
+    { name: "Hakkımızda", href: "/hakkimda" },
+    { name: "İletişim", href: "/iletisim" },
+];
 
 export function Header() {
-    const [isScrolled, setIsScrolled] = React.useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname();
 
-    React.useEffect(() => {
+    useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
         };
@@ -19,47 +27,53 @@ export function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const navItems = [
-        { href: "/", label: "Anasayfa" },
-        { href: "/hakkimda", label: "Hakkımda" },
-        { href: "/hizmetler", label: "Hizmetler" },
-        { href: "/blog", label: "Makaleler" },
-        { href: "/iletisim", label: "İletişim" },
-    ];
-
     return (
         <header
             className={cn(
-                "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
+                "fixed top-0 w-full z-50 transition-all duration-300",
                 isScrolled
-                    ? "bg-white/95 backdrop-blur-md shadow-sm border-border py-2"
-                    : "bg-transparent py-4"
+                    ? "bg-white/80 backdrop-blur-md border-b border-border py-4"
+                    : "bg-white border-b border-transparent py-6"
             )}
         >
-            <div className="container mx-auto px-4 flex items-center justify-between">
-                <Logo />
+            <div className="container mx-auto px-4">
+                <nav className="flex items-center justify-between">
+                    <div className="flex-shrink-0">
+                        <Link href="/" className="hover:opacity-80 transition-opacity">
+                            <Logo />
+                        </Link>
+                    </div>
 
-                {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-8">
-                    {navItems.map((item) => (
+                    {/* Desktop Navigation */}
+                    <div className="hidden md:flex items-center gap-10">
+                        {navigation.map((item) => (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                className={cn(
+                                    "text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
+                                    pathname === item.href ? "text-primary" : "text-muted-foreground"
+                                )}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </div>
+
+                    <div className="hidden md:block">
                         <Link
-                            key={item.href}
-                            href={item.href}
-                            className="text-sm font-medium hover:text-primary transition-colors hover:underline underline-offset-4"
+                            href="tel:+905445854645"
+                            className="text-xs font-bold uppercase tracking-widest text-primary border-b border-primary pb-0.5 hover:text-muted-foreground hover:border-muted-foreground transition-all"
                         >
-                            {item.label}
+                            0544 585 46 45
                         </Link>
-                    ))}
-                    <Button className="gap-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 font-semibold" asChild>
-                        <Link href="/iletisim">
-                            <PhoneCall className="w-4 h-4" />
-                            <span>0544 585 46 45</span>
-                        </Link>
-                    </Button>
-                </nav>
+                    </div>
 
-                {/* Mobile Nav */}
-                <MobileNav />
+                    {/* Mobile Nav */}
+                    <div className="md:hidden">
+                        <MobileNav />
+                    </div>
+                </nav>
             </div>
         </header>
     );
