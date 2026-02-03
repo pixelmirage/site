@@ -118,8 +118,8 @@ export default function ContactPage() {
                                         </div>
 
                                         <div className="space-y-2">
-                                            <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">E-posta (İsteğe Bağlı)</label>
-                                            <Input name="email" type="email" placeholder="ornek@mail.com" className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                            <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">E-posta</label>
+                                            <Input name="email" type="email" placeholder="ornek@mail.com" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                         </div>
 
                                         <div className="space-y-2">
