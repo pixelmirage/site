@@ -66,6 +66,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati" },
                     { name: `${district} Kira Avukatı`, url: `https://mertkagancetin.com/${slug}` }
                 ]}
             />

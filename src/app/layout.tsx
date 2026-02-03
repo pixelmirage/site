@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     canonical: 'https://mertkagancetin.com',
   },
   verification: {
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+    // google: 'YOUR_GOOGLE_VERIFICATION_CODE',
   },
 };
 
