@@ -111,7 +111,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <Button className="w-full bg-primary text-white hover:bg-primary/90" asChild>
-                                        <Link href="/iletisim text-white">İletişime Geçin</Link>
+                                        <Link href="/iletisim">İletişime Geçin</Link>
                                     </Button>
                                 </CardContent>
                             </Card>
