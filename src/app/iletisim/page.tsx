@@ -101,26 +101,30 @@ export default function ContactPage() {
                                         Aşağıdaki formu doldurarak durumunuz hakkında ön bilgi iletebilirsiniz. Mesajınıza en kısa sürede dönüş sağlanacaktır.
                                     </p>
 
-                                    <form className="space-y-6">
+                                    <form
+                                        action="https://formspree.io/f/xnqerqzv"
+                                        method="POST"
+                                        className="space-y-6"
+                                    >
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="space-y-2">
                                                 <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Ad Soyad</label>
-                                                <Input placeholder="Adınız ve Soyadınız" className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                                <Input name="ad-soyad" placeholder="Adınız ve Soyadınız" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                             </div>
                                             <div className="space-y-2">
                                                 <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Telefon</label>
-                                                <Input placeholder="05XX XXX XX XX" className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                                <Input name="telefon" placeholder="05XX XXX XX XX" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
                                             <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">E-posta (İsteğe Bağlı)</label>
-                                            <Input placeholder="ornek@mail.com" className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                            <Input name="email" type="email" placeholder="ornek@mail.com" className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                         </div>
 
                                         <div className="space-y-2">
                                             <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Konu / Hizmet</label>
-                                            <select className="flex h-12 w-full rounded-md border border-transparent bg-slate-50 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 focus:bg-white focus:border-primary/20 font-sans">
+                                            <select name="konu" className="flex h-12 w-full rounded-md border border-transparent bg-slate-50 px-3 py-2 text-base font-sans">
                                                 <option>Tahliye Davası</option>
                                                 <option>Kira Tespit Davası</option>
                                                 <option>Gayrimenkul Hukuku</option>
@@ -130,10 +134,13 @@ export default function ContactPage() {
 
                                         <div className="space-y-2">
                                             <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Mesajınız</label>
-                                            <Textarea placeholder="Hukuki uyuşmazlığınızı kısaca özetleyin..." className="min-h-[150px] bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                            <Textarea name="mesaj" placeholder="Hukuki uyuşmazlığınızı kısaca özetleyin..." required className="min-h-[150px] bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                         </div>
 
-                                        <Button className="w-full bg-primary text-white hover:bg-primary/90 h-14 text-lg font-bold gap-2">
+                                        <input type="hidden" name="_replyto" value="mertkagancetin@gmail.com" />
+                                        <input type="hidden" name="_subject" value="Yeni Web Sitesi İletişim Mesajı" />
+
+                                        <Button type="submit" className="w-full bg-primary text-white hover:bg-primary/90 h-14 text-lg font-bold gap-2">
                                             <Send className="w-5 h-5" />
                                             Gönder
                                         </Button>
