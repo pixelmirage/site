@@ -96,7 +96,7 @@ export default function IzmirKiraAvukatiPage() {
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
-                                <a href="tel:+905551234567">
+                                <a href="tel:+905445854645">
                                     Hemen Arayın
                                 </a>
                             </Button>
@@ -339,7 +339,7 @@ export default function IzmirKiraAvukatiPage() {
                                         <Phone className="w-6 h-6 text-secondary" />
                                         <div>
                                             <p className="text-sm text-slate-400">Telefon</p>
-                                            <a href="tel:+905551234567" className="font-bold hover:text-secondary transition-colors">0555 123 45 67</a>
+                                            <a href="tel:+905445854645" className="font-bold hover:text-secondary transition-colors">0544 585 46 45</a>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
@@ -365,7 +365,7 @@ export default function IzmirKiraAvukatiPage() {
                                         </Link>
                                     </Button>
                                     <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
-                                        <a href="https://wa.me/905551234567">
+                                        <a href="https://wa.me/905445854645">
                                             WhatsApp ile Yazın
                                         </a>
                                     </Button>

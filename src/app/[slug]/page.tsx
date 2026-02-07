@@ -191,15 +191,14 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                     {district} bölgesindeki gayrimenkulünüzle ilgili hukuki sorununuzu dinleyelim, çözüm yolunu birlikte belirleyelim.
                                 </p>
                                 <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold" asChild>
-                                    <a href="tel:+905551234567" className="flex items-center justify-center gap-2">
-                                        <Phone className="w-5 h-5" />
-                                        Hemen Arayın
+                                    <a href="https://wa.me/905445854645" className="flex items-center justify-center gap-2">
+                                        WhatsApp ile Yazın
                                     </a>
                                 </Button>
                                 <div className="mt-4 pt-4 border-t border-white/10 text-center">
-                                    <p className="text-xs text-slate-400 mb-2">veya WhatsApp'tan yazın</p>
-                                    <a href="https://wa.me/905551234567" className="text-secondary hover:text-white transition-colors font-medium text-sm">
-                                        0555 123 45 67
+                                    <p className="text-xs text-slate-400 mb-2">veya telefonla arayın</p>
+                                    <a href="tel:+905445854645" className="text-secondary hover:text-white transition-colors font-medium text-sm">
+                                        0544 585 46 45
                                     </a>
                                 </div>
                             </div>
