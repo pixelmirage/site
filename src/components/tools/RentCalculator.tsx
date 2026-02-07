@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Calculator, RotateCcw, TrendingUp } from "lucide-react";
+import { Calculator, RotateCcw } from "lucide-react";
 
 // Mock Data for TÜFE (In a real app, this could be fetched from an API)
 const tufeRates = {
@@ -20,26 +19,14 @@ const tufeRates = {
 
 export function RentCalculator() {
     const [currentRent, setCurrentRent] = useState<string>("");
-    const [selectedDate, setSelectedDate] = useState<string>("2025-01");
-    const [rateType, setRateType] = useState<"tufe" | "konut-sinir" | "manual">("tufe");
     const [manualRate, setManualRate] = useState<string>("");
     const [result, setResult] = useState<{ newRent: number; increaseAmount: number; rate: number } | null>(null);
 
     const handleCalculate = () => {
         const rent = parseFloat(currentRent);
-        if (isNaN(rent)) return;
+        const rate = parseFloat(manualRate);
 
-        let rate = 0;
-
-        if (rateType === "tufe") {
-            rate = tufeRates[selectedDate as keyof typeof tufeRates] || 65.00;
-        } else if (rateType === "konut-sinir") {
-            rate = 25.00; // Old regulation, kept for reference or specific contracts
-        } else {
-            rate = parseFloat(manualRate);
-        }
-
-        if (isNaN(rate)) return;
+        if (isNaN(rent) || isNaN(rate)) return;
 
         const increaseAmount = (rent * rate) / 100;
         const newRent = rent + increaseAmount;
@@ -65,7 +52,7 @@ export function RentCalculator() {
                 </div>
                 <CardTitle className="text-2xl font-serif font-bold text-primary">Kira Artış Hesaplama</CardTitle>
                 <CardDescription>
-                    2025 yılı güncel TÜFE oranlarına göre yasal kira artışını hesaplayın.
+                    Mevcut kiranızı ve uygulamak istediğiniz artış oranını girerek yeni dönem kira bedelini hesaplayın.
                 </CardDescription>
             </CardHeader>
             <CardContent className="p-6 space-y-6">
@@ -82,52 +69,18 @@ export function RentCalculator() {
                     </div>
 
                     <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Hesaplama Yöntemi</label>
-                        <Select value={rateType} onValueChange={(v: any) => setRateType(v)}>
-                            <SelectTrigger className="h-12">
-                                <SelectValue />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="tufe">TÜFE (12 Aylık Ortalama)</SelectItem>
-                                <SelectItem value="manual">Özel Oran Gir</SelectItem>
-                                {/* <SelectItem value="konut-sinir">Konut Sınırı (%25 - Sona Erdi)</SelectItem> */}
-                            </SelectContent>
-                        </Select>
+                        <label className="text-sm font-bold text-slate-700">Artış Oranı (%)</label>
+                        <Input
+                            type="number"
+                            placeholder="Örn: 65.07"
+                            value={manualRate}
+                            onChange={(e) => setManualRate(e.target.value)}
+                            className="h-12 text-lg"
+                        />
+                        <p className="text-xs text-muted-foreground mt-1">
+                            * Kasım 2024 TÜFE ortalaması %62,02 olarak açıklanmıştır.
+                        </p>
                     </div>
-
-                    {rateType === "tufe" && (
-                        <div className="space-y-2">
-                            <label className="text-sm font-bold text-slate-700">Sözleşme Yenileme Dönemi</label>
-                            <Select value={selectedDate} onValueChange={setSelectedDate}>
-                                <SelectTrigger className="h-12">
-                                    <SelectValue />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectItem value="2025-01">Ocak 2025 (%64,77)</SelectItem>
-                                    <SelectItem value="2024-12">Aralık 2024 (%64,77)</SelectItem>
-                                    <SelectItem value="2024-11">Kasım 2024 (%62,02)</SelectItem>
-                                    <SelectItem value="2024-10">Ekim 2024 (%63,47)</SelectItem>
-                                    <SelectItem value="2024-09">Eylül 2024 (%64,91)</SelectItem>
-                                </SelectContent>
-                            </Select>
-                            <p className="text-xs text-muted-foreground mt-1">
-                                * Seçilen ayın açıklanan 12 aylık TÜFE ortalaması baz alınır.
-                            </p>
-                        </div>
-                    )}
-
-                    {rateType === "manual" && (
-                        <div className="space-y-2">
-                            <label className="text-sm font-bold text-slate-700">Artış Oranı (%)</label>
-                            <Input
-                                type="number"
-                                placeholder="Örn: 50"
-                                value={manualRate}
-                                onChange={(e) => setManualRate(e.target.value)}
-                                className="h-12"
-                            />
-                        </div>
-                    )}
 
                     <Button onClick={handleCalculate} size="lg" className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-14 text-lg shadow-lg shadow-primary/20 transition-all active:scale-[0.98]">
                         HESAPLA
