@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     // Static Routes
-    const routes = ['', '/izmir-kira-avukati', '/hakkimda', '/hizmetler', '/blog', '/iletisim', '/kira-artis-orani-hesaplama'].map((route) => ({
+    const routes = ['', '/izmir-kira-avukati', '/hakkimda', '/hizmetler', '/blog', '/iletisim', '/kira-artis-orani-hesaplama', '/tahliye-taahhutnamesi'].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
