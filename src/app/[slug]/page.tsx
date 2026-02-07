@@ -152,16 +152,18 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                             <div className="not-prose bg-slate-50 p-6 rounded-xl border border-slate-100 my-8">
                                 <h4 className="flex items-center gap-2 font-bold text-primary text-xl mb-4">
                                     <Map className="w-6 h-6 text-secondary" />
-                                    {district} Bölgesel Özellikleri
+                                    {district} Hizmet Bölgelerimiz
                                 </h4>
-                                <ul className="grid grid-cols-1 gap-3">
-                                    {features.map((item, i) => (
-                                        <li key={i} className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-white p-3 rounded-lg border border-slate-100 shadow-sm">
-                                            <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                                            {item}
-                                        </li>
+                                <p className="text-sm text-slate-600 mb-4">
+                                    {district} genelinde, özellikle şu mahallelerde yoğun faaliyet göstermekteyiz:
+                                </p>
+                                <div className="flex flex-wrap gap-2">
+                                    {districtData?.neighborhoods?.map((nb, i) => (
+                                        <span key={i} className="text-xs font-medium bg-white px-3 py-1 rounded-full border border-slate-200 text-slate-600">
+                                            {nb}
+                                        </span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
 
                             <h3>{district} Kiracı Tahliye Davaları</h3>
@@ -169,6 +171,13 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 {district} sınırları içerisindeki konut ve işyerleri için tahliye süreçleri, Türk Borçlar Kanunu'nun emredici hükümlerine tabidir.
                                 Özellikle {features[0]} ve çevresindeki uyuşmazlıklarda, yerel emsal kararlar ve bölgesel rayiçler davanın seyrini etkileyebilmektedir.
                             </p>
+
+                            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
+                                <h4 className="font-bold text-blue-900 text-lg mb-2">{districtData?.legalFocus?.title}</h4>
+                                <p className="text-blue-800 text-sm leading-relaxed">
+                                    {districtData?.legalFocus?.detail}
+                                </p>
+                            </div>
 
                             <p>
                                 Kiracınız kira ödemiyorsa, 10 yıllık uzama süresi dolduysa veya kendiniz/yakınınız için konut ihtiyacı doğduysa

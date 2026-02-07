@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Blog Posts
     const posts = getAllPosts();
     const blogSitemap = posts.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
+        url: `${baseUrl}/blog/${post.slug}/`,
         lastModified: new Date(post.date),
         changeFrequency: 'weekly' as const,
         priority: 0.7,
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // District Landing Pages (Programmatic SEO)
     const districtSitemap = districts.map((district) => ({
-        url: `${baseUrl}/${getSlugFromDistrict(district)}-kira-avukati`,
+        url: `${baseUrl}/${getSlugFromDistrict(district)}-kira-avukati/`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Static Routes
     const routes = ['', '/izmir-kira-avukati', '/hakkimda', '/hizmetler', '/blog', '/iletisim', '/kira-artis-orani-hesaplama', '/tahliye-taahhutnamesi'].map((route) => ({
-        url: `${baseUrl}${route}`,
+        url: `${baseUrl}${route}${route === '' ? '' : '/'}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: route === '' ? 1 : 0.8,
