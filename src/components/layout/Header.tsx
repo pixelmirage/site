@@ -10,6 +10,7 @@ import { Phone } from "lucide-react";
 
 const navigation = [
     { name: "Anasayfa", href: "/" },
+    { name: "İzmir Kira Avukatı", href: "/izmir-kira-avukati" },
     { name: "Makaleler", href: "/blog" },
     { name: "Hizmetler", href: "/hizmetler" },
     { name: "Hakkımızda", href: "/hakkimda" },

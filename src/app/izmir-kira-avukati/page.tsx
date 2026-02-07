@@ -133,7 +133,8 @@ export default function IzmirKiraAvukatiPage() {
                         {/* Intro */}
                         <p className="text-xl leading-relaxed">
                             İzmir'de kira hukuku alanında uzmanlaşmış bir avukat olarak, ev sahipleri ve kiracılar arasındaki
-                            uyuşmazlıkların çözümünde profesyonel hukuki destek sunuyoruz. <strong>İzmir kira avukatı</strong> olarak
+                            uyuşmazlıkların çözümünde profesyonel hukuki destek sunuyoruz. Özellikle <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) bölgesindeki ofisimizden
+                            tüm süreçleri yakından takip ediyoruz. <strong>İzmir kira avukatı</strong> olarak
                             tahliye davaları, kira tespit davaları, kira sözleşmesi hazırlanması ve arabuluculuk süreçlerinde
                             müvekkillerimize rehberlik ediyoruz.
                         </p>
@@ -370,6 +371,39 @@ export default function IzmirKiraAvukatiPage() {
                                         </a>
                                     </Button>
                                 </div>
+                            </div>
+                        </div>
+
+                        {/* Local Hub Section - Internal Linking Strategy */}
+                        <div className="not-prose my-16 bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                            <h2 className="text-2xl font-bold mb-6 text-center">İzmir'in Tüm İlçelerinde Kira Avukatı Hizmeti</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+                                Ofisimiz Bayraklı Adliyesi'nin hemen karşısında yer almakta olup, İzmir'in tüm merkez ilçelerinde
+                                kira hukuku davalarını takip etmektedir. İlçe bazlı hizmetlerimiz için aşağıdaki bağlantıları inceleyebilirsiniz:
+                            </p>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                {[
+                                    { name: "Bayraklı Kira Avukatı", url: "/bayrakli-kira-avukati" },
+                                    { name: "Karşıyaka Kira Avukatı", url: "/karsiyaka-kira-avukati" },
+                                    { name: "Bornova Kira Avukatı", url: "/bornova-kira-avukati" },
+                                    { name: "Konak Kira Avukatı", url: "/konak-kira-avukati" },
+                                    { name: "Buca Kira Avukatı", url: "/buca-kira-avukati" },
+                                    { name: "Çiğli Kira Avukatı", url: "/cigli-kira-avukati" },
+                                    { name: "Gaziemir Kira Avukatı", url: "/gaziemir-kira-avukati" },
+                                    { name: "Balçova Kira Avukatı", url: "/balcova-kira-avukati" },
+                                    { name: "Narlıdere Kira Avukatı", url: "/narlidere-kira-avukati" },
+                                    { name: "Karabağlar Kira Avukatı", url: "/karabaglar-kira-avukati" },
+                                    { name: "Güzelbahçe Kira Avukatı", url: "/guzelbahce-kira-avukati" },
+                                ].map((district) => (
+                                    <Link
+                                        key={district.url}
+                                        href={district.url}
+                                        className="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:text-secondary transition-all text-sm font-medium text-slate-700 border border-slate-200"
+                                    >
+                                        <ChevronRight className="w-4 h-4 text-secondary" />
+                                        {district.name}
+                                    </Link>
+                                ))}
                             </div>
                         </div>
 
