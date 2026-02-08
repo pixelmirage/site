@@ -113,10 +113,12 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    - Başlık ve alt başlıklarda anahtar kelime olsun.
 
 6. İÇ LİNKLER (ÇOK ÖNEMLİ - SEO İÇİN KRİTİK):
-   - Makale içinde EN AZ 3 iç link kullan.
+   - **ZORUNLU LİNK:** Her makale kesinlikle en az bir kez "İzmir kira avukatı" metni üzerinden [İzmir kira avukatı](/izmir-kira-avukati) sayfasına link vermelidir. Bu en önemli kuraldır.
+   - Makale içinde TOPLAMDA EN AZ 4 iç link kullan.
    - Linkleri şu formatta yaz: [link metni](/sayfa-yolu)
    
    Kullanabileceğin sayfalar:
+   - [İzmir kira avukatı](/izmir-kira-avukati) - ANA HEDEF SAYFA (MUTLAKA KULLAN)
    - [hizmetlerimiz](/hizmetler) - Hizmetler sayfası
    - [iletişim](/iletisim) - İletişim sayfası  
    - [hakkımızda](/hakkimda) - Hakkımızda sayfası
@@ -125,8 +127,8 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    - [arabuluculuk süreci](/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci) - Arabuluculuk blog yazısı
    
    Örnek kullanım:
-   "Bu konuda detaylı bilgi için [hizmetlerimiz](/hizmetler) sayfamızı inceleyebilirsiniz."
-   "Profesyonel destek almak için [bizimle iletişime geçin](/iletisim)."
+   "Bu konuda profesyonel destek için [İzmir kira avukatı](/izmir-kira-avukati) ekibimizle görüşebilirsiniz."
+   "Detaylı bilgi için [hizmetlerimiz](/hizmetler) sayfamıza göz atın."
 
 7. FORMAT (MDX):
 ---
