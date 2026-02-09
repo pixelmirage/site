@@ -31,7 +31,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    İzmir merkezli faaliyet gösteren hukuk büromuzun kurucusu olan Avukat Mert Kağan Çetin, meslek hayatı boyunca özellikle gayrimenkul hukuku, kira hukuku ve tazminat hukuku alanlarında derinlemesine uzmanlaşmıştır.
+                                    İzmir merkezli faaliyet gösteren hukuk büromuzun kurucusu olan Avukat Mert Kağan Çetin, meslek hayatı boyunca özellikle gayrimenkul hukuku, <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">kira hukuku</Link> ve tazminat hukuku alanlarında derinlemesine uzmanlaşmıştır.
                                 </p>
                                 <p>
                                     Kira uyuşmazlıklarının toplumsal ve ekonomik boyutlarını yakından takip ederek, müvekkillerine yalnızca mahkeme süreçlerinde değil, aynı zamanda uyuşmazlık öncesi danışmanlık aşamasında da stratejik yönlendirmeler sunmaktadır.

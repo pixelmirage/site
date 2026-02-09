@@ -17,6 +17,7 @@ export function Footer() {
                         <h4 className="text-xs font-bold uppercase tracking-widest text-primary">Navigasyon</h4>
                         <ul className="space-y-4">
                             <li><Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuki Makaleler</Link></li>
+                            <li><Link href="/izmir-kira-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Kira Avukatı</Link></li>
                             <li><Link href="/hizmetler" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hizmetlerimiz</Link></li>
                             <li><Link href="/hakkimda" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hakkımızda</Link></li>
                             <li><Link href="/iletisim" className="text-sm text-muted-foreground hover:text-primary transition-colors">İletişim</Link></li>

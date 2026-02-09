@@ -44,7 +44,7 @@ export function Hero() {
                             className="max-w-2xl mx-auto"
                         >
                             <h2 className="text-xl md:text-2xl font-serif text-primary/80 mb-6 italic">
-                                İzmir Kira Avukatı & Gayrimenkul Danışmanı
+                                <Link href="/izmir-kira-avukati" className="hover:text-secondary transition-colors">İzmir Kira Avukatı</Link> &amp; Gayrimenkul Danışmanı
                             </h2>
                             <p className="text-base md:text-lg text-muted-foreground leading-relaxed font-light">
                                 Gayrimenkul uyuşmazlıkları ve kira hukuku alanında, yılların getirdiği tecrübe ve kararlılıkla, mülkiyet haklarınızı en üst düzeyde savunuyoruz.

@@ -56,7 +56,7 @@ export default function ServicesPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hizmet Alanlarımız</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                        İzmir'de gayrimenkul ve kira hukuku alanında uzmanlaşmış kadromuzla yanınızdayız.
+                        <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak gayrimenkul ve kira hukuku alanında uzmanlaşmış kadromuzla yanınızdayız.
                     </p>
                 </div>
             </section>
