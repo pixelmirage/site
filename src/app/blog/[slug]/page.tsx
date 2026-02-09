@@ -124,16 +124,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     />
 
                     {/* MDX Content Rendering */}
-                    <div className="prose prose-slate prose-lg max-w-none 
+                    <div className="prose prose-slate max-w-none 
             prose-headings:font-playfair prose-headings:font-black prose-headings:text-slate-900
-            prose-h1:text-4xl prose-h1:mb-8 prose-h1:mt-16 prose-h1:leading-tight prose-h1:bg-gradient-to-r prose-h1:from-primary/10 prose-h1:to-transparent prose-h1:py-4 prose-h1:px-6 prose-h1:-mx-6 prose-h1:rounded-lg prose-h1:border-l-4 prose-h1:border-primary
-            prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-16 prose-h2:bg-slate-100 prose-h2:py-4 prose-h2:px-6 prose-h2:-mx-6 prose-h2:rounded-lg prose-h2:border-l-4 prose-h2:border-secondary
-            prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-10 prose-h3:text-primary prose-h3:font-bold prose-h3:border-b prose-h3:border-slate-200 prose-h3:pb-2
-            prose-p:text-slate-700 prose-p:leading-[1.9] prose-p:text-base prose-p:mb-6
+            [&>h1]:text-[2.5rem] [&>h1]:mb-8 [&>h1]:mt-16 [&>h1]:leading-tight [&>h1]:bg-gradient-to-r [&>h1]:from-primary/10 [&>h1]:to-transparent [&>h1]:py-4 [&>h1]:px-6 [&>h1]:-mx-6 [&>h1]:rounded-lg [&>h1]:border-l-4 [&>h1]:border-primary
+            [&>h2]:text-[1.75rem] [&>h2]:mb-6 [&>h2]:mt-14 [&>h2]:bg-slate-100 [&>h2]:py-4 [&>h2]:px-6 [&>h2]:-mx-6 [&>h2]:rounded-lg [&>h2]:border-l-4 [&>h2]:border-secondary
+            [&>h3]:text-[1.375rem] [&>h3]:mb-4 [&>h3]:mt-10 [&>h3]:text-primary [&>h3]:font-bold [&>h3]:border-b [&>h3]:border-slate-200 [&>h3]:pb-2
+            [&>p]:text-[1rem] [&>p]:text-slate-700 [&>p]:leading-[1.85] [&>p]:mb-5
             prose-strong:text-primary prose-strong:font-bold
             prose-a:text-secondary prose-a:font-semibold prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary
             prose-img:rounded-2xl prose-img:shadow-lg prose-img:my-10
-            prose-li:text-slate-700 prose-li:mb-2 prose-li:text-base prose-li:leading-relaxed
+            [&>ul>li]:text-[1rem] [&>ul>li]:text-slate-700 [&>ul>li]:mb-2 [&>ul>li]:leading-relaxed
+            [&>ol>li]:text-[1rem] [&>ol>li]:text-slate-700 [&>ol>li]:mb-2 [&>ol>li]:leading-relaxed
             prose-ul:my-6 prose-ul:pl-6
             prose-ol:my-6 prose-ol:pl-6
             prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:bg-secondary/5 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-xl prose-blockquote:not-italic prose-blockquote:my-8 prose-blockquote:text-slate-800 prose-blockquote:font-medium
