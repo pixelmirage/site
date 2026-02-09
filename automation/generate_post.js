@@ -130,7 +130,16 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    "Bu konuda profesyonel destek için [İzmir kira avukatı](/izmir-kira-avukati) ekibimizle görüşebilirsiniz."
    "Detaylı bilgi için [hizmetlerimiz](/hizmetler) sayfamıza göz atın."
 
-7. FORMAT (MDX):
+7. YAZI BİÇİMLENDİRME KURALLARI (ÇOK ÖNEMLİ):
+   - **BAŞLIK HİYERARŞİSİ:** 
+     * # (H1) sadece yazının başında BİR KEZ kullan
+     * ## (H2) ana bölümler için kullan (her bölüm --- ile ayrılsın)
+     * ### (H3) alt başlıklar için kullan (SSS soruları dahil)
+   - **PARAGRAFLAR:** Her paragraf maksimum 4-5 cümle olsun. Uzun paragrafları böl.
+   - **BÖLÜM AYIRICI:** Her ## başlığından önce --- (yatay çizgi) kullan.
+   - **BOŞLUKLAR:** Başlıklar ve paragraflar arasında boş satır bırak.
+
+8. FORMAT (MDX):
 ---
 title: "[Konu ile ilgili SEO odaklı başlık]"
 date: "${dateString}"
