@@ -124,21 +124,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     />
 
                     {/* MDX Content Rendering */}
-                    <div className="prose prose-slate prose-xl max-w-none 
+                    <div className="prose prose-slate prose-lg max-w-none 
             prose-headings:font-playfair prose-headings:font-black prose-headings:text-slate-900
-            prose-h1:text-5xl prose-h1:mb-10 prose-h1:mt-14 prose-h1:leading-tight
-            prose-h2:text-4xl prose-h2:mb-8 prose-h2:mt-14 prose-h2:border-b-2 prose-h2:border-slate-300 prose-h2:pb-4
-            prose-h3:text-2xl prose-h3:mb-6 prose-h3:mt-10
-            prose-p:text-slate-700 prose-p:leading-relaxed prose-p:text-lg prose-p:mb-6
+            prose-h1:text-4xl prose-h1:mb-8 prose-h1:mt-16 prose-h1:leading-tight prose-h1:bg-gradient-to-r prose-h1:from-primary/10 prose-h1:to-transparent prose-h1:py-4 prose-h1:px-6 prose-h1:-mx-6 prose-h1:rounded-lg prose-h1:border-l-4 prose-h1:border-primary
+            prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-16 prose-h2:bg-slate-100 prose-h2:py-4 prose-h2:px-6 prose-h2:-mx-6 prose-h2:rounded-lg prose-h2:border-l-4 prose-h2:border-secondary
+            prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-10 prose-h3:text-primary prose-h3:font-bold prose-h3:border-b prose-h3:border-slate-200 prose-h3:pb-2
+            prose-p:text-slate-700 prose-p:leading-[1.9] prose-p:text-base prose-p:mb-6
             prose-strong:text-primary prose-strong:font-bold
-            prose-a:text-secondary-foreground prose-a:font-bold hover:prose-a:underline
-            prose-img:rounded-3xl prose-img:shadow-xl
-            prose-li:text-slate-700 prose-li:mb-3 prose-li:text-lg
-            prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:bg-slate-50 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic
-            prose-hr:my-16 prose-hr:border-slate-300
-            prose-table:border-collapse prose-table:w-full prose-table:my-8
-            prose-th:bg-primary prose-th:text-white prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-bold
-            prose-td:border prose-td:border-slate-200 prose-td:px-4 prose-td:py-3
+            prose-a:text-secondary prose-a:font-semibold prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary
+            prose-img:rounded-2xl prose-img:shadow-lg prose-img:my-10
+            prose-li:text-slate-700 prose-li:mb-2 prose-li:text-base prose-li:leading-relaxed
+            prose-ul:my-6 prose-ul:pl-6
+            prose-ol:my-6 prose-ol:pl-6
+            prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:bg-secondary/5 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-xl prose-blockquote:not-italic prose-blockquote:my-8 prose-blockquote:text-slate-800 prose-blockquote:font-medium
+            prose-hr:my-12 prose-hr:border-slate-200 prose-hr:border-t-2
+            prose-table:border-collapse prose-table:w-full prose-table:my-8 prose-table:rounded-lg prose-table:overflow-hidden prose-table:shadow-sm
+            prose-th:bg-primary prose-th:text-white prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-bold prose-th:text-sm
+            prose-td:border prose-td:border-slate-200 prose-td:px-4 prose-td:py-3 prose-td:text-sm
             prose-tr:even:bg-slate-50
             ">
                         <MDXRemote source={post.content} />
