@@ -64,7 +64,7 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-primary mb-1">E-posta</h4>
-                                            <p className="text-muted-foreground text-sm">mertkagancetin@gmail.com</p>
+                                            <p className="text-muted-foreground text-sm">info@mertkagancetin.com</p>
                                         </div>
                                     </div>
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
                             </div>
 
                             <Button className="w-full bg-green-600 hover:bg-green-700 text-white gap-2 h-14 text-lg font-bold" asChild>
-                                <a href="https://wa.me/905445854645" target="_blank">
+                                <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                     <MessageCircle className="w-6 h-6" />
                                     WhatsApp ile Yazın
                                 </a>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                                             <Textarea name="mesaj" placeholder="Hukuki uyuşmazlığınızı kısaca özetleyin..." required className="min-h-[150px] bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                         </div>
 
-                                        <input type="hidden" name="_replyto" value="mertkagancetin@gmail.com" />
+                                        <input type="hidden" name="_replyto" value="info@mertkagancetin.com" />
                                         <input type="hidden" name="_subject" value="Yeni Web Sitesi İletişim Mesajı" />
 
                                         <Button type="submit" className="w-full bg-primary text-white hover:bg-primary/90 h-14 text-lg font-bold gap-2">

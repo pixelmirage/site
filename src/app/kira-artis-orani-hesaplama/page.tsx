@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-    title: "Kira Artış Oranı Hesaplama 2025 | Yasal Zam Oranı",
-    description: "2025 güncel TÜFE oranları ile işyeri ve konut kira artış oranını hesaplayın. Yasal zam sınırı, TEFE-TÜFE farkı ve ev sahibi hakları hakkında detaylı bilgi.",
-    keywords: ["kira artış oranı hesaplama", "kira zammı hesaplama", "2025 kira artış oranı", "işyeri kira artış oranı", "tüfe kira artışı"],
+    title: "Kira Artış Oranı Hesaplama 2026 | Yasal Zam Oranı",
+    description: "2026 güncel TÜFE oranları ile işyeri ve konut kira artış oranını hesaplayın. Yasal zam sınırı, TEFE-TÜFE farkı ve ev sahibi hakları hakkında detaylı bilgi.",
+    keywords: ["kira artış oranı hesaplama", "kira zammı hesaplama", "2026 kira artış oranı", "işyeri kira artış oranı", "tüfe kira artışı"],
     openGraph: {
         title: "Kira Artış Oranı Hesaplama Aracı | Av. Mert Kağan Çetin",
         description: "Yasal kira artış oranını saniyeler içinde hesaplayın. Güncel TÜFE verileriyle hatasız sonuç.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "2025 yılında konut kira artış sınırı yüzde kaçtır?",
+        question: "2026 yılında konut kira artış sınırı yüzde kaçtır?",
         answer: "2024 Temmuz ayı itibariyle %25'lik sabit artış sınırı sona ermiştir. Artık konut kiralarında da, tıpkı işyerlerinde olduğu gibi 'TÜFE 12 Aylık Ortalama' değişim oranı tavan olarak uygulanmaktadır."
     },
     {
@@ -53,7 +53,7 @@ export default function RentCalculatorPage() {
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-playfair font-bold mb-6">Kira Artış Oranı Hesaplama</h1>
                     <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10">
-                        2025 yılı güncel TÜFE verilerine göre yasal kira artış oranını ve yeni kira bedelinizi saniyeler içinde öğrenin.
+                        2026 yılı güncel TÜFE verilerine göre yasal kira artış oranını ve yeni kira bedelinizi saniyeler içinde öğrenin.
                     </p>
                 </div>
                 {/* Background Pattern */}

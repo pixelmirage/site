@@ -1,5 +1,6 @@
 import { getAllPosts } from "@/lib/blog/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, ChevronRight, Search } from "lucide-react";
 import { Metadata } from "next";
@@ -35,10 +36,12 @@ export default function BlogPage() {
                                 <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
                                     <Card className="h-full border border-border/50 shadow-sm group-hover:shadow-2xl transition-all duration-500 bg-white overflow-hidden rounded-sm">
                                         <div className="aspect-[16/10] bg-slate-100 relative overflow-hidden">
-                                            <img
+                                            <Image
                                                 src={post.coverImage || `https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop`}
                                                 alt={post.title}
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors" />
                                             <div className="absolute bottom-4 left-4">

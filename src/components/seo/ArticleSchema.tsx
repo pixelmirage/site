@@ -33,7 +33,7 @@ export function ArticleSchema({
             "name": "Mert Kağan Çetin Hukuk Bürosu",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://mertkagancetin.com/logo.png"
+                "url": "https://mertkagancetin.com/og-image.jpg"
             }
         },
         "datePublished": datePublished,

@@ -5,7 +5,7 @@ import { AlertCircle } from "lucide-react";
 import { PrintButton } from "@/components/tools/PrintButton";
 
 export const metadata: Metadata = {
-    title: "Tahliye Taahhütnamesi Örneği 2025 (PDF & Word) | Av. Mert Kağan Çetin",
+    title: "Tahliye Taahhütnamesi Örneği 2026 (PDF & Word) | Av. Mert Kağan Çetin",
     description: "Yargıtay uyumlu, geçerli tahliye taahhütnamesi örneğini ücretsiz indirin. Boş tahliye taahhütnamesi nasıl doldurulur? PDF şablon.",
     keywords: ["tahliye taahhütnamesi örneği", "tahliye taahhütnamesi pdf", "boş tahliye taahhütnamesi", "kiracı tahliye taahhütnamesi"],
     openGraph: {

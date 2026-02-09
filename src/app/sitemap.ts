@@ -24,10 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Static Routes
     const routes = ['', '/izmir-kira-avukati', '/hakkimda', '/hizmetler', '/blog', '/iletisim', '/kira-artis-orani-hesaplama', '/tahliye-taahhutnamesi'].map((route) => ({
-        url: `${baseUrl}${route}${route === '' ? '' : '/'}`,
+        url: `${baseUrl}${route}/`,
         lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: route === '' ? 1 : 0.8,
+        changeFrequency: 'weekly' as const,
+        priority: route === '' || route === '/izmir-kira-avukati' ? 1 : 0.8,
     }));
 
     return [...routes, ...districtSitemap, ...blogSitemap];

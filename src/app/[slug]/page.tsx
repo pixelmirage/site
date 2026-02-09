@@ -80,7 +80,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
         },
         {
             question: `${district} kira avukatı ücretleri ne kadar?`,
-            answer: "2025 yılı avukatlık asgari ücret tarifesi ve davanın niteliğine göre belirlenmektedir. Tahliye davaları için ortalama ücretler 35.000 TL - 60.000 TL aralığında değişmektedir."
+            answer: "2026 yılı avukatlık asgari ücret tarifesi ve davanın niteliğine göre belirlenmektedir. Tahliye davaları için ortalama ücretler 35.000 TL - 60.000 TL aralığında değişmektedir."
         },
         {
             question: `${district} için hizmet veriyor musunuz?`,

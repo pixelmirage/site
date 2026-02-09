@@ -3,10 +3,11 @@ export function SchemaMarkup() {
         "@context": "https://schema.org",
         "@type": "Attorney",
         "name": "Av. Mert Kağan Çetin",
-        "image": "https://mertkagancetin.com/logo.png",
+        "image": "https://mertkagancetin.com/og-image.jpg",
         "@id": "https://mertkagancetin.com",
         "url": "https://mertkagancetin.com",
         "telephone": "+905445854645",
+        "email": "info@mertkagancetin.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",

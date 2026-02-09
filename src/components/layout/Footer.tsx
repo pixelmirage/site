@@ -48,8 +48,7 @@ export function Footer() {
                         © {new Date().getFullYear()} Mert Kağan Çetin Hukuk Bürosu. Tüm hakları saklıdır.
                     </p>
                     <div className="flex gap-8">
-                        <Link href="/yasal-uyari" className="text-[10px] text-muted-foreground uppercase tracking-widest hover:text-primary transition-colors">Yasal Uyarı</Link>
-                        <Link href="/kvkk" className="text-[10px] text-muted-foreground uppercase tracking-widest hover:text-primary transition-colors">KVKK</Link>
+                        <span className="text-[10px] text-muted-foreground uppercase tracking-widest">İzmir Barosu</span>
                     </div>
                 </div>
             </div>

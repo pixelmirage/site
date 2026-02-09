@@ -5,11 +5,59 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
+function LegalServiceSchema() {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "İzmir Kira Avukatı - Av. Mert Kağan Çetin",
+        "description": "İzmir'de kira hukuku, kiracı tahliye davaları, kira tespit davaları ve gayrimenkul uyuşmazlıklarında uzman avukatlık hizmeti.",
+        "url": "https://mertkagancetin.com/izmir-kira-avukati",
+        "telephone": "+905445854645",
+        "email": "info@mertkagancetin.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
+            "addressLocality": "Bayraklı",
+            "addressRegion": "İzmir",
+            "postalCode": "35535",
+            "addressCountry": "TR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 38.4517,
+            "longitude": 27.1845
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "City",
+            "name": "İzmir"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Kira Hukuku Hizmetleri",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kiracı Tahliye Davası" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Tespit Davası" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tahliye Taahhütnamesi İcra Takibi" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Sözleşmesi Hazırlama" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zorunlu Arabuluculuk" } }
+            ]
+        }
+    };
+
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+    );
+}
+
 export const metadata: Metadata = {
     title: {
         absolute: "İzmir Kira Avukatı | Tahliye Davası & Kira Tespit | Av. Mert Kağan Çetin",
     },
-    description: "İzmir kira avukatı Mert Kağan Çetin ile kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında profesyonel hukuki destek alın. 2025 güncel fiyatlar.",
+    description: "İzmir kira avukatı Mert Kağan Çetin ile kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında profesyonel hukuki destek alın. 2026 güncel fiyatlar.",
     keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı"],
     openGraph: {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
@@ -32,8 +80,8 @@ const faqs = [
         answer: "Kiracı tahliye davası süresi, tahliye sebebine göre değişmektedir. Tahliye taahhütnamesi ile açılan davalarda 3-6 ay, ihtiyaç nedeniyle tahliye davalarında 6 ay - 1.5 yıl, iki haklı ihtar nedeniyle tahliye davalarında ise 1-2 yıl sürebilmektedir."
     },
     {
-        question: "2025 yılında kiracı tahliye davası ücreti ne kadar?",
-        answer: "2025 yılında İzmir'de kiracı tahliye davası avukatlık ücreti 35.000 TL ile 60.000 TL arasında değişmektedir. Ücret, davanın türüne, karmaşıklığına ve süresine göre belirlenmektedir."
+        question: "2026 yılında kiracı tahliye davası ücreti ne kadar?",
+        answer: "2026 yılında İzmir'de kiracı tahliye davası avukatlık ücreti 35.000 TL ile 60.000 TL arasında değişmektedir. Ücret, davanın türüne, karmaşıklığına ve süresine göre belirlenmektedir."
     },
     {
         question: "Kiracım kira ödemiyor, ne yapmalıyım?",
@@ -49,7 +97,7 @@ const tocItems = [
     { id: "hizmetlerimiz", title: "Kira Hukuku Hizmetlerimiz" },
     { id: "tahliye-davasi", title: "Kiracı Tahliye Davası Nedir?" },
     { id: "tahliye-sureci", title: "Tahliye Davası Süreci" },
-    { id: "ucretler", title: "2025 Yılı Ücret Bilgileri" },
+    { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
     { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
     { id: "iletisim", title: "Bize Ulaşın" },
@@ -59,6 +107,7 @@ export default function IzmirKiraAvukatiPage() {
     return (
         <main className="bg-white">
             {/* Schema Markup */}
+            <LegalServiceSchema />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -240,11 +289,11 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* Ücretler */}
-                        <h2 id="ucretler" className="scroll-mt-24">2025 Yılı İzmir Kira Davası Ücretleri</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Kira Davası Ücretleri</h2>
 
                         <p>
                             <strong>İzmir kira avukatı</strong> olarak şeffaf fiyatlandırma politikası uyguluyoruz.
-                            2025 yılı için geçerli avukatlık ücretleri aşağıdaki gibidir:
+                            2026 yılı için geçerli avukatlık ücretleri aşağıdaki gibidir:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">

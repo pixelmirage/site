@@ -6,8 +6,8 @@ import { Footer } from "@/components/layout/Footer";
 import { SchemaMarkup } from "@/components/layout/SchemaMarkup";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter" });
+const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     canonical: 'https://mertkagancetin.com',
   },
   verification: {
-    // google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
   },
 };
 
