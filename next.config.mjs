@@ -12,3 +12,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+// Force Vercel rebuild for CVE fix
