@@ -144,7 +144,7 @@ export default function IzmirKiraAvukatiPage() {
                                     Ücretsiz Ön Görüşme
                                 </Link>
                             </Button>
-                            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
+                            <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">
                                     Hemen Arayın
                                 </a>
@@ -414,7 +414,7 @@ export default function IzmirKiraAvukatiPage() {
                                             Randevu Alın <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </Button>
-                                    <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
+                                    <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
                                         <a href="https://wa.me/905445854645">
                                             WhatsApp ile Yazın
                                         </a>
