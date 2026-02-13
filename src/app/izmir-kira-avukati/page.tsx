@@ -11,7 +11,7 @@ function LegalServiceSchema() {
         "@type": "LegalService",
         "name": "İzmir Kira Avukatı - Av. Mert Kağan Çetin",
         "description": "İzmir'de kira hukuku, kiracı tahliye davaları, kira tespit davaları ve gayrimenkul uyuşmazlıklarında uzman avukatlık hizmeti.",
-        "url": "https://mertkagancetin.com/izmir-kira-avukati",
+        "url": "https://mertkagancetin.com/izmir-kira-avukati/",
         "telephone": "+905445854645",
         "email": "info@mertkagancetin.com",
         "address": {
@@ -62,11 +62,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
-        url: "https://mertkagancetin.com/izmir-kira-avukati",
+        url: "https://mertkagancetin.com/izmir-kira-avukati/",
         type: "website",
     },
     alternates: {
-        canonical: "https://mertkagancetin.com/izmir-kira-avukati",
+        canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
     },
 };
 
@@ -112,7 +112,7 @@ export default function IzmirKiraAvukatiPage() {
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati" }
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" }
                 ]}
             />
 
