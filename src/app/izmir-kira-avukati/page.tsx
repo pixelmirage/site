@@ -129,15 +129,15 @@ export default function IzmirKiraAvukatiPage() {
                         <span className="text-secondary">İzmir Kira Avukatı</span>
                     </nav>
 
-                    <div className="max-w-4xl">
+                    <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
                             İzmir Kira Avukatı
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
+                        <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             Kiracı tahliye davaları, kira tespit davaları ve tüm kira uyuşmazlıklarında
                             <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile profesyonel hukuki destek alın.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
