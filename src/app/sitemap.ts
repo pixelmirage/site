@@ -3,7 +3,7 @@ import { getAllPosts } from '@/lib/blog/utils';
 import { districts, getSlugFromDistrict } from '@/lib/districts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://mertkagancetin.com';
+    const baseUrl = 'https://www.mertkagancetin.com';
 
     // Blog Posts
     const posts = getAllPosts();

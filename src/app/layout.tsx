@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter" 
 const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mertkagancetin.com'),
+  metadataBase: new URL('https://www.mertkagancetin.com'),
   title: {
     template: "%s | Av. Mert Kağan Çetin",
     default: "İzmir Kira Avukatı | Av. Mert Kağan Çetin - Gayrimenkul Hukuku",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://mertkagancetin.com',
+    url: 'https://www.mertkagancetin.com',
     siteName: 'Av. Mert Kağan Çetin - İzmir Kira Avukatı',
     title: 'İzmir Kira Avukatı | Av. Mert Kağan Çetin',
     description: 'İzmir\'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıklarında uzman avukatlık hizmeti. Ücretsiz ön görüşme için arayın.',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://mertkagancetin.com',
+    canonical: 'https://www.mertkagancetin.com',
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
