@@ -156,7 +156,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white font-playfair font-bold text-xl">M</div>
                             <div>
                                 <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
-                                <p className="text-xs text-muted-foreground uppercase tracking-widest font-bold">İzmir Barosu - 12345</p>
                             </div>
                         </div>
                         <Button className="bg-primary text-white hover:bg-primary/90 gap-2 px-8" asChild>
