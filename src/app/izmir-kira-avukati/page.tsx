@@ -279,25 +279,38 @@ export default function IzmirKiraAvukatiPage() {
                             <strong>İzmir'de kiracı tahliye davası</strong> açmak isteyen mal sahipleri için süreç aşağıdaki aşamalardan oluşmaktadır:
                         </p>
 
-                        <div className="not-prose my-8 space-y-6 max-w-3xl mx-auto">
-                            {[
-                                { step: 1, title: "Ön Değerlendirme", desc: "İzmir kira avukatı ile görüşme, durumun analizi ve tahliye sebebinin belirlenmesi" },
-                                { step: 2, title: "İhtarname Gönderimi", desc: "Noter aracılığıyla yasal ihtarnamenin kiracıya tebliği" },
-                                { step: 3, title: "Zorunlu Arabuluculuk", desc: "Dava öncesi zorunlu arabuluculuk görüşmelerinin yapılması" },
-                                { step: 4, title: "Dava Açılması", desc: "Sulh Hukuk Mahkemesi'nde tahliye davasının açılması" },
-                                { step: 5, title: "Yargılama Süreci", desc: "Duruşmalar, delil sunumu ve tanık dinlenmesi" },
-                                { step: 6, title: "Karar ve İcra", desc: "Mahkeme kararı ve gerekirse icra yoluyla tahliye" },
-                            ].map((item) => (
-                                <div key={item.step} className="flex flex-col items-center text-center gap-3">
-                                    <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                                        {item.step}
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-primary">{item.title}</h3>
-                                        <p className="text-muted-foreground">{item.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-center w-16">#</th>
+                                        <th className="px-6 py-4 text-left w-1/3">Aşama</th>
+                                        <th className="px-6 py-4 text-left">Yapılacak İşlem</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    {[
+                                        { step: 1, title: "Ön Değerlendirme", desc: "İzmir kira avukatı ile görüşme, durumun analizi ve tahliye sebebinin belirlenmesi" },
+                                        { step: 2, title: "İhtarname Gönderimi", desc: "Noter aracılığıyla yasal ihtarnamenin kiracıya tebliği" },
+                                        { step: 3, title: "Zorunlu Arabuluculuk", desc: "Dava öncesi zorunlu arabuluculuk görüşmelerinin yapılması" },
+                                        { step: 4, title: "Dava Açılması", desc: "Sulh Hukuk Mahkemesi'nde tahliye davasının açılması" },
+                                        { step: 5, title: "Yargılama Süreci", desc: "Duruşmalar, delil sunumu ve tanık dinlenmesi" },
+                                        { step: 6, title: "Karar ve İcra", desc: "Mahkeme kararı ve gerekirse icra yoluyla tahliye" },
+                                    ].map((item) => (
+                                        <tr key={item.step} className="hover:bg-slate-50 transition-colors">
+                                            <td className="px-6 py-4 text-center font-bold text-secondary bg-slate-50/50">
+                                                {item.step}
+                                            </td>
+                                            <td className="px-6 py-4 font-bold text-primary">
+                                                {item.title}
+                                            </td>
+                                            <td className="px-6 py-4 text-slate-600">
+                                                {item.desc}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
 
                         <p className="text-center">
