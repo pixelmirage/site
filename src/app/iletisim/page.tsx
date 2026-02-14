@@ -17,7 +17,7 @@ export default function ContactPage() {
             <section className="bg-primary py-24 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2" />
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="max-w-3xl">
+                    <div className="max-w-3xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">İletişim</h1>
                         <p className="text-xl text-primary-foreground/80">
                             Hukuki süreçlerinizde yanınızdayız. Sorularınız, randevu talepleriniz ve danışmanlık ihtiyaçlarınız için bize dilediğiniz zaman ulaşabilirsiniz.

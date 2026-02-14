@@ -18,7 +18,7 @@ export default function BlogPage() {
             {/* Header */}
             <section className="bg-white py-20 border-b border-slate-200">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-3xl">
+                    <div className="max-w-3xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hukuki Makaleler</h1>
                         <p className="text-xl text-muted-foreground">
                             Kira hukuku ve gayrimenkul dünyasındaki güncel gelişmeleri, değişen mevzuatı ve emsal Yargıtay kararlarını takip edin.
