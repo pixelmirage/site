@@ -259,13 +259,34 @@ export default function IzmirKiraAvukatiPage() {
                             <strong>İzmir kiracı tahliye avukatı</strong> olarak sıklıkla karşılaştığımız tahliye nedenleri şunlardır:
                         </p>
 
-                        <ul>
-                            <li><strong>Tahliye Taahhütnamesi:</strong> Kiracının yazılı olarak belirli bir tarihte taşınmazı boşaltmayı taahhüt etmesi (TBK m. 352/1)</li>
-                            <li><strong>İhtiyaç Nedeniyle Tahliye:</strong> Kiraya verenin kendisi, eşi, altsoyu veya üstsoyu için konut ihtiyacı (TBK m. 350)</li>
-                            <li><strong>İki Haklı İhtar:</strong> Bir kira yılı içinde iki kez haklı ihtara rağmen kiranın ödenmemesi (TBK m. 352/2)</li>
-                            <li><strong>10 Yıllık Kira Süresi:</strong> 10 yıl geçtikten sonra her uzama yılı sonunda fesih hakkı (TBK m. 347)</li>
-                            <li><strong>Yeniden İnşa:</strong> Kiralananın yeniden inşası veya esaslı onarımı (TBK m. 350/2)</li>
-                        </ul>
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-left w-1/3">Tahliye Sebebi</th>
+                                        <th className="px-6 py-4 text-left">Yasal Dayanak ve Açıklama</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    {[
+                                        { title: "Tahliye Taahhütnamesi", desc: "Kiracının yazılı olarak belirli bir tarihte taşınmazı boşaltmayı taahhüt etmesi (TBK m. 352/1)" },
+                                        { title: "İhtiyaç Nedeniyle Tahliye", desc: "Kiraya verenin kendisi, eşi, altsoyu veya üstsoyu için konut ihtiyacı (TBK m. 350)" },
+                                        { title: "İki Haklı İhtar", desc: "Bir kira yılı içinde iki kez haklı ihtara rağmen kiranın ödenmemesi (TBK m. 352/2)" },
+                                        { title: "10 Yıllık Kira Süresi", desc: "10 yıl geçtikten sonra her uzama yılı sonunda fesih hakkı (TBK m. 347)" },
+                                        { title: "Yeniden İnşa", desc: "Kiralananın yeniden inşası veya esaslı onarımı (TBK m. 350/2)" },
+                                    ].map((item, i) => (
+                                        <tr key={i} className="hover:bg-slate-50 transition-colors">
+                                            <td className="px-6 py-4 font-bold text-primary">
+                                                {item.title}
+                                            </td>
+                                            <td className="px-6 py-4 text-slate-600">
+                                                {item.desc}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
 
                         <p>
                             Her bir tahliye sebebinin kendine özgü ispat şartları ve prosedürleri vardır. Bu nedenle <strong>İzmir kira avukatı</strong>
