@@ -113,12 +113,12 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    - Başlık ve alt başlıklarda anahtar kelime olsun.
 
 6. İÇ LİNKLER (ÇOK ÖNEMLİ - SEO İÇİN KRİTİK):
-   - **ZORUNLU LİNK:** Her makale kesinlikle en az bir kez "İzmir kira avukatı" metni üzerinden [İzmir kira avukatı](/izmir-kira-avukati) sayfasına link vermelidir. Bu en önemli kuraldır.
+   - **ZORUNLU LİNK:** Her makale kesinlikle en az bir kez "İzmir kira avukatı" metni üzerinden [İzmir kira avukatı](/izmir-kira-avukati/) sayfasına link vermelidir. Bu en önemli kuraldır.
    - Makale içinde TOPLAMDA EN AZ 4 iç link kullan.
    - Linkleri şu formatta yaz: [link metni](/sayfa-yolu)
    
    Kullanabileceğin sayfalar:
-   - [İzmir kira avukatı](/izmir-kira-avukati) - ANA HEDEF SAYFA (MUTLAKA KULLAN)
+   - [İzmir kira avukatı](/izmir-kira-avukati/) - ANA HEDEF SAYFA (MUTLAKA KULLAN)
    - [hizmetlerimiz](/hizmetler) - Hizmetler sayfası
    - [iletişim](/iletisim) - İletişim sayfası  
    - [hakkımızda](/hakkimda) - Hakkımızda sayfası
@@ -127,7 +127,7 @@ Lütfen aşağıdaki kurallara göre PROFESYONEL bir hukuki makale hazırla:
    - [arabuluculuk süreci](/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci) - Arabuluculuk blog yazısı
    
    Örnek kullanım:
-   "Bu konuda profesyonel destek için [İzmir kira avukatı](/izmir-kira-avukati) ekibimizle görüşebilirsiniz."
+   "Bu konuda profesyonel destek için [İzmir kira avukatı](/izmir-kira-avukati/) ekibimizle görüşebilirsiniz."
    "Detaylı bilgi için [hizmetlerimiz](/hizmetler) sayfamıza göz atın."
 
 7. YAZI BİÇİMLENDİRME KURALLARI (ÇOK ÖNEMLİ):
@@ -217,6 +217,15 @@ KURALLAR:
 
         // Clean up response
         text = text.replace(/```mdx/g, "").replace(/```/g, "").trim();
+
+        // --- POST-PROCESSING: FORCE INTERNAL LINKS ---
+        // 1. Fix missing trailing slash in existing links
+        text = text.replace(/\]\(\/izmir-kira-avukati\)/g, "](/izmir-kira-avukati/)");
+
+        // 2. If no link exists yet, force link the first occurrence of the keyword
+        if (!text.includes("](/izmir-kira-avukati/)")) {
+            text = text.replace(/İzmir kira avukatı/i, "[İzmir kira avukatı](/izmir-kira-avukati/)");
+        }
 
         const slug = slugify(selected.topic, { lower: true, strict: true, locale: 'tr' });
         const fileName = `${slug}.mdx`;
