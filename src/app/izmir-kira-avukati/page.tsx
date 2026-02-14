@@ -275,11 +275,11 @@ export default function IzmirKiraAvukatiPage() {
                         {/* Süreç */}
                         <h2 id="tahliye-sureci" className="scroll-mt-24">Kiracı Tahliye Davası Süreci</h2>
 
-                        <p>
+                        <p className="text-center">
                             <strong>İzmir'de kiracı tahliye davası</strong> açmak isteyen mal sahipleri için süreç aşağıdaki aşamalardan oluşmaktadır:
                         </p>
 
-                        <div className="not-prose my-8 space-y-4">
+                        <div className="not-prose my-8 space-y-6 max-w-3xl mx-auto">
                             {[
                                 { step: 1, title: "Ön Değerlendirme", desc: "İzmir kira avukatı ile görüşme, durumun analizi ve tahliye sebebinin belirlenmesi" },
                                 { step: 2, title: "İhtarname Gönderimi", desc: "Noter aracılığıyla yasal ihtarnamenin kiracıya tebliği" },
@@ -288,7 +288,7 @@ export default function IzmirKiraAvukatiPage() {
                                 { step: 5, title: "Yargılama Süreci", desc: "Duruşmalar, delil sunumu ve tanık dinlenmesi" },
                                 { step: 6, title: "Karar ve İcra", desc: "Mahkeme kararı ve gerekirse icra yoluyla tahliye" },
                             ].map((item) => (
-                                <div key={item.step} className="flex gap-4 items-start">
+                                <div key={item.step} className="flex flex-col items-center text-center gap-3">
                                     <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
                                         {item.step}
                                     </div>
@@ -300,7 +300,7 @@ export default function IzmirKiraAvukatiPage() {
                             ))}
                         </div>
 
-                        <p>
+                        <p className="text-center">
                             Tahliye taahhütnamesine dayalı tahliye, diğer tahliye türlerine göre çok daha hızlı sonuçlanmaktadır.
                             <strong>İzmir kira avukatı</strong> olarak müvekkillerimize mümkün olduğunca tahliye taahhütnamesi almalarını önermekteyiz.
                             Bu konuda detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyabilirsiniz.
