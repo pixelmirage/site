@@ -3,9 +3,9 @@ export function SchemaMarkup() {
         "@context": "https://schema.org",
         "@type": "Attorney",
         "name": "Av. Mert Kağan Çetin",
-        "image": "https://www.mertkagancetin.com/og-image.jpg",
-        "@id": "https://www.mertkagancetin.com",
-        "url": "https://www.mertkagancetin.com",
+        "image": "https://mertkagancetin.com/og-image.jpg",
+        "@id": "https://mertkagancetin.com",
+        "url": "https://mertkagancetin.com",
         "telephone": "+905445854645",
         "email": "info@mertkagancetin.com",
         "address": {
