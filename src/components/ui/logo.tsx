@@ -1,9 +1,8 @@
-import Link from "next/link";
 import { Scale } from "lucide-react";
 
 export function Logo({ className }: { className?: string }) {
     return (
-        <Link href="/" className={`flex items-center gap-2 group ${className}`}>
+        <div className={`flex items-center gap-2 group ${className}`}>
             <div className="bg-gradient-to-br from-primary to-primary/80 p-2 rounded-lg group-hover:shadow-lg transition-all duration-300">
                 <Scale className="w-6 h-6 text-white" />
             </div>
@@ -15,6 +14,6 @@ export function Logo({ className }: { className?: string }) {
                     İzmir Kira & Gayrimenkul Hukuku
                 </span>
             </div>
-        </Link>
+        </div>
     );
 }

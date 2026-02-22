@@ -7,6 +7,12 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Hizmetlerimiz",
     description: "Av. Mert Kağan Çetin tarafından sunulan kira hukuku, tahliye davaları ve gayrimenkul danışmanlığı hizmetleri.",
+    alternates: {
+        canonical: "https://mertkagancetin.com/hizmetler/",
+    },
+    openGraph: {
+        url: "https://mertkagancetin.com/hizmetler/",
+    },
 };
 
 const services = [

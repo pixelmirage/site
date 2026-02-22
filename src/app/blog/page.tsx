@@ -8,6 +8,12 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Yasal Makaleler & Blog | İzmir Kira Avukatı",
     description: "Kira hukuku, tahliye davaları ve güncel yargı kararları hakkında uzman görüşleri ve bilgilendirici makaleler.",
+    alternates: {
+        canonical: "https://mertkagancetin.com/blog/",
+    },
+    openGraph: {
+        url: "https://mertkagancetin.com/blog/",
+    },
 };
 
 export default function BlogPage() {

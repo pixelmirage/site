@@ -7,6 +7,12 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Hakkımda",
     description: "İzmir kira avukatı Mert Kağan Çetin'in mesleki tecrübesi, uzmanlık alanları ve hukuk bürosu vizyonu hakkında detaylı bilgi.",
+    alternates: {
+        canonical: "https://mertkagancetin.com/hakkimda/",
+    },
+    openGraph: {
+        url: "https://mertkagancetin.com/hakkimda/",
+    },
 };
 
 export default function AboutPage() {

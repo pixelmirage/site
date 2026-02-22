@@ -5,17 +5,17 @@ import { AlertCircle } from "lucide-react";
 import { PrintButton } from "@/components/tools/PrintButton";
 
 export const metadata: Metadata = {
-    title: "Tahliye Taahhütnamesi Örneği 2026 (PDF & Word) | Av. Mert Kağan Çetin",
+    title: "Tahliye Taahhütnamesi Örneği 2026 (PDF & Word)",
     description: "Yargıtay uyumlu, geçerli tahliye taahhütnamesi örneğini ücretsiz indirin. Boş tahliye taahhütnamesi nasıl doldurulur? PDF şablon.",
     keywords: ["tahliye taahhütnamesi örneği", "tahliye taahhütnamesi pdf", "boş tahliye taahhütnamesi", "kiracı tahliye taahhütnamesi"],
     openGraph: {
         title: "Tahliye Taahhütnamesi Örneği | Ücretsiz İndir",
         description: "Geçerli ve garantili tahliye taahhütnamesi şablonu. Hemen yazdırın veya PDF olarak kaydedin.",
-        url: "https://mertkagancetin.com/tahliye-taahhutnamesi",
+        url: "https://mertkagancetin.com/tahliye-taahhutnamesi/",
         type: "website",
     },
     alternates: {
-        canonical: "https://mertkagancetin.com/tahliye-taahhutnamesi",
+        canonical: "https://mertkagancetin.com/tahliye-taahhutnamesi/",
     },
 };
 
@@ -25,8 +25,7 @@ export default function EvictionTemplatePage() {
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "Araçlar", url: "https://mertkagancetin.com/araclar" },
-                    { name: "Tahliye Taahhütnamesi", url: "https://mertkagancetin.com/tahliye-taahhutnamesi" }
+                    { name: "Tahliye Taahhütnamesi", url: "https://mertkagancetin.com/tahliye-taahhutnamesi/" }
                 ]}
             />
 

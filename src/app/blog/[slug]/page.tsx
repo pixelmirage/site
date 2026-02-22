@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = getPostBySlug(slug);
     if (!post) return {};
 
-    const url = `https://mertkagancetin.com/blog/${slug}`;
+    const url = `https://mertkagancetin.com/blog/${slug}/`;
 
     return {
         title: post.title,
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         notFound();
     }
 
-    const articleUrl = `https://mertkagancetin.com/blog/${slug}`;
+    const articleUrl = `https://mertkagancetin.com/blog/${slug}/`;
 
     return (
         <article className="bg-white min-h-screen pb-24">
@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "Blog", url: "https://mertkagancetin.com/blog" },
+                    { name: "Blog", url: "https://mertkagancetin.com/blog/" },
                     { name: post.title, url: articleUrl }
                 ]}
             />

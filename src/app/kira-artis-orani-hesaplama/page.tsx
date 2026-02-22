@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Kira Artış Oranı Hesaplama Aracı | Av. Mert Kağan Çetin",
         description: "Yasal kira artış oranını saniyeler içinde hesaplayın. Güncel TÜFE verileriyle hatasız sonuç.",
-        url: "https://mertkagancetin.com/kira-artis-orani-hesaplama",
+        url: "https://mertkagancetin.com/kira-artis-orani-hesaplama/",
         type: "website",
     },
     alternates: {
-        canonical: "https://mertkagancetin.com/kira-artis-orani-hesaplama",
+        canonical: "https://mertkagancetin.com/kira-artis-orani-hesaplama/",
     },
 };
 
@@ -43,8 +43,7 @@ export default function RentCalculatorPage() {
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "Araçlar", url: "https://mertkagancetin.com/araclar" },
-                    { name: "Kira Artış Hesaplama", url: "https://mertkagancetin.com/kira-artis-orani-hesaplama" }
+                    { name: "Kira Artış Hesaplama", url: "https://mertkagancetin.com/kira-artis-orani-hesaplama/" }
                 ]}
             />
 

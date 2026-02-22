@@ -7,18 +7,6 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
-// Content Spinner Helper to reduce footprint of duplicate content
-const spinText = (options: string[], seed: string) => {
-    // Simple hash function to deterministically choose an option based on seed (slug)
-    let hash = 0;
-    for (let i = 0; i < seed.length; i++) {
-        hash = ((hash << 5) - hash) + seed.charCodeAt(i);
-        hash |= 0;
-    }
-    const index = Math.abs(hash) % options.length;
-    return options[index];
-};
-
 export async function generateStaticParams() {
     return districts.map((district) => ({
         slug: `${getSlugFromDistrict(district)}-kira-avukati`,
@@ -40,11 +28,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         openGraph: {
             title: `${districtData.name} Kira Avukatı | Av. Mert Kağan Çetin`,
             description: districtData.description,
-            url: `https://mertkagancetin.com/${slug}`,
+            url: `https://mertkagancetin.com/${slug}/`,
             type: "website",
         },
         alternates: {
-            canonical: `https://mertkagancetin.com/${slug}`,
+            canonical: `https://mertkagancetin.com/${slug}/`,
         },
     };
 }
@@ -59,19 +47,8 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
 
     const { name: district, description, features } = districtData;
 
-    // Spinning Content Variations
-    const introTitle = spinText([
-        `${district} Kira Avukatı`,
-        `${district} Bölgesi Kira Hukuku`,
-        `Av. Mert Kağan Çetin - ${district} Kira Avukatı`
-    ], slug);
-
-    const callToActionText = spinText([
-        "Hukuki Destek Alın",
-        "Ücretsiz Ön Görüşme",
-        "Hemen Bize Ulaşın",
-        "Randevu Oluşturun"
-    ], slug);
+    const introTitle = `${district} Kira Avukatı`;
+    const callToActionText = "Ücretsiz Ön Görüşme";
 
     const faqs = [
         {
@@ -94,8 +71,8 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati" },
-                    { name: `${district} Kira Avukatı`, url: `https://mertkagancetin.com/${slug}` }
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" },
+                    { name: `${district} Kira Avukatı`, url: `https://mertkagancetin.com/${slug}/` }
                 ]}
             />
 

@@ -2,8 +2,18 @@ import { Hero } from "@/components/sections/Hero";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { AboutBrief } from "@/components/sections/AboutBrief";
 import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCall } from "lucide-react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://mertkagancetin.com/",
+  },
+  openGraph: {
+    url: "https://mertkagancetin.com/",
+  },
+};
 
 export default function Home() {
   return (

@@ -53,9 +53,14 @@ export const metadata: Metadata = {
     description: 'İzmir\'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıklarında uzman avukatlık hizmeti.',
     images: ['/og-image.jpg'],
   },
-  alternates: {
-    canonical: 'https://mertkagancetin.com',
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/icon.png", type: "image/png", sizes: "1024x1024" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  manifest: "/site.webmanifest",
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
   },

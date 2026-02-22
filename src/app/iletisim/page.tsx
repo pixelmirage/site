@@ -8,6 +8,12 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "İletişim",
     description: "İzmir Bayraklı'da kira hukuku üzerine uzman hukuk büromuza ulaşın. Randevu ve danışmanlık talepleriniz için iletişim bilgilerimiz.",
+    alternates: {
+        canonical: "https://mertkagancetin.com/iletisim/",
+    },
+    openGraph: {
+        url: "https://mertkagancetin.com/iletisim/",
+    },
 };
 
 export default function ContactPage() {

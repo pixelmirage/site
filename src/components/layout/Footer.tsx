@@ -7,7 +7,9 @@ export function Footer() {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
                     <div className="md:col-span-1 space-y-8">
-                        <Logo />
+                        <Link href="/" className="inline-block hover:opacity-90 transition-opacity">
+                            <Logo />
+                        </Link>
                         <p className="text-sm text-muted-foreground leading-relaxed font-light">
                             İzmir Bayraklı merkezli, gayrimenkul ve kira hukuku alanında uzmanlaşmış butik hukuk pratiği.
                         </p>
