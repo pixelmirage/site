@@ -467,7 +467,7 @@ export default function IzmirKiraAvukatiPage() {
                         <h3>Tahliye Taahhütnamesi Örneği ve Önemi</h3>
 
                         <p>
-                            <strong>Tahliye taahhütnamesi örneği</strong> hazırlarken dikkat edilmesi gereken en önemli husus,
+                            <Link href="/tahliye-taahhutnamesi" className="text-secondary font-bold">Tahliye taahhütnamesi örneği</Link> hazırlarken dikkat edilmesi gereken en önemli husus,
                             taahhütnamenin kiralananın tesliminden <em>sonra</em> alınmasıdır. <strong>Kira sözleşmesi</strong>yle
                             aynı tarihte alınan tahliye taahhütnameleri mahkemeler tarafından geçersiz sayılabilir.
                             Geçerli bir <strong>tahliye taahhütnamesi örneği</strong> şu unsurları içermelidir:
@@ -482,8 +482,8 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             <strong>İzmir kira avukatı</strong> olarak müvekkillerimize hem <strong>kira sözleşmesi</strong> hazırlama
-                            hem de hukuki açıdan geçerli tahliye taahhütnamesi düzenleme hizmeti sunmaktayız. Doğru hazırlanmış bir
-                            taahhütname, ileride yaşanabilecek tahliye sürecini önemli ölçüde hızlandırır ve dava masraflarını azaltır.
+                            hem de hukuki açıdan geçerli tahliye taahhütnamesi düzenleme hizmeti sunmaktayız. Detaylı bilgi ve
+                            örnek için <Link href="/tahliye-taahhutnamesi" className="text-secondary font-bold">tahliye taahhütnamesi sayfamızı</Link> inceleyebilirsiniz.
                         </p>
 
                         {/* Kiracının Hakları */}
