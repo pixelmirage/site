@@ -58,7 +58,7 @@ export const metadata: Metadata = {
         absolute: "İzmir Kira Avukatı | Tahliye Davası & Kira Tespit | Av. Mert Kağan Çetin",
     },
     description: "İzmir kira avukatı Mert Kağan Çetin ile kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında profesyonel hukuki destek alın. 2026 güncel fiyatlar.",
-    keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı"],
+    keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı", "kira tespit davası ne zaman açılır", "kira bedelinin tespiti davası", "kiracının hakları", "kira sözleşmesi nasıl yapılır", "tahliye taahhütnamesi örneği", "10 yıllık kiracının tahliyesi", "kiracı nasıl çıkarılır", "ihtiyaç nedeniyle tahliye dava açma süresi"],
     openGraph: {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
@@ -90,6 +90,22 @@ const faqs = [
     {
         question: "Kira tespit davası nedir?",
         answer: "Kira tespit davası, kira bedelinin rayiç değerlere göre yeniden belirlenmesi için açılan davadır. Kira artış oranının TÜFE'nin altında kalması veya piyasa koşullarına uygun olmaması durumunda açılabilir."
+    },
+    {
+        question: "Kira tespit davası ne zaman açılır?",
+        answer: "Kira tespit davası, yeni kira döneminin başlangıcından en az 30 gün önce ihtarname gönderilmişse dönem sonuna kadar açılabilir. İhtarname gönderilmemişse yeni dönemin başından itibaren açılmalıdır. 5 yılı aşan kira ilişkilerinde ise TÜFE sınırı olmaksızın kira bedelinin tespiti davası açılabilir."
+    },
+    {
+        question: "10 yıllık kiracının tahliyesi mümkün mü?",
+        answer: "Evet, Türk Borçlar Kanunu m. 347'ye göre 10 yıllık uzama süresi dolduktan sonra kiraya veren, her uzama yılının sonunda 3 ay önceden yazılı bildirimde bulunarak kira sözleşmesini herhangi bir gerekçe göstermeksizin feshedebilir."
+    },
+    {
+        question: "Kira sözleşmesi nasıl yapılır?",
+        answer: "Kira sözleşmesi yazılı olarak hazırlanmalı ve tarafların kimlik bilgileri, taşınmaz detayları, kira bedeli, ödeme tarihi, yıllık artış oranı, depozito miktarı ve sözleşme süresini içermelidir. Hukuki güvenlik için bir avukat tarafından hazırlanması tavsiye edilir."
+    },
+    {
+        question: "İhtiyaç nedeniyle tahliye dava açma süresi nedir?",
+        answer: "İhtiyaç nedeniyle tahliye davası, belirli süreli kira sözleşmelerinde süre bitiminden itibaren 1 ay içinde açılmalıdır. Belirsiz süreli sözleşmelerde ise her 6 aylık dönemin sonu için en az 3 ay önceden fesih bildirimi yapılması gerekmektedir."
     }
 ];
 
@@ -97,6 +113,10 @@ const tocItems = [
     { id: "hizmetlerimiz", title: "Kira Hukuku Hizmetlerimiz" },
     { id: "tahliye-davasi", title: "Kiracı Tahliye Davası Nedir?" },
     { id: "tahliye-sureci", title: "Tahliye Davası Süreci" },
+    { id: "kira-tespit-davasi", title: "Kira Tespit Davası Ne Zaman Açılır?" },
+    { id: "10-yillik-kiraci", title: "10 Yıllık Kiracının Tahliyesi" },
+    { id: "kira-sozlesmesi", title: "Kira Sözleşmesi Nasıl Yapılır?" },
+    { id: "kiracinin-haklari", title: "Kiracının Hakları" },
     { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
     { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
@@ -209,7 +229,10 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             Kira hukuku, Türk Borçlar Kanunu ve İcra İflas Kanunu çerçevesinde düzenlenen karmaşık bir hukuk dalıdır.
                             İzmir ve çevresinde yaşanan kira uyuşmazlıkları, son yıllarda ekonomik koşulların etkisiyle önemli ölçüde
-                            artmıştır. Bu nedenle <strong>İzmir kira avukatı</strong> ile çalışmak, hak kaybı yaşamamanız için kritik önem taşımaktadır.
+                            artmıştır. <strong>Kiracı nasıl çıkarılır</strong>, <strong>kira tespit davası ne zaman açılır</strong>,
+                            <strong> kiracının hakları</strong> nelerdir gibi sorular her gün büromuzda yanıtladığımız konuların
+                            başında gelmektedir. Bu nedenle <strong>İzmir kira avukatı</strong> ile çalışmak, hak kaybı yaşamamanız
+                            için kritik önem taşımaktadır.
                         </p>
 
                         {/* Hizmetlerimiz */}
@@ -223,10 +246,10 @@ export default function IzmirKiraAvukatiPage() {
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                             {[
-                                { icon: Scale, title: "Kira Tespit Davası", desc: "Kira bedelinin güncel rayiçlere göre belirlenmesi" },
-                                { icon: FileText, title: "Tahliye Taahhütnamesi", desc: "Geçerli taahhütname hazırlama ve icra takibi" },
-                                { icon: Users, title: "Zorunlu Arabuluculuk", desc: "Arabuluculuk sürecinde profesyonel temsil" },
-                                { icon: CheckCircle, title: "İhtiyaç Tahliyesi", desc: "Konut veya işyeri ihtiyacına dayalı tahliye" },
+                                { icon: Scale, title: "Kira Bedelinin Tespiti Davası", desc: "Kira bedelinin güncel piyasa rayiçlerine göre yeniden belirlenmesi" },
+                                { icon: FileText, title: "Kira Sözleşmesi ve Taahhütname", desc: "Kira sözleşmesi hazırlama, tahliye taahhütnamesi düzenleme ve icra takibi" },
+                                { icon: Users, title: "Zorunlu Arabuluculuk", desc: "Kira uyuşmazlıklarında arabuluculuk sürecinde profesyonel temsil" },
+                                { icon: CheckCircle, title: "İhtiyaç Nedeniyle Tahliye", desc: "Konut veya işyeri ihtiyacına dayalı tahliye davası ve süreç yönetimi" },
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4 p-4 bg-slate-50 rounded-xl">
                                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -338,6 +361,168 @@ export default function IzmirKiraAvukatiPage() {
                             Tahliye taahhütnamesine dayalı tahliye, diğer tahliye türlerine göre çok daha hızlı sonuçlanmaktadır.
                             <strong>İzmir kira avukatı</strong> olarak müvekkillerimize mümkün olduğunca tahliye taahhütnamesi almalarını önermekteyiz.
                             Bu konuda detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyabilirsiniz.
+                        </p>
+
+                        {/* Kira Tespit Davası */}
+                        <h2 id="kira-tespit-davasi" className="scroll-mt-24">Kira Tespit Davası Ne Zaman Açılır?</h2>
+
+                        <p>
+                            <strong>Kira bedelinin tespiti davası</strong>, mevcut kira bedelinin piyasa rayicinin önemli ölçüde altında
+                            kaldığı durumlarda açılan bir davadır. Özellikle uzun süredir devam eden kira ilişkilerinde kira artışlarının
+                            enflasyonun gerisinde kalması, bu davayı kiraya verenler açısından zorunlu hale getirmektedir.
+                        </p>
+
+                        <p>
+                            <strong>Kira tespit davası ne zaman açılır?</strong> sorusu, kira hukukunun en sık sorulan sorularından biridir.
+                            Türk Borçlar Kanunu'na göre <strong>kira bedelinin tespiti davası</strong>nın açılma zamanı şu koşullara bağlıdır:
+                        </p>
+
+                        <ul>
+                            <li>
+                                <strong>İhtarname çekilmişse:</strong> Yeni kira döneminin başlangıcından en az 30 gün önce karşı tarafa
+                                yazılı bildirimde bulunulmuşsa, dava yeni kira döneminin sonuna kadar her zaman açılabilir.
+                            </li>
+                            <li>
+                                <strong>İhtarname çekilmemişse:</strong> Dava yeni kira döneminin başından itibaren açılmalıdır;
+                                ancak mahkeme kararı yine dönem başından itibaren geçerli olur.
+                            </li>
+                            <li>
+                                <strong>5 yıldan uzun kira ilişkilerinde:</strong> <strong>Kira sözleşmesi</strong> 5 yılı aştığında,
+                                TÜFE sınırlamasından bağımsız olarak <strong>kira bedelinin tespiti davası</strong> açılarak emsal
+                                kira bedeli talep edilebilir. Bu hüküm TBK m. 344/3'te düzenlenmiştir.
+                            </li>
+                        </ul>
+
+                        <p>
+                            <strong>İzmir kira avukatı</strong> olarak kira tespit davalarında taşınmaz bilirkişi raporu, emsal kira bedelleri
+                            ve bölgesel piyasa analizleri ile güçlü bir dava dosyası hazırlıyoruz. Kira tespit davası sonucunda belirlenen
+                            yeni kira bedeli, dava tarihinden değil ilgili kira döneminin başından itibaren geçerli olur. Bu nedenle davanın
+                            doğru zamanda açılması büyük önem taşımaktadır.
+                        </p>
+
+                        {/* 10 Yıllık Kiracının Tahliyesi */}
+                        <h2 id="10-yillik-kiraci" className="scroll-mt-24">10 Yıllık Kiracının Tahliyesi</h2>
+
+                        <p>
+                            <strong>10 yıllık kiracının tahliyesi</strong>, Türk Borçlar Kanunu m. 347 kapsamında düzenlenen önemli
+                            bir tahliye yoludur. Konut ve çatılı işyeri kiralarında, <strong>kira sözleşmesi</strong> 10 yıllık uzama
+                            süresini doldurduktan sonra kiraya veren, herhangi bir gerekçe göstermeksizin sözleşmeyi feshedebilir.
+                        </p>
+
+                        <p>
+                            Peki <strong>kiracı nasıl çıkarılır</strong>? 10 yıllık süre dolduğunda kiraya verenin yapması gereken
+                            tek şey, uzama yılının bitiminden en az 3 ay önce yazılı fesih bildiriminde bulunmaktır. Bu bildirime
+                            rağmen kiracı taşınmazı boşaltmazsa tahliye davası açılabilir. Bu yol, ihtiyaç nedeniyle tahliye veya
+                            iki haklı ihtar gibi başka bir sebep ispatlamayı gerektirmediğinden ev sahipleri için oldukça avantajlıdır.
+                        </p>
+
+                        <p>
+                            10 yıllık süre hesaplanırken dikkat edilmesi gereken husus, sürenin <strong>kira sözleşmesi</strong>nin
+                            başlangıç tarihinden itibaren değil, ilk uzama tarihinden itibaren hesaplanmasıdır. Örneğin 1 yıllık
+                            bir sözleşmede uzama süresi ikinci yıldan başlar ve 10 yıllık süre toplamda 11. yılın sonunda dolar.
+                        </p>
+
+                        <h3>İhtiyaç Nedeniyle Tahliye Dava Açma Süresi</h3>
+
+                        <p>
+                            <strong>İhtiyaç nedeniyle tahliye dava açma süresi</strong>, kira sözleşmesinin türüne göre farklılık
+                            gösterir. Belirli süreli sözleşmelerde dava, kira süresinin bitiminden itibaren <strong>1 ay</strong> içinde
+                            açılmalıdır. Belirsiz süreli sözleşmelerde ise her 6 aylık dönemin sonu için en az <strong>3 ay önceden</strong> fesih
+                            bildirimi yapılması gerekir.
+                        </p>
+
+                        <p>
+                            İhtiyaç nedeniyle tahliye davasında kiraya verenin kendisinin, eşinin, altsoyunun veya üstsoyunun
+                            gerçek, samimi ve zorunlu bir konut ya da işyeri ihtiyacını ispatlaması gerekmektedir. Mahkeme,
+                            ihtiyacın gerçek ve samimi olup olmadığını titizlikle değerlendirir. Ayrıca tahliye kararı
+                            sonrasında taşınmaz, 3 yıl boyunca eski kiracıdan başkasına kiraya verilemez (TBK m. 355).
+                            <strong> İzmir kira avukatı</strong> olarak <strong>ihtiyaç nedeniyle tahliye dava açma süresi</strong>ni
+                            kaçırmamanız için süreç takibinizi titizlikle gerçekleştiriyoruz.
+                        </p>
+
+                        {/* Kira Sözleşmesi */}
+                        <h2 id="kira-sozlesmesi" className="scroll-mt-24">Kira Sözleşmesi Nasıl Yapılır?</h2>
+
+                        <p>
+                            <strong>Kira sözleşmesi nasıl yapılır?</strong> sorusu, hem ev sahipleri hem de kiracılar tarafından sıkça
+                            sorulmaktadır. Hukuki güvenliğiniz için <strong>kira sözleşmesi</strong> mutlaka yazılı olarak düzenlenmeli
+                            ve aşağıdaki temel unsurları içermelidir:
+                        </p>
+
+                        <ul>
+                            <li><strong>Tarafların kimlik bilgileri:</strong> Kiraya veren ve kiracının TC kimlik numarası, adresi ve iletişim bilgileri</li>
+                            <li><strong>Taşınmaz bilgileri:</strong> Kiralanan yerin açık adresi, ada/parsel numarası ve kullanım amacı (konut veya işyeri)</li>
+                            <li><strong>Kira bedeli ve ödeme koşulları:</strong> Aylık kira tutarı, ödeme günü ve ödeme yöntemi (banka havalesi önerilir)</li>
+                            <li><strong>Kira artış oranı:</strong> Yıllık artış oranı — konut kiralarında yasal üst sınır bir önceki yılın TÜFE oranıdır</li>
+                            <li><strong>Depozito:</strong> Güvence bedeli miktarı (en fazla 3 aylık kira bedeli) ve iade koşulları</li>
+                            <li><strong>Sözleşme süresi:</strong> Başlangıç ve bitiş tarihi ile yenileme koşulları</li>
+                        </ul>
+
+                        <p>
+                            Doğru hazırlanmış bir <strong>kira sözleşmesi</strong>, ileride yaşanabilecek uyuşmazlıkları büyük ölçüde
+                            önler. Sözleşmede eksik veya hatalı maddeler, <strong>kiracının hakları</strong> veya kiraya verenin hakları
+                            açısından ciddi sorunlara yol açabilir.
+                        </p>
+
+                        <h3>Tahliye Taahhütnamesi Örneği ve Önemi</h3>
+
+                        <p>
+                            <strong>Tahliye taahhütnamesi örneği</strong> hazırlarken dikkat edilmesi gereken en önemli husus,
+                            taahhütnamenin kiralananın tesliminden <em>sonra</em> alınmasıdır. <strong>Kira sözleşmesi</strong>yle
+                            aynı tarihte alınan tahliye taahhütnameleri mahkemeler tarafından geçersiz sayılabilir.
+                            Geçerli bir <strong>tahliye taahhütnamesi örneği</strong> şu unsurları içermelidir:
+                        </p>
+
+                        <ul>
+                            <li>Kiracının el yazısıyla yazılmış tarih ve ıslak imza</li>
+                            <li>Tahliye edilecek taşınmazın açık adresi</li>
+                            <li>Taahhüt edilen kesin tahliye tarihi</li>
+                            <li>Kiralananın teslim alındığı tarihten sonraki bir tarihte düzenlendiğinin kanıtlanabilir olması</li>
+                        </ul>
+
+                        <p>
+                            <strong>İzmir kira avukatı</strong> olarak müvekkillerimize hem <strong>kira sözleşmesi</strong> hazırlama
+                            hem de hukuki açıdan geçerli tahliye taahhütnamesi düzenleme hizmeti sunmaktayız. Doğru hazırlanmış bir
+                            taahhütname, ileride yaşanabilecek tahliye sürecini önemli ölçüde hızlandırır ve dava masraflarını azaltır.
+                        </p>
+
+                        {/* Kiracının Hakları */}
+                        <h2 id="kiracinin-haklari" className="scroll-mt-24">Kiracının Hakları</h2>
+
+                        <p>
+                            Türk Borçlar Kanunu, kiracıları koruyan güçlü düzenlemeler içermektedir. <strong>Kiracının hakları</strong> kapsamında
+                            hem kiracıların hem de kiraya verenlerin bilmesi gereken temel hükümler şunlardır:
+                        </p>
+
+                        <ul>
+                            <li>
+                                <strong>Kira artış sınırı:</strong> Konut kiralarında yıllık artış oranı bir önceki yılın TÜFE
+                                oranını aşamaz. Bu sınırın üzerindeki artışlar kiracıyı bağlamaz ve fazla ödenen tutar geri istenebilir.
+                            </li>
+                            <li>
+                                <strong>Tahliye koruması:</strong> Kiracı, kira bedelini düzenli ödediği sürece sözleşme süresinin
+                                dolması tek başına tahliye sebebi değildir. <strong>Kira sözleşmesi</strong> otomatik olarak birer yıl uzar.
+                            </li>
+                            <li>
+                                <strong>Depozito güvencesi:</strong> Güvence bedeli en fazla 3 aylık kira tutarı olabilir ve
+                                vadeli mevduat hesabına yatırılmalıdır. Taşınmaz hasarsız teslim edildiğinde iade edilmelidir.
+                            </li>
+                            <li>
+                                <strong>Onarım hakkı:</strong> Kiralananın kullanımını etkileyen esaslı ayıpların giderilmesini
+                                kiraya verenden talep etme hakkı mevcuttur. Kiraya veren makul sürede onarım yapmazsa kiracı, kira
+                                bedelinden indirim isteyebilir.
+                            </li>
+                            <li>
+                                <strong>Ön alım hakkı:</strong> Kiralanan satışa çıkarıldığında kiracının öncelikli satın alma
+                                hakkı bulunmaktadır. Yeni malik de mevcut <strong>kira sözleşmesi</strong>nin şartlarına uymak zorundadır.
+                            </li>
+                        </ul>
+
+                        <p>
+                            <strong>Kiracının hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür.
+                            <strong> İzmir kira avukatı</strong> olarak hem kiracı hem de kiraya veren tarafında, müvekkillerimizin
+                            yasal haklarını en etkin şekilde koruyoruz. Haklarınız konusunda tereddütünüz varsa ücretsiz ön
+                            görüşme için <Link href="/iletisim" className="text-secondary font-bold">bize ulaşın</Link>.
                         </p>
 
                         {/* Ücretler */}
