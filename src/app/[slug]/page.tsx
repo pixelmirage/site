@@ -79,7 +79,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
                 <div className="container mx-auto px-4">
-                    <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+                    <nav className="flex flex-wrap items-center justify-center gap-2 text-sm text-slate-400 mb-8">
                         <Link href="/" className="hover:text-white transition-colors flex items-center gap-1">
                             <Home className="w-4 h-4" />
                             Ana Sayfa
@@ -92,15 +92,15 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                         <span className="text-secondary">{district}</span>
                     </nav>
 
-                    <div className="max-w-4xl">
+                    <div className="max-w-4xl mx-auto text-center">
                         <h1 className="text-4xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
                             {introTitle}
                         </h1>
-                        <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+                        <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
                             {description} <br className="hidden md:block" />
                             <strong>{district}</strong> bölgesindeki mülkleriniz için kira hukuku alanında uzman desteği.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
