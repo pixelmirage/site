@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     return {
         title: {
-            absolute: `${districtData.name} Kira Avukatı | Tahliye & Kira Tespit | Av. Mert Kağan Çetin`,
+            absolute: `${districtData.name} Kira Avukatı | Av. Mert Kağan Çetin`,
         },
-        description: districtData.description || `${districtData.name} bölgesinde uzman kira avukatı mı arıyorsunuz? Av. Mert Kağan Çetin ile ${districtData.name} dahil tüm İzmir'de tahliye davalarında profesyonel destek alın.`,
-        keywords: [`${districtData.name} kira avukatı`, `${districtData.name} tahliye avukatı`, "izmir kira avukatı", "kira tespit davası", "tahliye davası"],
+        description: districtData.description || `${districtData.name} bölgesinde kira hukuku ve tahliye davalarında profesyonel avukatlık desteği alın.`,
+        keywords: [`${districtData.name} kira avukatı`, `${districtData.name} tahliye avukatı`, `${districtData.name} kira davası`, "kira tespit davası", "tahliye davası"],
         openGraph: {
             title: `${districtData.name} Kira Avukatı | Av. Mert Kağan Çetin`,
             description: districtData.description,
