@@ -1,6 +1,7 @@
 import { getPostBySlug, getAllPosts } from "@/lib/blog/utils";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { Calendar, Clock, ChevronLeft, Share2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -149,7 +150,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             prose-td:border prose-td:border-slate-200 prose-td:px-4 prose-td:py-3 prose-td:text-sm
             prose-tr:even:bg-slate-50
             ">
-                        <MDXRemote source={post.content} />
+                        <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
                     </div>
 
                     <div className="mt-16 pt-16 border-t border-slate-100 italic text-slate-400 text-sm">
