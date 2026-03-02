@@ -64,6 +64,7 @@ export const metadata: Metadata = {
         description: "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
         type: "website",
+        modifiedTime: "2026-03-03",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
@@ -313,7 +314,8 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             Her bir tahliye sebebinin kendine özgü ispat şartları ve prosedürleri vardır. Bu nedenle <strong>İzmir kira avukatı</strong>
-                            desteği almadan hareket etmeniz durumunda davanın reddedilme riski bulunmaktadır.
+                            desteği almadan hareket etmeniz durumunda davanın reddedilme riski bulunmaktadır. Ev sahibinin hangi durumlarda
+                            kiracıyı çıkarabileceğini detaylıca incelediğimiz <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="text-secondary font-bold">kiracı tahliye rehberimizi</Link> okumanızı tavsiye ederiz.
                         </p>
 
                         {/* Süreç */}
@@ -336,7 +338,7 @@ export default function IzmirKiraAvukatiPage() {
                                     {[
                                         { step: 1, title: "Ön Değerlendirme", desc: "İzmir kira avukatı ile görüşme, durumun analizi ve tahliye sebebinin belirlenmesi" },
                                         { step: 2, title: "İhtarname Gönderimi", desc: "Noter aracılığıyla yasal ihtarnamenin kiracıya tebliği" },
-                                        { step: 3, title: "Zorunlu Arabuluculuk", desc: "Dava öncesi zorunlu arabuluculuk görüşmelerinin yapılması" },
+                                        { step: 3, title: "Zorunlu Arabuluculuk", desc: "Dava öncesi zorunlu arabuluculuk görüşmelerinin yapılması (detaylar için blog yazımızı okuyun)" },
                                         { step: 4, title: "Dava Açılması", desc: "Sulh Hukuk Mahkemesi'nde tahliye davasının açılması" },
                                         { step: 5, title: "Yargılama Süreci", desc: "Duruşmalar, delil sunumu ve tanık dinlenmesi" },
                                         { step: 6, title: "Karar ve İcra", desc: "Mahkeme kararı ve gerekirse icra yoluyla tahliye" },
@@ -361,6 +363,7 @@ export default function IzmirKiraAvukatiPage() {
                             Tahliye taahhütnamesine dayalı tahliye, diğer tahliye türlerine göre çok daha hızlı sonuçlanmaktadır.
                             <strong>İzmir kira avukatı</strong> olarak müvekkillerimize mümkün olduğunca tahliye taahhütnamesi almalarını önermekteyiz.
                             Bu konuda detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyabilirsiniz.
+                            İki haklı ihtar yoluyla tahliye sürecini merak ediyorsanız <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir" className="text-secondary font-bold">iki haklı ihtar makalemizi</Link> de inceleyebilirsiniz.
                         </p>
 
                         {/* Kira Tespit Davası */}
@@ -397,7 +400,7 @@ export default function IzmirKiraAvukatiPage() {
                             <strong>İzmir kira avukatı</strong> olarak kira tespit davalarında taşınmaz bilirkişi raporu, emsal kira bedelleri
                             ve bölgesel piyasa analizleri ile güçlü bir dava dosyası hazırlıyoruz. Kira tespit davası sonucunda belirlenen
                             yeni kira bedeli, dava tarihinden değil ilgili kira döneminin başından itibaren geçerli olur. Bu nedenle davanın
-                            doğru zamanda açılması büyük önem taşımaktadır.
+                            doğru zamanda açılması büyük önem taşımaktadır. Dava öncesi zorunlu olan <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="text-secondary font-bold">arabuluculuk sürecini</Link> de incelemenizi tavsiye ederiz.
                         </p>
 
                         {/* 10 Yıllık Kiracının Tahliyesi */}
@@ -437,7 +440,7 @@ export default function IzmirKiraAvukatiPage() {
                             ihtiyacın gerçek ve samimi olup olmadığını titizlikle değerlendirir. Ayrıca tahliye kararı
                             sonrasında taşınmaz, 3 yıl boyunca eski kiracıdan başkasına kiraya verilemez (TBK m. 355).
                             <strong> İzmir kira avukatı</strong> olarak <strong>ihtiyaç nedeniyle tahliye dava açma süresi</strong>ni
-                            kaçırmamanız için süreç takibinizi titizlikle gerçekleştiriyoruz.
+                            kaçırmamanız için süreç takibinizi titizlikle gerçekleştiriyoruz. Konuyu detaylıca ele aldığımız <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye davası rehberimizi</Link> mutlaka okuyun.
                         </p>
 
                         {/* Kira Sözleşmesi */}
@@ -461,7 +464,7 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             Doğru hazırlanmış bir <strong>kira sözleşmesi</strong>, ileride yaşanabilecek uyuşmazlıkları büyük ölçüde
                             önler. Sözleşmede eksik veya hatalı maddeler, <strong>kiracının hakları</strong> veya kiraya verenin hakları
-                            açısından ciddi sorunlara yol açabilir.
+                            açısından ciddi sorunlara yol açabilir. İşyeri kiralamaları için <Link href="/blog/isyeri-kira-sozlesmesi-rehberi" className="text-secondary font-bold">işyeri kira sözleşmesi rehberimizi</Link> inceleyebilirsiniz.
                         </p>
 
                         <h3>Tahliye Taahhütnamesi Örneği ve Önemi</h3>
@@ -598,6 +601,7 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             <strong>İzmir kira avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
+                            İzmir gayrimenkul piyasasındaki güncel hukuki gelişmeleri takip etmek için <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="text-secondary font-bold">güncel gelişmeler makalemizi</Link> okuyabilirsiniz.
                         </p>
 
                         {/* SSS */}
