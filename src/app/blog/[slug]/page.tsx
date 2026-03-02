@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 import { RelatedPosts } from "@/components/blog/RelatedPosts";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 
@@ -74,9 +75,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 title={post.title}
                 description={post.excerpt}
                 datePublished={post.date}
+                dateModified={post.dateModified}
                 image={post.coverImage}
                 url={articleUrl}
             />
+            {post.faqs && post.faqs.length > 0 && (
+                <FAQSchema faqs={post.faqs} />
+            )}
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },

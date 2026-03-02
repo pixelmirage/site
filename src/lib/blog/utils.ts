@@ -4,14 +4,21 @@ import matter from "gray-matter";
 
 const postsDirectory = path.join(process.cwd(), "src/content/blog");
 
+export interface FAQItem {
+    question: string;
+    answer: string;
+}
+
 export interface PostData {
     slug: string;
     title: string;
     date: string;
+    dateModified?: string;
     excerpt: string;
     coverImage?: string;
     content: string;
     tags?: string[];
+    faqs?: FAQItem[];
 }
 
 export function getAllPosts(): PostData[] {
@@ -31,7 +38,7 @@ export function getAllPosts(): PostData[] {
             return {
                 slug,
                 content,
-                ...(data as { title: string; date: string; excerpt: string; coverImage?: string; tags?: string[] }),
+                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[] }),
             };
         });
 
@@ -47,7 +54,7 @@ export function getPostBySlug(slug: string): PostData | null {
         return {
             slug,
             content,
-            ...(data as { title: string; date: string; excerpt: string; coverImage?: string; tags?: string[] }),
+            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[] }),
         };
     } catch (e) {
         return null;
