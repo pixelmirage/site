@@ -64,7 +64,9 @@ export const metadata: Metadata = {
         description: "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
         type: "website",
-        modifiedTime: "2026-03-03",
+    },
+    other: {
+        "article:modified_time": "2026-03-03",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
