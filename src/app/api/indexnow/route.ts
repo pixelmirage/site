@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const INDEXNOW_KEY = '502b9f62adda878abd6914e0259598c9';
+const INDEXNOW_KEY = '8bb539d0a5f7442b92ff3b3b983189d3';
 const HOST = 'mertkagancetin.com';
 const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
 
