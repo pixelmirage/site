@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog/utils';
 import { districts, getSlugFromDistrict } from '@/lib/districts';
+import { glossaryTerms } from '@/lib/glossary';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://mertkagancetin.com';
@@ -33,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/iletisim': { lastModified: '2026-02-10', priority: 0.8 },
         '/kira-artis-orani-hesaplama': { lastModified: '2026-03-03', priority: 0.8 },
         '/tahliye-taahhutnamesi': { lastModified: '2026-02-10', priority: 0.8 },
+        '/sozluk': { lastModified: '2026-03-04', priority: 0.8 },
     };
 
     const routes = Object.entries(staticRoutes).map(([route, config]) => ({
@@ -42,5 +44,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: config.priority,
     }));
 
-    return [...routes, ...districtSitemap, ...blogSitemap];
+    // Glossary Term Pages
+    const glossarySitemap = glossaryTerms.map((term) => ({
+        url: `${baseUrl}/sozluk/${term.slug}/`,
+        lastModified: new Date(term.lastUpdated),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    return [...routes, ...districtSitemap, ...glossarySitemap, ...blogSitemap];
 }

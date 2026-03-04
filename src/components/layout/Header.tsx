@@ -12,6 +12,7 @@ const navigation = [
     { name: "Anasayfa", href: "/" },
     { name: "İzmir Kira Avukatı", href: "/izmir-kira-avukati" },
     { name: "Makaleler", href: "/blog" },
+    { name: "Sözlük", href: "/sozluk" },
     { name: "Hizmetler", href: "/hizmetler" },
     { name: "Hakkımızda", href: "/hakkimda" },
     { name: "İletişim", href: "/iletisim" },
