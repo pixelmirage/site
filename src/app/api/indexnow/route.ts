@@ -71,6 +71,20 @@ export async function GET(request: NextRequest) {
         `https://${HOST}/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/`,
         `https://${HOST}/blog/isyeri-kira-sozlesmesi-rehberi/`,
         `https://${HOST}/blog/ihtiyac-nedeniyle-tahliye-davasi/`,
+        // Glossary
+        `https://${HOST}/sozluk/`,
+        `https://${HOST}/sozluk/tahliye-taahhutnamesi/`,
+        `https://${HOST}/sozluk/kira-tespit-davasi/`,
+        `https://${HOST}/sozluk/ihtiyac-nedeniyle-tahliye/`,
+        `https://${HOST}/sozluk/zorunlu-arabuluculuk/`,
+        `https://${HOST}/sozluk/iki-hakli-ihtar/`,
+        `https://${HOST}/sozluk/kira-sozlesmesi/`,
+        `https://${HOST}/sozluk/depozito/`,
+        `https://${HOST}/sozluk/kira-artis-orani/`,
+        `https://${HOST}/sozluk/kira-uyarlama-davasi/`,
+        `https://${HOST}/sozluk/fuzuli-isgal/`,
+        `https://${HOST}/sozluk/10-yillik-uzama-suresi/`,
+        `https://${HOST}/sozluk/kiraci-haklari/`,
     ];
 
     const payload = {
