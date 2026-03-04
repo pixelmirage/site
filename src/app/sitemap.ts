@@ -5,7 +5,7 @@ import { districts, getSlugFromDistrict } from '@/lib/districts';
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://mertkagancetin.com';
 
-    // Blog Posts
+    // Blog Posts — use actual post dates for lastModified
     const posts = getAllPosts();
     const blogSitemap = posts.map((post) => ({
         url: `${baseUrl}/blog/${post.slug}/`,
@@ -14,20 +14,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    // District Landing Pages (Programmatic SEO)
+    // District Landing Pages — fixed date reflecting last content update
+    const districtLastModified = new Date('2026-03-03');
     const districtSitemap = districts.map((district) => ({
         url: `${baseUrl}/${getSlugFromDistrict(district)}-kira-avukati/`,
-        lastModified: new Date(),
+        lastModified: districtLastModified,
         changeFrequency: 'monthly' as const,
         priority: 0.8,
     }));
 
-    // Static Routes
-    const routes = ['', '/izmir-kira-avukati', '/hakkimda', '/hizmetler', '/blog', '/iletisim', '/kira-artis-orani-hesaplama', '/tahliye-taahhutnamesi'].map((route) => ({
+    // Static Routes — individual last modified dates per page
+    const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
+        '': { lastModified: '2026-03-03', priority: 1 },
+        '/izmir-kira-avukati': { lastModified: '2026-03-03', priority: 1 },
+        '/hakkimda': { lastModified: '2026-03-03', priority: 0.8 },
+        '/hizmetler': { lastModified: '2026-03-04', priority: 0.8 },
+        '/blog': { lastModified: '2026-03-03', priority: 0.8 },
+        '/iletisim': { lastModified: '2026-02-10', priority: 0.8 },
+        '/kira-artis-orani-hesaplama': { lastModified: '2026-03-03', priority: 0.8 },
+        '/tahliye-taahhutnamesi': { lastModified: '2026-02-10', priority: 0.8 },
+    };
+
+    const routes = Object.entries(staticRoutes).map(([route, config]) => ({
         url: `${baseUrl}${route}/`,
-        lastModified: new Date(),
+        lastModified: new Date(config.lastModified),
         changeFrequency: 'weekly' as const,
-        priority: route === '' || route === '/izmir-kira-avukati' ? 1 : 0.8,
+        priority: config.priority,
     }));
 
     return [...routes, ...districtSitemap, ...blogSitemap];

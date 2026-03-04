@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hizmetlerimiz",
-    description: "Av. Mert Kağan Çetin tarafından sunulan kira hukuku, tahliye davaları ve gayrimenkul danışmanlığı hizmetleri.",
+    title: "Kira Hukuku ve Gayrimenkul Hizmetleri",
+    description: "İzmir'de kira tespit davası, tahliye davaları, gayrimenkul devri ve arabuluculuk hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
     alternates: {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },
@@ -60,7 +60,7 @@ export default function ServicesPage() {
             {/* Page Header */}
             <section className="bg-slate-50 py-24 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hizmet Alanlarımız</h1>
+                    <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Kira Hukuku ve Gayrimenkul Hizmetleri</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                         <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak gayrimenkul ve kira hukuku alanında uzmanlaşmış kadromuzla yanınızdayız.
                     </p>

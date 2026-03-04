@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Hakkımda",
-    description: "İzmir kira avukatı Mert Kağan Çetin'in mesleki tecrübesi, uzmanlık alanları ve hukuk bürosu vizyonu hakkında detaylı bilgi.",
+    title: "İzmir Kira Avukatı Mert Kağan Çetin Hakkında",
+    description: "7+ yıl tecrübeli İzmir kira avukatı Mert Kağan Çetin'in mesleki geçmişi, uzmanlık alanları ve 500+ başarılı dava deneyimi hakkında bilgi edinin.",
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },

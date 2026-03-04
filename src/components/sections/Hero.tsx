@@ -33,7 +33,7 @@ export function Hero() {
                             transition={{ duration: 0.8 }}
                             className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight"
                         >
-                            <Link href="/izmir-kira-avukati" className="hover:text-secondary transition-colors">İzmir Kira Avukatı</Link>{" "}
+                            İzmir Kira Avukatı{" "}
                             <br className="hidden md:block" />
                             <span className="text-secondary italic">Güven</span> ve Deneyim
                         </motion.h1>
