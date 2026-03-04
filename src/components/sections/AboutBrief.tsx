@@ -14,7 +14,7 @@ export function AboutBrief() {
                     {/* Text Content */}
                     <div className="space-y-10">
                         <div className="space-y-4">
-                            <h3 className="text-4xl md:text-5xl font-serif font-bold text-primary">Av. Mert Kağan Çetin</h3>
+                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">Av. Mert Kağan Çetin</h2>
                         </div>
 
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed font-serif italic opacity-90">

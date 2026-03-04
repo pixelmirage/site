@@ -220,7 +220,15 @@ export default function IzmirKiraAvukatiPage() {
             prose-td:border prose-td:border-slate-200 prose-td:px-4 prose-td:py-3 prose-td:text-sm
             prose-tr:even:bg-slate-50">
 
-                        {/* Intro */}
+                        {/* Definition Block - AI SEO Optimized */}
+                        <p className="text-xl leading-relaxed font-medium">
+                            <strong>İzmir kira avukatı</strong>, kira sözleşmelerinden doğan uyuşmazlıklarda kiracı veya ev sahibini hukuki süreçlerde temsil eden, tahliye davaları, kira tespit davaları ve kira alacağı takibinde uzmanlaşmış avukattır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı olarak Bayraklı merkezli ofisinden İzmir genelinde kira hukuku hizmeti vermektedir.
+                        </p>
+
+                        <p className="text-sm text-slate-500 italic">
+                            Son güncelleme: 4 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                        </p>
+
                         <p className="text-xl leading-relaxed">
                             İzmir'de kira hukuku alanında uzmanlaşmış bir avukat olarak, ev sahipleri ve kiracılar arasındaki
                             uyuşmazlıkların çözümünde profesyonel hukuki destek sunuyoruz. Özellikle <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) bölgesindeki ofisimizden

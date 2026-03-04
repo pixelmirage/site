@@ -47,7 +47,7 @@ export function ServicesGrid() {
                     <div className="inline-block text-secondary font-bold text-xs uppercase tracking-[0.4em] pb-2 border-b-2 border-secondary/30">
                         Faaliyet Alanları
                     </div>
-                    <h3 className="text-4xl md:text-5xl font-serif font-bold text-primary">Profesyonel Hukuki Hizmetler</h3>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">Profesyonel Hukuki Hizmetler</h2>
                     <p className="text-muted-foreground font-light text-lg">
                         İzmir'deki kira uyuşmazlıkları ve gayrimenkul davalarında kurumsal disiplinle sonuç alıyoruz.
                     </p>

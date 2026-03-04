@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { districts, getSlugFromDistrict, getDistrictData } from "@/lib/districts";
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Mail, MapPin, CheckCircle, ArrowRight, Home, ChevronRight, Scale, FileText, Users, Building2, Map } from "lucide-react";
+import { Phone, Mail, MapPin, CheckCircle, ArrowRight, Home, ChevronRight, Scale, FileText, Users, Building2, Map, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -166,6 +166,32 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 Kira hukuku teknik detayların davanın kaderini belirlediği bir alandır. Özellikle <strong>{district}</strong> gibi değer artışının yüksek olduğu bölgelerde
                                 hak kaybı yaşamamak maddi açıdan büyük önem taşır. Ofisimiz Bayraklı Adliyesi'nde bulunmakla birlikte, {district} bölgesindeki taşınmazlarla ilgili
                                 tüm davalarda aktif rol almaktadır.
+                            </p>
+
+                            {/* Related Blog Posts - Internal Linking */}
+                            <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
+                                <h4 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
+                                    <BookOpen className="w-5 h-5 text-secondary" />
+                                    İlgili Makaleler
+                                </h4>
+                                <div className="space-y-3">
+                                    <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                        → Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?
+                                    </Link>
+                                    <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                        → İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?
+                                    </Link>
+                                    <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                        → Kira Hukukunda Zorunlu Arabuluculuk Süreci
+                                    </Link>
+                                </div>
+                                <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    Tüm Makaleler <ArrowRight className="w-3 h-3" />
+                                </Link>
+                            </div>
+
+                            <p className="text-xs text-slate-400 italic not-prose">
+                                Son güncelleme: Mart 2026
                             </p>
                         </div>
 
