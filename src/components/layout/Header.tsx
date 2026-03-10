@@ -10,11 +10,12 @@ import { Phone } from "lucide-react";
 
 const navigation = [
     { name: "Anasayfa", href: "/" },
-    { name: "İzmir Kira Avukatı", href: "/izmir-kira-avukati" },
+    { name: "Kira Avukatı", href: "/izmir-kira-avukati" },
+    { name: "İş Avukatı", href: "/izmir-is-avukati" },
+    { name: "Boşanma Avukatı", href: "/izmir-bosanma-avukati" },
+    { name: "Tazminat Avukatı", href: "/izmir-tazminat-avukati" },
     { name: "Makaleler", href: "/blog" },
-    { name: "Sözlük", href: "/sozluk" },
     { name: "Hizmetler", href: "/hizmetler" },
-    { name: "Hakkımızda", href: "/hakkimda" },
     { name: "İletişim", href: "/iletisim" },
 ];
 

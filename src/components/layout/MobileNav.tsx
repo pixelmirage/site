@@ -9,10 +9,12 @@ import { Logo } from "@/components/ui/logo";
 
 const navItems = [
     { href: "/", label: "Anasayfa" },
-    { href: "/hakkimda", label: "Hakkımda" },
+    { href: "/izmir-kira-avukati", label: "Kira Avukatı" },
+    { href: "/izmir-is-avukati", label: "İş Avukatı" },
+    { href: "/izmir-bosanma-avukati", label: "Boşanma Avukatı" },
+    { href: "/izmir-tazminat-avukati", label: "Tazminat Avukatı" },
     { href: "/hizmetler", label: "Hizmetler" },
     { href: "/blog", label: "Makaleler" },
-    { href: "/sozluk", label: "Hukuk Sözlüğü" },
     { href: "/iletisim", label: "İletişim" },
 ];
 

@@ -33,7 +33,7 @@ export function Hero() {
                             transition={{ duration: 0.8 }}
                             className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight"
                         >
-                            İzmir Kira Avukatı{" "}
+                            İzmir Avukat{" "}
                             <br className="hidden md:block" />
                             <span className="text-secondary italic">Güven</span> ve Deneyim
                         </motion.h1>
@@ -45,10 +45,10 @@ export function Hero() {
                             className="max-w-2xl mx-auto"
                         >
                             <h2 className="text-xl md:text-2xl font-serif text-primary/80 mb-6 italic">
-                                Av. Mert Kağan Çetin - Gayrimenkul &amp; Kira Hukuku Danışmanı
+                                Av. Mert Kağan Çetin - Kira, İş ve Boşanma Hukuku
                             </h2>
                             <p className="text-base md:text-lg text-muted-foreground leading-relaxed font-light">
-                                İzmir'de kira hukuku ve gayrimenkul uyuşmazlıkları alanında, yılların getirdiği tecrübe ve kararlılıkla, mülkiyet haklarınızı en üst düzeyde savunuyoruz.
+                                İzmir'de kira hukuku, iş hukuku ve boşanma davaları alanında, yılların getirdiği tecrübe ve kararlılıkla haklarınızı en üst düzeyde savunuyoruz.
                             </p>
                         </motion.div>
                     </div>

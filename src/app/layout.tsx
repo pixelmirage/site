@@ -13,10 +13,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),
   title: {
     template: "%s | Av. Mert Kağan Çetin",
-    default: "Av. Mert Kağan Çetin | Kira ve Gayrimenkul Hukuku",
+    default: "Av. Mert Kağan Çetin | Kira, İş ve Boşanma Hukuku İzmir",
   },
-  description: "Av. Mert Kağan Çetin; kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıkları alanında İzmir merkezli avukatlık hizmeti sunar.",
-  keywords: ["kira hukuku avukatı", "tahliye davası avukatı", "gayrimenkul hukuku", "İzmir avukat", "kira tespit davası", "tahliye taahhütnamesi"],
+  description: "Av. Mert Kağan Çetin; kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıkları alanında İzmir merkezli avukatlık hizmeti sunar.",
+  keywords: ["kira hukuku avukatı", "tahliye davası avukatı", "gayrimenkul hukuku", "İzmir avukat", "kira tespit davası", "tahliye taahhütnamesi", "iş hukuku avukatı", "işe iade davası", "kıdem tazminatı", "boşanma avukatı", "velayet davası", "nafaka davası", "İzmir iş avukatı", "İzmir boşanma avukatı"],
   authors: [{ name: "Av. Mert Kağan Çetin" }],
   creator: "Mert Kağan Çetin Hukuk Bürosu",
   publisher: "Mert Kağan Çetin Hukuk Bürosu",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     url: 'https://mertkagancetin.com',
     siteName: 'Av. Mert Kağan Çetin',
-    title: 'Av. Mert Kağan Çetin | Kira ve Gayrimenkul Hukuku',
-    description: 'İzmir\'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıklarında avukatlık hizmeti.',
+    title: 'Av. Mert Kağan Çetin | Kira, İş ve Boşanma Hukuku İzmir',
+    description: 'İzmir\'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıklarında avukatlık hizmeti.',
     images: [
       {
         url: '/og-image.jpg',
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Av. Mert Kağan Çetin | Kira ve Gayrimenkul Hukuku',
-    description: 'İzmir\'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıklarında avukatlık hizmeti.',
+    title: 'Av. Mert Kağan Çetin | Kira, İş ve Boşanma Hukuku İzmir',
+    description: 'İzmir\'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıklarında avukatlık hizmeti.',
     images: ['/og-image.jpg'],
   },
   icons: {

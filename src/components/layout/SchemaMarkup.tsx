@@ -27,7 +27,7 @@ export function SchemaMarkup() {
                 "@type": "WebSite",
                 "@id": "https://mertkagancetin.com/#website",
                 "url": "https://mertkagancetin.com",
-                "name": "Av. Mert Kağan Çetin - İzmir Kira Avukatı",
+                "name": "Av. Mert Kağan Çetin - İzmir Avukat | Kira, İş ve Boşanma Hukuku",
                 "publisher": {
                     "@id": "https://mertkagancetin.com/#organization"
                 },
@@ -67,7 +67,7 @@ export function SchemaMarkup() {
                     "closes": "18:00"
                 },
                 "priceRange": "$$",
-                "description": "İzmir'de kira hukuku, tahliye davaları ve gayrimenkul uyuşmazlıkları alanında uzman avukatlık hizmeti. Kiracı tahliye, kira tespit, kira sözleşmesi hazırlama ve arabuluculuk hizmetleri.",
+                "description": "İzmir'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıkları alanında uzman avukatlık hizmeti. Kiracı tahliye, kira tespit, işe iade, kıdem tazminatı, anlaşmalı boşanma, velayet ve nafaka davaları.",
                 "knowsAbout": [
                     "Kira Hukuku",
                     "Tahliye Davaları",
@@ -75,7 +75,21 @@ export function SchemaMarkup() {
                     "Kira Tespit Davası",
                     "Tahliye Taahhütnamesi",
                     "Zorunlu Arabuluculuk",
-                    "Kira Sözleşmesi"
+                    "Kira Sözleşmesi",
+                    "İş Hukuku",
+                    "İşe İade Davası",
+                    "Kıdem Tazminatı",
+                    "İhbar Tazminatı",
+                    "İş Kazası Tazminatı",
+                    "Boşanma Hukuku",
+                    "Aile Hukuku",
+                    "Velayet Davası",
+                    "Nafaka Davası",
+                    "Mal Paylaşımı",
+                    "Tazminat Hukuku",
+                    "Maddi Tazminat",
+                    "Manevi Tazminat",
+                    "Trafik Kazası Tazminatı"
                 ],
                 "memberOf": {
                     "@type": "Organization",
@@ -97,14 +111,24 @@ export function SchemaMarkup() {
                 ],
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
-                    "name": "Kira Hukuku Hizmetleri",
+                    "name": "Hukuki Hizmetler",
                     "itemListElement": [
                         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kiracı Tahliye Davası" } },
                         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Tespit Davası" } },
                         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tahliye Taahhütnamesi İcra Takibi" } },
                         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Sözleşmesi Hazırlama" } },
                         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zorunlu Arabuluculuk" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gayrimenkul Devir ve Tescil" } }
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gayrimenkul Devir ve Tescil" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İşe İade Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kıdem Tazminatı Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İş Kazası Tazminatı" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anlaşmalı Boşanma Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Çekişmeli Boşanma Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Velayet Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nafaka Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maddi Tazminat Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manevi Tazminat Davası" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trafik Kazası Tazminatı" } }
                     ]
                 }
             }

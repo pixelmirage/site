@@ -11,19 +11,20 @@ export function Footer() {
                             <Logo />
                         </Link>
                         <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                            İzmir Bayraklı merkezli, gayrimenkul ve kira hukuku alanında uzmanlaşmış butik hukuk pratiği.
+                            İzmir Bayraklı merkezli; kira hukuku, iş hukuku ve aile hukuku alanlarında uzmanlaşmış butik hukuk pratiği.
                         </p>
                     </div>
 
                     <div className="space-y-6">
-                        <h4 className="text-xs font-bold uppercase tracking-widest text-primary">Navigasyon</h4>
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-primary">Uzmanlık Alanları</h4>
                         <ul className="space-y-4">
-                            <li><Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuki Makaleler</Link></li>
-                            <li><Link href="/sozluk" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuk Sözlüğü</Link></li>
                             <li><Link href="/izmir-kira-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Kira Avukatı</Link></li>
-                            <li><Link href="/hizmetler" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hizmetlerimiz</Link></li>
+                            <li><Link href="/izmir-is-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir İş Avukatı</Link></li>
+                            <li><Link href="/izmir-bosanma-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Boşanma Avukatı</Link></li>
+                            <li><Link href="/izmir-tazminat-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Tazminat Avukatı</Link></li>
+                            <li><Link href="/hizmetler" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tüm Hizmetler</Link></li>
+                            <li><Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuki Makaleler</Link></li>
                             <li><Link href="/hakkimda" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hakkımızda</Link></li>
-                            <li><Link href="/iletisim" className="text-sm text-muted-foreground hover:text-primary transition-colors">İletişim</Link></li>
                         </ul>
                     </div>
 
@@ -32,7 +33,8 @@ export function Footer() {
                         <ul className="space-y-4">
                             <li><Link href="/hizmetler#tahliye" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tahliye Davaları</Link></li>
                             <li><Link href="/hizmetler#kira" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Tespit</Link></li>
-                            <li><Link href="/hizmetler#gayrimenkul" className="text-sm text-muted-foreground hover:text-primary transition-colors">Gayrimenkul Hukuku</Link></li>
+                            <li><Link href="/izmir-is-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">İşe İade & Tazminat</Link></li>
+                            <li><Link href="/izmir-bosanma-avukati" className="text-sm text-muted-foreground hover:text-primary transition-colors">Boşanma & Velayet</Link></li>
                             <li><Link href="/kira-artis-orani-hesaplama" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Artış Hesaplama</Link></li>
                             <li><Link href="/tahliye-taahhutnamesi" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tahliye Taahhütnamesi</Link></li>
                         </ul>

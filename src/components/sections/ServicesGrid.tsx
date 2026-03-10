@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Scale, Key, Home, FileText, Gavel, Users2, MoveRight } from "lucide-react";
+import { Scale, Key, Home, FileText, Gavel, Users2, MoveRight, Briefcase, Heart } from "lucide-react";
 import Link from "next/link";
 
 const services = [
@@ -34,6 +34,30 @@ const services = [
         title: "Arabuluculuk",
         description: "Zorunlu arabuluculuk süreçlerinde profesyonel temsil ve müzakere yönetimi.",
         icon: Users2
+    },
+    {
+        title: "İşe İade Davası",
+        description: "Haksız fesih halinde işe iade ve kıdem tazminatı davalarında uzman temsil.",
+        icon: Briefcase,
+        href: "/izmir-is-avukati"
+    },
+    {
+        title: "Kıdem & İhbar Tazminatı",
+        description: "İş sözleşmesinin sona ermesinde kıdem ve ihbar tazminatı haklarının korunması.",
+        icon: Scale,
+        href: "/izmir-is-avukati"
+    },
+    {
+        title: "Boşanma Davası",
+        description: "Anlaşmalı ve çekişmeli boşanma süreçlerinde profesyonel hukuki danışmanlık.",
+        icon: Heart,
+        href: "/izmir-bosanma-avukati"
+    },
+    {
+        title: "Velayet & Nafaka",
+        description: "Çocuk velayeti, nafaka ve mal paylaşımı davalarında haklarınızın korunması.",
+        icon: Users2,
+        href: "/izmir-bosanma-avukati"
     }
 ];
 
@@ -49,7 +73,7 @@ export function ServicesGrid() {
                     </div>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">Profesyonel Hukuki Hizmetler</h2>
                     <p className="text-muted-foreground font-light text-lg">
-                        İzmir'deki kira uyuşmazlıkları ve gayrimenkul davalarında kurumsal disiplinle sonuç alıyoruz.
+                        İzmir'de kira, iş ve boşanma hukuku alanlarında kurumsal disiplinle sonuç alıyoruz.
                     </p>
                 </div>
 
@@ -70,7 +94,7 @@ export function ServicesGrid() {
                             <p className="text-muted-foreground text-sm leading-relaxed font-light mb-8">
                                 {service.description}
                             </p>
-                            <Link href="/hizmetler" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors">
+                            <Link href={(service as any).href || "/hizmetler"} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors">
                                 Hizmet Detayı <MoveRight className="w-4 h-4" />
                             </Link>
                         </motion.div>

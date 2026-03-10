@@ -1,12 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Scale, Key, Home, FileText, Gavel, Users2, ShieldCheck, ChevronRight } from "lucide-react";
+import { Scale, Key, Home, FileText, Gavel, Users2, ShieldCheck, ChevronRight, Briefcase, Heart } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Kira Hukuku ve Gayrimenkul Hizmetleri",
-    description: "İzmir'de kira tespit davası, tahliye davaları, gayrimenkul devri ve arabuluculuk hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
+    title: "Hukuki Hizmetlerimiz | Kira, İş ve Boşanma Hukuku",
+    description: "İzmir'de kira hukuku, iş hukuku ve boşanma davaları alanında kapsamlı avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
     alternates: {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },
@@ -51,6 +51,42 @@ const services = [
         description: "Dava yoluna gitmeden önce zorunlu arabuluculuk süreçlerinde etkin temsil ve stratejik danışmanlık.",
         icon: Users2,
         details: ["Arabuluculuk hazırlığı", "Müzakere yönetimi", "Anlaşma tutanakları", "Uzlaşma stratejileri"]
+    },
+    {
+        title: "İşe İade Davası",
+        description: "Haksız fesih halinde işe iade, kıdem tazminatı, ihbar tazminatı ve işçi alacakları davaları.",
+        icon: Briefcase,
+        details: ["İşe iade davası", "Kıdem tazminatı", "İhbar tazminatı", "Fazla mesai alacağı"]
+    },
+    {
+        title: "İş Kazası Tazminatı",
+        description: "İş kazası ve meslek hastalığı nedeniyle maddi ve manevi tazminat davalarında uzman temsil.",
+        icon: ShieldCheck,
+        details: ["Maddi tazminat", "Manevi tazminat", "SGK bildirimi", "Kusur tespiti"]
+    },
+    {
+        title: "Anlaşmalı Boşanma",
+        description: "Eşlerin tüm konularda uzlaşarak tek celsede boşanma sürecini tamamlaması için protokol hazırlığı.",
+        icon: FileText,
+        details: ["Boşanma protokolü", "Nafaka düzenlemesi", "Velayet anlaşması", "Mal paylaşımı"]
+    },
+    {
+        title: "Çekişmeli Boşanma",
+        description: "Tarafların anlaşamadığı durumlarda çekişmeli boşanma davası, velayet ve nafaka süreçleri.",
+        icon: Gavel,
+        details: ["Boşanma sebepleri", "Velayet davası", "Nafaka davası", "Tazminat talepleri"]
+    },
+    {
+        title: "Velayet & Nafaka",
+        description: "Boşanma sonrası çocuk velayeti, iştirak nafakası ve yoksulluk nafakası davalarında profesyonel destek.",
+        icon: Heart,
+        details: ["Velayet değişikliği", "İştirak nafakası", "Yoksulluk nafakası", "Kişisel ilişki düzeni"]
+    },
+    {
+        title: "Mal Paylaşımı",
+        description: "Edinilmiş mallara katılma alacağı ve mal rejimi tasfiyesi davalarında haklarınızın korunması.",
+        icon: Scale,
+        details: ["Katılma alacağı", "Değer artış payı", "İhtiyati tedbir", "Mal kaçırma önlemi"]
     }
 ];
 
@@ -60,9 +96,11 @@ export default function ServicesPage() {
             {/* Page Header */}
             <section className="bg-slate-50 py-24 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Kira Hukuku ve Gayrimenkul Hizmetleri</h1>
+                    <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hukuki Hizmetlerimiz</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                        <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak gayrimenkul ve kira hukuku alanında uzmanlaşmış kadromuzla yanınızdayız.
+                        <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link>,{" "}
+                        <Link href="/izmir-is-avukati" className="text-secondary hover:underline">iş hukuku</Link> ve{" "}
+                        <Link href="/izmir-bosanma-avukati" className="text-secondary hover:underline">boşanma davaları</Link> alanlarında uzmanlaşmış kadromuzla yanınızdayız.
                     </p>
                 </div>
             </section>
@@ -111,7 +149,7 @@ export default function ServicesPage() {
             {/* Trust Section */}
             <section className="py-24 bg-primary text-white">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-playfair font-bold mb-8">Neden Uzman Bir Kira Avukatı İle Çalışmalısınız?</h2>
+                    <h2 className="text-3xl font-playfair font-bold mb-8">Neden Uzman Bir Avukat İle Çalışmalısınız?</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                         <div className="space-y-4">
                             <div className="text-4xl font-bold text-secondary">01</div>

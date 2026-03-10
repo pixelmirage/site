@@ -37,7 +37,7 @@ export default function Home() {
             Hukuki Sorunlarınız İçin Profesyonel Destek
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            İzmir'de kira, tahliye veya gayrimenkul hukukuna ilişkin her türlü sorunuz için bizimle iletişime geçebilirsiniz. Hak kaybı yaşamadan profesyonel destek alın.
+            İzmir'de kira, iş hukuku, boşanma veya gayrimenkul hukukuna ilişkin her türlü sorunuz için bizimle iletişime geçebilirsiniz. Hak kaybı yaşamadan profesyonel destek alın.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-10 h-14 text-lg" asChild>
