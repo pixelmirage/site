@@ -506,6 +506,25 @@ export default function IzmirBosanmaAvukatiPage() {
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                         </p>
 
+                        {/* İlgili Makaleler */}
+                        <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
+                            <h3 className="font-bold text-primary text-xl mb-4">Aile Hukuku Makaleleri</h3>
+                            <div className="space-y-3">
+                                <Link href="/blog/anlasmali-bosanma-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Anlaşmalı Boşanma Nasıl Açılır? Adım Adım Rehber
+                                </Link>
+                                <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Velayet Davası Süreci ve Mahkeme Kriterleri
+                                </Link>
+                                <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Nafaka Hesaplama: Yoksulluk ve İştirak Nafakası
+                                </Link>
+                            </div>
+                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                Tüm Makaleler <ArrowRight className="w-3 h-3" />
+                            </Link>
+                        </div>
+
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 

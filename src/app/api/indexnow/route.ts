@@ -69,6 +69,22 @@ export async function GET(request: NextRequest) {
         `https://${HOST}/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/`,
         `https://${HOST}/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/`,
         `https://${HOST}/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/`,
+        `https://${HOST}/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/`,
+        // İş Hukuku
+        `https://${HOST}/izmir-is-avukati/`,
+        `https://${HOST}/blog/isten-cikarildiginda-ne-yapmali/`,
+        `https://${HOST}/blog/kidem-tazminati-nasil-hesaplanir/`,
+        `https://${HOST}/blog/is-kazasi-tazminati-sureci-ve-haklariniz/`,
+        // Boşanma Hukuku
+        `https://${HOST}/izmir-bosanma-avukati/`,
+        `https://${HOST}/blog/anlasmali-bosanma-nasil-acilir/`,
+        `https://${HOST}/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/`,
+        `https://${HOST}/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/`,
+        // Tazminat Hukuku
+        `https://${HOST}/izmir-tazminat-avukati/`,
+        `https://${HOST}/blog/trafik-kazasi-tazminati-alma-sureci/`,
+        `https://${HOST}/blog/maddi-ve-manevi-tazminat-davasi-farklari/`,
+        `https://${HOST}/blog/malpraktis-davasi-doktor-hatasi-tazminati/`,
         // Glossary
         `https://${HOST}/sozluk/`,
         `https://${HOST}/sozluk/tahliye-taahhutnamesi/`,

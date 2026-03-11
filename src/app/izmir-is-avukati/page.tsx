@@ -556,6 +556,25 @@ export default function IzmirIsAvukatiPage() {
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                         </p>
 
+                        {/* İlgili Makaleler */}
+                        <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
+                            <h3 className="font-bold text-primary text-xl mb-4">İş Hukuku Makaleleri</h3>
+                            <div className="space-y-3">
+                                <Link href="/blog/isten-cikarildiginda-ne-yapmali" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İşten Çıkarıldığında Ne Yapmalı? 2026 Rehberi
+                                </Link>
+                                <Link href="/blog/kidem-tazminati-nasil-hesaplanir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Kıdem Tazminatı Nasıl Hesaplanır?
+                                </Link>
+                                <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İş Kazası Tazminatı Süreci ve Haklarınız
+                                </Link>
+                            </div>
+                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                Tüm Makaleler <ArrowRight className="w-3 h-3" />
+                            </Link>
+                        </div>
+
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 

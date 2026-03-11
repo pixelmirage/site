@@ -384,6 +384,25 @@ export default function IzmirTazminatAvukatiPage() {
                             ))}
                         </div>
 
+                        {/* İlgili Makaleler */}
+                        <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
+                            <h3 className="font-bold text-primary text-xl mb-4">Tazminat Hukuku Makaleleri</h3>
+                            <div className="space-y-3">
+                                <Link href="/blog/trafik-kazasi-tazminati-alma-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Trafik Kazası Tazminatı Alma Süreci
+                                </Link>
+                                <Link href="/blog/maddi-ve-manevi-tazminat-davasi-farklari" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Maddi ve Manevi Tazminat Davası Arasındaki Farklar
+                                </Link>
+                                <Link href="/blog/malpraktis-davasi-doktor-hatasi-tazminati" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Malpraktis Davası: Doktor Hatası Tazminatı
+                                </Link>
+                            </div>
+                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                Tüm Makaleler <ArrowRight className="w-3 h-3" />
+                            </Link>
+                        </div>
+
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
                         <div className="not-prose space-y-6 my-8">
