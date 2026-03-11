@@ -9,7 +9,7 @@ export function SchemaMarkup() {
                 "url": "https://mertkagancetin.com",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://mertkagancetin.com/icon-512.png"
+                    "url": "https://mertkagancetin.com/logo.png"
                 },
                 "contactPoint": {
                     "@type": "ContactPoint",
