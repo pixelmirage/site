@@ -15,7 +15,8 @@ const navigation = [
     { name: "Boşanma Avukatı", href: "/izmir-bosanma-avukati" },
     { name: "Tazminat Avukatı", href: "/izmir-tazminat-avukati" },
     { name: "Makaleler", href: "/blog" },
-    { name: "Hizmetler", href: "/hizmetler" },
+    { name: "Sözlük", href: "/sozluk" },
+    { name: "Hakkımda", href: "/hakkimda" },
     { name: "İletişim", href: "/iletisim" },
 ];
 

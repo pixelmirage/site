@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Yasal Makaleler & Blog | İzmir Kira Avukatı",
-    description: "Kira hukuku, tahliye davaları ve güncel yargı kararları hakkında uzman görüşleri ve bilgilendirici makaleler.",
+    description: "Kira hukuku, iş hukuku, boşanma davaları, tahliye süreçleri ve güncel yargı kararları hakkında uzman görüşleri ve bilgilendirici makaleler.",
     alternates: {
         canonical: "https://mertkagancetin.com/blog/",
     },
@@ -64,7 +64,7 @@ export default function BlogPage() {
                                                 </span>
                                                 <span className="flex items-center gap-1.5">
                                                     <Clock className="w-3 h-3" />
-                                                    5 dk okuma
+                                                    {post.readingTime} dk okuma
                                                 </span>
                                             </div>
                                             <CardTitle className="text-xl font-playfair font-bold text-primary group-hover:text-secondary-foreground transition-colors leading-tight">

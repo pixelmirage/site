@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  trailingSlash: true,
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -9,6 +10,20 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/blog/ihtiyac-nedeniyle-tahliye-davasi/',
+        destination: '/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/',
+        permanent: true,
+      },
+      {
+        source: '/blog/isyeri-kira-sozlesmesi-rehberi/',
+        destination: '/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/',
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     return [

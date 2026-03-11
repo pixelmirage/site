@@ -19,6 +19,7 @@ export interface PostData {
     content: string;
     tags?: string[];
     faqs?: FAQItem[];
+    readingTime: number;
 }
 
 export function getAllPosts(): PostData[] {
@@ -35,9 +36,13 @@ export function getAllPosts(): PostData[] {
             const fileContents = fs.readFileSync(fullPath, "utf8");
             const { data, content } = matter(fileContents);
 
+            const wordCount = content.trim().split(/\s+/).length;
+            const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
             return {
                 slug,
                 content,
+                readingTime,
                 ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[] }),
             };
         });
@@ -51,9 +56,13 @@ export function getPostBySlug(slug: string): PostData | null {
         const fileContents = fs.readFileSync(fullPath, "utf8");
         const { data, content } = matter(fileContents);
 
+        const wordCount = content.trim().split(/\s+/).length;
+        const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
         return {
             slug,
             content,
+            readingTime,
             ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[] }),
         };
     } catch (e) {

@@ -13,8 +13,9 @@ const navItems = [
     { href: "/izmir-is-avukati", label: "İş Avukatı" },
     { href: "/izmir-bosanma-avukati", label: "Boşanma Avukatı" },
     { href: "/izmir-tazminat-avukati", label: "Tazminat Avukatı" },
-    { href: "/hizmetler", label: "Hizmetler" },
     { href: "/blog", label: "Makaleler" },
+    { href: "/sozluk", label: "Hukuk Sözlüğü" },
+    { href: "/hakkimda", label: "Hakkımda" },
     { href: "/iletisim", label: "İletişim" },
 ];
 

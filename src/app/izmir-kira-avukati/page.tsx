@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: {
         absolute: "İzmir Kira Avukatı | Tahliye Davası & Kira Tespit | Av. Mert Kağan Çetin",
     },
-    description: "İzmir kira avukatı Mert Kağan Çetin ile kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında profesyonel hukuki destek alın. 2026 güncel fiyatlar.",
+    description: "İzmir kira avukatı Mert Kağan Çetin ile tahliye davaları, kira tespit ve sözleşme uyuşmazlıklarında uzman hukuki destek.",
     keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı", "kira tespit davası ne zaman açılır", "kira bedelinin tespiti davası", "kiracının hakları", "kira sözleşmesi nasıl yapılır", "tahliye taahhütnamesi örneği", "10 yıllık kiracının tahliyesi", "kiracı nasıl çıkarılır", "ihtiyaç nedeniyle tahliye dava açma süresi"],
     openGraph: {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
@@ -372,7 +372,7 @@ export default function IzmirKiraAvukatiPage() {
                         <p className="text-center">
                             Tahliye taahhütnamesine dayalı tahliye, diğer tahliye türlerine göre çok daha hızlı sonuçlanmaktadır.
                             <strong>İzmir kira avukatı</strong> olarak müvekkillerimize mümkün olduğunca tahliye taahhütnamesi almalarını önermekteyiz.
-                            Bu konuda detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyabilirsiniz.
+                            Bu konuda detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyabilirsiniz.
                             İki haklı ihtar yoluyla tahliye sürecini merak ediyorsanız <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir" className="text-secondary font-bold">iki haklı ihtar makalemizi</Link> de inceleyebilirsiniz.
                         </p>
 
@@ -474,7 +474,7 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             Doğru hazırlanmış bir <strong>kira sözleşmesi</strong>, ileride yaşanabilecek uyuşmazlıkları büyük ölçüde
                             önler. Sözleşmede eksik veya hatalı maddeler, <strong>kiracının hakları</strong> veya kiraya verenin hakları
-                            açısından ciddi sorunlara yol açabilir. İşyeri kiralamaları için <Link href="/blog/isyeri-kira-sozlesmesi-rehberi" className="text-secondary font-bold">işyeri kira sözleşmesi rehberimizi</Link> inceleyebilirsiniz.
+                            açısından ciddi sorunlara yol açabilir. İşyeri kiralamaları için <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar" className="text-secondary font-bold">işyeri kira sözleşmesi rehberimizi</Link> inceleyebilirsiniz.
                         </p>
 
                         <h3>Tahliye Taahhütnamesi Örneği ve Önemi</h3>

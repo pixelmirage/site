@@ -27,16 +27,11 @@ export function Hero() {
                     </motion.div>
 
                     <div className="space-y-6">
-                        <motion.h1
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8 }}
-                            className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight"
-                        >
+                        <h1 className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight">
                             İzmir Avukat{" "}
                             <br className="hidden md:block" />
-                            <span className="text-secondary italic">Güven</span> ve Deneyim
-                        </motion.h1>
+                            <span className="text-secondary italic">Kira, İş</span> ve Boşanma Hukuku
+                        </h1>
 
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -45,7 +40,7 @@ export function Hero() {
                             className="max-w-2xl mx-auto"
                         >
                             <h2 className="text-xl md:text-2xl font-serif text-primary/80 mb-6 italic">
-                                Av. Mert Kağan Çetin - Kira, İş ve Boşanma Hukuku
+                                Av. Mert Kağan Çetin - İzmir Kira Avukatı, İş ve Boşanma Hukuku
                             </h2>
                             <p className="text-base md:text-lg text-muted-foreground leading-relaxed font-light">
                                 İzmir'de kira hukuku, iş hukuku ve boşanma davaları alanında, yılların getirdiği tecrübe ve kararlılıkla haklarınızı en üst düzeyde savunuyoruz.

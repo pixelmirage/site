@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "İzmir Kira Avukatı Mert Kağan Çetin Hakkında",
+    title: "İzmir Avukat Mert Kağan Çetin Hakkında | Kira, İş ve Boşanma Hukuku",
     description: "7+ yıl tecrübeli İzmir kira avukatı Mert Kağan Çetin'in mesleki geçmişi, uzmanlık alanları ve 500+ başarılı dava deneyimi hakkında bilgi edinin.",
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
@@ -56,7 +56,7 @@ export default function AboutPage() {
                                         <div className="p-2 bg-secondary/20 rounded-lg">
                                             <Award className="w-5 h-5 text-primary" />
                                         </div>
-                                        <h4 className="font-bold text-primary">Eğitim & Yetkinlik</h4>
+                                        <h3 className="font-bold text-primary">Eğitim & Yetkinlik</h3>
                                     </div>
                                     <ul className="space-y-2 text-sm text-muted-foreground">
                                         <li>• İzmir Barosu Üyeliği</li>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                                         <div className="p-2 bg-secondary/20 rounded-lg">
                                             <BookOpen className="w-5 h-5 text-primary" />
                                         </div>
-                                        <h4 className="font-bold text-primary">Vizyonumuz</h4>
+                                        <h3 className="font-bold text-primary">Vizyonumuz</h3>
                                     </div>
                                     <p className="text-sm text-muted-foreground">
                                         Modern hukuk teknolojilerini kullanarak, müvekkillerimize en hızlı ve en etkili çözümleri sunmak; İzmir'de kira hukuku dendiğinde akla gelen ilk ve en güvenilir isim olmaya devam etmek.
@@ -82,7 +82,7 @@ export default function AboutPage() {
                         <div className="lg:w-1/3 w-full sticky top-[100px]">
                             <Card className="border-2 border-primary/5 shadow-2xl overflow-hidden bg-white">
                                 <div className="bg-primary p-8 text-center text-white">
-                                    <h4 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h4>
+                                                <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
                                     <p className="text-sm text-secondary font-medium uppercase tracking-widest">Kurucu Avukat</p>
                                 </div>
                                 <CardContent className="p-8 space-y-8">
@@ -102,7 +102,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <div className="space-y-4">
-                                        <h5 className="font-bold text-primary text-sm uppercase tracking-widest">Neden Bizi Seçmelisiniz?</h5>
+                                                        <h4 className="font-bold text-primary text-sm uppercase tracking-widest">Neden Bizi Seçmelisiniz?</h4>
                                         {[
                                             "Birebir İletişim",
                                             "Sonuç Odaklılık",
@@ -130,7 +130,7 @@ export default function AboutPage() {
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h3 className="text-3xl font-playfair font-bold text-primary mb-4">Mesleki İlkelerimiz</h3>
+                        <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Mesleki İlkelerimiz</h2>
                         <p className="text-muted-foreground">Güveniniz, bizim en büyük sorumluluğumuzdur.</p>
                     </div>
 
@@ -156,7 +156,7 @@ export default function AboutPage() {
                                 <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
                                     <item.icon className="w-6 h-6 text-primary" />
                                 </div>
-                                <h4 className="text-xl font-bold text-primary mb-4">{item.title}</h4>
+                                <h3 className="text-xl font-bold text-primary mb-4">{item.title}</h3>
                                 <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                             </div>
                         ))}

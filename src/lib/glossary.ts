@@ -107,7 +107,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
         legalBasis: "TBK m. 350",
         category: "tahliye",
         relatedTermSlugs: ["tahliye-taahhutnamesi", "10-yillik-uzama-suresi", "kiraci-haklari"],
-        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "ihtiyac-nedeniyle-tahliye-davasi"],
+        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir"],
         relatedServiceAnchor: "#tahliye",
         faqs: [
             {
@@ -209,7 +209,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
         legalBasis: "TBK m. 299-378",
         category: "sozlesme",
         relatedTermSlugs: ["depozito", "kira-artis-orani", "tahliye-taahhutnamesi"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmesi-rehberi", "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
+        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
         relatedServiceAnchor: "#gayrimenkul",
         faqs: [
             {

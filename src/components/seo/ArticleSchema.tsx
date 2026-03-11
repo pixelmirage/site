@@ -19,28 +19,25 @@ export function ArticleSchema({
 }: ArticleSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "BlogPosting",
         "headline": title,
         "description": description,
         "image": image || "https://mertkagancetin.com/og-image.jpg",
+        "inLanguage": "tr-TR",
         "author": {
-            "@type": "Person",
-            "name": author,
-            "url": "https://mertkagancetin.com/hakkimda"
+            "@id": "https://mertkagancetin.com/#attorney"
         },
         "publisher": {
-            "@type": "Organization",
-            "name": "Mert Kağan Çetin Hukuk Bürosu",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://mertkagancetin.com/og-image.jpg"
-            }
+            "@id": "https://mertkagancetin.com/#organization"
         },
         "datePublished": datePublished,
         "dateModified": dateModified || datePublished,
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": url
+        },
+        "isPartOf": {
+            "@id": "https://mertkagancetin.com/#website"
         }
     };
 

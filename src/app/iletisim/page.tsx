@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "İletişim",
-    description: "İzmir Bayraklı'da kira hukuku üzerine uzman hukuk büromuza ulaşın. Randevu ve danışmanlık talepleriniz için iletişim bilgilerimiz.",
+    description: "İzmir Bayraklı'da kira, iş ve boşanma hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
@@ -134,6 +134,11 @@ export default function ContactPage() {
                                                 <option>Tahliye Davası</option>
                                                 <option>Kira Tespit Davası</option>
                                                 <option>Gayrimenkul Hukuku</option>
+                                                <option>İşe İade / Kıdem Tazminatı</option>
+                                                <option>İş Kazası Tazminatı</option>
+                                                <option>Boşanma Davası</option>
+                                                <option>Velayet / Nafaka</option>
+                                                <option>Maddi / Manevi Tazminat</option>
                                                 <option>Diğer</option>
                                             </select>
                                         </div>

@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             description: post.excerpt,
             siteName: 'Av. Mert Kağan Çetin - İzmir Kira Avukatı',
             publishedTime: post.date,
+            modifiedTime: post.dateModified || post.date,
             authors: ['Av. Mert Kağan Çetin'],
             images: [
                 {
@@ -111,7 +112,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground font-medium">
                         <span className="flex items-center gap-2">
                             <Clock className="w-4 h-4" />
-                            5 Dakika Okuma
+                            {post.readingTime} Dakika Okuma
                         </span>
                         <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
                         <span>Yazar: Av. Mert Kağan Çetin</span>

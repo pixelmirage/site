@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Scale, Key, Home, FileText, Gavel, Users2, ShieldCheck, ChevronRight, Briefcase, Heart } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "Hukuki Hizmetlerimiz | Kira, İş ve Boşanma Hukuku",
@@ -20,79 +21,95 @@ const services = [
         title: "Kira Tespit Davası",
         description: "Kira bedelinin emsal rayiçlere ve ekonomik koşullara göre hakkaniyetli bir şekilde yeniden belirlenmesi.",
         icon: Scale,
-        details: ["Emsal araştırması", "Bilirkişi süreci yönetimi", "Hakkaniyet indirimi analizi", "Geçmişe dönük kira farkları"]
+        details: ["Emsal araştırması", "Bilirkişi süreci yönetimi", "Hakkaniyet indirimi analizi", "Geçmişe dönük kira farkları"],
+        href: "/izmir-kira-avukati"
     },
     {
         title: "Tahliye Davaları",
         description: "İhtiyaç, temerrüt, esaslı onarım veya haklı ihtar nedenleriyle kiracının tahliyesi süreçleri.",
         icon: Key,
-        details: ["İhtiyaç nedeniyle tahliye", "İki haklı ihtar ile tahliye", "Temerrüt nedeniyle tahliye", "Tahliye emri takibi"]
+        details: ["İhtiyaç nedeniyle tahliye", "İki haklı ihtar ile tahliye", "Temerrüt nedeniyle tahliye", "Tahliye emri takibi"],
+        href: "/izmir-kira-avukati"
     },
     {
         title: "Tahliye Taahhütnamesi",
         description: "Hukuken geçerli tahliye taahhütnamesi hazırlanması ve bu taahhüde dayalı icra/dava süreçleri.",
         icon: FileText,
-        details: ["Tarihlerin geçerlilik kontrolü", "İmzaya itiraz süreçleri", "İcra yoluyla tahliye", "Taahhüt iptali davaları"]
+        details: ["Tarihlerin geçerlilik kontrolü", "İmzaya itiraz süreçleri", "İcra yoluyla tahliye", "Taahhüt iptali davaları"],
+        href: "/tahliye-taahhutnamesi"
     },
     {
         title: "Gayrimenkul Hukuku",
         description: "Taşınmaz malların mülkiyeti, kullanımı ve devrine ilişkin tüm uyuşmazlıklarda uzman temsil.",
         icon: Home,
-        details: ["Tapu iptal ve tescil", "İzale-i şuyu davaları", "Kamulaştırma davaları", "Ecrimisil talepleri"]
+        details: ["Tapu iptal ve tescil", "İzale-i şuyu davaları", "Kamulaştırma davaları", "Ecrimisil talepleri"],
+        href: "/izmir-kira-avukati"
     },
     {
         title: "Kira Sözleşmesi Yönetimi",
         description: "İşyeri ve konutlar için riskleri minimize eden, tarafları koruyan profesyonel sözleşme hazırlığı.",
         icon: Gavel,
-        details: ["Özel şartların belirlenmesi", "Depozito yönetimi", "Kefalet şartları", "Devir ve alt kira izinleri"]
+        details: ["Özel şartların belirlenmesi", "Depozito yönetimi", "Kefalet şartları", "Devir ve alt kira izinleri"],
+        href: "/izmir-kira-avukati"
     },
     {
         title: "Arabuluculuk & Danışmanlık",
         description: "Dava yoluna gitmeden önce zorunlu arabuluculuk süreçlerinde etkin temsil ve stratejik danışmanlık.",
         icon: Users2,
-        details: ["Arabuluculuk hazırlığı", "Müzakere yönetimi", "Anlaşma tutanakları", "Uzlaşma stratejileri"]
+        details: ["Arabuluculuk hazırlığı", "Müzakere yönetimi", "Anlaşma tutanakları", "Uzlaşma stratejileri"],
+        href: "/iletisim"
     },
     {
         title: "İşe İade Davası",
         description: "Haksız fesih halinde işe iade, kıdem tazminatı, ihbar tazminatı ve işçi alacakları davaları.",
         icon: Briefcase,
-        details: ["İşe iade davası", "Kıdem tazminatı", "İhbar tazminatı", "Fazla mesai alacağı"]
+        details: ["İşe iade davası", "Kıdem tazminatı", "İhbar tazminatı", "Fazla mesai alacağı"],
+        href: "/izmir-is-avukati"
     },
     {
         title: "İş Kazası Tazminatı",
         description: "İş kazası ve meslek hastalığı nedeniyle maddi ve manevi tazminat davalarında uzman temsil.",
         icon: ShieldCheck,
-        details: ["Maddi tazminat", "Manevi tazminat", "SGK bildirimi", "Kusur tespiti"]
+        details: ["Maddi tazminat", "Manevi tazminat", "SGK bildirimi", "Kusur tespiti"],
+        href: "/izmir-tazminat-avukati"
     },
     {
         title: "Anlaşmalı Boşanma",
         description: "Eşlerin tüm konularda uzlaşarak tek celsede boşanma sürecini tamamlaması için protokol hazırlığı.",
         icon: FileText,
-        details: ["Boşanma protokolü", "Nafaka düzenlemesi", "Velayet anlaşması", "Mal paylaşımı"]
+        details: ["Boşanma protokolü", "Nafaka düzenlemesi", "Velayet anlaşması", "Mal paylaşımı"],
+        href: "/izmir-bosanma-avukati"
     },
     {
         title: "Çekişmeli Boşanma",
         description: "Tarafların anlaşamadığı durumlarda çekişmeli boşanma davası, velayet ve nafaka süreçleri.",
         icon: Gavel,
-        details: ["Boşanma sebepleri", "Velayet davası", "Nafaka davası", "Tazminat talepleri"]
+        details: ["Boşanma sebepleri", "Velayet davası", "Nafaka davası", "Tazminat talepleri"],
+        href: "/izmir-bosanma-avukati"
     },
     {
         title: "Velayet & Nafaka",
         description: "Boşanma sonrası çocuk velayeti, iştirak nafakası ve yoksulluk nafakası davalarında profesyonel destek.",
         icon: Heart,
-        details: ["Velayet değişikliği", "İştirak nafakası", "Yoksulluk nafakası", "Kişisel ilişki düzeni"]
+        details: ["Velayet değişikliği", "İştirak nafakası", "Yoksulluk nafakası", "Kişisel ilişki düzeni"],
+        href: "/izmir-bosanma-avukati"
     },
     {
         title: "Mal Paylaşımı",
         description: "Edinilmiş mallara katılma alacağı ve mal rejimi tasfiyesi davalarında haklarınızın korunması.",
         icon: Scale,
-        details: ["Katılma alacağı", "Değer artış payı", "İhtiyati tedbir", "Mal kaçırma önlemi"]
+        details: ["Katılma alacağı", "Değer artış payı", "İhtiyati tedbir", "Mal kaçırma önlemi"],
+        href: "/izmir-bosanma-avukati"
     }
 ];
 
 export default function ServicesPage() {
     return (
         <div className="bg-white">
+            <BreadcrumbSchema items={[
+                { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                { name: "Hizmetler", url: "https://mertkagancetin.com/hizmetler/" }
+            ]} />
             {/* Page Header */}
             <section className="bg-slate-50 py-24 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
@@ -132,7 +149,7 @@ export default function ServicesPage() {
                                                 ))}
                                             </ul>
                                             <Button variant="ghost" className="p-0 text-primary hover:text-secondary group/btn font-bold" asChild>
-                                                <Link href="/iletisim" className="flex items-center gap-2 italic">
+                                                <Link href={service.href} className="flex items-center gap-2 italic">
                                                     Detaylı Bilgi Alın
                                                     <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                                                 </Link>
@@ -153,17 +170,17 @@ export default function ServicesPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                         <div className="space-y-4">
                             <div className="text-4xl font-bold text-secondary">01</div>
-                            <h4 className="text-xl font-bold">Teknik Süreler</h4>
+                            <h3 className="text-xl font-bold">Teknik Süreler</h3>
                             <p className="text-primary-foreground/70 text-sm">Kira hukukunda ihtarname ve dava süreleri hak düşürücüdür. Bir günlük gecikme davanın kaybına neden olabilir.</p>
                         </div>
                         <div className="space-y-4">
                             <div className="text-4xl font-bold text-secondary">02</div>
-                            <h4 className="text-xl font-bold">Yargıtay Kararları</h4>
+                            <h3 className="text-xl font-bold">Yargıtay Kararları</h3>
                             <p className="text-primary-foreground/70 text-sm">Mevzuatın yanı sıra güncel Yargıtay içtihatlarını bilmek, davanın sonucunu belirleyen asıl unsurdur.</p>
                         </div>
                         <div className="space-y-4">
                             <div className="text-4xl font-bold text-secondary">03</div>
-                            <h4 className="text-xl font-bold">Stratejik Planlama</h4>
+                            <h3 className="text-xl font-bold">Stratejik Planlama</h3>
                             <p className="text-primary-foreground/70 text-sm">Sadece dava açmak değil, uyuşmazlığı en kısa ve az maliyetli yoldan çözmek profesyonel bir bakış açısı gerektirir.</p>
                         </div>
                     </div>

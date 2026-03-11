@@ -69,8 +69,6 @@ export async function GET(request: NextRequest) {
         `https://${HOST}/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/`,
         `https://${HOST}/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/`,
         `https://${HOST}/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/`,
-        `https://${HOST}/blog/isyeri-kira-sozlesmesi-rehberi/`,
-        `https://${HOST}/blog/ihtiyac-nedeniyle-tahliye-davasi/`,
         // Glossary
         `https://${HOST}/sozluk/`,
         `https://${HOST}/sozluk/tahliye-taahhutnamesi/`,
