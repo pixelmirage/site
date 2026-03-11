@@ -36,6 +36,9 @@ export function SchemaMarkup() {
                 "url": "https://mertkagancetin.com",
                 "telephone": "+905445854645",
                 "email": "info@mertkagancetin.com",
+                "sameAs": [
+                    "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7"
+                ],
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
