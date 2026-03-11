@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { RentCalculator } from "@/components/tools/RentCalculator";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { HowToSchema } from "@/components/seo/HowToSchema";
 import { CheckCircle, AlertTriangle, Info } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -40,6 +41,17 @@ export default function RentCalculatorPage() {
     return (
         <main className="bg-slate-50 min-h-screen">
             <FAQSchema faqs={faqs} />
+            <HowToSchema
+                name="Kira Artış Oranı Nasıl Hesaplanır?"
+                description="TÜİK TÜFE verilerini kullanarak yasal kira artış oranını adım adım hesaplama rehberi."
+                steps={[
+                    { name: "Kira sözleşmesinin yenileme tarihini belirleyin", text: "Kira sözleşmenizin yenileneceği ayı tespit edin. Artış hesaplaması, yenileme ayından bir önceki ayın TÜFE verisine göre yapılır." },
+                    { name: "TÜİK TÜFE 12 aylık ortalama oranını öğrenin", text: "TÜİK web sitesinden veya bu sayfadaki hesaplama aracından, yenileme ayınızdan bir önceki ayın 12 aylık TÜFE ortalamasını öğrenin." },
+                    { name: "Mevcut kira bedelinizi girin", text: "Halen ödediğiniz aylık kira bedelini hesaplama aracına girin." },
+                    { name: "Yeni kira bedelini hesaplayın", text: "Mevcut kira x (1 + TÜFE oranı / 100) formülü ile yeni yasal tavan kira bedelini hesaplayın. Bu oranın üzerinde artış yapılamaz." },
+                    { name: "Sonucu ev sahibinizle paylaşın", text: "Hesaplanan yasal tavan oranını ev sahibinize bildirin. Anlaşmazlık durumunda kira tespit davası veya arabuluculuk yoluna başvurabilirsiniz." }
+                ]}
+            />
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },

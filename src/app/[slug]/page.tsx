@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { districts, getSlugFromDistrict, getDistrictData } from "@/lib/districts";
+import { districts, districtData as allDistricts, getSlugFromDistrict, getDistrictData } from "@/lib/districts";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Phone, Mail, MapPin, CheckCircle, ArrowRight, Home, ChevronRight, Scale, FileText, Users, Building2, Map, BookOpen } from "lucide-react";
@@ -172,23 +172,45 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                             <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
                                 <h4 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                     <BookOpen className="w-5 h-5 text-secondary" />
-                                    İlgili Makaleler
+                                    {district} İçin Faydalı Makaleler
                                 </h4>
                                 <div className="space-y-3">
-                                    <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                        → Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?
-                                    </Link>
-                                    <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                        → İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?
-                                    </Link>
-                                    <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                        → Kira Hukukunda Zorunlu Arabuluculuk Süreci
-                                    </Link>
+                                    {districtData.relatedBlogSlugs.map((blog) => (
+                                        <Link key={blog.slug} href={`/blog/${blog.slug}`} className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                            → {blog.title}
+                                        </Link>
+                                    ))}
                                 </div>
                                 <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                     Tüm Makaleler <ArrowRight className="w-3 h-3" />
                                 </Link>
                             </div>
+
+                            {/* Neighbor District Cross-Links */}
+                            {districtData.neighborSlugs.length > 0 && (
+                                <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
+                                    <h4 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
+                                        <Building2 className="w-5 h-5 text-secondary" />
+                                        Komşu İlçelerde Kira Avukatı
+                                    </h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {districtData.neighborSlugs.map((nSlug) => {
+                                            const neighbor = allDistricts.find(d => d.slug === nSlug);
+                                            if (!neighbor) return null;
+                                            return (
+                                                <Link
+                                                    key={nSlug}
+                                                    href={`/${nSlug}-kira-avukati`}
+                                                    className="inline-flex items-center gap-1 text-sm bg-white px-4 py-2 rounded-lg border border-slate-200 text-slate-700 hover:border-secondary hover:text-primary transition-all font-medium"
+                                                >
+                                                    {neighbor.name} Kira Avukatı
+                                                    <ArrowRight className="w-3 h-3" />
+                                                </Link>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
 
                             <p className="text-xs text-slate-400 italic not-prose">
                                 Son güncelleme: Mart 2026

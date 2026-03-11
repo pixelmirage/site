@@ -8,6 +8,8 @@ export interface DistrictData {
         title: string;
         detail: string;
     };
+    neighborSlugs: string[];
+    relatedBlogSlugs: { slug: string; title: string }[];
 }
 
 export const districtData: DistrictData[] = [
@@ -20,7 +22,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Ofis ve Plaza Tahliyeleri",
             detail: "Bayraklı'daki Mistral, Folkart, Ege Perla gibi plaza bölgelerindeki kira sözleşmeleri, Borçlar Kanunu'nun yanı sıra ticari teamülleri de içeren kompleks yapıdadır. Özellikle 'çatılı işyeri' hükümlerine göre uyarlama davaları sıkça görülür."
-        }
+        },
+        neighborSlugs: ["karsiyaka", "bornova", "konak"],
+        relatedBlogSlugs: [
+            { slug: "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", title: "İşyeri Kira Sözleşmesinde Dikkat Edilecek Hususlar" },
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "kira-hukukunda-zorunlu-arabuluculuk-sureci", title: "Zorunlu Arabuluculuk Süreci" }
+        ]
     },
     {
         name: "Karşıyaka",
@@ -31,7 +39,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Yüksek Kira Bedelli Konut Tahliyeleri",
             detail: "Karşıyaka'nın sahil şeridindeki (Yalı, Bostanlı) taşınmazlarda, 10 yıllık uzama süresi dolan eski kiracıların tahliyesi ve 'ihtiyaç nedeniyle tahliye' davaları bölgenin en sık karşılaşılan hukuki problemleridir."
-        }
+        },
+        neighborSlugs: ["bayrakli", "cigli", "bornova"],
+        relatedBlogSlugs: [
+            { slug: "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", title: "İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?" },
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", title: "Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?" }
+        ]
     },
     {
         name: "Bornova",
@@ -42,7 +56,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Öğrenci ve Apart Kira Uyuşmazlıkları",
             detail: "Bornova'da sirkülasyonun hızlı olduğu öğrenci evlerinde; 'depozito iadesi', 'erken tahliye' ve 'eşyalı konut hasar bedelleri' konularında yoğun ihtilaflar yaşanmakta ve Sulh Hukuk Mahkemeleri bu davalarla meşgul olmaktadır."
-        }
+        },
+        neighborSlugs: ["karsiyaka", "bayrakli", "buca"],
+        relatedBlogSlugs: [
+            { slug: "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", title: "Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?" },
+            { slug: "kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir", title: "İki Haklı İhtar ile Kiracı Tahliyesi" },
+            { slug: "kira-hukukunda-zorunlu-arabuluculuk-sureci", title: "Zorunlu Arabuluculuk Süreci" }
+        ]
     },
     {
         name: "Konak",
@@ -53,7 +73,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Tarihi ve Ticari Mülklerin Hukuki Durumu",
             detail: "Alsancak ve Kemeraltı gibi bölgelerde, eski eser statüsündeki binaların restorasyon süreçleri ve 'eski kiracı' statüsündeki işletmelerin kira tespit davaları, Konak bölgesinin spesifik uzmanlık gerektiren alanlarıdır."
-        }
+        },
+        neighborSlugs: ["bayrakli", "buca", "karabaglar", "balcova"],
+        relatedBlogSlugs: [
+            { slug: "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", title: "İşyeri Kira Sözleşmesinde Dikkat Edilecek Hususlar" },
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler", title: "İzmir Gayrimenkul Piyasasında Güncel Gelişmeler" }
+        ]
     },
     {
         name: "Buca",
@@ -64,7 +90,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Kalabalık Konut Dokusunda Tahliye",
             detail: "Buca'da kiracı sirkülasyonunun çok hızlı olması sebebiyle, 'tahliye taahhütnamesine dayalı icra takipleri' en verimli sonuç alınan yöntemdir. Şirinyer ve Hasanağa bölgelerinde kira tespit davaları da yoğunlaşmıştır."
-        }
+        },
+        neighborSlugs: ["konak", "bornova", "karabaglar", "gaziemir"],
+        relatedBlogSlugs: [
+            { slug: "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", title: "Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?" },
+            { slug: "kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir", title: "İki Haklı İhtar ile Kiracı Tahliyesi" },
+            { slug: "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", title: "İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?" }
+        ]
     },
     {
         name: "Çiğli",
@@ -75,7 +107,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Sanayi ve Depo Kira Sözleşmeleri",
             detail: "Çiğli AOSB bölgesindeki fabrika ve depo kiralamalarında, üretim kaybı tazminatları ve ağır tahliye şartları sözleşmelere eklenmektedir. Bu tip ticari sözleşmelerin hazırlanması özel uzmanlık gerektirir."
-        }
+        },
+        neighborSlugs: ["karsiyaka", "bornova"],
+        relatedBlogSlugs: [
+            { slug: "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", title: "İşyeri Kira Sözleşmesinde Dikkat Edilecek Hususlar" },
+            { slug: "kira-hukukunda-zorunlu-arabuluculuk-sureci", title: "Zorunlu Arabuluculuk Süreci" },
+            { slug: "izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler", title: "İzmir Gayrimenkul Piyasasında Güncel Gelişmeler" }
+        ]
     },
     {
         name: "Gaziemir",
@@ -86,7 +124,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Beyaz Yakalı Kiracı Profili ve Site Yönetimi",
             detail: "Gaziemir'deki lüks sitelerde (Optimum çevresi vb.), aidat borçları ve yönetim planına aykırılık nedeniyle tahliye davaları, kira alacağı davaları kadar sık görülmektedir."
-        }
+        },
+        neighborSlugs: ["buca", "karabaglar", "balcova"],
+        relatedBlogSlugs: [
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", title: "Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?" },
+            { slug: "kira-hukukunda-zorunlu-arabuluculuk-sureci", title: "Zorunlu Arabuluculuk Süreci" }
+        ]
     },
     {
         name: "Balçova",
@@ -97,7 +141,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Ticari Potansiyeli Yüksek Mülkler",
             detail: "Balçova'da AVM ve cadde mağazacılığının yoğun olması, 'uyarlama davaları' ve 'ciro endeksli kira' sözleşmelerini gündeme getirmektedir. Konutlarda ise Ekonomi Üniversitesi öğrencileri piyasayı belirler."
-        }
+        },
+        neighborSlugs: ["konak", "narlidere", "karabaglar", "gaziemir"],
+        relatedBlogSlugs: [
+            { slug: "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", title: "İşyeri Kira Sözleşmesinde Dikkat Edilecek Hususlar" },
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler", title: "İzmir Gayrimenkul Piyasasında Güncel Gelişmeler" }
+        ]
     },
     {
         name: "Narlıdere",
@@ -108,7 +158,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Lüks Konut ve Villa Kiralama Hukuku",
             detail: "Narlıdere Sahilevleri bölgesindeki villa kiralamalarında, demirbaş eşyaların (havuz, jeneratör vb.) bakımı ve hasar durumları, tahliye davalarından daha çok 'tazminat' davalarına konu olmaktadır."
-        }
+        },
+        neighborSlugs: ["balcova", "guzelbahce"],
+        relatedBlogSlugs: [
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", title: "İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?" },
+            { slug: "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", title: "Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?" }
+        ]
     },
     {
         name: "Karabağlar",
@@ -119,7 +175,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Kentsel Dönüşüm ve Tahliye",
             detail: "Karabağlar'da kentsel dönüşüm kapsamına giren binalarda kiracı tahliyesi ('6306 sayılı kanun') en sık karşılaşılan süreçtir. Mobilyacılar sitesindeki esnaf tahliyeleri de ticari davaların çoğunluğunu oluşturur."
-        }
+        },
+        neighborSlugs: ["konak", "buca", "gaziemir", "balcova"],
+        relatedBlogSlugs: [
+            { slug: "kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir", title: "İki Haklı İhtar ile Kiracı Tahliyesi" },
+            { slug: "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", title: "İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?" },
+            { slug: "izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler", title: "İzmir Gayrimenkul Piyasasında Güncel Gelişmeler" }
+        ]
     },
     {
         name: "Güzelbahçe",
@@ -130,7 +192,13 @@ export const districtData: DistrictData[] = [
         legalFocus: {
             title: "Sezonluk ve Müstakil Konut Kiraları",
             detail: "Güzelbahçe'de 'sezonluk kiralama' ile 'yıllık kiralama' ayrımının sözleşmelerde net yapılmaması hukuki sorun doğurur. Ayrıca Yelki bölgesindeki yeni villa projelerinde aidat ve yönetim sorunları sıkça dava konusu olur."
-        }
+        },
+        neighborSlugs: ["narlidere", "balcova"],
+        relatedBlogSlugs: [
+            { slug: "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", title: "Ev Sahibi Kiracıyı Hangi Durumlarda Çıkarabilir?" },
+            { slug: "hangi-durumlarda-kira-tespit-davasi-acilabilir", title: "Kira Tespit Davası Hangi Durumlarda Açılabilir?" },
+            { slug: "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", title: "İşyeri Kira Sözleşmesinde Dikkat Edilecek Hususlar" }
+        ]
     }
 ];
 
