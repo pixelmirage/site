@@ -51,7 +51,7 @@ export default function AboutPage() {
                                     Müvekkillerine yalnızca mahkeme süreçlerinde değil, dava öncesi danışmanlık aşamasında da yol göstermektedir. Uyuşmazlığın çözümünde arabuluculuk ve müzakere yöntemlerini de aktif olarak kullanmaktadır.
                                 </p>
                                 <blockquote className="border-l-4 border-secondary pl-6 py-2 italic text-primary font-medium bg-secondary/5 rounded-r-lg">
-                                    "İyi bir avukat müvekkiline sadece hakkını değil, sürecin her adımında nerede olduğunu da anlatır."
+                                    "Hukuk teknik bir alan olabilir; ancak müvekkilin kendi davasını anlaması bir lütuf değil, hakkıdır."
                                 </blockquote>
                                 <p>
                                     İzmir ve çevre illerde yüzlerce davayı başarıyla sonuçlandıran Çetin, yerel mahkemelerin işleyişine ve güncel Yargıtay kararlarına hakimdir.
