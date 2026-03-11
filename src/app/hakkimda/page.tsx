@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Award, BookOpen, Scale } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -82,7 +83,10 @@ export default function AboutPage() {
                         <div className="lg:w-1/3 w-full sticky top-[100px]">
                             <Card className="border-2 border-primary/5 shadow-2xl overflow-hidden bg-white">
                                 <div className="bg-primary p-8 text-center text-white">
-                                                <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
+                                    <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/20">
+                                        <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin" width={112} height={112} className="w-full h-full object-cover" />
+                                    </div>
+                                    <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
                                     <p className="text-sm text-secondary font-medium uppercase tracking-widest">Kurucu Avukat</p>
                                 </div>
                                 <CardContent className="p-8 space-y-8">

@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { Calendar, Clock, ChevronLeft, Share2, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -166,7 +167,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 p-8 bg-slate-50 rounded-3xl">
                         <div className="flex items-center gap-4">
-                            <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white font-playfair font-bold text-xl">M</div>
+                            <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin" width={56} height={56} className="w-14 h-14 rounded-full object-cover" />
                             <div>
                                 <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
                             </div>
@@ -186,19 +187,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     {/* Hub Link - İzmir Kira Avukatı */}
                     <div className="mt-12 p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Kira Hukuku Desteğine mi İhtiyacınız Var?</h3>
+                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Hukuki Desteğe mi İhtiyacınız Var?</h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
-                            Kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında uzman avukatlık hizmeti alın.
+                            Kira, iş, boşanma ve tazminat hukuku alanlarında uzman avukatlık hizmeti alın.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/izmir-kira-avukati" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                İzmir Kira Avukatı <ArrowRight className="w-4 h-4" />
+                            <Link href="/iletisim" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                                Ücretsiz Ön Görüşme <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler
                             </Link>
-                            <Link href="/kira-artis-orani-hesaplama" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                                Kira Artış Hesaplama
+                            <Link href="/blog" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                                Tüm Makaleler
                             </Link>
                         </div>
                     </div>
