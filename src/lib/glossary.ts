@@ -1,10 +1,13 @@
-export type GlossaryCategory = "tahliye" | "kira-bedeli" | "sozlesme" | "haklar";
+export type GlossaryCategory = "tahliye" | "kira-bedeli" | "sozlesme" | "haklar" | "is-hukuku" | "bosanma" | "tazminat";
 
 export const categoryLabels: Record<GlossaryCategory, string> = {
     tahliye: "Tahliye ve Çıkış Süreçleri",
     "kira-bedeli": "Kira Bedeli ve Artış",
     sozlesme: "Kira Sözleşmesi",
     haklar: "Haklar ve Yükümlülükler",
+    "is-hukuku": "İş Hukuku",
+    bosanma: "Boşanma ve Aile Hukuku",
+    tazminat: "Tazminat Hukuku",
 };
 
 export interface GlossaryTerm {
@@ -431,6 +434,532 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         ],
         keywords: ["kiracı hakları nedir", "kiracı hakları 2026", "kiracı tahliye edilemez mi", "kiracı korunması"],
         lastUpdated: "2026-03-04",
+    },
+
+    // ═══════════════════════════════════════
+    // İŞ HUKUKU TERİMLERİ
+    // ═══════════════════════════════════════
+    {
+        term: "Kıdem Tazminatı",
+        slug: "kidem-tazminati",
+        shortDescription: "En az 1 yıl çalışan işçiye her tam yıl için 30 günlük giydirilmiş brüt ücret üzerinden ödenen tazminat.",
+        definition: "Kıdem tazminatı, aynı işverene en az 1 yıl çalışmış olan işçiye, iş sözleşmesinin belirli koşullar altında sona ermesi halinde her tam çalışma yılı için 30 günlük giydirilmiş brüt ücret üzerinden ödenen tazminattır. 1475 sayılı (eski) İş Kanunu m. 14 kapsamında düzenlenmiştir.",
+        detailedExplanation: `Kıdem tazminatı, Türk iş hukukunun işçiyi koruyan en önemli kurumlarından biridir. İşçinin çalıştığı süreye oranla hesaplanan bu tazminat, iş sözleşmesinin belirli koşullar altında sona ermesi halinde ödenir.
+
+Kıdem tazminatına hak kazanmak için işçinin aynı işverene en az 1 yıl çalışmış olması ve iş sözleşmesinin işveren tarafından feshedilmesi, işçinin haklı nedenle feshi, emeklilik, askerlik veya kadın işçinin evlenmesi gibi nedenlerle sona ermesi gerekir.
+
+Hesaplamada giydirilmiş brüt ücret esas alınır. Yemek, yol, düzenli prim gibi sürekli ödemeler giydirilmiş ücrete dahil edilir. Her yıl için hesaplanan tutar, kıdem tazminatı tavanını aşamaz.
+
+İstifa eden işçi kural olarak kıdem tazminatı alamaz. Ancak haklı nedenle fesih (ücret ödenmemesi, mobbing, SGK primlerinin eksik yatırılması vb.) halinde istifa eden işçi de kıdem tazminatına hak kazanır.`,
+        legalBasis: "1475 sayılı İK m. 14",
+        category: "is-hukuku",
+        relatedTermSlugs: ["ihbar-tazminati", "hakli-fesih", "ise-iade-davasi"],
+        relatedBlogSlugs: ["kidem-tazminati-nasil-hesaplanir", "isten-cikarildiginda-ne-yapmali"],
+        relatedServiceAnchor: "#is-hukuku",
+        faqs: [
+            {
+                question: "Kıdem tazminatı nasıl hesaplanır?",
+                answer: "Her tam çalışma yılı için 30 günlük giydirilmiş brüt ücret ödenir. Kısmi yıllar orantılı hesaplanır. Giydirilmiş ücrete yemek, yol, düzenli prim gibi kalemler dahildir."
+            },
+            {
+                question: "İstifa eden işçi kıdem tazminatı alabilir mi?",
+                answer: "Kural olarak hayır. Ancak haklı nedenle fesih (ücret ödenmemesi, mobbing, SGK eksikliği) halinde, askerlik, evlilik veya emeklilik nedeniyle ayrılanlar kıdem tazminatı alabilir."
+            },
+            {
+                question: "Kıdem tazminatı tavanı nedir?",
+                answer: "Her yıl için ödenecek tutar, devlet memuru maaş katsayısıyla belirlenen bir tavan tutarı aşamaz. İşçinin ücreti tavanın üzerinde olsa bile tavan üzerinden hesaplanır."
+            }
+        ],
+        keywords: ["kıdem tazminatı nedir", "kıdem tazminatı hesaplama", "kıdem tazminatı şartları", "kıdem tazminatı tavanı"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "İhbar Tazminatı",
+        slug: "ihbar-tazminati",
+        shortDescription: "İş sözleşmesini bildirim süresine uymadan fesheden tarafın ödemekle yükümlü olduğu tazminat.",
+        definition: "İhbar tazminatı, belirsiz süreli iş sözleşmesini İş Kanunu m. 17'de belirtilen bildirim sürelerine uymadan fesheden tarafın, karşı tarafa ödemek zorunda olduğu tazminattır. Bildirim süreleri işçinin kıdemine göre 2 ile 8 hafta arasında değişir.",
+        detailedExplanation: `İhbar tazminatı, iş sözleşmesinin feshinde bildirim sürelerine uyulmaması halinde gündeme gelir. İK m. 17'ye göre belirsiz süreli iş sözleşmelerinde fesih öncesi bildirim yapılması zorunludur.
+
+Bildirim süreleri kıdeme göre belirlenir: 6 aya kadar çalışma için 2 hafta, 6 ay-1,5 yıl arası 4 hafta, 1,5-3 yıl arası 6 hafta, 3 yıldan fazla çalışma için 8 hafta.
+
+Bu sürelere uymayan taraf, karşı tarafa bildirim süresine ait ücret tutarında ihbar tazminatı öder. İhbar tazminatı hem işveren hem işçi tarafından ödenmesi gereken bir yükümlülüktür.
+
+Kıdem tazminatından farklı olarak ihbar tazminatı gelir vergisine tabidir. Ayrıca haklı nedenle fesih halinde (İK m. 24-25) ihbar tazminatı ödenmez.`,
+        legalBasis: "İK m. 17",
+        category: "is-hukuku",
+        relatedTermSlugs: ["kidem-tazminati", "hakli-fesih", "ise-iade-davasi"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali"],
+        relatedServiceAnchor: "#is-hukuku",
+        faqs: [
+            {
+                question: "İhbar süreleri ne kadardır?",
+                answer: "6 aya kadar kıdem: 2 hafta, 6 ay-1,5 yıl: 4 hafta, 1,5-3 yıl: 6 hafta, 3 yıldan fazla: 8 hafta."
+            },
+            {
+                question: "İhbar tazminatından vergi kesilir mi?",
+                answer: "Evet, kıdem tazminatından farklı olarak ihbar tazminatından gelir vergisi ve damga vergisi kesilir."
+            },
+            {
+                question: "İşçi de ihbar tazminatı ödemek zorunda kalabilir mi?",
+                answer: "Evet, bildirim süresine uymadan istifa eden işçi, işverene ihbar tazminatı ödemekle yükümlüdür."
+            }
+        ],
+        keywords: ["ihbar tazminatı nedir", "ihbar tazminatı hesaplama", "ihbar süresi", "ihbar tazminatı ne kadar"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "İşe İade Davası",
+        slug: "ise-iade-davasi",
+        shortDescription: "Geçerli sebep olmaksızın işten çıkarılan işçinin işe geri dönmek için açtığı dava.",
+        definition: "İşe iade davası, iş güvencesi kapsamındaki işçinin (en az 6 ay kıdem, 30+ çalışanlı işyeri) geçersiz nedenle fesih yapıldığını ileri sürerek işe iadesini talep ettiği dava türüdür. İK m. 18-21 kapsamında düzenlenmiştir.",
+        detailedExplanation: `İşe iade davası, iş güvencesi sisteminin en önemli unsurudur. İK m. 18'e göre, belirsiz süreli iş sözleşmesi ile çalışan ve en az 6 aylık kıdemi olan işçi, en az 30 işçi çalıştıran işyerlerinde geçerli bir neden olmaksızın işten çıkarılamaz.
+
+İşe iade davası açabilmek için fesih bildiriminin tebliğinden itibaren 1 ay içinde arabulucuya başvurulması zorunludur. Arabuluculukta anlaşma sağlanamazsa, son tutanaktan itibaren 2 hafta içinde iş mahkemesinde dava açılmalıdır.
+
+Mahkeme feshin geçersizliğine karar verirse işçinin 10 iş günü içinde işe başvurması gerekir. İşveren işçiyi işe başlatmazsa 4-8 aylık ücret tutarında tazminat ve 4 aya kadar boşta geçen süre ücreti ödemek zorundadır.
+
+İşe iade davasında ispat yükü işverendedir; işveren feshin geçerli veya haklı nedene dayandığını ispatlamak zorundadır.`,
+        legalBasis: "İK m. 18-21",
+        category: "is-hukuku",
+        relatedTermSlugs: ["kidem-tazminati", "ihbar-tazminati", "hakli-fesih", "mobbing"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali"],
+        relatedServiceAnchor: "#is-hukuku",
+        faqs: [
+            {
+                question: "İşe iade davası kimler açabilir?",
+                answer: "En az 6 aylık kıdemi olan, 30 veya daha fazla işçi çalıştıran işyerinde belirsiz süreli iş sözleşmesiyle çalışan işçiler açabilir."
+            },
+            {
+                question: "İşe iade davası süresi ne kadardır?",
+                answer: "Fesih bildiriminden itibaren 1 ay içinde arabulucuya başvurulmalı, anlaşma sağlanamazsa 2 hafta içinde dava açılmalıdır."
+            },
+            {
+                question: "İşveren işe başlatmazsa ne olur?",
+                answer: "İşçiye 4-8 aylık ücret tutarında işe başlatmama tazminatı ve 4 aya kadar boşta geçen süre ücreti ödenir."
+            }
+        ],
+        keywords: ["işe iade davası nedir", "işe iade davası şartları", "işe iade davası süresi", "iş güvencesi"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Mobbing",
+        slug: "mobbing",
+        shortDescription: "İşyerinde sistematik olarak uygulanan psikolojik taciz, yıldırma ve bezdirme davranışları.",
+        definition: "Mobbing (psikolojik taciz), işyerinde bir veya birden fazla kişi tarafından sistematik biçimde uygulanan, işçiyi yıldırmaya, işten ayrılmaya zorlamaya veya dışlamaya yönelik psikolojik baskı ve taciz davranışlarıdır. TBK m. 417 ve İK m. 24/II-b kapsamında değerlendirilir.",
+        detailedExplanation: `Mobbing, işyerinde çalışanın onurunu, kişiliğini ve mesleki yeterliliğini hedef alan, sistematik ve sürekli biçimde tekrarlanan olumsuz davranışlar bütünüdür.
+
+Mobbing sayılan davranışlar arasında sürekli eleştiri ve aşağılama, yetki ve sorumluluklarının alınması, iş vermeme veya kapasitesinin altında iş verme, toplantılara davet etmeme, dedikodu yayma, fiziksel izolasyon, bağırma ve hakaret yer alır.
+
+İşçi, mobbing nedeniyle iş sözleşmesini haklı nedenle feshederek kıdem tazminatı ve ihbar tazminatı talep edebilir. Ayrıca maddi ve manevi tazminat davası da açılabilir.
+
+Mobbingin ispatında e-posta yazışmaları, mesajlar, tanık beyanları, psikolojik destek raporları ve iş yeri kayıtları delil olarak kullanılabilir. Yargıtay, mobbingin ispatında kesin delil yerine güçlü emareleri yeterli görmektedir.`,
+        legalBasis: "TBK m. 417, İK m. 24/II-b",
+        category: "is-hukuku",
+        relatedTermSlugs: ["hakli-fesih", "kidem-tazminati", "ise-iade-davasi"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali"],
+        relatedServiceAnchor: "#is-hukuku",
+        faqs: [
+            {
+                question: "Mobbing nasıl ispatlanır?",
+                answer: "E-posta, mesaj, tanık beyanları, psikolojik destek raporları delil olarak kullanılır. Yargıtay, güçlü emareleri yeterli görmektedir."
+            },
+            {
+                question: "Mobbing nedeniyle istifa edersem tazminat alabilir miyim?",
+                answer: "Evet, mobbing haklı fesih nedenidir. Kıdem tazminatı, ihbar tazminatı ve ayrıca manevi tazminat talep edebilirsiniz."
+            },
+            {
+                question: "Mobbing için nereye şikayet edebilirim?",
+                answer: "ALO 170 (Çalışma ve Sosyal Güvenlik İletişim Merkezi), CİMER, İl Çalışma Müdürlüğü ve Türkiye İnsan Hakları ve Eşitlik Kurumu'na başvurabilirsiniz."
+            }
+        ],
+        keywords: ["mobbing nedir", "işyerinde mobbing", "mobbing tazminatı", "psikolojik taciz iş yerinde"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Haklı Fesih",
+        slug: "hakli-fesih",
+        shortDescription: "İş sözleşmesinin, kanunda belirtilen haklı nedenlerle derhal sona erdirilmesi.",
+        definition: "Haklı fesih, iş sözleşmesinin taraflarından birinin İş Kanunu m. 24 (işçi) veya m. 25 (işveren) kapsamında sayılan haklı nedenlerle, bildirim süresine uymaksızın iş sözleşmesini derhal sona erdirmesidir.",
+        detailedExplanation: `Haklı fesih, iş ilişkisinin devamını çekilmez kılan nedenlerin varlığında taraflardan birine tanınan derhal fesih hakkıdır. Bildirim süresine uyma zorunluluğu yoktur.
+
+İşçinin haklı fesih nedenleri (İK m. 24): Sağlık sebepleri (işin sağlığa zararlı olması), ahlak ve iyiniyet kurallarına aykırılık (ücret ödenmemesi, hakaret, cinsel taciz, mobbing), zorlayıcı sebepler (işyerinde 1 haftadan fazla süren çalışma durması).
+
+İşverenin haklı fesih nedenleri (İK m. 25): Sağlık sebepleri, ahlak ve iyiniyet kurallarına aykırılık (hırsızlık, güveni kötüye kullanma, 7+ gün devamsızlık), zorlayıcı sebepler.
+
+İşçinin haklı nedenle feshi halinde kıdem tazminatı ödenir. İşverenin İK m. 25/II (ahlak ve iyiniyet) kapsamında haklı feshi halinde ise kıdem tazminatı ödenmez.`,
+        legalBasis: "İK m. 24-25",
+        category: "is-hukuku",
+        relatedTermSlugs: ["kidem-tazminati", "ihbar-tazminati", "mobbing", "ise-iade-davasi"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "kidem-tazminati-nasil-hesaplanir"],
+        relatedServiceAnchor: "#is-hukuku",
+        faqs: [
+            {
+                question: "İşçi hangi durumlarda haklı nedenle fesih yapabilir?",
+                answer: "Ücretin ödenmemesi, mobbing, SGK primlerinin eksik yatırılması, sağlığa zararlı çalışma koşulları ve işverenin ahlaka aykırı davranışları haklı fesih nedenleridir."
+            },
+            {
+                question: "Haklı fesihte ihbar süresi gerekir mi?",
+                answer: "Hayır, haklı fesih derhal yapılır ve bildirim süresine uyma zorunluluğu yoktur."
+            },
+            {
+                question: "Haklı fesih hakkı ne zaman düşer?",
+                answer: "Haklı fesih nedeni öğrenildiği tarihten itibaren 6 iş günü ve her halde olayın gerçekleşmesinden itibaren 1 yıl içinde kullanılmalıdır."
+            }
+        ],
+        keywords: ["haklı fesih nedir", "haklı fesih nedenleri", "haklı nedenle istifa", "İK m. 24"],
+        lastUpdated: "2026-03-11",
+    },
+
+    // ═══════════════════════════════════════
+    // BOŞANMA VE AİLE HUKUKU TERİMLERİ
+    // ═══════════════════════════════════════
+    {
+        term: "Anlaşmalı Boşanma",
+        slug: "anlasmali-bosanma",
+        shortDescription: "Eşlerin nafaka, velayet ve mal paylaşımı konusunda anlaşarak birlikte açtığı boşanma davası.",
+        definition: "Anlaşmalı boşanma, TMK m. 166/3 uyarınca en az 1 yıllık evliliği olan eşlerin nafaka, velayet, mal paylaşımı ve tazminat konularında mutabık kalarak birlikte veya bir eşin diğerinin davasını kabul ederek açtığı, genellikle tek celsede sonuçlanan boşanma davası türüdür.",
+        detailedExplanation: `Anlaşmalı boşanma, Türk hukukundaki en hızlı ve en az yıpratıcı boşanma yoludur. Eşler, boşanmanın tüm mali ve kişisel sonuçları üzerinde anlaşarak mahkemeye birlikte başvurur.
+
+Anlaşmalı boşanma şartları: Evliliğin en az 1 yıl sürmüş olması, eşlerin birlikte başvurması veya bir eşin davasını diğerinin kabul etmesi, nafaka, velayet, mal paylaşımı ve tazminat konularında anlaşma sağlanması.
+
+Boşanma protokolü, anlaşmalı boşanmanın en kritik belgesidir. Protokolde yoksulluk nafakası, iştirak nafakası, velayet düzenlemesi, kişisel ilişki tesisi, mal paylaşımı ve maddi/manevi tazminat konuları açıkça belirlenmelidir.
+
+Mahkeme, protokolü hakkaniyete uygun bulursa ve tarafların özgür iradeleriyle karar verdiklerine kanaat getirirse boşanmaya karar verir. Çocukların korunması açısından hakim, protokolde değişiklik önerebilir.`,
+        legalBasis: "TMK m. 166/3",
+        category: "bosanma",
+        relatedTermSlugs: ["cekismeli-bosanma", "velayet", "nafaka", "mal-paylasimi"],
+        relatedBlogSlugs: ["anlasmali-bosanma-nasil-acilir"],
+        relatedServiceAnchor: "#aile-hukuku",
+        faqs: [
+            {
+                question: "Anlaşmalı boşanma ne kadar sürer?",
+                answer: "Genellikle tek celsede sonuçlanır. Mahkeme yoğunluğuna göre 1-3 ay içinde kesinleşir."
+            },
+            {
+                question: "Anlaşmalı boşanma protokolü sonradan değiştirilebilir mi?",
+                answer: "Nafaka miktarı koşullar değiştiğinde artırılabilir veya azaltılabilir. Velayet düzenlemesi de çocuğun üstün yararı gerektirdiğinde değiştirilebilir."
+            },
+            {
+                question: "Anlaşmalı boşanmada avukat zorunlu mu?",
+                answer: "Zorunlu değildir ancak protokolün hukuka uygun hazırlanması ve hak kaybı yaşanmaması için avukat desteği kesinlikle tavsiye edilir."
+            }
+        ],
+        keywords: ["anlaşmalı boşanma nedir", "anlaşmalı boşanma şartları", "anlaşmalı boşanma protokolü", "anlaşmalı boşanma süresi"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Çekişmeli Boşanma",
+        slug: "cekismeli-bosanma",
+        shortDescription: "Eşlerin boşanma veya boşanmanın sonuçları üzerinde anlaşamadığı, kusur araştırması yapılan dava türü.",
+        definition: "Çekişmeli boşanma, eşlerin boşanma konusunda veya boşanmanın mali sonuçları (nafaka, velayet, mal paylaşımı) üzerinde anlaşamadığı, TMK m. 161-166 kapsamında belirli boşanma nedenlerine dayalı olarak açılan ve kusur araştırması yapılan dava türüdür.",
+        detailedExplanation: `Çekişmeli boşanma, taraflar arasında uzlaşma sağlanamadığında başvurulan boşanma yoludur. Davacı, kanunda belirtilen boşanma nedenlerinden birine dayanarak dava açar.
+
+Özel boşanma nedenleri: Zina (TMK m. 161), hayata kast/pek kötü muamele/onur kırıcı davranış (TMK m. 162), suç işleme ve haysiyetsiz yaşam sürme (TMK m. 163), terk (TMK m. 164), akıl hastalığı (TMK m. 165).
+
+Genel boşanma nedeni: Evlilik birliğinin temelinden sarsılması (TMK m. 166/1-2). En sık başvurulan genel nedendir. Ortak hayatın sürdürülmesinin taraflardan biri için beklenemez hale gelmesi yeterlidir.
+
+Çekişmeli boşanma davaları genellikle 1-3 yıl sürer. Kusur tespiti, nafaka miktarı, velayet düzenlemesi ve mal paylaşımı ayrı ayrı değerlendirilir. Daha ağır kusurlu eş, diğer eşe maddi ve manevi tazminat ödemekle yükümlü olabilir.`,
+        legalBasis: "TMK m. 161-166",
+        category: "bosanma",
+        relatedTermSlugs: ["anlasmali-bosanma", "velayet", "nafaka", "mal-paylasimi"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri"],
+        relatedServiceAnchor: "#aile-hukuku",
+        faqs: [
+            {
+                question: "Çekişmeli boşanma ne kadar sürer?",
+                answer: "Ortalama 1-3 yıl sürer. Delil toplama, tanık dinleme, sosyal inceleme raporu ve bilirkişi süreçleri davanın süresini uzatabilir."
+            },
+            {
+                question: "Çekişmeli boşanmada kusur nasıl belirlenir?",
+                answer: "Mahkeme, tarafların evlilik birliğine karşı yükümlülüklerini ihlal edip etmediğini değerlendirir. Aldatma, şiddet, hakaret, ilgisizlik gibi davranışlar kusur olarak kabul edilir."
+            },
+            {
+                question: "Daha kusurlu taraf ne gibi yaptırımlarla karşılaşır?",
+                answer: "Ağır kusurlu eş yoksulluk nafakası talep edemez. Ayrıca karşı tarafa maddi ve manevi tazminat ödemek zorunda kalabilir."
+            }
+        ],
+        keywords: ["çekişmeli boşanma nedir", "çekişmeli boşanma süresi", "çekişmeli boşanma nedenleri", "boşanma davası"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Velayet",
+        slug: "velayet",
+        shortDescription: "Çocuğun bakımı, eğitimi ve korunmasına ilişkin anne-babaya tanınan hak ve yükümlülükler.",
+        definition: "Velayet, TMK m. 335-351 kapsamında anne ve babaya tanınan, çocuğun bakımı, eğitimi, korunması ve temsili konularındaki hak ve yükümlülükler bütünüdür. Boşanmada velayet, çocuğun üstün yararı gözetilerek eşlerden birine verilir.",
+        detailedExplanation: `Velayet, çocuğun 18 yaşına kadar anne ve/veya baba tarafından bakılması, eğitilmesi, korunması ve temsil edilmesini kapsayan hak ve yükümlülükler bütünüdür.
+
+Evlilik devam ederken velayet anne ve baba tarafından birlikte kullanılır. Boşanmada ise hakim, çocuğun üstün yararını gözeterek velayeti eşlerden birine verir.
+
+Velayet kararında mahkeme şu kriterleri değerlendirir: Çocuğun yaşı, anne-baba ile bağlılık düzeyi, ebeveynlerin ekonomik ve sosyal durumu, çocuğun görüşü (idrak yaşına ulaşmışsa), sosyal inceleme raporu (pedagog/psikolog değerlendirmesi).
+
+Velayeti almayan ebeveynin kişisel ilişki kurma hakkı vardır. Bu hak, çocukla belirli gün ve saatlerde görüşme şeklinde düzenlenir. Ayrıca velayeti almayan ebeveyn, çocuğun bakım giderlerine mali gücü oranında katılır (iştirak nafakası).`,
+        legalBasis: "TMK m. 335-351",
+        category: "bosanma",
+        relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri"],
+        relatedServiceAnchor: "#aile-hukuku",
+        faqs: [
+            {
+                question: "Velayet kararı değiştirilebilir mi?",
+                answer: "Evet, koşullar değiştiğinde velayet değişikliği davası açılabilir. Çocuğun üstün yararı gerektiriyorsa mahkeme velayeti diğer ebeveyne verebilir."
+            },
+            {
+                question: "Ortak velayet Türk hukukunda mümkün mü?",
+                answer: "Türk hukuku şu an için ortak velayeti açıkça düzenlememektedir. Ancak Yargıtay, anlaşmalı boşanmalarda ortak velayet kararını bazı koşullarda kabul etmektedir."
+            },
+            {
+                question: "Çocuğun görüşü velayet kararında dikkate alınır mı?",
+                answer: "Evet, idrak yaşına ulaşmış çocukların görüşü alınır. Genellikle 8 yaş ve üzeri çocukların beyanları değerlendirilir ancak karar çocuğun üstün yararına göre verilir."
+            }
+        ],
+        keywords: ["velayet nedir", "velayet davası", "velayet hakkı", "velayet değişikliği"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Nafaka",
+        slug: "nafaka",
+        shortDescription: "Boşanma sonrası yoksulluğa düşecek eşe veya müşterek çocuğa ödenen düzenli mali destek.",
+        definition: "Nafaka, boşanma sonrası yoksulluğa düşecek eşe ödenen yoksulluk nafakası (TMK m. 175) ve müşterek çocuğun bakım giderlerine katkı olarak ödenen iştirak nafakası (TMK m. 182/2) olmak üzere iki temel türü bulunan düzenli mali destek yükümlülüğüdür.",
+        detailedExplanation: `Nafaka, boşanma sonrasında ekonomik açıdan güçsüz kalan tarafı ve çocukları korumayı amaçlayan hukuki kurumdur.
+
+Yoksulluk nafakası: Boşanma yüzünden yoksulluğa düşecek ve kusuru diğer eşinkinden ağır olmayan eşe süresiz olarak ödenir. Nafaka borçlusunun mali gücü, alacaklının ihtiyaçları ve evlilik süresindeki yaşam standardı dikkate alınır.
+
+İştirak nafakası: Velayeti almayan ebeveynin çocuğun bakım ve eğitim giderlerine mali gücü oranında katılmasıdır. Çocuğun 18 yaşını doldurmasıyla sona erer ancak eğitim devam ediyorsa uzatılabilir.
+
+Tedbir nafakası: Boşanma davası süresince eş ve çocuklar için geçici olarak hükmolunur. Kusur aranmaz.
+
+Nafaka ödenmezse icra takibi yapılabilir ve 3 aya kadar tazyik hapsi kararı verilebilir.`,
+        legalBasis: "TMK m. 169, 175, 182",
+        category: "bosanma",
+        relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "velayet", "mal-paylasimi"],
+        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi"],
+        relatedServiceAnchor: "#aile-hukuku",
+        faqs: [
+            {
+                question: "Nafaka ne zaman sona erer?",
+                answer: "Yoksulluk nafakası alacaklının evlenmesi, ölüm veya yoksulluğun kalkmasıyla; iştirak nafakası çocuğun 18 yaşını doldurmasıyla sona erer."
+            },
+            {
+                question: "Erkek de nafaka alabilir mi?",
+                answer: "Evet, yoksulluk nafakası cinsiyete bağlı değildir. Yoksulluğa düşecek eş, kadın veya erkek fark etmeksizin nafaka talep edebilir."
+            },
+            {
+                question: "Nafaka ödenmezse hapis cezası verilir mi?",
+                answer: "Evet, nafaka borcunu ödemeyen kişi hakkında İİK m. 344 gereğince 3 aya kadar tazyik hapsi kararı verilebilir."
+            }
+        ],
+        keywords: ["nafaka nedir", "nafaka hesaplama", "yoksulluk nafakası", "iştirak nafakası", "nafaka ne kadar"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Edinilmiş Mallara Katılma",
+        slug: "mal-paylasimi",
+        shortDescription: "Evlilik süresince edinilen malların boşanmada eşit olarak paylaşılmasını öngören yasal mal rejimi.",
+        definition: "Edinilmiş mallara katılma rejimi, TMK m. 218-241 kapsamında düzenlenen, Türk hukukundaki yasal mal rejimidir. Bu rejimde evlilik süresince edinilen mallar boşanmada eşit olarak paylaşılırken, evlilik öncesi kişisel mallar paylaşım dışında kalır.",
+        detailedExplanation: `Edinilmiş mallara katılma rejimi, 1 Ocak 2002 tarihinden itibaren Türk hukukunda yasal mal rejimi olarak uygulanmaktadır. Eşler farklı bir mal rejimi seçmedikçe bu rejim otomatik olarak geçerlidir.
+
+Edinilmiş mallar (paylaşıma tabi): Çalışma karşılığı elde edilen gelirler, SGK ödemeleri, kişisel malların gelirleri ve edinilmiş mallar yerine geçen değerler.
+
+Kişisel mallar (paylaşım dışı): Evlilik öncesi sahip olunan mallar, miras yoluyla edinilen mallar, karşılıksız kazandırma (bağış) yoluyla edinilen mallar ve manevi tazminat alacakları.
+
+Boşanmada her eş, diğer eşin edinilmiş mallarının toplam değerinin yarısı üzerinde hak sahibidir. Bu, fiili olarak malın yarısının devredilmesi değil, katılma alacağı olarak para şeklinde talep edilmesidir. Katılma alacağı davası, boşanma davasıyla birlikte veya ayrı açılabilir.`,
+        legalBasis: "TMK m. 218-241",
+        category: "bosanma",
+        relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
+        relatedBlogSlugs: ["anlasmali-bosanma-nasil-acilir"],
+        relatedServiceAnchor: "#aile-hukuku",
+        faqs: [
+            {
+                question: "Evlilik öncesi mallarım paylaşılır mı?",
+                answer: "Hayır, evlilik öncesi sahip olunan mallar kişisel mal sayılır ve paylaşıma tabi değildir. Ancak evlilik süresince bu malların geliri edinilmiş mal sayılır."
+            },
+            {
+                question: "Miras yoluyla edinilen mal paylaşılır mı?",
+                answer: "Hayır, miras yoluyla edinilen mallar kişisel mal sayılır. Ancak miras malının evlilik süresince elde edilen geliri (kira, faiz) edinilmiş mal olarak değerlendirilebilir."
+            },
+            {
+                question: "Mal paylaşımı davası ne zaman açılır?",
+                answer: "Boşanma kararının kesinleşmesinden itibaren 10 yıl içinde açılmalıdır. Boşanma davasıyla birlikte de açılabilir."
+            }
+        ],
+        keywords: ["mal paylaşımı nedir", "edinilmiş mallara katılma", "boşanmada mal paylaşımı", "katılma alacağı"],
+        lastUpdated: "2026-03-11",
+    },
+
+    // ═══════════════════════════════════════
+    // TAZMİNAT HUKUKU TERİMLERİ
+    // ═══════════════════════════════════════
+    {
+        term: "Maddi Tazminat",
+        slug: "maddi-tazminat",
+        shortDescription: "Haksız fiil veya sözleşmeye aykırılık sonucu kişinin malvarlığında meydana gelen somut kaybın karşılanması.",
+        definition: "Maddi tazminat, TBK m. 49-52 kapsamında, kusurlu ve hukuka aykırı bir fiille başkasına zarar veren kişinin bu zararı gidermekle yükümlü olduğu, malvarlığındaki somut azalmayı karşılamaya yönelik tazminat türüdür.",
+        detailedExplanation: `Maddi tazminat, zarar görenin malvarlığında meydana gelen somut kaybın karşılanmasını amaçlar. Tam tazmin ilkesi gereği, zarar gören kişi zarara uğramadan önceki mali durumuna kavuşturulmalıdır.
+
+Maddi tazminat kalemleri: Fiili zarar (tedavi giderleri, onarım bedeli), yoksun kalınan kazanç (iş gücü kaybı, çalışamama zararı), destekten yoksun kalma (ölüm halinde yakınların kaybı).
+
+Hesaplama yöntemi: Bedensel zararlarda aktüerya bilirkişisi, eşya zararlarında eksper raporu ile hesaplanır. Maluliyet oranı, gelir düzeyi, yaş, kusur oranı ve SGK ödemeleri dikkate alınır.
+
+Maddi tazminat talebi için hukuka aykırı fiil, kusur (veya kusursuz sorumluluk), zarar ve nedensellik bağının birlikte bulunması gerekir.`,
+        legalBasis: "TBK m. 49-52",
+        category: "tazminat",
+        relatedTermSlugs: ["manevi-tazminat", "haksiz-fiil", "destekten-yoksun-kalma"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci"],
+        relatedServiceAnchor: "#tazminat",
+        faqs: [
+            {
+                question: "Maddi tazminat nasıl hesaplanır?",
+                answer: "Bedensel zararlarda aktüerya hesabıyla (maluliyet oranı x gelir x çalışma süresi), eşya zararlarında eksper raporu ile hesaplanır."
+            },
+            {
+                question: "Maddi tazminat zamanaşımı ne kadardır?",
+                answer: "Haksız fiilde zararın öğrenilmesinden itibaren 2 yıl, fiil tarihinden itibaren 10 yıl. Sözleşmeye aykırılıkta 10 yıl."
+            },
+            {
+                question: "Maddi tazminata faiz işler mi?",
+                answer: "Evet, haksız fiil tarihinden itibaren yasal faiz uygulanır."
+            }
+        ],
+        keywords: ["maddi tazminat nedir", "maddi tazminat hesaplama", "maddi tazminat davası", "tazminat hesaplama"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Manevi Tazminat",
+        slug: "manevi-tazminat",
+        shortDescription: "Kişinin bedensel veya ruhsal bütünlüğüne verilen zararın hakimin takdiriyle belirlenen parasal karşılığı.",
+        definition: "Manevi tazminat, TBK m. 56-58 kapsamında, bedensel bütünlüğün zedelenmesi veya kişilik haklarına saldırı halinde zarar görene hakimin takdiriyle belirlenen uygun bir miktar paranın ödenmesine karar verilen tazminat türüdür.",
+        detailedExplanation: `Manevi tazminat, zarar görenin yaşadığı acı, elem ve ıstırabın parasal karşılığıdır. Maddi tazminattan farklı olarak matematiksel bir hesaplama yöntemi yoktur; miktar hakimin takdirine bırakılmıştır.
+
+Manevi tazminat gerektiren durumlar: Bedensel yaralanma ve sakatlık, ölüm (yakınlarına), kişilik haklarına saldırı (hakaret, iftira), doktor hatası, trafik kazası, iş kazası, haksız tutuklama.
+
+Miktarı belirleyen faktörler: Olayın ağırlığı, kusur derecesi, tarafların ekonomik durumu, mağdurun yaşı ve sosyal konumu, psikolojik etkiler.
+
+Manevi tazminat zenginleşme aracı olmamalı ancak caydırıcı nitelikte olmalıdır. Ağır bedensel zarar veya ölüm halinde yakınlar da ayrı ayrı manevi tazminat talep edebilir.`,
+        legalBasis: "TBK m. 56-58",
+        category: "tazminat",
+        relatedTermSlugs: ["maddi-tazminat", "haksiz-fiil", "malpraktis"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari"],
+        relatedServiceAnchor: "#tazminat",
+        faqs: [
+            {
+                question: "Manevi tazminat miktarını kim belirler?",
+                answer: "Hakim takdir eder. Olayın ağırlığı, kusur derecesi, tarafların mali durumu ve hakkaniyete göre karar verilir."
+            },
+            {
+                question: "Manevi tazminat mirasçılara geçer mi?",
+                answer: "Kural olarak geçmez. Ancak dava açılmışsa veya taraflar arasında anlaşma yapılmışsa mirasçılara geçebilir."
+            },
+            {
+                question: "Yakınlar da manevi tazminat talep edebilir mi?",
+                answer: "Evet, ağır bedensel zarar veya ölüm halinde eş, çocuklar, anne ve baba ayrı ayrı manevi tazminat talep edebilir."
+            }
+        ],
+        keywords: ["manevi tazminat nedir", "manevi tazminat miktarı", "manevi tazminat davası", "manevi tazminat hesaplama"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Malpraktis",
+        slug: "malpraktis",
+        shortDescription: "Hekimin tıp biliminin gerektirdiği standart özeni göstermemesi sonucu hastaya zarar vermesi.",
+        definition: "Malpraktis (tıbbi hata), hekimin veya sağlık personelinin tıp biliminin o andaki standartlarına uygun davranmaması sonucu hastaya zarar vermesidir. Hasta, TBK m. 49 ve m. 116 kapsamında hem hekimden hem hastaneden maddi ve manevi tazminat talep edebilir.",
+        detailedExplanation: `Tıbbi malpraktis, hekimin tedavi sürecinde standart tıbbi uygulamadan sapması sonucu hastanın zarar görmesidir. Teşhis hatası, tedavi hatası, takip hatası ve aydınlatma hatası olmak üzere dört ana kategoride incelenir.
+
+Malpraktis ile komplikasyon ayrımı kritik önem taşır. Her olumsuz sonuç malpraktis değildir; komplikasyonlar tıbbi müdahalelerin bilinen riskleridir. Ancak hekim komplikasyonu önlemek için gerekli özeni göstermemişse veya hastayı bilgilendirmemişse sorumluluk doğar.
+
+Malpraktis davası: Özel hastanelerde hekime ve hastaneye karşı hukuk mahkemesinde, kamu hastanelerinde idareye karşı idare mahkemesinde açılır. Bilirkişi raporu (Adli Tıp Kurumu veya Yüksek Sağlık Şurası) davanın kaderini belirler.
+
+Zamanaşımı: Özel hastanelerde 5/10 yıl, kamu hastanelerinde 1/5 yıl. Kamu hastaneleri için süre çok kısadır, derhal hukuki danışmanlık alınmalıdır.`,
+        legalBasis: "TBK m. 49, 116",
+        category: "tazminat",
+        relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "haksiz-fiil"],
+        relatedBlogSlugs: ["malpraktis-davasi-doktor-hatasi-tazminati"],
+        relatedServiceAnchor: "#tazminat",
+        faqs: [
+            {
+                question: "Komplikasyon ile malpraktis arasındaki fark nedir?",
+                answer: "Komplikasyon tıbbi müdahalenin bilinen riskidir. Malpraktis ise hekimin standart özeni göstermemesidir. Komplikasyona zamanında müdahale edilmemesi malpraktise dönüşür."
+            },
+            {
+                question: "Malpraktis davasını kime karşı açabilirim?",
+                answer: "Özel hastanede hekime ve hastaneye birlikte, kamu hastanesinde idareye karşı (Sağlık Bakanlığı/Üniversite) açılır."
+            },
+            {
+                question: "Malpraktis davası zamanaşımı ne kadardır?",
+                answer: "Özel hastane: zararın öğrenilmesinden 5 yıl, tedaviden 10 yıl. Kamu hastanesi: zararın öğrenilmesinden 1 yıl, eylemden 5 yıl."
+            }
+        ],
+        keywords: ["malpraktis nedir", "doktor hatası tazminat", "tıbbi malpraktis", "doktor hatası dava"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Destekten Yoksun Kalma",
+        slug: "destekten-yoksun-kalma",
+        shortDescription: "Ölen kişinin desteğinden yararlanan kişilerin uğradığı gelir kaybının tazmin edilmesi.",
+        definition: "Destekten yoksun kalma tazminatı, TBK m. 53/3 kapsamında, haksız fiil sonucu ölen kişinin yaşamında geçimini sağladığı veya gelecekte geçimini sağlayacağı kişilerin (eş, çocuk, anne, baba) uğradığı gelir kaybını karşılamaya yönelik tazminat türüdür.",
+        detailedExplanation: `Destekten yoksun kalma tazminatı, ölenin hayatta iken fiilen destek olduğu kişilerin gelir kaybını karşılar. Tazminat miktarı aktüerya hesabıyla belirlenir.
+
+Hak sahipleri: Eş, çocuklar, anne-baba ve fiilen destek alan diğer kişiler. Nikahsız birlikte yaşayan kişi de fiili destek ispatlanırsa hak sahibi olabilir.
+
+Destek payları: Eş (çocuksuz %50, çocuklu %30-40), her çocuk (%10-20), anne (%10), baba (%10). Çocuklar destek payını belirli bir yaşa (kız 22, erkek 18-25) kadar alır.
+
+Hesaplama: Ölenin son geliri, yaşı, muhtemel yaşam süresi, destek payları, kusur oranı ve SGK ödemeleri dikkate alınarak aktüerya bilirkişisi tarafından hesaplanır.
+
+Trafik kazası, iş kazası ve tıbbi malpraktis sonucu ölüm hallerinde en sık talep edilen tazminat kalemlerindendir.`,
+        legalBasis: "TBK m. 53/3",
+        category: "tazminat",
+        relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "haksiz-fiil"],
+        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz"],
+        relatedServiceAnchor: "#tazminat",
+        faqs: [
+            {
+                question: "Destekten yoksun kalma tazminatını kimler talep edebilir?",
+                answer: "Ölenin eşi, çocukları, anne-babası ve fiilen destek aldığı diğer kişiler talep edebilir."
+            },
+            {
+                question: "Destek payları nasıl belirlenir?",
+                answer: "Yargıtay içtihatlarına göre: eş (çocuksuz %50, çocuklu %30-40), her çocuk (%10-20), anne ve baba ayrı ayrı %10."
+            },
+            {
+                question: "Nikahsız eş destekten yoksun kalma tazminatı alabilir mi?",
+                answer: "Evet, fiili destek ilişkisi ispatlanırsa nikahsız birlikte yaşayan kişi de tazminat talep edebilir."
+            }
+        ],
+        keywords: ["destekten yoksun kalma nedir", "destekten yoksun kalma tazminatı hesaplama", "destek payları"],
+        lastUpdated: "2026-03-11",
+    },
+    {
+        term: "Haksız Fiil",
+        slug: "haksiz-fiil",
+        shortDescription: "Kusurlu ve hukuka aykırı bir fiille başkasına zarar veren kişinin tazminat yükümlülüğü.",
+        definition: "Haksız fiil, TBK m. 49 kapsamında, kusurlu ve hukuka aykırı bir fiille başkasına zarar veren kişinin bu zararı gidermekle yükümlü olduğu hukuki sorumluluk türüdür. Trafik kazası, iş kazası, doktor hatası ve kişilik haklarına saldırı en yaygın haksız fiil örnekleridir.",
+        detailedExplanation: `Haksız fiil sorumluluğu, Türk tazminat hukukunun temelini oluşturur. Bir kişinin hukuka aykırı ve kusurlu eylemi sonucu başkasına zarar vermesi halinde tazminat yükümlülüğü doğar.
+
+Haksız fiilin unsurları: Hukuka aykırı fiil, kusur (kasıt veya ihmal), zarar (maddi veya manevi) ve nedensellik bağı (fiil ile zarar arasında sebep-sonuç ilişkisi).
+
+Kusursuz sorumluluk halleri: Bazı durumlarda kusur aranmaz — motorlu araç işleteni (KTK m. 85), hayvan sahibi (TBK m. 67), yapı sahibi (TBK m. 69), tehlikeli işletme (TBK m. 71), adam çalıştıran (TBK m. 66).
+
+Zamanaşımı: Zararın ve failin öğrenildiği tarihten itibaren 2 yıl, her halükarda fiil tarihinden itibaren 10 yıl. Fiil aynı zamanda suç oluşturuyorsa ve ceza zamanaşımı daha uzunsa, ceza zamanaşımı uygulanır.`,
+        legalBasis: "TBK m. 49-76",
+        category: "tazminat",
+        relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "destekten-yoksun-kalma", "malpraktis"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci"],
+        relatedServiceAnchor: "#tazminat",
+        faqs: [
+            {
+                question: "Haksız fiilin dört unsuru nedir?",
+                answer: "Hukuka aykırı fiil, kusur, zarar ve nedensellik bağı. Bu dört unsurun birlikte bulunması gerekir."
+            },
+            {
+                question: "Kusursuz sorumluluk ne demektir?",
+                answer: "Bazı durumlarda (araç işleteni, yapı sahibi, tehlikeli işletme) kusur olmasa bile tazminat sorumluluğu doğar. Yalnızca mücbir sebep veya zarar görenin ağır kusuru sorumluluktan kurtarır."
+            },
+            {
+                question: "Haksız fiil zamanaşımı ne kadardır?",
+                answer: "Zararın ve failin öğrenilmesinden itibaren 2 yıl, fiil tarihinden itibaren 10 yıl. Suç oluşturuyorsa ceza zamanaşımı uygulanabilir."
+            }
+        ],
+        keywords: ["haksız fiil nedir", "haksız fiil tazminatı", "haksız fiil unsurları", "haksız fiil zamanaşımı"],
+        lastUpdated: "2026-03-11",
     },
 ];
 

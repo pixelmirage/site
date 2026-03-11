@@ -57,7 +57,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                 term={term.term}
                 description={term.definition}
                 url={termUrl}
-                inDefinedTermSet="Kira Hukuku Sözlüğü"
+                inDefinedTermSet="Hukuk Sözlüğü"
                 lastUpdated={term.lastUpdated}
             />
             <FAQSchema faqs={term.faqs} />
@@ -218,21 +218,21 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             <section className="pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Kira Hukuku Desteğine mi İhtiyacınız Var?</h3>
+                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Hukuki Desteğe mi İhtiyacınız Var?</h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
-                            Kiracı tahliye davaları, kira tespit davaları ve kira sözleşmesi uyuşmazlıklarında uzman avukatlık hizmeti alın.
+                            Kira, iş, boşanma ve tazminat hukuku alanlarında uzman avukatlık hizmeti alın. Ücretsiz ön görüşme için bize ulaşın.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/izmir-kira-avukati" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                İzmir Kira Avukatı <ArrowRight className="w-4 h-4" />
+                            <Link href="/iletisim" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                                Ücretsiz Ön Görüşme <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (
                                 <Link href={`/hizmetler${term.relatedServiceAnchor}`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                     İlgili Hizmet
                                 </Link>
                             )}
-                            <Link href="/iletisim" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                                İletişim
+                            <Link href="/hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                                Tüm Hizmetler
                             </Link>
                         </div>
                     </div>
