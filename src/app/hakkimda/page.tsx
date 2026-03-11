@@ -23,7 +23,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hakkımda</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                        İzmir'de adaletin tesisi için uzmanlık ve dürüstlükle hizmet veren Mert Kağan Çetin Hukuk Bürosu'nu yakından tanıyın.
+                        İzmir'de kira, iş, boşanma ve tazminat hukuku alanlarında hizmet veren Mert Kağan Çetin Hukuk Bürosu'nu yakından tanıyın.
                     </p>
                 </div>
             </section>
@@ -37,16 +37,16 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    İzmir merkezli faaliyet gösteren hukuk büromuzun kurucusu olan Avukat Mert Kağan Çetin, meslek hayatı boyunca özellikle gayrimenkul hukuku, <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">kira hukuku</Link> ve tazminat hukuku alanlarında derinlemesine uzmanlaşmıştır.
+                                    Avukat Mert Kağan Çetin, İzmir Bayraklı'da faaliyet gösteren hukuk bürosunun kurucusudur. <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link>, <Link href="/izmir-is-avukati" className="text-secondary hover:underline">iş hukuku</Link>, <Link href="/izmir-bosanma-avukati" className="text-secondary hover:underline">boşanma hukuku</Link> ve <Link href="/izmir-tazminat-avukati" className="text-secondary hover:underline">tazminat hukuku</Link> alanlarında uzmanlaşmıştır.
                                 </p>
                                 <p>
-                                    Kira uyuşmazlıklarının toplumsal ve ekonomik boyutlarını yakından takip ederek, müvekkillerine yalnızca mahkeme süreçlerinde değil, aynı zamanda uyuşmazlık öncesi danışmanlık aşamasında da stratejik yönlendirmeler sunmaktadır.
+                                    Müvekkillerine yalnızca mahkeme süreçlerinde değil, dava öncesi danışmanlık aşamasında da yol göstermektedir. Uyuşmazlığın çözümünde arabuluculuk ve müzakere yöntemlerini de aktif olarak kullanmaktadır.
                                 </p>
                                 <blockquote className="border-l-4 border-secondary pl-6 py-2 italic text-primary font-medium bg-secondary/5 rounded-r-lg">
-                                    "Hukuk, sadece kurallardan ibaret değildir; o kuralların insan hayatına nasıl dokunduğu ve adaleti nasıl sağladığı asıl meseledir."
+                                    "İyi bir avukat müvekkiline sadece hakkını değil, sürecin her adımında nerede olduğunu da anlatır."
                                 </blockquote>
                                 <p>
-                                    Bugüne kadar İzmir ve çevre illerde yüzlerce başarılı tahliye davası ve kira tespit davası yürütmüş olan Çetin, yerel mahkemelerin işleyişine ve güncel Yargıtay uygulamalarına hakimiyetiyle tanınmaktadır.
+                                    İzmir ve çevre illerde yüzlerce davayı başarıyla sonuçlandıran Çetin, yerel mahkemelerin işleyişine ve güncel Yargıtay kararlarına hakimdir.
                                 </p>
                             </div>
 
@@ -61,7 +61,7 @@ export default function AboutPage() {
                                     <ul className="space-y-2 text-sm text-muted-foreground">
                                         <li>• İzmir Barosu Üyeliği</li>
                                         <li>• Arabuluculuk Süreç Yönetimi Eğitimi</li>
-                                        <li>• Gayrimenkul Mevzuatı Güncelleme Panelleri</li>
+                                        <li>• Hukuk Mevzuatı Güncelleme Seminerleri</li>
                                     </ul>
                                 </div>
                                 <div className="space-y-4">
@@ -72,7 +72,7 @@ export default function AboutPage() {
                                         <h3 className="font-bold text-primary">Vizyonumuz</h3>
                                     </div>
                                     <p className="text-sm text-muted-foreground">
-                                        Modern hukuk teknolojilerini kullanarak, müvekkillerimize en hızlı ve en etkili çözümleri sunmak; İzmir'de kira hukuku dendiğinde akla gelen ilk ve en güvenilir isim olmaya devam etmek.
+                                        Müvekkillerimize her aşamada şeffaf bilgi vererek, en hızlı ve en etkili çözümleri sunmak. İzmir'de güvenilir hukuki danışmanlık deneyimi sağlamak.
                                     </p>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                                         </div>
                                         <div className="flex justify-between items-center border-b pb-4">
                                             <span className="text-muted-foreground">Uzmanlık</span>
-                                            <span className="font-bold text-primary text-right">Kira & Tahliye</span>
+                                            <span className="font-bold text-primary text-right">Kira, İş, Aile, Tazminat</span>
                                         </div>
                                     </div>
 

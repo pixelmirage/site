@@ -19,10 +19,10 @@ export function AboutBrief() {
 
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed font-serif italic opacity-90">
                             <p>
-                                Hukuk, sadece mevzuat bilgisi değil; haklara duyulan saygı ve teknik bir stratejiyi gerektirir. İzmir merkezli çalışmalarımızda, kira, iş, boşanma ve tazminat davalarında müvekkillerimizin haklarını bu disiplinle savunuyoruz.
+                                İzmir Bayraklı'da kira, iş, boşanma ve tazminat davalarında müvekkillerimizin yanındayız. Her dosyada önce dinler, sonra en doğru stratejiyi birlikte belirleriz.
                             </p>
                             <p className="not-italic font-sans text-base text-muted-foreground font-light">
-                                Mert Kağan Çetin Hukuk Bürosu olarak, karmaşık hukuki uyuşmazlıklarda net çözümler üretiyor ve yargılama süreçlerini şeffaflıkla yönetiyoruz. İzmir genelinde kira hukuku, iş hukuku, aile hukuku ve tazminat davalarına dair her türlü danışmanlık hizmetini, mesleki ilkelere bağlı kalarak sunmaktayız.
+                                Mert Kağan Çetin Hukuk Bürosu olarak süreçleri şeffaf yönetiyor, müvekkillerimizi her aşamada bilgilendiriyoruz. İzmir genelinde kira hukuku, iş hukuku, aile hukuku ve tazminat davalarında danışmanlık hizmeti veriyoruz.
                             </p>
                         </div>
 

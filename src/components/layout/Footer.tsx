@@ -11,7 +11,7 @@ export function Footer() {
                             <Logo />
                         </Link>
                         <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                            İzmir Bayraklı merkezli; kira hukuku, iş hukuku ve aile hukuku alanlarında uzmanlaşmış butik hukuk pratiği.
+                            İzmir Bayraklı merkezli hukuk bürosu. Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık hizmeti.
                         </p>
                     </div>
 
