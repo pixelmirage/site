@@ -108,7 +108,7 @@ export function Hero() {
                         <span className="w-1 h-1 rounded-full bg-secondary/50" />
                         <span>4 Hizmet Alanı</span>
                         <span className="w-1 h-1 rounded-full bg-secondary/50" />
-                        <span>16 Uzman Makale</span>
+                        <span>500+ Dava Deneyimi</span>
                     </motion.div>
 
                 </div>
