@@ -11,7 +11,7 @@ export function Logo({ className }: { className?: string }) {
                     Av. Mert Kağan Çetin
                 </span>
                 <span className="text-[0.65rem] uppercase tracking-widest text-muted-foreground font-medium">
-                    İzmir Kira & Gayrimenkul Hukuku
+                    Avukatlık & Hukuk Danışmanlığı
                 </span>
             </div>
         </div>

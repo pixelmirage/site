@@ -1,64 +1,54 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Scale, Key, Home, FileText, Gavel, Users2, MoveRight, Briefcase, Heart } from "lucide-react";
+import { Home, Briefcase, Heart, ShieldCheck, MoveRight } from "lucide-react";
 import Link from "next/link";
 
-const services = [
+const areas = [
     {
-        title: "Kira Tespit Davası",
-        description: "Kira bedelinin güncel ekonomik ve hukuki emsaller ışığında yeniden yapılandırılması.",
-        icon: Scale
+        title: "Kira Hukuku",
+        href: "/izmir-kira-avukati",
+        icon: Home,
+        services: [
+            "Kira Tespit Davası",
+            "Tahliye Davaları",
+            "Tahliye Taahhütnamesi",
+            "Zorunlu Arabuluculuk",
+        ],
     },
     {
-        title: "Tahliye Davaları",
-        description: "İhtiyaç, temerrüt ve sözleşme ihlallerine dayalı tahliye süreçlerinin hukuki yönetimi.",
-        icon: Key
-    },
-    {
-        title: "Tahliye Taahhütnamesi",
-        description: "Geçerlilik şartlarını taşıyan taahhütnamelerin tanzimi ve icra yoluyla tahliye takibi.",
-        icon: FileText
-    },
-    {
-        title: "Gayrimenkul Devirleri",
-        description: "Tapu iptal, tescil ve taşınmaz mülkiyetinin korunmasına yönelik davalar.",
-        icon: Home
-    },
-    {
-        title: "Sözleşme Tasarımı",
-        description: "Kurumsal ve bireysel kira sözleşmelerinin hak kaybını önleyecek şekilde hazırlanması.",
-        icon: Gavel
-    },
-    {
-        title: "Arabuluculuk",
-        description: "Zorunlu arabuluculuk süreçlerinde profesyonel temsil ve müzakere yönetimi.",
-        icon: Users2
-    },
-    {
-        title: "İşe İade Davası",
-        description: "Haksız fesih halinde işe iade ve kıdem tazminatı davalarında uzman temsil.",
+        title: "İş Hukuku",
+        href: "/izmir-is-avukati",
         icon: Briefcase,
-        href: "/izmir-is-avukati"
+        services: [
+            "İşe İade Davası",
+            "Kıdem Tazminatı",
+            "İş Kazası Tazminatı",
+            "Fazla Mesai Alacağı",
+        ],
     },
     {
-        title: "Kıdem & İhbar Tazminatı",
-        description: "İş sözleşmesinin sona ermesinde kıdem ve ihbar tazminatı haklarının korunması.",
-        icon: Scale,
-        href: "/izmir-is-avukati"
-    },
-    {
-        title: "Boşanma Davası",
-        description: "Anlaşmalı ve çekişmeli boşanma süreçlerinde profesyonel hukuki danışmanlık.",
+        title: "Boşanma Hukuku",
+        href: "/izmir-bosanma-avukati",
         icon: Heart,
-        href: "/izmir-bosanma-avukati"
+        services: [
+            "Anlaşmalı Boşanma",
+            "Çekişmeli Boşanma",
+            "Velayet Davası",
+            "Nafaka Davası",
+        ],
     },
     {
-        title: "Velayet & Nafaka",
-        description: "Çocuk velayeti, nafaka ve mal paylaşımı davalarında haklarınızın korunması.",
-        icon: Users2,
-        href: "/izmir-bosanma-avukati"
-    }
+        title: "Tazminat Hukuku",
+        href: "/izmir-tazminat-avukati",
+        icon: ShieldCheck,
+        services: [
+            "Trafik Kazası Tazminatı",
+            "Maddi Tazminat Davası",
+            "Manevi Tazminat Davası",
+            "Malpraktis Davası",
+        ],
+    },
 ];
 
 export function ServicesGrid() {
@@ -73,30 +63,42 @@ export function ServicesGrid() {
                     </div>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">Profesyonel Hukuki Hizmetler</h2>
                     <p className="text-muted-foreground font-light text-lg">
-                        İzmir'de kira, iş ve boşanma hukuku alanlarında kurumsal disiplinle sonuç alıyoruz.
+                        İzmir'de kira, iş, boşanma ve tazminat hukuku alanlarında kurumsal disiplinle sonuç alıyoruz.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {services.map((service, index) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {areas.map((area, index) => (
                         <motion.div
-                            key={index}
+                            key={area.title}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group bg-white border border-border/50 hover:border-primary/20 p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(15,23,42,0.05)]"
+                            className="group bg-white border border-border/50 hover:border-primary/20 p-10 md:p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(15,23,42,0.05)]"
                         >
-                            <div className="w-12 h-12 bg-primary/5 flex items-center justify-center mb-8 border border-primary/10 group-hover:bg-primary transition-colors duration-300">
-                                <service.icon className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                            <div className="flex items-start gap-6">
+                                <div className="w-14 h-14 bg-primary/5 flex items-center justify-center border border-primary/10 group-hover:bg-primary transition-colors duration-300 flex-shrink-0">
+                                    <area.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
+                                </div>
+                                <div className="flex-1 space-y-5">
+                                    <h3 className="text-2xl font-serif font-bold text-primary">{area.title}</h3>
+                                    <ul className="space-y-2.5">
+                                        {area.services.map((service) => (
+                                            <li key={service} className="flex items-center gap-2 text-muted-foreground text-sm font-light">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-secondary/60 flex-shrink-0" />
+                                                {service}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <Link
+                                        href={area.href}
+                                        className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors pt-2"
+                                    >
+                                        Detaylı Bilgi <MoveRight className="w-4 h-4" />
+                                    </Link>
+                                </div>
                             </div>
-                            <h4 className="text-2xl font-serif font-bold text-primary mb-4">{service.title}</h4>
-                            <p className="text-muted-foreground text-sm leading-relaxed font-light mb-8">
-                                {service.description}
-                            </p>
-                            <Link href={(service as any).href || "/hizmetler"} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors">
-                                Hizmet Detayı <MoveRight className="w-4 h-4" />
-                            </Link>
                         </motion.div>
                     ))}
                 </div>

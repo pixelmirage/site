@@ -19,10 +19,10 @@ export function AboutBrief() {
 
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed font-serif italic opacity-90">
                             <p>
-                                Gayrimenkul ve kira hukuku, sadece mevzuat bilgisi değil, mülkiyetin kutsiyetine olan saygıyı ve teknik bir stratejiyi gerektirir. İzmir merkezli çalışmalarımızda, müvekkillerimizin haklarını bu disiplinle savunuyoruz.
+                                Hukuk, sadece mevzuat bilgisi değil; haklara duyulan saygı ve teknik bir stratejiyi gerektirir. İzmir merkezli çalışmalarımızda, kira, iş, boşanma ve tazminat davalarında müvekkillerimizin haklarını bu disiplinle savunuyoruz.
                             </p>
                             <p className="not-italic font-sans text-base text-muted-foreground font-light">
-                                Mert Kağan Çetin Hukuk Bürosu olarak, karmaşık kira uyuşmazlıklarında net çözümler üretiyor ve yargılama süreçlerini şeffaflıkla yönetiyoruz. İzmir genelinde taşınmaz hukukuna dair her türlü danışmanlık hizmetini, mesleki ilkelere bağlı kalarak sunmaktayız.
+                                Mert Kağan Çetin Hukuk Bürosu olarak, karmaşık hukuki uyuşmazlıklarda net çözümler üretiyor ve yargılama süreçlerini şeffaflıkla yönetiyoruz. İzmir genelinde kira hukuku, iş hukuku, aile hukuku ve tazminat davalarına dair her türlü danışmanlık hizmetini, mesleki ilkelere bağlı kalarak sunmaktayız.
                             </p>
                         </div>
 
