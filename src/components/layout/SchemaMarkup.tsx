@@ -32,7 +32,7 @@ export function SchemaMarkup() {
                 "@type": ["Attorney", "LegalService", "LocalBusiness"],
                 "@id": "https://mertkagancetin.com/#attorney",
                 "name": "Av. Mert Kağan Çetin",
-                "image": "https://mertkagancetin.com/og-image.jpg",
+                "image": "https://mertkagancetin.com/attorney-photo.jpg",
                 "url": "https://mertkagancetin.com",
                 "telephone": "+905445854645",
                 "email": "info@mertkagancetin.com",
