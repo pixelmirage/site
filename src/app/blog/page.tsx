@@ -6,7 +6,7 @@ import { Calendar, Clock, ChevronRight, Search } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Yasal Makaleler & Blog | İzmir Kira Avukatı",
+    title: "Hukuki Makaleler & Blog | Av. Mert Kağan Çetin",
     description: "Kira hukuku, iş hukuku, boşanma davaları, tahliye süreçleri ve güncel yargı kararları hakkında uzman görüşleri ve bilgilendirici makaleler.",
     alternates: {
         canonical: "https://mertkagancetin.com/blog/",

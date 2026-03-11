@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "İletişim",
-    description: "İzmir Bayraklı'da kira, iş ve boşanma hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+    description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",
     },

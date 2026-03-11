@@ -6,8 +6,8 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-    title: "Hukuki Hizmetlerimiz | Kira, İş ve Boşanma Hukuku",
-    description: "İzmir'de kira hukuku, iş hukuku ve boşanma davaları alanında kapsamlı avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
+    title: "Hizmetlerimiz | Kira, İş, Boşanma ve Tazminat Hukuku",
+    description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
     alternates: {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },

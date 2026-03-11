@@ -5,14 +5,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { Scale, ArrowRight, BookOpen, Home, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Hukuk Sözlüğü | Kira Hukuku Terimleri",
-    description: "Kira hukuku terimlerinin anlaşılır açıklamaları. Tahliye taahhütnamesi, kira tespit davası, depozito ve diğer önemli kavramlar hakkında bilgi edinin.",
+    title: "Hukuk Sözlüğü | Hukuki Terimler ve Açıklamaları",
+    description: "Kira hukuku, iş hukuku ve aile hukuku terimlerinin anlaşılır açıklamaları. Tahliye taahhütnamesi, kira tespit davası, depozito ve diğer kavramlar.",
     alternates: {
         canonical: "https://mertkagancetin.com/sozluk/",
     },
     openGraph: {
-        title: "Hukuk Sözlüğü | Kira Hukuku Terimleri",
-        description: "Kira hukuku terimlerinin anlaşılır açıklamaları. Tahliye, kira tespit, depozito ve diğer kavramlar.",
+        title: "Hukuk Sözlüğü | Hukuki Terimler ve Açıklamaları",
+        description: "Kira hukuku, iş hukuku ve aile hukuku terimlerinin anlaşılır açıklamaları.",
         url: "https://mertkagancetin.com/sozluk/",
         type: "website",
     },
