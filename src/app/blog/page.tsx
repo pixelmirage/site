@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, ChevronRight, Search } from "lucide-react";
 import { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "Hukuki Makaleler & Blog | Av. Mert Kağan Çetin",
@@ -21,6 +22,12 @@ export default function BlogPage() {
 
     return (
         <div className="bg-slate-50 min-h-screen">
+            <BreadcrumbSchema
+                items={[
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "Blog", url: "https://mertkagancetin.com/blog/" },
+                ]}
+            />
             {/* Header */}
             <section className="bg-white py-20 border-b border-slate-200">
                 <div className="container mx-auto px-4">

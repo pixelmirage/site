@@ -4,6 +4,7 @@ import { CheckCircle2, Award, BookOpen, Scale } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "Hakkımda | Av. Mert Kağan Çetin | İzmir Avukat",
@@ -19,6 +20,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
     return (
         <div className="bg-white">
+            <BreadcrumbSchema
+                items={[
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "Hakkımda", url: "https://mertkagancetin.com/hakkimda/" },
+                ]}
+            />
             {/* Page Header */}
             <section className="bg-slate-50 py-20 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
