@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { DefinedTermSchema } from "@/components/seo/DefinedTermSchema";
+import { VideoSchema } from "@/components/seo/VideoSchema";
+import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 
 export async function generateStaticParams() {
     return glossaryTerms.map((term) => ({
@@ -61,6 +63,16 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                 lastUpdated={term.lastUpdated}
             />
             <FAQSchema faqs={term.faqs} />
+            {term.youtubeVideoId && (
+                <VideoSchema
+                    name={`${term.term} Nedir? | Kısa Video`}
+                    description={term.shortDescription}
+                    thumbnailUrl={`https://img.youtube.com/vi/${term.youtubeVideoId}/maxresdefault.jpg`}
+                    uploadDate={term.lastUpdated}
+                    contentUrl={`https://www.youtube.com/shorts/${term.youtubeVideoId}`}
+                    embedUrl={`https://www.youtube.com/embed/${term.youtubeVideoId}`}
+                />
+            )}
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
@@ -116,6 +128,14 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {paragraphs.map((p, i) => (
                                 <p key={i}>{p}</p>
                             ))}
+
+                            {/* YouTube Shorts Video */}
+                            {term.youtubeVideoId && (
+                                <YouTubeShorts
+                                    videoId={term.youtubeVideoId}
+                                    title={`${term.term} - Kısa Video ile Açıklama`}
+                                />
+                            )}
 
                             {/* Legal Basis Callout */}
                             <div className="not-prose bg-blue-50 border-l-4 border-blue-500 p-6 my-8">

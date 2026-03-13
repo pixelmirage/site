@@ -19,6 +19,7 @@ export interface PostData {
     content: string;
     tags?: string[];
     faqs?: FAQItem[];
+    youtubeVideoId?: string;
     readingTime: number;
 }
 
@@ -43,7 +44,7 @@ export function getAllPosts(): PostData[] {
                 slug,
                 content,
                 readingTime,
-                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[] }),
+                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string }),
             };
         });
 
@@ -63,7 +64,7 @@ export function getPostBySlug(slug: string): PostData | null {
             slug,
             content,
             readingTime,
-            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[] }),
+            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string }),
         };
     } catch (e) {
         return null;

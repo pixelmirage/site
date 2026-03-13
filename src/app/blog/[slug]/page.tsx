@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { VideoSchema } from "@/components/seo/VideoSchema";
+import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { RelatedPosts } from "@/components/blog/RelatedPosts";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 
@@ -85,6 +87,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {post.faqs && post.faqs.length > 0 && (
                 <FAQSchema faqs={post.faqs} />
             )}
+            {post.youtubeVideoId && (
+                <VideoSchema
+                    name={`${post.title} | Kısa Video`}
+                    description={post.excerpt}
+                    thumbnailUrl={`https://img.youtube.com/vi/${post.youtubeVideoId}/maxresdefault.jpg`}
+                    uploadDate={post.dateModified || post.date}
+                    contentUrl={`https://www.youtube.com/shorts/${post.youtubeVideoId}`}
+                    embedUrl={`https://www.youtube.com/embed/${post.youtubeVideoId}`}
+                />
+            )}
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
@@ -136,6 +148,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             { label: post.title }
                         ]}
                     />
+
+                    {/* YouTube Shorts Video */}
+                    {post.youtubeVideoId && (
+                        <YouTubeShorts
+                            videoId={post.youtubeVideoId}
+                            title={`${post.title} - Kısa Video`}
+                        />
+                    )}
 
                     {/* MDX Content Rendering */}
                     <div className="prose prose-slate max-w-none 

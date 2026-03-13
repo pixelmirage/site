@@ -21,6 +21,7 @@ export interface GlossaryTerm {
     relatedTermSlugs: string[];
     relatedBlogSlugs: string[];
     relatedServiceAnchor?: string;
+    youtubeVideoId?: string;
     faqs: { question: string; answer: string }[];
     keywords: string[];
     lastUpdated: string;
@@ -44,6 +45,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
         relatedTermSlugs: ["kira-sozlesmesi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
         relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
         relatedServiceAnchor: "#tahliye",
+        youtubeVideoId: "0I5No4QamYA",
         faqs: [
             {
                 question: "Tahliye taahhütnamesi ne zaman geçerlidir?",
