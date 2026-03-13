@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { VideoSchema } from "@/components/seo/VideoSchema";
+import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { AlertCircle } from "lucide-react";
 import { PrintButton } from "@/components/tools/PrintButton";
 
@@ -27,6 +29,15 @@ export default function EvictionTemplatePage() {
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
                     { name: "Tahliye Taahhütnamesi", url: "https://mertkagancetin.com/tahliye-taahhutnamesi/" }
                 ]}
+            />
+
+            <VideoSchema
+                name="Tahliye Taahhütnamesi Nedir? | Kısa Video"
+                description="Tahliye taahhütnamesi nedir, nasıl doldurulur ve ne zaman geçerlidir? Kısa videoda öğrenin."
+                thumbnailUrl="https://img.youtube.com/vi/0I5No4QamYA/maxresdefault.jpg"
+                uploadDate="2026-03-13"
+                contentUrl="https://www.youtube.com/shorts/0I5No4QamYA"
+                embedUrl="https://www.youtube.com/embed/0I5No4QamYA"
             />
 
             <FAQSchema
@@ -129,6 +140,10 @@ export default function EvictionTemplatePage() {
                 {/* SEO Content - Hidden in Print */}
                 <div className="max-w-[210mm] mx-auto mt-12 prose prose-slate prose-lg print:hidden">
                     <h3>Tahliye Taahhütnamesi Nedir?</h3>
+                    <YouTubeShorts
+                        videoId="0I5No4QamYA"
+                        title="Tahliye Taahhütnamesi Nedir? - Kısa Video ile Açıklama"
+                    />
                     <p>
                         Tahliye taahhütnamesi, kiracının kiraladığı taşınmazı belirli bir tarihte boşaltacağını yazılı olarak beyan ettiği hukuki bir belgedir.
                         Türk Borçlar Kanunu madde 352/1 uyarınca verilen bu taahhüt, mülk sahibi için en hızlı tahliye imkanı sağlayan belgelerden biridir.
