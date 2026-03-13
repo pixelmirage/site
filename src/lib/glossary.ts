@@ -279,7 +279,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
 
 Bu sınırlama ilk beş yıl için mutlak olarak uygulanır. Beş yıldan sonra ise kira tespit davası yoluyla hâkim tarafından hakkaniyete uygun bir kira bedeli belirlenebilir. Bu durumda TÜFE sınırı uygulanmaz.
 
-İşyeri kiralarında ise kira artış oranı tarafların anlaşmasına bağlıdır; TÜFE sınırlaması yalnızca konut kiraları için geçerlidir.
+TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri kiraları için geçerlidir. İşyeri kiralarında da kira artışı bir önceki kira yılındaki TÜFE oranını geçemez.
 
 2024 yılında sona eren %25 kira artış tavanı sonrasında, 2025 ve 2026 yıllarında yeniden TÜFE oranı üst sınır olarak uygulanmaktadır. Güncel TÜFE oranları TÜİK tarafından aylık olarak açıklanmaktadır.`,
         legalBasis: "TBK m. 344",
@@ -298,7 +298,7 @@ Bu sınırlama ilk beş yıl için mutlak olarak uygulanır. Beş yıldan sonra 
             },
             {
                 question: "İşyeri kiralarında da TÜFE sınırı var mı?",
-                answer: "Hayır, TÜFE artış sınırı yalnızca konut kiraları için geçerlidir. İşyeri kiralarında artış oranı tarafların serbest iradesine bırakılmıştır."
+                answer: "Evet, TBK m. 344 kapsamında TÜFE artış sınırı hem konut hem de çatılı işyeri kiraları için geçerlidir. Her iki kira türünde de artış oranı bir önceki kira yılındaki TÜFE oranını geçemez."
             }
         ],
         keywords: ["kira artış oranı nedir", "kira artış oranı hesaplama", "TÜFE kira artış oranı", "kira zam oranı 2026"],
