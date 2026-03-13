@@ -352,6 +352,7 @@ Fuzuli işgalci, iyiniyetli veya kötüniyetli olmasına göre farklı hukuki so
         relatedTermSlugs: ["ihtiyac-nedeniyle-tahliye", "kira-sozlesmesi", "kiraci-haklari"],
         relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
         relatedServiceAnchor: "#tahliye",
+        youtubeVideoId: "zXHqOaEiklI",
         faqs: [
             {
                 question: "Fuzuli işgal nedir?",
