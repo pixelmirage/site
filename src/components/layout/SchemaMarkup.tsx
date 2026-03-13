@@ -38,7 +38,8 @@ export function SchemaMarkup() {
                 "email": "info@mertkagancetin.com",
                 "sameAs": [
                     "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
-                    "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ"
+                    "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
+                    "https://www.linkedin.com/in/mert-ka%C4%9Fan-%C3%A7etin-28a264298/"
                 ],
                 "address": {
                     "@type": "PostalAddress",
