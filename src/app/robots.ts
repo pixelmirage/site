@@ -34,6 +34,9 @@ export default function robots(): MetadataRoute.Robots {
             },
         ],
         host: 'https://mertkagancetin.com',
-        sitemap: 'https://mertkagancetin.com/sitemap.xml',
+        sitemap: [
+            'https://mertkagancetin.com/sitemap.xml',
+            'https://mertkagancetin.com/video-sitemap.xml',
+        ],
     };
 }
