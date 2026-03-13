@@ -183,6 +183,7 @@ TBK m. 352/2'ye göre, kiracı bir yıldan kısa süreli kira sözleşmelerinde 
         relatedTermSlugs: ["tahliye-taahhutnamesi", "kira-sozlesmesi", "kiraci-haklari"],
         relatedBlogSlugs: ["kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir", "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
         relatedServiceAnchor: "#tahliye",
+        youtubeVideoId: "r-MYOrgjhYI",
         faqs: [
             {
                 question: "İki haklı ihtar ile tahliye nasıl yapılır?",
