@@ -114,6 +114,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
         relatedTermSlugs: ["tahliye-taahhutnamesi", "10-yillik-uzama-suresi", "kiraci-haklari"],
         relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir"],
         relatedServiceAnchor: "#tahliye",
+        youtubeVideoId: "KrgeQm3tm_Q",
         faqs: [
             {
                 question: "İhtiyaç nedeniyle tahliye davası şartları nelerdir?",
