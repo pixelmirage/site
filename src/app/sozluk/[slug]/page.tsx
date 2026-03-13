@@ -120,7 +120,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {/* Featured Snippet Definition */}
                             <div className="not-prose bg-slate-50 border-l-4 border-secondary p-6 rounded-r-xl mb-8">
                                 <p className="text-xl leading-relaxed font-medium text-slate-800">
-                                    <strong>{term.term}</strong>, {term.definition.charAt(0).toLowerCase() + term.definition.slice(1).split(". ").slice(1).join(". ") || term.definition.split(". ").slice(1).join(". ")}
+                                    <strong>{term.term}</strong>, {term.definition.split(". ").slice(1).join(". ")}
                                 </p>
                             </div>
 
