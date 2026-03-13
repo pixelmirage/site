@@ -37,7 +37,8 @@ export function SchemaMarkup() {
                 "telephone": "+905445854645",
                 "email": "info@mertkagancetin.com",
                 "sameAs": [
-                    "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7"
+                    "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
+                    "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ"
                 ],
                 "address": {
                     "@type": "PostalAddress",

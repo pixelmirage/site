@@ -56,6 +56,9 @@ export default function AboutPage() {
                                 <p>
                                     İzmir ve çevre illerde yüzlerce davayı başarıyla sonuçlandıran Çetin, yerel mahkemelerin işleyişine ve güncel Yargıtay kararlarına hakimdir.
                                 </p>
+                                <p>
+                                    Hukuki süreçleri herkesin anlayabileceği şekilde açıkladığı <a href="https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">YouTube kanalını</a> takip ederek kira, iş ve aile hukuku konularında kısa bilgilendirme videolarına ulaşabilirsiniz.
+                                </p>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
