@@ -80,6 +80,7 @@ Dava, yeni kira döneminin başlangıcından en az otuz gün önce açılmalı v
         relatedTermSlugs: ["kira-artis-orani", "kira-uyarlama-davasi", "kira-sozlesmesi"],
         relatedBlogSlugs: [],
         relatedServiceAnchor: "#kira",
+        youtubeVideoId: "7mChnFfudwY",
         faqs: [
             {
                 question: "Kira tespit davası ne zaman açılabilir?",
