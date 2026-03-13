@@ -287,6 +287,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
         relatedTermSlugs: ["kira-tespit-davasi", "kira-uyarlama-davasi", "kira-sozlesmesi"],
         relatedBlogSlugs: [],
         relatedServiceAnchor: "#kira",
+        youtubeVideoId: "1ylsHk_vUH4",
         faqs: [
             {
                 question: "Kira artış oranı nasıl hesaplanır?",
