@@ -389,6 +389,7 @@ Süre hesaplamasında, sözleşmede belirtilen sürenin bitiminden itibaren on y
         relatedTermSlugs: ["ihtiyac-nedeniyle-tahliye", "kira-sozlesmesi", "kira-tespit-davasi"],
         relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
         relatedServiceAnchor: "#tahliye",
+        youtubeVideoId: "CNK9e52vzlo",
         faqs: [
             {
                 question: "10 yıllık uzama süresi nasıl hesaplanır?",
