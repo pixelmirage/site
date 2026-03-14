@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Static Routes — individual last modified dates per page
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
         '': { lastModified: '2026-03-12', priority: 1 },
-        '/izmir-kira-avukati': { lastModified: '2026-03-03', priority: 1 },
+        '/izmir-kira-avukati': { lastModified: '2026-03-13', priority: 1 },
         '/izmir-is-avukati': { lastModified: '2026-03-10', priority: 1 },
         '/izmir-bosanma-avukati': { lastModified: '2026-03-10', priority: 1 },
         '/izmir-tazminat-avukati': { lastModified: '2026-03-10', priority: 1 },

@@ -4,6 +4,8 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, Scale, FileText, Users, ArrowR
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { VideoSchema } from "@/components/seo/VideoSchema";
+import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 
 function LegalServiceSchema() {
     const schema = {
@@ -131,6 +133,14 @@ export default function IzmirKiraAvukatiPage() {
         <main className="bg-white">
             {/* Schema Markup */}
             <LegalServiceSchema />
+            <VideoSchema
+                name="İzmir'de Kira Avukatıyla Çalışmanın Önemi | Kısa Video"
+                description="Kira davası sürecinde en sık yapılan hatalar ve uzman kira avukatının farkı. İzmir'de kira uyuşmazlıklarında profesyonel destek."
+                thumbnailUrl="https://img.youtube.com/vi/JeM-o0sl9j8/maxresdefault.jpg"
+                uploadDate="2026-03-13"
+                contentUrl="https://www.youtube.com/shorts/JeM-o0sl9j8"
+                embedUrl="https://www.youtube.com/embed/JeM-o0sl9j8"
+            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -245,6 +255,11 @@ export default function IzmirKiraAvukatiPage() {
                             başında gelmektedir. Bu nedenle <strong>İzmir kira avukatı</strong> ile çalışmak, hak kaybı yaşamamanız
                             için kritik önem taşımaktadır.
                         </p>
+
+                        <YouTubeShorts
+                            videoId="JeM-o0sl9j8"
+                            title="İzmir'de Kira Avukatıyla Çalışmanın Önemi - Kısa Video"
+                        />
 
                         {/* Hizmetlerimiz */}
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">İzmir Kira Avukatı Hizmetlerimiz</h2>
