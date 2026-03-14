@@ -57,7 +57,7 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Kira Avukatı | Tahliye Davası & Kira Tespit | Av. Mert Kağan Çetin",
+        absolute: "İzmir Kira Avukatı | Tahliye & Kira Tespit | Av. Mert Kağan Çetin",
     },
     description: "İzmir kira avukatı Mert Kağan Çetin ile tahliye davaları, kira tespit ve sözleşme uyuşmazlıklarında uzman hukuki destek.",
     keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı", "kira tespit davası ne zaman açılır", "kira bedelinin tespiti davası", "kiracının hakları", "kira sözleşmesi nasıl yapılır", "tahliye taahhütnamesi örneği", "10 yıllık kiracının tahliyesi", "kiracı nasıl çıkarılır", "ihtiyaç nedeniyle tahliye dava açma süresi"],
