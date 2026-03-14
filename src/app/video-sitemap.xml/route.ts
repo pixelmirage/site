@@ -60,7 +60,7 @@ ${entries.map((entry) => `  <url>
       <video:description>${escapeXml(entry.description)}</video:description>
       <video:content_loc>https://www.youtube.com/shorts/${entry.videoId}</video:content_loc>
       <video:player_loc>https://www.youtube.com/embed/${entry.videoId}</video:player_loc>
-      <video:publication_date>${entry.date}</video:publication_date>
+      <video:publication_date>${entry.date.includes('T') ? entry.date : `${entry.date}T00:00:00+03:00`}</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>`).join('\n')}

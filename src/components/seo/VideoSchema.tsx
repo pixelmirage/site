@@ -21,7 +21,7 @@ export function VideoSchema({
         "name": name,
         "description": description,
         "thumbnailUrl": thumbnailUrl,
-        "uploadDate": uploadDate,
+        "uploadDate": uploadDate.includes('T') ? uploadDate : `${uploadDate}T00:00:00+03:00`,
         "contentUrl": contentUrl,
         "embedUrl": embedUrl,
         "publisher": {
