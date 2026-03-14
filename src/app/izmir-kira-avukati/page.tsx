@@ -164,7 +164,7 @@ export default function IzmirKiraAvukatiPage() {
 
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İzmir Kira Avukatı
+                            İzmir Kira Avukatı Hizmeti
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             Kiracı tahliye davaları, kira tespit davaları ve tüm kira uyuşmazlıklarında
@@ -191,7 +191,7 @@ export default function IzmirKiraAvukatiPage() {
             <section className="py-8 bg-slate-50 border-b">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">İçindekiler</h2>
+                        <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">İçindekiler</p>
                         <nav className="flex flex-wrap gap-3">
                             {tocItems.map((item) => (
                                 <a
@@ -282,7 +282,7 @@ export default function IzmirKiraAvukatiPage() {
                                         <item.icon className="w-6 h-6 text-primary" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-primary mb-1">{item.title}</h3>
+                                        <p className="font-bold text-primary mb-1">{item.title}</p>
                                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                                     </div>
                                 </div>
@@ -465,7 +465,7 @@ export default function IzmirKiraAvukatiPage() {
                             ihtiyacın gerçek ve samimi olup olmadığını titizlikle değerlendirir. Ayrıca tahliye kararı
                             sonrasında taşınmaz, 3 yıl boyunca eski kiracıdan başkasına kiraya verilemez (TBK m. 355).
                             <strong> İzmir kira avukatı</strong> olarak <strong>ihtiyaç nedeniyle tahliye dava açma süresi</strong>ni
-                            kaçırmamanız için süreç takibinizi titizlikle gerçekleştiriyoruz. Konuyu detaylıca ele aldığımız <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye davası rehberimizi</Link> mutlaka okuyun.
+                            kaçırmamanız için süreç takibinizi titizlikle gerçekleştiriyoruz.
                         </p>
 
                         {/* Kira Sözleşmesi */}
@@ -510,8 +510,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             <strong>İzmir kira avukatı</strong> olarak müvekkillerimize hem <strong>kira sözleşmesi</strong> hazırlama
-                            hem de hukuki açıdan geçerli tahliye taahhütnamesi düzenleme hizmeti sunmaktayız. Detaylı bilgi ve
-                            örnek için <Link href="/tahliye-taahhutnamesi" className="text-secondary font-bold">tahliye taahhütnamesi sayfamızı</Link> inceleyebilirsiniz.
+                            hem de hukuki açıdan geçerli tahliye taahhütnamesi düzenleme hizmeti sunmaktayız.
                         </p>
 
                         {/* Kiracının Hakları */}
@@ -549,8 +548,7 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             <strong>Kiracının hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür.
                             <strong> İzmir kira avukatı</strong> olarak hem kiracı hem de kiraya veren tarafında, müvekkillerimizin
-                            yasal haklarını en etkin şekilde koruyoruz. Haklarınız konusunda tereddütünüz varsa ücretsiz ön
-                            görüşme için <Link href="/iletisim" className="text-secondary font-bold">bize ulaşın</Link>.
+                            yasal haklarını en etkin şekilde koruyoruz.
                         </p>
 
                         {/* Ücretler */}
@@ -617,7 +615,7 @@ export default function IzmirKiraAvukatiPage() {
                             ].map((item, i) => (
                                 <div key={i} className="border border-slate-200 rounded-xl p-6">
                                     <CheckCircle className="w-8 h-8 text-secondary mb-4" />
-                                    <h3 className="font-bold text-primary text-lg mb-2">{item.title}</h3>
+                                    <p className="font-bold text-primary text-lg mb-2">{item.title}</p>
                                     <p className="text-muted-foreground">{item.desc}</p>
                                 </div>
                             ))}
@@ -635,7 +633,7 @@ export default function IzmirKiraAvukatiPage() {
                         <div className="not-prose space-y-6 my-8">
                             {faqs.map((faq, i) => (
                                 <div key={i} className="border-b border-slate-200 pb-6">
-                                    <h3 className="font-bold text-primary text-lg mb-2">{faq.question}</h3>
+                                    <p className="font-bold text-primary text-lg mb-2">{faq.question}</p>
                                     <p className="text-muted-foreground">{faq.answer}</p>
                                 </div>
                             ))}
