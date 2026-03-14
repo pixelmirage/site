@@ -20,6 +20,7 @@ export interface PostData {
     tags?: string[];
     faqs?: FAQItem[];
     youtubeVideoId?: string;
+    videoDuration?: string;
     readingTime: number;
 }
 
@@ -44,7 +45,7 @@ export function getAllPosts(): PostData[] {
                 slug,
                 content,
                 readingTime,
-                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string }),
+                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string }),
             };
         });
 
@@ -64,7 +65,7 @@ export function getPostBySlug(slug: string): PostData | null {
             slug,
             content,
             readingTime,
-            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string }),
+            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string }),
         };
     } catch (e) {
         return null;

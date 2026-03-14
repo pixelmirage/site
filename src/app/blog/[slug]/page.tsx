@@ -95,6 +95,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     uploadDate={post.dateModified || post.date}
                     contentUrl={`https://www.youtube.com/shorts/${post.youtubeVideoId}`}
                     embedUrl={`https://www.youtube.com/embed/${post.youtubeVideoId}`}
+                    duration={post.videoDuration}
                 />
             )}
             <BreadcrumbSchema

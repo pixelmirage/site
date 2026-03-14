@@ -71,6 +71,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                     uploadDate={term.lastUpdated}
                     contentUrl={`https://www.youtube.com/shorts/${term.youtubeVideoId}`}
                     embedUrl={`https://www.youtube.com/embed/${term.youtubeVideoId}`}
+                    duration={term.videoDuration}
                 />
             )}
             <BreadcrumbSchema

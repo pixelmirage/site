@@ -22,6 +22,7 @@ export interface GlossaryTerm {
     relatedBlogSlugs: string[];
     relatedServiceAnchor?: string;
     youtubeVideoId?: string;
+    videoDuration?: string;
     faqs: { question: string; answer: string }[];
     keywords: string[];
     lastUpdated: string;

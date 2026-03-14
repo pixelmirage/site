@@ -7,6 +7,7 @@ interface VideoEntry {
     title: string;
     description: string;
     date: string;
+    duration?: string;
 }
 
 export async function GET() {
@@ -22,6 +23,7 @@ export async function GET() {
                 title: `${term.term} Nedir? | Kısa Video`,
                 description: term.shortDescription,
                 date: term.lastUpdated,
+                duration: term.videoDuration,
             });
         }
     }
@@ -36,6 +38,7 @@ export async function GET() {
                 title: `${post.title} | Kısa Video`,
                 description: post.excerpt,
                 date: post.dateModified || post.date,
+                duration: post.videoDuration,
             });
         }
     }
@@ -61,7 +64,7 @@ ${entries.map((entry) => `  <url>
       <video:content_loc>https://www.youtube.com/shorts/${entry.videoId}</video:content_loc>
       <video:player_loc>https://www.youtube.com/embed/${entry.videoId}</video:player_loc>
       <video:publication_date>${entry.date.includes('T') ? entry.date : `${entry.date}T00:00:00+03:00`}</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
+      <video:family_friendly>yes</video:family_friendly>${entry.duration ? `\n      <video:duration>${isoToSeconds(entry.duration)}</video:duration>` : ''}
     </video:video>
   </url>`).join('\n')}
 </urlset>`;
@@ -72,6 +75,12 @@ ${entries.map((entry) => `  <url>
             'Cache-Control': 'public, max-age=3600, s-maxage=3600',
         },
     });
+}
+
+function isoToSeconds(iso: string): number {
+    const match = iso.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);
+    if (!match) return 0;
+    return (parseInt(match[1] || '0') * 60) + parseInt(match[2] || '0');
 }
 
 function escapeXml(str: string): string {

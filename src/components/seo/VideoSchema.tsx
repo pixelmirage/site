@@ -5,6 +5,7 @@ interface VideoSchemaProps {
     uploadDate: string;
     contentUrl: string;
     embedUrl: string;
+    duration?: string;
 }
 
 export function VideoSchema({
@@ -14,8 +15,9 @@ export function VideoSchema({
     uploadDate,
     contentUrl,
     embedUrl,
+    duration,
 }: VideoSchemaProps) {
-    const schema = {
+    const schema: Record<string, unknown> = {
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": name,
@@ -29,6 +31,10 @@ export function VideoSchema({
         },
         "inLanguage": "tr-TR",
     };
+
+    if (duration) {
+        schema.duration = duration;
+    }
 
     return (
         <script
