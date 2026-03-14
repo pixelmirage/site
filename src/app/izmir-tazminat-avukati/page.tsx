@@ -56,9 +56,9 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Tazminat Avukatı | Maddi & Manevi Tazminat | Av. Mert Kağan Çetin",
+        absolute: "İzmir Tazminat Avukatı | Maddi & Manevi | Av. Mert Kağan Çetin",
     },
-    description: "İzmir tazminat avukatı Mert Kağan Çetin ile maddi ve manevi tazminat, iş kazası tazminatı, trafik kazası tazminatı ve destekten yoksun kalma davalarında profesyonel hukuki destek alın.",
+    description: "İzmir tazminat avukatı Av. Mert Kağan Çetin ile maddi-manevi tazminat, iş kazası ve trafik kazası davalarında uzman hukuki destek alın. Hemen arayın.",
     keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat davası", "manevi tazminat davası", "iş kazası tazminatı", "trafik kazası tazminatı", "destekten yoksun kalma tazminatı", "malpraktis davası", "tazminat hesaplama", "tazminat davası ücreti", "tazminat avukatı"],
     openGraph: {
         title: "İzmir Tazminat Avukatı | Av. Mert Kağan Çetin",
@@ -148,7 +148,7 @@ export default function IzmirTazminatAvukatiPage() {
 
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İzmir Tazminat Avukatı
+                            İzmir Tazminat Avukatı Hizmeti
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             Maddi ve manevi tazminat, iş kazası, trafik kazası ve destekten yoksun kalma davalarında
@@ -175,7 +175,7 @@ export default function IzmirTazminatAvukatiPage() {
             <section className="py-8 bg-slate-50 border-b">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">İçindekiler</h2>
+                        <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">İçindekiler</p>
                         <nav className="flex flex-wrap gap-3">
                             {tocItems.map((item) => (
                                 <a key={item.id} href={`#${item.id}`} className="text-sm text-primary hover:text-secondary font-medium transition-colors">
@@ -230,7 +230,7 @@ export default function IzmirTazminatAvukatiPage() {
                                         <item.icon className="w-6 h-6 text-primary" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-primary mb-1">{item.title}</h3>
+                                        <p className="font-bold text-primary mb-1">{item.title}</p>
                                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                                     </div>
                                 </div>
@@ -378,7 +378,7 @@ export default function IzmirTazminatAvukatiPage() {
                             ].map((item, i) => (
                                 <div key={i} className="border border-slate-200 rounded-xl p-6">
                                     <CheckCircle className="w-8 h-8 text-secondary mb-4" />
-                                    <h3 className="font-bold text-primary text-lg mb-2">{item.title}</h3>
+                                    <p className="font-bold text-primary text-lg mb-2">{item.title}</p>
                                     <p className="text-muted-foreground">{item.desc}</p>
                                 </div>
                             ))}
@@ -386,7 +386,7 @@ export default function IzmirTazminatAvukatiPage() {
 
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
-                            <h3 className="font-bold text-primary text-xl mb-4">Tazminat Hukuku Makaleleri</h3>
+                            <p className="font-bold text-primary text-xl mb-4">Tazminat Hukuku Makaleleri</p>
                             <div className="space-y-3">
                                 <Link href="/blog/trafik-kazasi-tazminati-alma-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Trafik Kazası Tazminatı Alma Süreci
@@ -408,7 +408,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <div className="not-prose space-y-6 my-8">
                             {faqs.map((faq, i) => (
                                 <div key={i} className="border-b border-slate-200 pb-6">
-                                    <h3 className="font-bold text-primary text-lg mb-2">{faq.question}</h3>
+                                    <p className="font-bold text-primary text-lg mb-2">{faq.question}</p>
                                     <p className="text-muted-foreground">{faq.answer}</p>
                                 </div>
                             ))}

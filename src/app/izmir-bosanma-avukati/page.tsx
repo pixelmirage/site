@@ -56,9 +56,9 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Boşanma Avukatı | Anlaşmalı & Çekişmeli Boşanma | Av. Mert Kağan Çetin",
+        absolute: "İzmir Boşanma Avukatı | Velayet & Nafaka | Av. Mert Kağan Çetin",
     },
-    description: "İzmir boşanma avukatı Mert Kağan Çetin ile anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında profesyonel hukuki destek alın. 2026 güncel bilgiler.",
+    description: "İzmir boşanma avukatı Av. Mert Kağan Çetin ile anlaşmalı boşanma, velayet, nafaka ve mal paylaşımı davalarında uzman hukuki destek alın. Hemen arayın.",
     keywords: ["İzmir boşanma avukatı", "boşanma avukatı İzmir", "anlaşmalı boşanma", "çekişmeli boşanma", "velayet davası", "nafaka davası", "mal paylaşımı davası", "boşanma davası ücreti", "nafaka hesaplama", "velayet kime verilir", "aile hukuku avukatı İzmir", "boşanma protokolü"],
     openGraph: {
         title: "İzmir Boşanma Avukatı | Av. Mert Kağan Çetin",
@@ -152,7 +152,7 @@ export default function IzmirBosanmaAvukatiPage() {
 
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İzmir Boşanma Avukatı
+                            İzmir Boşanma Avukatı Hizmeti
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             Anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında
@@ -179,7 +179,7 @@ export default function IzmirBosanmaAvukatiPage() {
             <section className="py-8 bg-slate-50 border-b">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">İçindekiler</h2>
+                        <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-4">İçindekiler</p>
                         <nav className="flex flex-wrap gap-3">
                             {tocItems.map((item) => (
                                 <a
@@ -259,7 +259,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                         <item.icon className="w-6 h-6 text-primary" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-primary mb-1">{item.title}</h3>
+                                        <p className="font-bold text-primary mb-1">{item.title}</p>
                                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                                     </div>
                                 </div>
@@ -495,7 +495,7 @@ export default function IzmirBosanmaAvukatiPage() {
                             ].map((item, i) => (
                                 <div key={i} className="border border-slate-200 rounded-xl p-6">
                                     <CheckCircle className="w-8 h-8 text-secondary mb-4" />
-                                    <h3 className="font-bold text-primary text-lg mb-2">{item.title}</h3>
+                                    <p className="font-bold text-primary text-lg mb-2">{item.title}</p>
                                     <p className="text-muted-foreground">{item.desc}</p>
                                 </div>
                             ))}
@@ -508,7 +508,7 @@ export default function IzmirBosanmaAvukatiPage() {
 
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
-                            <h3 className="font-bold text-primary text-xl mb-4">Aile Hukuku Makaleleri</h3>
+                            <p className="font-bold text-primary text-xl mb-4">Aile Hukuku Makaleleri</p>
                             <div className="space-y-3">
                                 <Link href="/blog/anlasmali-bosanma-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Anlaşmalı Boşanma Nasıl Açılır? Adım Adım Rehber
@@ -531,7 +531,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <div className="not-prose space-y-6 my-8">
                             {faqs.map((faq, i) => (
                                 <div key={i} className="border-b border-slate-200 pb-6">
-                                    <h3 className="font-bold text-primary text-lg mb-2">{faq.question}</h3>
+                                    <p className="font-bold text-primary text-lg mb-2">{faq.question}</p>
                                     <p className="text-muted-foreground">{faq.answer}</p>
                                 </div>
                             ))}
