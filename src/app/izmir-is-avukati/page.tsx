@@ -112,6 +112,18 @@ const faqs = [
     {
         question: "2026 yılında iş davası avukat ücreti ne kadar?",
         answer: "2026 yılında İzmir'de iş davası avukatlık ücreti davanın türüne göre 30.000 TL ile 80.000 TL arasında değişmektedir. İşe iade davaları, kıdem tazminatı davaları ve iş kazası tazminatı davaları için farklı ücret tarifeleri uygulanmaktadır."
+    },
+    {
+        question: "Ücretsiz avukata nasıl ulaşabilirim?",
+        answer: "Ücretsiz avukat hizmetinden yararlanmak için İzmir Barosu Adli Yardım Merkezi'ne başvuru yapabilirsiniz. Başvuru için nüfus cüzdanı fotokopisi, gelir durumunuzu gösteren belge (maaş bordrosu, SGK dökümü veya muhtardan fakirlik ilmühaberi) ve dava konusuna ilişkin belgelerinizi sunmanız gerekir. Baro, başvuruyu değerlendirerek maddi durumu yetersiz bulunan kişilere ücretsiz avukat atar. Adli yardım kapsamında mahkeme harçları ve yargılama giderleri de ertelenir. Ancak atanan avukatın iş hukuku konusunda uzman olma garantisi yoktur. İş davalarında sürelerin kısa olması (işe iade için 1 ay) nedeniyle adli yardım başvurusuyla eş zamanlı olarak alanında uzman bir iş avukatına da danışmanız tavsiye edilir."
+    },
+    {
+        question: "İş avukatı ne iş yapar?",
+        answer: "İş avukatı, işçi ve işveren arasındaki hukuki uyuşmazlıkların çözümünde uzmanlaşmış avukattır. Başlıca faaliyet alanları şunlardır: İşe iade davaları açma ve takip etme, kıdem ve ihbar tazminatı talepleri, fazla mesai, yıllık izin ve ücret alacakları davaları, iş kazası ve meslek hastalığı tazminatı, mobbing (işyerinde psikolojik taciz) davaları, iş sözleşmesi hazırlama ve fesih süreçleri, zorunlu arabuluculuk görüşmelerine katılım ve toplu iş hukuku uyuşmazlıkları. İş avukatı ayrıca işçilere haklarını bilmeleri konusunda danışmanlık verir, işverenlere ise İş Kanunu'na uygun personel yönetimi konusunda rehberlik eder."
+    },
+    {
+        question: "İş davalarına hangi avukat bakar?",
+        answer: "İş davalarına iş hukuku alanında uzmanlaşmış avukatlar bakar. 4857 sayılı İş Kanunu, 6356 sayılı Sendikalar Kanunu ve İş Mahkemeleri Kanunu kapsamındaki uyuşmazlıklar bu avukatların uzmanlık alanına girer. İş davaları iş mahkemelerinde görülür; iş mahkemesi bulunmayan yerlerde asliye hukuk mahkemesi iş mahkemesi sıfatıyla davaya bakar. Avukat tutmak zorunlu olmamakla birlikte, iş hukukunun teknik süreleri (arabuluculuk başvuru süresi, işe iade dava süresi gibi) ve ispat kuralları nedeniyle uzman avukat desteği büyük önem taşır. İzmir'de iş hukuku davalarında büromuz işçi ve işveren tarafı için profesyonel hukuki destek sunmaktadır."
     }
 ];
 
