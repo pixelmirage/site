@@ -225,7 +225,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                     {district} bölgesindeki gayrimenkulünüzle ilgili hukuki sorununuzu dinleyelim, çözüm yolunu birlikte belirleyelim.
                                 </p>
                                 <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold" asChild>
-                                    <a href="https://wa.me/905445854645" className="flex items-center justify-center gap-2">
+                                    <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                         WhatsApp ile Yazın
                                     </a>
                                 </Button>

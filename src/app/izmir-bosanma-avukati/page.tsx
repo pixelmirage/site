@@ -64,10 +64,10 @@ export const metadata: Metadata = {
         title: "İzmir Boşanma Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de boşanma davaları, velayet ve nafaka davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/",
-        type: "website",
+        type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-10",
+        "article:modified_time": "2026-03-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/",
@@ -234,7 +234,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <p>
                             Boşanma hukuku, Türk Medeni Kanunu'nun 161-184. maddeleri kapsamında düzenlenen hassas bir hukuk
                             dalıdır. <strong>Boşanma davası nasıl açılır</strong>, <strong>velayet kime verilir</strong>,
-                            <strong> nafaka nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların
+                            <strong> <Link href="/sozluk/nafaka" className="text-secondary font-bold">nafaka</Link> nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların
                             başında gelmektedir. Aile hukukunda yaşanan uyuşmazlıklar, duygusal boyutunun yanı sıra mali
                             ve hukuki açıdan da dikkatli bir yaklaşım gerektirmektedir.
                         </p>
@@ -298,6 +298,11 @@ export default function IzmirBosanmaAvukatiPage() {
                             eksik veya belirsiz maddeler, ileride yeni davalara neden olabilir.
                         </p>
 
+                        <h3>Anlaşmalı Boşanma Protokolü Nasıl Hazırlanır?</h3>
+                        <p>
+                            Anlaşmalı boşanma protokolü, eşlerin boşanmanın tüm sonuçları üzerinde mutabık kaldığını gösteren yazılı belgedir. Protokolde nafaka miktarı ve süresi, çocuk velayeti ve kişisel ilişki düzenlemesi, mal paylaşımı ve maddi-manevi tazminat konuları açıkça belirtilmelidir. <strong>İzmir boşanma avukatı</strong> olarak her iki tarafın haklarını koruyan, mahkemece kabul edilecek kapsamlı protokoller hazırlıyoruz.
+                        </p>
+
                         {/* Çekişmeli Boşanma */}
                         <h2 id="cekismeli-bosanma" className="scroll-mt-24">Çekişmeli Boşanma Davası</h2>
 
@@ -342,7 +347,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="velayet" className="scroll-mt-24">Velayet Davası</h2>
 
                         <p>
-                            Velayet davası, boşanma sonrasında çocuğun hangi ebeveynle birlikte yaşayacağının
+                            <Link href="/sozluk/velayet-davasi" className="text-secondary font-bold">Velayet davası</Link>, boşanma sonrasında çocuğun hangi ebeveynle birlikte yaşayacağının
                             belirlenmesi veya mevcut velayet kararının değiştirilmesi için açılan davadır.
                             Türk Medeni Kanunu m. 336-337 kapsamında düzenlenen velayet hukukunda
                             <strong> çocuğun üstün yararı</strong> ilkesi temel belirleyicidir.
@@ -403,6 +408,11 @@ export default function IzmirBosanmaAvukatiPage() {
                             etkiler. Hakimler nafaka miktarını belirlerken tarafların gelir durumu, yaşam standardı,
                             çocuk sayısı ve ihtiyaçları dikkate alır. <strong>İzmir boşanma avukatı</strong> olarak
                             müvekkillerimizin adil bir nafaka miktarı alması veya ödemesi için stratejik savunma hazırlıyoruz.
+                        </p>
+
+                        <h3>Nafaka Hesaplama ve Güncel Miktarlar</h3>
+                        <p>
+                            Nafaka hesaplama sürecinde tarafların gelir ve giderleri, çocukların eğitim masrafları, yaşam standardı ve enflasyon oranı dikkate alınır. 2026 yılında İzmir aile mahkemelerinde hükmedilen iştirak nafakası miktarları çocuk başına ortalama 3.000-8.000 TL arasında değişmektedir. Yoksulluk nafakası ise nafaka alacaklısının geçinme ihtiyacına göre belirlenir.
                         </p>
 
                         {/* Mal Paylaşımı */}
@@ -506,6 +516,10 @@ export default function IzmirBosanmaAvukatiPage() {
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                         </p>
 
+                        <p>
+                            <strong>İzmir boşanma avukatı</strong> olarak boşanma sürecinde ortaya çıkan tazminat talepleri için <Link href="/izmir-tazminat-avukati" className="text-secondary font-bold">tazminat hukuku hizmetlerimizden</Link> de yararlanabilirsiniz. Boşanma sonrası kira uyuşmazlıkları yaşanması durumunda ise <Link href="/izmir-kira-avukati" className="text-secondary font-bold">kira hukuku desteğimiz</Link> mevcuttur.
+                        </p>
+
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">Aile Hukuku Makaleleri</p>
@@ -577,7 +591,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                         </Link>
                                     </Button>
                                     <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
-                                        <a href="https://wa.me/905445854645">
+                                        <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                             WhatsApp ile Yazın
                                         </a>
                                     </Button>

@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getAllGlossaryTerms, getGlossaryTermsByCategory, categoryLabels, GlossaryCategory } from "@/lib/glossary";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
-import { Scale, ArrowRight, BookOpen, Home, ChevronRight } from "lucide-react";
+import { FAQSchema } from "@/components/seo/FAQSchema";
+import { Scale, ArrowRight, BookOpen, Home, ChevronRight, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Hukuk Sözlüğü | Hukuki Terimler ve Açıklamaları",
@@ -20,6 +21,25 @@ export const metadata: Metadata = {
 
 const categoryOrder: GlossaryCategory[] = ["tahliye", "kira-bedeli", "sozlesme", "haklar", "is-hukuku", "bosanma", "tazminat"];
 
+const glossaryFaqs = [
+    {
+        question: "Tahliye taahhütnamesi nedir?",
+        answer: "Tahliye taahhütnamesi, kiracının kiraladığı taşınmazı belirli bir tarihte boşaltacağını yazılı olarak beyan ettiği hukuki bir belgedir. TBK m. 352/1 kapsamında düzenlenir ve mülk sahibinin en hızlı tahliye yollarından biridir."
+    },
+    {
+        question: "Kıdem tazminatı nedir ve nasıl hesaplanır?",
+        answer: "Kıdem tazminatı, en az 1 yıl çalışan işçinin iş sözleşmesinin belirli nedenlerle sona ermesi halinde işveren tarafından ödenen tazminattır. Her tam yıl için son brüt maaşın 30 günlük tutarı olarak hesaplanır."
+    },
+    {
+        question: "Nafaka nedir ve kaç çeşidi vardır?",
+        answer: "Nafaka, boşanma sonrası ekonomik olarak güçsüz duruma düşen eşe veya çocuklara ödenen maddi destektir. Yoksulluk nafakası, iştirak nafakası ve tedbir nafakası olmak üzere üç ana türü bulunur."
+    },
+    {
+        question: "Velayet davası nedir?",
+        answer: "Velayet davası, boşanma sonrasında çocukların hangi ebeveynle yaşayacağının belirlenmesi veya mevcut velayet kararının değiştirilmesi için açılan davadır. Mahkeme çocuğun üstün yararını esas alır."
+    }
+];
+
 export default function GlossaryPage() {
     const allTerms = getAllGlossaryTerms();
 
@@ -31,6 +51,7 @@ export default function GlossaryPage() {
                     { name: "Hukuk Sözlüğü", url: "https://mertkagancetin.com/sozluk/" },
                 ]}
             />
+            <FAQSchema faqs={glossaryFaqs} />
 
             {/* Hero */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
@@ -97,6 +118,26 @@ export default function GlossaryPage() {
                             </div>
                         );
                     })}
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="py-16 bg-slate-50">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-3xl font-playfair font-bold text-primary mb-10 text-center flex items-center justify-center gap-3">
+                            <HelpCircle className="w-7 h-7 text-secondary" />
+                            Sık Sorulan Hukuki Sorular
+                        </h2>
+                        <div className="space-y-6">
+                            {glossaryFaqs.map((faq, i) => (
+                                <div key={i} className="bg-white rounded-xl p-6 border border-slate-200">
+                                    <h3 className="font-bold text-primary mb-3">{faq.question}</h3>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </section>
 

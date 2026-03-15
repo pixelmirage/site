@@ -58,16 +58,16 @@ export const metadata: Metadata = {
     title: {
         absolute: "İzmir Tazminat Avukatı | Maddi & Manevi | Av. Mert Kağan Çetin",
     },
-    description: "İzmir tazminat avukatı Av. Mert Kağan Çetin ile maddi-manevi tazminat, iş kazası ve trafik kazası davalarında uzman hukuki destek alın. Hemen arayın.",
+    description: "İzmir tazminat avukatı Av. Mert Kağan Çetin ile maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis davalarında uzman hukuki destek. Ücretsiz ön görüşme için hemen arayın.",
     keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat davası", "manevi tazminat davası", "iş kazası tazminatı", "trafik kazası tazminatı", "destekten yoksun kalma tazminatı", "malpraktis davası", "tazminat hesaplama", "tazminat davası ücreti", "tazminat avukatı"],
     openGraph: {
         title: "İzmir Tazminat Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de maddi ve manevi tazminat, iş kazası ve trafik kazası tazminatı davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/",
-        type: "website",
+        type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-10",
+        "article:modified_time": "2026-03-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-tazminat-avukati/",
@@ -252,6 +252,12 @@ export default function IzmirTazminatAvukatiPage() {
                             <li><strong>Bakıcı giderleri:</strong> Sürekli bakıma muhtaç hale gelen mağdurun bakım masrafları</li>
                         </ul>
 
+                        <h3>Maddi Tazminat Hesaplama Yöntemleri</h3>
+
+                        <p>
+                            Maddi tazminat hesaplama sürecinde bilirkişi raporu kritik öneme sahiptir. Bilirkişiler, zarar görenin yaşı, geliri, kusur oranı ve yaşam beklentisini dikkate alarak tazminat miktarını belirler. İzmir tazminat avukatı olarak bilirkişi raporlarının doğruluğunu titizlikle denetliyor, gerektiğinde itiraz ediyoruz.
+                        </p>
+
                         <h2 id="manevi-tazminat" className="scroll-mt-24">Manevi Tazminat Davası</h2>
 
                         <p>
@@ -272,7 +278,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="is-kazasi" className="scroll-mt-24">İş Kazası Tazminatı</h2>
 
                         <p>
-                            İş kazası tazminatı, 5510 sayılı Kanun kapsamında iş kazası veya meslek hastalığı sonucu zarar gören işçinin, işverenden talep ettiği tazminattır. <strong>İzmir tazminat avukatı</strong> olarak iş kazası davalarında müvekkillerimize kapsamlı hukuki destek sunuyoruz.
+                            <Link href="/izmir-is-avukati">İş kazası</Link> tazminatı, 5510 sayılı Kanun kapsamında iş kazası veya meslek hastalığı sonucu zarar gören işçinin, işverenden talep ettiği tazminattır. <strong>İzmir tazminat avukatı</strong> olarak iş kazası davalarında müvekkillerimize kapsamlı hukuki destek sunuyoruz.
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -324,6 +330,12 @@ export default function IzmirTazminatAvukatiPage() {
 
                         <p>
                             Hesaplamada ölen kişinin yaşı, geliri, yaşam beklentisi, destekten yararlananların yaşları ve destek payları dikkate alınır. Aktüer hesap raporu ile kesin miktar belirlenir.
+                        </p>
+
+                        <h3>Malpraktis Davası (Doktor Hatası Tazminatı)</h3>
+
+                        <p>
+                            Malpraktis davası, sağlık hizmeti sırasında yapılan tıbbi hata sonucu hastanın zarar görmesi halinde açılan tazminat davasıdır. Yanlış teşhis, hatalı ameliyat, ilaç hatası ve tedavi ihmali gibi durumlar malpraktis kapsamındadır. İzmir tazminat avukatı olarak malpraktis davalarında Adli Tıp Kurumu ve bilirkişi raporları ile güçlü dava dosyaları hazırlıyoruz.
                         </p>
 
                         <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Tazminat Davası Ücretleri</h2>
@@ -383,6 +395,10 @@ export default function IzmirTazminatAvukatiPage() {
                                 </div>
                             ))}
                         </div>
+
+                        <p>
+                            İzmir boşanma davalarında da tazminat talepleri gündeme gelebilir. Bu konuda <Link href="/izmir-bosanma-avukati">İzmir boşanma avukatı</Link> hizmetlerimizden yararlanabilirsiniz. Kira uyuşmazlıklarından doğan tazminat talepleri için ise <Link href="/izmir-kira-avukati">İzmir kira avukatı</Link> sayfamızı inceleyebilirsiniz.
+                        </p>
 
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
@@ -453,7 +469,7 @@ export default function IzmirTazminatAvukatiPage() {
                                         </Link>
                                     </Button>
                                     <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
-                                        <a href="https://wa.me/905445854645">
+                                        <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                             WhatsApp ile Yazın
                                         </a>
                                     </Button>

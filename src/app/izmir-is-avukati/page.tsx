@@ -64,10 +64,10 @@ export const metadata: Metadata = {
         title: "İzmir İş Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de iş hukuku, işe iade davaları ve tazminat davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-is-avukati/",
-        type: "website",
+        type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-10",
+        "article:modified_time": "2026-03-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-is-avukati/",
@@ -290,7 +290,7 @@ export default function IzmirIsAvukatiPage() {
                             <li><strong>İş güvencesi kapsamı:</strong> İşyerinde en az 30 işçi çalışıyor olmalıdır</li>
                             <li><strong>Kıdem şartı:</strong> İşçi en az 6 ay kıdeme sahip olmalıdır</li>
                             <li><strong>Belirsiz süreli sözleşme:</strong> İş sözleşmesi belirsiz süreli olmalıdır</li>
-                            <li><strong>Süre:</strong> Fesih bildiriminden itibaren 1 ay içinde arabulucuya başvurulmalıdır</li>
+                            <li><strong>Süre:</strong> Fesih bildiriminden itibaren 1 ay içinde <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-semibold">arabulucuya</Link> başvurulmalıdır</li>
                         </ul>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -442,7 +442,7 @@ export default function IzmirIsAvukatiPage() {
                             İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıl ve
                             her halükarda kazanın meydana geldiği tarihten itibaren 10 yıldır. İş kazasının SGK&apos;ya 3 iş
                             günü içinde bildirilmesi zorunludur. <strong>İzmir iş avukatı</strong> olarak iş kazası
-                            sürecinin her aşamasında müvekkillerimizin yanındayız.
+                            sürecinin her aşamasında müvekkillerimizin yanındayız. İş kazası sonucunda doğan tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyebilirsiniz.
                         </p>
 
                         {/* İşçi Hakları */}
@@ -479,6 +479,29 @@ export default function IzmirIsAvukatiPage() {
                         <p>
                             <strong>İşçi hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür.
                             <strong> İzmir iş avukatı</strong> olarak müvekkillerimizin yasal haklarını en etkin şekilde koruyoruz.
+                        </p>
+
+                        <h3>Mobbing Davası</h3>
+
+                        <p>
+                            Mobbing (işyerinde psikolojik taciz), işçinin sistematik olarak baskıya, aşağılamaya veya
+                            dışlanmaya maruz kalmasıdır. İş Kanunu ve Borçlar Kanunu kapsamında işverenin işçiyi
+                            koruma yükümlülüğü bulunmaktadır. Mobbinge maruz kalan işçi, iş sözleşmesini haklı nedenle
+                            feshederek kıdem tazminatı talep edebilir ve ayrıca manevi tazminat davası açabilir.
+                            Mobbing davasında e-posta yazışmaları, mesajlar, tanık ifadeleri ve psikolojik sağlık
+                            raporları en önemli deliller arasındadır. <strong>İzmir iş avukatı</strong> olarak
+                            mobbing mağdurlarına hukuki süreçte rehberlik ediyoruz.
+                        </p>
+
+                        <h3>Fazla Mesai Alacağı Davası</h3>
+
+                        <p>
+                            Fazla mesai alacağı davası, haftalık 45 saati aşan çalışmalar için ödenmesi gereken %50
+                            zamlı ücretin işveren tarafından ödenmemesi halinde açılan davadır. Fazla mesai alacağı
+                            5 yıllık zamanaşımına tabidir ve bu süre içinde talep edilmelidir. İspat yükü işçide
+                            olmakla birlikte, bordrolar, işyeri giriş-çıkış kayıtları, mesaj ve e-posta yazışmaları
+                            ile tanık beyanları delil olarak kullanılabilir. Mahkeme, fazla mesai alacağından takdiri
+                            indirim (hakkaniyet indirimi) uygulayabilmektedir.
                         </p>
 
                         {/* Ücretler */}
@@ -627,7 +650,7 @@ export default function IzmirIsAvukatiPage() {
                                         </Link>
                                     </Button>
                                     <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
-                                        <a href="https://wa.me/905445854645">
+                                        <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                             WhatsApp ile Yazın
                                         </a>
                                     </Button>

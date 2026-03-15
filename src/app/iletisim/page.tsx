@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "İletişim",
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
     openGraph: {
+        title: "İletişim | Av. Mert Kağan Çetin Hukuk Bürosu",
+        description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
         url: "https://mertkagancetin.com/iletisim/",
     },
 };
@@ -19,6 +22,12 @@ export const metadata: Metadata = {
 export default function ContactPage() {
     return (
         <div className="bg-white">
+            <BreadcrumbSchema
+                items={[
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İletişim", url: "https://mertkagancetin.com/iletisim/" },
+                ]}
+            />
             {/* Hero Section */}
             <section className="bg-primary py-24 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2" />

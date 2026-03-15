@@ -13,6 +13,8 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
     openGraph: {
+        title: "Hakkımda | Av. Mert Kağan Çetin | İzmir Avukat",
+        description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve uzmanlık alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
         url: "https://mertkagancetin.com/hakkimda/",
     },
 };

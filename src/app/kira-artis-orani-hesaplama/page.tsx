@@ -109,8 +109,13 @@ export default function RentCalculatorPage() {
 
                         <h3>5 Yılı Dolduran Kiracılar İçin Durum Farklı mı?</h3>
                         <p>
-                            Evet. 5 yıllık kira süresi dolduğunda, mülk sahibi "Kira Tespit Davası" açma hakkına sahip olur. Bu davada mahkeme,
+                            Evet. 5 yıllık kira süresi dolduğunda, mülk sahibi &quot;<Link href="/sozluk/kira-tespit-davasi" className="text-secondary hover:underline">Kira Tespit Davası</Link>&quot; açma hakkına sahip olur. Bu davada mahkeme,
                             sadece TÜFE oranına değil, taşınmazın durumu ve <strong>emsal kira bedellerine</strong> bakarak hakkaniyete uygun yeni bir kira belirler.
+                        </p>
+
+                        <h3>Kira Artışında Anlaşmazlık Çıkarsa Ne Yapılır?</h3>
+                        <p>
+                            Ev sahibi yasal sınırın üzerinde artış talep ederse, kiracı önceki bedel üzerinden ödeme yapabilir. Ev sahibi zam farkını alabilmek için <Link href="/sozluk/kira-tespit-davasi" className="text-secondary hover:underline">kira tespit davası</Link> açmalıdır. Kiracı, <Link href="/tahliye-taahhutnamesi" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> imzalamamış olduğu sürece, zam anlaşmazlığı sebebiyle tahliye edilemez.
                         </p>
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -156,6 +161,15 @@ export default function RentCalculatorPage() {
                                 </Button>
                             </div>
                         </div>
+
+                        <h2>İlgili Hukuki Makaleler</h2>
+                        <p>Kira hukuku konusundaki güncel makalelerimizi okuyarak haklarınız hakkında detaylı bilgi edinin:</p>
+                        <ul>
+                            <li><Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir" className="text-secondary hover:underline">Hangi Durumlarda Kira Tespit Davası Açılabilir?</Link></li>
+                            <li><Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="text-secondary hover:underline">Kira Hukukunda Zorunlu Arabuluculuk Süreci</Link></li>
+                            <li><Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="text-secondary hover:underline">Ev Sahibi Hangi Durumlarda Kiracıyı Çıkarabilir?</Link></li>
+                            <li><Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar" className="text-secondary hover:underline">İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gerekenler</Link></li>
+                        </ul>
 
                     </div>
                 </div>

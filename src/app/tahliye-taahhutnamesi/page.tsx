@@ -3,18 +3,23 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, ChevronRight, Home, ArrowRight } from "lucide-react";
 import { PrintButton } from "@/components/tools/PrintButton";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
     title: "Tahliye Taahhütnamesi Örneği 2026 (PDF & Word)",
-    description: "Yargıtay uyumlu, geçerli tahliye taahhütnamesi örneğini ücretsiz indirin. Boş tahliye taahhütnamesi nasıl doldurulur? PDF şablon.",
+    description: "2026 güncel tahliye taahhütnamesi örneğini ücretsiz indirin. Yargıtay uyumlu boş tahliye taahhütnamesi nasıl doldurulur? TBK m. 352 şartları ve geçerlilik rehberi.",
     keywords: ["tahliye taahhütnamesi örneği", "tahliye taahhütnamesi pdf", "boş tahliye taahhütnamesi", "kiracı tahliye taahhütnamesi"],
     openGraph: {
         title: "Tahliye Taahhütnamesi Örneği | Ücretsiz İndir",
         description: "Geçerli ve garantili tahliye taahhütnamesi şablonu. Hemen yazdırın veya PDF olarak kaydedin.",
         url: "https://mertkagancetin.com/tahliye-taahhutnamesi/",
-        type: "website",
+        type: "article",
+    },
+    other: {
+        "article:modified_time": "2026-03-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/tahliye-taahhutnamesi/",
@@ -53,6 +58,22 @@ export default function EvictionTemplatePage() {
                     {
                         question: "Boş tarihli taahhütname geçerli midir?",
                         answer: "Kiracı tarafından boş olarak imzalanıp sonradan ev sahibi tarafından doldurulan taahhütnameler, Yargıtay'ın yerleşik içtihatlarına göre geçerli kabul edilmektedir. Kiracı attığı imzanın sonuçlarına katlanmak zorundadır."
+                    },
+                    {
+                        question: "Tahliye taahhütnamesine dayanarak icra takibi nasıl başlatılır?",
+                        answer: "Taahhüt edilen tahliye tarihinden itibaren 1 ay içinde icra dairesine başvurarak 'İlamsız Tahliye Takibi' başlatılır (İİK m. 272). Kiracıya ödeme emri tebliğ edildikten sonra 15 gün içinde itiraz etmezse, tahliye kesinleşir."
+                    },
+                    {
+                        question: "Kiracı tahliye taahhütnamesine itiraz edebilir mi?",
+                        answer: "Evet. Kiracı icra takibine itiraz ederse, ev sahibinin İcra Mahkemesi'nde 'İtirazın Kaldırılması ve Tahliye Davası' açması gerekir. Bu davada taahhütnamenin geçerliliği incelenir."
+                    },
+                    {
+                        question: "Aile konutu olan taşınmaz için tahliye taahhütnamesi geçerli midir?",
+                        answer: "Aile konutu şerhi bulunan taşınmazlarda, kiracının eşinin rızası olmadan verilen taahhütname tartışmalıdır. Uygulamada her iki eşin de taahhütnameyi imzalaması önerilir."
+                    },
+                    {
+                        question: "Tahliye taahhütnamesi ile tahliye süreci ne kadar sürer?",
+                        answer: "Kiracı itiraz etmezse icra yoluyla tahliye 1-2 ay içinde sonuçlanabilir. İtiraz halinde dava süreci 3-6 ay sürebilir. Noterden düzenlenen taahhütnamelerde süreç genellikle daha kısa sürer."
                     }
                 ]}
             />
@@ -139,21 +160,127 @@ export default function EvictionTemplatePage() {
 
                 {/* SEO Content - Hidden in Print */}
                 <div className="max-w-[210mm] mx-auto mt-12 prose prose-slate prose-lg print:hidden">
-                    <h3>Tahliye Taahhütnamesi Nedir?</h3>
+                    <h2>Tahliye Taahhütnamesi Nedir?</h2>
                     <YouTubeShorts
                         videoId="0I5No4QamYA"
                         title="Tahliye Taahhütnamesi Nedir? - Kısa Video ile Açıklama"
                     />
                     <p>
                         Tahliye taahhütnamesi, kiracının kiraladığı taşınmazı belirli bir tarihte boşaltacağını yazılı olarak beyan ettiği hukuki bir belgedir.
-                        Türk Borçlar Kanunu madde 352/1 uyarınca verilen bu taahhüt, mülk sahibi için en hızlı tahliye imkanı sağlayan belgelerden biridir.
+                        Türk Borçlar Kanunu madde 352/1 uyarınca verilen bu taahhüt, mülk sahibi için en hızlı <Link href="/sozluk/tahliye" className="text-secondary hover:underline">tahliye</Link> imkanı sağlayan belgelerden biridir.
                     </p>
+                    <p>
+                        <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link> uygulamasında tahliye taahhütnamesi, ev sahibinin kiracıyı tahliye edebilmek için kullanabileceği en etkili hukuki araçlardan biridir. Ancak taahhütnamenin geçerli olması için belirli şartların sağlanması gerekir.
+                    </p>
+
+                    <h2>Tahliye Taahhütnamesi Nasıl Doldurulur?</h2>
+                    <p>
+                        Tahliye taahhütnamesinin hukuki geçerliliğe sahip olabilmesi için aşağıdaki bilgilerin eksiksiz yazılması gerekir:
+                    </p>
+                    <ol>
+                        <li><strong>Kiracının kimlik bilgileri:</strong> Ad, soyad ve T.C. kimlik numarası açıkça yazılmalıdır.</li>
+                        <li><strong>Kiraya verenin bilgileri:</strong> Mülk sahibinin ad ve soyadı belirtilmelidir.</li>
+                        <li><strong>Taşınmazın adresi:</strong> Tahliye edilecek taşınmazın tam adresi (il, ilçe, mahalle, sokak, kapı numarası) eksiksiz yazılmalıdır.</li>
+                        <li><strong>Tahliye tarihi:</strong> Kiracının taşınmazı boşaltacağı kesin tarih (gün/ay/yıl) açıkça belirtilmelidir.</li>
+                        <li><strong>Düzenleme tarihi:</strong> Taahhütnamenin imzalandığı tarih, <Link href="/sozluk/kira-sozlesmesi" className="text-secondary hover:underline">kira sözleşmesi</Link> tarihinden sonra olmalıdır.</li>
+                        <li><strong>Kiracının imzası:</strong> Taahhütname kiracı tarafından bizzat imzalanmalıdır.</li>
+                    </ol>
+
+                    <h2>Tahliye Taahhütnamesi Geçerlilik Şartları</h2>
+                    <p>
+                        Yargıtay içtihatlarına göre tahliye taahhütnamesinin geçerli olması için şu şartların bir arada bulunması gerekir:
+                    </p>
+                    <h3>1. Yazılı Olma Şartı</h3>
+                    <p>
+                        Taahhütname mutlaka yazılı olmalıdır. Sözlü taahhütler hukuken geçerli değildir. Noterden düzenlenmesi zorunlu olmasa da ispat kolaylığı açısından önerilir.
+                    </p>
+                    <h3>2. Tarih Şartı</h3>
+                    <p>
+                        Düzenleme tarihi, kira sözleşmesinin imzalanmasından ve taşınmazın teslim edilmesinden <strong>sonra</strong> olmalıdır. Aynı gün veya önceki bir tarihte imzalanan taahhütnameler Yargıtay tarafından geçersiz kabul edilmektedir.
+                    </p>
+                    <h3>3. İrade Serbestisi</h3>
+                    <p>
+                        Kiracı, taahhütnameyi kendi özgür iradesiyle imzalamış olmalıdır. Baskı, tehdit veya hile ile alınan taahhütnameler iptal edilebilir, ancak ispat yükü kiracıdadır.
+                    </p>
+
                     <h3>Hangi Durumlarda Geçersiz Olur?</h3>
                     <ul>
                         <li>Kira sözleşmesiyle aynı tarihte imzalanmışsa,</li>
                         <li>Kiracının özgür iradesi dışında (tehdit/hile) alınmışsa (ispat gerekir),</li>
                         <li>Eşin rızası alınmamışsa (Aile konutu şerhi varsa tartışmalıdır, ancak alınması önerilir).</li>
                     </ul>
+
+                    <h2>Tahliye Taahhütnamesi ile İcra Takibi Süreci</h2>
+                    <p>
+                        Kiracı taahhüt ettiği tarihte taşınmazı boşaltmazsa, ev sahibi icra dairesi aracılığıyla tahliye sürecini başlatabilir. İcra ve İflas Kanunu (İİK) madde 272 uyarınca süreç şu şekilde işler:
+                    </p>
+                    <ol>
+                        <li><strong>Başvuru süresi:</strong> Taahhüt edilen tahliye tarihinden itibaren <strong>1 ay</strong> içinde icra dairesine başvurulmalıdır.</li>
+                        <li><strong>Ödeme emri tebliği:</strong> İcra dairesi kiracıya tahliye emri gönderir. Kiracının 15 gün içinde itiraz hakkı vardır.</li>
+                        <li><strong>İtiraz edilmezse:</strong> Süre sonunda icra memuru tarafından tahliye işlemi gerçekleştirilir.</li>
+                        <li><strong>İtiraz edilirse:</strong> Ev sahibi İcra Mahkemesi&apos;nde &quot;İtirazın Kaldırılması ve Tahliye&quot; davası açar.</li>
+                    </ol>
+                    <p>
+                        Dava süresince kiracının tahliyesi gecikmese de, noterden düzenlenmiş taahhütnamelerde süreç önemli ölçüde hızlanır. İcra takibi ve <Link href="/sozluk/tahliye-taahhutnamesi" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> hakkında detaylı bilgi için sözlüğümüzü inceleyebilirsiniz.
+                    </p>
+
+                    <h2>Noterden mi Adi Yazılı mı?</h2>
+                    <div className="not-prose overflow-x-auto my-8">
+                        <table className="w-full text-sm border-collapse">
+                            <thead>
+                                <tr className="bg-slate-100">
+                                    <th className="text-left p-3 border border-slate-200 font-bold">Kriter</th>
+                                    <th className="text-left p-3 border border-slate-200 font-bold">Adi Yazılı</th>
+                                    <th className="text-left p-3 border border-slate-200 font-bold">Noterden</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="p-3 border border-slate-200">Hukuki geçerlilik</td>
+                                    <td className="p-3 border border-slate-200">Geçerli</td>
+                                    <td className="p-3 border border-slate-200">Geçerli</td>
+                                </tr>
+                                <tr className="bg-slate-50">
+                                    <td className="p-3 border border-slate-200">İmza inkarı riski</td>
+                                    <td className="p-3 border border-slate-200">Yüksek</td>
+                                    <td className="p-3 border border-slate-200">Yok</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-3 border border-slate-200">İspat gücü</td>
+                                    <td className="p-3 border border-slate-200">Zayıf</td>
+                                    <td className="p-3 border border-slate-200">Güçlü</td>
+                                </tr>
+                                <tr className="bg-slate-50">
+                                    <td className="p-3 border border-slate-200">Maliyet</td>
+                                    <td className="p-3 border border-slate-200">Ücretsiz</td>
+                                    <td className="p-3 border border-slate-200">~500-1000 TL</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-3 border border-slate-200">İcra sürecinde hız</td>
+                                    <td className="p-3 border border-slate-200">Normal</td>
+                                    <td className="p-3 border border-slate-200">Hızlı</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Hukuki Destek Alın</h2>
+                    <p>
+                        Tahliye taahhütnamesi hazırlanması, icra takibi başlatılması veya kiracının itirazı durumunda profesyonel hukuki desteğe ihtiyaç duyarsanız, <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak yanınızdayız. <Link href="/hizmetler" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ücretsiz ön görüşme için bizimle iletişime geçebilirsiniz.
+                    </p>
+
+                    <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
+                        <h3 className="text-2xl font-serif font-bold text-primary mb-4">Tahliye Sürecinde Uzman Desteği</h3>
+                        <p className="mb-6 text-muted-foreground">Taahhütname hazırlama, icra takibi veya itiraz süreçlerinde hukuki danışmanlık alın.</p>
+                        <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <Button size="lg" className="bg-primary text-white" asChild>
+                                <Link href="/iletisim">Ücretsiz Ön Görüşme</Link>
+                            </Button>
+                            <Button size="lg" variant="outline" asChild>
+                                <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>
+                            </Button>
+                        </div>
+                    </div>
                 </div>
 
             </section>

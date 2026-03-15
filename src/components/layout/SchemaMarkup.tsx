@@ -29,6 +29,32 @@ export function SchemaMarkup() {
                 "inLanguage": "tr-TR"
             },
             {
+                "@type": "Person",
+                "@id": "https://mertkagancetin.com/#person",
+                "name": "Av. Mert Kağan Çetin",
+                "jobTitle": "Avukat",
+                "url": "https://mertkagancetin.com/hakkimda/",
+                "image": "https://mertkagancetin.com/attorney-photo.jpg",
+                "sameAs": [
+                    "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
+                    "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
+                    "https://www.linkedin.com/in/mert-ka%C4%9Fan-%C3%A7etin-28a264298/",
+                    "https://www.instagram.com/avukatmertkagancetin/"
+                ],
+                "worksFor": {
+                    "@id": "https://mertkagancetin.com/#organization"
+                },
+                "memberOf": {
+                    "@type": "Organization",
+                    "name": "İzmir Barosu"
+                },
+                "knowsAbout": [
+                    "Kira Hukuku", "İş Hukuku", "Boşanma Hukuku", "Tazminat Hukuku",
+                    "Tahliye Davaları", "Kira Tespit Davası", "İşe İade Davası",
+                    "Kıdem Tazminatı", "Velayet Davası", "Nafaka Davası"
+                ]
+            },
+            {
                 "@type": ["Attorney", "LegalService", "LocalBusiness"],
                 "@id": "https://mertkagancetin.com/#attorney",
                 "name": "Av. Mert Kağan Çetin",

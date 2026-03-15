@@ -12,6 +12,8 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },
     openGraph: {
+        title: "Hizmetlerimiz | Kira, İş, Boşanma ve Tazminat Hukuku",
+        description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
         url: "https://mertkagancetin.com/hizmetler/",
     },
 };

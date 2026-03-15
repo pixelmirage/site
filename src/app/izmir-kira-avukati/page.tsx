@@ -65,10 +65,10 @@ export const metadata: Metadata = {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
-        type: "website",
+        type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-03",
+        "article:modified_time": "2026-03-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
@@ -679,7 +679,7 @@ export default function IzmirKiraAvukatiPage() {
                                         </Link>
                                     </Button>
                                     <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-primary gap-2" asChild>
-                                        <a href="https://wa.me/905445854645">
+                                        <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                             WhatsApp ile Yazın
                                         </a>
                                     </Button>
