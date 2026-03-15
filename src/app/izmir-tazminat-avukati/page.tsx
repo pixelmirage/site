@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, CheckCircle, ArrowRight, ChevronRight, Home, ShieldCheck, Scale, Gavel, Briefcase, FileText, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -111,11 +112,13 @@ const faqs = [
 
 const tocItems = [
     { id: "hizmetlerimiz", title: "Tazminat Hukuku Hizmetlerimiz" },
+    { id: "ne-zaman-avukat", title: "Tazminat Avukatına Ne Zaman İhtiyaç Duyulur?" },
     { id: "maddi-tazminat", title: "Maddi Tazminat Davası" },
     { id: "manevi-tazminat", title: "Manevi Tazminat Davası" },
     { id: "is-kazasi", title: "İş Kazası Tazminatı" },
     { id: "trafik-kazasi", title: "Trafik Kazası Tazminatı" },
     { id: "destekten-yoksun", title: "Destekten Yoksun Kalma" },
+    { id: "avukatli-avukatsiz", title: "Avukatlı mı Avukatsız mı?" },
     { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
     { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
@@ -209,7 +212,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 10 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -237,10 +240,42 @@ export default function IzmirTazminatAvukatiPage() {
                             ))}
                         </div>
 
+                        {/* Hangi Durumlarda Tazminat Avukatına İhtiyacınız Var */}
+                        <h2 id="ne-zaman-avukat" className="scroll-mt-24">Hangi Durumlarda Tazminat Avukatına İhtiyacınız Var?</h2>
+
+                        <p>
+                            Tazminat davaları, zamanaşımı süreleri, bilirkişi raporları ve kusur oranları nedeniyle teknik bir hukuk alanıdır.
+                            Aşağıdaki durumlardan herhangi birini yaşıyorsanız, bir <strong>İzmir tazminat avukatı</strong> ile görüşmeniz
+                            hak kaybı yaşamamanız açısından kritik önem taşır:
+                        </p>
+
+                        <div className="not-prose my-8 space-y-4">
+                            {[
+                                { title: "Trafik kazasında yaralandıysanız veya yakınınızı kaybettiyseniz", desc: "Sigorta şirketi başvurusu, kusur tespiti ve tazminat hesaplaması profesyonel destek gerektirir. Sigorta şirketinin ilk teklifini kabul etmeyin." },
+                                { title: "İş kazası geçirdiyseniz", desc: "İşverenin iş güvenliği yükümlülüklerini yerine getirmemesi halinde maddi ve manevi tazminat hakkınız doğar." },
+                                { title: "Doktor hatası (malpraktis) nedeniyle zarar gördüyseniz", desc: "Yanlış teşhis, hatalı ameliyat veya tedavi ihmali sonucu Adli Tıp Kurumu raporu ile tazminat talep edebilirsiniz." },
+                                { title: "Haksız fiil nedeniyle maddi zarara uğradıysanız", desc: "Malvarlığınıza verilen zararın tazmini için 2 yıllık zamanaşımı süresi içinde dava açmanız gerekir." },
+                                { title: "Sigorta şirketi tazminat ödemeyi reddediyorsa", desc: "Zorunlu trafik sigortası veya kasko kapsamında hak ettiğiniz tazminatı almak için hukuki süreç başlatılabilir." },
+                                { title: "Destekten yoksun kaldıysanız", desc: "Yakınınızın vefatı nedeniyle maddi desteğinden yoksun kaldıysanız, aktüer hesap raporu ile tazminat talep edebilirsiniz." },
+                            ].map((item, i) => (
+                                <div key={i} className="flex gap-4 p-5 bg-slate-50 rounded-xl border-l-4 border-secondary">
+                                    <div>
+                                        <p className="font-bold text-primary mb-1">{item.title}</p>
+                                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <p>
+                            Bu durumlardan herhangi birini yaşıyorsanız, zamanaşımı sürelerini kaçırmadan bir <strong>İzmir tazminat avukatı</strong> ile
+                            görüşmenizi tavsiye ederiz.
+                        </p>
+
                         <h2 id="maddi-tazminat" className="scroll-mt-24">Maddi Tazminat Davası</h2>
 
                         <p>
-                            <strong>Maddi tazminat davası</strong>, bir kişinin hukuka aykırı bir fiil sonucunda malvarlığında meydana gelen azalmayı tazmin etmek amacıyla açılan davadır. Türk Borçlar Kanunu m. 49-50 kapsamında düzenlenen maddi tazminat, zarar görenin uğradığı gerçek zararı karşılamayı amaçlar.
+                            <Link href="/sozluk/maddi-tazminat" className="text-secondary font-bold">Maddi tazminat davası</Link>, bir kişinin hukuka aykırı bir fiil sonucunda malvarlığında meydana gelen azalmayı tazmin etmek amacıyla açılan davadır. Türk Borçlar Kanunu m. 49-50 kapsamında düzenlenen maddi tazminat, zarar görenin uğradığı gerçek zararı karşılamayı amaçlar.
                         </p>
 
                         <p>Maddi tazminat kapsamında talep edilebilecek kalemler:</p>
@@ -261,7 +296,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="manevi-tazminat" className="scroll-mt-24">Manevi Tazminat Davası</h2>
 
                         <p>
-                            <strong>Manevi tazminat</strong>, bir kişinin kişilik haklarının ihlali sonucunda duyduğu acı, elem ve ıstırabın karşılığı olarak hükmedilen tazminattır. Türk Borçlar Kanunu m. 56 ve 58 kapsamında düzenlenir.
+                            <Link href="/sozluk/manevi-tazminat" className="text-secondary font-bold">Manevi tazminat</Link>, bir kişinin kişilik haklarının ihlali sonucunda duyduğu acı, elem ve ıstırabın karşılığı olarak hükmedilen tazminattır. Türk Borçlar Kanunu m. 56 ve 58 kapsamında düzenlenir.
                         </p>
 
                         <p>
@@ -325,7 +360,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="destekten-yoksun" className="scroll-mt-24">Destekten Yoksun Kalma Tazminatı</h2>
 
                         <p>
-                            <strong>Destekten yoksun kalma tazminatı</strong>, bir kişinin ölümü nedeniyle onun maddi desteğinden yoksun kalan yakınlarının talep ettiği tazminattır (TBK m. 53). Bu tazminatı eş, çocuklar, anne-baba ve fiilen destek alan kişiler talep edebilir.
+                            <Link href="/sozluk/destekten-yoksun-kalma" className="text-secondary font-bold">Destekten yoksun kalma tazminatı</Link>, bir kişinin ölümü nedeniyle onun maddi desteğinden yoksun kalan yakınlarının talep ettiği tazminattır (TBK m. 53). Bu tazminatı eş, çocuklar, anne-baba ve fiilen destek alan kişiler talep edebilir.
                         </p>
 
                         <p>
@@ -335,7 +370,39 @@ export default function IzmirTazminatAvukatiPage() {
                         <h3>Malpraktis Davası (Doktor Hatası Tazminatı)</h3>
 
                         <p>
-                            Malpraktis davası, sağlık hizmeti sırasında yapılan tıbbi hata sonucu hastanın zarar görmesi halinde açılan tazminat davasıdır. Yanlış teşhis, hatalı ameliyat, ilaç hatası ve tedavi ihmali gibi durumlar malpraktis kapsamındadır. İzmir tazminat avukatı olarak malpraktis davalarında Adli Tıp Kurumu ve bilirkişi raporları ile güçlü dava dosyaları hazırlıyoruz.
+                            <Link href="/sozluk/malpraktis" className="text-secondary font-bold">Malpraktis davası</Link>, sağlık hizmeti sırasında yapılan tıbbi hata sonucu hastanın zarar görmesi halinde açılan tazminat davasıdır. Yanlış teşhis, hatalı ameliyat, ilaç hatası ve tedavi ihmali gibi durumlar malpraktis kapsamındadır. İzmir tazminat avukatı olarak malpraktis davalarında Adli Tıp Kurumu ve bilirkişi raporları ile güçlü dava dosyaları hazırlıyoruz.
+                        </p>
+
+                        {/* Avukatlı mı Avukatsız mı */}
+                        <h2 id="avukatli-avukatsiz" className="scroll-mt-24">Tazminat Davası Avukatsız mı Açılmalı, Avukatla mı?</h2>
+
+                        <p>
+                            Tazminat davalarında avukat tutmak zorunlu olmasa da, bilirkişi raporu kontrolü, kusur oranı itirazı ve
+                            tazminat hesaplaması gibi teknik konularda avukatsız açılan davalarda ciddi hak kayıpları yaşanmaktadır:
+                        </p>
+
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-left w-1/3">Kriter</th>
+                                        <th className="px-6 py-4 text-left">Avukatsız</th>
+                                        <th className="px-6 py-4 text-left">Avukatla</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Bilirkişi raporu</td><td className="px-6 py-4 text-slate-600">Hatalı rapora itiraz edememe, düşük tazminat</td><td className="px-6 py-4 text-slate-600">Rapor denetimi, gerektiğinde itiraz ve yeni rapor talebi</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Kusur oranı</td><td className="px-6 py-4 text-slate-600">Yüksek kusur oranı kabul etme riski</td><td className="px-6 py-4 text-slate-600">Kusur tespitine itiraz ve lehte delil sunumu</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Sigorta müzakeresi</td><td className="px-6 py-4 text-slate-600">Sigorta şirketinin düşük teklifini kabul etme</td><td className="px-6 py-4 text-slate-600">Gerçek zarar miktarı üzerinden müzakere</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Tazminat miktarı</td><td className="px-6 py-4 text-slate-600">Eksik kalem talep etme, düşük hesaplama</td><td className="px-6 py-4 text-slate-600">Tüm zarar kalemleri eksiksiz talep edilir</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Zamanaşımı</td><td className="px-6 py-4 text-slate-600">Süreleri kaçırarak hak kaybı riski</td><td className="px-6 py-4 text-slate-600">Tüm süreler profesyonel olarak takip edilir</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Özellikle <Link href="/sozluk/maddi-tazminat" className="text-secondary font-bold">maddi tazminat</Link>, <Link href="/sozluk/manevi-tazminat" className="text-secondary font-bold">manevi tazminat</Link> ve <Link href="/sozluk/destekten-yoksun-kalma" className="text-secondary font-bold">destekten yoksun kalma</Link> davalarında
+                            avukat desteği almak, tazminat miktarını doğrudan etkiler.
                         </p>
 
                         <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Tazminat Davası Ücretleri</h2>
@@ -399,6 +466,33 @@ export default function IzmirTazminatAvukatiPage() {
                         <p>
                             İzmir boşanma davalarında da tazminat talepleri gündeme gelebilir. Bu konuda <Link href="/izmir-bosanma-avukati">İzmir boşanma avukatı</Link> hizmetlerimizden yararlanabilirsiniz. Kira uyuşmazlıklarından doğan tazminat talepleri için ise <Link href="/izmir-kira-avukati">İzmir kira avukatı</Link> sayfamızı inceleyebilirsiniz.
                         </p>
+
+                        {/* E-E-A-T Author Box */}
+                        <div className="not-prose my-12 bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                            <div className="bg-primary px-8 py-4">
+                                <p className="text-white font-bold text-lg">İzmir Tazminat Avukatı</p>
+                            </div>
+                            <div className="p-8 flex flex-col sm:flex-row gap-6">
+                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Tazminat Avukatı" width={120} height={120} className="w-28 h-28 rounded-xl object-cover flex-shrink-0" />
+                                <div>
+                                    <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
+                                    <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                                        İzmir Barosu&apos;na kayıtlı avukat olarak 2019 yılından bu yana tazminat hukuku, kira hukuku, iş hukuku ve boşanma hukuku alanlarında
+                                        müvekkillerine profesyonel hukuki destek sunmaktadır. Bayraklı merkezli ofisinden İzmir genelinde tazminat davalarını aktif olarak takip etmektedir.
+                                    </p>
+                                    <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
+                                        <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
+                                        <span><strong className="text-slate-700">TBB Sicil:</strong> 162439</span>
+                                        <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
+                                    </div>
+                                    <div className="mt-4">
+                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                            Detaylı Özgeçmiş →
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">

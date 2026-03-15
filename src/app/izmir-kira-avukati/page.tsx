@@ -629,6 +629,7 @@ export default function IzmirKiraAvukatiPage() {
                         <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Kira Davası Ücretleri</h2>
 
                         <p>
+                            <strong>Ev sahibi kiracı anlaşmazlıklarında avukat ücreti</strong>, davanın türüne ve karmaşıklığına göre değişiklik gösterir.
                             <strong>İzmir kira avukatı</strong> olarak şeffaf fiyatlandırma politikası uyguluyoruz.
                             2026 yılı için geçerli avukatlık ücretleri aşağıdaki gibidir:
                         </p>
@@ -704,7 +705,7 @@ export default function IzmirKiraAvukatiPage() {
                         {/* E-E-A-T Author Box */}
                         <div className="not-prose my-12 bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
                             <div className="bg-primary px-8 py-4">
-                                <p className="text-white font-bold text-lg">Bu Sayfanın Yazarı</p>
+                                <p className="text-white font-bold text-lg">İzmir Kira Avukatı</p>
                             </div>
                             <div className="p-8 flex flex-col sm:flex-row gap-6">
                                 <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira Avukatı" width={120} height={120} className="w-28 h-28 rounded-xl object-cover flex-shrink-0" />

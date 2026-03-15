@@ -96,7 +96,7 @@ export default function AboutPage() {
                             <Card className="border-2 border-primary/5 shadow-2xl overflow-hidden bg-white">
                                 <div className="bg-primary p-8 text-center text-white">
                                     <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/20">
-                                        <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin" width={112} height={112} className="w-full h-full object-cover" />
+                                        <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira ve İş Hukuku Avukatı" width={112} height={112} className="w-full h-full object-cover" />
                                     </div>
                                     <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
                                     <p className="text-sm text-secondary font-medium uppercase tracking-widest">Kurucu Avukat</p>

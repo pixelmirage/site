@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, CheckCircle, Briefcase, FileText, Users, ArrowRight, ChevronRight, Home, ShieldCheck, Scale, Gavel } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -115,11 +116,13 @@ const faqs = [
 
 const tocItems = [
     { id: "hizmetlerimiz", title: "İş Hukuku Hizmetlerimiz" },
+    { id: "ne-zaman-avukat", title: "İş Avukatına Ne Zaman İhtiyaç Duyulur?" },
     { id: "ise-iade", title: "İşe İade Davası" },
     { id: "kidem-tazminati", title: "Kıdem Tazminatı" },
     { id: "ihbar-tazminati", title: "İhbar Tazminatı" },
     { id: "is-kazasi", title: "İş Kazası Tazminatı" },
     { id: "isci-haklari", title: "İşçi Hakları" },
+    { id: "avukatli-avukatsiz", title: "Avukatlı mı Avukatsız mı?" },
     { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
     { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
@@ -220,7 +223,7 @@ export default function IzmirIsAvukatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 10 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p className="text-xl leading-relaxed">
@@ -271,6 +274,39 @@ export default function IzmirIsAvukatiPage() {
                             <strong>İzmir iş avukatı</strong> olarak sunduğumuz tüm hizmetlerde müvekkil menfaatini ön planda tutarak,
                             en kısa sürede en etkili sonuçları almayı hedefliyoruz. Detaylı bilgi için
                             <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyebilirsiniz.
+                        </p>
+
+                        {/* Hangi Durumlarda İş Avukatına İhtiyacınız Var */}
+                        <h2 id="ne-zaman-avukat" className="scroll-mt-24">Hangi Durumlarda İş Avukatına İhtiyacınız Var?</h2>
+
+                        <p>
+                            İş hukuku uyuşmazlıkları, zamanaşımı süreleri ve ispat yükü nedeniyle profesyonel hukuki destek gerektiren bir alandır.
+                            Aşağıdaki durumlardan herhangi birini yaşıyorsanız, bir <strong>İzmir iş avukatı</strong> ile görüşmeniz hak kaybı
+                            yaşamamanız açısından kritik önem taşır:
+                        </p>
+
+                        <div className="not-prose my-8 space-y-4">
+                            {[
+                                { title: "Haksız veya geçersiz nedenle işten çıkarıldıysanız", desc: "İşe iade davası için fesih bildiriminden itibaren 1 ay içinde arabulucuya başvurmanız gerekir. Bu süreyi kaçırmak hakkınızı tamamen kaybetmenize neden olur." },
+                                { title: "Kıdem veya ihbar tazminatınız ödenmiyorsa", desc: "İşvereniniz tazminat ödemekten kaçınıyorsa veya eksik ödeme yapıyorsa, 5 yıllık zamanaşımı içinde dava açmanız gerekir." },
+                                { title: "İş kazası geçirdiyseniz", desc: "İş kazası sonrası maddi ve manevi tazminat hakkınız vardır. Kazanın SGK'ya bildirilmesi ve kusur oranlarının tespiti avukat desteği gerektirir." },
+                                { title: "Fazla mesai ücretleriniz ödenmiyorsa", desc: "Haftalık 45 saati aşan çalışmalar için %50 zamlı ücret hakkınız vardır. Bordro, mesaj ve tanık delilleri ile ispat edilebilir." },
+                                { title: "İşyerinde mobbinge maruz kalıyorsanız", desc: "Sistematik psikolojik baskı altındaysanız iş sözleşmenizi haklı nedenle feshederek kıdem tazminatı ve manevi tazminat talep edebilirsiniz." },
+                                { title: "Sigortanız eksik yatırılıyorsa", desc: "Gerçek maaşınızın altında sigorta primi yatırılması haklı fesih sebebidir. Hizmet tespit davası ile geriye dönük haklarınızı alabilirsiniz." },
+                            ].map((item, i) => (
+                                <div key={i} className="flex gap-4 p-5 bg-slate-50 rounded-xl border-l-4 border-secondary">
+                                    <div>
+                                        <p className="font-bold text-primary mb-1">{item.title}</p>
+                                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <p>
+                            Bu durumlardan herhangi birini yaşıyorsanız, zamanaşımı sürelerini kaçırmadan bir <strong>İzmir iş avukatı</strong> ile
+                            görüşmenizi tavsiye ederiz. İş uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
+                            de dahil olmak üzere tüm aşamalarda yanınızdayız.
                         </p>
 
                         {/* İşe İade Davası */}
@@ -328,7 +364,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="kidem-tazminati" className="scroll-mt-24">Kıdem Tazminatı Nasıl Hesaplanır?</h2>
 
                         <p>
-                            <strong>Kıdem tazminatı</strong>, en az 1 yıl çalışmış olan işçinin iş sözleşmesinin belirli
+                            <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">Kıdem tazminatı</Link>, en az 1 yıl çalışmış olan işçinin iş sözleşmesinin belirli
                             koşullarla sona ermesi halinde hak ettiği tazminattır. 1475 sayılı eski İş Kanunu'nun
                             halen yürürlükte olan 14. maddesi kapsamında düzenlenmektedir.
                         </p>
@@ -383,7 +419,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="ihbar-tazminati" className="scroll-mt-24">İhbar Tazminatı Nedir?</h2>
 
                         <p>
-                            <strong>İhbar tazminatı</strong>, belirsiz süreli iş sözleşmesinin bildirim süresine uyulmaksızın
+                            <Link href="/sozluk/ihbar-tazminati" className="text-secondary font-bold">İhbar tazminatı</Link>, belirsiz süreli iş sözleşmesinin bildirim süresine uyulmaksızın
                             feshedilmesi halinde, karşı tarafa ödenmesi gereken tazminattır. İş Kanunu m. 17&apos;de
                             düzenlenen bildirim süreleri şu şekildedir:
                         </p>
@@ -471,7 +507,7 @@ export default function IzmirIsAvukatiPage() {
                                 ayrımı gözetmeksizin tüm çalışanlara eşit davranmak zorundadır.
                             </li>
                             <li>
-                                <strong>Mobbinge karşı koruma:</strong> İşçinin işyerinde sistematik psikolojik baskıya maruz
+                                <strong><Link href="/sozluk/mobbing" className="text-secondary">Mobbinge</Link> karşı koruma:</strong> İşçinin işyerinde sistematik psikolojik baskıya maruz
                                 kalması halinde iş sözleşmesini haklı nedenle feshederek tazminat hakkı doğar.
                             </li>
                         </ul>
@@ -479,6 +515,38 @@ export default function IzmirIsAvukatiPage() {
                         <p>
                             <strong>İşçi hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür.
                             <strong> İzmir iş avukatı</strong> olarak müvekkillerimizin yasal haklarını en etkin şekilde koruyoruz.
+                        </p>
+
+                        {/* Avukatlı mı Avukatsız mı */}
+                        <h2 id="avukatli-avukatsiz" className="scroll-mt-24">İş Davası Avukatsız mı Açılmalı, Avukatla mı?</h2>
+
+                        <p>
+                            İş davalarında avukat tutmak zorunlu olmasa da, iş hukuku teknik süreleri ve ispat yükü nedeniyle
+                            avukatsız açılan davalarda ciddi hak kayıpları yaşanmaktadır. İşte iki seçeneğin karşılaştırması:
+                        </p>
+
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-left w-1/3">Kriter</th>
+                                        <th className="px-6 py-4 text-left">Avukatsız</th>
+                                        <th className="px-6 py-4 text-left">Avukatla</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Arabuluculuk süreci</td><td className="px-6 py-4 text-slate-600">İşveren avukatı karşısında dezavantajlı pozisyon</td><td className="px-6 py-4 text-slate-600">Eşit müzakere gücü ve hukuki argüman desteği</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Süre takibi</td><td className="px-6 py-4 text-slate-600">1 ay arabuluculuk, 2 hafta dava sürelerini kaçırma riski</td><td className="px-6 py-4 text-slate-600">Tüm hak düşürücü süreler profesyonel olarak takip edilir</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Tazminat hesaplama</td><td className="px-6 py-4 text-slate-600">Giydirilmiş ücret ve tavan hesaplarında hata riski</td><td className="px-6 py-4 text-slate-600">Maksimum tazminat için doğru hesaplama ve bilirkişi kontrolü</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Delil toplama</td><td className="px-6 py-4 text-slate-600">Hangi delillerin geçerli olduğu bilinmeyebilir</td><td className="px-6 py-4 text-slate-600">Bordro, SGK kaydı, mesaj ve tanık stratejisi</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Sonuç</td><td className="px-6 py-4 text-slate-600">Eksik talep veya usul hatası nedeniyle düşük tazminat</td><td className="px-6 py-4 text-slate-600">Ortalama %30-50 daha yüksek tazminat miktarı</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Özellikle <Link href="/sozluk/ise-iade-davasi" className="text-secondary font-bold">işe iade davası</Link>, <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">kıdem tazminatı</Link> ve <Link href="/sozluk/hakli-fesih" className="text-secondary font-bold">haklı fesih</Link> gibi teknik
+                            davalarda avukat desteği almak, davanın lehine sonuçlanma olasılığını önemli ölçüde artırır.
                         </p>
 
                         <h3>Mobbing Davası</h3>
@@ -578,6 +646,33 @@ export default function IzmirIsAvukatiPage() {
                             <strong>İzmir iş avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                         </p>
+
+                        {/* E-E-A-T Author Box */}
+                        <div className="not-prose my-12 bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                            <div className="bg-primary px-8 py-4">
+                                <p className="text-white font-bold text-lg">İzmir İş Avukatı</p>
+                            </div>
+                            <div className="p-8 flex flex-col sm:flex-row gap-6">
+                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir İş Avukatı" width={120} height={120} className="w-28 h-28 rounded-xl object-cover flex-shrink-0" />
+                                <div>
+                                    <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
+                                    <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                                        İzmir Barosu&apos;na kayıtlı avukat olarak 2019 yılından bu yana iş hukuku, kira hukuku, boşanma hukuku ve tazminat hukuku alanlarında
+                                        müvekkillerine profesyonel hukuki destek sunmaktadır. Bayraklı merkezli ofisinden İzmir genelinde iş davalarını aktif olarak takip etmektedir.
+                                    </p>
+                                    <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
+                                        <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
+                                        <span><strong className="text-slate-700">TBB Sicil:</strong> 162439</span>
+                                        <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
+                                    </div>
+                                    <div className="mt-4">
+                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                            Detaylı Özgeçmiş →
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">

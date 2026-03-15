@@ -188,7 +188,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 p-8 bg-slate-50 rounded-3xl">
                         <div className="flex items-center gap-4">
-                            <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin" width={56} height={56} className="w-14 h-14 rounded-full object-cover" />
+                            <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Avukat" width={56} height={56} className="w-14 h-14 rounded-full object-cover" />
                             <div>
                                 <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
                             </div>
