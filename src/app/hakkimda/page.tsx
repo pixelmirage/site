@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata: Metadata = {
     title: "Hakkımda | Av. Mert Kağan Çetin | İzmir Avukat",
@@ -28,6 +29,7 @@ export default function AboutPage() {
                     { name: "Hakkımda", url: "https://mertkagancetin.com/hakkimda/" },
                 ]}
             />
+            <PersonSchema knowsAbout={["Kira Hukuku", "İş Hukuku", "Boşanma Hukuku", "Tazminat Hukuku", "Gayrimenkul Hukuku", "Aile Hukuku", "Kiracı Tahliye Davaları", "İşe İade Davası", "Velayet Davası", "Trafik Kazası Tazminatı"]} />
             {/* Page Header */}
             <section className="bg-slate-50 py-20 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
