@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, CheckCircle, Scale, FileText, Users, ArrowRight, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -116,12 +117,14 @@ const faqs = [
 
 const tocItems = [
     { id: "hizmetlerimiz", title: "Kira Hukuku Hizmetlerimiz" },
+    { id: "ne-zaman-avukat", title: "Kira Avukatına Ne Zaman İhtiyaç Duyulur?" },
     { id: "tahliye-davasi", title: "Kiracı Tahliye Davası Nedir?" },
     { id: "tahliye-sureci", title: "Tahliye Davası Süreci" },
     { id: "kira-tespit-davasi", title: "Kira Tespit Davası Ne Zaman Açılır?" },
     { id: "10-yillik-kiraci", title: "10 Yıllık Kiracının Tahliyesi" },
     { id: "kira-sozlesmesi", title: "Kira Sözleşmesi Nasıl Yapılır?" },
     { id: "kiracinin-haklari", title: "Kiracının Hakları" },
+    { id: "avukatli-avukatsiz", title: "Avukatlı mı Avukatsız mı?" },
     { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
     { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
@@ -236,7 +239,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 4 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p className="text-xl leading-relaxed">
@@ -295,6 +298,39 @@ export default function IzmirKiraAvukatiPage() {
                             <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyebilirsiniz.
                         </p>
 
+                        {/* Hangi Durumlarda Kira Avukatına İhtiyacınız Var */}
+                        <h2 id="ne-zaman-avukat" className="scroll-mt-24">Hangi Durumlarda Kira Avukatına İhtiyacınız Var?</h2>
+
+                        <p>
+                            Kira uyuşmazlıkları her zaman dava gerektirmez; ancak bazı durumlar profesyonel hukuki destek almayı zorunlu kılar.
+                            Aşağıdaki senaryolardan herhangi biri sizin için geçerliyse, bir <strong>İzmir kira avukatı</strong> ile görüşmeniz
+                            hak kaybı yaşamamanız açısından kritik önem taşır:
+                        </p>
+
+                        <div className="not-prose my-8 space-y-4">
+                            {[
+                                { title: "Kiracınız kira ödemiyor veya sürekli geç ödüyor", desc: "İhtarname çekme, iki haklı ihtar süreci ve tahliye davası açma aşamalarında hukuki destek gerekir." },
+                                { title: "Kiracınız tahliye taahhütnamesine rağmen çıkmıyor", desc: "Taahhütnamenin geçerliliği, icra takibi başlatma ve tahliye süreci avukat desteği gerektirir." },
+                                { title: "Kira artış oranında anlaşamıyorsunuz", desc: "TÜFE sınırı, 5 yılı aşan kira ilişkilerinde emsal kira tespiti ve kira tespit davası süreci teknik bilgi gerektirir." },
+                                { title: "Ev sahibiniz sizi haksız yere çıkarmaya çalışıyor", desc: "Kiracı hakları kapsamında tahliye talebine itiraz, hukuka aykırı baskılara karşı korunma." },
+                                { title: "Depozitonuz iade edilmiyor", desc: "Depozito iadesi için ihtarname çekme ve gerekirse alacak davası süreci." },
+                                { title: "Kira sözleşmenizde sorunlu maddeler var", desc: "Sözleşme incelemesi, hukuka aykırı maddelerin tespiti ve yeni sözleşme hazırlanması." },
+                            ].map((item, i) => (
+                                <div key={i} className="flex gap-4 p-5 bg-slate-50 rounded-xl border-l-4 border-secondary">
+                                    <div>
+                                        <p className="font-bold text-primary mb-1">{item.title}</p>
+                                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <p>
+                            Bu durumlardan herhangi birini yaşıyorsanız, zamanaşımı sürelerini kaçırmadan bir <strong>İzmir kira avukatı</strong> ile
+                            görüşmenizi tavsiye ederiz. Kira uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
+                            de dahil olmak üzere tüm aşamalarda yanınızdayız.
+                        </p>
+
                         {/* Tahliye Davası */}
                         <h2 id="tahliye-davasi" className="scroll-mt-24">Kiracı Tahliye Davası Nedir?</h2>
 
@@ -338,8 +374,10 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            Her bir tahliye sebebinin kendine özgü ispat şartları ve prosedürleri vardır. Bu nedenle <strong>İzmir kira avukatı</strong>
-                            desteği almadan hareket etmeniz durumunda davanın reddedilme riski bulunmaktadır. Ev sahibinin hangi durumlarda
+                            Her bir tahliye sebebinin kendine özgü ispat şartları ve prosedürleri vardır. Örneğin <Link href="/sozluk/tahliye-taahhutnamesi" className="text-secondary font-bold">tahliye taahhütnamesi</Link> ile
+                            açılan davalarda taahhütnamenin geçerlilik şartlarının eksiksiz karşılanması gerekirken, <Link href="/sozluk/ihtiyac-nedeniyle-tahliye" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye</Link> davalarında
+                            ihtiyacın samimi ve zorunlu olduğunun ispatı aranır. Bu nedenle <strong>İzmir kira avukatı</strong> desteği almadan
+                            hareket etmeniz durumunda davanın reddedilme riski bulunmaktadır. Ev sahibinin hangi durumlarda
                             kiracıyı çıkarabileceğini detaylıca incelediğimiz <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="text-secondary font-bold">kiracı tahliye rehberimizi</Link> okumanızı tavsiye ederiz.
                         </p>
 
@@ -395,8 +433,8 @@ export default function IzmirKiraAvukatiPage() {
                         <h2 id="kira-tespit-davasi" className="scroll-mt-24">Kira Tespit Davası Ne Zaman Açılır?</h2>
 
                         <p>
-                            <strong>Kira bedelinin tespiti davası</strong>, mevcut kira bedelinin piyasa rayicinin önemli ölçüde altında
-                            kaldığı durumlarda açılan bir davadır. Özellikle uzun süredir devam eden kira ilişkilerinde kira artışlarının
+                            <Link href="/sozluk/kira-tespit-davasi" className="text-secondary font-bold">Kira bedelinin tespiti davası</Link>, mevcut kira bedelinin piyasa rayicinin önemli ölçüde altında
+                            kaldığı durumlarda açılan bir davadır. Özellikle uzun süredir devam eden kira ilişkilerinde <Link href="/sozluk/kira-artis-orani" className="text-secondary font-bold">kira artış oranı</Link>nın
                             enflasyonun gerisinde kalması, bu davayı kiraya verenler açısından zorunlu hale getirmektedir.
                         </p>
 
@@ -433,8 +471,8 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             <strong>10 yıllık kiracının tahliyesi</strong>, Türk Borçlar Kanunu m. 347 kapsamında düzenlenen önemli
-                            bir tahliye yoludur. Konut ve çatılı işyeri kiralarında, <strong>kira sözleşmesi</strong> 10 yıllık uzama
-                            süresini doldurduktan sonra kiraya veren, herhangi bir gerekçe göstermeksizin sözleşmeyi feshedebilir.
+                            bir tahliye yoludur. Konut ve çatılı işyeri kiralarında, <Link href="/sozluk/kira-sozlesmesi" className="text-secondary font-bold">kira sözleşmesi</Link> <Link href="/sozluk/10-yillik-uzama-suresi" className="text-secondary font-bold">10 yıllık uzama
+                            süresi</Link>ni doldurduktan sonra kiraya veren, herhangi bir gerekçe göstermeksizin sözleşmeyi feshedebilir.
                         </p>
 
                         <p>
@@ -531,7 +569,7 @@ export default function IzmirKiraAvukatiPage() {
                                 dolması tek başına tahliye sebebi değildir. <strong>Kira sözleşmesi</strong> otomatik olarak birer yıl uzar.
                             </li>
                             <li>
-                                <strong>Depozito güvencesi:</strong> Güvence bedeli en fazla 3 aylık kira tutarı olabilir ve
+                                <strong><Link href="/sozluk/depozito" className="text-secondary">Depozito</Link> güvencesi:</strong> Güvence bedeli en fazla 3 aylık kira tutarı olabilir ve
                                 vadeli mevduat hesabına yatırılmalıdır. Taşınmaz hasarsız teslim edildiğinde iade edilmelidir.
                             </li>
                             <li>
@@ -548,7 +586,43 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             <strong>Kiracının hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür.
                             <strong> İzmir kira avukatı</strong> olarak hem kiracı hem de kiraya veren tarafında, müvekkillerimizin
-                            yasal haklarını en etkin şekilde koruyoruz.
+                            yasal haklarını en etkin şekilde koruyoruz. Kiracı hakları hakkında detaylı bilgi için <Link href="/sozluk/kiraci-haklari" className="text-secondary font-bold">kiracı hakları sözlük sayfamızı</Link> inceleyebilirsiniz.
+                        </p>
+
+                        {/* Avukatlı mı Avukatsız mı */}
+                        <h2 id="avukatli-avukatsiz" className="scroll-mt-24">Kira Davası Avukatsız mı Açılmalı, Avukatla mı?</h2>
+
+                        <p>
+                            Türk hukukunda kira davaları için avukat tutmak zorunlu değildir. Ancak pratikte avukatsız açılan davalarda
+                            usul hatası, süre kaçırma ve delil yetersizliği nedeniyle ciddi hak kayıpları yaşandığını gözlemliyoruz.
+                            İşte iki seçeneğin karşılaştırması:
+                        </p>
+
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-left w-1/3">Kriter</th>
+                                        <th className="px-6 py-4 text-left">Avukatsız</th>
+                                        <th className="px-6 py-4 text-left">Avukatla</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Süre takibi</td><td className="px-6 py-4 text-slate-600">Zamanaşımı ve hak düşürücü süreleri kaçırma riski yüksek</td><td className="px-6 py-4 text-slate-600">Tüm süreler profesyonel olarak takip edilir</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">İhtarname</td><td className="px-6 py-4 text-slate-600">Eksik veya hatalı ihtarname davanın reddine yol açabilir</td><td className="px-6 py-4 text-slate-600">Hukuki geçerliliği olan ihtarname hazırlanır</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Arabuluculuk</td><td className="px-6 py-4 text-slate-600">Arabuluculuk sürecinde dezavantajlı pozisyon</td><td className="px-6 py-4 text-slate-600">Müzakere gücü ve hukuki argüman desteği</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Delil sunumu</td><td className="px-6 py-4 text-slate-600">Hangi delillerin geçerli olduğu bilinmeyebilir</td><td className="px-6 py-4 text-slate-600">Delil stratejisi ve bilirkişi süreç yönetimi</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Dava süresi</td><td className="px-6 py-4 text-slate-600">Usul hataları nedeniyle süreç uzayabilir</td><td className="px-6 py-4 text-slate-600">Ortalama %30-40 daha kısa sürede sonuç</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Maliyet</td><td className="px-6 py-4 text-slate-600">Avukatlık ücreti yok, ancak hak kaybı riski var</td><td className="px-6 py-4 text-slate-600">Avukatlık ücreti var, ancak sonuç odaklı</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Özellikle <Link href="/sozluk/kira-tespit-davasi" className="text-secondary font-bold">kira tespit davası</Link>, <Link href="/sozluk/ihtiyac-nedeniyle-tahliye" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye</Link> ve <Link href="/sozluk/iki-hakli-ihtar" className="text-secondary font-bold">iki haklı ihtar</Link> gibi teknik
+                            davalarda avukat desteği almak, davanın lehine sonuçlanma olasılığını önemli ölçüde artırır.
+                            <strong> İzmir kira avukatı</strong> olarak ilk görüşmede davanızın güçlü ve zayıf yönlerini analiz ederek
+                            size en uygun stratejiyi sunuyoruz.
                         </p>
 
                         {/* Ücretler */}
@@ -626,6 +700,33 @@ export default function IzmirKiraAvukatiPage() {
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                             İzmir gayrimenkul piyasasındaki güncel hukuki gelişmeleri takip etmek için <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="text-secondary font-bold">güncel gelişmeler makalemizi</Link> okuyabilirsiniz.
                         </p>
+
+                        {/* E-E-A-T Author Box */}
+                        <div className="not-prose my-12 bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                            <div className="bg-primary px-8 py-4">
+                                <p className="text-white font-bold text-lg">Bu Sayfanın Yazarı</p>
+                            </div>
+                            <div className="p-8 flex flex-col sm:flex-row gap-6">
+                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira Avukatı" width={120} height={120} className="w-28 h-28 rounded-xl object-cover flex-shrink-0" />
+                                <div>
+                                    <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
+                                    <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                                        İzmir Barosu&apos;na kayıtlı avukat olarak 2019 yılından bu yana kira hukuku, iş hukuku, boşanma hukuku ve tazminat hukuku alanlarında
+                                        müvekkillerine profesyonel hukuki destek sunmaktadır. Bayraklı merkezli ofisinden İzmir genelinde kira davalarını aktif olarak takip etmektedir.
+                                    </p>
+                                    <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
+                                        <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
+                                        <span><strong className="text-slate-700">TBB Sicil:</strong> 162439</span>
+                                        <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
+                                    </div>
+                                    <div className="mt-4">
+                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                            Detaylı Özgeçmiş →
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
