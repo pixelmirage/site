@@ -78,40 +78,56 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "Anlaşmalı boşanma ne kadar sürer?",
-        answer: "Anlaşmalı boşanma, tarafların tüm konularda (nafaka, velayet, mal paylaşımı) uzlaşması halinde tek celsede sonuçlanabilir. Ortalama süre dilekçe hazırlığı dahil 1-3 aydır. Evliliğin en az 1 yıl sürmüş olması şarttır."
+        question: "Boşanma avukatı kaç TL alır?",
+        answer: "2026 yılında İzmir'de boşanma avukatı ücreti davanın türüne göre değişmektedir. Anlaşmalı boşanma davalarında 25.000–40.000 TL, çekişmeli boşanma davalarında 40.000–80.000 TL arasında ücret belirlenmektedir. Velayet davası, nafaka davası veya mal paylaşımı davası ayrıca açılacaksa her biri için ek ücret talep edilir. İzmir Barosu asgari ücret tarifesi altında ücret belirlenmesi mümkün değildir. Ücret, davanın karmaşıklığına, süresine, çocuk sayısına ve mal varlığının büyüklüğüne göre farklılık gösterebilir. Büromuzda ilk ön görüşme ücretsiz olup, bu görüşmede davanızın genel değerlendirmesi yapılarak kesin ücret bilgisi sunulmaktadır."
     },
     {
-        question: "Çekişmeli boşanma davası ne kadar sürer?",
-        answer: "Çekişmeli boşanma davası, taraflar arasındaki anlaşmazlığın boyutuna göre 1-3 yıl sürebilmektedir. Velayet, nafaka ve mal paylaşımı konularındaki çekişmeler süreyi uzatabilir."
+        question: "Avukata soru sormak kaç TL?",
+        answer: "2026 yılı itibarıyla avukata danışma ücreti İzmir Barosu tarifesine göre sözlü danışma için en az 3.000 TL, yazılı hukuki mütalaa için ise en az 6.000 TL'dir. Bu tutarlar asgari ücretler olup avukatın deneyimine ve konunun karmaşıklığına göre artabilir. Boşanma hukuku gibi aile hukuku konularında ilk görüşmede davanın genel çerçevesi, haklarınız, nafaka ve velayet konularındaki beklentileriniz değerlendirilir. Büromuzda boşanma hukuku alanında ilk ön görüşme ücretsizdir. Danışma ücretinin ileride dava açılması halinde avukatlık ücretinden düşülüp düşülmeyeceğini avukatınıza sormanız önerilir."
     },
     {
-        question: "Velayet kime verilir?",
-        answer: "Velayet kararında çocuğun üstün yararı ilkesi esas alınır. Mahkeme; çocuğun yaşı, ebeveynlerin bakım kapasitesi, ekonomik durumları, çocuğun görüşü (idrak yaşındaysa) ve uzman pedagog raporunu değerlendirir. 0-3 yaş arası çocuklar genellikle anneye bırakılır."
+        question: "Devlet ücretsiz boşanma avukatı veriyor mu?",
+        answer: "Evet, maddi durumu yetersiz vatandaşlar baroların Adli Yardım Büroları aracılığıyla ücretsiz boşanma avukatı talep edebilir. Başvuru için nüfus cüzdanı fotokopisi, gelir durumunu gösteren belge ve dava konusuna ilişkin evraklar gereklidir. İzmir Barosu Adli Yardım Merkezi bu başvuruları değerlendirerek uygun görürse avukat atar. Adli yardım kapsamında mahkeme harçları ve yargılama giderleri de ertelenir. Ancak adli yardım süreci zaman alabilir ve atanan avukatın boşanma hukuku konusunda uzman olma garantisi yoktur. Bu nedenle velayet, nafaka ve mal paylaşımı gibi kritik konularda alanında uzman bir boşanma avukatıyla çalışmanız daha sağlıklı sonuçlar verir."
     },
     {
-        question: "Nafaka nasıl belirlenir?",
-        answer: "Nafaka miktarı belirlenirken nafaka yükümlüsünün geliri, nafaka alacaklısının ihtiyaçları, çocuk sayısı ve yaşam standardı dikkate alınır. Tedbir nafakası dava süresince, iştirak nafakası çocuklar için, yoksulluk nafakası ise boşanma sonrası geçim sıkıntısı yaşayacak eş için hükmedilir."
+        question: "İyi bir boşanma avukatı nasıl olur?",
+        answer: "İyi bir boşanma avukatı öncelikle aile hukuku alanında uzmanlaşmış ve bu alanda yeterli dava deneyimine sahip olmalıdır. Müvekkilin duygusal durumunu anlayan, empati kurabilen ancak hukuki süreci objektif yöneten bir yaklaşım sergilemelidir. Nafaka hesaplama, velayet kriterleri, mal paylaşımı rejimi ve Yargıtay içtihatları konusunda güncel bilgiye sahip olmalıdır. Şeffaf ücret politikası uygulamalı ve süreç hakkında düzenli bilgilendirme yapmalıdır. Anlaşmalı çözümü teşvik etmeli ancak gerektiğinde çekişmeli davada güçlü bir şekilde müvekkilini temsil edebilmelidir. Referans ve baro sicil kontrolü yapmak da doğru avukat seçiminde önemli bir adımdır."
     },
     {
-        question: "Boşanmada mal paylaşımı nasıl yapılır?",
-        answer: "2002 sonrası evliliklerde edinilmiş mallara katılma rejimi uygulanır. Evlilik süresince edinilen mallar eşit olarak paylaşılır. Miras, bağış gibi kişisel mallar paylaşım dışındadır. Mal paylaşımı davası boşanma kesinleştikten sonra açılabilir."
+        question: "Eşler ne kadar ayrı kalırsa boşanır?",
+        answer: "Türk Medeni Kanunu'na göre belirli bir süre ayrı yaşamak otomatik olarak boşanma sebebi oluşturmaz. Ancak TMK m. 166/son fıkrası uyarınca boşanma davası reddedildikten sonra eşler 3 yıl boyunca bir araya gelmezse, taraflardan birinin başvurusu üzerine boşanmaya karar verilir. Fiili ayrılık tek başına boşanma sebebi değildir; evlilik birliğinin temelinden sarsılması (TMK m. 166) gibi bir sebebe dayanılması gerekir. Ancak uzun süreli ayrı yaşama, evlilik birliğinin fiilen sona erdiğinin güçlü bir delili olarak mahkemece değerlendirilir. Ayrılık süresi boyunca nafaka ve velayet gibi konularda tedbir kararı alınabilir."
     },
     {
-        question: "Boşanma davası ücreti ne kadar?",
-        answer: "2026 yılında İzmir'de anlaşmalı boşanma avukatlık ücreti 25.000-40.000 TL, çekişmeli boşanma ücreti 40.000-80.000 TL arasında değişmektedir. Velayet ve nafaka davaları ayrıca ücretlendirilir."
+        question: "Boşanmada erkeğin ağır kusurları nelerdir?",
+        answer: "Yargıtay içtihatlarına göre boşanmada erkeğe ağır kusur olarak yüklenen başlıca davranışlar şunlardır: Fiziksel şiddet (dövme, yaralama), psikolojik şiddet ve sürekli hakaret, aldatma (zina), eşi evden kovma, aile bireylerine kötü davranma, ekonomik şiddet (eve para vermeme, eşin çalışmasını engelleme), alkol veya madde bağımlılığı, eşin ailesiyle sürekli sorun çıkarma ve güven sarsıcı davranışlar. Ağır kusurlu bulunan eş aleyhine maddi ve manevi tazminata hükmedilir. Ayrıca ağır kusurlu eş yoksulluk nafakası talep edemez. Kusur tespiti mahkeme tarafından tanık beyanları, mesajlar, kamera kayıtları ve uzman raporları değerlendirilerek yapılır."
     },
     {
-        question: "Boşanma davası için hangi belgeler gerekli?",
-        answer: "Boşanma davası için nüfus cüzdanı fotokopisi, evlilik cüzdanı fotokopisi, nüfus kayıt örneği, varsa deliller (mesajlar, fotoğraflar, tanık listesi) ve boşanma dilekçesi gerekmektedir. Anlaşmalı boşanmada ek olarak boşanma protokolü hazırlanmalıdır."
+        question: "Boşanırken hangi mal paylaşılmaz?",
+        answer: "Türk Medeni Kanunu'na göre \"kişisel mal\" sayılan varlıklar boşanmada paylaşıma dahil edilmez. Bunlar: Evlilik öncesi sahip olunan mallar, miras yoluyla edinilen mallar, bağış olarak alınan mallar, manevi tazminat alacakları ve kişisel kullanıma özgü eşyalardır (kıyafet, takı gibi). 2002 sonrası evliliklerde edinilmiş mallara katılma rejimi geçerlidir; evlilik süresince maaş, kira geliri, yatırım kazancı gibi edinilmiş mallar eşit paylaşılır. Ancak kişisel malın geliri (örneğin miras kalan evin kira geliri) edinilmiş mal sayılır ve paylaşıma tabidir. Mal rejimi sözleşmesiyle bu kurallar değiştirilebilir."
     },
     {
-        question: "Aldatma durumunda boşanma nasıl açılır?",
-        answer: "Aldatma (zina), Türk Medeni Kanunu m. 161 kapsamında özel boşanma sebebidir. Aldatmanın öğrenilmesinden itibaren 6 ay ve her halükarda 5 yıl içinde dava açılmalıdır. Aldatan eş aleyhine maddi ve manevi tazminata hükmedilebilir."
+        question: "Boşanma davası açmadan önce evden ayrılmak suç mu?",
+        answer: "Hayır, boşanma davası açmadan önce evden ayrılmak tek başına suç değildir. Ancak hukuki sonuçları olabilir. TMK m. 164'e göre eşlerden biri haklı bir sebep olmaksızın ortak konutu terk ederse ve en az 6 ay dönmezse, diğer eş \"terk\" sebebiyle boşanma davası açabilir. Bu nedenle evden ayrılmadan önce haklı sebebinizi belgelemeniz önemlidir. Şiddet, hakaret, aldatma gibi haklı nedenlerle ayrılıyorsanız, bu durumu kanıtlayan delilleri (hastane raporu, mesajlar, tanıklar) muhafaza edin. Mümkünse evden ayrılmadan önce veya hemen sonrasında boşanma davası açmanız, terk iddiasını bertaraf eder."
     },
     {
-        question: "Boşanmada çocuğun görüşü alınır mı?",
-        answer: "Evet, idrak çağındaki (genellikle 8 yaş üzeri) çocukların görüşü mahkeme tarafından alınır. Çocuğun beyanı velayet kararında önemli bir etkendir ancak tek başına belirleyici değildir. Mahkeme, çocuğun üstün yararını bütüncül olarak değerlendirir."
+        question: "Boşanma davasını kim açarsa avantajlı olur?",
+        answer: "Boşanma davasını kimin açtığı tek başına hukuki bir avantaj sağlamaz. Türk hukukunda davacı veya davalı olmak, hakimin kusur değerlendirmesini etkilemez. Mahkeme her iki tarafın kusurlarını objektif olarak değerlendirerek karar verir. Ancak pratikte davayı ilk açan tarafın bazı stratejik avantajları olabilir: Delilleri önceden hazırlama imkânı, dava sürecini kontrol etme, tedbir nafakası ve tedbir kararlarını (çocukla kişisel ilişki, aile konutu kullanımı) erken aşamada talep edebilme. Özellikle şiddet veya aldatma durumlarında erken hareket etmek, delillerin kaybolmasını önler. Ancak aceleye getirilmiş bir dava da zayıf delillerle sonuçsuz kalabilir."
+    },
+    {
+        question: "Çekişmeli boşanma sebepleri nelerdir?",
+        answer: "Türk Medeni Kanunu'nda düzenlenen çekişmeli boşanma sebepleri özel ve genel sebepler olarak ikiye ayrılır. Özel boşanma sebepleri: Zina/aldatma (TMK m. 161), hayata kast, pek kötü veya onur kırıcı davranış (m. 162), suç işleme ve haysiyetsiz hayat sürme (m. 163), terk (m. 164) ve akıl hastalığı (m. 165). Genel boşanma sebebi ise evlilik birliğinin temelinden sarsılmasıdır (m. 166) — bu en sık başvurulan sebeptir. Sürekli tartışma, şiddet, ekonomik sorunlar, cinsel uyumsuzluk, ailelerle yaşanan sorunlar, güven sarsıcı davranışlar bu kapsamda değerlendirilir. Her sebep için ispat yükü ve zamanaşımı süreleri farklıdır."
+    },
+    {
+        question: "Çekişmeli boşanma sürecinde evde kim kalır?",
+        answer: "Çekişmeli boşanma davasında ortak konutun kullanımına hakim karar verir. TMK m. 169 uyarınca mahkeme, dava süresince eşlerin barınmasına ilişkin geçici önlemler alır. Genellikle çocukların velayetini fiilen kullanan eş evde kalır. Şiddet iddiası varsa, şiddet uygulayan eşin evden uzaklaştırılmasına karar verilebilir (6284 sayılı Kanun). Evin mülkiyetinin kime ait olduğu bu kararı doğrudan etkilemez; kirada otunan konutlarda da aynı kural geçerlidir. Evde kalan eş aleyhine kira veya kullanım bedeli istenebilir. Tedbir kararları dava sonuna kadar geçerlidir ve ihlali halinde zorlama hapsi uygulanabilir."
+    },
+    {
+        question: "Boşanmayı kadın açarsa ne olur?",
+        answer: "Boşanma davasını kadının açması, hukuki süreç açısından herhangi bir dezavantaj oluşturmaz. Kadın davacı olarak haklarını talep edebilir: Tedbir nafakası (dava süresince), yoksulluk nafakası (boşanma sonrası), maddi ve manevi tazminat, velayet talebi ve mal paylaşımı. Kadın, kusursuz veya daha az kusurlu ise tazminat talep edebilir. Davayı kadının açması, erkeğin kusurlu olduğu anlamına gelmediği gibi kadının kusursuz olduğu anlamına da gelmez. Mahkeme her iki tarafın kusurlarını ayrı ayrı değerlendirir. Özellikle şiddet mağduru kadınların erken aşamada dava açması ve koruma kararı talep etmesi tavsiye edilir."
+    },
+    {
+        question: "Erkek hangi durumda nafaka ödemez?",
+        answer: "Erkek şu durumlarda nafaka ödemekten kurtulabilir: Kadının tam kusurlu olması halinde yoksulluk nafakası hükmedilmez. Kadının boşanma sonrası yoksulluğa düşmeyecek düzeyde geliri veya mal varlığı varsa yoksulluk nafakasına gerek kalmaz. Kadının yeniden evlenmesi halinde yoksulluk nafakası kendiliğinden sona erer. Kadının evlilik dışı bir kişiyle fiilen birlikte yaşaması nafakanın kaldırılma sebebidir. Nafaka alacaklısının haysiyetsiz hayat sürmesi de kaldırma nedenidir. İştirak nafakası ise çocuğun 18 yaşını doldurması veya eğitim hayatının sona ermesiyle biter. Nafaka miktarının azaltılması için koşulların değiştiğinin ispatı gerekir."
     }
 ];
 
