@@ -266,6 +266,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             Kira hukuku, Türk Borçlar Kanunu ve İcra İflas Kanunu çerçevesinde düzenlenen karmaşık bir hukuk dalıdır.
+                            Deneyimli bir <strong>kira hukuku avukatı</strong> ile çalışmak, bu süreçlerde hak kaybını önlemenin en etkili yoludur.
                             İzmir ve çevresinde yaşanan kira uyuşmazlıkları, son yıllarda ekonomik koşulların etkisiyle önemli ölçüde
                             artmıştır. <strong>Kiracı nasıl çıkarılır</strong>, <strong>kira tespit davası ne zaman açılır</strong>,
                             <strong> kiracının hakları</strong> nelerdir gibi sorular her gün büromuzda yanıtladığımız konuların
@@ -711,7 +712,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir kira avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
+                            <strong>En iyi kira hukuku avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                             İzmir gayrimenkul piyasasındaki güncel hukuki gelişmeleri takip etmek için <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="text-secondary font-bold">güncel gelişmeler makalemizi</Link> okuyabilirsiniz.
                         </p>
