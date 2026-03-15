@@ -232,3 +232,120 @@ export function getDistrictData(slug: string) {
     const cleanSlug = slug.replace("-kira-avukati", "");
     return districtData.find(d => d.slug === cleanSlug);
 }
+
+// --- Multi-Service Support ---
+
+export type ServiceType = "kira" | "is" | "bosanma" | "tazminat";
+
+const serviceSuffixes: Record<ServiceType, string> = {
+    kira: "-kira-avukati",
+    is: "-is-avukati",
+    bosanma: "-bosanma-avukati",
+    tazminat: "-tazminat-avukati",
+};
+
+export const serviceConfig: Record<ServiceType, {
+    label: string;
+    parentTitle: string;
+    parentUrl: string;
+    sectionTitle: string;
+    ctaTitle: string;
+    ctaDesc: string;
+}> = {
+    kira: {
+        label: "Kira Avukatı",
+        parentTitle: "İzmir Kira Avukatı",
+        parentUrl: "/izmir-kira-avukati",
+        sectionTitle: "Kiracı Tahliye Davaları",
+        ctaTitle: "Kira Avukatı ile Görüşün",
+        ctaDesc: "Kira hukuku davalarınız için ücretsiz ön görüşme randevusu alın.",
+    },
+    is: {
+        label: "İş Avukatı",
+        parentTitle: "İzmir İş Avukatı",
+        parentUrl: "/izmir-is-avukati",
+        sectionTitle: "İşe İade ve Tazminat Davaları",
+        ctaTitle: "İş Avukatı ile Görüşün",
+        ctaDesc: "İş hukuku davalarınız için ücretsiz ön görüşme randevusu alın.",
+    },
+    bosanma: {
+        label: "Boşanma Avukatı",
+        parentTitle: "İzmir Boşanma Avukatı",
+        parentUrl: "/izmir-bosanma-avukati",
+        sectionTitle: "Boşanma ve Velayet Davaları",
+        ctaTitle: "Boşanma Avukatı ile Görüşün",
+        ctaDesc: "Boşanma davalarınız için ücretsiz ön görüşme randevusu alın.",
+    },
+    tazminat: {
+        label: "Tazminat Avukatı",
+        parentTitle: "İzmir Tazminat Avukatı",
+        parentUrl: "/izmir-tazminat-avukati",
+        sectionTitle: "Tazminat Davası Süreci",
+        ctaTitle: "Tazminat Avukatı ile Görüşün",
+        ctaDesc: "Tazminat davalarınız için ücretsiz ön görüşme randevusu alın.",
+    },
+};
+
+export function parseServiceSlug(slug: string): { districtSlug: string; serviceType: ServiceType } | null {
+    for (const [service, suffix] of Object.entries(serviceSuffixes) as [ServiceType, string][]) {
+        if (slug.endsWith(suffix)) {
+            const districtSlug = slug.replace(suffix, "");
+            if (districtSlug) {
+                return { districtSlug, serviceType: service };
+            }
+        }
+    }
+    return null;
+}
+
+export function getServiceDistrictData(slug: string): { data: DistrictData; serviceType: ServiceType } | null {
+    const parsed = parseServiceSlug(slug);
+    if (!parsed) return null;
+
+    const { districtSlug, serviceType } = parsed;
+
+    let dataArray: DistrictData[];
+    if (serviceType === "kira") {
+        dataArray = districtData;
+    } else {
+        // Lazy import to avoid circular deps — data loaded at build time
+        if (serviceType === "is") {
+            const { isDistrictData } = require("./districts-is");
+            dataArray = isDistrictData;
+        } else if (serviceType === "bosanma") {
+            const { bosanmaDistrictData } = require("./districts-bosanma");
+            dataArray = bosanmaDistrictData;
+        } else {
+            const { tazminatDistrictData } = require("./districts-tazminat");
+            dataArray = tazminatDistrictData;
+        }
+    }
+
+    const data = dataArray.find(d => d.slug === districtSlug);
+    if (!data) return null;
+
+    return { data, serviceType };
+}
+
+export function getAllServiceSlugs(): string[] {
+    const { isDistrictData } = require("./districts-is");
+    const { bosanmaDistrictData } = require("./districts-bosanma");
+    const { tazminatDistrictData } = require("./districts-tazminat");
+
+    const slugs: string[] = [];
+
+    for (const d of districtData) {
+        slugs.push(`${d.slug}-kira-avukati`);
+    }
+    for (const d of isDistrictData as DistrictData[]) {
+        slugs.push(`${d.slug}-is-avukati`);
+    }
+    for (const d of bosanmaDistrictData as DistrictData[]) {
+        slugs.push(`${d.slug}-bosanma-avukati`);
+    }
+    for (const d of tazminatDistrictData as DistrictData[]) {
+        slugs.push(`${d.slug}-tazminat-avukati`);
+    }
+
+    return slugs;
+}

@@ -1,33 +1,50 @@
 import { notFound } from "next/navigation";
-import { districts, districtData as allDistricts, getSlugFromDistrict, getDistrictData } from "@/lib/districts";
+import { districtData as allKiraDistricts, getAllServiceSlugs, getServiceDistrictData, serviceConfig, type ServiceType, type DistrictData } from "@/lib/districts";
+import { isDistrictData } from "@/lib/districts-is";
+import { bosanmaDistrictData } from "@/lib/districts-bosanma";
+import { tazminatDistrictData } from "@/lib/districts-tazminat";
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Mail, MapPin, CheckCircle, ArrowRight, Home, ChevronRight, Scale, FileText, Users, Building2, Map, BookOpen } from "lucide-react";
+import { Phone, ArrowRight, Home, ChevronRight, Building2, Map, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
+const allDistrictsByService: Record<ServiceType, DistrictData[]> = {
+    kira: allKiraDistricts,
+    is: isDistrictData,
+    bosanma: bosanmaDistrictData,
+    tazminat: tazminatDistrictData,
+};
+
+const serviceSuffix: Record<ServiceType, string> = {
+    kira: "-kira-avukati",
+    is: "-is-avukati",
+    bosanma: "-bosanma-avukati",
+    tazminat: "-tazminat-avukati",
+};
+
 export async function generateStaticParams() {
-    return districts.map((district) => ({
-        slug: `${getSlugFromDistrict(district)}-kira-avukati`,
-    }));
+    return getAllServiceSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
     const { slug } = await params;
-    const districtData = getDistrictData(slug);
+    const result = getServiceDistrictData(slug);
 
-    if (!districtData) return {};
+    if (!result) return {};
+
+    const { data, serviceType } = result;
+    const config = serviceConfig[serviceType];
 
     return {
         title: {
-            absolute: `${districtData.name} Kira Avukatı | Av. Mert Kağan Çetin`,
+            absolute: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
         },
-        description: districtData.description || `${districtData.name} bölgesinde kira hukuku ve tahliye davalarında profesyonel avukatlık desteği alın.`,
-        keywords: [`${districtData.name} kira avukatı`, `${districtData.name} tahliye avukatı`, `${districtData.name} kira davası`, "kira tespit davası", "tahliye davası"],
+        description: data.description || `${data.name} bölgesinde ${config.label.toLowerCase()} hizmetleri için profesyonel avukatlık desteği alın.`,
         openGraph: {
-            title: `${districtData.name} Kira Avukatı | Av. Mert Kağan Çetin`,
-            description: districtData.description,
+            title: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
+            description: data.description,
             url: `https://mertkagancetin.com/${slug}/`,
             type: "website",
         },
@@ -37,33 +54,118 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
+function getFaqs(district: string, serviceType: ServiceType) {
+    switch (serviceType) {
+        case "kira":
+            return [
+                {
+                    question: `${district} bölgesinde kira davaları ne kadar sürer?`,
+                    answer: `${district} Adliyesi'nin bağlı olduğu İzmir mahkemelerinin iş yüküne göre değişmekle birlikte, tahliye davaları ortalama 6 ay ile 1.5 yıl arasında sürebilmektedir. Tahliye taahhütnamesi varlığı süreci hızlandırır.`
+                },
+                {
+                    question: `${district} kira avukatı ücretleri ne kadar?`,
+                    answer: "2026 yılı avukatlık asgari ücret tarifesi ve davanın niteliğine göre belirlenmektedir. Tahliye davaları için ortalama ücretler 35.000 TL - 60.000 TL aralığında değişmektedir."
+                },
+                {
+                    question: `${district} için hizmet veriyor musunuz?`,
+                    answer: `Evet, ofisimiz Bayraklı'da bulunmakla birlikte ${district} dahil İzmir'in tüm merkez ilçelerinde kira hukuku ve tahliye davalarında müvekkillerimizi temsil etmekteyiz.`
+                }
+            ];
+        case "is":
+            return [
+                {
+                    question: `${district} bölgesinde iş davaları ne kadar sürer?`,
+                    answer: `İş mahkemelerinde basit yargılama usulü uygulandığından, ${district} bölgesindeki iş davaları ortalama 6 ay ile 1 yıl arasında sonuçlanmaktadır. Zorunlu arabuluculuk süreci dava öncesi 3-4 hafta sürmektedir.`
+                },
+                {
+                    question: `${district} iş avukatı ücretleri ne kadar?`,
+                    answer: "2026 yılı avukatlık asgari ücret tarifesine göre iş davaları için ücretler 30.000 TL - 60.000 TL aralığında değişmektedir. İşe iade davalarında nispi vekalet ücreti de uygulanabilmektedir."
+                },
+                {
+                    question: `${district} bölgesinde iş davası için hizmet veriyor musunuz?`,
+                    answer: `Evet, ofisimiz Bayraklı'da bulunmakla birlikte ${district} dahil İzmir'in tüm merkez ilçelerinde işe iade, kıdem tazminatı ve iş kazası davalarında müvekkillerimizi temsil etmekteyiz.`
+                }
+            ];
+        case "bosanma":
+            return [
+                {
+                    question: `${district} bölgesinde boşanma davaları ne kadar sürer?`,
+                    answer: `Anlaşmalı boşanma davaları tek celsede sonuçlanabilirken, ${district} bölgesindeki çekişmeli boşanma davaları ortalama 1-2 yıl sürmektedir. Velayet ve mal paylaşımı uyuşmazlıkları süreci uzatabilmektedir.`
+                },
+                {
+                    question: `${district} boşanma avukatı ücretleri ne kadar?`,
+                    answer: "2026 yılı avukatlık asgari ücret tarifesine göre anlaşmalı boşanma için 25.000 - 40.000 TL, çekişmeli boşanma için 40.000 - 80.000 TL aralığında ücretler belirlenmektedir."
+                },
+                {
+                    question: `${district} bölgesinde boşanma davası için hizmet veriyor musunuz?`,
+                    answer: `Evet, ofisimiz Bayraklı'da bulunmakla birlikte ${district} dahil İzmir'in tüm merkez ilçelerinde boşanma, velayet ve nafaka davalarında müvekkillerimizi temsil etmekteyiz.`
+                }
+            ];
+        case "tazminat":
+            return [
+                {
+                    question: `${district} bölgesinde tazminat davaları ne kadar sürer?`,
+                    answer: `${district} bölgesindeki tazminat davaları, bilirkişi raporları ve delil toplama sürecine bağlı olarak ortalama 1-2 yıl sürmektedir. Sigorta tahkim komisyonuna başvuru alternatif bir çözüm yolu olabilmektedir.`
+                },
+                {
+                    question: `${district} tazminat avukatı ücretleri ne kadar?`,
+                    answer: "2026 yılı avukatlık asgari ücret tarifesine göre tazminat davaları için 30.000 - 60.000 TL başlangıç ücreti ve kazanılan tazminattan nispi vekalet ücreti uygulanmaktadır."
+                },
+                {
+                    question: `${district} bölgesinde tazminat davası için hizmet veriyor musunuz?`,
+                    answer: `Evet, ofisimiz Bayraklı'da bulunmakla birlikte ${district} dahil İzmir'in tüm merkez ilçelerinde trafik kazası, iş kazası ve malpraktis tazminat davalarında müvekkillerimizi temsil etmekteyiz.`
+                }
+            ];
+    }
+}
+
+function getIntroText(district: string, serviceType: ServiceType, description: string) {
+    switch (serviceType) {
+        case "kira":
+            return {
+                intro: `İzmir'in önemli yerleşim merkezlerinden ${district}, gayrimenkul hareketliliğinin yüksek olduğu bir bölgedir. ${description} Bu durum, zaman zaman ev sahipleri ve kiracılar arasında hukuki uyuşmazlıkları da beraberinde getirmektedir.`,
+                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} kira avukatı ihtiyaçlarınızda, bölgenin dinamiklerine hakim bir yaklaşımla çözüm üretiyoruz.`,
+                action: `Kiracınız kira ödemiyorsa, 10 yıllık uzama süresi dolduysa veya kendiniz/yakınınız için konut ihtiyacı doğduysa ${district} tahliye avukatı desteği ile süreci en hızlı şekilde yönetebilirsiniz.`,
+            };
+        case "is":
+            return {
+                intro: `İzmir'in dinamik ilçelerinden ${district}, çeşitli sektörlerde istihdam sağlayan önemli bir bölgedir. ${description} Bu yapı, işçi-işveren uyuşmazlıklarının çeşitli biçimlerde ortaya çıkmasına neden olmaktadır.`,
+                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} iş avukatı ihtiyaçlarınızda, bölgenin iş piyasası dinamiklerini bilen bir yaklaşımla çözüm üretiyoruz.`,
+                action: `Haksız yere işten çıkarıldıysanız, kıdem tazminatınız ödenmiyorsa veya iş kazası geçirdiyseniz ${district} iş avukatı desteği ile haklarınızı en etkili şekilde koruyabilirsiniz.`,
+            };
+        case "bosanma":
+            return {
+                intro: `İzmir'in köklü ilçelerinden ${district}, farklı sosyoekonomik yapılarıyla çeşitli aile hukuku uyuşmazlıklarının yaşandığı bir bölgedir. ${description}`,
+                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} boşanma avukatı ihtiyaçlarınızda, aile hukuku alanındaki uzmanlığımızla çözüm üretiyoruz.`,
+                action: `Boşanma kararı aldıysanız, velayet veya nafaka konusunda haklarınızı korumak istiyorsanız ${district} boşanma avukatı desteği ile süreci güvenle yönetebilirsiniz.`,
+            };
+        case "tazminat":
+            return {
+                intro: `İzmir'in önemli ilçelerinden ${district}, çeşitli risk faktörleriyle tazminat davalarının sıkça görüldüğü bir bölgedir. ${description}`,
+                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} tazminat avukatı ihtiyaçlarınızda, bölgedeki risk profilini bilen bir yaklaşımla çözüm üretiyoruz.`,
+                action: `Trafik kazası, iş kazası veya tıbbi hata nedeniyle zarar gördüyseniz ${district} tazminat avukatı desteği ile hak ettiğiniz tazminatı alabilirsiniz.`,
+            };
+    }
+}
+
 export default async function DistrictPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
-    const districtData = getDistrictData(slug);
+    const result = getServiceDistrictData(slug);
 
-    if (!districtData) {
+    if (!result) {
         notFound();
     }
 
+    const { data: districtData, serviceType } = result;
     const { name: district, description, features } = districtData;
+    const config = serviceConfig[serviceType];
 
-    const introTitle = `${district} Kira Avukatı`;
-    const callToActionText = "Ücretsiz Ön Görüşme";
+    const introTitle = `${district} ${config.label}`;
+    const faqs = getFaqs(district, serviceType);
+    const texts = getIntroText(district, serviceType, description);
 
-    const faqs = [
-        {
-            question: `${district} bölgesinde kira davaları ne kadar sürer?`,
-            answer: `${district} Adliyesi'nin bağlı olduğu İzmir mahkemelerinin iş yüküne göre değişmekle birlikte, tahliye davaları ortalama 6 ay ile 1.5 yıl arasında sürebilmektedir. Tahliye taahhütnamesi varlığı süreci hızlandırır.`
-        },
-        {
-            question: `${district} kira avukatı ücretleri ne kadar?`,
-            answer: "2026 yılı avukatlık asgari ücret tarifesi ve davanın niteliğine göre belirlenmektedir. Tahliye davaları için ortalama ücretler 35.000 TL - 60.000 TL aralığında değişmektedir."
-        },
-        {
-            question: `${district} için hizmet veriyor musunuz?`,
-            answer: `Evet, ofisimiz Bayraklı'da bulunmakla birlikte ${district} dahil İzmir'in tüm merkez ilçelerinde kira hukuku ve tahliye davalarında müvekkillerimizi temsil etmekteyiz.`
-        }
-    ];
+    const neighborDistricts = allDistrictsByService[serviceType];
+    const suffix = serviceSuffix[serviceType];
 
     return (
         <main className="bg-white">
@@ -71,8 +173,8 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" },
-                    { name: `${district} Kira Avukatı`, url: `https://mertkagancetin.com/${slug}/` }
+                    { name: config.parentTitle, url: `https://mertkagancetin.com${config.parentUrl}/` },
+                    { name: `${district} ${config.label}`, url: `https://mertkagancetin.com/${slug}/` }
                 ]}
             />
 
@@ -85,8 +187,8 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                             Ana Sayfa
                         </Link>
                         <ChevronRight className="w-4 h-4" />
-                        <Link href="/izmir-kira-avukati" className="hover:text-white transition-colors">
-                            İzmir Kira Avukatı
+                        <Link href={config.parentUrl} className="hover:text-white transition-colors">
+                            {config.parentTitle}
                         </Link>
                         <ChevronRight className="w-4 h-4" />
                         <span className="text-secondary">{district}</span>
@@ -98,13 +200,13 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                         </h1>
                         <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl mx-auto">
                             {description} <br className="hidden md:block" />
-                            <strong>{district}</strong> bölgesindeki mülkleriniz için kira hukuku alanında uzman desteği.
+                            <strong>{district}</strong> bölgesinde {config.label.toLowerCase()} hizmeti.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
-                                    {callToActionText}
+                                    Ücretsiz Ön Görüşme
                                 </Link>
                             </Button>
                         </div>
@@ -118,12 +220,11 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                         <div className="lg:col-span-2 prose prose-slate prose-lg">
                             <p>
-                                İzmir'in önemli yerleşim merkezlerinden <strong>{district}</strong>, gayrimenkul hareketliliğinin yüksek olduğu bir bölgedir.
-                                {description} Bu durum, zaman zaman ev sahipleri ve kiracılar arasında hukuki uyuşmazlıkları da beraberinde getirmektedir.
+                                {texts.intro}
                             </p>
 
                             <p>
-                                Av. Mert Kağan Çetin Hukuk Bürosu olarak, <strong>{district} kira avukatı</strong> ihtiyaçlarınızda, bölgenin dinamiklerine hakim bir yaklaşımla çözüm üretiyoruz.
+                                <strong>{texts.expertise}</strong>
                             </p>
 
                             <div className="not-prose bg-slate-50 p-6 rounded-xl border border-slate-100 my-8">
@@ -135,7 +236,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                     {district} genelinde, özellikle şu mahallelerde yoğun faaliyet göstermekteyiz:
                                 </p>
                                 <div className="flex flex-wrap gap-2">
-                                    {districtData?.neighborhoods?.map((nb, i) => (
+                                    {districtData.neighborhoods.map((nb, i) => (
                                         <span key={i} className="text-xs font-medium bg-white px-3 py-1 rounded-full border border-slate-200 text-slate-600">
                                             {nb}
                                         </span>
@@ -143,28 +244,27 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 </div>
                             </div>
 
-                            <h3>{district} Kiracı Tahliye Davaları</h3>
+                            <h3>{district} {config.sectionTitle}</h3>
                             <p>
-                                {district} sınırları içerisindeki konut ve işyerleri için tahliye süreçleri, Türk Borçlar Kanunu'nun emredici hükümlerine tabidir.
-                                Özellikle {features[0]} ve çevresindeki uyuşmazlıklarda, yerel emsal kararlar ve bölgesel rayiçler davanın seyrini etkileyebilmektedir.
+                                {district} sınırları içerisinde {features[0].toLowerCase()} alanında çeşitli hukuki süreçler yaşanmaktadır.
+                                Özellikle {features[1] || features[0]} konusundaki uyuşmazlıklarda, yerel emsal kararlar davanın seyrini etkileyebilmektedir.
                             </p>
 
                             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
-                                <h4 className="font-bold text-blue-900 text-lg mb-2">{districtData?.legalFocus?.title}</h4>
+                                <h4 className="font-bold text-blue-900 text-lg mb-2">{districtData.legalFocus.title}</h4>
                                 <p className="text-blue-800 text-sm leading-relaxed">
-                                    {districtData?.legalFocus?.detail}
+                                    {districtData.legalFocus.detail}
                                 </p>
                             </div>
 
                             <p>
-                                Kiracınız kira ödemiyorsa, 10 yıllık uzama süresi dolduysa veya kendiniz/yakınınız için konut ihtiyacı doğduysa
-                                <strong> {district} tahliye avukatı</strong> desteği ile süreci en hızlı şekilde yönetebilirsiniz.
+                                {texts.action}
                             </p>
 
                             <h3>Uzman Hukuki Destek</h3>
                             <p>
-                                Kira hukuku teknik detayların davanın kaderini belirlediği bir alandır. Özellikle <strong>{district}</strong> gibi değer artışının yüksek olduğu bölgelerde
-                                hak kaybı yaşamamak maddi açıdan büyük önem taşır. Ofisimiz Bayraklı Adliyesi'nde bulunmakla birlikte, {district} bölgesindeki taşınmazlarla ilgili
+                                Hukuki süreçlerde teknik detaylar davanın kaderini belirleyebilir. Özellikle <strong>{district}</strong> gibi dinamik bölgelerde
+                                hak kaybı yaşamamak büyük önem taşır. Ofisimiz Bayraklı Adliyesi yakınında bulunmakla birlikte, {district} bölgesindeki
                                 tüm davalarda aktif rol almaktadır.
                             </p>
 
@@ -177,7 +277,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 <div className="space-y-3">
                                     {districtData.relatedBlogSlugs.map((blog) => (
                                         <Link key={blog.slug} href={`/blog/${blog.slug}`} className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                            → {blog.title}
+                                            &rarr; {blog.title}
                                         </Link>
                                     ))}
                                 </div>
@@ -191,19 +291,19 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                                     <h4 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                         <Building2 className="w-5 h-5 text-secondary" />
-                                        Komşu İlçelerde Kira Avukatı
+                                        Komşu İlçelerde {config.label}
                                     </h4>
                                     <div className="flex flex-wrap gap-2">
                                         {districtData.neighborSlugs.map((nSlug) => {
-                                            const neighbor = allDistricts.find(d => d.slug === nSlug);
+                                            const neighbor = neighborDistricts.find(d => d.slug === nSlug);
                                             if (!neighbor) return null;
                                             return (
                                                 <Link
                                                     key={nSlug}
-                                                    href={`/${nSlug}-kira-avukati`}
+                                                    href={`/${nSlug}${suffix}`}
                                                     className="inline-flex items-center gap-1 text-sm bg-white px-4 py-2 rounded-lg border border-slate-200 text-slate-700 hover:border-secondary hover:text-primary transition-all font-medium"
                                                 >
-                                                    {neighbor.name} Kira Avukatı
+                                                    {neighbor.name} {config.label}
                                                     <ArrowRight className="w-3 h-3" />
                                                 </Link>
                                             );
@@ -222,7 +322,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                             <div className="bg-primary text-white p-8 rounded-2xl sticky top-24">
                                 <h3 className="text-2xl font-playfair font-bold mb-4">Ücretsiz Ön Görüşme</h3>
                                 <p className="text-slate-300 mb-6">
-                                    {district} bölgesindeki gayrimenkulünüzle ilgili hukuki sorununuzu dinleyelim, çözüm yolunu birlikte belirleyelim.
+                                    {district} bölgesindeki hukuki sorununuzu dinleyelim, çözüm yolunu birlikte belirleyelim.
                                 </p>
                                 <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold" asChild>
                                     <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">

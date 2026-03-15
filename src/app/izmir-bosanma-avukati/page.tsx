@@ -713,6 +713,40 @@ export default function IzmirBosanmaAvukatiPage() {
 
                     </div>
                 </div>
+
+                        {/* İlçe Bazlı Hizmet Sayfaları */}
+                        <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-4">İlçe Bazlı Boşanma Avukatı Hizmetlerimiz</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısında yer almakta olup, İzmir&apos;in tüm merkez ilçelerinde
+                                boşanma ve aile hukuku davalarını takip etmektedir.
+                            </p>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                {[
+                                    { name: "Bayraklı Boşanma Avukatı", url: "/bayrakli-bosanma-avukati" },
+                                    { name: "Karşıyaka Boşanma Avukatı", url: "/karsiyaka-bosanma-avukati" },
+                                    { name: "Bornova Boşanma Avukatı", url: "/bornova-bosanma-avukati" },
+                                    { name: "Konak Boşanma Avukatı", url: "/konak-bosanma-avukati" },
+                                    { name: "Buca Boşanma Avukatı", url: "/buca-bosanma-avukati" },
+                                    { name: "Çiğli Boşanma Avukatı", url: "/cigli-bosanma-avukati" },
+                                    { name: "Gaziemir Boşanma Avukatı", url: "/gaziemir-bosanma-avukati" },
+                                    { name: "Balçova Boşanma Avukatı", url: "/balcova-bosanma-avukati" },
+                                    { name: "Narlıdere Boşanma Avukatı", url: "/narlidere-bosanma-avukati" },
+                                    { name: "Karabağlar Boşanma Avukatı", url: "/karabaglar-bosanma-avukati" },
+                                    { name: "Güzelbahçe Boşanma Avukatı", url: "/guzelbahce-bosanma-avukati" },
+                                ].map((district) => (
+                                    <Link
+                                        key={district.url}
+                                        href={district.url}
+                                        className="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:text-secondary transition-all text-sm font-medium text-slate-700 border border-slate-200"
+                                    >
+                                        <ChevronRight className="w-4 h-4 text-secondary" />
+                                        {district.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
             </article>
         </main>
     );

@@ -591,6 +591,40 @@ export default function IzmirTazminatAvukatiPage() {
 
                     </div>
                 </div>
+
+                        {/* İlçe Bazlı Hizmet Sayfaları */}
+                        <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-4">İlçe Bazlı Tazminat Avukatı Hizmetlerimiz</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısında yer almakta olup, İzmir&apos;in tüm merkez ilçelerinde
+                                tazminat davalarını takip etmektedir.
+                            </p>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                {[
+                                    { name: "Bayraklı Tazminat Avukatı", url: "/bayrakli-tazminat-avukati" },
+                                    { name: "Karşıyaka Tazminat Avukatı", url: "/karsiyaka-tazminat-avukati" },
+                                    { name: "Bornova Tazminat Avukatı", url: "/bornova-tazminat-avukati" },
+                                    { name: "Konak Tazminat Avukatı", url: "/konak-tazminat-avukati" },
+                                    { name: "Buca Tazminat Avukatı", url: "/buca-tazminat-avukati" },
+                                    { name: "Çiğli Tazminat Avukatı", url: "/cigli-tazminat-avukati" },
+                                    { name: "Gaziemir Tazminat Avukatı", url: "/gaziemir-tazminat-avukati" },
+                                    { name: "Balçova Tazminat Avukatı", url: "/balcova-tazminat-avukati" },
+                                    { name: "Narlıdere Tazminat Avukatı", url: "/narlidere-tazminat-avukati" },
+                                    { name: "Karabağlar Tazminat Avukatı", url: "/karabaglar-tazminat-avukati" },
+                                    { name: "Güzelbahçe Tazminat Avukatı", url: "/guzelbahce-tazminat-avukati" },
+                                ].map((district) => (
+                                    <Link
+                                        key={district.url}
+                                        href={district.url}
+                                        className="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:text-secondary transition-all text-sm font-medium text-slate-700 border border-slate-200"
+                                    >
+                                        <ChevronRight className="w-4 h-4 text-secondary" />
+                                        {district.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
             </article>
         </main>
     );

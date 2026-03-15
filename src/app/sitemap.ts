@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog/utils';
-import { districts, getSlugFromDistrict } from '@/lib/districts';
+import { districts, getSlugFromDistrict, getAllServiceSlugs } from '@/lib/districts';
 import { glossaryTerms } from '@/lib/glossary';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -15,10 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    // District Landing Pages — fixed date reflecting last content update
-    const districtLastModified = new Date('2026-03-03');
-    const districtSitemap = districts.map((district) => ({
-        url: `${baseUrl}/${getSlugFromDistrict(district)}-kira-avukati/`,
+    // District Landing Pages (all services) — fixed date reflecting last content update
+    const districtLastModified = new Date('2026-03-16');
+    const districtSitemap = getAllServiceSlugs().map((slug) => ({
+        url: `${baseUrl}/${slug}/`,
         lastModified: districtLastModified,
         changeFrequency: 'monthly' as const,
         priority: 0.8,

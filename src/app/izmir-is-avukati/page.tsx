@@ -770,6 +770,40 @@ export default function IzmirIsAvukatiPage() {
 
                     </div>
                 </div>
+
+                        {/* İlçe Bazlı Hizmet Sayfaları */}
+                        <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-4">İlçe Bazlı İş Avukatı Hizmetlerimiz</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısında yer almakta olup, İzmir&apos;in tüm merkez ilçelerinde
+                                iş hukuku davalarını takip etmektedir.
+                            </p>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                {[
+                                    { name: "Bayraklı İş Avukatı", url: "/bayrakli-is-avukati" },
+                                    { name: "Karşıyaka İş Avukatı", url: "/karsiyaka-is-avukati" },
+                                    { name: "Bornova İş Avukatı", url: "/bornova-is-avukati" },
+                                    { name: "Konak İş Avukatı", url: "/konak-is-avukati" },
+                                    { name: "Buca İş Avukatı", url: "/buca-is-avukati" },
+                                    { name: "Çiğli İş Avukatı", url: "/cigli-is-avukati" },
+                                    { name: "Gaziemir İş Avukatı", url: "/gaziemir-is-avukati" },
+                                    { name: "Balçova İş Avukatı", url: "/balcova-is-avukati" },
+                                    { name: "Narlıdere İş Avukatı", url: "/narlidere-is-avukati" },
+                                    { name: "Karabağlar İş Avukatı", url: "/karabaglar-is-avukati" },
+                                    { name: "Güzelbahçe İş Avukatı", url: "/guzelbahce-is-avukati" },
+                                ].map((district) => (
+                                    <Link
+                                        key={district.url}
+                                        href={district.url}
+                                        className="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:text-secondary transition-all text-sm font-medium text-slate-700 border border-slate-200"
+                                    >
+                                        <ChevronRight className="w-4 h-4 text-secondary" />
+                                        {district.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
             </article>
         </main>
     );
