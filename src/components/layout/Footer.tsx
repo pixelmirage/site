@@ -47,7 +47,7 @@ export function Footer() {
                             <p>Mansuroğlu Mah. 286/3 Sk.</p>
                             <p>Dedemhan Plaza D:17, Bayraklı/İzmir</p>
                             <p className="pt-4 font-bold text-primary tracking-widest">0544 585 46 45</p>
-                            <p className="text-muted-foreground">info@mertkagancetin.com</p>
+                            <p className="text-muted-foreground">mertkagancetin@gmail.com</p>
                             <a href="https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-xs font-medium text-secondary hover:text-primary transition-colors">
                                 Google Maps'te Görüntüle &rarr;
                             </a>

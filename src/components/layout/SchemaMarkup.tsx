@@ -61,7 +61,7 @@ export function SchemaMarkup() {
                 "image": "https://mertkagancetin.com/attorney-photo.jpg",
                 "url": "https://mertkagancetin.com",
                 "telephone": "+905445854645",
-                "email": "info@mertkagancetin.com",
+                "email": "mertkagancetin@gmail.com",
                 "sameAs": [
                     "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
                     "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",

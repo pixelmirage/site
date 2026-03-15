@@ -13,7 +13,7 @@ function LegalServiceSchema() {
         "description": "İzmir'de boşanma davaları, anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında uzman avukatlık hizmeti.",
         "url": "https://mertkagancetin.com/izmir-bosanma-avukati/",
         "telephone": "+905445854645",
-        "email": "info@mertkagancetin.com",
+        "email": "mertkagancetin@gmail.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
@@ -572,7 +572,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                         <Mail className="w-6 h-6 text-secondary" />
                                         <div>
                                             <p className="text-sm text-slate-400">E-posta</p>
-                                            <a href="mailto:info@mertkagancetin.com" className="font-bold hover:text-secondary transition-colors">info@mertkagancetin.com</a>
+                                            <a href="mailto:mertkagancetin@gmail.com" className="font-bold hover:text-secondary transition-colors">mertkagancetin@gmail.com</a>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
