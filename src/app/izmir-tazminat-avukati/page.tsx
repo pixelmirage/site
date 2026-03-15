@@ -108,6 +108,22 @@ const faqs = [
     {
         question: "Malpraktis (doktor hatası) tazminatı alınabilir mi?",
         answer: "Evet, tıbbi müdahale sırasında yapılan hata sonucu zarara uğrayan hastalar, hekim ve/veya hastaneden maddi ve manevi tazminat talep edebilir. Bilirkişi raporu ile tıbbi hatanın varlığı ve nedensellik bağı tespit edilmelidir."
+    },
+    {
+        question: "Tazminat davalarına hangi avukat bakar?",
+        answer: "Tazminat davalarına borçlar hukuku ve haksız fiil alanında uzmanlaşmış avukatlar bakar. Tazminat davaları geniş bir alanı kapsar: Trafik kazası tazminatı, iş kazası tazminatı, malpraktis (doktor hatası), destekten yoksun kalma ve genel haksız fiil tazminatları. Her bir tazminat türü farklı uzmanlık gerektirir. Trafik kazası davalarında sigorta hukuku bilgisi, iş kazası davalarında iş hukuku bilgisi, malpraktis davalarında ise sağlık hukuku bilgisi önem taşır. Tazminat davaları asliye hukuk mahkemelerinde görülür. İzmir'de tazminat davalarında büromuz maddi ve manevi tazminat hesaplama, bilirkişi raporu değerlendirme ve sigorta şirketleriyle müzakere konularında uzman hukuki destek sunmaktadır."
+    },
+    {
+        question: "Avukatlar tazminat davasında yüzde kaç alır?",
+        answer: "Tazminat davalarında avukatlar genellikle iki farklı ücretlendirme yöntemi uygular: Maktu (sabit) ücret veya nispi (yüzdelik) ücret. Nispi ücret sisteminde avukat, kazanılan tazminat miktarının belirli bir yüzdesini alır. Bu oran genellikle %10 ile %25 arasında değişir ve Avukatlık Kanunu m. 164 uyarınca %25'i geçemez. Maktu ücret sisteminde ise dava başında belirlenen sabit bir tutar ödenir. Trafik kazası ve iş kazası gibi yüksek miktarlı tazminat davalarında nispi ücret tercih edilir; bu yöntemde müvekkil dava başında büyük bir ödeme yapmaz, avukat da sonuç odaklı çalışır. İzmir Barosu asgari ücret tarifesinin altında ücret belirlenemez."
+    },
+    {
+        question: "İzmir'de telefonla ücretsiz avukat danışma hattı var mı?",
+        answer: "İzmir'de ücretsiz hukuki danışma almak için birkaç kanal bulunmaktadır. İzmir Barosu Adli Yardım Merkezi'ne 0232 463 00 13 numarasından ulaşabilirsiniz. ALO 176 (UYAP Bilgi Hattı) üzerinden genel hukuki bilgilendirme alabilirsiniz. Ayrıca CİMER ve e-Devlet üzerinden de hukuki başvuru yapılabilir. Ancak bu kanallar genel bilgilendirme sağlar; tazminat hesaplama, kusur oranı tespiti ve dava stratejisi gibi detaylı hukuki analiz sunmaz. Tazminat davalarında doğru tazminat miktarını belirlemek ve zamanaşımı sürelerini kaçırmamak için alanında uzman bir tazminat avukatına danışmanız önerilir. Büromuzda tazminat hukuku alanında ilk ön görüşme ücretsizdir."
+    },
+    {
+        question: "Manevi tazminat davasında avukat ücretini kim öder?",
+        answer: "Manevi tazminat davasında avukatlık ücreti kural olarak davayı açan kişi (davacı) tarafından ödenir. Ancak dava kazanıldığında, mahkeme karşı tarafa (davalıya) vekalet ücreti yükler. Bu vekalet ücreti Avukatlık Asgari Ücret Tarifesi'ne göre belirlenir ve davacının kendi avukatına ödediği ücretten farklı olabilir. Davayı kaybeden taraf ise hem kendi avukatının ücretini hem de karşı tarafa hükmedilen vekalet ücretini öder. Adli yardım kapsamında dava açılmışsa avukat ücreti devlet tarafından karşılanır. Nispi ücret anlaşması yapılmışsa avukat ücreti tazminat miktarından tahsil edilir, yani müvekkil dava başında ödeme yapmayabilir."
     }
 ];
 
