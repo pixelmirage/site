@@ -597,7 +597,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
+                            <strong>İzmir boşanma avukatı yorumları</strong> incelendiğinde müvekkillerimizin memnuniyeti açıkça görülmektedir; bu bizim için en önemli
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                         </p>
 
