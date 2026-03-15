@@ -5,6 +5,7 @@ import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { AlertCircle, ChevronRight, Home, ArrowRight } from "lucide-react";
 import { PrintButton } from "@/components/tools/PrintButton";
+import { PdfDownloadButton } from "@/components/tools/PdfDownloadButton";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -85,7 +86,10 @@ export default function EvictionTemplatePage() {
                     <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
                         Yargıtay kararlarına uygun, geçerli ve güncel tahliye taahhütnamesi şablonunu ücretsiz olarak PDF formatında indirin veya yazdırın.
                     </p>
-                    <PrintButton />
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <PrintButton />
+                        <PdfDownloadButton />
+                    </div>
                 </div>
             </section>
 
