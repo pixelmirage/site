@@ -250,7 +250,8 @@ export default function IzmirIsAvukatiPage() {
 
                         <p>
                             İş hukuku, 4857 sayılı İş Kanunu, Borçlar Kanunu ve Sosyal Sigortalar mevzuatı çerçevesinde
-                            düzenlenen kapsamlı bir hukuk dalıdır. İzmir'de yaşanan işçi-işveren uyuşmazlıkları, ekonomik
+                            düzenlenen kapsamlı bir hukuk dalıdır. Bu alanda deneyimli bir <strong>iş mahkemesi avukatı</strong> ile
+                            çalışmak, süreçlerin doğru yönetilmesi açısından büyük önem taşır. İzmir'de yaşanan işçi-işveren uyuşmazlıkları, ekonomik
                             koşulların etkisiyle her geçen gün artmaktadır. <strong>İşten çıkarıldım ne yapmalıyım</strong>,
                             <strong> kıdem tazminatı nasıl hesaplanır</strong>, <strong>işe iade davası şartları</strong> nelerdir
                             gibi sorular büromuzda en sık yanıtladığımız konuların başında gelmektedir.
@@ -657,7 +658,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir iş avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
+                            İzmir'de <strong>en iyi iş hukuku avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
                             başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                         </p>
 
