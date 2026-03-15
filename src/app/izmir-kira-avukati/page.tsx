@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, Scale, FileText, Users, ArrowR
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { PersonSchema } from "@/components/seo/PersonSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 
@@ -136,6 +137,7 @@ export default function IzmirKiraAvukatiPage() {
         <main className="bg-white">
             {/* Schema Markup */}
             <LegalServiceSchema />
+            <PersonSchema knowsAbout={["Kira Hukuku", "Kiracı Tahliye Davaları", "Kira Tespit Davası", "Tahliye Taahhütnamesi", "Gayrimenkul Hukuku", "Kira Sözleşmesi Hazırlama"]} />
             <VideoSchema
                 name="İzmir'de Kira Avukatıyla Çalışmanın Önemi | Kısa Video"
                 description="Kira davası sürecinde en sık yapılan hatalar ve uzman kira avukatının farkı. İzmir'de kira uyuşmazlıklarında profesyonel destek."

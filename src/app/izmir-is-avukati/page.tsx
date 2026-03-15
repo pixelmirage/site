@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, Briefcase, FileText, Users, Ar
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { PersonSchema } from "@/components/seo/PersonSchema";
 
 function LegalServiceSchema() {
     const schema = {
@@ -133,6 +134,7 @@ export default function IzmirIsAvukatiPage() {
     return (
         <main className="bg-white">
             <LegalServiceSchema />
+            <PersonSchema knowsAbout={["İş Hukuku", "İşe İade Davası", "Kıdem Tazminatı", "İhbar Tazminatı", "Mobbing", "İş Kazası Tazminatı", "Fazla Mesai Alacağı"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
