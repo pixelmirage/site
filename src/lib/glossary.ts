@@ -254,6 +254,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
         relatedTermSlugs: ["kira-sozlesmesi", "kiraci-haklari", "kira-artis-orani"],
         relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
         relatedServiceAnchor: "#gayrimenkul",
+        youtubeVideoId: "oY99NMJ2oo0",
         faqs: [
             {
                 question: "Depozito en fazla kaç aylık kira bedeli olabilir?",
@@ -427,6 +428,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         relatedTermSlugs: ["kira-sozlesmesi", "depozito", "kira-artis-orani", "10-yillik-uzama-suresi"],
         relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir"],
         relatedServiceAnchor: "#kira",
+        youtubeVideoId: "UJ35T2zOXH0",
         faqs: [
             {
                 question: "Kiracı hangi durumlarda tahliye edilemez?",
