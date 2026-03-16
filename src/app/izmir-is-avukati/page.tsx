@@ -711,6 +711,16 @@ export default function IzmirIsAvukatiPage() {
                             </Link>
                         </div>
 
+                        {/* Hesaplama Araçları */}
+                        <div className="not-prose bg-primary/5 border border-primary/10 rounded-xl p-6 my-8">
+                            <p className="font-bold text-primary text-xl mb-4">Hesaplama Araçları</p>
+                            <div className="space-y-3">
+                                <Link href="/kidem-tazminati-hesaplama" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Kıdem Tazminatı Hesaplama (2026 Güncel Tavan)
+                                </Link>
+                            </div>
+                        </div>
+
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
