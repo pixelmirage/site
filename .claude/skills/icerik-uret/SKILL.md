@@ -252,6 +252,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/isten-cikarildiginda-ne-yapmali/` → anchor: "işten çıkarılınca ne yapmalı"
 - `/blog/kidem-tazminati-nasil-hesaplanir/` → anchor: "kıdem tazminatı hesaplama"
 - `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
+- `/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci/` → anchor: "işe iade davası şartları"
 
 **Sözlük Terimleri:**
 - `/sozluk/kidem-tazminati/` → "kıdem tazminatı"
@@ -259,6 +260,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/sozluk/ise-iade-davasi/` → "işe iade davası"
 - `/sozluk/mobbing/` → "mobbing"
 - `/sozluk/hakli-fesih/` → "haklı fesih"
+- `/sozluk/is-guvencesi/` → "iş güvencesi"
 
 **Yazılabilecek Konular:**
 1. İşe İade Davası Şartları ve Arabuluculuk Süreci 2026
@@ -285,6 +287,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/anlasmali-bosanma-nasil-acilir/` → anchor: "anlaşmalı boşanma rehberi"
 - `/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/` → anchor: "velayet davası süreci"
 - `/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/` → anchor: "nafaka hesaplama"
+- `/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/` → anchor: "çekişmeli boşanma davası"
 
 **Sözlük Terimleri:**
 - `/sozluk/anlasmali-bosanma/` → "anlaşmalı boşanma"
@@ -292,6 +295,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/sozluk/velayet/` → "velayet"
 - `/sozluk/nafaka/` → "nafaka"
 - `/sozluk/mal-paylasimi/` → "mal paylaşımı"
+- `/sozluk/evlilik-birliginin-temelden-sarsilmasi/` → "evlilik birliğinin temelden sarsılması"
 
 **Yazılabilecek Konular:**
 1. Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti
@@ -319,6 +323,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/maddi-ve-manevi-tazminat-davasi-farklari/` → anchor: "maddi ve manevi tazminat farkları"
 - `/blog/malpraktis-davasi-doktor-hatasi-tazminati/` → anchor: "malpraktis davası"
 - `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
+- `/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/` → anchor: "destekten yoksun kalma tazminatı"
 
 **Sözlük Terimleri:**
 - `/sozluk/maddi-tazminat/` → "maddi tazminat"
@@ -326,6 +331,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/sozluk/malpraktis/` → "malpraktis"
 - `/sozluk/destekten-yoksun-kalma/` → "destekten yoksun kalma"
 - `/sozluk/haksiz-fiil/` → "haksız fiil"
+- `/sozluk/ecrimisil/` → "ecrimisil"
 
 **Yazılabilecek Konular:**
 1. Destekten Yoksun Kalma Tazminatı: Hesaplama ve Dava Süreci
@@ -405,6 +411,9 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 - [ ] Disclaimer var mı?
 - [ ] Dosya `src/content/blog/{slug}.mdx` olarak kaydedildi mi?
 - [ ] Trailing slash'lar doğru mu? (URL sonlarında `/`)
+- [ ] **SÖZLÜK:** Yazıda geçen kavramlar için yeni sözlük terimi gerekiyor mu?
+- [ ] **SÖZLÜK:** Mevcut ilgili terimlerin `relatedBlogSlugs`'ına yeni yazı eklendi mi?
+- [ ] **SÖZLÜK:** Yeni terim eklendiyse SKILL.md "Sözlük Terimleri" bölümü güncellendi mi?
 
 ---
 
@@ -415,3 +424,7 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 3. **İçerik üretirken mevcut dosyaları MUTLAKA oku** — tekrar eden içerik üretme.
 4. **Her zaman Türkçe yaz.** İngilizce terim kullanma (zorunlu hukuki terimler hariç: mobbing, malpraktis vb.)
 5. **Unsplash görselleri için:** `?q=80&w=1200&auto=format&fit=crop` parametrelerini kullan.
+6. **ZORUNLU — Her blog yazısı üretildikten sonra sözlük güncellemesi yap:**
+   - Yazıda link verilen mevcut sözlük terimlerinin `relatedBlogSlugs` alanına yeni blog slug'ını ekle.
+   - Yazıda sıkça geçen ama sözlükte bulunmayan kavramlar varsa yeni terim oluştur.
+   - Bu adım atlanMAZ; blog + sözlük birlikte üretilir.
