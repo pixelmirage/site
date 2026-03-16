@@ -744,6 +744,37 @@ export default function IzmirKiraAvukatiPage() {
                             </div>
                         </div>
 
+                        {/* İlgili Makaleler */}
+                        <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
+                            <p className="font-bold text-primary text-xl mb-4">Kira Hukuku Makaleleri</p>
+                            <div className="space-y-3">
+                                <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Ev Sahibi Hangi Durumlarda Kiracıyı Hemen Çıkarabilir?
+                                </Link>
+                                <Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Hangi Durumlarda Kira Tespit Davası Açılabilir?
+                                </Link>
+                                <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?
+                                </Link>
+                                <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Kiracının Tahliyesi İçin İki Haklı İhtar Nedir?
+                                </Link>
+                                <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Kira Hukukunda Zorunlu Arabuluculuk Süreci
+                                </Link>
+                                <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gereken Hususlar
+                                </Link>
+                                <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İzmir Gayrimenkul Piyasasında Güncel Hukuki Gelişmeler
+                                </Link>
+                            </div>
+                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                Tüm Makaleler <ArrowRight className="w-3 h-3" />
+                            </Link>
+                        </div>
+
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 

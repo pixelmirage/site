@@ -645,6 +645,9 @@ export default function IzmirBosanmaAvukatiPage() {
                                 <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Nafaka Hesaplama: Yoksulluk ve İştirak Nafakası
                                 </Link>
+                                <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti
+                                </Link>
                             </div>
                             <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />

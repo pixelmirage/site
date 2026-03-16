@@ -414,6 +414,9 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 - [ ] **SÖZLÜK:** Yazıda geçen kavramlar için yeni sözlük terimi gerekiyor mu?
 - [ ] **SÖZLÜK:** Mevcut ilgili terimlerin `relatedBlogSlugs`'ına yeni yazı eklendi mi?
 - [ ] **SÖZLÜK:** Yeni terim eklendiyse SKILL.md "Sözlük Terimleri" bölümü güncellendi mi?
+- [ ] **PILLAR SAYFA:** Yeni yazı, ilgili pillar sayfanın "İlgili Makaleler" bölümüne eklendi mi?
+- [ ] **PILLAR SAYFA:** Pillar sayfada "İlgili Makaleler" bölümü yoksa oluşturuldu mu?
+- [ ] **SKILL.md:** "Mevcut Blog Yazıları" bölümüne yeni yazı eklendi mi?
 
 ---
 
@@ -428,3 +431,8 @@ Diğer hukuk alanlarına cross-link verirken kullan:
    - Yazıda link verilen mevcut sözlük terimlerinin `relatedBlogSlugs` alanına yeni blog slug'ını ekle.
    - Yazıda sıkça geçen ama sözlükte bulunmayan kavramlar varsa yeni terim oluştur.
    - Bu adım atlanMAZ; blog + sözlük birlikte üretilir.
+7. **ZORUNLU — Her blog yazısı üretildikten sonra pillar sayfa güncellemesi yap:**
+   - İlgili cluster'ın pillar sayfasındaki "İlgili Makaleler" bölümüne yeni yazının linkini ekle.
+   - Pillar sayfada "İlgili Makaleler" bölümü yoksa SSS bölümünden önce oluştur.
+   - Pillar sayfa dosyaları: `src/app/izmir-kira-avukati/page.tsx`, `src/app/izmir-is-avukati/page.tsx`, `src/app/izmir-bosanma-avukati/page.tsx`, `src/app/izmir-tazminat-avukati/page.tsx`
+   - Bu adım atlanMAZ; blog + sözlük + pillar sayfa tek bir iş olarak ele alınır.

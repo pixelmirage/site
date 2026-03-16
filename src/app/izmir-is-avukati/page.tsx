@@ -702,6 +702,9 @@ export default function IzmirIsAvukatiPage() {
                                 <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İş Kazası Tazminatı Süreci ve Haklarınız
                                 </Link>
+                                <Link href="/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İşe İade Davası Şartları ve Arabuluculuk Süreci 2026
+                                </Link>
                             </div>
                             <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />

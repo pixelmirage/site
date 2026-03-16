@@ -525,6 +525,12 @@ export default function IzmirTazminatAvukatiPage() {
                                 <Link href="/blog/malpraktis-davasi-doktor-hatasi-tazminati" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Malpraktis Davası: Doktor Hatası Tazminatı
                                 </Link>
+                                <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İş Kazası Tazminatı Süreci ve Haklarınız
+                                </Link>
+                                <Link href="/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Destekten Yoksun Kalma Tazminatı: Hesaplama ve Dava Süreci
+                                </Link>
                             </div>
                             <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
