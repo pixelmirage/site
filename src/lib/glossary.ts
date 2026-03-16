@@ -44,7 +44,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
         legalBasis: "TBK m. 352/1",
         category: "tahliye",
         relatedTermSlugs: ["kira-sozlesmesi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "0I5No4QamYA",
         faqs: [
@@ -79,7 +79,7 @@ Dava, yeni kira döneminin başlangıcından en az otuz gün önce açılmalı v
         legalBasis: "TBK m. 344",
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-artis-orani", "kira-uyarlama-davasi", "kira-sozlesmesi"],
-        relatedBlogSlugs: [],
+        relatedBlogSlugs: ["hangi-durumlarda-kira-tespit-davasi-acilabilir"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "7mChnFfudwY",
         faqs: [
@@ -114,7 +114,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
         legalBasis: "TBK m. 350",
         category: "tahliye",
         relatedTermSlugs: ["tahliye-taahhutnamesi", "10-yillik-uzama-suresi", "kiraci-haklari"],
-        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir"],
+        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "KrgeQm3tm_Q",
         faqs: [
@@ -218,7 +218,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
         legalBasis: "TBK m. 299-378",
         category: "sozlesme",
         relatedTermSlugs: ["depozito", "kira-artis-orani", "tahliye-taahhutnamesi"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
+        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir"],
         relatedServiceAnchor: "#gayrimenkul",
         faqs: [
             {
@@ -252,7 +252,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
         legalBasis: "TBK m. 342",
         category: "sozlesme",
         relatedTermSlugs: ["kira-sozlesmesi", "kiraci-haklari", "kira-artis-orani"],
-        relatedBlogSlugs: [],
+        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
         relatedServiceAnchor: "#gayrimenkul",
         faqs: [
             {
@@ -286,7 +286,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
         legalBasis: "TBK m. 344",
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-tespit-davasi", "kira-uyarlama-davasi", "kira-sozlesmesi"],
-        relatedBlogSlugs: [],
+        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "hangi-durumlarda-kira-tespit-davasi-acilabilir"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "1ylsHk_vUH4",
         faqs: [
@@ -425,7 +425,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         legalBasis: "TBK m. 339-356",
         category: "haklar",
         relatedTermSlugs: ["kira-sozlesmesi", "depozito", "kira-artis-orani", "10-yillik-uzama-suresi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir"],
         relatedServiceAnchor: "#kira",
         faqs: [
             {
@@ -463,7 +463,7 @@ Hesaplamada giydirilmiş brüt ücret esas alınır. Yemek, yol, düzenli prim g
         legalBasis: "1475 sayılı İK m. 14",
         category: "is-hukuku",
         relatedTermSlugs: ["ihbar-tazminati", "hakli-fesih", "ise-iade-davasi"],
-        relatedBlogSlugs: ["kidem-tazminati-nasil-hesaplanir", "isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci"],
+        relatedBlogSlugs: ["kidem-tazminati-nasil-hesaplanir", "isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -497,7 +497,7 @@ Kıdem tazminatından farklı olarak ihbar tazminatı gelir vergisine tabidir. A
         legalBasis: "İK m. 17",
         category: "is-hukuku",
         relatedTermSlugs: ["kidem-tazminati", "hakli-fesih", "ise-iade-davasi"],
-        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "kidem-tazminati-nasil-hesaplanir"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -565,7 +565,7 @@ Mobbingin ispatında e-posta yazışmaları, mesajlar, tanık beyanları, psikol
         legalBasis: "TBK m. 417, İK m. 24/II-b",
         category: "is-hukuku",
         relatedTermSlugs: ["hakli-fesih", "kidem-tazminati", "ise-iade-davasi"],
-        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "kidem-tazminati-nasil-hesaplanir"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -599,7 +599,7 @@ Mobbingin ispatında e-posta yazışmaları, mesajlar, tanık beyanları, psikol
         legalBasis: "İK m. 24-25",
         category: "is-hukuku",
         relatedTermSlugs: ["kidem-tazminati", "ihbar-tazminati", "mobbing", "ise-iade-davasi"],
-        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "kidem-tazminati-nasil-hesaplanir", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "kidem-tazminati-nasil-hesaplanir", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -637,7 +637,7 @@ Mahkeme, protokolü hakkaniyete uygun bulursa ve tarafların özgür iradeleriyl
         legalBasis: "TMK m. 166/3",
         category: "bosanma",
         relatedTermSlugs: ["cekismeli-bosanma", "velayet", "nafaka", "mal-paylasimi"],
-        relatedBlogSlugs: ["anlasmali-bosanma-nasil-acilir"],
+        relatedBlogSlugs: ["anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -705,7 +705,7 @@ Velayeti almayan ebeveynin kişisel ilişki kurma hakkı vardır. Bu hak, çocuk
         legalBasis: "TMK m. 335-351",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
-        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -741,7 +741,7 @@ Nafaka ödenmezse icra takibi yapılabilir ve 3 aya kadar tazyik hapsi kararı v
         legalBasis: "TMK m. 169, 175, 182",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "velayet", "mal-paylasimi"],
-        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti"],
+        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -813,7 +813,7 @@ Maddi tazminat talebi için hukuka aykırı fiil, kusur (veya kusursuz sorumlulu
         legalBasis: "TBK m. 49-52",
         category: "tazminat",
         relatedTermSlugs: ["manevi-tazminat", "haksiz-fiil", "destekten-yoksun-kalma"],
-        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "malpraktis-davasi-doktor-hatasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
@@ -847,7 +847,7 @@ Manevi tazminat zenginleşme aracı olmamalı ancak caydırıcı nitelikte olmal
         legalBasis: "TBK m. 56-58",
         category: "tazminat",
         relatedTermSlugs: ["maddi-tazminat", "haksiz-fiil", "malpraktis"],
-        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "malpraktis-davasi-doktor-hatasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
@@ -881,7 +881,7 @@ Zamanaşımı: Özel hastanelerde 5/10 yıl, kamu hastanelerinde 1/5 yıl. Kamu 
         legalBasis: "TBK m. 49, 116",
         category: "tazminat",
         relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "haksiz-fiil"],
-        relatedBlogSlugs: ["malpraktis-davasi-doktor-hatasi-tazminati"],
+        relatedBlogSlugs: ["malpraktis-davasi-doktor-hatasi-tazminati", "maddi-ve-manevi-tazminat-davasi-farklari"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
@@ -917,7 +917,7 @@ Trafik kazası, iş kazası ve tıbbi malpraktis sonucu ölüm hallerinde en sı
         legalBasis: "TBK m. 53/3",
         category: "tazminat",
         relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "haksiz-fiil"],
-        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci"],
+        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "maddi-ve-manevi-tazminat-davasi-farklari", "malpraktis-davasi-doktor-hatasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
@@ -951,7 +951,7 @@ Zamanaşımı: Zararın ve failin öğrenildiği tarihten itibaren 2 yıl, her h
         legalBasis: "TBK m. 49-76",
         category: "tazminat",
         relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "destekten-yoksun-kalma", "malpraktis"],
-        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "malpraktis-davasi-doktor-hatasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
