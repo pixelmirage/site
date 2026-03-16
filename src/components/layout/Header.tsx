@@ -27,6 +27,7 @@ const serviceLinks = [
 const toolLinks = [
     { name: "Kira Artış Hesaplama", href: "/kira-artis-orani-hesaplama", desc: "TÜFE bazlı kira artış oranı hesaplayıcı" },
     { name: "Tahliye Taahhütnamesi", href: "/tahliye-taahhutnamesi", desc: "Online tahliye taahhütnamesi oluşturucu" },
+    { name: "Kıdem Tazminatı Hesaplama", href: "/kidem-tazminati-hesaplama", desc: "Güncel tavan ile net kıdem tazminatı hesaplayıcı" },
     { name: "Hukuk Sözlüğü", href: "/sozluk", desc: "Hukuki terimlerin açıklamaları" },
 ];
 
