@@ -249,7 +249,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         {/* Definition Block - AI SEO Optimized */}
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir kira avukatı</strong>, kira sözleşmelerinden doğan uyuşmazlıklarda kiracı veya ev sahibini hukuki süreçlerde temsil eden, tahliye davaları, kira tespit davaları ve kira alacağı takibinde uzmanlaşmış avukattır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı olarak Bayraklı merkezli ofisinden İzmir genelinde kira hukuku hizmeti vermektedir.
+                            <strong>İzmir kira avukatı</strong>, kira sözleşmelerinden doğan uyuşmazlıklarda kiracı veya ev sahibini hukuki süreçlerde temsil eden, tahliye davaları, kira tespit davaları ve kira alacağı takibinde uzmanlaşmış avukattır. <strong>Kira hukuku avukatı İzmir</strong> arayanlar için Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı olarak Bayraklı merkezli ofisinden İzmir genelinde kira hukuku hizmeti vermektedir.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -266,7 +266,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             Kira hukuku, Türk Borçlar Kanunu ve İcra İflas Kanunu çerçevesinde düzenlenen karmaşık bir hukuk dalıdır.
-                            Deneyimli bir <strong>kira hukuku avukatı</strong> ile çalışmak, bu süreçlerde hak kaybını önlemenin en etkili yoludur.
+                            Deneyimli bir <strong>kira hukuku avukatı</strong> ile çalışmak, ev sahibi kiracı anlaşmazlıklarında hak kaybını önlemenin en etkili yoludur.
                             İzmir ve çevresinde yaşanan kira uyuşmazlıkları, son yıllarda ekonomik koşulların etkisiyle önemli ölçüde
                             artmıştır. <strong>Kiracı nasıl çıkarılır</strong>, <strong>kira tespit davası ne zaman açılır</strong>,
                             <strong> kiracının hakları</strong> nelerdir gibi sorular her gün büromuzda yanıtladığımız konuların
@@ -341,7 +341,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            Bu durumlardan herhangi birini yaşıyorsanız, zamanaşımı sürelerini kaçırmadan bir <strong>İzmir kira avukatı</strong> ile
+                            Bu durumlardan herhangi birini yaşıyorsanız, zamanaşımı sürelerini kaçırmadan bir <strong>kira hukuku avukatı İzmir</strong>'de
                             görüşmenizi tavsiye ederiz. Kira uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
                             de dahil olmak üzere tüm aşamalarda yanınızdayız.
                         </p>
@@ -599,7 +599,7 @@ export default function IzmirKiraAvukatiPage() {
                         </ul>
 
                         <p>
-                            <strong>Kiracının hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür.
+                            <strong>Kiracının hakları</strong> ihlal edildiğinde deneyimli bir <strong>kira hukuku avukatı</strong> aracılığıyla hukuki yollara başvurmak mümkündür.
                             <strong> İzmir kira avukatı</strong> olarak hem kiracı hem de kiraya veren tarafında, müvekkillerimizin
                             yasal haklarını en etkin şekilde koruyoruz. Kiracı hakları hakkında detaylı bilgi için <Link href="/sozluk/kiraci-haklari" className="text-secondary font-bold">kiracı hakları sözlük sayfamızı</Link> inceleyebilirsiniz.
                         </p>
@@ -635,7 +635,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             Özellikle <Link href="/sozluk/kira-tespit-davasi" className="text-secondary font-bold">kira tespit davası</Link>, <Link href="/sozluk/ihtiyac-nedeniyle-tahliye" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye</Link> ve <Link href="/sozluk/iki-hakli-ihtar" className="text-secondary font-bold">iki haklı ihtar</Link> gibi teknik
-                            davalarda avukat desteği almak, davanın lehine sonuçlanma olasılığını önemli ölçüde artırır.
+                            davalarda <strong>kira hukuku avukatı</strong> desteği almak, davanın lehine sonuçlanma olasılığını önemli ölçüde artırır.
                             <strong> İzmir kira avukatı</strong> olarak ilk görüşmede davanızın güçlü ve zayıf yönlerini analiz ederek
                             size en uygun stratejiyi sunuyoruz.
                         </p>
@@ -689,7 +689,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
+                            Yukarıdaki ücretler ortalama değerlerdir. <strong>Ev sahibi kiracı anlaşmazlıklarında avukat ücreti</strong> konusunda kesin tutar, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong>İzmir kira avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
 
@@ -713,7 +713,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             <strong>En iyi kira hukuku avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
-                            başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
+                            başarı kriteridir. <strong>Kira hukuku avukatı İzmir</strong> olarak her davada sonuç odaklı çalışıyoruz. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
                             İzmir gayrimenkul piyasasındaki güncel hukuki gelişmeleri takip etmek için <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="text-secondary font-bold">güncel gelişmeler makalemizi</Link> okuyabilirsiniz.
                         </p>
 
@@ -792,8 +792,8 @@ export default function IzmirKiraAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir Kira Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kira davalarınız için ücretsiz ön görüşme randevusu alın.
-                                    <strong className="text-white"> İzmir kira avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
+                                    Kira davalarınız için ücretsiz ön görüşme randevusu alın. <strong className="text-white">En iyi kira hukuku avukatı</strong> desteğiyle
+                                    haklarınızı koruyun. <strong className="text-white">İzmir kira avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
                                 </p>
 
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
