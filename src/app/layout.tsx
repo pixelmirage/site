@@ -7,8 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 import { SchemaMarkup } from "@/components/layout/SchemaMarkup";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--font-playfair" });
+const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter", display: "swap" });
+const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),

@@ -66,7 +66,7 @@ export function Header() {
                             <NavigationMenuList className="gap-1">
                                 {/* Hizmetler Dropdown */}
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/70 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
+                                    <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/80 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
                                         Hizmetler
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
@@ -93,7 +93,7 @@ export function Header() {
 
                                 {/* Araçlar Dropdown */}
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/70 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
+                                    <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/80 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
                                         Araçlar
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
@@ -126,7 +126,7 @@ export function Header() {
                                             "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
                                             pathname === "/blog" || pathname.startsWith("/blog/")
                                                 ? "text-primary"
-                                                : "text-primary/70"
+                                                : "text-primary/80"
                                         )}
                                     >
                                         Makaleler
@@ -138,7 +138,7 @@ export function Header() {
                                         href="/hakkimda"
                                         className={cn(
                                             "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
-                                            pathname === "/hakkimda" ? "text-primary" : "text-primary/70"
+                                            pathname === "/hakkimda" ? "text-primary" : "text-primary/80"
                                         )}
                                     >
                                         Hakkımda

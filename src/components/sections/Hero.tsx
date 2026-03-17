@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Landmark, Home, Briefcase, Heart, ShieldCheck, Phone } from "lucide-react";
@@ -22,16 +19,13 @@ export function Hero() {
             <div className="container max-w-5xl mx-auto px-4 relative z-10">
                 <div className="flex flex-col items-center text-center space-y-10">
 
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
-                        className="flex items-center gap-4 text-secondary mb-2"
+                    <div
+                        className="flex items-center gap-4 text-secondary mb-2 animate-scale-in"
                     >
                         <div className="h-[1px] w-12 bg-secondary/50" />
                         <Landmark className="w-6 h-6" />
                         <div className="h-[1px] w-12 bg-secondary/50" />
-                    </motion.div>
+                    </div>
 
                     <div className="space-y-6">
                         <h1 className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight">
@@ -40,25 +34,21 @@ export function Hero() {
                             <span className="text-secondary italic">Avukatlık</span> Hizmeti
                         </h1>
 
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 0.3 }}
-                            className="max-w-2xl mx-auto"
+                        <div
+                            className="max-w-2xl mx-auto animate-fade-in"
+                            style={{ animationDelay: '0.3s' }}
                         >
                             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
                                 Kira, iş, boşanma ve tazminat hukuku alanlarında yılların deneyimiyle
                                 haklarınızı en üst düzeyde savunuyoruz.
                             </p>
-                        </motion.div>
+                        </div>
                     </div>
 
                     {/* Practice Area Badges */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 15 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                        className="flex flex-wrap items-center justify-center gap-3"
+                    <div
+                        className="flex flex-wrap items-center justify-center gap-3 animate-fade-in-up"
+                        style={{ animationDelay: '0.4s' }}
                     >
                         {practiceAreas.map((area) => (
                             <Link
@@ -72,14 +62,12 @@ export function Hero() {
                                 </span>
                             </Link>
                         ))}
-                    </motion.div>
+                    </div>
 
                     {/* CTA Buttons */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex flex-col sm:flex-row items-center gap-6 pt-4"
+                    <div
+                        className="flex flex-col sm:flex-row items-center gap-6 pt-4 animate-fade-in-up"
+                        style={{ animationDelay: '0.6s' }}
                     >
                         <Button
                             size="lg"
@@ -95,21 +83,19 @@ export function Hero() {
                             <Phone className="w-5 h-5 text-secondary" />
                             0544 585 46 45
                         </Link>
-                    </motion.div>
+                    </div>
 
                     {/* Trust Bar */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.9 }}
-                        className="flex flex-wrap items-center justify-center gap-6 pt-6 text-xs uppercase tracking-[0.2em] text-muted-foreground/70"
+                    <div
+                        className="flex flex-wrap items-center justify-center gap-6 pt-6 text-xs uppercase tracking-[0.2em] text-muted-foreground animate-fade-in"
+                        style={{ animationDelay: '0.9s' }}
                     >
                         <span>İzmir Barosu</span>
                         <span className="w-1 h-1 rounded-full bg-secondary/50" />
                         <span>4 Hizmet Alanı</span>
                         <span className="w-1 h-1 rounded-full bg-secondary/50" />
                         <span>500+ Dava Deneyimi</span>
-                    </motion.div>
+                    </div>
 
                 </div>
             </div>

@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Home, Briefcase, Heart, ShieldCheck, MoveRight } from "lucide-react";
 import Link from "next/link";
 
@@ -69,13 +66,10 @@ export function ServicesGrid() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {areas.map((area, index) => (
-                        <motion.div
+                        <div
                             key={area.title}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group bg-white border border-border/50 hover:border-primary/20 p-10 md:p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(15,23,42,0.05)]"
+                            className="group bg-white border border-border/50 hover:border-primary/20 p-10 md:p-12 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(15,23,42,0.05)] animate-fade-in-up"
+                            style={{ animationDelay: `${index * 0.1}s` }}
                         >
                             <div className="flex items-start gap-6">
                                 <div className="w-14 h-14 bg-primary/5 flex items-center justify-center border border-primary/10 group-hover:bg-primary transition-colors duration-300 flex-shrink-0">
@@ -99,7 +93,7 @@ export function ServicesGrid() {
                                     </Link>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>
