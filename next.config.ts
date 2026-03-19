@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    inlineCss: true,
+  },
   trailingSlash: true,
   images: {
     formats: ['image/avif', 'image/webp'],

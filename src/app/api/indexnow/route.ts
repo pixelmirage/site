@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getAllPosts } from '@/lib/blog/utils';
+import { getAllServiceSlugs } from '@/lib/districts';
+import { glossaryTerms } from '@/lib/glossary';
 
 const INDEXNOW_KEY = '8bb539d0a5f7442b92ff3b3b983189d3';
 const HOST = 'mertkagancetin.com';
@@ -36,75 +39,48 @@ export async function POST(request: NextRequest) {
     });
 }
 
-// GET: Submit all important pages at once (one-time manual trigger)
+// GET: Submit all pages dynamically (mirrors sitemap.ts sources)
 export async function GET(request: NextRequest) {
     const authHeader = request.headers.get('authorization');
     if (authHeader !== `Bearer ${process.env.INDEXNOW_SECRET}`) {
         return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const allUrls = [
-        `https://${HOST}/`,
-        `https://${HOST}/izmir-kira-avukati/`,
-        `https://${HOST}/hizmetler/`,
-        `https://${HOST}/hakkimda/`,
-        `https://${HOST}/blog/`,
-        `https://${HOST}/iletisim/`,
-        `https://${HOST}/kira-artis-orani-hesaplama/`,
-        `https://${HOST}/tahliye-taahhutnamesi/`,
-        `https://${HOST}/bayrakli-kira-avukati/`,
-        `https://${HOST}/karsiyaka-kira-avukati/`,
-        `https://${HOST}/bornova-kira-avukati/`,
-        `https://${HOST}/konak-kira-avukati/`,
-        `https://${HOST}/buca-kira-avukati/`,
-        `https://${HOST}/cigli-kira-avukati/`,
-        `https://${HOST}/gaziemir-kira-avukati/`,
-        `https://${HOST}/balcova-kira-avukati/`,
-        `https://${HOST}/narlidere-kira-avukati/`,
-        `https://${HOST}/karabaglar-kira-avukati/`,
-        `https://${HOST}/guzelbahce-kira-avukati/`,
-        `https://${HOST}/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/`,
-        `https://${HOST}/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/`,
-        `https://${HOST}/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/`,
-        `https://${HOST}/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/`,
-        `https://${HOST}/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/`,
-        `https://${HOST}/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/`,
-        `https://${HOST}/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/`,
-        // İş Hukuku
-        `https://${HOST}/izmir-is-avukati/`,
-        `https://${HOST}/blog/isten-cikarildiginda-ne-yapmali/`,
-        `https://${HOST}/blog/kidem-tazminati-nasil-hesaplanir/`,
-        `https://${HOST}/blog/is-kazasi-tazminati-sureci-ve-haklariniz/`,
-        // Boşanma Hukuku
-        `https://${HOST}/izmir-bosanma-avukati/`,
-        `https://${HOST}/blog/anlasmali-bosanma-nasil-acilir/`,
-        `https://${HOST}/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/`,
-        `https://${HOST}/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/`,
-        // Tazminat Hukuku
-        `https://${HOST}/izmir-tazminat-avukati/`,
-        `https://${HOST}/blog/trafik-kazasi-tazminati-alma-sureci/`,
-        `https://${HOST}/blog/maddi-ve-manevi-tazminat-davasi-farklari/`,
-        `https://${HOST}/blog/malpraktis-davasi-doktor-hatasi-tazminati/`,
-        // Glossary
-        `https://${HOST}/sozluk/`,
-        `https://${HOST}/sozluk/tahliye-taahhutnamesi/`,
-        `https://${HOST}/sozluk/kira-tespit-davasi/`,
-        `https://${HOST}/sozluk/ihtiyac-nedeniyle-tahliye/`,
-        `https://${HOST}/sozluk/zorunlu-arabuluculuk/`,
-        `https://${HOST}/sozluk/iki-hakli-ihtar/`,
-        `https://${HOST}/sozluk/kira-sozlesmesi/`,
-        `https://${HOST}/sozluk/depozito/`,
-        `https://${HOST}/sozluk/kira-artis-orani/`,
-        `https://${HOST}/sozluk/kira-uyarlama-davasi/`,
-        `https://${HOST}/sozluk/fuzuli-isgal/`,
-        `https://${HOST}/sozluk/10-yillik-uzama-suresi/`,
-        `https://${HOST}/sozluk/kiraci-haklari/`,
+    const base = `https://${HOST}`;
+
+    // Static pages
+    const staticUrls = [
+        `${base}/`,
+        `${base}/izmir-kira-avukati/`,
+        `${base}/izmir-is-avukati/`,
+        `${base}/izmir-bosanma-avukati/`,
+        `${base}/izmir-tazminat-avukati/`,
+        `${base}/hakkimda/`,
+        `${base}/hizmetler/`,
+        `${base}/blog/`,
+        `${base}/iletisim/`,
+        `${base}/kira-artis-orani-hesaplama/`,
+        `${base}/tahliye-taahhutnamesi/`,
+        `${base}/kidem-tazminati-hesaplama/`,
+        `${base}/sozluk/`,
     ];
+
+    // District pages
+    const districtUrls = getAllServiceSlugs().map((slug) => `${base}/${slug}/`);
+
+    // Blog posts
+    const posts = getAllPosts();
+    const blogUrls = posts.map((post) => `${base}/blog/${post.slug}/`);
+
+    // Glossary terms
+    const glossaryUrls = glossaryTerms.map((term) => `${base}/sozluk/${term.slug}/`);
+
+    const allUrls = [...staticUrls, ...districtUrls, ...blogUrls, ...glossaryUrls];
 
     const payload = {
         host: HOST,
         key: INDEXNOW_KEY,
-        keyLocation: `https://${HOST}/${INDEXNOW_KEY}.txt`,
+        keyLocation: `${base}/${INDEXNOW_KEY}.txt`,
         urlList: allUrls,
     };
 

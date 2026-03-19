@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:unsplash.com)",
+      "WebSearch",
+      "Bash(npx next build:*)",
+      "WebFetch(domain:www.pwc.com.tr)",
+      "Bash(ls:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File indexnow-submit.ps1:*)",
+      "Bash(claude mcp add dataforseo -s user -- npx -y @anthropic/remote-mcp-server https://router.mcp.dataforseo.com/sse --header \"Authorization: Basic PLACEHOLDER\")",
+      "WebFetch(domain:www.issuewire.com)",
+      "WebFetch(domain:mervekolman.av.tr)",
+      "WebFetch(domain:mertkagancetin.com)",
+      "WebFetch(domain:www.similarsites.com)",
+      "WebFetch(domain:ahrefs.com)",
+      "WebFetch(domain:www.seobility.net)",
+      "WebFetch(domain:seo.ai)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(python:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(NEXT_TURBOPACK=0 npx next build:*)",
+      "Bash(node -e \"process.env.NODE_OPTIONS=''--stack-trace-limit=100''; require\\(''child_process''\\).execSync\\(''npx next build'', {stdio:''inherit''}\\)\")",
+      "Bash(git stash:*)"
+    ]
+  }
+}
