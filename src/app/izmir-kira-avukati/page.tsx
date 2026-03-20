@@ -187,7 +187,7 @@ export default function IzmirKiraAvukatiPage() {
                             İzmir Kira Avukatı Hizmeti
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            Kiracı tahliye davaları, kira tespit davaları ve tüm kira uyuşmazlıklarında
+                            <strong className="text-white">İzmir kira avukatı</strong> olarak kiracı tahliye davaları, kira tespit davaları ve tüm kira uyuşmazlıklarında
                             <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile profesyonel hukuki destek alın.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
