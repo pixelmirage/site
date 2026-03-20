@@ -60,7 +60,7 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Tazminat Avukatı | Maddi & Manevi Tazminat | Hemen Arayın",
+        absolute: "İzmir Tazminat Avukatı | Maddi & Manevi | Hemen Arayın",
     },
     description: "İzmir tazminat avukatı Av. Mert Kağan Çetin ile maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis davalarında uzman hukuki destek. Hemen arayın.",
     keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat davası", "manevi tazminat davası", "iş kazası tazminatı", "trafik kazası tazminatı", "destekten yoksun kalma tazminatı", "malpraktis davası", "tazminat hesaplama", "tazminat davası ücreti", "tazminat avukatı"],

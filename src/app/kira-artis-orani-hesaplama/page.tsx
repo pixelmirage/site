@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-    title: "Kira Artış Oranı Hesaplama 2026 | Yasal Zam Oranı",
+    title: "Kira Artış Oranı Hesaplama 2026",
     description: "2026 güncel TÜFE oranları ile işyeri ve konut kira artış oranını hesaplayın. Yasal zam sınırı, TEFE-TÜFE farkı ve ev sahibi hakları hakkında detaylı bilgi.",
     keywords: ["kira artış oranı hesaplama", "kira zammı hesaplama", "2026 kira artış oranı", "işyeri kira artış oranı", "tüfe kira artışı"],
     openGraph: {

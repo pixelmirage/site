@@ -6,13 +6,13 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { Scale, ArrowRight, BookOpen, Home, ChevronRight, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Hukuk Sözlüğü | Hukuki Terimler ve Açıklamaları",
+    title: "Hukuk Sözlüğü | Hukuki Terimler",
     description: "Kira hukuku, iş hukuku, boşanma hukuku ve tazminat hukuku terimlerinin anlaşılır açıklamaları. Tahliye, kıdem tazminatı, nafaka, velayet ve diğer hukuki kavramlar.",
     alternates: {
         canonical: "https://mertkagancetin.com/sozluk/",
     },
     openGraph: {
-        title: "Hukuk Sözlüğü | Hukuki Terimler ve Açıklamaları",
+        title: "Hukuk Sözlüğü | Hukuki Terimler | Av. Mert Kağan Çetin",
         description: "Kira hukuku, iş hukuku, boşanma hukuku ve tazminat hukuku terimlerinin anlaşılır açıklamaları.",
         url: "https://mertkagancetin.com/sozluk/",
         type: "website",

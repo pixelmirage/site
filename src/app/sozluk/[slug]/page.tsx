@@ -25,11 +25,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const url = `https://mertkagancetin.com/sozluk/${slug}/`;
 
     return {
-        title: `${term.term} Nedir? | Hukuk Sözlüğü`,
+        title: `${term.term} Nedir?`,
         description: term.definition,
         keywords: term.keywords,
         openGraph: {
-            title: `${term.term} Nedir? | Hukuk Sözlüğü`,
+            title: `${term.term} Nedir?`,
             description: term.definition,
             url: url,
             type: "article",

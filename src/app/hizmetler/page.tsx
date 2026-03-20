@@ -6,13 +6,13 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-    title: "Hizmetlerimiz | Kira, İş, Boşanma ve Tazminat Hukuku",
+    title: "Hizmetlerimiz | İzmir Hukuk Bürosu",
     description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
     alternates: {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },
     openGraph: {
-        title: "Hizmetlerimiz | Kira, İş, Boşanma ve Tazminat Hukuku",
+        title: "Hizmetlerimiz | İzmir Hukuk Bürosu | Av. Mert Kağan Çetin",
         description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
         url: "https://mertkagancetin.com/hizmetler/",
     },

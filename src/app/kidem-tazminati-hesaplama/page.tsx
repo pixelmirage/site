@@ -8,7 +8,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-    title: "Kıdem Tazminatı Hesaplama 2026 | Güncel Tavan ve Net Tutar",
+    title: "Kıdem Tazminatı Hesaplama 2026",
     description: "2026 güncel tavan (64.948,77 TL) ile kıdem tazminatınızı hesaplayın. Giydirilmiş brüt ücret, damga vergisi ve net tazminat tutarını anında öğrenin.",
     keywords: ["kıdem tazminatı hesaplama", "kıdem tazminatı hesaplama 2026", "kıdem tazminatı tavanı 2026", "net kıdem tazminatı", "giydirilmiş brüt ücret hesaplama", "kıdem tazminatı hesaplama aracı"],
     openGraph: {

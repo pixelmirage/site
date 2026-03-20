@@ -8,13 +8,13 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata: Metadata = {
-    title: "Hakkımda | Av. Mert Kağan Çetin | İzmir Avukat",
+    title: "Hakkımda | İzmir Avukat Profili",
     description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve uzmanlık alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
     openGraph: {
-        title: "Hakkımda | Av. Mert Kağan Çetin | İzmir Avukat",
+        title: "Hakkımda | İzmir Avukat Profili | Av. Mert Kağan Çetin",
         description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve uzmanlık alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
         url: "https://mertkagancetin.com/hakkimda/",
     },

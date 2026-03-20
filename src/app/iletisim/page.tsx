@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-    title: "İletişim",
+    title: "İletişim | İzmir Hukuk Bürosu",
     description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",

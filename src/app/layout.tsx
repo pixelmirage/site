@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),
   title: {
     template: "%s | Av. Mert Kağan Çetin",
-    default: "Av. Mert Kağan Çetin | İzmir Avukat | Kira, İş, Boşanma ve Tazminat Hukuku",
+    default: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
   },
   description: "Av. Mert Kağan Çetin; kira hukuku, iş hukuku, boşanma davaları ve tazminat hukuku alanında İzmir merkezli avukatlık hizmeti sunar.",
   keywords: ["kira hukuku avukatı", "tahliye davası avukatı", "tazminat avukatı", "İzmir avukat", "kira tespit davası", "tahliye taahhütnamesi", "iş hukuku avukatı", "işe iade davası", "kıdem tazminatı", "boşanma avukatı", "velayet davası", "nafaka davası", "İzmir iş avukatı", "İzmir boşanma avukatı", "İzmir tazminat avukatı"],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     url: 'https://mertkagancetin.com',
     siteName: 'Av. Mert Kağan Çetin',
-    title: 'Av. Mert Kağan Çetin | İzmir Avukat | Kira, İş, Boşanma ve Tazminat Hukuku',
+    title: 'İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu',
     description: 'İzmir\'de kira hukuku, iş hukuku, boşanma davaları ve tazminat davalarında avukatlık hizmeti.',
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Av. Mert Kağan Çetin | İzmir Avukat | Kira, İş, Boşanma ve Tazminat Hukuku',
+    title: 'İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu',
     description: 'İzmir\'de kira hukuku, iş hukuku, boşanma davaları ve tazminat davalarında avukatlık hizmeti.',
     images: ['/og-image.jpg'],
   },
