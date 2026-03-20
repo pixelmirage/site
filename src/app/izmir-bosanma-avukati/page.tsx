@@ -392,7 +392,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="velayet" className="scroll-mt-24">Velayet Davası</h2>
 
                         <p>
-                            <Link href="/sozluk/velayet-davasi" className="text-secondary font-bold">Velayet davası</Link>, boşanma sonrasında çocuğun hangi ebeveynle yaşayacağını belirler. Mevcut velayet kararının değiştirilmesi için de açılabilir.
+                            <Link href="/sozluk/velayet/" className="text-secondary font-bold">Velayet davası</Link>, boşanma sonrasında çocuğun hangi ebeveynle yaşayacağını belirler. Mevcut velayet kararının değiştirilmesi için de açılabilir.
                             Türk Medeni Kanunu m. 336-337 kapsamında düzenlenir.
                             <strong> Çocuğun üstün yararı</strong> ilkesi temel belirleyicidir.
                         </p>

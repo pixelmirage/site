@@ -171,7 +171,7 @@ export default function EvictionTemplatePage() {
                     />
                     <p>
                         Tahliye taahhütnamesi, kiracının kiraladığı taşınmazı belirli bir tarihte boşaltacağını yazılı olarak beyan ettiği hukuki bir belgedir.
-                        Türk Borçlar Kanunu madde 352/1 uyarınca verilen bu taahhüt, mülk sahibi için en hızlı <Link href="/sozluk/tahliye" className="text-secondary hover:underline">tahliye</Link> imkanı sağlayan belgelerden biridir.
+                        Türk Borçlar Kanunu madde 352/1 uyarınca verilen bu taahhüt, mülk sahibi için en hızlı <Link href="/sozluk/tahliye-taahhutnamesi/" className="text-secondary hover:underline">tahliye</Link> imkanı sağlayan belgelerden biridir.
                     </p>
                     <p>
                         <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link> uygulamasında tahliye taahhütnamesi, ev sahibinin kiracıyı tahliye edebilmek için kullanabileceği en etkili hukuki araçlardan biridir. Ancak taahhütnamenin geçerli olması için belirli şartların sağlanması gerekir.
