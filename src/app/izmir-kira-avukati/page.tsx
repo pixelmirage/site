@@ -132,7 +132,7 @@ const faqs = [
 
 const tocItems = [
     { id: "hizmetlerimiz", title: "Kira Hukuku Hizmetlerimiz" },
-    { id: "ne-zaman-avukat", title: "Kira Avukatına Ne Zaman İhtiyaç Duyulur?" },
+    { id: "ne-zaman-avukat", title: "İzmir Kira Avukatına Ne Zaman İhtiyaç Duyulur?" },
     { id: "tahliye-davasi", title: "Kiracı Tahliye Davası Nedir?" },
     { id: "tahliye-sureci", title: "Tahliye Davası Süreci" },
     { id: "kira-tespit-davasi", title: "Kira Tespit Davası Ne Zaman Açılır?" },
@@ -140,9 +140,9 @@ const tocItems = [
     { id: "kira-sozlesmesi", title: "Kira Sözleşmesi Nasıl Yapılır?" },
     { id: "kiracinin-haklari", title: "Kiracının Hakları" },
     { id: "avukatli-avukatsiz", title: "Avukatlı mı Avukatsız mı?" },
-    { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
-    { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
-    { id: "sss", title: "Sıkça Sorulan Sorular" },
+    { id: "ucretler", title: "2026 İzmir Kira Avukatı Ücretleri" },
+    { id: "neden-biz", title: "İzmir Kira Avukatı Olarak Neden Bizi Tercih Etmelisiniz?" },
+    { id: "sss", title: "İzmir Kira Avukatı Hakkında SSS" },
     { id: "iletisim", title: "Bize Ulaşın" },
 ];
 
@@ -317,7 +317,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* Hangi Durumlarda Kira Avukatına İhtiyacınız Var */}
-                        <h2 id="ne-zaman-avukat" className="scroll-mt-24">Hangi Durumlarda Kira Avukatına İhtiyacınız Var?</h2>
+                        <h2 id="ne-zaman-avukat" className="scroll-mt-24">İzmir Kira Avukatına Ne Zaman İhtiyaç Duyulur?</h2>
 
                         <p>
                             Kira uyuşmazlıkları her zaman dava gerektirmez; ancak bazı durumlar profesyonel hukuki destek almayı zorunlu kılar.
@@ -650,7 +650,7 @@ export default function IzmirKiraAvukatiPage() {
                         <SectionCTA text="Kira davanız için avukat desteği almak ister misiniz?" />
 
                         {/* Ücretler */}
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Kira Davası Ücretleri</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">2026 İzmir Kira Avukatı Ücretleri</h2>
 
                         <p>
                             <strong>Ev sahibi kiracı anlaşmazlıklarında avukat ücreti</strong>, davanın türüne ve karmaşıklığına göre değişiklik gösterir.
@@ -703,7 +703,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* Neden Biz */}
-                        <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
+                        <h2 id="neden-biz" className="scroll-mt-24">İzmir Kira Avukatı Olarak Neden Bizi Tercih Etmelisiniz?</h2>
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                             {[
@@ -785,7 +785,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         {/* SSS */}
-                        <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
+                        <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı Hakkında Sıkça Sorulan Sorular</h2>
 
                         <div className="not-prose space-y-6 my-8">
                             {faqs.map((faq, i) => (
