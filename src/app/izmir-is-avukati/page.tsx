@@ -7,7 +7,7 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
-import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
+
 
 function LegalServiceSchema() {
     const schema = {
@@ -149,7 +149,7 @@ export default function IzmirIsAvukatiPage() {
         <main className="bg-white">
             <LegalServiceSchema />
             <PersonSchema knowsAbout={["İş Hukuku", "İşe İade Davası", "Kıdem Tazminatı", "İhbar Tazminatı", "Mobbing", "İş Kazası Tazminatı", "Fazla Mesai Alacağı"]} />
-            <AggregateRatingSchema ratingValue={5.0} reviewCount={38} serviceName="İzmir İş Avukatı - Av. Mert Kağan Çetin" />
+
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -647,15 +647,6 @@ export default function IzmirIsAvukatiPage() {
                             Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong> İzmir iş avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
-
-                        <ClientReviews
-                            title="İş Hukuku Danışan Deneyimleri"
-                            reviews={[
-                                { name: "Serkan T.", initial: "S", rating: 5, text: "İşten haksız yere çıkarıldıktan sonra işe iade davamı açtık. Arabuluculuk sürecinde anlaşma sağlandı ve tüm tazminat haklarım ödendi. Çok profesyonel bir süreç yönetimi.", date: "Şubat 2026", service: "İşe İade Davası" },
-                                { name: "Elif D.", initial: "E", rating: 5, text: "Kıdem ve ihbar tazminatı hesaplamam konusunda detaylı bilgi aldım. Dava sürecinde her aşamada bilgilendirildim. Haklarımın tamamını aldım.", date: "Ocak 2026", service: "Kıdem Tazminatı Davası" },
-                                { name: "Hasan B.", initial: "H", rating: 5, text: "İş kazası sonrası tazminat sürecimde çok destek oldu. SGK başvuruları ve dava süreci titizlikle takip edildi. Sonuçtan çok memnunum.", date: "Aralık 2025", service: "İş Kazası Tazminatı" },
-                            ]}
-                        />
 
                         {/* Neden Biz */}
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>

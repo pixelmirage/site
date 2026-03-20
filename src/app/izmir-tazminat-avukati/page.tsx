@@ -7,7 +7,7 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
-import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
+
 
 function LegalServiceSchema() {
     const schema = {
@@ -149,7 +149,7 @@ export default function IzmirTazminatAvukatiPage() {
         <main className="bg-white">
             <LegalServiceSchema />
             <PersonSchema knowsAbout={["Tazminat Hukuku", "Maddi Tazminat", "Manevi Tazminat", "Trafik Kazası Tazminatı", "İş Kazası Tazminatı", "Malpraktis Davası", "Destekten Yoksun Kalma Tazminatı"]} />
-            <AggregateRatingSchema ratingValue={5.0} reviewCount={31} serviceName="İzmir Tazminat Avukatı - Av. Mert Kağan Çetin" />
+
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -470,15 +470,6 @@ export default function IzmirTazminatAvukatiPage() {
                                 </tbody>
                             </table>
                         </div>
-
-                        <ClientReviews
-                            title="Tazminat Hukuku Danışan Deneyimleri"
-                            reviews={[
-                                { name: "Ali R.", initial: "A", rating: 5, text: "Trafik kazası sonrası tazminat davamda sigorta şirketiyle müzakere ve dava sürecinde çok profesyonel destek aldım. Hak ettiğim tazminatı tam olarak aldım.", date: "Şubat 2026", service: "Trafik Kazası Tazminatı" },
-                                { name: "Deniz Ö.", initial: "D", rating: 5, text: "Malpraktis davamda tıbbi bilirkişi raporları ve delil toplama sürecinde büyük emek harcandı. Uzun süren davamız lehimize sonuçlandı.", date: "Ocak 2026", service: "Malpraktis Davası" },
-                                { name: "Yılmaz E.", initial: "Y", rating: 5, text: "Destekten yoksun kalma tazminatı sürecimizde ailemize büyük destek oldu. Hesaplama ve dava sürecinde profesyonel yaklaşım sayesinde hakkımızı aldık.", date: "Aralık 2025", service: "Destekten Yoksun Kalma" },
-                            ]}
-                        />
 
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
 

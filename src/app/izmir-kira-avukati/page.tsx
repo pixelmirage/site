@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { SectionCTA } from "@/components/ui/SectionCTA";
-import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
+
 
 function LegalServiceSchema() {
     const schema = {
@@ -160,7 +160,7 @@ export default function IzmirKiraAvukatiPage() {
                 contentUrl="https://www.youtube.com/shorts/JeM-o0sl9j8"
                 embedUrl="https://www.youtube.com/embed/JeM-o0sl9j8"
             />
-            <AggregateRatingSchema ratingValue={5.0} reviewCount={42} serviceName="İzmir Kira Avukatı - Av. Mert Kağan Çetin" />
+
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -701,16 +701,6 @@ export default function IzmirKiraAvukatiPage() {
                             Yukarıdaki ücretler ortalama değerlerdir. <strong>Ev sahibi kiracı anlaşmazlıklarında avukat ücreti</strong> konusunda kesin tutar, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong>İzmir kira avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
-
-                        {/* Danışan Deneyimleri */}
-                        <ClientReviews
-                            title="Kira Hukuku Danışan Deneyimleri"
-                            reviews={[
-                                { name: "Ahmet Y.", initial: "A", rating: 5, text: "Kiracı tahliye sürecimde başından sonuna kadar yanımızda oldu. Taahhütnameye dayalı tahliye davamız 4 ayda sonuçlandı. Süreç boyunca her aşamada bilgilendirildik.", date: "Ocak 2026", service: "Kiracı Tahliye Davası" },
-                                { name: "Fatma K.", initial: "F", rating: 5, text: "Kira tespit davamızda çok profesyonel bir şekilde temsil edildik. Bilirkişi raporları ve emsal kararlarla desteklenen savunma sayesinde kira bedeli hakkaniyete uygun belirlendi.", date: "Aralık 2025", service: "Kira Tespit Davası" },
-                                { name: "Mehmet S.", initial: "M", rating: 5, text: "İşyeri kira sözleşmemizin hazırlanmasında ve müzakere sürecinde büyük destek aldık. Hukuki açıdan sağlam bir sözleşme ile haklarımız güvence altına alındı.", date: "Kasım 2025", service: "Kira Sözleşmesi Hazırlama" },
-                            ]}
-                        />
 
                         {/* Neden Biz */}
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>

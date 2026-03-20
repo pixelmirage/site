@@ -4,7 +4,7 @@ import { AboutBrief } from "@/components/sections/AboutBrief";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PhoneCall, Star } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 export const metadata: Metadata = {
   alternates: {
@@ -26,40 +26,6 @@ export default function Home() {
 
       {/* About Section */}
       <AboutBrief />
-
-      {/* Danışan Deneyimleri */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-3">Danışan Deneyimleri</h2>
-            <p className="text-muted-foreground">Google üzerinden paylaşılan değerlendirmeler</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {[
-              { name: "Ahmet Y.", initial: "A", text: "Kiracı tahliye sürecimde başından sonuna kadar yanımızda oldu. Süreç boyunca her aşamada bilgilendirildik.", service: "Kira Hukuku" },
-              { name: "Elif D.", initial: "E", text: "Kıdem tazminatı hesaplamam konusunda detaylı bilgi aldım. Haklarımın tamamını aldım.", service: "İş Hukuku" },
-              { name: "Zeynep A.", initial: "Z", text: "Anlaşmalı boşanma protokolümüz titizlikle hazırlandı. Tek celsede boşanma kararımız kesinleşti.", service: "Boşanma Hukuku" },
-              { name: "Ali R.", initial: "A", text: "Trafik kazası sonrası tazminat davamda çok profesyonel destek aldım. Hak ettiğim tazminatı aldım.", service: "Tazminat Hukuku" },
-            ].map((review, i) => (
-              <div key={i} className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-                <div className="flex gap-0.5 mb-3">
-                  {Array.from({ length: 5 }).map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4">&ldquo;{review.text}&rdquo;</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs">{review.initial}</div>
-                  <div>
-                    <p className="text-sm font-bold text-slate-800">{review.name}</p>
-                    <p className="text-xs text-slate-500">{review.service}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-primary relative overflow-hidden">

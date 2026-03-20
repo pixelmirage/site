@@ -7,7 +7,7 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
-import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
+
 
 function LegalServiceSchema() {
     const schema = {
@@ -153,7 +153,7 @@ export default function IzmirBosanmaAvukatiPage() {
         <main className="bg-white">
             <LegalServiceSchema />
             <PersonSchema knowsAbout={["Boşanma Hukuku", "Anlaşmalı Boşanma", "Çekişmeli Boşanma", "Velayet Davası", "Nafaka", "Mal Paylaşımı", "Aile Hukuku"]} />
-            <AggregateRatingSchema ratingValue={5.0} reviewCount={35} serviceName="İzmir Boşanma Avukatı - Av. Mert Kağan Çetin" />
+
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -586,15 +586,6 @@ export default function IzmirBosanmaAvukatiPage() {
                             Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong> İzmir boşanma avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
-
-                        <ClientReviews
-                            title="Boşanma Hukuku Danışan Deneyimleri"
-                            reviews={[
-                                { name: "Zeynep A.", initial: "Z", rating: 5, text: "Anlaşmalı boşanma protokolümüz titizlikle hazırlandı. Tek celsede boşanma kararımız kesinleşti. Hassas süreçte gösterilen anlayış ve profesyonellik için teşekkürler.", date: "Şubat 2026", service: "Anlaşmalı Boşanma" },
-                                { name: "Burak M.", initial: "B", rating: 5, text: "Velayet davamda çocuğumun üstün yararı gözetilerek çok güçlü bir savunma yapıldı. Mahkeme sürecinde her adımda yanımda olduğunu hissettim.", date: "Ocak 2026", service: "Velayet Davası" },
-                                { name: "Ayşe K.", initial: "A", rating: 5, text: "Nafaka davamda haklarım eksiksiz korundu. Karşı tarafla müzakere sürecinde çok etkili bir temsil sağlandı. Sonuçtan son derece memnunum.", date: "Kasım 2025", service: "Nafaka Davası" },
-                            ]}
-                        />
 
                         {/* Neden Biz */}
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
