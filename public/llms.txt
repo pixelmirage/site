@@ -1,0 +1,84 @@
+# Av. Mert Kağan Çetin - İzmir Avukat
+
+> İzmir Barosu'na kayıtlı Av. Mert Kağan Çetin'in hukuk bürosu web sitesidir. Kira hukuku, iş hukuku, boşanma hukuku ve tazminat hukuku alanlarında İzmir genelinde avukatlık hizmeti sunulmaktadır.
+
+Bayraklı, İzmir merkezli hukuk bürosu olarak 2019 yılından bu yana faaliyet göstermektedir. Site Türkçe içerik sunmaktadır. Hukuki bilgilendirme, blog yazıları, hesaplama araçları ve hukuk sözlüğü içerir.
+
+## Ana Sayfalar
+
+- [Ana Sayfa](https://mertkagancetin.com/): Hukuk bürosu tanıtımı, hizmet alanları ve iletişim bilgileri
+- [Hakkımda](https://mertkagancetin.com/hakkimda/): Av. Mert Kağan Çetin özgeçmişi, İzmir Barosu sicil no 15556
+- [Hizmetler](https://mertkagancetin.com/hizmetler/): Sunulan hukuki hizmetlerin listesi
+- [İletişim](https://mertkagancetin.com/iletisim/): Adres, telefon ve randevu formu
+
+## Uzmanlık Alanları (Pillar Sayfalar)
+
+- [İzmir Kira Avukatı](https://mertkagancetin.com/izmir-kira-avukati/): Kiracı tahliye, kira tespit davası, kira sözleşmesi, tahliye taahhütnamesi, 10 yıllık kiracı tahliyesi
+- [İzmir İş Avukatı](https://mertkagancetin.com/izmir-is-avukati/): İşe iade davası, kıdem tazminatı, ihbar tazminatı, iş kazası, mobbing, fazla mesai alacağı
+- [İzmir Boşanma Avukatı](https://mertkagancetin.com/izmir-bosanma-avukati/): Anlaşmalı boşanma, çekişmeli boşanma, velayet davası, nafaka, mal paylaşımı
+- [İzmir Tazminat Avukatı](https://mertkagancetin.com/izmir-tazminat-avukati/): Maddi ve manevi tazminat, iş kazası tazminatı, trafik kazası tazminatı, malpraktis, destekten yoksun kalma
+
+## Hesaplama Araçları
+
+- [Kıdem Tazminatı Hesaplama](https://mertkagancetin.com/kidem-tazminati-hesaplama/): 2026 güncel tavanı ile kıdem tazminatı hesaplama aracı
+- [Kira Artış Oranı Hesaplama](https://mertkagancetin.com/kira-artis-orani-hesaplama/): TÜFE bazlı yasal kira artış oranı hesaplama aracı
+- [Tahliye Taahhütnamesi](https://mertkagancetin.com/tahliye-taahhutnamesi/): Yargıtay kararlarına uygun tahliye taahhütnamesi örneği, PDF ve Word indirme
+
+## Blog Yazıları
+
+- [Ev Sahibi Hangi Durumlarda Kiracıyı Hemen Çıkarabilir?](https://mertkagancetin.com/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/): Yasal tahliye sebepleri ve süreçleri
+- [Hangi Durumlarda Kira Tespit Davası Açılabilir?](https://mertkagancetin.com/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/): Kira tespit davası şartları ve süreci
+- [İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?](https://mertkagancetin.com/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/): İhtiyaç sebebiyle tahliye şartları
+- [Kiracının Tahliyesi İçin İki Haklı İhtar Nedir?](https://mertkagancetin.com/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/): İki haklı ihtar yoluyla tahliye süreci
+- [Kira Hukukunda Zorunlu Arabuluculuk Süreci](https://mertkagancetin.com/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/): Kira davalarında zorunlu arabuluculuk
+- [İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gereken Hususlar](https://mertkagancetin.com/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/): İşyeri kira sözleşmesi rehberi
+- [İzmir Gayrimenkul Piyasasında Güncel Hukuki Gelişmeler](https://mertkagancetin.com/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/): İzmir gayrimenkul piyasası hukuki analizi
+- [İşten Çıkarıldığında Ne Yapmalı?](https://mertkagancetin.com/blog/isten-cikarildiginda-ne-yapmali/): Haksız fesih sonrası haklar ve süreçler
+- [Kıdem Tazminatı Nasıl Hesaplanır?](https://mertkagancetin.com/blog/kidem-tazminati-nasil-hesaplanir/): Kıdem tazminatı hesaplama rehberi
+- [İş Kazası Tazminatı Süreci ve Haklarınız](https://mertkagancetin.com/blog/is-kazasi-tazminati-sureci-ve-haklariniz/): İş kazası sonrası tazminat alma süreci
+- [İşe İade Davası Şartları ve Arabuluculuk Süreci](https://mertkagancetin.com/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci/): İşe iade davası açma koşulları
+- [Anlaşmalı Boşanma Nasıl Açılır?](https://mertkagancetin.com/blog/anlasmali-bosanma-nasil-acilir/): Anlaşmalı boşanma süreci rehberi
+- [Velayet Davası Süreci ve Mahkeme Kriterleri](https://mertkagancetin.com/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/): Velayet davası kriterleri
+- [Nafaka Hesaplama: Yoksulluk ve İştirak Nafakası](https://mertkagancetin.com/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/): Nafaka türleri ve hesaplama
+- [Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti](https://mertkagancetin.com/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/): Çekişmeli boşanma süreci
+- [Trafik Kazası Tazminatı Alma Süreci](https://mertkagancetin.com/blog/trafik-kazasi-tazminati-alma-sureci/): Trafik kazası sonrası tazminat süreci
+- [Maddi ve Manevi Tazminat Davası Farkları](https://mertkagancetin.com/blog/maddi-ve-manevi-tazminat-davasi-farklari/): Maddi ve manevi tazminat ayrımı
+- [Malpraktis Davası: Doktor Hatası Tazminatı](https://mertkagancetin.com/blog/malpraktis-davasi-doktor-hatasi-tazminati/): Doktor hatası tazminat süreci
+- [Destekten Yoksun Kalma Tazminatı](https://mertkagancetin.com/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/): Destekten yoksun kalma tazminatı hesaplama
+
+## Hukuk Sözlüğü
+
+- [Sözlük Ana Sayfa](https://mertkagancetin.com/sozluk/): 30 hukuk terimi tanımı ve açıklaması
+- [Tahliye Taahhütnamesi](https://mertkagancetin.com/sozluk/tahliye-taahhutnamesi/): Kiracının tahliye taahhüdü
+- [Kira Tespit Davası](https://mertkagancetin.com/sozluk/kira-tespit-davasi/): Kira bedelinin yeniden belirlenmesi
+- [İhtiyaç Nedeniyle Tahliye](https://mertkagancetin.com/sozluk/ihtiyac-nedeniyle-tahliye/): Konut ihtiyacı sebebiyle tahliye
+- [Kıdem Tazminatı](https://mertkagancetin.com/sozluk/kidem-tazminati/): İşçinin kıdem tazminatı hakkı
+- [İhbar Tazminatı](https://mertkagancetin.com/sozluk/ihbar-tazminati/): Bildirim süresine uyulmaması tazminatı
+- [İşe İade Davası](https://mertkagancetin.com/sozluk/ise-iade-davasi/): Haksız fesihte işe iade
+- [Zorunlu Arabuluculuk](https://mertkagancetin.com/sozluk/zorunlu-arabuluculuk/): Dava öncesi zorunlu arabuluculuk
+- [Anlaşmalı Boşanma](https://mertkagancetin.com/sozluk/anlasmali-bosanma/): Eşlerin anlaşarak boşanması
+- [Nafaka](https://mertkagancetin.com/sozluk/nafaka/): Boşanmada nafaka türleri
+- [Velayet](https://mertkagancetin.com/sozluk/velayet/): Çocuk velayeti hukuku
+- [Mal Paylaşımı](https://mertkagancetin.com/sozluk/mal-paylasimi/): Boşanmada mal rejimi tasfiyesi
+- [Maddi Tazminat](https://mertkagancetin.com/sozluk/maddi-tazminat/): Mali zararın tazmini
+- [Manevi Tazminat](https://mertkagancetin.com/sozluk/manevi-tazminat/): Kişilik hakkı ihlali tazminatı
+- [Destekten Yoksun Kalma](https://mertkagancetin.com/sozluk/destekten-yoksun-kalma/): Vefat sonrası tazminat hakkı
+- [Malpraktis](https://mertkagancetin.com/sozluk/malpraktis/): Tıbbi hata tazminatı
+
+## Optional
+
+- [Kira Sözleşmesi](https://mertkagancetin.com/sozluk/kira-sozlesmesi/): Kira sözleşmesi tanımı
+- [Kira Artış Oranı](https://mertkagancetin.com/sozluk/kira-artis-orani/): TÜFE bazlı artış oranı
+- [Kiracı Hakları](https://mertkagancetin.com/sozluk/kiraci-haklari/): Kiracının yasal hakları
+- [10 Yıllık Uzama Süresi](https://mertkagancetin.com/sozluk/10-yillik-uzama-suresi/): Kira sözleşmesi uzama süresi
+- [İki Haklı İhtar](https://mertkagancetin.com/sozluk/iki-hakli-ihtar/): Kira ödemesinde iki haklı ihtar
+- [Depozito](https://mertkagancetin.com/sozluk/depozito/): Kira güvence bedeli
+- [Ecrimisil](https://mertkagancetin.com/sozluk/ecrimisil/): Haksız işgal tazminatı
+- [Fuzuli İşgal](https://mertkagancetin.com/sozluk/fuzuli-isgal/): Haksız işgal durumu
+- [Kira Uyarlama Davası](https://mertkagancetin.com/sozluk/kira-uyarlama-davasi/): Olağanüstü koşullarda kira uyarlaması
+- [Haklı Fesih](https://mertkagancetin.com/sozluk/hakli-fesih/): İş sözleşmesinin haklı nedenle feshi
+- [İş Güvencesi](https://mertkagancetin.com/sozluk/is-guvencesi/): İşçinin iş güvencesi kapsamı
+- [Mobbing](https://mertkagancetin.com/sozluk/mobbing/): İşyerinde psikolojik taciz
+- [Çekişmeli Boşanma](https://mertkagancetin.com/sozluk/cekismeli-bosanma/): Anlaşma sağlanamayan boşanma
+- [Evlilik Birliğinin Temelden Sarsılması](https://mertkagancetin.com/sozluk/evlilik-birliginin-temelden-sarsilmasi/): Genel boşanma sebebi
+- [Haksız Fiil](https://mertkagancetin.com/sozluk/haksiz-fiil/): Hukuka aykırı eylem sonucu zarar
