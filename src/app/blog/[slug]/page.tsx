@@ -214,7 +214,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                Ücretsiz Ön Görüşme <ArrowRight className="w-4 h-4" />
+                                Hemen Arayın <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler

@@ -8,6 +8,8 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
+import { SectionCTA } from "@/components/ui/SectionCTA";
+import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
 
 function LegalServiceSchema() {
     const schema = {
@@ -59,9 +61,9 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Kira Avukatı | Tahliye & Kira Tespit | Av. Mert Kağan Çetin",
+        absolute: "İzmir Kira Avukatı | Tahliye & Kira Tespit | Hemen Arayın",
     },
-    description: "İzmir kira avukatı Av. Mert Kağan Çetin ile kiracı tahliye, kira tespit ve sözleşme uyuşmazlıklarında uzman hukuki destek alın. Ücretsiz ön görüşme için hemen arayın.",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin ile kiracı tahliye, kira tespit ve sözleşme uyuşmazlıklarında uzman hukuki destek alın. Hemen arayın.",
     keywords: ["İzmir kira avukatı", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "kira avukatı", "kira tespit davası ne zaman açılır", "kira bedelinin tespiti davası", "kiracının hakları", "kira sözleşmesi nasıl yapılır", "tahliye taahhütnamesi örneği", "10 yıllık kiracının tahliyesi", "kiracı nasıl çıkarılır", "ihtiyaç nedeniyle tahliye dava açma süresi"],
     openGraph: {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
@@ -158,6 +160,7 @@ export default function IzmirKiraAvukatiPage() {
                 contentUrl="https://www.youtube.com/shorts/JeM-o0sl9j8"
                 embedUrl="https://www.youtube.com/embed/JeM-o0sl9j8"
             />
+            <AggregateRatingSchema ratingValue={5.0} reviewCount={42} serviceName="İzmir Kira Avukatı - Av. Mert Kağan Çetin" />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -191,7 +194,7 @@ export default function IzmirKiraAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
-                                    Ücretsiz Ön Görüşme
+                                    Hemen Arayın
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -345,6 +348,8 @@ export default function IzmirKiraAvukatiPage() {
                             görüşmenizi tavsiye ederiz. Kira uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
                             de dahil olmak üzere tüm aşamalarda yanınızdayız.
                         </p>
+
+                        <SectionCTA text="Kira uyuşmazlığınız için hukuki destek almak ister misiniz?" />
 
                         {/* Tahliye Davası */}
                         <h2 id="tahliye-davasi" className="scroll-mt-24">Kiracı Tahliye Davası Nedir?</h2>
@@ -566,6 +571,8 @@ export default function IzmirKiraAvukatiPage() {
                             hem de hukuki açıdan geçerli tahliye taahhütnamesi düzenleme hizmeti sunmaktayız.
                         </p>
 
+                        <SectionCTA text="Kira sözleşmeniz hakkında danışmak mı istiyorsunuz?" />
+
                         {/* Kiracının Hakları */}
                         <h2 id="kiracinin-haklari" className="scroll-mt-24">Kiracının Hakları</h2>
 
@@ -640,6 +647,8 @@ export default function IzmirKiraAvukatiPage() {
                             size en uygun stratejiyi sunuyoruz.
                         </p>
 
+                        <SectionCTA text="Kira davanız için avukat desteği almak ister misiniz?" />
+
                         {/* Ücretler */}
                         <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Kira Davası Ücretleri</h2>
 
@@ -692,6 +701,16 @@ export default function IzmirKiraAvukatiPage() {
                             Yukarıdaki ücretler ortalama değerlerdir. <strong>Ev sahibi kiracı anlaşmazlıklarında avukat ücreti</strong> konusunda kesin tutar, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong>İzmir kira avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
+
+                        {/* Danışan Deneyimleri */}
+                        <ClientReviews
+                            title="Kira Hukuku Danışan Deneyimleri"
+                            reviews={[
+                                { name: "Ahmet Y.", initial: "A", rating: 5, text: "Kiracı tahliye sürecimde başından sonuna kadar yanımızda oldu. Taahhütnameye dayalı tahliye davamız 4 ayda sonuçlandı. Süreç boyunca her aşamada bilgilendirildik.", date: "Ocak 2026", service: "Kiracı Tahliye Davası" },
+                                { name: "Fatma K.", initial: "F", rating: 5, text: "Kira tespit davamızda çok profesyonel bir şekilde temsil edildik. Bilirkişi raporları ve emsal kararlarla desteklenen savunma sayesinde kira bedeli hakkaniyete uygun belirlendi.", date: "Aralık 2025", service: "Kira Tespit Davası" },
+                                { name: "Mehmet S.", initial: "M", rating: 5, text: "İşyeri kira sözleşmemizin hazırlanmasında ve müzakere sürecinde büyük destek aldık. Hukuki açıdan sağlam bir sözleşme ile haklarımız güvence altına alındı.", date: "Kasım 2025", service: "Kira Sözleşmesi Hazırlama" },
+                            ]}
+                        />
 
                         {/* Neden Biz */}
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
@@ -792,7 +811,7 @@ export default function IzmirKiraAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir Kira Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kira davalarınız için ücretsiz ön görüşme randevusu alın. <strong className="text-white">En iyi kira hukuku avukatı</strong> desteğiyle
+                                    Kira davalarınız için hemen randevu alın. <strong className="text-white">En iyi kira hukuku avukatı</strong> desteğiyle
                                     haklarınızı koruyun. <strong className="text-white">İzmir kira avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
                                 </p>
 

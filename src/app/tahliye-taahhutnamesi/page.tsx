@@ -270,7 +270,7 @@ export default function EvictionTemplatePage() {
 
                     <h2>Hukuki Destek Alın</h2>
                     <p>
-                        Tahliye taahhütnamesi hazırlanması, icra takibi başlatılması veya kiracının itirazı durumunda profesyonel hukuki desteğe ihtiyaç duyarsanız, <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak yanınızdayız. <Link href="/hizmetler" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ücretsiz ön görüşme için bizimle iletişime geçebilirsiniz.
+                        Tahliye taahhütnamesi hazırlanması, icra takibi başlatılması veya kiracının itirazı durumunda profesyonel hukuki desteğe ihtiyaç duyarsanız, <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak yanınızdayız. <Link href="/hizmetler" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
@@ -278,7 +278,7 @@ export default function EvictionTemplatePage() {
                         <p className="mb-6 text-muted-foreground">Taahhütname hazırlama, icra takibi veya itiraz süreçlerinde hukuki danışmanlık alın.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>
-                                <Link href="/iletisim">Ücretsiz Ön Görüşme</Link>
+                                <Link href="/iletisim">Hemen Arayın</Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
                                 <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>

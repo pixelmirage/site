@@ -258,7 +258,7 @@ export const serviceConfig: Record<ServiceType, {
         parentUrl: "/izmir-kira-avukati",
         sectionTitle: "Kiracı Tahliye Davaları",
         ctaTitle: "Kira Avukatı ile Görüşün",
-        ctaDesc: "Kira hukuku davalarınız için ücretsiz ön görüşme randevusu alın.",
+        ctaDesc: "Kira hukuku davalarınız için hemen randevu alın.",
     },
     is: {
         label: "İş Avukatı",
@@ -266,7 +266,7 @@ export const serviceConfig: Record<ServiceType, {
         parentUrl: "/izmir-is-avukati",
         sectionTitle: "İşe İade ve Tazminat Davaları",
         ctaTitle: "İş Avukatı ile Görüşün",
-        ctaDesc: "İş hukuku davalarınız için ücretsiz ön görüşme randevusu alın.",
+        ctaDesc: "İş hukuku davalarınız için hemen randevu alın.",
     },
     bosanma: {
         label: "Boşanma Avukatı",
@@ -274,7 +274,7 @@ export const serviceConfig: Record<ServiceType, {
         parentUrl: "/izmir-bosanma-avukati",
         sectionTitle: "Boşanma ve Velayet Davaları",
         ctaTitle: "Boşanma Avukatı ile Görüşün",
-        ctaDesc: "Boşanma davalarınız için ücretsiz ön görüşme randevusu alın.",
+        ctaDesc: "Boşanma davalarınız için hemen randevu alın.",
     },
     tazminat: {
         label: "Tazminat Avukatı",
@@ -282,7 +282,7 @@ export const serviceConfig: Record<ServiceType, {
         parentUrl: "/izmir-tazminat-avukati",
         sectionTitle: "Tazminat Davası Süreci",
         ctaTitle: "Tazminat Avukatı ile Görüşün",
-        ctaDesc: "Tazminat davalarınız için ücretsiz ön görüşme randevusu alın.",
+        ctaDesc: "Tazminat davalarınız için hemen randevu alın.",
     },
 };
 

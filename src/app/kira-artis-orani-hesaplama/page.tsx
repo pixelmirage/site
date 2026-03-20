@@ -150,7 +150,7 @@ export default function RentCalculatorPage() {
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Ücretsiz Ön Görüşme</h3>
+                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Hemen Arayın</h3>
                             <p className="mb-6 text-muted-foreground">Durumunuzu değerlendirelim, en doğru hukuki yolu birlikte belirleyelim.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>

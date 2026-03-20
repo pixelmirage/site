@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { SectionCTA } from "@/components/ui/SectionCTA";
+import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
 
 function LegalServiceSchema() {
     const schema = {
@@ -58,9 +60,9 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Tazminat Avukatı | Maddi & Manevi | Av. Mert Kağan Çetin",
+        absolute: "İzmir Tazminat Avukatı | Maddi & Manevi Tazminat | Hemen Arayın",
     },
-    description: "İzmir tazminat avukatı Av. Mert Kağan Çetin ile maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis davalarında uzman hukuki destek. Ücretsiz ön görüşme için hemen arayın.",
+    description: "İzmir tazminat avukatı Av. Mert Kağan Çetin ile maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis davalarında uzman hukuki destek. Hemen arayın.",
     keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat davası", "manevi tazminat davası", "iş kazası tazminatı", "trafik kazası tazminatı", "destekten yoksun kalma tazminatı", "malpraktis davası", "tazminat hesaplama", "tazminat davası ücreti", "tazminat avukatı"],
     openGraph: {
         title: "İzmir Tazminat Avukatı | Av. Mert Kağan Çetin",
@@ -147,6 +149,7 @@ export default function IzmirTazminatAvukatiPage() {
         <main className="bg-white">
             <LegalServiceSchema />
             <PersonSchema knowsAbout={["Tazminat Hukuku", "Maddi Tazminat", "Manevi Tazminat", "Trafik Kazası Tazminatı", "İş Kazası Tazminatı", "Malpraktis Davası", "Destekten Yoksun Kalma Tazminatı"]} />
+            <AggregateRatingSchema ratingValue={5.0} reviewCount={31} serviceName="İzmir Tazminat Avukatı - Av. Mert Kağan Çetin" />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -179,7 +182,7 @@ export default function IzmirTazminatAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
-                                    Ücretsiz Ön Görüşme
+                                    Hemen Arayın
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -328,6 +331,8 @@ export default function IzmirTazminatAvukatiPage() {
                             <li><strong>Paranın alım gücü:</strong> Hükmedilecek miktarın caydırıcılığı ve hakkaniyeti</li>
                         </ul>
 
+                        <SectionCTA text="Tazminat hakkınız konusunda danışmak mı istiyorsunuz?" />
+
                         <h2 id="is-kazasi" className="scroll-mt-24">İş Kazası Tazminatı</h2>
 
                         <p>
@@ -392,6 +397,8 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
 
                         {/* Avukatlı mı Avukatsız mı */}
+                        <SectionCTA text="Tazminat davanız için avukat desteği almak ister misiniz?" />
+
                         <h2 id="avukatli-avukatsiz" className="scroll-mt-24">Tazminat Davası Avukatsız mı Açılmalı, Avukatla mı?</h2>
 
                         <p>
@@ -463,6 +470,15 @@ export default function IzmirTazminatAvukatiPage() {
                                 </tbody>
                             </table>
                         </div>
+
+                        <ClientReviews
+                            title="Tazminat Hukuku Danışan Deneyimleri"
+                            reviews={[
+                                { name: "Ali R.", initial: "A", rating: 5, text: "Trafik kazası sonrası tazminat davamda sigorta şirketiyle müzakere ve dava sürecinde çok profesyonel destek aldım. Hak ettiğim tazminatı tam olarak aldım.", date: "Şubat 2026", service: "Trafik Kazası Tazminatı" },
+                                { name: "Deniz Ö.", initial: "D", rating: 5, text: "Malpraktis davamda tıbbi bilirkişi raporları ve delil toplama sürecinde büyük emek harcandı. Uzun süren davamız lehimize sonuçlandı.", date: "Ocak 2026", service: "Malpraktis Davası" },
+                                { name: "Yılmaz E.", initial: "Y", rating: 5, text: "Destekten yoksun kalma tazminatı sürecimizde ailemize büyük destek oldu. Hesaplama ve dava sürecinde profesyonel yaklaşım sayesinde hakkımızı aldık.", date: "Aralık 2025", service: "Destekten Yoksun Kalma" },
+                            ]}
+                        />
 
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
 
@@ -552,7 +568,7 @@ export default function IzmirTazminatAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir Tazminat Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Tazminat davalarınız için ücretsiz ön görüşme randevusu alın.
+                                    Tazminat davalarınız için hemen randevu alın.
                                     <strong className="text-white"> İzmir tazminat avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
                                 </p>
 

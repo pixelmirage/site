@@ -147,11 +147,11 @@ export default function GlossaryPage() {
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
                         <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Hukuki Desteğe mi İhtiyacınız Var?</h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
-                            Hukuki terimleri anlamak önemlidir ancak süreçlerde uzman desteği almak hak kaybını önler. Kira, iş, boşanma ve tazminat hukuku alanlarında ücretsiz ön görüşme için bize ulaşın.
+                            Hukuki terimleri anlamak önemlidir ancak süreçlerde uzman desteği almak hak kaybını önler. Kira, iş, boşanma ve tazminat hukuku alanlarında hemen bize ulaşın.
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                Ücretsiz Ön Görüşme <ArrowRight className="w-4 h-4" />
+                                Hemen Arayın <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler

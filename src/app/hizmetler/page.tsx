@@ -187,7 +187,7 @@ export default function ServicesPage() {
                         </div>
                     </div>
                     <Button size="lg" className="mt-16 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-12" asChild>
-                        <Link href="/iletisim">Ücretsiz Ön Görüşme İçin Arayın</Link>
+                        <Link href="/iletisim">Hemen Arayın</Link>
                     </Button>
                 </div>
             </section>

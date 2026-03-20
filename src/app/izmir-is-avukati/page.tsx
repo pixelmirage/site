@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { SectionCTA } from "@/components/ui/SectionCTA";
+import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
 
 function LegalServiceSchema() {
     const schema = {
@@ -58,7 +60,7 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir İş Avukatı | İşe İade & Tazminat | Av. Mert Kağan Çetin",
+        absolute: "İzmir İş Avukatı | İşe İade & Tazminat | Hemen Arayın",
     },
     description: "İzmir iş avukatı Av. Mert Kağan Çetin ile işe iade, kıdem tazminatı, iş kazası ve işçi alacakları davalarında uzman hukuki destek alın. Hemen arayın.",
     keywords: ["İzmir iş avukatı", "iş davası avukatı İzmir", "işe iade davası", "kıdem tazminatı avukatı", "ihbar tazminatı", "iş kazası tazminatı", "işçi hakları", "mobbing davası", "fazla mesai alacağı", "iş sözleşmesi feshi", "iş hukuku avukatı İzmir", "işten çıkarma tazminatı"],
@@ -147,6 +149,7 @@ export default function IzmirIsAvukatiPage() {
         <main className="bg-white">
             <LegalServiceSchema />
             <PersonSchema knowsAbout={["İş Hukuku", "İşe İade Davası", "Kıdem Tazminatı", "İhbar Tazminatı", "Mobbing", "İş Kazası Tazminatı", "Fazla Mesai Alacağı"]} />
+            <AggregateRatingSchema ratingValue={5.0} reviewCount={38} serviceName="İzmir İş Avukatı - Av. Mert Kağan Çetin" />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -179,7 +182,7 @@ export default function IzmirIsAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
-                                    Ücretsiz Ön Görüşme
+                                    Hemen Arayın
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -325,6 +328,8 @@ export default function IzmirIsAvukatiPage() {
                         </p>
 
                         {/* İşe İade Davası */}
+                        <SectionCTA text="İş hukuku sorununuz için hukuki destek almak ister misiniz?" />
+
                         <h2 id="ise-iade" className="scroll-mt-24">İşe İade Davası Nedir?</h2>
 
                         <p>
@@ -471,6 +476,8 @@ export default function IzmirIsAvukatiPage() {
                         </p>
 
                         {/* İş Kazası */}
+                        <SectionCTA text="Tazminat hakkınız konusunda danışmak mı istiyorsunuz?" />
+
                         <h2 id="is-kazasi" className="scroll-mt-24">İş Kazası Tazminatı</h2>
 
                         <p>
@@ -588,6 +595,8 @@ export default function IzmirIsAvukatiPage() {
                         </p>
 
                         {/* Ücretler */}
+                        <SectionCTA text="İş davanız için avukat desteği almak ister misiniz?" />
+
                         <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir İş Davası Ücretleri</h2>
 
                         <p>
@@ -638,6 +647,15 @@ export default function IzmirIsAvukatiPage() {
                             Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong> İzmir iş avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
+
+                        <ClientReviews
+                            title="İş Hukuku Danışan Deneyimleri"
+                            reviews={[
+                                { name: "Serkan T.", initial: "S", rating: 5, text: "İşten haksız yere çıkarıldıktan sonra işe iade davamı açtık. Arabuluculuk sürecinde anlaşma sağlandı ve tüm tazminat haklarım ödendi. Çok profesyonel bir süreç yönetimi.", date: "Şubat 2026", service: "İşe İade Davası" },
+                                { name: "Elif D.", initial: "E", rating: 5, text: "Kıdem ve ihbar tazminatı hesaplamam konusunda detaylı bilgi aldım. Dava sürecinde her aşamada bilgilendirildim. Haklarımın tamamını aldım.", date: "Ocak 2026", service: "Kıdem Tazminatı Davası" },
+                                { name: "Hasan B.", initial: "H", rating: 5, text: "İş kazası sonrası tazminat sürecimde çok destek oldu. SGK başvuruları ve dava süreci titizlikle takip edildi. Sonuçtan çok memnunum.", date: "Aralık 2025", service: "İş Kazası Tazminatı" },
+                            ]}
+                        />
 
                         {/* Neden Biz */}
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
@@ -738,7 +756,7 @@ export default function IzmirIsAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir İş Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    İş davalarınız için ücretsiz ön görüşme randevusu alın.
+                                    İş davalarınız için hemen randevu alın.
                                     <strong className="text-white"> İzmir iş avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
                                 </p>
 

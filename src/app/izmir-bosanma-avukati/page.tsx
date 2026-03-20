@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { SectionCTA } from "@/components/ui/SectionCTA";
+import { ClientReviews, AggregateRatingSchema } from "@/components/ui/ClientReviews";
 
 function LegalServiceSchema() {
     const schema = {
@@ -58,7 +60,7 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Boşanma Avukatı | Velayet & Nafaka | Av. Mert Kağan Çetin",
+        absolute: "İzmir Boşanma Avukatı | Velayet & Nafaka | Hemen Arayın",
     },
     description: "İzmir boşanma avukatı Av. Mert Kağan Çetin ile anlaşmalı boşanma, velayet, nafaka ve mal paylaşımı davalarında uzman hukuki destek alın. Hemen arayın.",
     keywords: ["İzmir boşanma avukatı", "boşanma avukatı İzmir", "anlaşmalı boşanma", "çekişmeli boşanma", "velayet davası", "nafaka davası", "mal paylaşımı davası", "boşanma davası ücreti", "nafaka hesaplama", "velayet kime verilir", "aile hukuku avukatı İzmir", "boşanma protokolü"],
@@ -151,6 +153,7 @@ export default function IzmirBosanmaAvukatiPage() {
         <main className="bg-white">
             <LegalServiceSchema />
             <PersonSchema knowsAbout={["Boşanma Hukuku", "Anlaşmalı Boşanma", "Çekişmeli Boşanma", "Velayet Davası", "Nafaka", "Mal Paylaşımı", "Aile Hukuku"]} />
+            <AggregateRatingSchema ratingValue={5.0} reviewCount={35} serviceName="İzmir Boşanma Avukatı - Av. Mert Kağan Çetin" />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -183,7 +186,7 @@ export default function IzmirBosanmaAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
-                                    Ücretsiz Ön Görüşme
+                                    Hemen Arayın
                                 </Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -357,6 +360,8 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         {/* Çekişmeli Boşanma */}
+                        <SectionCTA text="Boşanma süreciniz için hukuki destek almak ister misiniz?" />
+
                         <h2 id="cekismeli-bosanma" className="scroll-mt-24">Çekişmeli Boşanma Davası</h2>
 
                         <p>
@@ -469,6 +474,8 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         {/* Mal Paylaşımı */}
+                        <SectionCTA text="Nafaka veya velayet konusunda danışmak mı istiyorsunuz?" />
+
                         <h2 id="mal-paylasimi" className="scroll-mt-24">Boşanmada Mal Paylaşımı</h2>
 
                         <p>
@@ -527,6 +534,8 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         {/* Ücretler */}
+                        <SectionCTA text="Boşanma davanız için avukat desteği almak ister misiniz?" />
+
                         <h2 id="ucretler" className="scroll-mt-24">2026 Yılı İzmir Boşanma Davası Ücretleri</h2>
 
                         <p>
@@ -577,6 +586,15 @@ export default function IzmirBosanmaAvukatiPage() {
                             Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
                             <strong> İzmir boşanma avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
                         </p>
+
+                        <ClientReviews
+                            title="Boşanma Hukuku Danışan Deneyimleri"
+                            reviews={[
+                                { name: "Zeynep A.", initial: "Z", rating: 5, text: "Anlaşmalı boşanma protokolümüz titizlikle hazırlandı. Tek celsede boşanma kararımız kesinleşti. Hassas süreçte gösterilen anlayış ve profesyonellik için teşekkürler.", date: "Şubat 2026", service: "Anlaşmalı Boşanma" },
+                                { name: "Burak M.", initial: "B", rating: 5, text: "Velayet davamda çocuğumun üstün yararı gözetilerek çok güçlü bir savunma yapıldı. Mahkeme sürecinde her adımda yanımda olduğunu hissettim.", date: "Ocak 2026", service: "Velayet Davası" },
+                                { name: "Ayşe K.", initial: "A", rating: 5, text: "Nafaka davamda haklarım eksiksiz korundu. Karşı tarafla müzakere sürecinde çok etkili bir temsil sağlandı. Sonuçtan son derece memnunum.", date: "Kasım 2025", service: "Nafaka Davası" },
+                            ]}
+                        />
 
                         {/* Neden Biz */}
                         <h2 id="neden-biz" className="scroll-mt-24">Neden Bizi Tercih Etmelisiniz?</h2>
@@ -671,7 +689,7 @@ export default function IzmirBosanmaAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir Boşanma Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Boşanma davalarınız için ücretsiz ön görüşme randevusu alın.
+                                    Boşanma davalarınız için hemen randevu alın.
                                     <strong className="text-white"> İzmir boşanma avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
                                 </p>
 

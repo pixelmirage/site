@@ -206,7 +206,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim">
                                     <Phone className="w-5 h-5" />
-                                    Ücretsiz Ön Görüşme
+                                    Hemen Arayın
                                 </Link>
                             </Button>
                         </div>
@@ -320,7 +320,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                         {/* Sidebar */}
                         <div className="space-y-8">
                             <div className="bg-primary text-white p-8 rounded-2xl sticky top-24">
-                                <h3 className="text-2xl font-playfair font-bold mb-4">Ücretsiz Ön Görüşme</h3>
+                                <h3 className="text-2xl font-playfair font-bold mb-4">Hemen Arayın</h3>
                                 <p className="text-slate-300 mb-6">
                                     {district} bölgesindeki hukuki sorununuzu dinleyelim, çözüm yolunu birlikte belirleyelim.
                                 </p>
