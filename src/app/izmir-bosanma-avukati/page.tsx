@@ -240,7 +240,7 @@ export default function IzmirBosanmaAvukatiPage() {
             prose-tr:even:bg-slate-50">
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir boşanma avukatı</strong>, evlilik birliğinin sona erdirilmesi sürecinde eşleri hukuki olarak temsil eden, anlaşmalı ve çekişmeli boşanma davaları, velayet, nafaka ve mal paylaşımı konularında uzmanlaşmış avukattır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı olarak Bayraklı merkezli ofisinden İzmir genelinde aile hukuku hizmeti vermektedir.
+                            <strong>İzmir boşanma avukatı</strong>, evlilik birliğinin sona erdirilmesi sürecinde eşleri hukuki olarak temsil eden avukattır. Anlaşmalı ve çekişmeli boşanma davaları, velayet, nafaka ve mal paylaşımı konularında uzmanlaşmıştır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde aile hukuku hizmeti verir.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -248,27 +248,20 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p className="text-xl leading-relaxed">
-                            İzmir'de aile hukuku alanında uzmanlaşmış bir avukat olarak, boşanma sürecindeki
-                            müvekkillerimize profesyonel hukuki destek sunuyoruz. <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındaki ofisimizden
-                            tüm süreçleri yakından takip ediyoruz. <strong>İzmir boşanma avukatı</strong> olarak
-                            anlaşmalı ve çekişmeli boşanma davaları, velayet davaları, nafaka ve mal paylaşımı
-                            süreçlerinde müvekkillerimize rehberlik ediyoruz.
+                            İzmir'de aile hukuku alanında uzmanlaşmış bir avukat olarak boşanma sürecinde profesyonel hukuki destek sunuyoruz. <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındaki ofisimizden tüm süreçleri yakından takip ediyoruz. <strong>İzmir boşanma avukatı</strong> olarak anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında müvekkillerimize rehberlik ediyoruz.
                         </p>
 
                         <p>
-                            Boşanma hukuku, Türk Medeni Kanunu'nun 161-184. maddeleri kapsamında düzenlenen hassas bir hukuk
-                            dalıdır. <strong>Boşanma davası nasıl açılır</strong>, <strong>velayet kime verilir</strong>,
-                            <strong> <Link href="/sozluk/nafaka" className="text-secondary font-bold">nafaka</Link> nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların
-                            başında gelmektedir. Aile hukukunda yaşanan uyuşmazlıklar, duygusal boyutunun yanı sıra mali
-                            ve hukuki açıdan da dikkatli bir yaklaşım gerektirmektedir.
+                            Boşanma hukuku, Türk Medeni Kanunu'nun 161-184. maddeleri kapsamında düzenlenen hassas bir hukuk dalıdır. <strong>Boşanma davası nasıl açılır</strong>, <strong>velayet kime verilir</strong>,
+                            <strong> <Link href="/sozluk/nafaka" className="text-secondary font-bold">nafaka</Link> nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların başında gelir. Aile hukuku uyuşmazlıkları duygusal boyutunun yanı sıra mali ve hukuki açıdan da dikkatli bir yaklaşım gerektirir.
                         </p>
 
                         {/* Hizmetlerimiz */}
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">İzmir Boşanma Avukatı Hizmetlerimiz</h2>
 
                         <p>
-                            Mert Kağan Çetin Hukuk Bürosu olarak İzmir'de aile hukuku alanında kapsamlı hizmetler sunmaktayız.
-                            <strong> İzmir boşanma davası avukatı</strong> olarak aşağıdaki hizmetleri sağlamaktayız:
+                            Mert Kağan Çetin Hukuk Bürosu olarak İzmir'de aile hukuku alanında kapsamlı hizmetler sunuyoruz.
+                            <strong> İzmir boşanma davası avukatı</strong> olarak aşağıdaki hizmetleri sağlıyoruz:
                         </p>
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
@@ -291,17 +284,17 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak sunduğumuz tüm hizmetlerde müvekkil menfaatini ön planda tutarak,
-                            süreci en az hasarla ve en kısa sürede tamamlamayı hedefliyoruz. Detaylı bilgi için
-                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyebilirsiniz.
+                            <strong>İzmir boşanma avukatı</strong> olarak tüm hizmetlerimizde müvekkil menfaatini ön planda tutuyoruz.
+                            Süreci en az hasarla ve en kısa sürede tamamlamayı hedefliyoruz. Detaylı bilgi için
+                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
                         </p>
 
                         {/* Hangi Durumlarda Boşanma Avukatına İhtiyacınız Var */}
                         <h2 id="ne-zaman-avukat" className="scroll-mt-24">Hangi Durumlarda Boşanma Avukatına İhtiyacınız Var?</h2>
 
                         <p>
-                            Boşanma süreci, hem duygusal hem de hukuki açıdan karmaşık bir süreçtir. Aşağıdaki durumlardan herhangi birini
-                            yaşıyorsanız, bir <strong>İzmir boşanma avukatı</strong> ile görüşmeniz hak kaybı yaşamamanız açısından
+                            Boşanma süreci hem duygusal hem de hukuki açıdan karmaşıktır. Aşağıdaki durumlardan herhangi birini
+                            yaşıyorsanız bir <strong>İzmir boşanma avukatı</strong> ile görüşün. Bu, hak kaybı yaşamamanız açısından
                             kritik önem taşır:
                         </p>
 
@@ -324,17 +317,15 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            Bu durumlardan herhangi birini yaşıyorsanız, süreleri kaçırmadan bir <strong>İzmir boşanma avukatı</strong> ile
-                            görüşmenizi tavsiye ederiz.
+                            Bu durumlardan birini yaşıyorsanız süreleri kaçırmadan bir <strong>İzmir boşanma avukatı</strong> ile görüşün.
                         </p>
 
                         {/* Anlaşmalı Boşanma */}
                         <h2 id="anlasmalai-bosanma" className="scroll-mt-24">Anlaşmalı Boşanma Nedir?</h2>
 
                         <p>
-                            <Link href="/sozluk/anlasmali-bosanma" className="text-secondary font-bold">Anlaşmalı boşanma</Link>, eşlerin boşanma ve boşanmanın tüm sonuçları (nafaka, velayet, mal paylaşımı,
-                            tazminat) konusunda mutabık kalarak açtığı boşanma davasıdır. Türk Medeni Kanunu m. 166/3
-                            kapsamında düzenlenen bu dava türü, en hızlı ve en az yıpratıcı boşanma yoludur.
+                            <Link href="/sozluk/anlasmali-bosanma" className="text-secondary font-bold">Anlaşmalı boşanma</Link>, eşlerin boşanmanın tüm sonuçlarında (nafaka, velayet, mal paylaşımı,
+                            tazminat) anlaşarak açtığı davadır. Türk Medeni Kanunu m. 166/3 kapsamında düzenlenir. En hızlı ve en az yıpratıcı boşanma yoludur.
                         </p>
 
                         <p>
@@ -349,14 +340,12 @@ export default function IzmirBosanmaAvukatiPage() {
                         </ul>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak anlaşmalı boşanma sürecinde en kritik adım olan
-                            boşanma protokolünü her iki tarafın haklarını koruyan şekilde hazırlıyoruz. Protokolde
-                            eksik veya belirsiz maddeler, ileride yeni davalara neden olabilir.
+                            <strong>İzmir boşanma avukatı</strong> olarak anlaşmalı boşanmada en kritik adım olan protokolü hazırlıyoruz. Her iki tarafın haklarını koruyan bir protokol oluşturuyoruz. Eksik veya belirsiz maddeler ileride yeni davalara neden olabilir.
                         </p>
 
                         <h3>Anlaşmalı Boşanma Protokolü Nasıl Hazırlanır?</h3>
                         <p>
-                            Anlaşmalı boşanma protokolü, eşlerin boşanmanın tüm sonuçları üzerinde mutabık kaldığını gösteren yazılı belgedir. Protokolde nafaka miktarı ve süresi, çocuk velayeti ve kişisel ilişki düzenlemesi, mal paylaşımı ve maddi-manevi tazminat konuları açıkça belirtilmelidir. <strong>İzmir boşanma avukatı</strong> olarak her iki tarafın haklarını koruyan, mahkemece kabul edilecek kapsamlı protokoller hazırlıyoruz.
+                            Anlaşmalı boşanma protokolü, eşlerin boşanmanın tüm sonuçlarında anlaştığını gösteren yazılı belgedir. Protokolde şu konular açıkça yer almalıdır: nafaka miktarı ve süresi, çocuk velayeti ve kişisel ilişki düzenlemesi, mal paylaşımı ve maddi-manevi tazminat. <strong>İzmir boşanma avukatı</strong> olarak her iki tarafın haklarını koruyan ve mahkemece kabul edilecek protokoller hazırlıyoruz.
                         </p>
 
                         {/* Çekişmeli Boşanma */}
@@ -365,8 +354,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="cekismeli-bosanma" className="scroll-mt-24">Çekişmeli Boşanma Davası</h2>
 
                         <p>
-                            Çekişmeli boşanma davası, eşlerin boşanma veya boşanmanın sonuçları konusunda anlaşamadığı
-                            durumlarda açılan davadır. Türk Medeni Kanunu'nda düzenlenen boşanma sebepleri şunlardır:
+                            Çekişmeli boşanma davası, eşlerin boşanma veya sonuçları konusunda anlaşamadığında açılır. Türk Medeni Kanunu'nda düzenlenen boşanma sebepleri şunlardır:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -396,24 +384,22 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            Her bir boşanma sebebinin kendine özgü ispat şartları ve zamanaşımı süreleri vardır. Bu nedenle
-                            <strong> İzmir boşanma avukatı</strong> desteği almadan hareket etmeniz durumunda hak kaybı
-                            yaşama riskiniz bulunmaktadır.
+                            Her boşanma sebebinin kendine özgü ispat şartları ve zamanaşımı süreleri vardır.
+                            <strong> İzmir boşanma avukatı</strong> desteği almadan hareket ederseniz hak kaybı yaşayabilirsiniz.
                         </p>
 
                         {/* Velayet */}
                         <h2 id="velayet" className="scroll-mt-24">Velayet Davası</h2>
 
                         <p>
-                            <Link href="/sozluk/velayet-davasi" className="text-secondary font-bold">Velayet davası</Link>, boşanma sonrasında çocuğun hangi ebeveynle birlikte yaşayacağının
-                            belirlenmesi veya mevcut velayet kararının değiştirilmesi için açılan davadır.
-                            Türk Medeni Kanunu m. 336-337 kapsamında düzenlenen velayet hukukunda
-                            <strong> çocuğun üstün yararı</strong> ilkesi temel belirleyicidir.
+                            <Link href="/sozluk/velayet-davasi" className="text-secondary font-bold">Velayet davası</Link>, boşanma sonrasında çocuğun hangi ebeveynle yaşayacağını belirler. Mevcut velayet kararının değiştirilmesi için de açılabilir.
+                            Türk Medeni Kanunu m. 336-337 kapsamında düzenlenir.
+                            <strong> Çocuğun üstün yararı</strong> ilkesi temel belirleyicidir.
                         </p>
 
                         <p>
-                            <strong>Velayet kime verilir</strong> sorusu, boşanma davalarının en hassas konularından biridir.
-                            Mahkeme velayet kararı verirken şu kriterleri değerlendirir:
+                            <strong>Velayet kime verilir</strong> sorusu boşanma davalarının en hassas konusudur.
+                            Mahkeme velayet kararında şu kriterleri değerlendirir:
                         </p>
 
                         <ul>
@@ -425,17 +411,15 @@ export default function IzmirBosanmaAvukatiPage() {
                         </ul>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak velayet davalarında çocuğun üstün yararını
-                            gözeterek en adil sonucun alınması için titizlikle çalışıyoruz. Kişisel ilişki (görüşme)
-                            düzenlemesi de velayet kararının önemli bir parçasıdır.
+                            <strong>İzmir boşanma avukatı</strong> olarak velayet davalarında çocuğun üstün yararını gözetiyoruz. En adil sonucu almak için titizlikle çalışıyoruz. Kişisel ilişki (görüşme) düzenlemesi de velayet kararının önemli bir parçasıdır.
                         </p>
 
                         {/* Nafaka */}
                         <h2 id="nafaka" className="scroll-mt-24">Nafaka Davası</h2>
 
                         <p>
-                            Nafaka, boşanma sürecinde ve sonrasında maddi destek sağlanması amacıyla hükmedilen ödemeyi ifade eder.
-                            Türk Medeni Kanunu&apos;nda üç temel nafaka türü düzenlenmiştir:
+                            Nafaka, boşanma sürecinde ve sonrasında maddi destek amacıyla hükmedilen ödemedir.
+                            Türk Medeni Kanunu&apos;nda üç temel nafaka türü vardır:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -462,15 +446,12 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>Nafaka nasıl belirlenir</strong> sorusu, boşanma davalarının mali boyutunu doğrudan
-                            etkiler. Hakimler nafaka miktarını belirlerken tarafların gelir durumu, yaşam standardı,
-                            çocuk sayısı ve ihtiyaçları dikkate alır. <strong>İzmir boşanma avukatı</strong> olarak
-                            müvekkillerimizin adil bir nafaka miktarı alması veya ödemesi için stratejik savunma hazırlıyoruz.
+                            <strong>Nafaka nasıl belirlenir</strong> sorusu boşanma davalarının mali boyutunu doğrudan etkiler. Hakimler nafaka miktarını belirlerken tarafların gelirini, yaşam standardını, çocuk sayısını ve ihtiyaçlarını dikkate alır. <strong>İzmir boşanma avukatı</strong> olarak müvekkillerimizin adil nafaka alması veya ödemesi için stratejik savunma hazırlıyoruz.
                         </p>
 
                         <h3>Nafaka Hesaplama ve Güncel Miktarlar</h3>
                         <p>
-                            Nafaka hesaplama sürecinde tarafların gelir ve giderleri, çocukların eğitim masrafları, yaşam standardı ve enflasyon oranı dikkate alınır. 2026 yılında İzmir aile mahkemelerinde hükmedilen iştirak nafakası miktarları çocuk başına ortalama 3.000-8.000 TL arasında değişmektedir. Yoksulluk nafakası ise nafaka alacaklısının geçinme ihtiyacına göre belirlenir.
+                            Nafaka hesaplamasında tarafların gelir ve giderleri, çocukların eğitim masrafları, yaşam standardı ve enflasyon oranı dikkate alınır. 2026 yılında İzmir aile mahkemelerinde iştirak nafakası çocuk başına ortalama 3.000-8.000 TL arasında değişir. Yoksulluk nafakası ise alacaklının geçinme ihtiyacına göre belirlenir.
                         </p>
 
                         {/* Mal Paylaşımı */}
@@ -479,9 +460,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="mal-paylasimi" className="scroll-mt-24">Boşanmada Mal Paylaşımı</h2>
 
                         <p>
-                            Mal paylaşımı davası, boşanma kararının kesinleşmesinden sonra açılabilen, evlilik
-                            süresince edinilen malların tasfiyesini konu alan davadır. 1 Ocak 2002 tarihinden
-                            sonra evlenen çiftlerde yasal mal rejimi <strong><Link href="/sozluk/mal-paylasimi" className="text-secondary">edinilmiş mallara katılma rejimi</Link></strong>dir.
+                            Mal paylaşımı davası, boşanma kararının kesinleşmesinden sonra açılır. Evlilik süresince edinilen malların tasfiyesini konu alır. 1 Ocak 2002 sonrası evlenen çiftlerde yasal mal rejimi <strong><Link href="/sozluk/mal-paylasimi" className="text-secondary">edinilmiş mallara katılma rejimi</Link></strong>dir.
                         </p>
 
                         <p>
@@ -496,16 +475,14 @@ export default function IzmirBosanmaAvukatiPage() {
                         </ul>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak mal paylaşımı davalarında müvekkillerimizin
-                            haklarını titizlikle koruyoruz. Özellikle mal kaçırma girişimlerinin önlenmesi için
-                            ihtiyati tedbir kararları almak bu sürecin kritik adımlarından biridir.
+                            <strong>İzmir boşanma avukatı</strong> olarak mal paylaşımı davalarında müvekkillerimizin haklarını titizlikle koruyoruz. Mal kaçırma girişimlerini önlemek için ihtiyati tedbir kararı alıyoruz. Bu adım sürecin en kritik aşamalarından biridir.
                         </p>
 
                         {/* Avukatlı mı Avukatsız mı */}
                         <h2 id="avukatli-avukatsiz" className="scroll-mt-24">Boşanma Davası Avukatsız mı Açılmalı, Avukatla mı?</h2>
 
                         <p>
-                            Boşanma davalarında avukat tutmak zorunlu olmasa da, özellikle çekişmeli davalarda velayet, nafaka ve
+                            Boşanma davalarında avukat tutmak zorunlu değildir. Ancak çekişmeli davalarda velayet, nafaka ve
                             mal paylaşımı konularında ciddi hak kayıpları yaşanabilir. İşte iki seçeneğin karşılaştırması:
                         </p>
 
@@ -529,8 +506,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            Özellikle <Link href="/sozluk/cekismeli-bosanma" className="text-secondary font-bold">çekişmeli boşanma</Link>, <Link href="/sozluk/velayet" className="text-secondary font-bold">velayet davası</Link> ve <Link href="/sozluk/mal-paylasimi" className="text-secondary font-bold">mal paylaşımı</Link> gibi
-                            davalarda avukat desteği almak, sonucu doğrudan etkiler.
+                            <Link href="/sozluk/cekismeli-bosanma" className="text-secondary font-bold">Çekişmeli boşanma</Link>, <Link href="/sozluk/velayet" className="text-secondary font-bold">velayet davası</Link> ve <Link href="/sozluk/mal-paylasimi" className="text-secondary font-bold">mal paylaşımı</Link> davalarında avukat desteği sonucu doğrudan etkiler.
                         </p>
 
                         {/* Ücretler */}
@@ -540,7 +516,7 @@ export default function IzmirBosanmaAvukatiPage() {
 
                         <p>
                             <strong>İzmir boşanma avukatı</strong> olarak şeffaf fiyatlandırma politikası uyguluyoruz.
-                            2026 yılı için geçerli avukatlık ücretleri aşağıdaki gibidir:
+                            2026 yılı avukatlık ücretleri aşağıdaki gibidir:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -583,8 +559,8 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
-                            <strong> İzmir boşanma avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
+                            Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret davanın karmaşıklığına ve özel durumuna göre belirlenir.
+                            <strong> İzmir boşanma avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunuyoruz.
                         </p>
 
                         {/* Neden Biz */}
@@ -606,8 +582,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir boşanma avukatı yorumları</strong> incelendiğinde müvekkillerimizin memnuniyeti açıkça görülmektedir; bu bizim için en önemli
-                            başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
+                            <strong>İzmir boşanma avukatı yorumları</strong> incelendiğinde müvekkillerimizin memnuniyeti açıkça görülür. Bu bizim için en önemli başarı kriteridir. Daha fazla bilgi için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -620,8 +595,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat olarak 2019 yılından bu yana boşanma hukuku, kira hukuku, iş hukuku ve tazminat hukuku alanlarında
-                                        müvekkillerine profesyonel hukuki destek sunmaktadır. Bayraklı merkezli ofisinden İzmir genelinde aile hukuku davalarını aktif olarak takip etmektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukat. 2019&apos;dan bu yana boşanma, kira, iş ve tazminat hukuku alanlarında profesyonel hukuki destek sunuyor. Bayraklı merkezli ofisinden İzmir genelinde aile hukuku davalarını aktif olarak takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -638,7 +612,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak boşanma sürecinde ortaya çıkan tazminat talepleri için <Link href="/izmir-tazminat-avukati" className="text-secondary font-bold">tazminat hukuku hizmetlerimizden</Link> de yararlanabilirsiniz. Boşanma sonrası kira uyuşmazlıkları yaşanması durumunda ise <Link href="/izmir-kira-avukati" className="text-secondary font-bold">kira hukuku desteğimiz</Link> mevcuttur.
+                            Boşanma sürecinde tazminat talepleri için <Link href="/izmir-tazminat-avukati" className="text-secondary font-bold">tazminat hukuku hizmetlerimizden</Link> yararlanabilirsiniz. Boşanma sonrası kira uyuşmazlıkları yaşarsanız <Link href="/izmir-kira-avukati" className="text-secondary font-bold">kira hukuku desteğimiz</Link> de mevcuttur.
                         </p>
 
                         {/* İlgili Makaleler */}
@@ -681,7 +655,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir Boşanma Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
                                     Boşanma davalarınız için hemen randevu alın.
-                                    <strong className="text-white"> İzmir boşanma avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
+                                    <strong className="text-white"> İzmir boşanma avukatı</strong> ekibimiz size yardımcı olmaktan mutluluk duyar.
                                 </p>
 
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -730,8 +704,8 @@ export default function IzmirBosanmaAvukatiPage() {
                         <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">
                             <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-4">İlçe Bazlı Boşanma Avukatı Hizmetlerimiz</h2>
                             <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
-                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısında yer almakta olup, İzmir&apos;in tüm merkez ilçelerinde
-                                boşanma ve aile hukuku davalarını takip etmektedir.
+                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısındadır. İzmir&apos;in tüm merkez ilçelerinde
+                                boşanma ve aile hukuku davalarını takip ediyoruz.
                             </p>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 {[

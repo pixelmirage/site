@@ -236,7 +236,7 @@ export default function IzmirIsAvukatiPage() {
             prose-tr:even:bg-slate-50">
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir iş avukatı</strong>, işçi ve işveren arasındaki hukuki uyuşmazlıklarda tarafları temsil eden, işe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı ve işçi alacakları konularında uzmanlaşmış avukattır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı olarak Bayraklı merkezli ofisinden İzmir genelinde iş hukuku hizmeti vermektedir.
+                            <strong>İzmir iş avukatı</strong>, işçi ve işveren arasındaki hukuki uyuşmazlıklarda tarafları temsil eder. İşe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı ve işçi alacakları bu avukatın uzmanlık alanıdır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde iş hukuku hizmeti vermektedir.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -244,29 +244,20 @@ export default function IzmirIsAvukatiPage() {
                         </p>
 
                         <p className="text-xl leading-relaxed">
-                            İzmir'de iş hukuku alanında uzmanlaşmış bir avukat olarak, işçi ve işveren arasındaki
-                            uyuşmazlıkların çözümünde profesyonel hukuki destek sunuyoruz. <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındaki ofisimizden
-                            tüm süreçleri yakından takip ediyoruz. <strong>İzmir iş avukatı</strong> olarak
-                            işe iade davaları, tazminat davaları, iş kazası davaları ve arabuluculuk süreçlerinde
-                            müvekkillerimize rehberlik ediyoruz.
+                            İzmir'de iş hukuku alanında uzman bir avukat olarak işçi ve işveren uyuşmazlıklarında profesyonel destek sunuyoruz. Ofisimiz <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındadır. Tüm süreçleri yakından takip ediyoruz. <strong>İzmir iş avukatı</strong> olarak işe iade, tazminat, iş kazası davaları ve arabuluculuk süreçlerinde müvekkillerimize rehberlik ediyoruz.
                         </p>
 
                         <p>
-                            İş hukuku, 4857 sayılı İş Kanunu, Borçlar Kanunu ve Sosyal Sigortalar mevzuatı çerçevesinde
-                            düzenlenen kapsamlı bir hukuk dalıdır. Bu alanda deneyimli bir <strong>iş mahkemesi avukatı</strong> ile
-                            çalışmak, süreçlerin doğru yönetilmesi açısından büyük önem taşır. İzmir'de yaşanan işçi-işveren uyuşmazlıkları, ekonomik
-                            koşulların etkisiyle her geçen gün artmaktadır. <strong>İşten çıkarıldım ne yapmalıyım</strong>,
-                            <strong> kıdem tazminatı nasıl hesaplanır</strong>, <strong>işe iade davası şartları</strong> nelerdir
-                            gibi sorular büromuzda en sık yanıtladığımız konuların başında gelmektedir.
+                            İş hukuku; 4857 sayılı İş Kanunu, Borçlar Kanunu ve Sosyal Sigortalar mevzuatı ile düzenlenen kapsamlı bir hukuk dalıdır. Bu alanda deneyimli bir <strong>iş mahkemesi avukatı</strong> ile çalışmak, süreçlerin doğru yönetilmesi için çok önemlidir. İzmir'de işçi-işveren uyuşmazlıkları ekonomik koşullarla birlikte her geçen gün artıyor. <strong>İşten çıkarıldım ne yapmalıyım</strong>, <strong>kıdem tazminatı nasıl hesaplanır</strong>, <strong>işe iade davası şartları</strong> nelerdir gibi sorular büromuzda en sık yanıtladığımız konulardır.
                         </p>
 
                         {/* Hizmetlerimiz */}
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">İzmir İş Avukatı Hizmetlerimiz</h2>
 
                         <p>
-                            Mert Kağan Çetin Hukuk Bürosu olarak İzmir'de iş hukuku alanında kapsamlı hizmetler sunmaktayız.
+                            Mert Kağan Çetin Hukuk Bürosu olarak İzmir'de iş hukuku alanında kapsamlı hizmetler sunuyoruz.
                             <strong> İzmir iş davası avukatı</strong> ve tazminat davaları konusunda uzman ekibimizle aşağıdaki
-                            hizmetleri sağlamaktayız:
+                            hizmetleri sağlıyoruz:
                         </p>
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
@@ -289,18 +280,17 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir iş avukatı</strong> olarak sunduğumuz tüm hizmetlerde müvekkil menfaatini ön planda tutarak,
-                            en kısa sürede en etkili sonuçları almayı hedefliyoruz. Detaylı bilgi için
-                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyebilirsiniz.
+                            <strong>İzmir iş avukatı</strong> olarak tüm hizmetlerimizde müvekkil menfaatini ön planda tutuyoruz.
+                            En kısa sürede en etkili sonuçları almayı hedefliyoruz. Detaylı bilgi için
+                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
                         </p>
 
                         {/* Hangi Durumlarda İş Avukatına İhtiyacınız Var */}
                         <h2 id="ne-zaman-avukat" className="scroll-mt-24">Hangi Durumlarda İş Avukatına İhtiyacınız Var?</h2>
 
                         <p>
-                            İş hukuku uyuşmazlıkları, zamanaşımı süreleri ve ispat yükü nedeniyle profesyonel hukuki destek gerektiren bir alandır.
-                            Aşağıdaki durumlardan herhangi birini yaşıyorsanız, bir <strong>İzmir iş avukatı</strong> ile görüşmeniz hak kaybı
-                            yaşamamanız açısından kritik önem taşır:
+                            İş hukuku uyuşmazlıkları, zamanaşımı süreleri ve ispat yükü nedeniyle profesyonel destek gerektirir.
+                            Aşağıdaki durumlardan birini yaşıyorsanız bir <strong>İzmir iş avukatı</strong> ile görüşün. Aksi halde hak kaybına uğrayabilirsiniz:
                         </p>
 
                         <div className="not-prose my-8 space-y-4">
@@ -322,9 +312,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            Bu durumlardan herhangi birini yaşıyorsanız, zamanaşımı sürelerini kaçırmadan bir <strong>İzmir iş avukatı</strong> ile
-                            görüşmenizi tavsiye ederiz. İş uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
-                            de dahil olmak üzere tüm aşamalarda yanınızdayız.
+                            Bu durumlardan birini yaşıyorsanız zamanaşımı sürelerini kaçırmadan bir <strong>İzmir iş avukatı</strong> ile görüşün. Dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci dahil tüm aşamalarda yanınızdayız.
                         </p>
 
                         {/* İşe İade Davası */}
@@ -333,9 +321,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="ise-iade" className="scroll-mt-24">İşe İade Davası Nedir?</h2>
 
                         <p>
-                            İşe iade davası, iş güvencesi kapsamındaki işçilerin haksız veya geçersiz nedenle işten çıkarılması
-                            halinde açtığı davadır. 4857 sayılı İş Kanunu'nun 18-21. maddeleri arasında düzenlenen bu dava,
-                            işçinin işine geri dönmesini veya tazminat almasını sağlar.
+                            İşe iade davası, iş güvencesi kapsamındaki işçilerin haksız veya geçersiz nedenle işten çıkarılması halinde açılır. Bu dava 4857 sayılı İş Kanunu'nun 18-21. maddeleri arasında düzenlenmiştir. Dava sonucunda işçi işine geri döner ya da tazminat alır.
                         </p>
 
                         <p>
@@ -375,18 +361,14 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            İşe iade davası kazanılmasına rağmen işveren işçiyi işe başlatmazsa, işçiye en az 4 aylık,
-                            en fazla 8 aylık boşta geçen süre ücreti ve iş güvencesi tazminatı ödenmek zorundadır.
-                            <strong> İzmir iş avukatı</strong> olarak bu süreçte müvekkillerimizi en etkin şekilde temsil ediyoruz.
+                            İşe iade davası kazanılsa bile işveren işçiyi işe başlatmayabilir. Bu durumda işçiye en az 4 aylık, en fazla 8 aylık boşta geçen süre ücreti ödenir. Ayrıca iş güvencesi tazminatı da verilir. <strong>İzmir iş avukatı</strong> olarak bu süreçte müvekkillerimizi en etkin şekilde temsil ediyoruz.
                         </p>
 
                         {/* Kıdem Tazminatı */}
                         <h2 id="kidem-tazminati" className="scroll-mt-24">Kıdem Tazminatı Nasıl Hesaplanır?</h2>
 
                         <p>
-                            <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">Kıdem tazminatı</Link>, en az 1 yıl çalışmış olan işçinin iş sözleşmesinin belirli
-                            koşullarla sona ermesi halinde hak ettiği tazminattır. 1475 sayılı eski İş Kanunu'nun
-                            halen yürürlükte olan 14. maddesi kapsamında düzenlenmektedir.
+                            <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">Kıdem tazminatı</Link>, en az 1 yıl çalışmış olan işçinin belirli koşullarla iş sözleşmesi sona erdiğinde hak ettiği tazminattır. Bu tazminat 1475 sayılı eski İş Kanunu'nun halen yürürlükte olan 14. maddesinde düzenlenmiştir.
                         </p>
 
                         <p>
@@ -430,18 +412,14 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir iş avukatı</strong> olarak kıdem tazminatı davalarında müvekkillerimizin tüm haklarını
-                            koruyarak en yüksek tazminat miktarının alınmasını hedefliyoruz. 5 yıllık zamanaşımı süresi
-                            dolmadan haklarınızı talep etmeniz büyük önem taşımaktadır.
+                            <strong>İzmir iş avukatı</strong> olarak kıdem tazminatı davalarında müvekkillerimizin tüm haklarını koruyoruz. Amacımız en yüksek tazminat miktarını almaktır. 5 yıllık zamanaşımı süresi dolmadan haklarınızı talep etmeniz çok önemlidir.
                         </p>
 
                         {/* İhbar Tazminatı */}
                         <h2 id="ihbar-tazminati" className="scroll-mt-24">İhbar Tazminatı Nedir?</h2>
 
                         <p>
-                            <Link href="/sozluk/ihbar-tazminati" className="text-secondary font-bold">İhbar tazminatı</Link>, belirsiz süreli iş sözleşmesinin bildirim süresine uyulmaksızın
-                            feshedilmesi halinde, karşı tarafa ödenmesi gereken tazminattır. İş Kanunu m. 17&apos;de
-                            düzenlenen bildirim süreleri şu şekildedir:
+                            <Link href="/sozluk/ihbar-tazminati" className="text-secondary font-bold">İhbar tazminatı</Link>, belirsiz süreli iş sözleşmesinin bildirim süresine uyulmadan feshedilmesi durumunda ödenir. Bu tazminat karşı tarafa verilir. İş Kanunu m. 17&apos;de düzenlenen bildirim süreleri şu şekildedir:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -471,8 +449,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            İhbar tazminatı hem işçi hem de işveren tarafından talep edilebilir. İhbar süresine uymayan
-                            taraf, karşı tarafa bildirim süresine ilişkin ücreti tazminat olarak ödemek zorundadır.
+                            İhbar tazminatını hem işçi hem de işveren talep edebilir. İhbar süresine uymayan taraf, karşı tarafa bu süreye ait ücreti tazminat olarak öder.
                         </p>
 
                         {/* İş Kazası */}
@@ -481,9 +458,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="is-kazasi" className="scroll-mt-24">İş Kazası Tazminatı</h2>
 
                         <p>
-                            İş kazası, 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu&apos;nun 13. maddesinde
-                            tanımlanmıştır. İşçinin işyerinde veya işin yürütümü nedeniyle meydana gelen kazalar sonucunda
-                            bedensel veya ruhsal zarar görmesi halinde işverenden tazminat talep edilebilir.
+                            İş kazası, 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu&apos;nun 13. maddesinde tanımlanmıştır. İşçi, işyerinde veya iş sebebiyle kaza geçirirse bedensel ya da ruhsal zarar görebilir. Bu durumda işverenden tazminat talep edilebilir.
                         </p>
 
                         <p>
@@ -497,18 +472,14 @@ export default function IzmirIsAvukatiPage() {
                         </ul>
 
                         <p>
-                            İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıl ve
-                            her halükarda kazanın meydana geldiği tarihten itibaren 10 yıldır. İş kazasının SGK&apos;ya 3 iş
-                            günü içinde bildirilmesi zorunludur. <strong>İzmir iş avukatı</strong> olarak iş kazası
-                            sürecinin her aşamasında müvekkillerimizin yanındayız. İş kazası sonucunda doğan tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyebilirsiniz.
+                            İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıldır. Her durumda kazanın olduğu tarihten itibaren 10 yıl içinde dava açılmalıdır. İş kazası SGK&apos;ya 3 iş günü içinde bildirilmelidir. <strong>İzmir iş avukatı</strong> olarak iş kazası sürecinin her aşamasında yanınızdayız. Tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyin.
                         </p>
 
                         {/* İşçi Hakları */}
                         <h2 id="isci-haklari" className="scroll-mt-24">İşçi Hakları</h2>
 
                         <p>
-                            4857 sayılı İş Kanunu, işçileri koruyan kapsamlı düzenlemeler içermektedir. <strong>İşçi hakları</strong>
-                            kapsamında hem işçilerin hem de işverenlerin bilmesi gereken temel hükümler şunlardır:
+                            4857 sayılı İş Kanunu, işçileri koruyan kapsamlı düzenlemeler içerir. <strong>İşçi hakları</strong> kapsamında işçi ve işverenlerin bilmesi gereken temel hükümler şunlardır:
                         </p>
 
                         <ul>
@@ -543,8 +514,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="avukatli-avukatsiz" className="scroll-mt-24">İş Davası Avukatsız mı Açılmalı, Avukatla mı?</h2>
 
                         <p>
-                            İş davalarında avukat tutmak zorunlu olmasa da, iş hukuku teknik süreleri ve ispat yükü nedeniyle
-                            avukatsız açılan davalarda ciddi hak kayıpları yaşanmaktadır. İşte iki seçeneğin karşılaştırması:
+                            İş davalarında avukat tutmak zorunlu değildir. Ancak iş hukukunda teknik süreler ve ispat yükü nedeniyle avukatsız davalarda ciddi hak kayıpları yaşanır. İşte iki seçeneğin karşılaştırması:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -567,31 +537,19 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            Özellikle <Link href="/sozluk/ise-iade-davasi" className="text-secondary font-bold">işe iade davası</Link>, <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">kıdem tazminatı</Link> ve <Link href="/sozluk/hakli-fesih" className="text-secondary font-bold">haklı fesih</Link> gibi teknik
-                            davalarda avukat desteği almak, davanın lehine sonuçlanma olasılığını önemli ölçüde artırır.
+                            Özellikle <Link href="/sozluk/ise-iade-davasi" className="text-secondary font-bold">işe iade davası</Link>, <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">kıdem tazminatı</Link> ve <Link href="/sozluk/hakli-fesih" className="text-secondary font-bold">haklı fesih</Link> gibi teknik davalarda avukat desteği almak çok önemlidir. Avukatla açılan davalar lehine sonuçlanma olasılığını belirgin şekilde artırır.
                         </p>
 
                         <h3>Mobbing Davası</h3>
 
                         <p>
-                            Mobbing (işyerinde psikolojik taciz), işçinin sistematik olarak baskıya, aşağılamaya veya
-                            dışlanmaya maruz kalmasıdır. İş Kanunu ve Borçlar Kanunu kapsamında işverenin işçiyi
-                            koruma yükümlülüğü bulunmaktadır. Mobbinge maruz kalan işçi, iş sözleşmesini haklı nedenle
-                            feshederek kıdem tazminatı talep edebilir ve ayrıca manevi tazminat davası açabilir.
-                            Mobbing davasında e-posta yazışmaları, mesajlar, tanık ifadeleri ve psikolojik sağlık
-                            raporları en önemli deliller arasındadır. <strong>İzmir iş avukatı</strong> olarak
-                            mobbing mağdurlarına hukuki süreçte rehberlik ediyoruz.
+                            Mobbing (işyerinde psikolojik taciz), işçinin sistematik olarak baskıya, aşağılamaya veya dışlanmaya maruz kalmasıdır. İş Kanunu ve Borçlar Kanunu kapsamında işverenin işçiyi koruma yükümlülüğü vardır. Mobbinge maruz kalan işçi, iş sözleşmesini haklı nedenle feshedebilir. Bu durumda kıdem tazminatı talep edebilir. Ayrıca manevi tazminat davası da açabilir. Mobbing davasında e-posta yazışmaları, mesajlar, tanık ifadeleri ve psikolojik sağlık raporları en önemli delillerdir. <strong>İzmir iş avukatı</strong> olarak mobbing mağdurlarına hukuki süreçte rehberlik ediyoruz.
                         </p>
 
                         <h3>Fazla Mesai Alacağı Davası</h3>
 
                         <p>
-                            Fazla mesai alacağı davası, haftalık 45 saati aşan çalışmalar için ödenmesi gereken %50
-                            zamlı ücretin işveren tarafından ödenmemesi halinde açılan davadır. Fazla mesai alacağı
-                            5 yıllık zamanaşımına tabidir ve bu süre içinde talep edilmelidir. İspat yükü işçide
-                            olmakla birlikte, bordrolar, işyeri giriş-çıkış kayıtları, mesaj ve e-posta yazışmaları
-                            ile tanık beyanları delil olarak kullanılabilir. Mahkeme, fazla mesai alacağından takdiri
-                            indirim (hakkaniyet indirimi) uygulayabilmektedir.
+                            Fazla mesai alacağı davası, haftalık 45 saati aşan çalışmalar için %50 zamlı ücretin ödenmemesi durumunda açılır. Bu alacak 5 yıllık zamanaşımına tabidir. İspat yükü işçidedir. Bordrolar, işyeri giriş-çıkış kayıtları, mesaj ve e-posta yazışmaları ile tanık beyanları delil olarak kullanılabilir. Mahkeme, fazla mesai alacağından takdiri indirim (hakkaniyet indirimi) uygulayabilir.
                         </p>
 
                         {/* Ücretler */}
@@ -644,8 +602,8 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın karmaşıklığına ve özel durumuna göre belirlenir.
-                            <strong> İzmir iş avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunmaktayız.
+                            Yukarıdaki ücretler ortalama değerlerdir. Kesin ücret, davanın durumuna göre belirlenir.
+                            <strong> İzmir iş avukatı</strong> olarak ilk görüşmede detaylı ücret bilgisi sunuyoruz.
                         </p>
 
                         {/* Neden Biz */}
@@ -667,8 +625,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            İzmir'de <strong>en iyi iş hukuku avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkillerimizin memnuniyeti bizim için en önemli
-                            başarı kriteridir. Hakkımızda daha fazla bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edebilirsiniz.
+                            İzmir'de <strong>en iyi iş hukuku avukatı</strong> arayışınızda doğru adrestesiniz. Müvekkillerimizin memnuniyeti bizim için en önemli başarı kriteridir. Daha fazla bilgi için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -681,8 +638,7 @@ export default function IzmirIsAvukatiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat olarak 2019 yılından bu yana iş hukuku, kira hukuku, boşanma hukuku ve tazminat hukuku alanlarında
-                                        müvekkillerine profesyonel hukuki destek sunmaktadır. Bayraklı merkezli ofisinden İzmir genelinde iş davalarını aktif olarak takip etmektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukattır. 2019 yılından bu yana iş hukuku, kira hukuku, boşanma hukuku ve tazminat hukuku alanlarında hizmet veriyor. Bayraklı merkezli ofisinden İzmir genelinde iş davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -748,7 +704,7 @@ export default function IzmirIsAvukatiPage() {
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İzmir İş Avukatı ile Görüşün</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
                                     İş davalarınız için hemen randevu alın.
-                                    <strong className="text-white"> İzmir iş avukatı</strong> ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.
+                                    <strong className="text-white"> İzmir iş avukatı</strong> ekibimiz size yardımcı olmaya hazırdır.
                                 </p>
 
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -797,8 +753,7 @@ export default function IzmirIsAvukatiPage() {
                         <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">
                             <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-4">İlçe Bazlı İş Avukatı Hizmetlerimiz</h2>
                             <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
-                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısında yer almakta olup, İzmir&apos;in tüm merkez ilçelerinde
-                                iş hukuku davalarını takip etmektedir.
+                                Ofisimiz Bayraklı Adliyesi&apos;nin hemen karşısındadır. İzmir&apos;in tüm merkez ilçelerinde iş hukuku davalarını takip ediyoruz.
                             </p>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 {[
