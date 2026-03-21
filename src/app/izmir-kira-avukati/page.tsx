@@ -433,7 +433,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p className="text-center">
-                            Tahliye taahhütnamesi ile tahliye, diğer yollara göre çok daha hızlıdır. <strong>İzmir kira avukatı</strong> olarak müvekkillerimize taahhütname almalarını öneririz. Detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyun. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className="text-secondary font-bold">İki haklı ihtar makalemiz</Link> de faydalı olacaktır.
+                            Tahliye taahhütnamesi ile tahliye, diğer yollara göre çok daha hızlıdır. Tahliye kararına rağmen taşınmazı boşaltmayan kiracıdan <Link href="/sozluk/ecrimisil/" className="text-secondary font-bold">ecrimisil</Link> (haksız işgal tazminatı) talep edilebilir. <strong>İzmir kira avukatı</strong> olarak müvekkillerimize taahhütname almalarını öneririz. Detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyun. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className="text-secondary font-bold">İki haklı ihtar makalemiz</Link> de faydalı olacaktır.
                         </p>
 
                         {/* Kira Tespit Davası */}

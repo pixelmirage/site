@@ -321,7 +321,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="ise-iade" className="scroll-mt-24">İşe İade Davası Nedir?</h2>
 
                         <p>
-                            İşe iade davası, iş güvencesi kapsamındaki işçilerin haksız veya geçersiz nedenle işten çıkarılması halinde açılır. Bu dava 4857 sayılı İş Kanunu'nun 18-21. maddeleri arasında düzenlenmiştir. Dava sonucunda işçi işine geri döner ya da tazminat alır.
+                            İşe iade davası, <Link href="/sozluk/is-guvencesi/" className="text-secondary font-semibold">iş güvencesi</Link> kapsamındaki işçilerin haksız veya geçersiz nedenle işten çıkarılması halinde açılır. Bu dava 4857 sayılı İş Kanunu'nun 18-21. maddeleri arasında düzenlenmiştir. Dava sonucunda işçi işine geri döner ya da tazminat alır.
                         </p>
 
                         <p>

@@ -1059,7 +1059,7 @@ Ecrimisil talebi geriye dönük olarak 5 yıla kadar yapılabilir. Hazine taşı
         legalBasis: "TMK m. 995, TBK m. 77",
         category: "tazminat",
         relatedTermSlugs: ["fuzuli-isgal", "maddi-tazminat", "haksiz-fiil"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {

@@ -384,7 +384,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            Her boşanma sebebinin kendine özgü ispat şartları ve zamanaşımı süreleri vardır.
+                            Uygulamada davaların büyük çoğunluğu <Link href="/sozluk/evlilik-birliginin-temelden-sarsilmasi/" className="text-secondary font-bold">evlilik birliğinin temelden sarsılması</Link> sebebine dayanır (TMK m. 166). Her boşanma sebebinin kendine özgü ispat şartları ve zamanaşımı süreleri vardır.
                             <strong> İzmir boşanma avukatı</strong> desteği almadan hareket ederseniz hak kaybı yaşayabilirsiniz.
                         </p>
 
