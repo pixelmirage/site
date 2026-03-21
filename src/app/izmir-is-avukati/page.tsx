@@ -236,7 +236,7 @@ export default function IzmirIsAvukatiPage() {
             prose-tr:even:bg-slate-50">
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir iş avukatı</strong>, işçi ve işveren arasındaki hukuki uyuşmazlıklarda tarafları temsil eder. İşe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı ve işçi alacakları bu avukatın uzmanlık alanıdır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde iş hukuku hizmeti vermektedir.
+                            <strong>İzmir iş avukatı</strong>, işçi ve işveren arasındaki hukuki uyuşmazlıklarda tarafları temsil eder. İşe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı ve işçi alacakları bu avukatın uzmanlık alanıdır. Av. Mert Kağan Çetin, <a href="https://www.izmirbarosu.org.tr/" target="_blank" rel="noopener noreferrer">İzmir Barosu</a>&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde iş hukuku hizmeti vermektedir.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -244,7 +244,7 @@ export default function IzmirIsAvukatiPage() {
                         </p>
 
                         <p className="text-xl leading-relaxed">
-                            İzmir'de iş hukuku alanında uzman bir avukat olarak işçi ve işveren uyuşmazlıklarında profesyonel destek sunuyoruz. Ofisimiz <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındadır. Tüm süreçleri yakından takip ediyoruz. <strong>İzmir iş avukatı</strong> olarak işe iade, tazminat, iş kazası davaları ve arabuluculuk süreçlerinde müvekkillerimize rehberlik ediyoruz.
+                            İzmir'de iş hukuku alanında uzman bir avukat olarak işçi ve işveren uyuşmazlıklarında profesyonel destek sunuyoruz. Ofisimiz <a href="https://izmir.adalet.gov.tr/" target="_blank" rel="noopener noreferrer" className="text-secondary font-bold no-underline"><strong>Bayraklı Adliyesi</strong></a> (İzmir Adliyesi) yakınındadır. Tüm süreçleri yakından takip ediyoruz. <strong>İzmir iş avukatı</strong> olarak işe iade, tazminat, iş kazası davaları ve arabuluculuk süreçlerinde müvekkillerimize rehberlik ediyoruz.
                         </p>
 
                         <p>
@@ -500,7 +500,7 @@ export default function IzmirIsAvukatiPage() {
                         </ul>
 
                         <p>
-                            İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıldır. Her durumda kazanın olduğu tarihten itibaren 10 yıl içinde dava açılmalıdır. İş kazası SGK&apos;ya 3 iş günü içinde bildirilmelidir. <strong>İzmir iş avukatı</strong> olarak iş kazası sürecinin her aşamasında yanınızdayız. Tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati/" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyin.
+                            İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıldır. Her durumda kazanın olduğu tarihten itibaren 10 yıl içinde dava açılmalıdır. İş kazası <a href="https://www.sgk.gov.tr/" target="_blank" rel="noopener noreferrer">SGK</a>&apos;ya 3 iş günü içinde bildirilmelidir. <strong>İzmir iş avukatı</strong> olarak iş kazası sürecinin her aşamasında yanınızdayız. Tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati/" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyin.
                         </p>
 
                         {/* İşçi Hakları */}
@@ -711,6 +711,30 @@ export default function IzmirIsAvukatiPage() {
                                 <Link href="/kidem-tazminati-hesaplama/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Kıdem Tazminatı Hesaplama (2026 Güncel Tavan)
                                 </Link>
+                            </div>
+                        </div>
+
+                        {/* Yerel Kaynaklar */}
+                        <div className="not-prose my-12 bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-6">Faydalı Yerel Kaynaklar</h2>
+                            <p className="text-sm text-slate-600 mb-6">
+                                İzmir&apos;de iş hukuku uyuşmazlıklarında başvurabileceğiniz resmi kurumlar ve iletişim bilgileri:
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "İş mahkemesi dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
+                                    { name: "SGK İzmir İl Müdürlüğü", desc: "Sigorta primi sorgulama, iş kazası bildirimi ve hizmet dökümü", url: "https://www.sgk.gov.tr/", phone: "ALO 170" },
+                                    { name: "Arabuluculuk Daire Başkanlığı", desc: "İş uyuşmazlığı arabuluculuk başvurusu ve arabulucu listesi", url: "https://adb.adalet.gov.tr/", phone: null },
+                                    { name: "İŞKUR İzmir", desc: "İşsizlik maaşı başvurusu ve iş arama kaydı", url: "https://www.iskur.gov.tr/", phone: "ALO 170" },
+                                    { name: "ÇSGB İzmir Bölge Müdürlüğü", desc: "İş müfettişi şikayeti ve iş güvenliği denetimi", url: "https://www.csgb.gov.tr/", phone: "ALO 170" },
+                                ].map((resource, i) => (
+                                    <a key={i} href={resource.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl hover:border-secondary hover:shadow-md transition-all">
+                                        <span className="font-bold text-primary text-sm mb-1">{resource.name}</span>
+                                        <span className="text-xs text-slate-500 mb-2">{resource.desc}</span>
+                                        {resource.phone && <span className="text-xs text-secondary font-medium">Tel: {resource.phone}</span>}
+                                    </a>
+                                ))}
                             </div>
                         </div>
 

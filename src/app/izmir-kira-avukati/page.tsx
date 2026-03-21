@@ -252,7 +252,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         {/* Definition Block - AI SEO Optimized */}
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir kira avukatı</strong>, kira sözleşmelerinden doğan uyuşmazlıklarda kiracı veya ev sahibini temsil eden avukattır. Tahliye davaları, kira tespit davaları ve kira alacağı takibi başlıca çalışma alanlarıdır. <strong>Kira hukuku avukatı İzmir</strong> arayanlar için Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı olarak Bayraklı merkezli ofisinden hizmet vermektedir.
+                            <strong>İzmir kira avukatı</strong>, kira sözleşmelerinden doğan uyuşmazlıklarda kiracı veya ev sahibini temsil eden avukattır. Tahliye davaları, kira tespit davaları ve kira alacağı takibi başlıca çalışma alanlarıdır. <strong>Kira hukuku avukatı İzmir</strong> arayanlar için Av. Mert Kağan Çetin, <a href="https://www.izmirbarosu.org.tr/" target="_blank" rel="noopener noreferrer">İzmir Barosu</a>&apos;na kayıtlı olarak Bayraklı merkezli ofisinden hizmet vermektedir.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -260,7 +260,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p className="text-xl leading-relaxed">
-                            İzmir'de kira hukuku alanında uzman avukat olarak ev sahipleri ve kiracılara destek sunuyoruz. <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındaki ofisimizden tüm süreçleri yakından takip ediyoruz. <strong>İzmir kira avukatı</strong> olarak tahliye, kira tespiti, sözleşme hazırlama ve arabuluculuk konularında yanınızdayız.
+                            İzmir'de kira hukuku alanında uzman avukat olarak ev sahipleri ve kiracılara destek sunuyoruz. <a href="https://izmir.adalet.gov.tr/" target="_blank" rel="noopener noreferrer" className="text-secondary font-bold no-underline"><strong>Bayraklı Adliyesi</strong></a> (İzmir Adliyesi) yakınındaki ofisimizden tüm süreçleri yakından takip ediyoruz. <strong>İzmir kira avukatı</strong> olarak tahliye, kira tespiti, sözleşme hazırlama ve arabuluculuk konularında yanınızdayız.
                         </p>
 
                         <p>
@@ -752,6 +752,30 @@ export default function IzmirKiraAvukatiPage() {
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
+                        </div>
+
+                        {/* Yerel Kaynaklar */}
+                        <div className="not-prose my-12 bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-6">Faydalı Yerel Kaynaklar</h2>
+                            <p className="text-sm text-slate-600 mb-6">
+                                İzmir&apos;de kira uyuşmazlıklarında başvurabileceğiniz resmi kurumlar ve iletişim bilgileri:
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {[
+                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
+                                    { name: "UYAP Vatandaş Portal", desc: "Online dava takibi ve e-imza ile işlem", url: "https://vatandas.uyap.gov.tr/", phone: "ALO 176" },
+                                    { name: "Arabuluculuk Daire Başkanlığı", desc: "Kira arabuluculuk başvurusu ve arabulucu listesi", url: "https://adb.adalet.gov.tr/", phone: null },
+                                    { name: "TKGM (Tapu Kadastro)", desc: "Tapu kaydı sorgulama ve gayrimenkul bilgileri", url: "https://www.tkgm.gov.tr/", phone: "181" },
+                                    { name: "e-Devlet Kapısı", desc: "Tapu, SGK ve adli sicil sorgulamaları", url: "https://www.turkiye.gov.tr/", phone: "ALO 150" },
+                                ].map((resource, i) => (
+                                    <a key={i} href={resource.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl hover:border-secondary hover:shadow-md transition-all">
+                                        <span className="font-bold text-primary text-sm mb-1">{resource.name}</span>
+                                        <span className="text-xs text-slate-500 mb-2">{resource.desc}</span>
+                                        {resource.phone && <span className="text-xs text-secondary font-medium">Tel: {resource.phone}</span>}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
                         {/* SSS */}

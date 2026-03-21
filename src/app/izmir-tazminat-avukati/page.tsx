@@ -229,7 +229,7 @@ export default function IzmirTazminatAvukatiPage() {
             prose-tr:even:bg-slate-50">
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir tazminat avukatı</strong>, hukuka aykırı eylem veya sözleşme ihlali sonucu zarar gören kişilerin haklarını korur. Bu avukat, maddi ve manevi zararların tazmini için dava açar. İş kazası, trafik kazası ve malpraktis gibi alanlarda uzmanlaşmıştır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde tazminat hukuku hizmeti veriyor.
+                            <strong>İzmir tazminat avukatı</strong>, hukuka aykırı eylem veya sözleşme ihlali sonucu zarar gören kişilerin haklarını korur. Bu avukat, maddi ve manevi zararların tazmini için dava açar. İş kazası, trafik kazası ve malpraktis gibi alanlarda uzmanlaşmıştır. Av. Mert Kağan Çetin, <a href="https://www.izmirbarosu.org.tr/" target="_blank" rel="noopener noreferrer">İzmir Barosu</a>&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde tazminat hukuku hizmeti veriyor.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -569,6 +569,28 @@ export default function IzmirTazminatAvukatiPage() {
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
+                        </div>
+
+                        {/* Faydalı Yerel Kaynaklar */}
+                        <div className="not-prose my-12 bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-2">Faydalı Yerel Kaynaklar</h2>
+                            <p className="text-sm text-slate-500 mb-6">İzmir&apos;de tazminat davaları sürecinde başvurabileceğiniz resmi kurum ve kaynaklar:</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
+                                    { name: "SGK İzmir İl Müdürlüğü", desc: "İş kazası bildirimi ve iş göremezlik raporu", url: "https://www.sgk.gov.tr/", phone: "ALO 170" },
+                                    { name: "UYAP Vatandaş Portal", desc: "Online dava takibi ve e-imza ile işlem", url: "https://vatandas.uyap.gov.tr/", phone: "ALO 176" },
+                                    { name: "Sigorta Tahkim Komisyonu", desc: "Trafik sigortası tazminat başvurusu", url: "https://www.sigortatahkim.org/", phone: "0216 651 65 65" },
+                                    { name: "Güvence Hesabı", desc: "Sigortasız araç ve faili meçhul kaza başvurusu", url: "https://www.guvencehesabi.org.tr/", phone: null },
+                                ].map((item, i) => (
+                                    <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-secondary/30 transition-all group">
+                                        <p className="font-bold text-primary group-hover:text-secondary transition-colors text-sm mb-1">{item.name}</p>
+                                        <p className="text-xs text-slate-500 mb-2 flex-1">{item.desc}</p>
+                                        {item.phone && <p className="text-xs text-slate-400 font-medium">{item.phone}</p>}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>

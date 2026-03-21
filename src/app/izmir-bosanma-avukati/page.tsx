@@ -240,7 +240,7 @@ export default function IzmirBosanmaAvukatiPage() {
             prose-tr:even:bg-slate-50">
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir boşanma avukatı</strong>, evlilik birliğinin sona erdirilmesi sürecinde eşleri hukuki olarak temsil eden avukattır. Anlaşmalı ve çekişmeli boşanma davaları, velayet, nafaka ve mal paylaşımı konularında uzmanlaşmıştır. Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde aile hukuku hizmeti verir.
+                            <strong>İzmir boşanma avukatı</strong>, evlilik birliğinin sona erdirilmesi sürecinde eşleri hukuki olarak temsil eden avukattır. Anlaşmalı ve çekişmeli boşanma davaları, velayet, nafaka ve mal paylaşımı konularında uzmanlaşmıştır. Av. Mert Kağan Çetin, <a href="https://www.izmirbarosu.org.tr/" target="_blank" rel="noopener noreferrer">İzmir Barosu</a>&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde aile hukuku hizmeti verir.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -248,7 +248,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p className="text-xl leading-relaxed">
-                            İzmir'de aile hukuku alanında uzmanlaşmış bir avukat olarak boşanma sürecinde profesyonel hukuki destek sunuyoruz. <strong>Bayraklı Adliyesi</strong> (İzmir Adliyesi) yakınındaki ofisimizden tüm süreçleri yakından takip ediyoruz. <strong>İzmir boşanma avukatı</strong> olarak anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında müvekkillerimize rehberlik ediyoruz.
+                            İzmir'de aile hukuku alanında uzmanlaşmış bir avukat olarak boşanma sürecinde profesyonel hukuki destek sunuyoruz. <a href="https://izmir.adalet.gov.tr/" target="_blank" rel="noopener noreferrer" className="text-secondary font-bold no-underline"><strong>Bayraklı Adliyesi</strong></a> (İzmir Adliyesi) yakınındaki ofisimizden tüm süreçleri yakından takip ediyoruz. <strong>İzmir boşanma avukatı</strong> olarak anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında müvekkillerimize rehberlik ediyoruz.
                         </p>
 
                         <p>
@@ -663,6 +663,28 @@ export default function IzmirBosanmaAvukatiPage() {
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
+                        </div>
+
+                        {/* Faydalı Yerel Kaynaklar */}
+                        <div className="not-prose my-12 bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-2">Faydalı Yerel Kaynaklar</h2>
+                            <p className="text-sm text-slate-500 mb-6">İzmir&apos;de boşanma ve aile hukuku süreçlerinde başvurabileceğiniz resmi kurum ve kaynaklar:</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
+                                    { name: "UYAP Vatandaş Portal", desc: "Online dava takibi ve e-imza ile işlem", url: "https://vatandas.uyap.gov.tr/", phone: "ALO 176" },
+                                    { name: "Nüfus ve Vatandaşlık İl Md.", desc: "Nüfus kayıt örneği ve aile kütüğü belgesi", url: "https://www.nvi.gov.tr/", phone: "ALO 199" },
+                                    { name: "Aile ve Sosyal Hizmetler İl Md.", desc: "Koruyucu tedbir ve şiddet önleme başvurusu", url: "https://www.aile.gov.tr/", phone: "ALO 183" },
+                                    { name: "e-Devlet Kapısı", desc: "Nüfus, adli sicil ve mahkeme dosya sorgulamaları", url: "https://www.turkiye.gov.tr/", phone: "ALO 150" },
+                                ].map((item, i) => (
+                                    <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-secondary/30 transition-all group">
+                                        <p className="font-bold text-primary group-hover:text-secondary transition-colors text-sm mb-1">{item.name}</p>
+                                        <p className="text-xs text-slate-500 mb-2 flex-1">{item.desc}</p>
+                                        {item.phone && <p className="text-xs text-slate-400 font-medium">{item.phone}</p>}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
                         {/* SSS */}
