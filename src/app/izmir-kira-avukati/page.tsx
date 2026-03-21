@@ -72,7 +72,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-15",
+        "article:modified_time": "2026-03-20",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
@@ -275,6 +275,34 @@ export default function IzmirKiraAvukatiPage() {
                             videoId="JeM-o0sl9j8"
                             title="İzmir'de Kira Avukatıyla Çalışmanın Önemi - Kısa Video"
                         />
+
+                        {/* İzmir Kira İstatistikleri */}
+                        <div className="not-prose my-10 bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-6 flex items-center gap-2">
+                                <span className="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center text-secondary text-sm font-bold">#</span>
+                                İzmir&apos;de Kira Davaları: Rakamlarla Güncel Durum
+                            </h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    { value: "127.676", label: "Tahliye davası (2024, Türkiye)", sub: "2020'de 28.430 — 4 yılda 5 kat artış", source: "Adalet Bakanlığı / UYAP" },
+                                    { value: "383.502", label: "Kira arabuluculuk başvurusu", sub: "135.673'ü anlaşmayla sonuçlandı", source: "Adalet Bakanı Yılmaz Tunç, 2025" },
+                                    { value: "23.000", label: "İzmir'de arabuluculukla çözüm", sub: "Kira uyuşmazlığını arabuluculukla çözen vatandaş", source: "Adalet Bakanı Yılmaz Tunç" },
+                                    { value: "%38,5", label: "İzmir kira artışı (Ocak 2026)", sub: "Türkiye birincisi — İstanbul %38,1", source: "TCMB Yeni Kiracı Kira Endeksi" },
+                                    { value: "27.532 ₺", label: "İzmir ortalama kira (Ocak 2026)", sub: "2021'de 2.510 ₺ idi — 10 kat artış", source: "Endeksa / TCMB" },
+                                    { value: "%31,1", label: "İzmir kiracı hane oranı", sub: "~1,46 milyon hane, ~454 bin kiracı", source: "TÜİK ADNKS" },
+                                ].map((stat, i) => (
+                                    <div key={i} className="bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                                        <p className="text-2xl font-bold text-secondary mb-1">{stat.value}</p>
+                                        <p className="text-sm font-semibold text-slate-800 mb-1">{stat.label}</p>
+                                        <p className="text-xs text-slate-500 mb-2">{stat.sub}</p>
+                                        <p className="text-[10px] text-slate-400 italic">Kaynak: {stat.source}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-xs text-slate-400 mt-4 text-center">
+                                Veriler TÜİK, TCMB, Adalet Bakanlığı ve Endeksa resmi kaynaklarından derlenmiştir.
+                            </p>
+                        </div>
 
                         {/* Hizmetlerimiz */}
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">İzmir Kira Avukatı Hizmetlerimiz</h2>

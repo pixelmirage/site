@@ -71,7 +71,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-15",
+        "article:modified_time": "2026-03-20",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/",
@@ -255,6 +255,34 @@ export default function IzmirBosanmaAvukatiPage() {
                             Boşanma hukuku, Türk Medeni Kanunu'nun 161-184. maddeleri kapsamında düzenlenen hassas bir hukuk dalıdır. <strong>Boşanma davası nasıl açılır</strong>, <strong>velayet kime verilir</strong>,
                             <strong> <Link href="/sozluk/nafaka/" className="text-secondary font-bold">nafaka</Link> nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların başında gelir. Aile hukuku uyuşmazlıkları duygusal boyutunun yanı sıra mali ve hukuki açıdan da dikkatli bir yaklaşım gerektirir.
                         </p>
+
+                        {/* İzmir Boşanma İstatistikleri */}
+                        <div className="not-prose my-10 bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-6 flex items-center gap-2">
+                                <span className="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center text-secondary text-sm font-bold">#</span>
+                                İzmir&apos;de Boşanma Davaları: Rakamlarla Güncel Durum
+                            </h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    { value: "13.927", label: "İzmir'de boşanan çift (2024)", sub: "Türkiye genelinde 187.343 çift boşandı", source: "TÜİK 2024" },
+                                    { value: "‰ 3,28", label: "İzmir kaba boşanma hızı (2025)", sub: "Türkiye birincisi — Türkiye ortalaması ‰ 2,26", source: "TÜİK 2025" },
+                                    { value: "%8,37", label: "İzmir'de boşanmış nüfus oranı", sub: "315.019 kişi — Türkiye'de en yüksek oran", source: "TÜİK 2025" },
+                                    { value: "%74,4", label: "Velayet anneye verilme oranı", sub: "Babalara velayet oranı %25,6", source: "TÜİK 2024" },
+                                    { value: "156 gün", label: "Ortalama boşanma davası süresi", sub: "2020'de 198 gündü — son 4 yılda kısaldı", source: "Adalet Bakanlığı 2024" },
+                                    { value: "320.000", label: "Boşanma dosyası (2024, Türkiye)", sub: "Aile mahkemelerine toplam 435.000 dosya geldi", source: "Adalet Bakanlığı" },
+                                ].map((stat, i) => (
+                                    <div key={i} className="bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                                        <p className="text-2xl font-bold text-secondary mb-1">{stat.value}</p>
+                                        <p className="text-sm font-semibold text-slate-800 mb-1">{stat.label}</p>
+                                        <p className="text-xs text-slate-500 mb-2">{stat.sub}</p>
+                                        <p className="text-[10px] text-slate-400 italic">Kaynak: {stat.source}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-xs text-slate-400 mt-4 text-center">
+                                Veriler TÜİK ve Adalet Bakanlığı resmi kaynaklarından derlenmiştir.
+                            </p>
+                        </div>
 
                         {/* Hizmetlerimiz */}
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">İzmir Boşanma Avukatı Hizmetlerimiz</h2>

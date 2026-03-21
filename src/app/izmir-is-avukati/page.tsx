@@ -71,7 +71,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-15",
+        "article:modified_time": "2026-03-20",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-is-avukati/",
@@ -250,6 +250,34 @@ export default function IzmirIsAvukatiPage() {
                         <p>
                             İş hukuku; 4857 sayılı İş Kanunu, Borçlar Kanunu ve Sosyal Sigortalar mevzuatı ile düzenlenen kapsamlı bir hukuk dalıdır. Bu alanda deneyimli bir <strong>iş mahkemesi avukatı</strong> ile çalışmak, süreçlerin doğru yönetilmesi için çok önemlidir. İzmir'de işçi-işveren uyuşmazlıkları ekonomik koşullarla birlikte her geçen gün artıyor. <strong>İşten çıkarıldım ne yapmalıyım</strong>, <strong>kıdem tazminatı nasıl hesaplanır</strong>, <strong>işe iade davası şartları</strong> nelerdir gibi sorular büromuzda en sık yanıtladığımız konulardır.
                         </p>
+
+                        {/* İzmir İş Hukuku İstatistikleri */}
+                        <div className="not-prose my-10 bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-6 flex items-center gap-2">
+                                <span className="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center text-secondary text-sm font-bold">#</span>
+                                İzmir&apos;de İş Davaları: Rakamlarla Güncel Durum
+                            </h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    { value: "54.701", label: "İzmir'de iş kazası (2024)", sub: "112 işçi hayatını kaybetti", source: "SGK 2024 İstatistik Yıllığı" },
+                                    { value: "733.646", label: "Türkiye iş kazası (2024)", sub: "2023'e göre %8 artış — 1.908 ölüm", source: "SGK 2024" },
+                                    { value: "%51", label: "Arabuluculuk anlaşma oranı", sub: "2 milyondan fazla iş uyuşmazlığı dosyası (2024)", source: "Adalet Bakanlığı" },
+                                    { value: "%11", label: "İzmir işsizlik oranı (2024)", sub: "Türkiye ortalaması %8,7 — Ege 1.'si", source: "TÜİK İşgücü İstatistikleri" },
+                                    { value: "%26,3", label: "Kayıt dışı istihdam (Türkiye)", sub: "Tarım sektöründe %82,1'e ulaşıyor", source: "SGK / TÜİK 2024" },
+                                    { value: "4.022", label: "İzmir inşaat iş kazası (2023)", sub: "İstanbul, Mersin ve Ankara'nın ardından 4. sıra", source: "SGK / ÇSGB" },
+                                ].map((stat, i) => (
+                                    <div key={i} className="bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                                        <p className="text-2xl font-bold text-secondary mb-1">{stat.value}</p>
+                                        <p className="text-sm font-semibold text-slate-800 mb-1">{stat.label}</p>
+                                        <p className="text-xs text-slate-500 mb-2">{stat.sub}</p>
+                                        <p className="text-[10px] text-slate-400 italic">Kaynak: {stat.source}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-xs text-slate-400 mt-4 text-center">
+                                Veriler SGK, TÜİK, Adalet Bakanlığı ve ÇSGB resmi kaynaklarından derlenmiştir.
+                            </p>
+                        </div>
 
                         {/* Hizmetlerimiz */}
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">İzmir İş Avukatı Hizmetlerimiz</h2>

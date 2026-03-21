@@ -71,7 +71,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-15",
+        "article:modified_time": "2026-03-20",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-tazminat-avukati/",
@@ -239,6 +239,34 @@ export default function IzmirTazminatAvukatiPage() {
                         <p>
                             Tazminat hukuku, Türk Borçlar Kanunu&apos;nun 49-76. maddeleri kapsamında düzenlenen geniş bir hukuk dalıdır. Haksız fiil, sözleşme ihlali veya kusursuz sorumluluk hallerinde zarar gören kişiler tazminat talep edebilir. Bu, temel bir hukuki haktır. <strong>İzmir tazminat avukatı</strong> olarak müvekkillerimizin zararlarının tam ve eksiksiz şekilde karşılanmasını sağlıyoruz.
                         </p>
+
+                        {/* İzmir Tazminat İstatistikleri */}
+                        <div className="not-prose my-10 bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-playfair font-bold text-primary mb-6 flex items-center gap-2">
+                                <span className="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center text-secondary text-sm font-bold">#</span>
+                                İzmir&apos;de Tazminat Davaları: Rakamlarla Güncel Durum
+                            </h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {[
+                                    { value: "15.025", label: "İzmir trafik kazası (2024)", sub: "Ölümlü ve yaralamalı kaza sayısı", source: "TÜİK 2024" },
+                                    { value: "198.000", label: "Tazminat dosyası (2024, Türkiye)", sub: "2023'te 141.000 idi — %40 artış", source: "Adalet Bakanlığı 2024" },
+                                    { value: "615.240", label: "Sigorta Tahkim başvurusu (2024)", sub: "%94'ü trafik sigortası kaynaklı", source: "Sigorta Tahkim Komisyonu" },
+                                    { value: "6.352", label: "Trafik kazası ölüm (2024, Türkiye)", sub: "Günde ortalama 17,4 can kaybı", source: "TÜİK / EGM 2024" },
+                                    { value: "54.701", label: "İzmir iş kazası (2024)", sub: "112 işçi hayatını kaybetti", source: "SGK 2024" },
+                                    { value: "5.933", label: "Malpraktis davası (5 yıllık)", sub: "172 milyon ₺ tazminata hükmedildi", source: "Sağlık Bakanlığı 2017-2022" },
+                                ].map((stat, i) => (
+                                    <div key={i} className="bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                                        <p className="text-2xl font-bold text-secondary mb-1">{stat.value}</p>
+                                        <p className="text-sm font-semibold text-slate-800 mb-1">{stat.label}</p>
+                                        <p className="text-xs text-slate-500 mb-2">{stat.sub}</p>
+                                        <p className="text-[10px] text-slate-400 italic">Kaynak: {stat.source}</p>
+                                    </div>
+                                ))}
+                            </div>
+                            <p className="text-xs text-slate-400 mt-4 text-center">
+                                Veriler TÜİK, SGK, Adalet Bakanlığı, Sigorta Tahkim Komisyonu ve Sağlık Bakanlığı resmi kaynaklarından derlenmiştir.
+                            </p>
+                        </div>
 
                         <h2 id="hizmetlerimiz" className="scroll-mt-24">Tazminat Hukuku Hizmetlerimiz</h2>
 
