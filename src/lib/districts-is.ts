@@ -4,7 +4,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Bayraklı",
         slug: "bayrakli",
-        description: "İzmir'in yeni iş merkezi Bayraklı, Folkart Towers, Ege Perla ve Mistral gibi plaza bölgeleriyle beyaz yakalı çalışan nüfusunun en yoğun olduğu ilçedir. Kurumsal şirketlerin İzmir ofisleri bu bölgede konumlanmakta, bu da işçi-işveren uyuşmazlıklarını beraberinde getirmektedir.",
+        description: "Bayraklı'da Folkart Towers ve plaza bölgelerindeki kurumsal şirketlerde işçi-işveren uyuşmazlıkları ve iş hukuku davaları yoğun şekilde görülmektedir.",
         features: ["Plaza Çalışanları", "Kurumsal İhtilaflar", "Beyaz Yaka Hakları"],
         neighborhoods: ["Mansuroğlu", "Manavkuyu", "Osmangazi", "Adalet", "Tepekule", "Soğukkuyu", "Postacılar"],
         legalFocus: {
@@ -21,7 +21,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Karşıyaka",
         slug: "karsiyaka",
-        description: "Bostanlı ve Mavişehir AVM çevresindeki perakende mağazaları, sahil restoranları ve butik işletmeleriyle yoğun ticari hayata sahip Karşıyaka'da, özellikle hizmet sektörü çalışanlarının fazla mesai ve sigortasız çalıştırılma sorunları öne çıkmaktadır.",
+        description: "Karşıyaka'da AVM, perakende ve sahil restoranlarındaki hizmet sektörü çalışanlarının fazla mesai ve sigortasız çalıştırılma gibi iş hukuku sorunları öne çıkar.",
         features: ["Perakende Sektörü", "AVM Çalışanları", "Hizmet Sektörü"],
         neighborhoods: ["Bostanlı", "Mavişehir", "Aksoy", "Bahçelievler", "Atakent", "Şemikler", "Yalı", "Donanmacı"],
         legalFocus: {
@@ -38,7 +38,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Bornova",
         slug: "bornova",
-        description: "Ege Üniversitesi ve Yaşar Üniversitesi gibi büyük eğitim kurumlarının bulunduğu Bornova'da, üniversite personeli ve öğrenci işçiler arasında iş hukuku uyuşmazlıkları sıkça görülmektedir. Kampüs çevresindeki kafe, restoran ve apart işletmelerinde part-time çalışan öğrencilerin hakları önemli bir sorun alanıdır.",
+        description: "Bornova'da Ege ve Yaşar Üniversitesi çevresindeki işletmelerde part-time öğrenci işçilerin hakları ve iş hukuku uyuşmazlıkları sıkça yaşanmaktadır.",
         features: ["Part-Time Öğrenci İşçiler", "Üniversite Personeli", "Kampüs İşletmeleri"],
         neighborhoods: ["Küçükpark", "Özkanlar", "Evka 3", "Atatürk Mahallesi", "Kazımdirik", "Ergene", "Yeşilova"],
         legalFocus: {
@@ -55,7 +55,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Konak",
         slug: "konak",
-        description: "İzmir'in tarihi ve ticari merkezi Konak, Kemeraltı Çarşısı esnafı, Alsancak'taki otel ve restoran işletmeleri ve Güzelyalı'daki perakende sektörüyle iş hukuku davalarının yoğun görüldüğü bir bölgedir. Turizm ve hizmet sektörünün ağırlıklı olduğu ilçede mevsimlik işçi hakları önemli bir sorun alanıdır.",
+        description: "İzmir'in ticari merkezi Konak'ta Kemeraltı esnafı, Alsancak otel ve restoranlarında iş hukuku davaları ve mevsimlik işçi hakları sorunları yoğundur.",
         features: ["Esnaf ve Sanatkarlar", "Turizm Sektörü", "Otel Çalışanları"],
         neighborhoods: ["Alsancak", "Güzelyalı", "Hatay", "Basmane", "Kemeraltı", "Gültepe", "Eşrefpaşa"],
         legalFocus: {
@@ -72,7 +72,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Buca",
         slug: "buca",
-        description: "İzmir'in en kalabalık ilçesi olan Buca, sanayi siteleri, inşaat şantiyeleri ve Dokuz Eylül Üniversitesi çevresindeki işletmeleriyle yoğun bir çalışan nüfusuna sahiptir. İnşaat ve imalat sektörünün ağırlıklı olduğu bölgede iş kazaları ve tazminat davaları sıkça açılmaktadır.",
+        description: "İzmir'in en kalabalık ilçesi Buca'da sanayi siteleri ve inşaat şantiyelerinde iş kazaları, tazminat davaları ve iş hukuku uyuşmazlıkları sıkça yaşanır.",
         features: ["İnşaat Sektörü", "Sanayi Sitesi İşçileri", "İş Kazaları"],
         neighborhoods: ["Şirinyer", "Hasanağa", "Kozağaç", "Yıldız", "Adatepe", "Evka 1", "Tınaztepe"],
         legalFocus: {
@@ -89,7 +89,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Çiğli",
         slug: "cigli",
-        description: "Atatürk Organize Sanayi Bölgesi'ne (AOSB) ev sahipliği yapan Çiğli, fabrika işçileri ve vardiyalı çalışanların yoğun olduğu bir ilçedir. Sanayi bölgesindeki üretim tesislerinde iş güvenliği, fazla mesai ve sendika hakları önemli hukuki sorun alanlarıdır.",
+        description: "AOSB'ye ev sahipliği yapan Çiğli'de fabrika işçilerinin iş güvenliği, fazla mesai ve sendika hakları önemli iş hukuku sorun alanlarıdır.",
         features: ["AOSB Fabrika İşçileri", "Vardiyalı Çalışma", "Sendika Hakları"],
         neighborhoods: ["Ataşehir", "Balatçık", "Egekent", "İzkent", "Evka 2", "Küçük Çiğli"],
         legalFocus: {
@@ -106,7 +106,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Gaziemir",
         slug: "gaziemir",
-        description: "Adnan Menderes Havalimanı ve Ege Serbest Bölge'ye (ESBAŞ) ev sahipliği yapan Gaziemir, havalimanı personeli, serbest bölge çalışanları ve lojistik sektörü işçileriyle iş hukuku açısından dinamik bir ilçedir.",
+        description: "Gaziemir'de havalimanı personeli, ESBAŞ serbest bölge çalışanları ve lojistik sektörü işçilerinin iş hukuku uyuşmazlıkları yoğun olarak görülmektedir.",
         features: ["Havalimanı Personeli", "Serbest Bölge", "Lojistik Sektörü"],
         neighborhoods: ["Sarnıç", "Binbaşı Reşatbey", "Irmak", "Atıfbey", "Yeşil Mahallesi", "Aktepe"],
         legalFocus: {
@@ -123,7 +123,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Balçova",
         slug: "balcova",
-        description: "AVM'leri, İzmir Ekonomi Üniversitesi ve eğitim kurumlarıyla Balçova, perakende sektörü çalışanları ve eğitim personeli açısından iş hukuku uyuşmazlıklarının yaşandığı bir bölgedir.",
+        description: "Balçova'da AVM'lerdeki perakende sektörü çalışanları ve İzmir Ekonomi Üniversitesi gibi eğitim kurumu personelinin iş hukuku sorunları öne çıkmaktadır.",
         features: ["AVM Personeli", "Eğitim Sektörü", "Perakende Çalışanları"],
         neighborhoods: ["İnciraltı", "Korutürk", "Onur", "Fevzi Çakmak", "Eğitim", "Çetin Emeç"],
         legalFocus: {
@@ -140,7 +140,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Narlıdere",
         slug: "narlidere",
-        description: "Lüks konut projeleri ve özel sektör yöneticilerinin tercih ettiği Narlıdere'de, yüksek gelirli çalışanların rekabet yasağı, ikale sözleşmeleri ve üst düzey yönetici hakları konusunda iş hukuku uyuşmazlıkları yaşanmaktadır.",
+        description: "Narlıdere'de üst düzey yöneticilerin rekabet yasağı, ikale sözleşmeleri ve yönetici hakları konusunda iş hukuku uyuşmazlıkları yaşanmaktadır.",
         features: ["Üst Düzey Yöneticiler", "Rekabet Yasağı", "İkale Sözleşmeleri"],
         neighborhoods: ["Sahilevleri", "Altıevler", "Huzur", "Ilıca", "Yenikale", "Narlı"],
         legalFocus: {
@@ -157,7 +157,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Karabağlar",
         slug: "karabaglar",
-        description: "İzmir'in en büyük ilçelerinden Karabağlar, mobilya sanayi sitesi ve küçük ölçekli imalat atölyeleriyle işçi hakları ihlallerinin yoğun yaşandığı bir bölgedir. Kayıt dışı istihdam ve iş güvenliği eksiklikleri bölgenin temel sorunlarıdır.",
+        description: "Karabağlar'da mobilya sanayi sitesi ve imalat atölyelerinde kayıt dışı istihdam, iş güvenliği eksiklikleri ve işçi hakları ihlalleri yoğun yaşanmaktadır.",
         features: ["Mobilya Sanayi", "Küçük İşletmeler", "Kayıt Dışı İstihdam"],
         neighborhoods: ["Yeşilyurt", "Bozyaka", "Üçkuyular", "Poligon", "Basın Sitesi", "Limonter", "Bahçelievler"],
         legalFocus: {
@@ -174,7 +174,7 @@ export const isDistrictData: DistrictData[] = [
     {
         name: "Güzelbahçe",
         slug: "guzelbahce",
-        description: "Özel kolejleri, butik otelleri ve sayfiye yaşamıyla bilinen Güzelbahçe'de, eğitim sektörü çalışanları ve mevsimlik turizm işçilerinin iş hukuku sorunları öne çıkmaktadır.",
+        description: "Güzelbahçe'de özel kolejlerdeki eğitim sektörü çalışanları ve butik otellerdeki mevsimlik turizm işçilerinin iş hukuku sorunları öne çıkmaktadır.",
         features: ["Özel Kolejler", "Mevsimlik Çalışanlar", "Eğitim Personeli"],
         neighborhoods: ["Yalı", "Siteler", "Maltepe", "Yelki", "Kahramandere", "Çelebi"],
         legalFocus: {

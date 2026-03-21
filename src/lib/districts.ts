@@ -16,7 +16,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Bayraklı",
         slug: "bayrakli",
-        description: "İzmir'in yeni kent merkezi olan Bayraklı, gökdelenler bölgesi ve İzmir Adliyesi'ne ev sahipliği yapmasıyla hukuki ve ticari trafiğin en yoğun olduğu ilçedir.",
+        description: "Bayraklı, gökdelenler bölgesi ve İzmir Adliyesi'ne yakınlığıyla kira davalarında hukuki ve ticari trafiğin yoğun olduğu yeni kent merkezidir.",
         features: ["İzmir Adliyesi'ne Yakın", "Yeni Kent Merkezi", "Ticari Uyuşmazlıklar"],
         neighborhoods: ["Mansuroğlu", "Manavkuyu", "Osmangazi", "Adalet", "Tepekule", "Soğukkuyu", "Postacılar"],
         legalFocus: {
@@ -33,7 +33,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Karşıyaka",
         slug: "karsiyaka",
-        description: "Bostanlı ve Mavişehir gibi seçkin semtleri barındıran Karşıyaka, yüksek değerli konut projeleri ve kurumsal kiracılı işyerleri ile kira hukuku davalarının yoğun görüldüğü bir bölgedir.",
+        description: "Karşıyaka, Bostanlı ve Mavişehir gibi semtleriyle yüksek değerli konut ve kurumsal işyeri kiralarında hukuki uyuşmazlıkların yoğun yaşandığı bir ilçedir.",
         features: ["Lüks Konut Tahliyeleri", "Kurumsal Kiracı Sorunları", "Sahil Bölgesi Emlak"],
         neighborhoods: ["Bostanlı", "Mavişehir", "Aksoy", "Bahçelievler", "Atakent", "Şemikler", "Yalı", "Donanmacı"],
         legalFocus: {
@@ -50,7 +50,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Bornova",
         slug: "bornova",
-        description: "Ege Üniversitesi ve Yaşar Üniversitesi'nin etkisiyle öğrenci nüfusunun yoğun olduğu Bornova'da, öğrenci evleri ve apart dairelerden kaynaklı kira uyuşmazlıkları sıkça yaşanmaktadır.",
+        description: "Bornova, Ege ve Yaşar üniversitelerinin etkisiyle öğrenci evleri ve apart dairelerden kaynaklı kira uyuşmazlıklarının sıkça yaşandığı bir ilçedir.",
         features: ["Öğrenci Evi Tahliyeleri", "Apart Yönetimi", "Üniversite Çevresi"],
         neighborhoods: ["Küçükpark", "Özkanlar", "Evka 3", "Atatürk Mahallesi", "Kazımdirik", "Ergene", "Yeşilova"],
         legalFocus: {
@@ -67,7 +67,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Konak",
         slug: "konak",
-        description: "İzmir'in tarihi ve idari merkezi Konak, özellikle Kemeraltı, Alsancak ve Güzelyalı hattında hem eski yapı stoğu hem de yoğun ticari işletmeleriyle hukuksal desteğe ihtiyaç duyar.",
+        description: "Konak, Kemeraltı, Alsancak ve Güzelyalı'daki eski yapı stoğu ve yoğun ticari işletmeleriyle kira hukuku desteğine en çok ihtiyaç duyan ilçedir.",
         features: ["Tarihi Yapı Kiraları", "İşyeri Tahliye Davaları", "Merkezi Lokasyon"],
         neighborhoods: ["Alsancak", "Güzelyalı", "Hatay", "Basmane", "Kemeraltı", "Gültepe", "Eşrefpaşa"],
         legalFocus: {
@@ -84,7 +84,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Buca",
         slug: "buca",
-        description: "İzmir'in en kalabalık ilçesi ve Dokuz Eylül Üniversitesi'nin merkezi olan Buca, yoğun kiralık konut piyasasıyla en çok tahliye davası açılan bölgelerin başında gelir.",
+        description: "Buca, İzmir'in en kalabalık ilçesi olarak yoğun kiralık konut piyasası ve üniversite çevresiyle en çok tahliye davası açılan bölgelerin başında gelir.",
         features: ["Yoğun Konut Dokusu", "Öğrenci Kiralama", "Memur/Çalışan Kesim"],
         neighborhoods: ["Şirinyer", "Hasanağa", "Kozağaç", "Yıldız", "Adatepe", "Evka 1", "Tınaztepe"],
         legalFocus: {
@@ -101,7 +101,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Çiğli",
         slug: "cigli",
-        description: "Atatürk Organize Sanayi Bölgesi ve Katip Çelebi Üniversitesi ile gelişen Çiğli, hem sanayi sitesi işyeri kiraları hem de yeni konut projeleriyle dinamik bir hukuksal yapıya sahiptir.",
+        description: "Çiğli, Atatürk OSB ve Katip Çelebi Üniversitesi ile gelişen, sanayi işyeri kiraları ve yeni konut projelerinde kira davalarının arttığı bir ilçedir.",
         features: ["Sanayi Sitesi Kiraları", "Yeni Konut Projeleri", "Depo ve Antrepo"],
         neighborhoods: ["Ataşehir", "Balatçık", "Egekent", "İzkent", "Evka 2", "Küçük Çiğli"],
         legalFocus: {
@@ -118,7 +118,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Gaziemir",
         slug: "gaziemir",
-        description: "Adnan Menderes Havalimanı ve Ege Serbest Bölge'ye (ESBAŞ) ev sahipliği yapan Gaziemir, beyaz yakalı çalışanların tercih ettiği, kira bedellerinin yüksek olduğu bir ilçedir.",
+        description: "Gaziemir, havalimanı ve ESBAŞ çevresinde beyaz yakalı çalışanların tercih ettiği, kira bedellerinin yüksek olduğu bir ilçedir.",
         features: ["Serbest Bölge Çalışanları", "Havalimanı Çevresi", "Site İçi Konutlar"],
         neighborhoods: ["Sarnıç", "Binbaşı Reşatbey", "Irmak", "Atıfbey", "Yeşil Mahallesi", "Aktepe"],
         legalFocus: {
@@ -135,7 +135,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Balçova",
         slug: "balcova",
-        description: "AVM'leri, İzmir Ekonomi Üniversitesi ve termal tesisleri ile Balçova, ticari potansiyeli yüksek ve kira bedellerinin İzmir ortalamasının üzerinde olduğu bir bölgedir.",
+        description: "Balçova, AVM'leri ve üniversitesiyle ticari potansiyeli yüksek, kira bedellerinin İzmir ortalamasının üzerinde olduğu bir ilçedir.",
         features: ["AVM ve Mağaza Kiraları", "Termal Tesis Bölgesi", "Üniversite Çevresi"],
         neighborhoods: ["İnciraltı", "Korutürk", "Onur", "Fevzi Çakmak", "Eğitim", "Çetin Emeç"],
         legalFocus: {
@@ -152,7 +152,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Narlıdere",
         slug: "narlidere",
-        description: "Lüks konut projeleri, Sahilevleri ve sakin yapısıyla bilinen Narlıdere, yüksek kira getirili mülklerin ve villa tipi yapılaşmanın yoğun olduğu, nitelikli hukuki süreç gerektiren bir ilçedir.",
+        description: "Narlıdere, lüks konut projeleri ve villa tipi yapılaşmasıyla yüksek kira getirili mülklerde nitelikli hukuki süreç gerektiren bir ilçedir.",
         features: ["Lüks Site Yönetimi", "Villa Kiralamaları", "Yüksek Gelir Grubu"],
         neighborhoods: ["Sahilevleri", "Altıevler", "Huzur", "Ilıca", "Yenikale", "Narlı"],
         legalFocus: {
@@ -169,7 +169,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Karabağlar",
         slug: "karabaglar",
-        description: "İzmir'in en büyük yüzölçümüne sahip ilçelerinden Karabağlar, mobilya sanayisi ve yoğun konut dokusuyla karmaşık mülkiyet ve kira sorunlarının yaşandığı bir bölgedir.",
+        description: "Karabağlar, mobilya sanayisi, kentsel dönüşüm ve yoğun konut dokusuyla karmaşık mülkiyet ve kira sorunlarının yaşandığı büyük bir ilçedir.",
         features: ["Mobilya Sanayi", "Kentsel Dönüşüm", "Yoğun Nüfus"],
         neighborhoods: ["Yeşilyurt", "Bozyaka", "Üçkuyular", "Poligon", "Basın Sitesi", "Limonter", "Bahçelievler"],
         legalFocus: {
@@ -186,7 +186,7 @@ export const districtData: DistrictData[] = [
     {
         name: "Güzelbahçe",
         slug: "guzelbahce",
-        description: "Özel kolejler ve müstakil yaşamın merkezi Güzelbahçe, yaz-kış tercih edilen sayfiye havasıyla kira sözleşmelerinin özel hükümler içermesi gereken butik bir bölgedir.",
+        description: "Güzelbahçe, müstakil yaşam ve sayfiye havasıyla sezonluk ile yıllık kira sözleşmelerinin özel hükümler gerektirdiği butik bir ilçedir.",
         features: ["Kolejler Bölgesi", "Müstakil Yaşam", "Sezonluk/Yıllık Kira"],
         neighborhoods: ["Yalı", "Siteler", "Maltepe", "Yelki", "Kahramandere", "Çelebi"],
         legalFocus: {

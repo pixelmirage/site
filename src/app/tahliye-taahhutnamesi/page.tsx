@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
     title: "Tahliye Taahhütnamesi Örneği 2026",
-    description: "2026 güncel tahliye taahhütnamesi örneğini ücretsiz indirin. Yargıtay uyumlu boş tahliye taahhütnamesi nasıl doldurulur? TBK m. 352 şartları ve geçerlilik rehberi.",
+    description: "2026 güncel tahliye taahhütnamesi örneğini indirin. Yargıtay uyumlu taahhütname nasıl doldurulur? TBK m. 352 şartları ve geçerlilik rehberi.",
     keywords: ["tahliye taahhütnamesi örneği", "tahliye taahhütnamesi pdf", "boş tahliye taahhütnamesi", "kiracı tahliye taahhütnamesi"],
     openGraph: {
         title: "Tahliye Taahhütnamesi Örneği | Ücretsiz İndir",

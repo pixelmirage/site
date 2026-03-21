@@ -4,7 +4,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Bayraklı",
         slug: "bayrakli",
-        description: "İzmir'in yeni kent merkezi Bayraklı, genç profesyonel çiftlerin yoğun olarak tercih ettiği bir bölgedir. Yeni konut projelerindeki yüksek konut fiyatları ve kredi borçları, boşanma süreçlerinde mal paylaşımını karmaşık hale getirmektedir.",
+        description: "Bayraklı'da genç profesyonel çiftlerin boşanma davalarında yüksek konut fiyatları ve kredi borçları nedeniyle mal paylaşımı uyuşmazlıkları öne çıkmaktadır.",
         features: ["Genç Çiftler", "Mal Paylaşımı", "Kredi Borcu Uyuşmazlığı"],
         neighborhoods: ["Mansuroğlu", "Manavkuyu", "Osmangazi", "Adalet", "Tepekule", "Soğukkuyu", "Postacılar"],
         legalFocus: {
@@ -21,7 +21,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Karşıyaka",
         slug: "karsiyaka",
-        description: "Bostanlı ve Mavişehir gibi üst gelir grubunun tercih ettiği semtleriyle Karşıyaka, yüksek değerli taşınmazların ve önemli mal varlıklarının söz konusu olduğu boşanma davalarının yoğun görüldüğü bir ilçedir.",
+        description: "Karşıyaka'da Bostanlı ve Mavişehir gibi semtlerde yüksek değerli taşınmazların ve mal varlıklarının paylaşıldığı boşanma davaları yoğun görülmektedir.",
         features: ["Yüksek Nafaka Talepleri", "Değerli Mal Varlığı", "Anlaşmalı Boşanma"],
         neighborhoods: ["Bostanlı", "Mavişehir", "Aksoy", "Bahçelievler", "Atakent", "Şemikler", "Yalı", "Donanmacı"],
         legalFocus: {
@@ -38,7 +38,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Bornova",
         slug: "bornova",
-        description: "Üniversite nüfusunun yoğun olduğu Bornova'da, genç yaşta yapılan evliliklerin erken dönemde boşanmayla sonuçlanması sıkça karşılaşılan bir durumdur. Öğrenci evlilikleri ve kısa süreli evliliklerdeki hukuki süreçler bölgenin ayırt edici özelliğidir.",
+        description: "Bornova'da üniversite nüfusunun etkisiyle genç yaşta yapılan evlilikler erken boşanmayla sonuçlanmakta, kısa süreli evlilik davaları öne çıkmaktadır.",
         features: ["Genç Aile Uyuşmazlıkları", "Kısa Süreli Evlilik", "Velayet Davaları"],
         neighborhoods: ["Küçükpark", "Özkanlar", "Evka 3", "Atatürk Mahallesi", "Kazımdirik", "Ergene", "Yeşilova"],
         legalFocus: {
@@ -55,7 +55,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Konak",
         slug: "konak",
-        description: "İzmir'in tarihi merkezi Konak, geleneksel aile yapısının güçlü olduğu ve çok kuşaklı ailelerin bir arada yaşadığı bir bölgedir. Ailevi baskılar, müdahale ve çekişmeli boşanma davaları ilçenin öne çıkan aile hukuku sorunlarıdır.",
+        description: "İzmir'in tarihi merkezi Konak'ta geleneksel aile yapısı, ailevi baskılar ve çekişmeli boşanma davaları ilçenin öne çıkan aile hukuku sorunlarıdır.",
         features: ["Çekişmeli Boşanma", "Aile İçi Şiddet", "Geleneksel Aile Yapısı"],
         neighborhoods: ["Alsancak", "Güzelyalı", "Hatay", "Basmane", "Kemeraltı", "Gültepe", "Eşrefpaşa"],
         legalFocus: {
@@ -72,7 +72,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Buca",
         slug: "buca",
-        description: "İzmir'in en kalabalık ilçesi Buca, yoğun nüfusu ve çeşitli sosyoekonomik yapısıyla velayet davalarının en sık açıldığı bölgelerin başında gelmektedir. Çocuklu ailelerin yoğunluğu, velayet ve iştirak nafakası uyuşmazlıklarını artırmaktadır.",
+        description: "İzmir'in en kalabalık ilçesi Buca'da çocuklu ailelerin yoğunluğu nedeniyle velayet ve iştirak nafakası uyuşmazlıkları en sık görülen boşanma konusudur.",
         features: ["Velayet Davaları", "İştirak Nafakası", "Çocuklu Aile Yoğunluğu"],
         neighborhoods: ["Şirinyer", "Hasanağa", "Kozağaç", "Yıldız", "Adatepe", "Evka 1", "Tınaztepe"],
         legalFocus: {
@@ -89,7 +89,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Çiğli",
         slug: "cigli",
-        description: "TOKİ konutları ve toplu konut sitelerinin yoğun olduğu Çiğli'de, işçi ailelerin ekonomik nedenlerle boşanma süreçleri ve nafaka uyuşmazlıkları ilçenin belirleyici aile hukuku konusudur.",
+        description: "Çiğli'de TOKİ ve toplu konut sitelerinde yaşayan işçi ailelerin ekonomik nedenlerle boşanma süreçleri ve nafaka uyuşmazlıkları öne çıkmaktadır.",
         features: ["Ekonomik Nedenli Boşanma", "TOKİ Konut Paylaşımı", "İşçi Aileleri"],
         neighborhoods: ["Ataşehir", "Balatçık", "Egekent", "İzkent", "Evka 2", "Küçük Çiğli"],
         legalFocus: {
@@ -106,7 +106,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Gaziemir",
         slug: "gaziemir",
-        description: "Havalimanı çalışanları ve serbest bölge personelinin tercih ettiği Gaziemir, çift gelirli modern ailelerin yoğun olduğu bir ilçedir. Anlaşmalı boşanma oranının yüksek olduğu bölgede, profesyonel çiftlerin mal paylaşımı davaları öne çıkmaktadır.",
+        description: "Gaziemir'de çift gelirli profesyonel ailelerin yoğunluğuyla anlaşmalı boşanma oranı yüksektir; mal paylaşımı davaları ilçenin belirgin özelliğidir.",
         features: ["Anlaşmalı Boşanma", "Çift Gelirli Aileler", "Profesyonel Mal Paylaşımı"],
         neighborhoods: ["Sarnıç", "Binbaşı Reşatbey", "Irmak", "Atıfbey", "Yeşil Mahallesi", "Aktepe"],
         legalFocus: {
@@ -123,7 +123,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Balçova",
         slug: "balcova",
-        description: "Orta-üst gelir grubunun ve eğitimli ailelerin yoğun olduğu Balçova'da, boşanma süreçleri genellikle karşılıklı avukat desteğiyle profesyonel şekilde yürütülmektedir. Özellikle çocuk teslim ve kişisel ilişki kurulması davaları bölgede sıkça görülmektedir.",
+        description: "Balçova'da eğitimli ailelerin boşanma süreçleri profesyonel avukat desteğiyle yürütülmekte, çocuk teslim ve kişisel ilişki davaları sıkça görülmektedir.",
         features: ["Eğitimli Aile Profili", "Kişisel İlişki Davası", "Profesyonel Süreç"],
         neighborhoods: ["İnciraltı", "Korutürk", "Onur", "Fevzi Çakmak", "Eğitim", "Çetin Emeç"],
         legalFocus: {
@@ -140,7 +140,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Narlıdere",
         slug: "narlidere",
-        description: "Lüks konut projeleri ve yüksek gelir grubunun yaşadığı Narlıdere'de, boşanma davaları genellikle yüksek değerli mal varlığı paylaşımı ve tazminat talepleri etrafında şekillenmektedir.",
+        description: "Narlıdere'de lüks konut projelerinin bulunduğu bölgede boşanma davaları yüksek değerli mal paylaşımı ve tazminat talepleri etrafında şekillenmektedir.",
         features: ["Yüksek Mal Varlığı", "Lüks Yaşam Standardı", "Tazminat Davaları"],
         neighborhoods: ["Sahilevleri", "Altıevler", "Huzur", "Ilıca", "Yenikale", "Narlı"],
         legalFocus: {
@@ -157,7 +157,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Karabağlar",
         slug: "karabaglar",
-        description: "İzmir'in en geniş ve en kalabalık ilçelerinden Karabağlar, farklı sosyoekonomik kesimlerin bir arada yaşadığı bir bölgedir. Kentsel dönüşüm sürecindeki konutların mal paylaşımını zorlaştırması ve ekonomik sıkıntıların aile içi sorunları tetiklemesi boşanma davalarını artırmaktadır.",
+        description: "Karabağlar'da kentsel dönüşüm sürecindeki konutların mal paylaşımını zorlaştırması ve ekonomik sıkıntılar boşanma davalarını artırmaktadır.",
         features: ["Kentsel Dönüşüm", "Ekonomik Boşanma", "Nafaka Uyuşmazlıkları"],
         neighborhoods: ["Yeşilyurt", "Bozyaka", "Üçkuyular", "Poligon", "Basın Sitesi", "Limonter", "Bahçelievler"],
         legalFocus: {
@@ -174,7 +174,7 @@ export const bosanmaDistrictData: DistrictData[] = [
     {
         name: "Güzelbahçe",
         slug: "guzelbahce",
-        description: "Müstakil yaşamın ve özel kolejlerin merkezi Güzelbahçe, üst gelir grubuna ait ailelerin tercih ettiği sakin bir yerleşim yeridir. Boşanma süreçlerinde müstakil konutların ve arsa paylarının değerlemesi bölgeye özgü bir hukuki mesele oluşturmaktadır.",
+        description: "Güzelbahçe'de üst gelir grubuna ait ailelerin boşanma davalarında müstakil konut ve arsa paylarının değerlemesi bölgeye özgü bir hukuki meseledir.",
         features: ["Müstakil Konut Paylaşımı", "Üst Gelir Grubu", "Arsa Paylaşımı"],
         neighborhoods: ["Yalı", "Siteler", "Maltepe", "Yelki", "Kahramandere", "Çelebi"],
         legalFocus: {

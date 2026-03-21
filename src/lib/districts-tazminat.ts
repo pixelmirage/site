@@ -4,7 +4,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Bayraklı",
         slug: "bayrakli",
-        description: "İzmir'in yeni merkezi Bayraklı, yoğun trafik akışının yaşandığı Altınyol kavşağı ve çevre yollarıyla trafik kazalarının sıkça meydana geldiği bir bölgedir. Plaza bölgesindeki iş kazaları ve trafik kazası tazminat davaları ilçenin öne çıkan hukuki konularıdır.",
+        description: "Bayraklı'da Altınyol kavşağı ve çevre yollarında trafik kazaları sık yaşanır. Plaza bölgesindeki iş kazaları ve trafik kazası tazminat davaları öne çıkar.",
         features: ["Trafik Kazası Tazminatı", "Altınyol Kavşağı", "İş Kazası Davaları"],
         neighborhoods: ["Mansuroğlu", "Manavkuyu", "Osmangazi", "Adalet", "Tepekule", "Soğukkuyu", "Postacılar"],
         legalFocus: {
@@ -21,7 +21,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Karşıyaka",
         slug: "karsiyaka",
-        description: "Sahil yolu boyunca yoğun yaya ve bisiklet trafiğinin yaşandığı Karşıyaka'da, yaya kazaları ve belediye sorumluluğundaki altyapı eksikliklerinden kaynaklanan düşme/kayma tazminat davaları öne çıkmaktadır.",
+        description: "Karşıyaka sahil yolunda yaya ve bisiklet kazaları ile altyapı eksikliklerinden kaynaklanan düşme ve kayma tazminat davaları öne çıkmaktadır.",
         features: ["Yaya Kazaları", "Altyapı Tazminatı", "Sahil Yolu Kazaları"],
         neighborhoods: ["Bostanlı", "Mavişehir", "Aksoy", "Bahçelievler", "Atakent", "Şemikler", "Yalı", "Donanmacı"],
         legalFocus: {
@@ -38,7 +38,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Bornova",
         slug: "bornova",
-        description: "Ege Üniversitesi Hastanesi'nin bulunduğu Bornova, tıbbi malpraktis davalarının yoğun görüldüğü bir ilçedir. Ayrıca kampüs çevresindeki yoğun trafik ve öğrenci yaya kazaları da bölgenin tazminat hukuku konularını oluşturmaktadır.",
+        description: "Ege Üniversitesi Hastanesi'nin bulunduğu Bornova'da tıbbi malpraktis davaları yoğun görülür. Kampüs çevresindeki trafik ve yaya kazaları da öne çıkar.",
         features: ["Tıbbi Malpraktis", "Hastane Hataları", "Kampüs Trafik Kazaları"],
         neighborhoods: ["Küçükpark", "Özkanlar", "Evka 3", "Atatürk Mahallesi", "Kazımdirik", "Ergene", "Yeşilova"],
         legalFocus: {
@@ -55,7 +55,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Konak",
         slug: "konak",
-        description: "İzmir'in en yoğun trafiğe sahip merkezi ilçesi Konak, Alsancak-Basmane hattındaki trafik kazaları, tarihi bina restorasyonlarındaki iş kazaları ve esnaf zararlarıyla tazminat davalarının çeşitlilik gösterdiği bir bölgedir.",
+        description: "Konak'ta Alsancak-Basmane hattındaki trafik kazaları, tarihi bina restorasyonlarındaki iş kazaları ve esnaf zararlarına dayalı tazminat davaları öne çıkar.",
         features: ["Merkezi Trafik Kazaları", "Esnaf Zarar Tazminatı", "Tarihi Yapı Kazaları"],
         neighborhoods: ["Alsancak", "Güzelyalı", "Hatay", "Basmane", "Kemeraltı", "Gültepe", "Eşrefpaşa"],
         legalFocus: {
@@ -72,7 +72,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Buca",
         slug: "buca",
-        description: "İnşaat faaliyetlerinin ve sanayi sitelerinin yoğun olduğu Buca, iş kazası tazminatı davalarının İzmir'de en sık açıldığı ilçelerin başında gelmektedir. Şantiye kazaları, yüksekten düşme ve makine kazaları bölgenin temel tazminat konularıdır.",
+        description: "İnşaat ve sanayi sitelerinin yoğun olduğu Buca, iş kazası tazminatı davalarının İzmir'de en sık açıldığı ilçelerdendir. Şantiye kazaları öne çıkar.",
         features: ["İnşaat İş Kazaları", "Yüksekten Düşme", "Sanayi Kazaları"],
         neighborhoods: ["Şirinyer", "Hasanağa", "Kozağaç", "Yıldız", "Adatepe", "Evka 1", "Tınaztepe"],
         legalFocus: {
@@ -89,7 +89,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Çiğli",
         slug: "cigli",
-        description: "Atatürk Organize Sanayi Bölgesi'nin bulunduğu Çiğli, fabrika iş kazaları ve meslek hastalıkları nedeniyle tazminat davalarının yoğun görüldüğü bir ilçedir. Kimyasal maruziyete bağlı meslek hastalıkları bölgenin ayırt edici hukuki konusudur.",
+        description: "Atatürk OSB'nin bulunduğu Çiğli'de fabrika iş kazaları ve meslek hastalıkları nedeniyle tazminat davaları yoğun görülür. Kimyasal maruziyet öne çıkar.",
         features: ["Fabrika İş Kazaları", "Meslek Hastalıkları", "Kimyasal Maruziyet"],
         neighborhoods: ["Ataşehir", "Balatçık", "Egekent", "İzkent", "Evka 2", "Küçük Çiğli"],
         legalFocus: {
@@ -106,7 +106,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Gaziemir",
         slug: "gaziemir",
-        description: "Adnan Menderes Havalimanı bağlantı yolu ve otoban kavşağıyla yoğun trafiğe sahip Gaziemir, trafik kazası tazminat davalarının sıkça açıldığı bir ilçedir. Serbest bölgedeki iş kazaları da bölgenin tazminat hukuku konularını oluşturmaktadır.",
+        description: "Havalimanı yolu ve otoban kavşağıyla yoğun trafiğe sahip Gaziemir'de trafik kazası tazminat davaları sık açılır. Serbest bölge iş kazaları da öne çıkar.",
         features: ["Otoban Kazaları", "Havalimanı Yolu", "Serbest Bölge Kazaları"],
         neighborhoods: ["Sarnıç", "Binbaşı Reşatbey", "Irmak", "Atıfbey", "Yeşil Mahallesi", "Aktepe"],
         legalFocus: {
@@ -123,7 +123,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Balçova",
         slug: "balcova",
-        description: "DEÜ Hastanesi ve çevresindeki özel sağlık kuruluşlarıyla Balçova, tıbbi malpraktis ve doktor hatası tazminat davalarının yoğun görüldüğü bir bölgedir. Termal tesislerdeki yaralanmalar da bölgeye özgü tazminat konusudur.",
+        description: "DEÜ Hastanesi ve özel sağlık kuruluşlarıyla Balçova'da malpraktis ve doktor hatası tazminat davaları yoğun görülür. Termal tesis yaralanmaları öne çıkar.",
         features: ["Doktor Hatası Tazminatı", "Malpraktis Davaları", "Sağlık Kuruluşları"],
         neighborhoods: ["İnciraltı", "Korutürk", "Onur", "Fevzi Çakmak", "Eğitim", "Çetin Emeç"],
         legalFocus: {
@@ -140,7 +140,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Narlıdere",
         slug: "narlidere",
-        description: "NATO karargahının ve askeri tesislerin yakınında bulunan Narlıdere, özel sektör yöneticilerinin ikamet ettiği sakin bir ilçedir. Lüks araç trafik kazaları ve yüksek gelir kaybına dayalı tazminat davaları bölgenin kendine özgü hukuki konusunu oluşturmaktadır.",
+        description: "Narlıdere'de lüks araç trafik kazaları ve yüksek gelir kaybına dayalı tazminat davaları bölgenin kendine özgü hukuki konusunu oluşturur.",
         features: ["Lüks Araç Kazaları", "Yüksek Gelir Kaybı", "Özel Sektör Tazminatı"],
         neighborhoods: ["Sahilevleri", "Altıevler", "Huzur", "Ilıca", "Yenikale", "Narlı"],
         legalFocus: {
@@ -157,7 +157,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Karabağlar",
         slug: "karabaglar",
-        description: "İzmir'in en geniş ilçelerinden Karabağlar, mobilya sanayi sitesi ve kentsel dönüşüm bölgeleriyle iş kazaları ve yapı zararlarına dayalı tazminat davalarının sıkça görüldüğü bir bölgedir.",
+        description: "Karabağlar'da mobilya sanayi sitesi ve kentsel dönüşüm bölgelerinde iş kazaları ile yapı zararlarına dayalı tazminat davaları sıkça görülmektedir.",
         features: ["Kentsel Dönüşüm Zararları", "İşçi Kazaları", "Yapı Kusuru Tazminatı"],
         neighborhoods: ["Yeşilyurt", "Bozyaka", "Üçkuyular", "Poligon", "Basın Sitesi", "Limonter", "Bahçelievler"],
         legalFocus: {
@@ -174,7 +174,7 @@ export const tazminatDistrictData: DistrictData[] = [
     {
         name: "Güzelbahçe",
         slug: "guzelbahce",
-        description: "Sahil yolu ve dar kıyı yollarıyla bilinen Güzelbahçe, özellikle hafta sonu trafiğinin yoğunlaştığı dönemlerde trafik kazalarının arttığı bir ilçedir. Tatil sezonunda artan trafik yoğunluğu ve dar yol koşulları kaza riskini artırmaktadır.",
+        description: "Sahil yolu ve dar kıyı yollarıyla bilinen Güzelbahçe'de hafta sonu trafiğinin yoğunlaştığı dönemlerde trafik kazası tazminat davaları artmaktadır.",
         features: ["Kıyı Yolu Kazaları", "Tatil Trafiği", "Motosiklet Kazaları"],
         neighborhoods: ["Yalı", "Siteler", "Maltepe", "Yelki", "Kahramandere", "Çelebi"],
         legalFocus: {

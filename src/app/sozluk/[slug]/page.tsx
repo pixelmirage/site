@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     return {
         title: `${term.term} Nedir?`,
-        description: term.definition,
+        description: term.shortDescription,
         keywords: term.keywords,
         openGraph: {
             title: `${term.term} Nedir?`,
-            description: term.definition,
+            description: term.shortDescription,
             url: url,
             type: "article",
         },
