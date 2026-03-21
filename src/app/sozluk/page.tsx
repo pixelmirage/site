@@ -150,13 +150,13 @@ export default function GlossaryPage() {
                             Hukuki terimleri anlamak önemlidir ancak süreçlerde uzman desteği almak hak kaybını önler. Kira, iş, boşanma ve tazminat hukuku alanlarında hemen bize ulaşın.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/iletisim" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
                                 Hemen Arayın <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <Link href="/hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                            <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler
                             </Link>
-                            <Link href="/blog" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                            <Link href="/blog/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 <BookOpen className="w-4 h-4" />
                                 Hukuki Makaleler
                             </Link>

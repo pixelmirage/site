@@ -180,7 +180,7 @@ export default function IzmirIsAvukatiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim">
+                                <Link href="/iletisim/">
                                     <Phone className="w-5 h-5" />
                                     Hemen Arayın
                                 </Link>
@@ -282,7 +282,7 @@ export default function IzmirIsAvukatiPage() {
                         <p>
                             <strong>İzmir iş avukatı</strong> olarak tüm hizmetlerimizde müvekkil menfaatini ön planda tutuyoruz.
                             En kısa sürede en etkili sonuçları almayı hedefliyoruz. Detaylı bilgi için
-                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
+                            <Link href="/hizmetler/" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
                         </p>
 
                         {/* Hangi Durumlarda İş Avukatına İhtiyacınız Var */}
@@ -312,7 +312,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            Bu durumlardan birini yaşıyorsanız zamanaşımı sürelerini kaçırmadan bir <strong>İzmir iş avukatı</strong> ile görüşün. Dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci dahil tüm aşamalarda yanınızdayız.
+                            Bu durumlardan birini yaşıyorsanız zamanaşımı sürelerini kaçırmadan bir <strong>İzmir iş avukatı</strong> ile görüşün. Dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk/" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci dahil tüm aşamalarda yanınızdayız.
                         </p>
 
                         {/* İşe İade Davası */}
@@ -332,7 +332,7 @@ export default function IzmirIsAvukatiPage() {
                             <li><strong>İş güvencesi kapsamı:</strong> İşyerinde en az 30 işçi çalışıyor olmalıdır</li>
                             <li><strong>Kıdem şartı:</strong> İşçi en az 6 ay kıdeme sahip olmalıdır</li>
                             <li><strong>Belirsiz süreli sözleşme:</strong> İş sözleşmesi belirsiz süreli olmalıdır</li>
-                            <li><strong>Süre:</strong> Fesih bildiriminden itibaren 1 ay içinde <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-semibold">arabulucuya</Link> başvurulmalıdır</li>
+                            <li><strong>Süre:</strong> Fesih bildiriminden itibaren 1 ay içinde <Link href="/sozluk/zorunlu-arabuluculuk/" className="text-secondary font-semibold">arabulucuya</Link> başvurulmalıdır</li>
                         </ul>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -368,7 +368,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="kidem-tazminati" className="scroll-mt-24">Kıdem Tazminatı Nasıl Hesaplanır?</h2>
 
                         <p>
-                            <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">Kıdem tazminatı</Link>, en az 1 yıl çalışmış olan işçinin belirli koşullarla iş sözleşmesi sona erdiğinde hak ettiği tazminattır. Bu tazminat 1475 sayılı eski İş Kanunu'nun halen yürürlükte olan 14. maddesinde düzenlenmiştir.
+                            <Link href="/sozluk/kidem-tazminati/" className="text-secondary font-bold">Kıdem tazminatı</Link>, en az 1 yıl çalışmış olan işçinin belirli koşullarla iş sözleşmesi sona erdiğinde hak ettiği tazminattır. Bu tazminat 1475 sayılı eski İş Kanunu'nun halen yürürlükte olan 14. maddesinde düzenlenmiştir.
                         </p>
 
                         <p>
@@ -419,7 +419,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="ihbar-tazminati" className="scroll-mt-24">İhbar Tazminatı Nedir?</h2>
 
                         <p>
-                            <Link href="/sozluk/ihbar-tazminati" className="text-secondary font-bold">İhbar tazminatı</Link>, belirsiz süreli iş sözleşmesinin bildirim süresine uyulmadan feshedilmesi durumunda ödenir. Bu tazminat karşı tarafa verilir. İş Kanunu m. 17&apos;de düzenlenen bildirim süreleri şu şekildedir:
+                            <Link href="/sozluk/ihbar-tazminati/" className="text-secondary font-bold">İhbar tazminatı</Link>, belirsiz süreli iş sözleşmesinin bildirim süresine uyulmadan feshedilmesi durumunda ödenir. Bu tazminat karşı tarafa verilir. İş Kanunu m. 17&apos;de düzenlenen bildirim süreleri şu şekildedir:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -472,7 +472,7 @@ export default function IzmirIsAvukatiPage() {
                         </ul>
 
                         <p>
-                            İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıldır. Her durumda kazanın olduğu tarihten itibaren 10 yıl içinde dava açılmalıdır. İş kazası SGK&apos;ya 3 iş günü içinde bildirilmelidir. <strong>İzmir iş avukatı</strong> olarak iş kazası sürecinin her aşamasında yanınızdayız. Tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyin.
+                            İş kazalarında zamanaşımı süresi, zararın ve failin öğrenildiği tarihten itibaren 2 yıldır. Her durumda kazanın olduğu tarihten itibaren 10 yıl içinde dava açılmalıdır. İş kazası SGK&apos;ya 3 iş günü içinde bildirilmelidir. <strong>İzmir iş avukatı</strong> olarak iş kazası sürecinin her aşamasında yanınızdayız. Tazminat talepleri hakkında detaylı bilgi için <Link href="/izmir-tazminat-avukati/" className="text-secondary font-semibold">İzmir tazminat avukatı</Link> sayfamızı da inceleyin.
                         </p>
 
                         {/* İşçi Hakları */}
@@ -500,7 +500,7 @@ export default function IzmirIsAvukatiPage() {
                                 ayrımı gözetmeksizin tüm çalışanlara eşit davranmak zorundadır.
                             </li>
                             <li>
-                                <strong><Link href="/sozluk/mobbing" className="text-secondary">Mobbinge</Link> karşı koruma:</strong> İşçinin işyerinde sistematik psikolojik baskıya maruz
+                                <strong><Link href="/sozluk/mobbing/" className="text-secondary">Mobbinge</Link> karşı koruma:</strong> İşçinin işyerinde sistematik psikolojik baskıya maruz
                                 kalması halinde iş sözleşmesini haklı nedenle feshederek tazminat hakkı doğar.
                             </li>
                         </ul>
@@ -537,7 +537,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            Özellikle <Link href="/sozluk/ise-iade-davasi" className="text-secondary font-bold">işe iade davası</Link>, <Link href="/sozluk/kidem-tazminati" className="text-secondary font-bold">kıdem tazminatı</Link> ve <Link href="/sozluk/hakli-fesih" className="text-secondary font-bold">haklı fesih</Link> gibi teknik davalarda avukat desteği almak çok önemlidir. Avukatla açılan davalar lehine sonuçlanma olasılığını belirgin şekilde artırır.
+                            Özellikle <Link href="/sozluk/ise-iade-davasi/" className="text-secondary font-bold">işe iade davası</Link>, <Link href="/sozluk/kidem-tazminati/" className="text-secondary font-bold">kıdem tazminatı</Link> ve <Link href="/sozluk/hakli-fesih/" className="text-secondary font-bold">haklı fesih</Link> gibi teknik davalarda avukat desteği almak çok önemlidir. Avukatla açılan davalar lehine sonuçlanma olasılığını belirgin şekilde artırır.
                         </p>
 
                         <h3>Mobbing Davası</h3>
@@ -625,7 +625,7 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
                         <p>
-                            İzmir'de <strong>en iyi iş hukuku avukatı</strong> arayışınızda doğru adrestesiniz. Müvekkillerimizin memnuniyeti bizim için en önemli başarı kriteridir. Daha fazla bilgi için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin.
+                            İzmir'de <strong>en iyi iş hukuku avukatı</strong> arayışınızda doğru adrestesiniz. Müvekkillerimizin memnuniyeti bizim için en önemli başarı kriteridir. Daha fazla bilgi için <Link href="/hakkimda/" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -646,7 +646,7 @@ export default function IzmirIsAvukatiPage() {
                                         <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
                                     </div>
                                     <div className="mt-4">
-                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                        <Link href="/hakkimda/" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
                                             Detaylı Özgeçmiş →
                                         </Link>
                                     </div>
@@ -658,20 +658,20 @@ export default function IzmirIsAvukatiPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İş Hukuku Makaleleri</p>
                             <div className="space-y-3">
-                                <Link href="/blog/isten-cikarildiginda-ne-yapmali" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/isten-cikarildiginda-ne-yapmali/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İşten Çıkarıldığında Ne Yapmalı? 2026 Rehberi
                                 </Link>
-                                <Link href="/blog/kidem-tazminati-nasil-hesaplanir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/kidem-tazminati-nasil-hesaplanir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Kıdem Tazminatı Nasıl Hesaplanır?
                                 </Link>
-                                <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İş Kazası Tazminatı Süreci ve Haklarınız
                                 </Link>
-                                <Link href="/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İşe İade Davası Şartları ve Arabuluculuk Süreci 2026
                                 </Link>
                             </div>
-                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                            <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
                         </div>
@@ -680,7 +680,7 @@ export default function IzmirIsAvukatiPage() {
                         <div className="not-prose bg-primary/5 border border-primary/10 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">Hesaplama Araçları</p>
                             <div className="space-y-3">
-                                <Link href="/kidem-tazminati-hesaplama" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/kidem-tazminati-hesaplama/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Kıdem Tazminatı Hesaplama (2026 Güncel Tavan)
                                 </Link>
                             </div>
@@ -733,7 +733,7 @@ export default function IzmirIsAvukatiPage() {
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                        <Link href="/iletisim">
+                                        <Link href="/iletisim/">
                                             Randevu Alın <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </Button>

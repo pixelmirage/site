@@ -8,18 +8,18 @@ import { useState } from "react";
 import { Logo } from "@/components/ui/logo";
 
 const serviceLinks = [
-    { href: "/izmir-kira-avukati", label: "Kira Avukatı" },
-    { href: "/izmir-is-avukati", label: "İş Avukatı" },
-    { href: "/izmir-bosanma-avukati", label: "Boşanma Avukatı" },
-    { href: "/izmir-tazminat-avukati", label: "Tazminat Avukatı" },
-    { href: "/hizmetler", label: "Tüm Hizmetler" },
+    { href: "/izmir-kira-avukati/", label: "Kira Avukatı" },
+    { href: "/izmir-is-avukati/", label: "İş Avukatı" },
+    { href: "/izmir-bosanma-avukati/", label: "Boşanma Avukatı" },
+    { href: "/izmir-tazminat-avukati/", label: "Tazminat Avukatı" },
+    { href: "/hizmetler/", label: "Tüm Hizmetler" },
 ];
 
 const toolLinks = [
-    { href: "/kira-artis-orani-hesaplama", label: "Kira Artış Hesaplama" },
-    { href: "/tahliye-taahhutnamesi", label: "Tahliye Taahhütnamesi" },
-    { href: "/kidem-tazminati-hesaplama", label: "Kıdem Tazminatı Hesaplama" },
-    { href: "/sozluk", label: "Hukuk Sözlüğü" },
+    { href: "/kira-artis-orani-hesaplama/", label: "Kira Artış Hesaplama" },
+    { href: "/tahliye-taahhutnamesi/", label: "Tahliye Taahhütnamesi" },
+    { href: "/kidem-tazminati-hesaplama/", label: "Kıdem Tazminatı Hesaplama" },
+    { href: "/sozluk/", label: "Hukuk Sözlüğü" },
 ];
 
 export function MobileNav() {
@@ -89,14 +89,14 @@ export function MobileNav() {
 
                         {/* Direct Links */}
                         <Link
-                            href="/blog"
+                            href="/blog/"
                             onClick={() => setOpen(false)}
                             className="flex items-center text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
                             Makaleler
                         </Link>
                         <Link
-                            href="/hakkimda"
+                            href="/hakkimda/"
                             onClick={() => setOpen(false)}
                             className="flex items-center text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
@@ -105,7 +105,7 @@ export function MobileNav() {
                     </nav>
                     <div className="px-4 pt-2">
                         <Button className="w-full bg-primary text-white hover:bg-primary/90 h-12 text-base font-medium" asChild>
-                            <Link href="/iletisim" onClick={() => setOpen(false)}>
+                            <Link href="/iletisim/" onClick={() => setOpen(false)}>
                                 İletişim
                             </Link>
                         </Button>

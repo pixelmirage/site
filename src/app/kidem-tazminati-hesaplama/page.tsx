@@ -154,7 +154,7 @@ export default function SeveranceCalculatorPage() {
                             <p className="mb-6 text-muted-foreground">Tazminat hesaplamanızı birlikte kontrol edelim, haklarınızı koruyalım.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>
-                                    <Link href="/iletisim">Bize Ulaşın</Link>
+                                    <Link href="/iletisim/">Bize Ulaşın</Link>
                                 </Button>
                                 <Button size="lg" variant="outline" asChild>
                                     <Link href="tel:+905445854645">0544 585 46 45</Link>

@@ -109,13 +109,13 @@ export default function RentCalculatorPage() {
 
                         <h3>5 Yılı Dolduran Kiracılar İçin Durum Farklı mı?</h3>
                         <p>
-                            Evet. 5 yıllık kira süresi dolduğunda, mülk sahibi &quot;<Link href="/sozluk/kira-tespit-davasi" className="text-secondary hover:underline">Kira Tespit Davası</Link>&quot; açma hakkına sahip olur. Bu davada mahkeme,
+                            Evet. 5 yıllık kira süresi dolduğunda, mülk sahibi &quot;<Link href="/sozluk/kira-tespit-davasi/" className="text-secondary hover:underline">Kira Tespit Davası</Link>&quot; açma hakkına sahip olur. Bu davada mahkeme,
                             sadece TÜFE oranına değil, taşınmazın durumu ve <strong>emsal kira bedellerine</strong> bakarak hakkaniyete uygun yeni bir kira belirler.
                         </p>
 
                         <h3>Kira Artışında Anlaşmazlık Çıkarsa Ne Yapılır?</h3>
                         <p>
-                            Ev sahibi yasal sınırın üzerinde artış talep ederse, kiracı önceki bedel üzerinden ödeme yapabilir. Ev sahibi zam farkını alabilmek için <Link href="/sozluk/kira-tespit-davasi" className="text-secondary hover:underline">kira tespit davası</Link> açmalıdır. Kiracı, <Link href="/tahliye-taahhutnamesi" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> imzalamamış olduğu sürece, zam anlaşmazlığı sebebiyle tahliye edilemez.
+                            Ev sahibi yasal sınırın üzerinde artış talep ederse, kiracı önceki bedel üzerinden ödeme yapabilir. Ev sahibi zam farkını alabilmek için <Link href="/sozluk/kira-tespit-davasi/" className="text-secondary hover:underline">kira tespit davası</Link> açmalıdır. Kiracı, <Link href="/tahliye-taahhutnamesi/" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> imzalamamış olduğu sürece, zam anlaşmazlığı sebebiyle tahliye edilemez.
                         </p>
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -146,7 +146,7 @@ export default function RentCalculatorPage() {
                         <h2>Hukuki Sorun mu Yaşıyorsunuz?</h2>
                         <p>
                             Kira artış oranında anlaşmazlık yaşıyorsanız veya ev sahibiniz yasal sınırın üzerinde zam talep ediyorsa,
-                            haklarınızı korumak için profesyonel destek almanız önemlidir. <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak uyuşmazlıklarınızda yanınızdayız.
+                            haklarınızı korumak için profesyonel destek almanız önemlidir. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak uyuşmazlıklarınızda yanınızdayız.
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
@@ -154,7 +154,7 @@ export default function RentCalculatorPage() {
                             <p className="mb-6 text-muted-foreground">Durumunuzu değerlendirelim, en doğru hukuki yolu birlikte belirleyelim.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>
-                                    <Link href="/iletisim">Bize Ulaşın</Link>
+                                    <Link href="/iletisim/">Bize Ulaşın</Link>
                                 </Button>
                                 <Button size="lg" variant="outline" asChild>
                                     <Link href="tel:+905445854645">0544 585 46 45</Link>
@@ -165,10 +165,10 @@ export default function RentCalculatorPage() {
                         <h2>İlgili Hukuki Makaleler</h2>
                         <p>Kira hukuku konusundaki güncel makalelerimizi okuyarak haklarınız hakkında detaylı bilgi edinin:</p>
                         <ul>
-                            <li><Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir" className="text-secondary hover:underline">Hangi Durumlarda Kira Tespit Davası Açılabilir?</Link></li>
-                            <li><Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="text-secondary hover:underline">Kira Hukukunda Zorunlu Arabuluculuk Süreci</Link></li>
-                            <li><Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="text-secondary hover:underline">Ev Sahibi Hangi Durumlarda Kiracıyı Çıkarabilir?</Link></li>
-                            <li><Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar" className="text-secondary hover:underline">İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gerekenler</Link></li>
+                            <li><Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/" className="text-secondary hover:underline">Hangi Durumlarda Kira Tespit Davası Açılabilir?</Link></li>
+                            <li><Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary hover:underline">Kira Hukukunda Zorunlu Arabuluculuk Süreci</Link></li>
+                            <li><Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/" className="text-secondary hover:underline">Ev Sahibi Hangi Durumlarda Kiracıyı Çıkarabilir?</Link></li>
+                            <li><Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/" className="text-secondary hover:underline">İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gerekenler</Link></li>
                         </ul>
 
                     </div>

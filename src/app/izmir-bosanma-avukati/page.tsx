@@ -184,7 +184,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim">
+                                <Link href="/iletisim/">
                                     <Phone className="w-5 h-5" />
                                     Hemen Arayın
                                 </Link>
@@ -253,7 +253,7 @@ export default function IzmirBosanmaAvukatiPage() {
 
                         <p>
                             Boşanma hukuku, Türk Medeni Kanunu'nun 161-184. maddeleri kapsamında düzenlenen hassas bir hukuk dalıdır. <strong>Boşanma davası nasıl açılır</strong>, <strong>velayet kime verilir</strong>,
-                            <strong> <Link href="/sozluk/nafaka" className="text-secondary font-bold">nafaka</Link> nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların başında gelir. Aile hukuku uyuşmazlıkları duygusal boyutunun yanı sıra mali ve hukuki açıdan da dikkatli bir yaklaşım gerektirir.
+                            <strong> <Link href="/sozluk/nafaka/" className="text-secondary font-bold">nafaka</Link> nasıl hesaplanır</strong> gibi sorular her gün büromuzda yanıtladığımız konuların başında gelir. Aile hukuku uyuşmazlıkları duygusal boyutunun yanı sıra mali ve hukuki açıdan da dikkatli bir yaklaşım gerektirir.
                         </p>
 
                         {/* Hizmetlerimiz */}
@@ -286,7 +286,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <p>
                             <strong>İzmir boşanma avukatı</strong> olarak tüm hizmetlerimizde müvekkil menfaatini ön planda tutuyoruz.
                             Süreci en az hasarla ve en kısa sürede tamamlamayı hedefliyoruz. Detaylı bilgi için
-                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
+                            <Link href="/hizmetler/" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
                         </p>
 
                         {/* Hangi Durumlarda Boşanma Avukatına İhtiyacınız Var */}
@@ -324,7 +324,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="anlasmalai-bosanma" className="scroll-mt-24">Anlaşmalı Boşanma Nedir?</h2>
 
                         <p>
-                            <Link href="/sozluk/anlasmali-bosanma" className="text-secondary font-bold">Anlaşmalı boşanma</Link>, eşlerin boşanmanın tüm sonuçlarında (nafaka, velayet, mal paylaşımı,
+                            <Link href="/sozluk/anlasmali-bosanma/" className="text-secondary font-bold">Anlaşmalı boşanma</Link>, eşlerin boşanmanın tüm sonuçlarında (nafaka, velayet, mal paylaşımı,
                             tazminat) anlaşarak açtığı davadır. Türk Medeni Kanunu m. 166/3 kapsamında düzenlenir. En hızlı ve en az yıpratıcı boşanma yoludur.
                         </p>
 
@@ -460,7 +460,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="mal-paylasimi" className="scroll-mt-24">Boşanmada Mal Paylaşımı</h2>
 
                         <p>
-                            Mal paylaşımı davası, boşanma kararının kesinleşmesinden sonra açılır. Evlilik süresince edinilen malların tasfiyesini konu alır. 1 Ocak 2002 sonrası evlenen çiftlerde yasal mal rejimi <strong><Link href="/sozluk/mal-paylasimi" className="text-secondary">edinilmiş mallara katılma rejimi</Link></strong>dir.
+                            Mal paylaşımı davası, boşanma kararının kesinleşmesinden sonra açılır. Evlilik süresince edinilen malların tasfiyesini konu alır. 1 Ocak 2002 sonrası evlenen çiftlerde yasal mal rejimi <strong><Link href="/sozluk/mal-paylasimi/" className="text-secondary">edinilmiş mallara katılma rejimi</Link></strong>dir.
                         </p>
 
                         <p>
@@ -506,7 +506,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <Link href="/sozluk/cekismeli-bosanma" className="text-secondary font-bold">Çekişmeli boşanma</Link>, <Link href="/sozluk/velayet" className="text-secondary font-bold">velayet davası</Link> ve <Link href="/sozluk/mal-paylasimi" className="text-secondary font-bold">mal paylaşımı</Link> davalarında avukat desteği sonucu doğrudan etkiler.
+                            <Link href="/sozluk/cekismeli-bosanma/" className="text-secondary font-bold">Çekişmeli boşanma</Link>, <Link href="/sozluk/velayet/" className="text-secondary font-bold">velayet davası</Link> ve <Link href="/sozluk/mal-paylasimi/" className="text-secondary font-bold">mal paylaşımı</Link> davalarında avukat desteği sonucu doğrudan etkiler.
                         </p>
 
                         {/* Ücretler */}
@@ -582,7 +582,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>İzmir boşanma avukatı yorumları</strong> incelendiğinde müvekkillerimizin memnuniyeti açıkça görülür. Bu bizim için en önemli başarı kriteridir. Daha fazla bilgi için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin.
+                            <strong>İzmir boşanma avukatı yorumları</strong> incelendiğinde müvekkillerimizin memnuniyeti açıkça görülür. Bu bizim için en önemli başarı kriteridir. Daha fazla bilgi için <Link href="/hakkimda/" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -603,7 +603,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                         <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
                                     </div>
                                     <div className="mt-4">
-                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                        <Link href="/hakkimda/" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
                                             Detaylı Özgeçmiş →
                                         </Link>
                                     </div>
@@ -612,27 +612,27 @@ export default function IzmirBosanmaAvukatiPage() {
                         </div>
 
                         <p>
-                            Boşanma sürecinde tazminat talepleri için <Link href="/izmir-tazminat-avukati" className="text-secondary font-bold">tazminat hukuku hizmetlerimizden</Link> yararlanabilirsiniz. Boşanma sonrası kira uyuşmazlıkları yaşarsanız <Link href="/izmir-kira-avukati" className="text-secondary font-bold">kira hukuku desteğimiz</Link> de mevcuttur.
+                            Boşanma sürecinde tazminat talepleri için <Link href="/izmir-tazminat-avukati/" className="text-secondary font-bold">tazminat hukuku hizmetlerimizden</Link> yararlanabilirsiniz. Boşanma sonrası kira uyuşmazlıkları yaşarsanız <Link href="/izmir-kira-avukati/" className="text-secondary font-bold">kira hukuku desteğimiz</Link> de mevcuttur.
                         </p>
 
                         {/* İlgili Makaleler */}
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">Aile Hukuku Makaleleri</p>
                             <div className="space-y-3">
-                                <Link href="/blog/anlasmali-bosanma-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/anlasmali-bosanma-nasil-acilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Anlaşmalı Boşanma Nasıl Açılır? Adım Adım Rehber
                                 </Link>
-                                <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Velayet Davası Süreci ve Mahkeme Kriterleri
                                 </Link>
-                                <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Nafaka Hesaplama: Yoksulluk ve İştirak Nafakası
                                 </Link>
-                                <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti
                                 </Link>
                             </div>
-                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                            <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
                         </div>
@@ -684,7 +684,7 @@ export default function IzmirBosanmaAvukatiPage() {
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                        <Link href="/iletisim">
+                                        <Link href="/iletisim/">
                                             Randevu Alın <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </Button>

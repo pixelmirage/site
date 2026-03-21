@@ -17,18 +17,18 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const serviceLinks = [
-    { name: "İzmir Kira Avukatı", href: "/izmir-kira-avukati", desc: "Kira tespit, tahliye ve arabuluculuk" },
-    { name: "İzmir İş Avukatı", href: "/izmir-is-avukati", desc: "İşe iade, kıdem tazminatı, iş kazası" },
-    { name: "İzmir Boşanma Avukatı", href: "/izmir-bosanma-avukati", desc: "Anlaşmalı/çekişmeli boşanma, velayet" },
-    { name: "İzmir Tazminat Avukatı", href: "/izmir-tazminat-avukati", desc: "Maddi, manevi tazminat, malpraktis" },
-    { name: "Tüm Hizmetler", href: "/hizmetler", desc: "Hizmet alanlarımızın tamamı" },
+    { name: "İzmir Kira Avukatı", href: "/izmir-kira-avukati/", desc: "Kira tespit, tahliye ve arabuluculuk" },
+    { name: "İzmir İş Avukatı", href: "/izmir-is-avukati/", desc: "İşe iade, kıdem tazminatı, iş kazası" },
+    { name: "İzmir Boşanma Avukatı", href: "/izmir-bosanma-avukati/", desc: "Anlaşmalı/çekişmeli boşanma, velayet" },
+    { name: "İzmir Tazminat Avukatı", href: "/izmir-tazminat-avukati/", desc: "Maddi, manevi tazminat, malpraktis" },
+    { name: "Tüm Hizmetler", href: "/hizmetler/", desc: "Hizmet alanlarımızın tamamı" },
 ];
 
 const toolLinks = [
-    { name: "Kira Artış Hesaplama", href: "/kira-artis-orani-hesaplama", desc: "TÜFE bazlı kira artış oranı hesaplayıcı" },
-    { name: "Tahliye Taahhütnamesi", href: "/tahliye-taahhutnamesi", desc: "Online tahliye taahhütnamesi oluşturucu" },
-    { name: "Kıdem Tazminatı Hesaplama", href: "/kidem-tazminati-hesaplama", desc: "Güncel tavan ile net kıdem tazminatı hesaplayıcı" },
-    { name: "Hukuk Sözlüğü", href: "/sozluk", desc: "Hukuki terimlerin açıklamaları" },
+    { name: "Kira Artış Hesaplama", href: "/kira-artis-orani-hesaplama/", desc: "TÜFE bazlı kira artış oranı hesaplayıcı" },
+    { name: "Tahliye Taahhütnamesi", href: "/tahliye-taahhutnamesi/", desc: "Online tahliye taahhütnamesi oluşturucu" },
+    { name: "Kıdem Tazminatı Hesaplama", href: "/kidem-tazminati-hesaplama/", desc: "Güncel tavan ile net kıdem tazminatı hesaplayıcı" },
+    { name: "Hukuk Sözlüğü", href: "/sozluk/", desc: "Hukuki terimlerin açıklamaları" },
 ];
 
 export function Header() {
@@ -121,10 +121,10 @@ export function Header() {
                                 {/* Direct Links */}
                                 <NavigationMenuItem>
                                     <Link
-                                        href="/blog"
+                                        href="/blog/"
                                         className={cn(
                                             "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
-                                            pathname === "/blog" || pathname.startsWith("/blog/")
+                                            pathname === "/blog/" || pathname.startsWith("/blog/")
                                                 ? "text-primary"
                                                 : "text-primary/80"
                                         )}
@@ -135,10 +135,10 @@ export function Header() {
 
                                 <NavigationMenuItem>
                                     <Link
-                                        href="/hakkimda"
+                                        href="/hakkimda/"
                                         className={cn(
                                             "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
-                                            pathname === "/hakkimda" ? "text-primary" : "text-primary/80"
+                                            pathname === "/hakkimda/" ? "text-primary" : "text-primary/80"
                                         )}
                                     >
                                         Hakkımda
@@ -149,7 +149,7 @@ export function Header() {
 
                         {/* İletişim CTA */}
                         <Link
-                            href="/iletisim"
+                            href="/iletisim/"
                             className="ml-4 inline-flex h-9 items-center justify-center rounded-md bg-primary text-white px-6 text-xs font-bold uppercase tracking-[0.2em] hover:bg-primary/90 transition-colors"
                         >
                             İletişim

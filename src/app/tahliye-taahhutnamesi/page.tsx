@@ -174,7 +174,7 @@ export default function EvictionTemplatePage() {
                         Türk Borçlar Kanunu madde 352/1 uyarınca verilen bu taahhüt, mülk sahibi için en hızlı <Link href="/sozluk/tahliye-taahhutnamesi/" className="text-secondary hover:underline">tahliye</Link> imkanı sağlayan belgelerden biridir.
                     </p>
                     <p>
-                        <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link> uygulamasında tahliye taahhütnamesi, ev sahibinin kiracıyı tahliye edebilmek için kullanabileceği en etkili hukuki araçlardan biridir. Ancak taahhütnamenin geçerli olması için belirli şartların sağlanması gerekir.
+                        <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link> uygulamasında tahliye taahhütnamesi, ev sahibinin kiracıyı tahliye edebilmek için kullanabileceği en etkili hukuki araçlardan biridir. Ancak taahhütnamenin geçerli olması için belirli şartların sağlanması gerekir.
                     </p>
 
                     <h2>Tahliye Taahhütnamesi Nasıl Doldurulur?</h2>
@@ -186,7 +186,7 @@ export default function EvictionTemplatePage() {
                         <li><strong>Kiraya verenin bilgileri:</strong> Mülk sahibinin ad ve soyadı belirtilmelidir.</li>
                         <li><strong>Taşınmazın adresi:</strong> Tahliye edilecek taşınmazın tam adresi (il, ilçe, mahalle, sokak, kapı numarası) eksiksiz yazılmalıdır.</li>
                         <li><strong>Tahliye tarihi:</strong> Kiracının taşınmazı boşaltacağı kesin tarih (gün/ay/yıl) açıkça belirtilmelidir.</li>
-                        <li><strong>Düzenleme tarihi:</strong> Taahhütnamenin imzalandığı tarih, <Link href="/sozluk/kira-sozlesmesi" className="text-secondary hover:underline">kira sözleşmesi</Link> tarihinden sonra olmalıdır.</li>
+                        <li><strong>Düzenleme tarihi:</strong> Taahhütnamenin imzalandığı tarih, <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">kira sözleşmesi</Link> tarihinden sonra olmalıdır.</li>
                         <li><strong>Kiracının imzası:</strong> Taahhütname kiracı tarafından bizzat imzalanmalıdır.</li>
                     </ol>
 
@@ -225,7 +225,7 @@ export default function EvictionTemplatePage() {
                         <li><strong>İtiraz edilirse:</strong> Ev sahibi İcra Mahkemesi&apos;nde &quot;İtirazın Kaldırılması ve Tahliye&quot; davası açar.</li>
                     </ol>
                     <p>
-                        Dava süresince kiracının tahliyesi gecikmese de, noterden düzenlenmiş taahhütnamelerde süreç önemli ölçüde hızlanır. İcra takibi ve <Link href="/sozluk/tahliye-taahhutnamesi" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> hakkında detaylı bilgi için sözlüğümüzü inceleyebilirsiniz.
+                        Dava süresince kiracının tahliyesi gecikmese de, noterden düzenlenmiş taahhütnamelerde süreç önemli ölçüde hızlanır. İcra takibi ve <Link href="/sozluk/tahliye-taahhutnamesi/" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> hakkında detaylı bilgi için sözlüğümüzü inceleyebilirsiniz.
                     </p>
 
                     <h2>Noterden mi Adi Yazılı mı?</h2>
@@ -270,7 +270,7 @@ export default function EvictionTemplatePage() {
 
                     <h2>Hukuki Destek Alın</h2>
                     <p>
-                        Tahliye taahhütnamesi hazırlanması, icra takibi başlatılması veya kiracının itirazı durumunda profesyonel hukuki desteğe ihtiyaç duyarsanız, <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak yanınızdayız. <Link href="/hizmetler" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
+                        Tahliye taahhütnamesi hazırlanması, icra takibi başlatılması veya kiracının itirazı durumunda profesyonel hukuki desteğe ihtiyaç duyarsanız, <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak yanınızdayız. <Link href="/hizmetler/" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
@@ -278,7 +278,7 @@ export default function EvictionTemplatePage() {
                         <p className="mb-6 text-muted-foreground">Taahhütname hazırlama, icra takibi veya itiraz süreçlerinde hukuki danışmanlık alın.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>
-                                <Link href="/iletisim">Hemen Arayın</Link>
+                                <Link href="/iletisim/">Hemen Arayın</Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
                                 <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>

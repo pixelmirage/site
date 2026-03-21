@@ -25,7 +25,7 @@ export default function NotFound() {
                             </Link>
                         </Button>
                         <Button variant="outline" className="gap-2" asChild>
-                            <Link href="/iletisim">
+                            <Link href="/iletisim/">
                                 <Phone className="w-4 h-4" />
                                 İletişime Geçin
                             </Link>
@@ -36,12 +36,12 @@ export default function NotFound() {
                         <p className="text-sm font-bold text-primary uppercase tracking-widest mb-6">Popüler Sayfalar</p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-lg mx-auto">
                             {[
-                                { label: "Kira Hukuku", href: "/izmir-kira-avukati" },
-                                { label: "İş Hukuku", href: "/izmir-is-avukati" },
-                                { label: "Boşanma Hukuku", href: "/izmir-bosanma-avukati" },
-                                { label: "Tazminat Hukuku", href: "/izmir-tazminat-avukati" },
-                                { label: "Hukuki Makaleler", href: "/blog" },
-                                { label: "Hukuk Sözlüğü", href: "/sozluk" },
+                                { label: "Kira Hukuku", href: "/izmir-kira-avukati/" },
+                                { label: "İş Hukuku", href: "/izmir-is-avukati/" },
+                                { label: "Boşanma Hukuku", href: "/izmir-bosanma-avukati/" },
+                                { label: "Tazminat Hukuku", href: "/izmir-tazminat-avukati/" },
+                                { label: "Hukuki Makaleler", href: "/blog/" },
+                                { label: "Hukuk Sözlüğü", href: "/sozluk/" },
                             ].map((item) => (
                                 <Link
                                     key={item.href}

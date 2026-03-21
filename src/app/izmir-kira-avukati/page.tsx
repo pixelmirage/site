@@ -192,7 +192,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim">
+                                <Link href="/iletisim/">
                                     <Phone className="w-5 h-5" />
                                     Hemen Arayın
                                 </Link>
@@ -305,7 +305,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             <strong>İzmir kira avukatı</strong> olarak tüm hizmetlerde müvekkil menfaatini ön planda tutuyoruz. En kısa sürede etkili sonuç almayı hedefliyoruz. Detaylı bilgi için
-                            <Link href="/hizmetler" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
+                            <Link href="/hizmetler/" className="text-secondary font-bold"> hizmetlerimiz sayfasını</Link> inceleyin.
                         </p>
 
                         {/* Hangi Durumlarda Kira Avukatına İhtiyacınız Var */}
@@ -337,7 +337,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             Bu durumlardan birini yaşıyorsanız zamanaşımı sürelerini kaçırmadan harekete geçin. <strong>Kira hukuku avukatı İzmir</strong>'de
-                            görüşme almak ilk adımdır. Kira uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
+                            görüşme almak ilk adımdır. Kira uyuşmazlıklarında dava öncesi <Link href="/sozluk/zorunlu-arabuluculuk/" className="text-secondary font-bold">zorunlu arabuluculuk</Link> süreci
                             de dahil tüm aşamalarda yanınızdayız.
                         </p>
 
@@ -384,11 +384,11 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            Her tahliye sebebinin kendine özgü ispat şartları vardır. <Link href="/sozluk/tahliye-taahhutnamesi" className="text-secondary font-bold">Tahliye taahhütnamesi</Link> ile açılan davalarda tüm geçerlilik şartları eksiksiz olmalıdır. <Link href="/sozluk/ihtiyac-nedeniyle-tahliye" className="text-secondary font-bold">İhtiyaç nedeniyle tahliye</Link> davalarında ise ihtiyacın samimi ve zorunlu olduğu kanıtlanmalıdır.
+                            Her tahliye sebebinin kendine özgü ispat şartları vardır. <Link href="/sozluk/tahliye-taahhutnamesi/" className="text-secondary font-bold">Tahliye taahhütnamesi</Link> ile açılan davalarda tüm geçerlilik şartları eksiksiz olmalıdır. <Link href="/sozluk/ihtiyac-nedeniyle-tahliye/" className="text-secondary font-bold">İhtiyaç nedeniyle tahliye</Link> davalarında ise ihtiyacın samimi ve zorunlu olduğu kanıtlanmalıdır.
                         </p>
 
                         <p>
-                            <strong>İzmir kira avukatı</strong> desteği almadan açılan davalarda ret riski yüksektir. <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="text-secondary font-bold">Kiracı tahliye rehberimizi</Link> okumanızı tavsiye ederiz.
+                            <strong>İzmir kira avukatı</strong> desteği almadan açılan davalarda ret riski yüksektir. <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/" className="text-secondary font-bold">Kiracı tahliye rehberimizi</Link> okumanızı tavsiye ederiz.
                         </p>
 
                         {/* Süreç */}
@@ -433,14 +433,14 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p className="text-center">
-                            Tahliye taahhütnamesi ile tahliye, diğer yollara göre çok daha hızlıdır. <strong>İzmir kira avukatı</strong> olarak müvekkillerimize taahhütname almalarını öneririz. Detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyun. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir" className="text-secondary font-bold">İki haklı ihtar makalemiz</Link> de faydalı olacaktır.
+                            Tahliye taahhütnamesi ile tahliye, diğer yollara göre çok daha hızlıdır. <strong>İzmir kira avukatı</strong> olarak müvekkillerimize taahhütname almalarını öneririz. Detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyun. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className="text-secondary font-bold">İki haklı ihtar makalemiz</Link> de faydalı olacaktır.
                         </p>
 
                         {/* Kira Tespit Davası */}
                         <h2 id="kira-tespit-davasi" className="scroll-mt-24">Kira Tespit Davası Ne Zaman Açılır?</h2>
 
                         <p>
-                            <Link href="/sozluk/kira-tespit-davasi" className="text-secondary font-bold">Kira bedelinin tespiti davası</Link>, kira bedelinin piyasa rayicinin çok altında kaldığı durumlarda açılır. Uzun süreli kiralarda <Link href="/sozluk/kira-artis-orani" className="text-secondary font-bold">kira artış oranı</Link> enflasyonun gerisinde kalabilir. Bu da davayı kiraya verenler için zorunlu hale getirir.
+                            <Link href="/sozluk/kira-tespit-davasi/" className="text-secondary font-bold">Kira bedelinin tespiti davası</Link>, kira bedelinin piyasa rayicinin çok altında kaldığı durumlarda açılır. Uzun süreli kiralarda <Link href="/sozluk/kira-artis-orani/" className="text-secondary font-bold">kira artış oranı</Link> enflasyonun gerisinde kalabilir. Bu da davayı kiraya verenler için zorunlu hale getirir.
                         </p>
 
                         <p>
@@ -461,14 +461,14 @@ export default function IzmirKiraAvukatiPage() {
                         </ul>
 
                         <p>
-                            <strong>İzmir kira avukatı</strong> olarak kira tespit davalarında güçlü bir dosya hazırlıyoruz. Bilirkişi raporu, emsal kira bedelleri ve piyasa analizleri bu dosyanın temelini oluşturur. Mahkemenin belirlediği yeni kira bedeli, dava tarihinden değil kira döneminin başından itibaren geçerli olur. Bu yüzden davayı doğru zamanda açmak çok önemlidir. Dava öncesi zorunlu olan <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="text-secondary font-bold">arabuluculuk sürecini</Link> de incelemenizi tavsiye ederiz.
+                            <strong>İzmir kira avukatı</strong> olarak kira tespit davalarında güçlü bir dosya hazırlıyoruz. Bilirkişi raporu, emsal kira bedelleri ve piyasa analizleri bu dosyanın temelini oluşturur. Mahkemenin belirlediği yeni kira bedeli, dava tarihinden değil kira döneminin başından itibaren geçerli olur. Bu yüzden davayı doğru zamanda açmak çok önemlidir. Dava öncesi zorunlu olan <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary font-bold">arabuluculuk sürecini</Link> de incelemenizi tavsiye ederiz.
                         </p>
 
                         {/* 10 Yıllık Kiracının Tahliyesi */}
                         <h2 id="10-yillik-kiraci" className="scroll-mt-24">10 Yıllık Kiracının Tahliyesi</h2>
 
                         <p>
-                            <strong>10 yıllık kiracının tahliyesi</strong>, Türk Borçlar Kanunu m. 347'de düzenlenen önemli bir tahliye yoludur. Konut ve çatılı işyeri kiralarında <Link href="/sozluk/kira-sozlesmesi" className="text-secondary font-bold">kira sözleşmesi</Link> <Link href="/sozluk/10-yillik-uzama-suresi" className="text-secondary font-bold">10 yıllık uzama süresi</Link>ni doldurduğunda kiraya veren sözleşmeyi feshedebilir. Bunun için herhangi bir gerekçe göstermesi gerekmez.
+                            <strong>10 yıllık kiracının tahliyesi</strong>, Türk Borçlar Kanunu m. 347'de düzenlenen önemli bir tahliye yoludur. Konut ve çatılı işyeri kiralarında <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary font-bold">kira sözleşmesi</Link> <Link href="/sozluk/10-yillik-uzama-suresi/" className="text-secondary font-bold">10 yıllık uzama süresi</Link>ni doldurduğunda kiraya veren sözleşmeyi feshedebilir. Bunun için herhangi bir gerekçe göstermesi gerekmez.
                         </p>
 
                         <p>
@@ -508,13 +508,13 @@ export default function IzmirKiraAvukatiPage() {
                         </ul>
 
                         <p>
-                            Doğru hazırlanmış bir <strong>kira sözleşmesi</strong> ilerideki uyuşmazlıkları büyük ölçüde önler. Eksik veya hatalı maddeler ciddi sorunlara yol açabilir. Bu sorunlar hem <strong>kiracının hakları</strong>nı hem de kiraya verenin haklarını olumsuz etkiler. İşyeri kiralamaları için <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar" className="text-secondary font-bold">işyeri kira sözleşmesi rehberimizi</Link> inceleyin.
+                            Doğru hazırlanmış bir <strong>kira sözleşmesi</strong> ilerideki uyuşmazlıkları büyük ölçüde önler. Eksik veya hatalı maddeler ciddi sorunlara yol açabilir. Bu sorunlar hem <strong>kiracının hakları</strong>nı hem de kiraya verenin haklarını olumsuz etkiler. İşyeri kiralamaları için <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/" className="text-secondary font-bold">işyeri kira sözleşmesi rehberimizi</Link> inceleyin.
                         </p>
 
                         <h3>Tahliye Taahhütnamesi Örneği ve Önemi</h3>
 
                         <p>
-                            <Link href="/tahliye-taahhutnamesi" className="text-secondary font-bold">Tahliye taahhütnamesi örneği</Link> hazırlarken en önemli kural şudur: Taahhütname, kiralananın tesliminden <em>sonra</em> alınmalıdır. <strong>Kira sözleşmesi</strong> ile aynı tarihte alınan taahhütnameler geçersiz sayılabilir. Geçerli bir <strong>tahliye taahhütnamesi örneği</strong> şu unsurları içermelidir:
+                            <Link href="/tahliye-taahhutnamesi/" className="text-secondary font-bold">Tahliye taahhütnamesi örneği</Link> hazırlarken en önemli kural şudur: Taahhütname, kiralananın tesliminden <em>sonra</em> alınmalıdır. <strong>Kira sözleşmesi</strong> ile aynı tarihte alınan taahhütnameler geçersiz sayılabilir. Geçerli bir <strong>tahliye taahhütnamesi örneği</strong> şu unsurları içermelidir:
                         </p>
 
                         <ul>
@@ -546,7 +546,7 @@ export default function IzmirKiraAvukatiPage() {
                                 <strong>Tahliye koruması:</strong> Kiracı kira bedelini düzenli ödediği sürece sözleşme süresinin dolması tek başına tahliye sebebi değildir. <strong>Kira sözleşmesi</strong> otomatik olarak birer yıl uzar.
                             </li>
                             <li>
-                                <strong><Link href="/sozluk/depozito" className="text-secondary">Depozito</Link> güvencesi:</strong> Güvence bedeli en fazla 3 aylık kira tutarı olabilir. Bu bedel vadeli mevduat hesabına yatırılmalıdır. Taşınmaz hasarsız teslim edildiğinde iade edilir.
+                                <strong><Link href="/sozluk/depozito/" className="text-secondary">Depozito</Link> güvencesi:</strong> Güvence bedeli en fazla 3 aylık kira tutarı olabilir. Bu bedel vadeli mevduat hesabına yatırılmalıdır. Taşınmaz hasarsız teslim edildiğinde iade edilir.
                             </li>
                             <li>
                                 <strong>Onarım hakkı:</strong> Kiracı, taşınmazdaki esaslı ayıpların giderilmesini ev sahibinden isteyebilir. Onarım yapılmazsa kira bedelinden indirim talep edilebilir.
@@ -558,7 +558,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             <strong>Kiracının hakları</strong> ihlal edildiğinde hukuki yollara başvurmak mümkündür. Bu süreçte deneyimli bir <strong>kira hukuku avukatı</strong> ile çalışmak büyük fark yaratır.
-                            <strong> İzmir kira avukatı</strong> olarak hem kiracı hem de ev sahibi tarafında müvekkillerimizin haklarını koruyoruz. Detaylı bilgi için <Link href="/sozluk/kiraci-haklari" className="text-secondary font-bold">kiracı hakları sözlük sayfamızı</Link> inceleyin.
+                            <strong> İzmir kira avukatı</strong> olarak hem kiracı hem de ev sahibi tarafında müvekkillerimizin haklarını koruyoruz. Detaylı bilgi için <Link href="/sozluk/kiraci-haklari/" className="text-secondary font-bold">kiracı hakları sözlük sayfamızı</Link> inceleyin.
                         </p>
 
                         {/* Avukatlı mı Avukatsız mı */}
@@ -589,7 +589,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            <Link href="/sozluk/kira-tespit-davasi" className="text-secondary font-bold">Kira tespit davası</Link>, <Link href="/sozluk/ihtiyac-nedeniyle-tahliye" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye</Link> ve <Link href="/sozluk/iki-hakli-ihtar" className="text-secondary font-bold">iki haklı ihtar</Link> gibi teknik davalarda avukat desteği çok önemlidir. <strong>Kira hukuku avukatı</strong> ile çalışmak davanızın lehine sonuçlanma şansını artırır.
+                            <Link href="/sozluk/kira-tespit-davasi/" className="text-secondary font-bold">Kira tespit davası</Link>, <Link href="/sozluk/ihtiyac-nedeniyle-tahliye/" className="text-secondary font-bold">ihtiyaç nedeniyle tahliye</Link> ve <Link href="/sozluk/iki-hakli-ihtar/" className="text-secondary font-bold">iki haklı ihtar</Link> gibi teknik davalarda avukat desteği çok önemlidir. <strong>Kira hukuku avukatı</strong> ile çalışmak davanızın lehine sonuçlanma şansını artırır.
                             <strong> İzmir kira avukatı</strong> olarak ilk görüşmede davanızın güçlü ve zayıf yönlerini analiz ediyoruz. Size en uygun stratejiyi sunuyoruz.
                         </p>
 
@@ -666,7 +666,7 @@ export default function IzmirKiraAvukatiPage() {
                         </div>
 
                         <p>
-                            <strong>En iyi kira hukuku avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkil memnuniyeti bizim için en önemli başarı ölçütüdür. <strong>Kira hukuku avukatı İzmir</strong> olarak her davada sonuç odaklı çalışıyoruz. Hakkımızda bilgi almak için <Link href="/hakkimda" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin. İzmir gayrimenkul piyasasındaki güncel hukuki gelişmeler için <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="text-secondary font-bold">güncel gelişmeler makalemizi</Link> okuyun.
+                            <strong>En iyi kira hukuku avukatı</strong> arayışınızda doğru adrese ulaştınız. Müvekkil memnuniyeti bizim için en önemli başarı ölçütüdür. <strong>Kira hukuku avukatı İzmir</strong> olarak her davada sonuç odaklı çalışıyoruz. Hakkımızda bilgi almak için <Link href="/hakkimda/" className="text-secondary font-bold">hakkımızda sayfamızı</Link> ziyaret edin. İzmir gayrimenkul piyasasındaki güncel hukuki gelişmeler için <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/" className="text-secondary font-bold">güncel gelişmeler makalemizi</Link> okuyun.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -687,7 +687,7 @@ export default function IzmirKiraAvukatiPage() {
                                         <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
                                     </div>
                                     <div className="mt-4">
-                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                        <Link href="/hakkimda/" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
                                             Detaylı Özgeçmiş →
                                         </Link>
                                     </div>
@@ -699,29 +699,29 @@ export default function IzmirKiraAvukatiPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">Kira Hukuku Makaleleri</p>
                             <div className="space-y-3">
-                                <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Ev Sahibi Hangi Durumlarda Kiracıyı Hemen Çıkarabilir?
                                 </Link>
-                                <Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Hangi Durumlarda Kira Tespit Davası Açılabilir?
                                 </Link>
-                                <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?
                                 </Link>
-                                <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Kiracının Tahliyesi İçin İki Haklı İhtar Nedir?
                                 </Link>
-                                <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Kira Hukukunda Zorunlu Arabuluculuk Süreci
                                 </Link>
-                                <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gereken Hususlar
                                 </Link>
-                                <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Gayrimenkul Piyasasında Güncel Hukuki Gelişmeler
                                 </Link>
                             </div>
-                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                            <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
                         </div>
@@ -772,7 +772,7 @@ export default function IzmirKiraAvukatiPage() {
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                        <Link href="/iletisim">
+                                        <Link href="/iletisim/">
                                             Randevu Alın <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </Button>

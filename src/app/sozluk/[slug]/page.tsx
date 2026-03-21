@@ -91,7 +91,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             Ana Sayfa
                         </Link>
                         <ChevronRight className="w-4 h-4" />
-                        <Link href="/sozluk" className="hover:text-white transition-colors">
+                        <Link href="/sozluk/" className="hover:text-white transition-colors">
                             Hukuk Sözlüğü
                         </Link>
                         <ChevronRight className="w-4 h-4" />
@@ -164,7 +164,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/sozluk" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    <Link href="/sozluk/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                         Tüm Terimler <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
@@ -188,7 +188,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                         Tüm Makaleler <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
@@ -244,7 +244,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             Kira, iş, boşanma ve tazminat hukuku alanlarında uzman avukatlık hizmeti alın. Hemen bize ulaşın.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/iletisim" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
                                 Hemen Arayın <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (
@@ -252,7 +252,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                     İlgili Hizmet
                                 </Link>
                             )}
-                            <Link href="/hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                            <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler
                             </Link>
                         </div>

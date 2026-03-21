@@ -23,7 +23,7 @@ export function AboutBrief() {
                         </div>
 
                         <Button variant="outline" size="lg" className="rounded-sm border-primary/20 text-primary hover:bg-primary hover:text-white px-12 h-16 font-serif tracking-wide transition-all" asChild>
-                            <Link href="/hakkimda">Detaylı Bilgilendirme</Link>
+                            <Link href="/hakkimda/">Detaylı Bilgilendirme</Link>
                         </Button>
                     </div>
                 </div>

@@ -204,7 +204,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim">
+                                <Link href="/iletisim/">
                                     <Phone className="w-5 h-5" />
                                     Hemen Arayın
                                 </Link>
@@ -276,12 +276,12 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 </h4>
                                 <div className="space-y-3">
                                     {districtData.relatedBlogSlugs.map((blog) => (
-                                        <Link key={blog.slug} href={`/blog/${blog.slug}`} className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                        <Link key={blog.slug} href={`/blog/${blog.slug}/`} className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                             &rarr; {blog.title}
                                         </Link>
                                     ))}
                                 </div>
-                                <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                     Tüm Makaleler <ArrowRight className="w-3 h-3" />
                                 </Link>
                             </div>

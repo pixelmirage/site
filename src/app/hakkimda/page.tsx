@@ -49,7 +49,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    Avukat Mert Kağan Çetin, İzmir Bayraklı'da faaliyet gösteren hukuk bürosunun kurucusudur. <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link>, <Link href="/izmir-is-avukati" className="text-secondary hover:underline">iş hukuku</Link>, <Link href="/izmir-bosanma-avukati" className="text-secondary hover:underline">boşanma hukuku</Link> ve <Link href="/izmir-tazminat-avukati" className="text-secondary hover:underline">tazminat hukuku</Link> alanlarında uzmanlaşmıştır.
+                                    Avukat Mert Kağan Çetin, İzmir Bayraklı'da faaliyet gösteren hukuk bürosunun kurucusudur. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link>, <Link href="/izmir-is-avukati/" className="text-secondary hover:underline">iş hukuku</Link>, <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma hukuku</Link> ve <Link href="/izmir-tazminat-avukati/" className="text-secondary hover:underline">tazminat hukuku</Link> alanlarında uzmanlaşmıştır.
                                 </p>
                                 <p>
                                     Müvekkillerine yalnızca mahkeme süreçlerinde değil, dava öncesi danışmanlık aşamasında da yol göstermektedir. Uyuşmazlığın çözümünde arabuluculuk ve müzakere yöntemlerini de aktif olarak kullanmaktadır.
@@ -135,7 +135,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <Button className="w-full bg-primary text-white hover:bg-primary/90" asChild>
-                                        <Link href="/iletisim">İletişime Geçin</Link>
+                                        <Link href="/iletisim/">İletişime Geçin</Link>
                                     </Button>
                                 </CardContent>
                             </Card>

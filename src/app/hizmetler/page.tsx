@@ -24,84 +24,84 @@ const services = [
         description: "Kira bedelinin emsal rayiçlere ve ekonomik koşullara göre hakkaniyetli bir şekilde yeniden belirlenmesi.",
         icon: Scale,
         details: ["Emsal araştırması", "Bilirkişi süreci yönetimi", "Hakkaniyet indirimi analizi", "Geçmişe dönük kira farkları"],
-        href: "/izmir-kira-avukati"
+        href: "/izmir-kira-avukati/"
     },
     {
         title: "Tahliye Davaları",
         description: "İhtiyaç, temerrüt, esaslı onarım veya haklı ihtar nedenleriyle kiracının tahliyesi süreçleri.",
         icon: Key,
         details: ["İhtiyaç nedeniyle tahliye", "İki haklı ihtar ile tahliye", "Temerrüt nedeniyle tahliye", "Tahliye emri takibi"],
-        href: "/izmir-kira-avukati"
+        href: "/izmir-kira-avukati/"
     },
     {
         title: "Tahliye Taahhütnamesi",
         description: "Hukuken geçerli tahliye taahhütnamesi hazırlanması ve bu taahhüde dayalı icra/dava süreçleri.",
         icon: FileText,
         details: ["Tarihlerin geçerlilik kontrolü", "İmzaya itiraz süreçleri", "İcra yoluyla tahliye", "Taahhüt iptali davaları"],
-        href: "/tahliye-taahhutnamesi"
+        href: "/tahliye-taahhutnamesi/"
     },
     {
         title: "Gayrimenkul Hukuku",
         description: "Taşınmaz malların mülkiyeti, kullanımı ve devrine ilişkin tüm uyuşmazlıklarda uzman temsil.",
         icon: Home,
         details: ["Tapu iptal ve tescil", "İzale-i şuyu davaları", "Kamulaştırma davaları", "Ecrimisil talepleri"],
-        href: "/izmir-kira-avukati"
+        href: "/izmir-kira-avukati/"
     },
     {
         title: "Kira Sözleşmesi Yönetimi",
         description: "İşyeri ve konutlar için riskleri minimize eden, tarafları koruyan profesyonel sözleşme hazırlığı.",
         icon: Gavel,
         details: ["Özel şartların belirlenmesi", "Depozito yönetimi", "Kefalet şartları", "Devir ve alt kira izinleri"],
-        href: "/izmir-kira-avukati"
+        href: "/izmir-kira-avukati/"
     },
     {
         title: "Arabuluculuk & Danışmanlık",
         description: "Dava yoluna gitmeden önce zorunlu arabuluculuk süreçlerinde etkin temsil ve stratejik danışmanlık.",
         icon: Users2,
         details: ["Arabuluculuk hazırlığı", "Müzakere yönetimi", "Anlaşma tutanakları", "Uzlaşma stratejileri"],
-        href: "/iletisim"
+        href: "/iletisim/"
     },
     {
         title: "İşe İade Davası",
         description: "Haksız fesih halinde işe iade, kıdem tazminatı, ihbar tazminatı ve işçi alacakları davaları.",
         icon: Briefcase,
         details: ["İşe iade davası", "Kıdem tazminatı", "İhbar tazminatı", "Fazla mesai alacağı"],
-        href: "/izmir-is-avukati"
+        href: "/izmir-is-avukati/"
     },
     {
         title: "İş Kazası Tazminatı",
         description: "İş kazası ve meslek hastalığı nedeniyle maddi ve manevi tazminat davalarında uzman temsil.",
         icon: ShieldCheck,
         details: ["Maddi tazminat", "Manevi tazminat", "SGK bildirimi", "Kusur tespiti"],
-        href: "/izmir-tazminat-avukati"
+        href: "/izmir-tazminat-avukati/"
     },
     {
         title: "Anlaşmalı Boşanma",
         description: "Eşlerin tüm konularda uzlaşarak tek celsede boşanma sürecini tamamlaması için protokol hazırlığı.",
         icon: FileText,
         details: ["Boşanma protokolü", "Nafaka düzenlemesi", "Velayet anlaşması", "Mal paylaşımı"],
-        href: "/izmir-bosanma-avukati"
+        href: "/izmir-bosanma-avukati/"
     },
     {
         title: "Çekişmeli Boşanma",
         description: "Tarafların anlaşamadığı durumlarda çekişmeli boşanma davası, velayet ve nafaka süreçleri.",
         icon: Gavel,
         details: ["Boşanma sebepleri", "Velayet davası", "Nafaka davası", "Tazminat talepleri"],
-        href: "/izmir-bosanma-avukati"
+        href: "/izmir-bosanma-avukati/"
     },
     {
         title: "Velayet & Nafaka",
         description: "Boşanma sonrası çocuk velayeti, iştirak nafakası ve yoksulluk nafakası davalarında profesyonel destek.",
         icon: Heart,
         details: ["Velayet değişikliği", "İştirak nafakası", "Yoksulluk nafakası", "Kişisel ilişki düzeni"],
-        href: "/izmir-bosanma-avukati"
+        href: "/izmir-bosanma-avukati/"
     },
     {
         title: "Mal Paylaşımı",
         description: "Edinilmiş mallara katılma alacağı ve mal rejimi tasfiyesi davalarında haklarınızın korunması.",
         icon: Scale,
         details: ["Katılma alacağı", "Değer artış payı", "İhtiyati tedbir", "Mal kaçırma önlemi"],
-        href: "/izmir-bosanma-avukati"
+        href: "/izmir-bosanma-avukati/"
     }
 ];
 
@@ -117,9 +117,9 @@ export default function ServicesPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hukuki Hizmetlerimiz</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                        <Link href="/izmir-kira-avukati" className="text-secondary hover:underline">Kira hukuku</Link>,{" "}
-                        <Link href="/izmir-is-avukati" className="text-secondary hover:underline">iş hukuku</Link> ve{" "}
-                        <Link href="/izmir-bosanma-avukati" className="text-secondary hover:underline">boşanma davaları</Link> alanlarında uzmanlaşmış kadromuzla yanınızdayız.
+                        <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link>,{" "}
+                        <Link href="/izmir-is-avukati/" className="text-secondary hover:underline">iş hukuku</Link> ve{" "}
+                        <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma davaları</Link> alanlarında uzmanlaşmış kadromuzla yanınızdayız.
                     </p>
                 </div>
             </section>
@@ -187,7 +187,7 @@ export default function ServicesPage() {
                         </div>
                     </div>
                     <Button size="lg" className="mt-16 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-12" asChild>
-                        <Link href="/iletisim">Hemen Arayın</Link>
+                        <Link href="/iletisim/">Hemen Arayın</Link>
                     </Button>
                 </div>
             </section>

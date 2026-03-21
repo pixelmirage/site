@@ -3,10 +3,10 @@ import Link from "next/link";
 import { ArrowRight, Landmark, Home, Briefcase, Heart, ShieldCheck, Phone } from "lucide-react";
 
 const practiceAreas = [
-    { label: "Kira Hukuku", href: "/izmir-kira-avukati", icon: Home },
-    { label: "İş Hukuku", href: "/izmir-is-avukati", icon: Briefcase },
-    { label: "Boşanma Hukuku", href: "/izmir-bosanma-avukati", icon: Heart },
-    { label: "Tazminat Hukuku", href: "/izmir-tazminat-avukati", icon: ShieldCheck },
+    { label: "Kira Hukuku", href: "/izmir-kira-avukati/", icon: Home },
+    { label: "İş Hukuku", href: "/izmir-is-avukati/", icon: Briefcase },
+    { label: "Boşanma Hukuku", href: "/izmir-bosanma-avukati/", icon: Heart },
+    { label: "Tazminat Hukuku", href: "/izmir-tazminat-avukati/", icon: ShieldCheck },
 ];
 
 export function Hero() {
@@ -74,7 +74,7 @@ export function Hero() {
                             className="bg-primary text-white hover:bg-primary/95 px-12 h-16 text-lg font-serif tracking-wide transition-all shadow-xl hover:shadow-2xl"
                             asChild
                         >
-                            <Link href="/iletisim">Hemen Arayın</Link>
+                            <Link href="/iletisim/">Hemen Arayın</Link>
                         </Button>
                         <Link
                             href="tel:+905445854645"

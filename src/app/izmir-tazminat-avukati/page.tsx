@@ -180,7 +180,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim">
+                                <Link href="/iletisim/">
                                     <Phone className="w-5 h-5" />
                                     Hemen Arayın
                                 </Link>
@@ -295,7 +295,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="maddi-tazminat" className="scroll-mt-24">Maddi Tazminat Davası</h2>
 
                         <p>
-                            <Link href="/sozluk/maddi-tazminat" className="text-secondary font-bold">Maddi tazminat davası</Link>, hukuka aykırı bir fiil sonucu kişinin malvarlığında oluşan azalmayı gidermek için açılır. Türk Borçlar Kanunu m. 49-50 kapsamında düzenlenir. Amaç, zarar görenin uğradığı gerçek zararı karşılamaktır.
+                            <Link href="/sozluk/maddi-tazminat/" className="text-secondary font-bold">Maddi tazminat davası</Link>, hukuka aykırı bir fiil sonucu kişinin malvarlığında oluşan azalmayı gidermek için açılır. Türk Borçlar Kanunu m. 49-50 kapsamında düzenlenir. Amaç, zarar görenin uğradığı gerçek zararı karşılamaktır.
                         </p>
 
                         <p>Maddi tazminat kapsamında talep edilebilecek kalemler:</p>
@@ -316,7 +316,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="manevi-tazminat" className="scroll-mt-24">Manevi Tazminat Davası</h2>
 
                         <p>
-                            <Link href="/sozluk/manevi-tazminat" className="text-secondary font-bold">Manevi tazminat</Link>, kişilik haklarının ihlali sonucu duyulan acı, elem ve ıstırabın karşılığıdır. Mahkeme bu tazminata hükmeder. Türk Borçlar Kanunu m. 56 ve 58 kapsamında düzenlenir.
+                            <Link href="/sozluk/manevi-tazminat/" className="text-secondary font-bold">Manevi tazminat</Link>, kişilik haklarının ihlali sonucu duyulan acı, elem ve ıstırabın karşılığıdır. Mahkeme bu tazminata hükmeder. Türk Borçlar Kanunu m. 56 ve 58 kapsamında düzenlenir.
                         </p>
 
                         <p>
@@ -335,7 +335,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="is-kazasi" className="scroll-mt-24">İş Kazası Tazminatı</h2>
 
                         <p>
-                            <Link href="/izmir-is-avukati">İş kazası</Link> tazminatı, 5510 sayılı Kanun kapsamında düzenlenir. İş kazası veya meslek hastalığı sonucu zarar gören işçi, işverenden tazminat talep eder. <strong>İzmir tazminat avukatı</strong> olarak iş kazası davalarında müvekkillerimize kapsamlı destek sunuyoruz.
+                            <Link href="/izmir-is-avukati/">İş kazası</Link> tazminatı, 5510 sayılı Kanun kapsamında düzenlenir. İş kazası veya meslek hastalığı sonucu zarar gören işçi, işverenden tazminat talep eder. <strong>İzmir tazminat avukatı</strong> olarak iş kazası davalarında müvekkillerimize kapsamlı destek sunuyoruz.
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -363,7 +363,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </div>
 
                         <p>
-                            İş kazası tazminatında zamanaşımı süresi iki şekilde hesaplanır. Zararın ve failin öğrenilmesinden itibaren 2 yıl, kazadan itibaren ise 10 yıldır. <Link href="/izmir-is-avukati" className="text-secondary font-bold">İş hukuku hizmetlerimiz</Link> hakkında daha fazla bilgi alın.
+                            İş kazası tazminatında zamanaşımı süresi iki şekilde hesaplanır. Zararın ve failin öğrenilmesinden itibaren 2 yıl, kazadan itibaren ise 10 yıldır. <Link href="/izmir-is-avukati/" className="text-secondary font-bold">İş hukuku hizmetlerimiz</Link> hakkında daha fazla bilgi alın.
                         </p>
 
                         <h2 id="trafik-kazasi" className="scroll-mt-24">Trafik Kazası Tazminatı</h2>
@@ -382,7 +382,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="destekten-yoksun" className="scroll-mt-24">Destekten Yoksun Kalma Tazminatı</h2>
 
                         <p>
-                            <Link href="/sozluk/destekten-yoksun-kalma" className="text-secondary font-bold">Destekten yoksun kalma tazminatı</Link>, bir kişinin ölümü nedeniyle maddi desteğinden yoksun kalan yakınların talep ettiği tazminattır (TBK m. 53). Eş, çocuklar, anne-baba ve fiilen destek alan kişiler bu tazminatı isteyebilir.
+                            <Link href="/sozluk/destekten-yoksun-kalma/" className="text-secondary font-bold">Destekten yoksun kalma tazminatı</Link>, bir kişinin ölümü nedeniyle maddi desteğinden yoksun kalan yakınların talep ettiği tazminattır (TBK m. 53). Eş, çocuklar, anne-baba ve fiilen destek alan kişiler bu tazminatı isteyebilir.
                         </p>
 
                         <p>
@@ -392,7 +392,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h3>Malpraktis Davası (Doktor Hatası Tazminatı)</h3>
 
                         <p>
-                            <Link href="/sozluk/malpraktis" className="text-secondary font-bold">Malpraktis davası</Link>, tıbbi hata sonucu hastanın zarar görmesi halinde açılır. Yanlış teşhis, hatalı ameliyat, ilaç hatası ve tedavi ihmali bu kapsamdadır. İzmir tazminat avukatı olarak Adli Tıp Kurumu ve bilirkişi raporları ile güçlü dava dosyaları hazırlıyoruz.
+                            <Link href="/sozluk/malpraktis/" className="text-secondary font-bold">Malpraktis davası</Link>, tıbbi hata sonucu hastanın zarar görmesi halinde açılır. Yanlış teşhis, hatalı ameliyat, ilaç hatası ve tedavi ihmali bu kapsamdadır. İzmir tazminat avukatı olarak Adli Tıp Kurumu ve bilirkişi raporları ile güçlü dava dosyaları hazırlıyoruz.
                         </p>
 
                         {/* Avukatlı mı Avukatsız mı */}
@@ -425,7 +425,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </div>
 
                         <p>
-                            Özellikle <Link href="/sozluk/maddi-tazminat" className="text-secondary font-bold">maddi tazminat</Link>, <Link href="/sozluk/manevi-tazminat" className="text-secondary font-bold">manevi tazminat</Link> ve <Link href="/sozluk/destekten-yoksun-kalma" className="text-secondary font-bold">destekten yoksun kalma</Link> davalarında
+                            Özellikle <Link href="/sozluk/maddi-tazminat/" className="text-secondary font-bold">maddi tazminat</Link>, <Link href="/sozluk/manevi-tazminat/" className="text-secondary font-bold">manevi tazminat</Link> ve <Link href="/sozluk/destekten-yoksun-kalma/" className="text-secondary font-bold">destekten yoksun kalma</Link> davalarında
                             avukat desteği alın. Avukat desteği tazminat miktarını doğrudan etkiler.
                         </p>
 
@@ -488,7 +488,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </div>
 
                         <p>
-                            İzmir boşanma davalarında da tazminat talepleri gündeme gelebilir. Bu konuda <Link href="/izmir-bosanma-avukati">İzmir boşanma avukatı</Link> hizmetlerimizden yararlanın. Kira uyuşmazlıklarından doğan tazminat talepleri için <Link href="/izmir-kira-avukati">İzmir kira avukatı</Link> sayfamızı inceleyin.
+                            İzmir boşanma davalarında da tazminat talepleri gündeme gelebilir. Bu konuda <Link href="/izmir-bosanma-avukati/">İzmir boşanma avukatı</Link> hizmetlerimizden yararlanın. Kira uyuşmazlıklarından doğan tazminat talepleri için <Link href="/izmir-kira-avukati/">İzmir kira avukatı</Link> sayfamızı inceleyin.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -510,7 +510,7 @@ export default function IzmirTazminatAvukatiPage() {
                                         <span><strong className="text-slate-700">Büro Kuruluş:</strong> Ocak 2019</span>
                                     </div>
                                     <div className="mt-4">
-                                        <Link href="/hakkimda" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                        <Link href="/hakkimda/" className="text-secondary font-bold text-sm hover:text-primary transition-colors">
                                             Detaylı Özgeçmiş →
                                         </Link>
                                     </div>
@@ -522,23 +522,23 @@ export default function IzmirTazminatAvukatiPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">Tazminat Hukuku Makaleleri</p>
                             <div className="space-y-3">
-                                <Link href="/blog/trafik-kazasi-tazminati-alma-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/trafik-kazasi-tazminati-alma-sureci/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Trafik Kazası Tazminatı Alma Süreci
                                 </Link>
-                                <Link href="/blog/maddi-ve-manevi-tazminat-davasi-farklari" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/maddi-ve-manevi-tazminat-davasi-farklari/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Maddi ve Manevi Tazminat Davası Arasındaki Farklar
                                 </Link>
-                                <Link href="/blog/malpraktis-davasi-doktor-hatasi-tazminati" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/malpraktis-davasi-doktor-hatasi-tazminati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Malpraktis Davası: Doktor Hatası Tazminatı
                                 </Link>
-                                <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İş Kazası Tazminatı Süreci ve Haklarınız
                                 </Link>
-                                <Link href="/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                <Link href="/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Destekten Yoksun Kalma Tazminatı: Hesaplama ve Dava Süreci
                                 </Link>
                             </div>
-                            <Link href="/blog" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                            <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
                             </Link>
                         </div>
@@ -588,7 +588,7 @@ export default function IzmirTazminatAvukatiPage() {
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                        <Link href="/iletisim">
+                                        <Link href="/iletisim/">
                                             Randevu Alın <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </Button>
@@ -613,17 +613,17 @@ export default function IzmirTazminatAvukatiPage() {
                             </p>
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 {[
-                                    { name: "Bayraklı Tazminat Avukatı", url: "/bayrakli-tazminat-avukati" },
-                                    { name: "Karşıyaka Tazminat Avukatı", url: "/karsiyaka-tazminat-avukati" },
-                                    { name: "Bornova Tazminat Avukatı", url: "/bornova-tazminat-avukati" },
-                                    { name: "Konak Tazminat Avukatı", url: "/konak-tazminat-avukati" },
-                                    { name: "Buca Tazminat Avukatı", url: "/buca-tazminat-avukati" },
-                                    { name: "Çiğli Tazminat Avukatı", url: "/cigli-tazminat-avukati" },
-                                    { name: "Gaziemir Tazminat Avukatı", url: "/gaziemir-tazminat-avukati" },
-                                    { name: "Balçova Tazminat Avukatı", url: "/balcova-tazminat-avukati" },
-                                    { name: "Narlıdere Tazminat Avukatı", url: "/narlidere-tazminat-avukati" },
-                                    { name: "Karabağlar Tazminat Avukatı", url: "/karabaglar-tazminat-avukati" },
-                                    { name: "Güzelbahçe Tazminat Avukatı", url: "/guzelbahce-tazminat-avukati" },
+                                    { name: "Bayraklı Tazminat Avukatı", url: "/bayrakli-tazminat-avukati/" },
+                                    { name: "Karşıyaka Tazminat Avukatı", url: "/karsiyaka-tazminat-avukati/" },
+                                    { name: "Bornova Tazminat Avukatı", url: "/bornova-tazminat-avukati/" },
+                                    { name: "Konak Tazminat Avukatı", url: "/konak-tazminat-avukati/" },
+                                    { name: "Buca Tazminat Avukatı", url: "/buca-tazminat-avukati/" },
+                                    { name: "Çiğli Tazminat Avukatı", url: "/cigli-tazminat-avukati/" },
+                                    { name: "Gaziemir Tazminat Avukatı", url: "/gaziemir-tazminat-avukati/" },
+                                    { name: "Balçova Tazminat Avukatı", url: "/balcova-tazminat-avukati/" },
+                                    { name: "Narlıdere Tazminat Avukatı", url: "/narlidere-tazminat-avukati/" },
+                                    { name: "Karabağlar Tazminat Avukatı", url: "/karabaglar-tazminat-avukati/" },
+                                    { name: "Güzelbahçe Tazminat Avukatı", url: "/guzelbahce-tazminat-avukati/" },
                                 ].map((district) => (
                                     <Link
                                         key={district.url}
