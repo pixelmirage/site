@@ -3,10 +3,10 @@ interface DefinedTermSchemaProps {
     description: string;
     url: string;
     inDefinedTermSet: string;
-    lastUpdated: string;
+    lastUpdated?: string;
 }
 
-export function DefinedTermSchema({ term, description, url, inDefinedTermSet, lastUpdated }: DefinedTermSchemaProps) {
+export function DefinedTermSchema({ term, description, url, inDefinedTermSet }: DefinedTermSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
         "@type": "DefinedTerm",
@@ -18,7 +18,6 @@ export function DefinedTermSchema({ term, description, url, inDefinedTermSet, la
             name: inDefinedTermSet,
             url: "https://mertkagancetin.com/sozluk/",
         },
-        dateModified: lastUpdated,
     };
 
     return (
