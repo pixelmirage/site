@@ -10,6 +10,7 @@ import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -894,6 +895,8 @@ export default function IzmirKiraAvukatiPage() {
                     </div>
                 </div>
             </article>
+
+            <GoogleReviews />
         </main>
     );
 }
