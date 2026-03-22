@@ -1,6 +1,37 @@
-import { fetchGoogleReviews } from "@/lib/google-reviews";
 import { Star } from "lucide-react";
 
+const reviews = [
+    {
+        name: "Serdar",
+        rating: 5,
+        text: "Kendisi tahliye taahhütnamesine karşı dava kazanabilen nadir avukatlardan. Ne kadar teşekkür etsem azdır kendisine. Saygılar ve sevgiler",
+        date: "2026-03-22",
+    },
+    {
+        name: "gözde",
+        rating: 5,
+        text: "İşçilik alacağım için başvurdum süreci çok sorunsuz bir şekilde yönetti çok memnun kaldım kendisinden.",
+        date: "2026-03-21",
+    },
+    {
+        name: "hüsnü",
+        rating: 5,
+        text: "İzmir'de kira davam için bir çok avukatla görüştüm ancak hiçbiri Mert bey kadar işine hakim değildi. Yargıtay kararları bir yana en güncel Bam kararları dahi ezberinde. Çok ama çok memnun kaldım bir kez daha kendisine teşekkür ederim",
+        date: "2026-03-20",
+    },
+    {
+        name: "Can",
+        rating: 5,
+        text: "5 kiracımın hepsini de sorunsuz bir şekilde tahliye etti çok memnun kaldım",
+        date: "2026-03-19",
+    },
+    {
+        name: "bilge",
+        rating: 5,
+        text: "Öneri üzerine tahliye davası için başvurdum kendisine. Alanında oldukça bilgili, süreç hakkında bize açık bir şekilde bilgilendirdi ve işimizi çok kolaylaştırd, kısa sürede sonuç almamızı sağladı. Kaan Beye çok teşekkür ediyorum.",
+        date: "2023-06-29",
+    },
+];
 
 function Stars({ count }: { count: number }) {
     return (
@@ -15,14 +46,10 @@ function Stars({ count }: { count: number }) {
     );
 }
 
-export async function GoogleReviews() {
-    const data = await fetchGoogleReviews();
-
-    if (!data || data.reviews.length === 0) return null;
-
+export function GoogleReviews() {
     return (
         <>
-            {/* AggregateRating Schema — gerçek GBP verisinden */}
+            {/* AggregateRating Schema — GBP verisinden */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -33,18 +60,15 @@ export async function GoogleReviews() {
                         url: "https://mertkagancetin.com",
                         aggregateRating: {
                             "@type": "AggregateRating",
-                            ratingValue: data.rating.toFixed(1),
-                            reviewCount: data.totalReviews,
+                            ratingValue: "5.0",
+                            reviewCount: reviews.length,
                             bestRating: "5",
                             worstRating: "1",
                         },
-                        review: data.reviews.map((r) => ({
+                        review: reviews.map((r) => ({
                             "@type": "Review",
-                            author: {
-                                "@type": "Person",
-                                name: r.authorName.split(" ")[0],
-                            },
-                            datePublished: r.publishTime.split("T")[0],
+                            author: { "@type": "Person", name: r.name },
+                            datePublished: r.date,
                             reviewRating: {
                                 "@type": "Rating",
                                 ratingValue: r.rating,
@@ -65,38 +89,33 @@ export async function GoogleReviews() {
                             Danışan Yorumları
                         </h2>
                         <div className="flex items-center justify-center gap-3 mb-3">
-                            <Stars count={Math.round(data.rating)} />
-                            <span className="text-lg font-bold text-slate-800">
-                                {data.rating.toFixed(1)}
-                            </span>
+                            <Stars count={5} />
+                            <span className="text-lg font-bold text-slate-800">5.0</span>
                         </div>
                         <p className="text-sm text-slate-500">
-                            Google Business Profile'dan alınmıştır
+                            Google Business Profile&apos;dan alınmıştır
                         </p>
                     </div>
 
                     {/* Review Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                        {data.reviews.map((review, i) => (
+                        {reviews.map((review, i) => (
                             <div
                                 key={i}
                                 className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col"
                             >
-                                <div className="flex items-center justify-between mb-3">
+                                <div className="flex items-center mb-3">
                                     <Stars count={review.rating} />
-                                    <span className="text-xs text-slate-400">
-                                        {review.relativeTime}
-                                    </span>
                                 </div>
                                 <p className="text-slate-700 text-sm leading-relaxed flex-1 mb-4">
                                     &ldquo;{review.text}&rdquo;
                                 </p>
                                 <div className="flex items-center gap-2 pt-3 border-t border-slate-100">
                                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                                        {review.authorName.charAt(0).toUpperCase()}
+                                        {review.name.charAt(0).toUpperCase()}
                                     </div>
                                     <span className="text-sm font-medium text-slate-800">
-                                        {review.authorName.split(" ")[0]}
+                                        {review.name}
                                     </span>
                                 </div>
                             </div>
@@ -105,7 +124,7 @@ export async function GoogleReviews() {
 
                     {/* Google Attribution */}
                     <p className="text-center text-xs text-slate-400 mt-8">
-                        Yorumlar Google Business Profile&apos;dan otomatik olarak alınmaktadır.
+                        Yorumlar Google Business Profile&apos;dan alınmıştır.
                     </p>
                 </div>
             </section>

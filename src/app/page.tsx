@@ -28,7 +28,7 @@ export default function Home() {
       {/* About Section */}
       <AboutBrief />
 
-      {/* Google Reviews — GBP'den canlı çekilir, 24 saat cache */}
+      {/* Google Reviews — GBP yorumları */}
       <GoogleReviews />
 
       {/* CTA Section */}
