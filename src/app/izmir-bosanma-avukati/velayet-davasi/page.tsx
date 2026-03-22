@@ -155,6 +155,17 @@ export default function VelayetDavasiPage() {
                             Velayet davası süreci hakkında detaylı bilgi için <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/">velayet davası rehberimizi</Link> inceleyebilirsiniz.
                         </p>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/velayet-kriterleri.webp"
+                                alt="Velayet davasında mahkeme kriterleri infografiği: çocuğun üstün yararı, yaş, ebeveyn ilişkisi, pedagog raporu, kardeş ayrılmaması ilkesi ve TÜİK 2024 velayet istatistikleri"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Velayet davasında mahkemenin değerlendirdiği kriterler</figcaption>
+                        </figure>
+
                         <h2 id="dava-sureci" className="scroll-mt-24">İzmir&apos;de Velayet Davası Sürecimiz</h2>
 
                         <p>

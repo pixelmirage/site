@@ -147,6 +147,17 @@ export default function KiraTespitDavasiPage() {
                             Kira tespit davasının hangi durumlarda açılabileceği, dava şartları ve süreçler hakkında kapsamlı rehberimizi inceleyebilirsiniz: <Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/">Hangi durumlarda kira tespit davası açılabilir?</Link>
                         </p>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/kira-tespit-vs-uyarlama.webp"
+                                alt="Kira tespit davası ile kira uyarlama davası karşılaştırması: TBK m. 344 ve TBK m. 138 kapsamında amaç, şartlar, dayanak ve süre farkları"
+                                width={1200}
+                                height={800}
+                                className="w-full max-w-lg mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Kira tespit davası ile kira uyarlama davası arasındaki farklar</figcaption>
+                        </figure>
+
                         <h2 id="surecimiz" className="scroll-mt-24">İzmir&apos;de Kira Tespit Davası Sürecimiz</h2>
 
                         <p>

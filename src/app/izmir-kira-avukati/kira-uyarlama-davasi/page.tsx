@@ -152,6 +152,17 @@ export default function KiraUyarlamaDavasiPage() {
                             <strong>TBK m. 138 - Aşırı İfa Güçlüğü:</strong> Sözleşmenin yapıldığı sırada taraflarca öngörülmeyen ve öngörülmesi de beklenmeyen olağanüstü bir durum, borçludan kaynaklanmayan bir sebeple ortaya çıkar ve sözleşmenin yapıldığı sırada mevcut olguları, kendisinden ifanın istenmesini dürüstlük kurallarına aykırı düşecek derecede borçlu aleyhine değiştirirse, borçlu hakimden sözleşmenin yeni koşullara uyarlanmasını isteyebilir.
                         </blockquote>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/kira-tespit-vs-uyarlama.webp"
+                                alt="Kira tespit davası ve kira uyarlama davası karşılaştırması: TBK m. 344 ile TBK m. 138 arasındaki farklar, şartlar ve dava süreleri"
+                                width={1200}
+                                height={800}
+                                className="w-full max-w-lg mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Kira tespit davası ile kira uyarlama davası karşılaştırması</figcaption>
+                        </figure>
+
                         <h2 id="sartlari" className="scroll-mt-24">Kira Uyarlama Davası Şartları</h2>
 
                         <p>

@@ -158,6 +158,17 @@ export default function AnlasmaliBosanmaPage() {
                             Anlaşmalı boşanma davası hakkında detaylı bilgi için <Link href="/blog/anlasmali-bosanma-nasil-acilir/">anlaşmalı boşanma rehberimizi</Link> inceleyebilirsiniz.
                         </p>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/anlasmali-vs-cekismeli-bosanma.webp"
+                                alt="Anlaşmalı boşanma ve çekişmeli boşanma karşılaştırma infografiği: tek celsede sonuçlanma, protokol hazırlama ve dava süreleri"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Anlaşmalı ve çekişmeli boşanma karşılaştırması</figcaption>
+                        </figure>
+
                         <h2 id="protokol-hazirlama" className="scroll-mt-24">Boşanma Protokolü Hazırlama Sürecimiz</h2>
 
                         <p>

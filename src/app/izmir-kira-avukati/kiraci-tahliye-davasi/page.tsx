@@ -168,6 +168,17 @@ export default function KiraciTahliyeDavasiPage() {
                             </table>
                         </div>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/tahliye-sebepleri-ve-dayanaklari.webp"
+                                alt="Kiracı tahliye sebepleri ve hukuki dayanakları infografiği: kiraya verenin gereksinimi TBK m. 350, kiracının kusuru TBK m. 352 ve süre sonu TBK m. 347"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Kiracı tahliye sebepleri ve hukuki dayanakları</figcaption>
+                        </figure>
+
                         <p>
                             Her tahliye sebebi hakkında detaylı bilgi için rehberlerimizi inceleyin: <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/">İhtiyaç nedeniyle tahliye rehberi</Link>, <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">İki haklı ihtar rehberi</Link> ve <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/">Ev sahibi hakları rehberi</Link>.
                         </p>
@@ -197,6 +208,17 @@ export default function KiraciTahliyeDavasiPage() {
                                 </div>
                             ))}
                         </div>
+
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/tahliye-davasi-sureci.webp"
+                                alt="Kiracı tahliye davası süreci akış şeması: ihtarname gönderimi, zorunlu arabuluculuk, Sulh Hukuk Mahkemesi davası, duruşma ve mahkeme kararı aşamaları"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Kiracı tahliye davası süreci akış şeması</figcaption>
+                        </figure>
 
                         <h2 id="neden-avukat" className="scroll-mt-24">Tahliye Davasında Neden Avukat Gerekli?</h2>
 

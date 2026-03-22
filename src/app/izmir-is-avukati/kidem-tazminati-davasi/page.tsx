@@ -172,6 +172,17 @@ export default function KidemTazminatiDavasiPage() {
                             Kıdem tazminatı hesaplama yöntemi ve güncel tavan tutar hakkında detaylı bilgi için <Link href="/blog/kidem-tazminati-nasil-hesaplanir/">kıdem tazminatı nasıl hesaplanır rehberimizi</Link> okuyun.
                         </p>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/kidem-tazminati-alinir-mi.webp"
+                                alt="Kıdem tazminatı alınır mı alınmaz mı infografiği: haksız fesih, haklı istifa, askerlik, emeklilik durumlarında kıdem tazminatı hakkı ve 2026 tavan tutarı"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Kıdem tazminatı hakkının doğduğu ve doğmadığı durumlar</figcaption>
+                        </figure>
+
                         <h2 id="dava-sureci" className="scroll-mt-24">Kıdem Tazminatı Dava Sürecimiz</h2>
 
                         <p>

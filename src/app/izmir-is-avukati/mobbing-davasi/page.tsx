@@ -233,6 +233,17 @@ export default function MobbingDavasiPage() {
                             <strong>Dikkat:</strong> Mobbing mağduru olarak delil toplarken dikkatli olmanız gerekir. Gizli ses kaydı gibi bazı deliller hukuka aykırı kabul edilebilir. Delil toplama stratejinizi avukatınızla birlikte belirleyin. <Link href="/izmir-is-avukati/ise-iade-davasi/">İşe iade davası</Link> ile mobbing davasının birlikte yürütülmesi de bazı durumlarda mümkündür.
                         </blockquote>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/mobbing-ispat-ve-deliller.webp"
+                                alt="Mobbing davası ispat ve delil rehberi infografiği: yazışmalar, tanık beyanları, sağlık raporları, işyeri kayıtları, kamera görüntüleri ve olay günlüğü"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Mobbing davasında ispat ve delil rehberi</figcaption>
+                        </figure>
+
                         <h2 id="ucretler" className="scroll-mt-24">2026 Mobbing Davası Ücretleri</h2>
 
                         <div className="not-prose my-8 overflow-x-auto">

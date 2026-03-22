@@ -170,6 +170,17 @@ export default function NafakaDavasiPage() {
                             Nafaka hesaplama ve türleri hakkında detaylı bilgi için <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/">nafaka hesaplama rehberimizi</Link> inceleyebilirsiniz.
                         </p>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/nafaka-turleri.webp"
+                                alt="Nafaka türleri ve farkları infografiği: tedbir nafakası TMK m. 169, yoksulluk nafakası TMK m. 175 ve iştirak nafakası TMK m. 328 karşılaştırması"
+                                width={1200}
+                                height={800}
+                                className="w-full max-w-lg mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Nafaka türleri ve aralarındaki farklar</figcaption>
+                        </figure>
+
                         <h2 id="dava-sureci" className="scroll-mt-24">İzmir&apos;de Nafaka Davası Sürecimiz</h2>
 
                         <p>

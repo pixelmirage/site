@@ -411,6 +411,17 @@ export default function IzmirKiraAvukatiPage() {
                             </table>
                         </div>
 
+                        <figure className="not-prose my-10">
+                            <Image
+                                src="/images/infographics/tahliye-sebepleri-ve-dayanaklari.webp"
+                                alt="Kiracı tahliye sebepleri ve hukuki dayanakları: TBK m. 350 ihtiyaç, m. 352 taahhütname ve iki haklı ihtar, m. 347 süre sonu ile tahliye davası açma koşulları"
+                                width={768}
+                                height={1024}
+                                className="w-full max-w-md mx-auto rounded-xl"
+                            />
+                            <figcaption className="text-center text-sm text-slate-500 mt-3">Kiracı tahliye sebepleri ve hukuki dayanakları</figcaption>
+                        </figure>
+
                         <p>
                             Her tahliye sebebinin kendine özgü ispat şartları vardır. <Link href="/sozluk/tahliye-taahhutnamesi/" className="text-secondary font-bold">Tahliye taahhütnamesi</Link> ile açılan davalarda tüm geçerlilik şartları eksiksiz olmalıdır. <Link href="/sozluk/ihtiyac-nedeniyle-tahliye/" className="text-secondary font-bold">İhtiyaç nedeniyle tahliye</Link> davalarında ise ihtiyacın samimi ve zorunlu olduğu kanıtlanmalıdır.
                         </p>
