@@ -254,6 +254,9 @@ export default function KiraTespitDavasiPage() {
                                 <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Kiracı Tahliye Davası Avukatı
                                 </Link>
+                                <Link href="/izmir-kira-avukati/kira-uyarlama-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İzmir Kira Uyarlama Davası Avukatı
+                                </Link>
                             </div>
                         </div>
 

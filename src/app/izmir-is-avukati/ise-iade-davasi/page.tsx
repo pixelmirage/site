@@ -292,6 +292,9 @@ export default function IseIadeDavasiPage() {
                                 <Link href="/sozluk/ise-iade-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Sözlük: İşe İade Davası
                                 </Link>
+                                <Link href="/izmir-is-avukati/mobbing-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İzmir Mobbing Davası Avukatı
+                                </Link>
                             </div>
                         </div>
 

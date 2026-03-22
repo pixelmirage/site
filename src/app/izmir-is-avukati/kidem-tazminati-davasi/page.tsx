@@ -289,6 +289,9 @@ export default function KidemTazminatiDavasiPage() {
                                 <Link href="/sozluk/kidem-tazminati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Sözlük: Kıdem Tazminatı
                                 </Link>
+                                <Link href="/izmir-is-avukati/mobbing-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → İzmir Mobbing Davası Avukatı
+                                </Link>
                             </div>
                         </div>
 
