@@ -56,8 +56,18 @@ export function GoogleReviews() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Attorney",
+                        "@id": "https://mertkagancetin.com/#attorney",
                         name: "Av. Mert Kağan Çetin",
                         url: "https://mertkagancetin.com",
+                        telephone: "+905445854645",
+                        address: {
+                            "@type": "PostalAddress",
+                            streetAddress: "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
+                            addressLocality: "Bayraklı",
+                            addressRegion: "İzmir",
+                            postalCode: "35535",
+                            addressCountry: "TR",
+                        },
                         aggregateRating: {
                             "@type": "AggregateRating",
                             ratingValue: "5.0",

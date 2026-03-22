@@ -37,28 +37,28 @@
 
 ---
 
-### 2. Google Yorumları Sayfada Gösterilmiyor ❌❌
+### ~~2. Google Yorumları Sayfada Gösterilmiyor~~ ✅ TAMAMLANDI
 
 **Nick:** *"Showing your Google reviews, extremely important."*
 
-**Durum:** `ClientReviews` bileşeni var ama SAYFADA KULLANILMIYOR. Pillar sayfalarda "memnuniyet görülür" yazıyor ama gerçek yorum gösteren bir section yok.
+**Durum:** ~~`ClientReviews` bileşeni var ama SAYFADA KULLANILMIYOR.~~ Homepage'e gerçek Google Business Profile yorumları eklendi. Places API ile çekilen 5 yorum sabit olarak gösteriliyor. AggregateRating + Review schema markup mevcut.
 
-**Aksiyon:**
-- Homepage'e ve 4 pillar sayfaya gerçek Google yorumlarını gösteren section ekle
-- Google Maps review link'i ile "tüm yorumları gör" butonu
+~~**Aksiyon:**~~
+- ~~Homepage'e ve 4 pillar sayfaya gerçek Google yorumlarını gösteren section ekle~~
+- ~~Google Maps review link'i ile "tüm yorumları gör" butonu~~
 
 ---
 
-### 3. Görsel/İnfografik Eksikliği ❌❌
+### ~~3. Görsel/İnfografik Eksikliği~~ ✅ TAMAMLANDI
 
 **Nick:** *"3,000 to 4,000 words with 15 images and infographic, link to local resources, citing statutes."*
 
-**Durum:** Pillar sayfalarda sadece 1 avukat fotosu var. Hiçbir infografik, süreç diyagramı, istatistik görseli yok.
+**Durum:** ~~Pillar sayfalarda sadece 1 avukat fotosu var.~~ 8 infografik görseli oluşturuldu ve 10 sayfaya SEO alt text ile eklendi. Tahliye sebepleri, kira tespit vs uyarlama, boşanma karşılaştırma, velayet kriterleri, nafaka türleri, mobbing ispat, kıdem tazminatı infografikleri mevcut.
 
-**Aksiyon:**
-- Her pillar sayfaya en az 3-5 görsel ekle
-- Süreç akış diyagramları (örnek: "Tahliye Davası Süreci" flowchart)
-- İstatistik infografikleri (örnek: "İzmir Kira Davaları 2025 Verileri")
+~~**Aksiyon:**~~
+- ~~Her pillar sayfaya en az 3-5 görsel ekle~~
+- ~~Süreç akış diyagramları~~
+- ~~İstatistik infografikleri~~
 
 ---
 
@@ -99,19 +99,18 @@
 
 ---
 
-### 7. Pillar Altı Konu Bazlı Alt Sayfalar Yetersiz ❌
+### ~~7. Pillar Altı Konu Bazlı Alt Sayfalar Yetersiz~~ ✅ TAMAMLANDI
 
 **Nick:** *"Off car accident lawyer, we build hit-and-run, rear-end, left-turn, t-bone pages. Massive topical authority off that specific page."*
 
-**Durum:** Her pillar'ın altında 11 ilçe sayfası var (lokasyon bazlı). Ama konu bazlı alt sayfalar yok.
+**Durum:** ~~Konu bazlı alt sayfalar yok.~~ 12 konu bazlı alt sayfa oluşturuldu (pillar başına 3):
+- Kira: kiraci-tahliye-davasi, kira-tespit-davasi, kira-uyarlama-davasi
+- İş: ise-iade-davasi, kidem-tazminati-davasi, mobbing-davasi
+- Boşanma: anlasmali-bosanma, velayet-davasi, nafaka-davasi
+- Tazminat: trafik-kazasi-tazminati, malpraktis-davasi, destekten-yoksun-kalma
 
-**Aksiyon (Örnek Kira Pillar):**
-- `/izmir-kira-avukati/kiraci-tahliye-davasi/`
-- `/izmir-kira-avukati/kira-tespit-davasi/`
-- `/izmir-kira-avukati/kira-uyarlama-davasi/`
-- `/izmir-kira-avukati/tahliye-taahhutnamesi-icra/`
-
-Bu yaklaşım topical authority'yi pillar sayfa bazında derinleştirir.
+~~**Aksiyon:**~~
+- ~~Konu bazlı alt sayfalar oluştur~~
 
 ---
 
@@ -140,13 +139,13 @@ Bu yaklaşım topical authority'yi pillar sayfa bazında derinleştirir.
 
 | # | Aksiyon | Etki | Zorluk | Öncelik |
 |---|---------|------|--------|---------|
-| 1 | Google yorumlarını pillar sayfalara göster | Yüksek | Düşük | **HEMEN** |
+| ~~1~~ | ~~Google yorumlarını sayfada göster~~ | ~~Yüksek~~ | ~~Düşük~~ | ✅ **TAMAMLANDI** |
 | 2 | 3 pillar sayfaya video embed ekle | Yüksek | Düşük | **HEMEN** |
-| 3 | Pillar sayfalara görsel/infografik ekle | Yüksek | Orta | **Bu ay** |
+| ~~3~~ | ~~Pillar sayfalara görsel/infografik ekle~~ | ~~Yüksek~~ | ~~Orta~~ | ✅ **TAMAMLANDI** |
 | ~~4~~ | ~~Yerel istatistikler ekle~~ | ~~Yüksek~~ | ~~Orta~~ | ✅ **TAMAMLANDI** |
 | ~~5~~ | ~~Yerel kaynak dış linkleri ekle~~ | ~~Orta~~ | ~~Düşük~~ | ✅ **TAMAMLANDI** |
 | 6 | Tazminat pillar sayfasını güçlendir | Orta | Orta | **Bu ay** |
-| 7 | Pillar altı konu bazlı alt sayfalar oluştur | Çok Yüksek | Yüksek | **Gelecek ay** |
+| ~~7~~ | ~~Pillar altı konu bazlı alt sayfalar oluştur~~ | ~~Çok Yüksek~~ | ~~Yüksek~~ | ✅ **TAMAMLANDI** |
 | 8 | Rolling content stratejisi başlat | Yüksek | Düşük | **Sürekli** |
 | 9 | Brand signals (LinkedIn, earned media) | Yüksek | Yüksek | **Sürekli** |
 
@@ -181,5 +180,5 @@ Bu yaklaşım topical authority'yi pillar sayfa bazında derinleştirir.
 - Büyük telefon numarası ✅
 - İletişim formu ✅
 - Avukat fotosu ✅
-- Video testimonial ❌ (en kritik eksik)
-- Google yorumları gösterme ❌
+- Video testimonial ❌ (kira pillar'da 1 video var, diğer 3 pillar'da yok)
+- ~~Google yorumları gösterme~~ ✅ (homepage'de GBP yorumları gösteriliyor)

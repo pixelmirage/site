@@ -9,6 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
+import { GoogleReviews } from "@/components/sections/GoogleReviews";
 
 
 function LegalServiceSchema() {
@@ -855,6 +856,9 @@ export default function IzmirIsAvukatiPage() {
                         </div>
 
             </article>
+
+            {/* Google Business Profile Yorumları */}
+            <GoogleReviews />
         </main>
     );
 }
