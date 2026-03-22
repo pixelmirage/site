@@ -598,17 +598,16 @@ export default function IzmirTazminatAvukatiPage() {
                             <p className="text-sm text-slate-500 mb-6">İzmir&apos;de tazminat davaları sürecinde başvurabileceğiniz resmi kurum ve kaynaklar:</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {[
-                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
-                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
-                                    { name: "SGK İzmir İl Müdürlüğü", desc: "İş kazası bildirimi ve iş göremezlik raporu", url: "https://www.sgk.gov.tr/", phone: "ALO 170" },
-                                    { name: "UYAP Vatandaş Portal", desc: "Online dava takibi ve e-imza ile işlem", url: "https://vatandas.uyap.gov.tr/", phone: "ALO 176" },
-                                    { name: "Sigorta Tahkim Komisyonu", desc: "Trafik sigortası tazminat başvurusu", url: "https://www.sigortatahkim.org/", phone: "0216 651 65 65" },
-                                    { name: "Güvence Hesabı", desc: "Sigortasız araç ve faili meçhul kaza başvurusu", url: "https://www.guvencehesabi.org.tr/", phone: null },
+                                    { name: "İzmir Barosu", desc: "Avukat arama ve baro hizmetleri", url: "https://www.izmirbarosu.org.tr/" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Adliye iletişim bilgileri ve duyurular", url: "https://izmir.adalet.gov.tr/" },
+                                    { name: "SGK", desc: "Sosyal güvenlik hizmetleri ve e-SGK portalı", url: "https://www.sgk.gov.tr/" },
+                                    { name: "UYAP Vatandaş Portal", desc: "Dava dosyası sorgulama ve e-imza ile dilekçe gönderme", url: "https://vatandas.uyap.gov.tr/" },
+                                    { name: "Sigorta Tahkim Komisyonu", desc: "Sigorta uyuşmazlıkları online başvuru ve karar sorgulama", url: "https://www.sigortatahkim.org/" },
+                                    { name: "Güvence Hesabı", desc: "Sigortasız araç kazaları için başvuru bilgileri", url: "https://www.guvencehesabi.org.tr/" },
                                 ].map((item, i) => (
                                     <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-secondary/30 transition-all group">
                                         <p className="font-bold text-primary group-hover:text-secondary transition-colors text-sm mb-1">{item.name}</p>
                                         <p className="text-xs text-slate-500 mb-2 flex-1">{item.desc}</p>
-                                        {item.phone && <p className="text-xs text-slate-400 font-medium">{item.phone}</p>}
                                     </a>
                                 ))}
                             </div>

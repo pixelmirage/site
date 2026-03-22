@@ -743,17 +743,16 @@ export default function IzmirIsAvukatiPage() {
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {[
-                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
-                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "İş mahkemesi dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
-                                    { name: "SGK İzmir İl Müdürlüğü", desc: "Sigorta primi sorgulama, iş kazası bildirimi ve hizmet dökümü", url: "https://www.sgk.gov.tr/", phone: "ALO 170" },
-                                    { name: "Arabuluculuk Daire Başkanlığı", desc: "İş uyuşmazlığı arabuluculuk başvurusu ve arabulucu listesi", url: "https://adb.adalet.gov.tr/", phone: null },
-                                    { name: "İŞKUR İzmir", desc: "İşsizlik maaşı başvurusu ve iş arama kaydı", url: "https://www.iskur.gov.tr/", phone: "ALO 170" },
-                                    { name: "ÇSGB İzmir Bölge Müdürlüğü", desc: "İş müfettişi şikayeti ve iş güvenliği denetimi", url: "https://www.csgb.gov.tr/", phone: "ALO 170" },
+                                    { name: "İzmir Barosu", desc: "Avukat arama ve baro hizmetleri", url: "https://www.izmirbarosu.org.tr/" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Adliye iletişim bilgileri ve duyurular", url: "https://izmir.adalet.gov.tr/" },
+                                    { name: "SGK", desc: "Sosyal güvenlik hizmetleri ve e-SGK portalı", url: "https://www.sgk.gov.tr/" },
+                                    { name: "Arabuluculuk Daire Başkanlığı", desc: "Arabulucu sicil listesi ve mevzuat bilgileri", url: "https://adb.adalet.gov.tr/" },
+                                    { name: "İŞKUR", desc: "İş ilanları ve kurs programları", url: "https://www.iskur.gov.tr/" },
+                                    { name: "e-Devlet Kapısı", desc: "SGK hizmet dökümü ve adli sicil sorgulamaları", url: "https://www.turkiye.gov.tr/" },
                                 ].map((resource, i) => (
                                     <a key={i} href={resource.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl hover:border-secondary hover:shadow-md transition-all">
                                         <span className="font-bold text-primary text-sm mb-1">{resource.name}</span>
                                         <span className="text-xs text-slate-500 mb-2">{resource.desc}</span>
-                                        {resource.phone && <span className="text-xs text-secondary font-medium">Tel: {resource.phone}</span>}
                                     </a>
                                 ))}
                             </div>

@@ -692,17 +692,16 @@ export default function IzmirBosanmaAvukatiPage() {
                             <p className="text-sm text-slate-500 mb-6">İzmir&apos;de boşanma ve aile hukuku süreçlerinde başvurabileceğiniz resmi kurum ve kaynaklar:</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {[
-                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
-                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
-                                    { name: "UYAP Vatandaş Portal", desc: "Online dava takibi ve e-imza ile işlem", url: "https://vatandas.uyap.gov.tr/", phone: "ALO 176" },
-                                    { name: "Nüfus ve Vatandaşlık İl Md.", desc: "Nüfus kayıt örneği ve aile kütüğü belgesi", url: "https://www.nvi.gov.tr/", phone: "ALO 199" },
-                                    { name: "Aile ve Sosyal Hizmetler İl Md.", desc: "Koruyucu tedbir ve şiddet önleme başvurusu", url: "https://www.aile.gov.tr/", phone: "ALO 183" },
-                                    { name: "e-Devlet Kapısı", desc: "Nüfus, adli sicil ve mahkeme dosya sorgulamaları", url: "https://www.turkiye.gov.tr/", phone: "ALO 150" },
+                                    { name: "İzmir Barosu", desc: "Avukat arama ve baro hizmetleri", url: "https://www.izmirbarosu.org.tr/" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Adliye iletişim bilgileri ve duyurular", url: "https://izmir.adalet.gov.tr/" },
+                                    { name: "UYAP Vatandaş Portal", desc: "Dava dosyası sorgulama ve e-imza ile dilekçe gönderme", url: "https://vatandas.uyap.gov.tr/" },
+                                    { name: "Nüfus ve Vatandaşlık İl Md.", desc: "Nüfus hizmetleri hakkında bilgi", url: "https://www.nvi.gov.tr/" },
+                                    { name: "Aile ve Sosyal Hizmetler İl Md.", desc: "Aile destek hizmetleri hakkında bilgi", url: "https://www.aile.gov.tr/" },
+                                    { name: "e-Devlet Kapısı", desc: "Nüfus kayıt örneği ve adli sicil sorgulamaları", url: "https://www.turkiye.gov.tr/" },
                                 ].map((item, i) => (
                                     <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-secondary/30 transition-all group">
                                         <p className="font-bold text-primary group-hover:text-secondary transition-colors text-sm mb-1">{item.name}</p>
                                         <p className="text-xs text-slate-500 mb-2 flex-1">{item.desc}</p>
-                                        {item.phone && <p className="text-xs text-slate-400 font-medium">{item.phone}</p>}
                                     </a>
                                 ))}
                             </div>

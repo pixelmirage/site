@@ -776,17 +776,16 @@ export default function IzmirKiraAvukatiPage() {
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {[
-                                    { name: "İzmir Barosu", desc: "Adli yardım başvurusu ve avukat bilgi sistemi", url: "https://www.izmirbarosu.org.tr/", phone: "0232 463 00 13" },
-                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Dava dosya sorgulama ve duruşma takvimi", url: "https://izmir.adalet.gov.tr/", phone: "0232 462 80 80" },
-                                    { name: "UYAP Vatandaş Portal", desc: "Online dava takibi ve e-imza ile işlem", url: "https://vatandas.uyap.gov.tr/", phone: "ALO 176" },
-                                    { name: "Arabuluculuk Daire Başkanlığı", desc: "Kira arabuluculuk başvurusu ve arabulucu listesi", url: "https://adb.adalet.gov.tr/", phone: null },
-                                    { name: "TKGM (Tapu Kadastro)", desc: "Tapu kaydı sorgulama ve gayrimenkul bilgileri", url: "https://www.tkgm.gov.tr/", phone: "181" },
-                                    { name: "e-Devlet Kapısı", desc: "Tapu, SGK ve adli sicil sorgulamaları", url: "https://www.turkiye.gov.tr/", phone: "ALO 150" },
+                                    { name: "İzmir Barosu", desc: "Avukat arama ve baro hizmetleri", url: "https://www.izmirbarosu.org.tr/" },
+                                    { name: "İzmir Adliyesi (Bayraklı)", desc: "Adliye iletişim bilgileri ve duyurular", url: "https://izmir.adalet.gov.tr/" },
+                                    { name: "UYAP Vatandaş Portal", desc: "Dava dosyası sorgulama ve e-imza ile dilekçe gönderme", url: "https://vatandas.uyap.gov.tr/" },
+                                    { name: "Arabuluculuk Daire Başkanlığı", desc: "Arabulucu sicil listesi ve mevzuat bilgileri", url: "https://adb.adalet.gov.tr/" },
+                                    { name: "TKGM (Tapu Kadastro)", desc: "Tapu ve kadastro mevzuatı bilgileri", url: "https://www.tkgm.gov.tr/" },
+                                    { name: "e-Devlet Kapısı", desc: "Tapu, adli sicil ve nüfus sorgulamaları", url: "https://www.turkiye.gov.tr/" },
                                 ].map((resource, i) => (
                                     <a key={i} href={resource.url} target="_blank" rel="noopener noreferrer" className="flex flex-col p-4 bg-white border border-slate-100 rounded-xl hover:border-secondary hover:shadow-md transition-all">
                                         <span className="font-bold text-primary text-sm mb-1">{resource.name}</span>
                                         <span className="text-xs text-slate-500 mb-2">{resource.desc}</span>
-                                        {resource.phone && <span className="text-xs text-secondary font-medium">Tel: {resource.phone}</span>}
                                     </a>
                                 ))}
                             </div>
