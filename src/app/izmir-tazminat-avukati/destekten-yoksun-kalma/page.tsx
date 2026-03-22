@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Destekten Yoksun Kalma Tazminatı Avukatı | Hemen Arayın",
+    title: "İzmir Destekten Yoksun Kalma Avukatı",
     description: "İzmir destekten yoksun kalma tazminatı avukatı Av. Mert Kağan Çetin. Ölüm halinde hak sahiplerinin tazminat davalarında uzman destek.",
     keywords: ["destekten yoksun kalma tazminatı avukatı İzmir", "destekten yoksun kalma", "ölüm tazminatı", "destek tazminatı"],
     openGraph: {

@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Malpraktis Davası Avukatı | Doktor Hatası | Hemen Arayın",
+    title: "İzmir Malpraktis Davası Avukatı",
     description: "İzmir malpraktis davası avukatı Av. Mert Kağan Çetin. Doktor hatası ve tıbbi ihmal kaynaklı tazminat davalarında uzman destek.",
     keywords: ["malpraktis davası avukatı İzmir", "doktor hatası avukatı", "malpraktis tazminatı", "tıbbi hata davası"],
     openGraph: {

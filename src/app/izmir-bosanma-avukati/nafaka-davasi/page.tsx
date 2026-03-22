@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Nafaka Davası Avukatı | Yoksulluk & İştirak | Hemen Arayın",
+    title: "İzmir Nafaka Davası Avukatı",
     description: "İzmir nafaka davası avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası ve nafaka artırım davalarında uzman destek.",
     keywords: ["nafaka davası avukatı İzmir", "nafaka davası", "yoksulluk nafakası", "iştirak nafakası", "nafaka artırım davası"],
     openGraph: {

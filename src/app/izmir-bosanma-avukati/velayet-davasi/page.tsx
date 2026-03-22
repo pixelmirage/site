@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Velayet Davası Avukatı | Çocuğunuzun Hakları | Hemen Arayın",
+    title: "İzmir Velayet Davası Avukatı",
     description: "İzmir velayet davası avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayetin değiştirilmesi ve kişisel ilişki düzenlemesinde uzman destek.",
     keywords: ["velayet davası avukatı İzmir", "velayet davası", "çocuk velayeti", "velayet değişikliği"],
     openGraph: {

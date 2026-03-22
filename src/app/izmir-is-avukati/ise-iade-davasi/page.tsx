@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir İşe İade Davası Avukatı | İş Güvencesi | Hemen Arayın",
+    title: "İzmir İşe İade Davası Avukatı",
     description: "İzmir işe iade davası avukatı Av. Mert Kağan Çetin. Haksız fesih, arabuluculuk ve iş güvencesi tazminatı davalarında uzman destek.",
     keywords: ["işe iade davası avukatı İzmir", "işe iade davası", "haksız işten çıkarma", "iş güvencesi avukatı"],
     openGraph: {

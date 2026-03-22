@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Kıdem Tazminatı Davası Avukatı | Hesaplama & Dava | Hemen Arayın",
+    title: "İzmir Kıdem Tazminatı Davası Avukatı",
     description: "İzmir kıdem tazminatı davası avukatı Av. Mert Kağan Çetin. Ödenmeyen kıdem ve ihbar tazminatı alacak davalarında uzman destek.",
     keywords: ["kıdem tazminatı davası avukatı İzmir", "kıdem tazminatı davası", "kıdem tazminatı avukatı", "ödenmeyen kıdem tazminatı"],
     openGraph: {

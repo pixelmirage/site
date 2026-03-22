@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Anlaşmalı Boşanma Avukatı | Tek Celsede Boşanma | Hemen Arayın",
+    title: "İzmir Anlaşmalı Boşanma Avukatı",
     description: "İzmir anlaşmalı boşanma avukatı Av. Mert Kağan Çetin. Protokol hazırlama, tek celsede boşanma ve nafaka düzenlemesinde uzman destek.",
     keywords: ["anlaşmalı boşanma avukatı İzmir", "anlaşmalı boşanma", "tek celsede boşanma", "boşanma protokolü"],
     openGraph: {

@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Kiracı Tahliye Davası Avukatı | Hızlı Sonuç | Hemen Arayın",
+    title: "İzmir Kiracı Tahliye Davası Avukatı",
     description: "İzmir kiracı tahliye davası avukatı Av. Mert Kağan Çetin. İhtiyaç, taahhütname, iki haklı ihtar ile tahliye davalarında uzman destek.",
     keywords: ["kiracı tahliye davası avukatı İzmir", "tahliye davası avukatı", "kiracı tahliye davası", "İzmir tahliye avukatı", "tahliye davası ücreti"],
     openGraph: {

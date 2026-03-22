@@ -9,7 +9,7 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
-    title: "İzmir Kira Tespit Davası Avukatı | Adil Kira Bedeli | Hemen Arayın",
+    title: "İzmir Kira Tespit Davası Avukatı",
     description: "İzmir kira tespit davası avukatı Av. Mert Kağan Çetin. Emsal kira araştırması ve adil kira bedeli tespiti davalarında uzman destek.",
     keywords: ["kira tespit davası avukatı İzmir", "kira tespit davası", "kira bedeli tespiti", "emsal kira araştırması", "TÜFE kira artışı"],
     openGraph: {
