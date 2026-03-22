@@ -21,7 +21,7 @@ export async function GoogleReviews() {
     if (!data || data.reviews.length === 0) return null;
 
     const googleMapsUrl =
-        "https://search.google.com/local/reviews?placeid=ChIJQQOrNC1juRQRJ8DjpHzNpzc";
+        "https://share.google/fRLsK9aXl2cDJDlcc";
 
     return (
         <>
