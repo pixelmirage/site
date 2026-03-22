@@ -8,6 +8,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-20",
+        "article:modified_time": "2026-03-22",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-tazminat-avukati/",
@@ -134,11 +135,13 @@ const faqs = [
 const tocItems = [
     { id: "hizmetlerimiz", title: "Tazminat Hukuku Hizmetlerimiz" },
     { id: "ne-zaman-avukat", title: "Tazminat Avukatına Ne Zaman İhtiyaç Duyulur?" },
+    { id: "dava-sureci", title: "Tazminat Davası Süreci" },
     { id: "maddi-tazminat", title: "Maddi Tazminat Davası" },
     { id: "manevi-tazminat", title: "Manevi Tazminat Davası" },
     { id: "is-kazasi", title: "İş Kazası Tazminatı" },
     { id: "trafik-kazasi", title: "Trafik Kazası Tazminatı" },
     { id: "destekten-yoksun", title: "Destekten Yoksun Kalma" },
+    { id: "zamanasimi", title: "Zamanaşımı Süreleri" },
     { id: "avukatli-avukatsiz", title: "Avukatlı mı Avukatsız mı?" },
     { id: "ucretler", title: "2026 Yılı Ücret Bilgileri" },
     { id: "neden-biz", title: "Neden Bizi Tercih Etmelisiniz?" },
@@ -223,7 +226,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 15 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -308,6 +311,44 @@ export default function IzmirTazminatAvukatiPage() {
 
                         <p>
                             Bu durumlardan birini yaşıyorsanız vakit kaybetmeyin. Zamanaşımı sürelerini kaçırmadan bir <strong>İzmir tazminat avukatı</strong> ile görüşün.
+                        </p>
+
+                        <h2 id="dava-sureci" className="scroll-mt-24">Tazminat Davası Süreci: Adım Adım</h2>
+
+                        <p>
+                            Tazminat davası açmadan önce sürecin her aşamasını bilmeniz önemlidir. <strong>İzmir tazminat avukatı</strong> olarak dava sürecini baştan sona yönetiyoruz. Aşağıda genel dava akışını bulabilirsiniz:
+                        </p>
+
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-center w-16">#</th>
+                                        <th className="px-6 py-4 text-left w-1/3">Aşama</th>
+                                        <th className="px-6 py-4 text-left">Yapılacak İşlem</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    {[
+                                        { step: 1, title: "Delil Toplama", desc: "Hekim raporu, maluliyet raporu, iş göremezlik belgesi ve tanık ifadeleri toplanır. Kusur durumu ön değerlendirilir." },
+                                        { step: 2, title: "Sigorta Başvurusu", desc: "Trafik kazalarında sigorta şirketine yazılı başvuru zorunludur (KTK m. 97). Sigorta şirketi 15 gün içinde yanıt vermezse dava yolu açılır." },
+                                        { step: 3, title: "Arabuluculuk", desc: "Sigorta şirketine karşı davalarda zorunlu arabuluculuk gerekir (TTK m. 5/A). İş kazası tazminatında arabuluculuk zorunlu değildir." },
+                                        { step: 4, title: "Dava Açılması", desc: "Asliye Hukuk, İş Mahkemesi veya Asliye Ticaret Mahkemesi'nde dava dilekçesi sunulur." },
+                                        { step: 5, title: "Bilirkişi İncelemesi", desc: "Tazminat hesaplaması için bilirkişi heyeti atanır. TRH 2010 yaşam tablosu esas alınarak maluliyet, gelir kaybı ve tazminat miktarı hesaplanır." },
+                                        { step: 6, title: "Karar ve İtiraz", desc: "Mahkeme kararını verir. İstinaf (2 hafta) ve temyiz yolları açıktır. Ortalama süre: 1-3 yıl." },
+                                    ].map((item) => (
+                                        <tr key={item.step} className="hover:bg-slate-50 transition-colors">
+                                            <td className="px-6 py-4 text-center font-bold text-secondary bg-slate-50/50">{item.step}</td>
+                                            <td className="px-6 py-4 font-bold text-primary">{item.title}</td>
+                                            <td className="px-6 py-4 text-slate-600">{item.desc}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Tazminat davası sürecinde zamanaşımı sürelerini kaçırmamak kritik öneme sahiptir. <strong>İzmir tazminat avukatı</strong> olarak dava açma sürelerini titizlikle takip ediyor, müvekkillerimizin hak kaybı yaşamasını önlüyoruz.
                         </p>
 
                         <h2 id="maddi-tazminat" className="scroll-mt-24">Maddi Tazminat Davası</h2>
@@ -397,6 +438,16 @@ export default function IzmirTazminatAvukatiPage() {
                             <li><strong>Güvence Hesabı:</strong> Sigortasız araç veya faili meçhul kazalarda Güvence Hesabı&apos;na başvuru</li>
                         </ul>
 
+                        <h3>Sigorta Tahkim Komisyonu Yolu</h3>
+
+                        <p>
+                            Trafik kazası tazminatında <a href="https://www.sigortatahkim.org/" target="_blank" rel="noopener noreferrer">Sigorta Tahkim Komisyonu</a> (STK) önemli bir alternatif çözüm yoludur. STK&apos;ya başvuru zorunlu değil, ihtiyaridir. Ancak mahkeme yoluna göre daha hızlı sonuçlanır (ortalama 4-6 ay). STK&apos;ya başvuruda arabuluculuk ön koşulu aranmaz.
+                        </p>
+
+                        <p>
+                            2025 yılında zorunlu trafik sigortası (ZMSS) kapsamında yaralanan kazazedeye ödenecek en yüksek tazminat tutarı <strong>2.700.000 TL</strong> olarak belirlenmiştir. Bu limiti aşan tazminat talepleri için kusurlu sürücüye veya araç işletenine karşı ayrıca dava açılabilir.
+                        </p>
+
                         <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
                             <Link href="/izmir-tazminat-avukati/trafik-kazasi-tazminati/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
                                 <span>Trafik kazası tazminatı hizmetimiz hakkında detaylı bilgi</span>
@@ -433,6 +484,36 @@ export default function IzmirTazminatAvukatiPage() {
                                 <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                         </div>
+
+                        <h2 id="zamanasimi" className="scroll-mt-24">Tazminat Davası Zamanaşımı Süreleri</h2>
+
+                        <p>
+                            Tazminat davalarında zamanaşımı süresi, dava türüne ve hukuki dayanağa göre değişir. Süreyi kaçırmak hakkın tamamen kaybedilmesi anlamına gelir. Türk Borçlar Kanunu m. 72 haksız fiillerde temel zamanaşımını düzenlerken, cezayı gerektiren fiillerde uzamış zamanaşımı (TBK m. 72/2) uygulanır.
+                        </p>
+
+                        <div className="not-prose my-8 overflow-x-auto">
+                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
+                                <thead className="bg-primary text-white">
+                                    <tr>
+                                        <th className="px-6 py-4 text-left w-1/3">Dava Türü</th>
+                                        <th className="px-6 py-4 text-left">Zamanaşımı Süresi</th>
+                                        <th className="px-6 py-4 text-left">Yasal Dayanak</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100">
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Genel haksız fiil</td><td className="px-6 py-4 text-slate-600">2 yıl (öğrenme) / 10 yıl (mutlak)</td><td className="px-6 py-4 text-slate-600">TBK m. 72</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Trafik kazası (yaralanma)</td><td className="px-6 py-4 text-slate-600">8 yıl (uzamış ceza zamanaşımı)</td><td className="px-6 py-4 text-slate-600">KTK m. 109/II + TCK m. 89</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Trafik kazası (ölümlü)</td><td className="px-6 py-4 text-slate-600">15 yıl (uzamış ceza zamanaşımı)</td><td className="px-6 py-4 text-slate-600">KTK m. 109/II + TCK m. 85</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">İş kazası tazminatı</td><td className="px-6 py-4 text-slate-600">10 yıl</td><td className="px-6 py-4 text-slate-600">TBK m. 146</td></tr>
+                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-primary">Malpraktis (vekalet)</td><td className="px-6 py-4 text-slate-600">5 yıl</td><td className="px-6 py-4 text-slate-600">TBK m. 147/5</td></tr>
+                                    <tr className="hover:bg-slate-50 bg-slate-50/50"><td className="px-6 py-4 font-bold text-primary">Destekten yoksun kalma</td><td className="px-6 py-4 text-slate-600">2 yıl / 10 yıl (haksız fiil); ceza zamanaşımına göre uzar</td><td className="px-6 py-4 text-slate-600">TBK m. 72</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Zamanaşımı süresinin hesaplanması teknik bir konudur. Bedensel zararda hastalık seyrinin tamamlandığı tarih esas alınır (Yargıtay HGK, E. 2018/906, K. 2024/104). Bir <strong>İzmir tazminat avukatı</strong> ile görüşerek zamanaşımı sürenizin dolup dolmadığını öğrenin.
+                        </p>
 
                         {/* Avukatlı mı Avukatsız mı */}
                         <SectionCTA text="Tazminat davanız için avukat desteği almak ister misiniz?" />
@@ -714,6 +795,8 @@ export default function IzmirTazminatAvukatiPage() {
                         </div>
 
             </article>
+
+            <GoogleReviews />
         </main>
     );
 }
