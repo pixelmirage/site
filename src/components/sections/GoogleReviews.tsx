@@ -21,7 +21,7 @@ export async function GoogleReviews() {
     if (!data || data.reviews.length === 0) return null;
 
     const googleMapsUrl =
-        "https://www.google.com/maps/place/Av.+Mert+Ka%C4%9Fan+%C3%87etin/@38.4527,27.1577,17z/data=!4m8!3m7!1s0x14b9632d34ab0341:0x37a7cd7ca4e3c027";
+        "https://search.google.com/local/reviews?placeid=ChIJQQOrNC1juRQRJ8DjpHzNpzc";
 
     return (
         <>
