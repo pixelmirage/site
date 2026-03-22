@@ -7,6 +7,8 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { articleProseClasses } from "@/lib/prose-classes";
 
 
 function LegalServiceSchema() {
@@ -212,21 +214,9 @@ export default function IzmirTazminatAvukatiPage() {
             </section>
 
             {/* Main Content */}
-            <article className="py-16 md:py-24">
+            <article className="py-10 md:py-16">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto prose prose-slate max-w-none
-            prose-headings:font-playfair prose-headings:font-black prose-headings:text-slate-900
-            [&>h2]:text-[1.75rem] [&>h2]:mb-6 [&>h2]:mt-14 [&>h2]:bg-slate-100 [&>h2]:py-4 [&>h2]:px-6 [&>h2]:-mx-6 [&>h2]:rounded-lg [&>h2]:border-l-4 [&>h2]:border-secondary
-            [&>h3]:text-[1.375rem] [&>h3]:mb-4 [&>h3]:mt-10 [&>h3]:text-primary [&>h3]:font-bold [&>h3]:border-b [&>h3]:border-slate-200 [&>h3]:pb-2
-            [&>p]:text-[1rem] [&>p]:text-slate-700 [&>p]:leading-[1.85] [&>p]:mb-5
-            prose-strong:text-primary prose-strong:font-bold
-            prose-a:text-secondary prose-a:font-semibold prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary
-            [&>ul>li]:text-[1rem] [&>ul>li]:text-slate-700 [&>ul>li]:mb-2 [&>ul>li]:leading-relaxed
-            prose-ul:my-6 prose-ul:pl-6
-            prose-table:border-collapse prose-table:w-full prose-table:my-8 prose-table:rounded-lg prose-table:overflow-hidden prose-table:shadow-sm
-            prose-th:bg-primary prose-th:text-white prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-bold prose-th:text-sm
-            prose-td:border prose-td:border-slate-200 prose-td:px-4 prose-td:py-3 prose-td:text-sm
-            prose-tr:even:bg-slate-50">
+                    <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
                             <strong>İzmir tazminat avukatı</strong>, hukuka aykırı eylem veya sözleşme ihlali sonucu zarar gören kişilerin haklarını korur. Bu avukat, maddi ve manevi zararların tazmini için dava açar. İş kazası, trafik kazası ve malpraktis gibi alanlarda uzmanlaşmıştır. Av. Mert Kağan Çetin, <a href="https://www.izmirbarosu.org.tr/" target="_blank" rel="noopener noreferrer">İzmir Barosu</a>&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde tazminat hukuku hizmeti veriyor.
@@ -615,14 +605,7 @@ export default function IzmirTazminatAvukatiPage() {
 
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
-                        <div className="not-prose space-y-6 my-8">
-                            {faqs.map((faq, i) => (
-                                <div key={i} className="border-b border-slate-200 pb-6">
-                                    <p className="font-bold text-primary text-lg mb-2">{faq.question}</p>
-                                    <p className="text-muted-foreground">{faq.answer}</p>
-                                </div>
-                            ))}
-                        </div>
+                        <FAQAccordion faqs={faqs} />
 
                         <div id="iletisim" className="not-prose scroll-mt-24">
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">

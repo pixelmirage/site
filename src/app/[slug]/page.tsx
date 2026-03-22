@@ -9,6 +9,7 @@ import { Phone, ArrowRight, Home, ChevronRight, Building2, Map, BookOpen } from 
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
 
 const allDistrictsByService: Record<ServiceType, DistrictData[]> = {
     kira: allKiraDistricts,
@@ -339,14 +340,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
 
                             <div className="border border-slate-200 rounded-2xl p-8">
                                 <h3 className="font-bold text-lg mb-4">{district} Sıkça Sorulan Sorular</h3>
-                                <div className="space-y-4">
-                                    {faqs.map((faq, i) => (
-                                        <div key={i}>
-                                            <h4 className="font-bold text-sm text-primary mb-1">{faq.question}</h4>
-                                            <p className="text-xs text-muted-foreground">{faq.answer}</p>
-                                        </div>
-                                    ))}
-                                </div>
+                                <FAQAccordion faqs={faqs} />
                             </div>
                         </div>
                     </div>

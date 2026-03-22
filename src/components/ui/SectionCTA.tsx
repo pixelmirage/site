@@ -2,7 +2,7 @@ import { Phone } from "lucide-react";
 
 export function SectionCTA({ text = "Bu konuda hukuki desteğe mi ihtiyacınız var?" }: { text?: string }) {
     return (
-        <div className="not-prose my-8 p-4 bg-slate-50 border-l-4 border-secondary rounded-r-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div className="not-prose my-6 md:my-8 p-4 bg-slate-50 border-l-4 border-secondary rounded-r-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-sm text-slate-700 font-medium">{text}</p>
             <a
                 href="tel:+905445854645"

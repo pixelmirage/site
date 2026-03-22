@@ -7,6 +7,8 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "İzmir İşe İade Davası Avukatı",
@@ -111,19 +113,9 @@ export default function IseIadeDavasiPage() {
             </section>
 
             {/* Article */}
-            <article className="py-16 md:py-24">
+            <article className="py-10 md:py-16">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto prose prose-slate max-w-none
-                        prose-headings:font-playfair prose-headings:font-black prose-headings:text-slate-900
-                        [&>h2]:text-[1.75rem] [&>h2]:mb-6 [&>h2]:mt-14 [&>h2]:bg-slate-100 [&>h2]:py-4 [&>h2]:px-6 [&>h2]:-mx-6 [&>h2]:rounded-lg [&>h2]:border-l-4 [&>h2]:border-secondary
-                        [&>h3]:text-[1.375rem] [&>h3]:mb-4 [&>h3]:mt-10 [&>h3]:text-primary [&>h3]:font-bold [&>h3]:border-b [&>h3]:border-slate-200 [&>h3]:pb-2
-                        [&>p]:text-[1rem] [&>p]:text-slate-700 [&>p]:leading-[1.85] [&>p]:mb-5
-                        prose-strong:text-primary prose-strong:font-bold
-                        prose-a:text-secondary prose-a:font-semibold prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-primary
-                        [&>ul>li]:text-[1rem] [&>ul>li]:text-slate-700 [&>ul>li]:mb-2 [&>ul>li]:leading-relaxed
-                        [&>ol>li]:text-[1rem] [&>ol>li]:text-slate-700 [&>ol>li]:mb-2 [&>ol>li]:leading-relaxed
-                        prose-ul:my-6 prose-ul:pl-6 prose-ol:my-6 prose-ol:pl-6
-                        prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:bg-secondary/5 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-xl prose-blockquote:not-italic prose-blockquote:my-8 prose-blockquote:text-slate-800 prose-blockquote:font-medium">
+                    <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
                             <strong>İzmir işe iade davası avukatı</strong> olarak haksız şekilde işten çıkarılan işçilerin <Link href="/sozluk/ise-iade-davasi/">işe iade davalarını</Link> açıyor ve sürecin tamamını yönetiyoruz. İş Kanunu m. 18-21 kapsamında iş güvencesinden yararlanan her işçi, geçerli bir sebep gösterilmeden yapılan feshe karşı dava açma hakkına sahiptir.
@@ -301,14 +293,7 @@ export default function IseIadeDavasiPage() {
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
-                        <div className="not-prose space-y-6 my-8">
-                            {faqs.map((faq, i) => (
-                                <div key={i} className="border-b border-slate-200 pb-6">
-                                    <p className="font-bold text-primary text-lg mb-2">{faq.question}</p>
-                                    <p className="text-muted-foreground">{faq.answer}</p>
-                                </div>
-                            ))}
-                        </div>
+                        <FAQAccordion faqs={faqs} />
 
                         {/* İletişim CTA */}
                         <div id="iletisim" className="not-prose scroll-mt-24">

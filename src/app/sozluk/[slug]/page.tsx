@@ -9,6 +9,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { DefinedTermSchema } from "@/components/seo/DefinedTermSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
 
 export async function generateStaticParams() {
     return glossaryTerms.map((term) => ({
@@ -221,14 +222,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
 
                             <div className="border border-slate-200 rounded-2xl p-8">
                                 <h3 className="font-bold text-lg mb-4">Sıkça Sorulan Sorular</h3>
-                                <div className="space-y-4">
-                                    {term.faqs.map((faq, i) => (
-                                        <div key={i}>
-                                            <h4 className="font-bold text-sm text-primary mb-1">{faq.question}</h4>
-                                            <p className="text-xs text-muted-foreground">{faq.answer}</p>
-                                        </div>
-                                    ))}
-                                </div>
+                                <FAQAccordion faqs={term.faqs} />
                             </div>
                         </div>
                     </div>
