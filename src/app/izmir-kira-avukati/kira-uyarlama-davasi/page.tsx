@@ -10,7 +10,7 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
     title: "İzmir Kira Uyarlama Davası Avukatı | TBK m. 138 | Hemen Arayın",
-    description: "İzmir kira uyarlama davası avukatı Av. Mert Kağan Çetin. TBK m. 138 kapsamında aşırı ifa güçlüğü, enflasyon ve ekonomik kriz nedeniyle kira bedeli uyarlama davalarında uzman hukuki destek.",
+    description: "İzmir kira uyarlama davası avukatı Av. Mert Kağan Çetin. TBK m. 138 kapsamında kira bedeli uyarlama davalarında uzman destek.",
     keywords: ["kira uyarlama davası avukatı İzmir", "kira uyarlama davası", "TBK 138", "aşırı ifa güçlüğü", "kira bedeli uyarlama"],
     openGraph: {
         title: "İzmir Kira Uyarlama Davası Avukatı | Av. Mert Kağan Çetin",

@@ -10,7 +10,7 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
     title: "İzmir Kıdem Tazminatı Davası Avukatı | Hesaplama & Dava | Hemen Arayın",
-    description: "İzmir kıdem tazminatı davası avukatı Av. Mert Kağan Çetin. Ödenmeyen kıdem tazminatı, ihbar tazminatı, zamanaşımı ve faiz talepli alacak davalarında uzman hukuki destek.",
+    description: "İzmir kıdem tazminatı davası avukatı Av. Mert Kağan Çetin. Ödenmeyen kıdem ve ihbar tazminatı alacak davalarında uzman destek.",
     keywords: ["kıdem tazminatı davası avukatı İzmir", "kıdem tazminatı davası", "kıdem tazminatı avukatı", "ödenmeyen kıdem tazminatı"],
     openGraph: {
         title: "İzmir Kıdem Tazminatı Davası Avukatı | Av. Mert Kağan Çetin",

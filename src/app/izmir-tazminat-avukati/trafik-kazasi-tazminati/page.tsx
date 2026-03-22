@@ -10,7 +10,7 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
     title: "İzmir Trafik Kazası Tazminat Avukatı | Sigorta & Dava | Hemen Arayın",
-    description: "İzmir trafik kazası tazminat avukatı Av. Mert Kağan Çetin. ZMSS başvurusu, Sigorta Tahkim Komisyonu, Güvence Hesabı ve trafik kazası tazminat davalarında uzman destek.",
+    description: "İzmir trafik kazası tazminat avukatı Av. Mert Kağan Çetin. Sigorta başvurusu ve trafik kazası tazminat davalarında uzman destek.",
     keywords: ["trafik kazası tazminat avukatı İzmir", "trafik kazası tazminatı", "sigorta tazminatı", "trafik kazası avukatı"],
     openGraph: {
         title: "İzmir Trafik Kazası Tazminat Avukatı | Av. Mert Kağan Çetin",

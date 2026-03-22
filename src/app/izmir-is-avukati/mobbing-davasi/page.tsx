@@ -10,7 +10,7 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
     title: "İzmir Mobbing Davası Avukatı | İş Yerinde Psikolojik Taciz | Hemen Arayın",
-    description: "İzmir mobbing davası avukatı Av. Mert Kağan Çetin. İş yerinde psikolojik taciz, mobbing tazminatı, haklı fesih ve manevi tazminat davalarında uzman hukuki destek.",
+    description: "İzmir mobbing davası avukatı Av. Mert Kağan Çetin. Psikolojik taciz, haklı fesih ve manevi tazminat davalarında uzman destek.",
     keywords: ["mobbing davası avukatı İzmir", "mobbing davası", "iş yerinde psikolojik taciz", "mobbing tazminatı"],
     openGraph: {
         title: "İzmir Mobbing Davası Avukatı | Av. Mert Kağan Çetin",

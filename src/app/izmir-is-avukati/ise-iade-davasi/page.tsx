@@ -10,7 +10,7 @@ import { SectionCTA } from "@/components/ui/SectionCTA";
 
 export const metadata: Metadata = {
     title: "İzmir İşe İade Davası Avukatı | İş Güvencesi | Hemen Arayın",
-    description: "İzmir işe iade davası avukatı Av. Mert Kağan Çetin. İş Kanunu m. 18-21 kapsamında haksız fesih, zorunlu arabuluculuk, boşta geçen süre ücreti ve iş güvencesi tazminatı davalarında uzman destek.",
+    description: "İzmir işe iade davası avukatı Av. Mert Kağan Çetin. Haksız fesih, arabuluculuk ve iş güvencesi tazminatı davalarında uzman destek.",
     keywords: ["işe iade davası avukatı İzmir", "işe iade davası", "haksız işten çıkarma", "iş güvencesi avukatı"],
     openGraph: {
         title: "İzmir İşe İade Davası Avukatı | Av. Mert Kağan Çetin",
