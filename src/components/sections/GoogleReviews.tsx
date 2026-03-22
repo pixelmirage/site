@@ -45,7 +45,7 @@ export async function GoogleReviews() {
                             "@type": "Review",
                             author: {
                                 "@type": "Person",
-                                name: r.authorName,
+                                name: r.authorName.split(" ")[0],
                             },
                             datePublished: r.publishTime.split("T")[0],
                             reviewRating: {
@@ -71,9 +71,6 @@ export async function GoogleReviews() {
                             <Stars count={Math.round(data.rating)} />
                             <span className="text-lg font-bold text-slate-800">
                                 {data.rating.toFixed(1)}
-                            </span>
-                            <span className="text-slate-500">
-                                ({data.totalReviews} yorum)
                             </span>
                         </div>
                         <p className="text-sm text-slate-500">
@@ -102,7 +99,7 @@ export async function GoogleReviews() {
                                         {review.authorName.charAt(0).toUpperCase()}
                                     </div>
                                     <span className="text-sm font-medium text-slate-800">
-                                        {review.authorName}
+                                        {review.authorName.split(" ")[0]}
                                     </span>
                                 </div>
                             </div>
