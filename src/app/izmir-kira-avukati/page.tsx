@@ -464,6 +464,13 @@ export default function IzmirKiraAvukatiPage() {
                             Tahliye taahhütnamesi ile tahliye, diğer yollara göre çok daha hızlıdır. Tahliye kararına rağmen taşınmazı boşaltmayan kiracıdan <Link href="/sozluk/ecrimisil/" className="text-secondary font-bold">ecrimisil</Link> (haksız işgal tazminatı) talep edilebilir. <strong>İzmir kira avukatı</strong> olarak müvekkillerimize taahhütname almalarını öneririz. Detaylı bilgi için <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="text-secondary font-bold">tahliye davası rehberimizi</Link> okuyun. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className="text-secondary font-bold">İki haklı ihtar makalemiz</Link> de faydalı olacaktır.
                         </p>
 
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Tahliye davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
+
                         {/* Kira Tespit Davası */}
                         <h2 id="kira-tespit-davasi" className="scroll-mt-24">Kira Tespit Davası Ne Zaman Açılır?</h2>
 
@@ -491,6 +498,13 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             <strong>İzmir kira avukatı</strong> olarak kira tespit davalarında güçlü bir dosya hazırlıyoruz. Bilirkişi raporu, emsal kira bedelleri ve piyasa analizleri bu dosyanın temelini oluşturur. Mahkemenin belirlediği yeni kira bedeli, dava tarihinden değil kira döneminin başından itibaren geçerli olur. Bu yüzden davayı doğru zamanda açmak çok önemlidir. Dava öncesi zorunlu olan <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary font-bold">arabuluculuk sürecini</Link> de incelemenizi tavsiye ederiz.
                         </p>
+
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-kira-avukati/kira-tespit-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Kira tespit davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
 
                         {/* 10 Yıllık Kiracının Tahliyesi */}
                         <h2 id="10-yillik-kiraci" className="scroll-mt-24">10 Yıllık Kiracının Tahliyesi</h2>
@@ -834,6 +848,29 @@ export default function IzmirKiraAvukatiPage() {
                                         </a>
                                     </Button>
                                 </div>
+                            </div>
+                        </div>
+
+                        {/* Uzmanlık Alanları */}
+                        <div className="not-prose my-16 bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-2">Kira Hukuku Uzmanlık Alanlarımız</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto text-sm">
+                                Her kira uyuşmazlığı türüne özel hizmet sayfalarımızda detaylı bilgi alabilirsiniz.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {[
+                                    { title: "Kiracı Tahliye Davası", desc: "Tüm tahliye sebepleri ve İzmir'de tahliye davası hizmetimiz", url: "/izmir-kira-avukati/kiraci-tahliye-davasi/" },
+                                    { title: "Kira Tespit Davası", desc: "Kira bedelinin güncel rayice göre tespiti davası hizmetimiz", url: "/izmir-kira-avukati/kira-tespit-davasi/" },
+                                    { title: "Kira Uyarlama Davası", desc: "Olağanüstü koşullarda kira bedelinin uyarlanması davası hizmetimiz", url: "/izmir-kira-avukati/kira-uyarlama-davasi/" },
+                                ].map((item, i) => (
+                                    <Link key={i} href={item.url} className="group block p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-lg transition-all">
+                                        <h3 className="font-bold text-primary group-hover:text-secondary transition-colors mb-2">{item.title}</h3>
+                                        <p className="text-sm text-slate-600 mb-3">{item.desc}</p>
+                                        <span className="text-xs font-bold text-secondary flex items-center gap-1 group-hover:gap-2 transition-all">
+                                            Detaylı Bilgi <ArrowRight className="w-3 h-3" />
+                                        </span>
+                                    </Link>
+                                ))}
                             </div>
                         </div>
 

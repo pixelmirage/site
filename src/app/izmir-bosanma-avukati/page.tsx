@@ -376,6 +376,13 @@ export default function IzmirBosanmaAvukatiPage() {
                             Anlaşmalı boşanma protokolü, eşlerin boşanmanın tüm sonuçlarında anlaştığını gösteren yazılı belgedir. Protokolde şu konular açıkça yer almalıdır: nafaka miktarı ve süresi, çocuk velayeti ve kişisel ilişki düzenlemesi, mal paylaşımı ve maddi-manevi tazminat. <strong>İzmir boşanma avukatı</strong> olarak her iki tarafın haklarını koruyan ve mahkemece kabul edilecek protokoller hazırlıyoruz.
                         </p>
 
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Anlaşmalı boşanma hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
+
                         {/* Çekişmeli Boşanma */}
                         <SectionCTA text="Boşanma süreciniz için hukuki destek almak ister misiniz?" />
 
@@ -442,6 +449,13 @@ export default function IzmirBosanmaAvukatiPage() {
                             <strong>İzmir boşanma avukatı</strong> olarak velayet davalarında çocuğun üstün yararını gözetiyoruz. En adil sonucu almak için titizlikle çalışıyoruz. Kişisel ilişki (görüşme) düzenlemesi de velayet kararının önemli bir parçasıdır.
                         </p>
 
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-bosanma-avukati/velayet-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Velayet davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
+
                         {/* Nafaka */}
                         <h2 id="nafaka" className="scroll-mt-24">Nafaka Davası</h2>
 
@@ -481,6 +495,13 @@ export default function IzmirBosanmaAvukatiPage() {
                         <p>
                             Nafaka hesaplamasında tarafların gelir ve giderleri, çocukların eğitim masrafları, yaşam standardı ve enflasyon oranı dikkate alınır. 2026 yılında İzmir aile mahkemelerinde iştirak nafakası çocuk başına ortalama 3.000-8.000 TL arasında değişir. Yoksulluk nafakası ise alacaklının geçinme ihtiyacına göre belirlenir.
                         </p>
+
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-bosanma-avukati/nafaka-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Nafaka davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
 
                         {/* Mal Paylaşımı */}
                         <SectionCTA text="Nafaka veya velayet konusunda danışmak mı istiyorsunuz?" />
@@ -749,6 +770,29 @@ export default function IzmirBosanmaAvukatiPage() {
 
                     </div>
                 </div>
+
+                        {/* Uzmanlık Alanları */}
+                        <div className="not-prose my-16 bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-2">Aile Hukuku Uzmanlık Alanlarımız</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto text-sm">
+                                Her aile hukuku uyuşmazlığı türüne özel hizmet sayfalarımızda detaylı bilgi alabilirsiniz.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {[
+                                    { title: "Anlaşmalı Boşanma", desc: "Tek celsede anlaşmalı boşanma ve protokol hazırlama hizmetimiz", url: "/izmir-bosanma-avukati/anlasmali-bosanma/" },
+                                    { title: "Velayet Davası", desc: "Çocuk velayeti ve velayet değişikliği davası hizmetimiz", url: "/izmir-bosanma-avukati/velayet-davasi/" },
+                                    { title: "Nafaka Davası", desc: "İştirak, yoksulluk ve tedbir nafakası davası hizmetimiz", url: "/izmir-bosanma-avukati/nafaka-davasi/" },
+                                ].map((item, i) => (
+                                    <Link key={i} href={item.url} className="group block p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-lg transition-all">
+                                        <h3 className="font-bold text-primary group-hover:text-secondary transition-colors mb-2">{item.title}</h3>
+                                        <p className="text-sm text-slate-600 mb-3">{item.desc}</p>
+                                        <span className="text-xs font-bold text-secondary flex items-center gap-1 group-hover:gap-2 transition-all">
+                                            Detaylı Bilgi <ArrowRight className="w-3 h-3" />
+                                        </span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
 
                         {/* İlçe Bazlı Hizmet Sayfaları */}
                         <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">

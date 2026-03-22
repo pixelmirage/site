@@ -407,6 +407,13 @@ export default function IzmirTazminatAvukatiPage() {
                             <li><strong>Güvence Hesabı:</strong> Sigortasız araç veya faili meçhul kazalarda Güvence Hesabı&apos;na başvuru</li>
                         </ul>
 
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-tazminat-avukati/trafik-kazasi-tazminati/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Trafik kazası tazminatı hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
+
                         <h2 id="destekten-yoksun" className="scroll-mt-24">Destekten Yoksun Kalma Tazminatı</h2>
 
                         <p>
@@ -417,11 +424,25 @@ export default function IzmirTazminatAvukatiPage() {
                             Hesaplamada ölen kişinin yaşı, geliri ve yaşam beklentisi dikkate alınır. Destekten yararlananların yaşları ve destek payları da hesaba katılır. Aktüer hesap raporu ile kesin miktar belirlenir.
                         </p>
 
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-tazminat-avukati/destekten-yoksun-kalma/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Destekten yoksun kalma tazminatı hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
+
                         <h3>Malpraktis Davası (Doktor Hatası Tazminatı)</h3>
 
                         <p>
                             <Link href="/sozluk/malpraktis/" className="text-secondary font-bold">Malpraktis davası</Link>, tıbbi hata sonucu hastanın zarar görmesi halinde açılır. Yanlış teşhis, hatalı ameliyat, ilaç hatası ve tedavi ihmali bu kapsamdadır. İzmir tazminat avukatı olarak Adli Tıp Kurumu ve bilirkişi raporları ile güçlü dava dosyaları hazırlıyoruz.
                         </p>
+
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-tazminat-avukati/malpraktis-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Malpraktis davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
 
                         {/* Avukatlı mı Avukatsız mı */}
                         <SectionCTA text="Tazminat davanız için avukat desteği almak ister misiniz?" />
@@ -653,6 +674,29 @@ export default function IzmirTazminatAvukatiPage() {
 
                     </div>
                 </div>
+
+                        {/* Uzmanlık Alanları */}
+                        <div className="not-prose my-16 bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-2">Tazminat Hukuku Uzmanlık Alanlarımız</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto text-sm">
+                                Her tazminat davası türüne özel hizmet sayfalarımızda detaylı bilgi alabilirsiniz.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {[
+                                    { title: "Trafik Kazası Tazminatı", desc: "Trafik kazası sonrası sigorta ve tazminat davası hizmetimiz", url: "/izmir-tazminat-avukati/trafik-kazasi-tazminati/" },
+                                    { title: "Malpraktis Davası", desc: "Doktor hatası ve tıbbi malpraktis tazminat davası hizmetimiz", url: "/izmir-tazminat-avukati/malpraktis-davasi/" },
+                                    { title: "Destekten Yoksun Kalma", desc: "Yakın kaybı sonrası destekten yoksun kalma tazminatı hizmetimiz", url: "/izmir-tazminat-avukati/destekten-yoksun-kalma/" },
+                                ].map((item, i) => (
+                                    <Link key={i} href={item.url} className="group block p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-lg transition-all">
+                                        <h3 className="font-bold text-primary group-hover:text-secondary transition-colors mb-2">{item.title}</h3>
+                                        <p className="text-sm text-slate-600 mb-3">{item.desc}</p>
+                                        <span className="text-xs font-bold text-secondary flex items-center gap-1 group-hover:gap-2 transition-all">
+                                            Detaylı Bilgi <ArrowRight className="w-3 h-3" />
+                                        </span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
 
                         {/* İlçe Bazlı Hizmet Sayfaları */}
                         <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">

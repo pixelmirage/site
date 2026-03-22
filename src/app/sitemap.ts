@@ -39,6 +39,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/tahliye-taahhutnamesi': { lastModified: '2026-03-15', priority: 0.8 },
         '/kidem-tazminati-hesaplama': { lastModified: '2026-03-16', priority: 0.8 },
         '/sozluk': { lastModified: '2026-03-15', priority: 0.8 },
+        // Kira alt sayfaları
+        '/izmir-kira-avukati/kiraci-tahliye-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-kira-avukati/kira-tespit-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-kira-avukati/kira-uyarlama-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        // İş alt sayfaları
+        '/izmir-is-avukati/ise-iade-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-is-avukati/kidem-tazminati-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-is-avukati/mobbing-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        // Boşanma alt sayfaları
+        '/izmir-bosanma-avukati/anlasmali-bosanma': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-bosanma-avukati/velayet-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-bosanma-avukati/nafaka-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        // Tazminat alt sayfaları
+        '/izmir-tazminat-avukati/trafik-kazasi-tazminati': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-tazminat-avukati/malpraktis-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-tazminat-avukati/destekten-yoksun-kalma': { lastModified: '2026-03-22', priority: 0.9 },
     };
 
     const routes = Object.entries(staticRoutes).map(([route, config]) => ({

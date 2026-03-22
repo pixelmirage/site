@@ -392,6 +392,13 @@ export default function IzmirIsAvukatiPage() {
                             İşe iade davası kazanılsa bile işveren işçiyi işe başlatmayabilir. Bu durumda işçiye en az 4 aylık, en fazla 8 aylık boşta geçen süre ücreti ödenir. Ayrıca iş güvencesi tazminatı da verilir. <strong>İzmir iş avukatı</strong> olarak bu süreçte müvekkillerimizi en etkin şekilde temsil ediyoruz.
                         </p>
 
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-is-avukati/ise-iade-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>İşe iade davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
+
                         {/* Kıdem Tazminatı */}
                         <h2 id="kidem-tazminati" className="scroll-mt-24">Kıdem Tazminatı Nasıl Hesaplanır?</h2>
 
@@ -442,6 +449,13 @@ export default function IzmirIsAvukatiPage() {
                         <p>
                             <strong>İzmir iş avukatı</strong> olarak kıdem tazminatı davalarında müvekkillerimizin tüm haklarını koruyoruz. Amacımız en yüksek tazminat miktarını almaktır. 5 yıllık zamanaşımı süresi dolmadan haklarınızı talep etmeniz çok önemlidir.
                         </p>
+
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-is-avukati/kidem-tazminati-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Kıdem tazminatı davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
 
                         {/* İhbar Tazminatı */}
                         <h2 id="ihbar-tazminati" className="scroll-mt-24">İhbar Tazminatı Nedir?</h2>
@@ -573,6 +587,13 @@ export default function IzmirIsAvukatiPage() {
                         <p>
                             Mobbing (işyerinde psikolojik taciz), işçinin sistematik olarak baskıya, aşağılamaya veya dışlanmaya maruz kalmasıdır. İş Kanunu ve Borçlar Kanunu kapsamında işverenin işçiyi koruma yükümlülüğü vardır. Mobbinge maruz kalan işçi, iş sözleşmesini haklı nedenle feshedebilir. Bu durumda kıdem tazminatı talep edebilir. Ayrıca manevi tazminat davası da açabilir. Mobbing davasında e-posta yazışmaları, mesajlar, tanık ifadeleri ve psikolojik sağlık raporları en önemli delillerdir. <strong>İzmir iş avukatı</strong> olarak mobbing mağdurlarına hukuki süreçte rehberlik ediyoruz.
                         </p>
+
+                        <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">
+                            <Link href="/izmir-is-avukati/mobbing-davasi/" className="flex items-center justify-between text-primary font-bold hover:text-secondary transition-colors">
+                                <span>Mobbing davası hizmetimiz hakkında detaylı bilgi</span>
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
 
                         <h3>Fazla Mesai Alacağı Davası</h3>
 
@@ -800,6 +821,29 @@ export default function IzmirIsAvukatiPage() {
 
                     </div>
                 </div>
+
+                        {/* Uzmanlık Alanları */}
+                        <div className="not-prose my-16 bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200">
+                            <h2 className="text-2xl font-playfair font-bold text-primary text-center mb-2">İş Hukuku Uzmanlık Alanlarımız</h2>
+                            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto text-sm">
+                                Her iş hukuku uyuşmazlığı türüne özel hizmet sayfalarımızda detaylı bilgi alabilirsiniz.
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {[
+                                    { title: "İşe İade Davası", desc: "Haksız fesih halinde işe iade davası ve arabuluculuk süreci hizmetimiz", url: "/izmir-is-avukati/ise-iade-davasi/" },
+                                    { title: "Kıdem Tazminatı Davası", desc: "Kıdem tazminatı hesaplama ve dava açma hizmetimiz", url: "/izmir-is-avukati/kidem-tazminati-davasi/" },
+                                    { title: "Mobbing Davası", desc: "İşyerinde psikolojik taciz ve mobbing tazminatı hizmetimiz", url: "/izmir-is-avukati/mobbing-davasi/" },
+                                ].map((item, i) => (
+                                    <Link key={i} href={item.url} className="group block p-6 bg-white border border-slate-200 rounded-xl hover:border-secondary hover:shadow-lg transition-all">
+                                        <h3 className="font-bold text-primary group-hover:text-secondary transition-colors mb-2">{item.title}</h3>
+                                        <p className="text-sm text-slate-600 mb-3">{item.desc}</p>
+                                        <span className="text-xs font-bold text-secondary flex items-center gap-1 group-hover:gap-2 transition-all">
+                                            Detaylı Bilgi <ArrowRight className="w-3 h-3" />
+                                        </span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
 
                         {/* İlçe Bazlı Hizmet Sayfaları */}
                         <div className="not-prose mt-16 bg-slate-50 rounded-2xl border border-slate-200 p-8">
