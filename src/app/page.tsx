@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { AboutBrief } from "@/components/sections/AboutBrief";
+import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -26,6 +27,9 @@ export default function Home() {
 
       {/* About Section */}
       <AboutBrief />
+
+      {/* Google Reviews — GBP'den canlı çekilir, 24 saat cache */}
+      <GoogleReviews />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary relative overflow-hidden">
