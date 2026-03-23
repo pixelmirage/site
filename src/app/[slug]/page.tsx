@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { GoogleReviews } from "@/components/sections/GoogleReviews";
 
 const allDistrictsByService: Record<ServiceType, DistrictData[]> = {
     kira: allKiraDistricts,
@@ -268,6 +269,11 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 hak kaybı yaşamamak büyük önem taşır. Ofisimiz Bayraklı Adliyesi yakınında bulunmakla birlikte, {district} bölgesindeki
                                 tüm davalarda aktif rol almaktadır.
                             </p>
+
+                            {/* Danışan Yorumları */}
+                            <div className="not-prose">
+                                <GoogleReviews />
+                            </div>
 
                             {/* Related Blog Posts - Internal Linking */}
                             <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
