@@ -2,10 +2,10 @@ import { Star } from "lucide-react";
 
 const reviews = [
     {
-        name: "Serdar",
+        name: "Alican Zade",
         rating: 5,
-        text: "Kendisi tahliye taahhütnamesine karşı dava kazanabilen nadir avukatlardan. Ne kadar teşekkür etsem azdır kendisine. Saygılar ve sevgiler",
-        date: "2026-03-22",
+        text: "Mert Kağan bey gerçekten çok kritik bir noktada sürece dahil oldu.. Hızlı müdahalesi ile maddi manevi bizi resmen eşikten döndürdü diyebilirim. İşini bu kadar sahiplenen ve çözüm odaklı bir avukat bulmak bu devirde zor gerçekten. Hem profesyonelliği hem de verdiği o güven duygusu için kendisine çok teşekkür ederim. Kesinlikle tavsiye ediyorum.",
+        date: "2026-03-23",
     },
     {
         name: "gözde",
@@ -49,7 +49,7 @@ function Stars({ count }: { count: number }) {
 export function GoogleReviews() {
     return (
         <>
-            {/* AggregateRating Schema — GBP verisinden */}
+            {/* Attorney Schema — review/rating olmadan */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -68,25 +68,6 @@ export function GoogleReviews() {
                             postalCode: "35535",
                             addressCountry: "TR",
                         },
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "5.0",
-                            reviewCount: reviews.length,
-                            bestRating: "5",
-                            worstRating: "1",
-                        },
-                        review: reviews.map((r) => ({
-                            "@type": "Review",
-                            author: { "@type": "Person", name: r.name },
-                            datePublished: r.date,
-                            reviewRating: {
-                                "@type": "Rating",
-                                ratingValue: r.rating,
-                                bestRating: "5",
-                                worstRating: "1",
-                            },
-                            reviewBody: r.text,
-                        })),
                     }),
                 }}
             />
