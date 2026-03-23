@@ -785,6 +785,11 @@ export default function IzmirKiraAvukatiPage() {
                             </div>
                         </div>
 
+                        {/* Danışan Yorumları */}
+                        <div className="not-prose">
+                            <GoogleReviews />
+                        </div>
+
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı Hakkında Sıkça Sorulan Sorular</h2>
 
@@ -896,7 +901,6 @@ export default function IzmirKiraAvukatiPage() {
                 </div>
             </article>
 
-            <GoogleReviews />
         </main>
     );
 }

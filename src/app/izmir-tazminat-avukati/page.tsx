@@ -684,6 +684,11 @@ export default function IzmirTazminatAvukatiPage() {
                             </div>
                         </div>
 
+                        {/* Danışan Yorumları */}
+                        <div className="not-prose">
+                            <GoogleReviews />
+                        </div>
+
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
                         <FAQAccordion faqs={faqs} />
@@ -796,7 +801,6 @@ export default function IzmirTazminatAvukatiPage() {
 
             </article>
 
-            <GoogleReviews />
         </main>
     );
 }

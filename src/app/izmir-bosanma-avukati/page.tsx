@@ -704,6 +704,11 @@ export default function IzmirBosanmaAvukatiPage() {
                             </div>
                         </div>
 
+                        {/* Danışan Yorumları */}
+                        <div className="not-prose">
+                            <GoogleReviews />
+                        </div>
+
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
@@ -818,8 +823,6 @@ export default function IzmirBosanmaAvukatiPage() {
 
             </article>
 
-            {/* Google Business Profile Yorumları */}
-            <GoogleReviews />
         </main>
     );
 }
