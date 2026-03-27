@@ -218,7 +218,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
         legalBasis: "TBK m. 299-378",
         category: "sozlesme",
         relatedTermSlugs: ["depozito", "kira-artis-orani", "tahliye-taahhutnamesi"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir"],
+        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec"],
         relatedServiceAnchor: "#gayrimenkul",
         faqs: [
             {
@@ -426,7 +426,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         legalBasis: "TBK m. 339-356",
         category: "haklar",
         relatedTermSlugs: ["kira-sozlesmesi", "depozito", "kira-artis-orani", "10-yillik-uzama-suresi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "UJ35T2zOXH0",
         faqs: [
@@ -465,7 +465,7 @@ Hesaplamada giydirilmiş brüt ücret esas alınır. Yemek, yol, düzenli prim g
         legalBasis: "1475 sayılı İK m. 14",
         category: "is-hukuku",
         relatedTermSlugs: ["ihbar-tazminati", "hakli-fesih", "ise-iade-davasi"],
-        relatedBlogSlugs: ["kidem-tazminati-nasil-hesaplanir", "isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz"],
+        relatedBlogSlugs: ["kidem-tazminati-nasil-hesaplanir", "isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -499,7 +499,7 @@ Kıdem tazminatından farklı olarak ihbar tazminatı gelir vergisine tabidir. A
         legalBasis: "İK m. 17",
         category: "is-hukuku",
         relatedTermSlugs: ["kidem-tazminati", "hakli-fesih", "ise-iade-davasi"],
-        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "kidem-tazminati-nasil-hesaplanir"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "kidem-tazminati-nasil-hesaplanir", "ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -601,7 +601,7 @@ Mobbingin ispatında e-posta yazışmaları, mesajlar, tanık beyanları, psikol
         legalBasis: "İK m. 24-25",
         category: "is-hukuku",
         relatedTermSlugs: ["kidem-tazminati", "ihbar-tazminati", "mobbing", "ise-iade-davasi"],
-        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "kidem-tazminati-nasil-hesaplanir", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz"],
+        relatedBlogSlugs: ["isten-cikarildiginda-ne-yapmali", "kidem-tazminati-nasil-hesaplanir", "ise-iade-davasi-sartlari-ve-arabuluculuk-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari"],
         relatedServiceAnchor: "#is-hukuku",
         faqs: [
             {
@@ -777,7 +777,7 @@ Boşanmada her eş, diğer eşin edinilmiş mallarının toplam değerinin yarı
         legalBasis: "TMK m. 218-241",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
-        relatedBlogSlugs: ["anlasmali-bosanma-nasil-acilir", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti"],
+        relatedBlogSlugs: ["anlasmali-bosanma-nasil-acilir", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -815,7 +815,7 @@ Maddi tazminat talebi için hukuka aykırı fiil, kusur (veya kusursuz sorumlulu
         legalBasis: "TBK m. 49-52",
         category: "tazminat",
         relatedTermSlugs: ["manevi-tazminat", "haksiz-fiil", "destekten-yoksun-kalma"],
-        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "malpraktis-davasi-doktor-hatasi-tazminati"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "malpraktis-davasi-doktor-hatasi-tazminati", "sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
@@ -919,7 +919,7 @@ Trafik kazası, iş kazası ve tıbbi malpraktis sonucu ölüm hallerinde en sı
         legalBasis: "TBK m. 53/3",
         category: "tazminat",
         relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "haksiz-fiil"],
-        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "maddi-ve-manevi-tazminat-davasi-farklari", "malpraktis-davasi-doktor-hatasi-tazminati"],
+        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "maddi-ve-manevi-tazminat-davasi-farklari", "malpraktis-davasi-doktor-hatasi-tazminati", "sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {

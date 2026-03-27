@@ -756,6 +756,9 @@ export default function IzmirKiraAvukatiPage() {
                                 <Link href="/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Gayrimenkul Piyasasında Güncel Hukuki Gelişmeler
                                 </Link>
+                                <Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Kira Sözleşmesi Fesih Sebepleri ve Hukuki Süreç
+                                </Link>
                             </div>
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />

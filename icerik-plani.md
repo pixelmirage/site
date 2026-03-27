@@ -1,6 +1,6 @@
 # mertkagancetin.com İçerik Üretim Planı
 
-> Son güncelleme: 2026-03-16
+> Son güncelleme: 2026-03-27
 
 ## Strateji
 
@@ -10,16 +10,16 @@ Dengeli büyüme için her turda: **1 İş + 1 Boşanma + 1 Tazminat**, 2 turda 
 
 | Cluster | Mevcut | Hedef | Eksik | Kapsam |
 |---------|--------|-------|-------|--------|
-| Kira Hukuku | 7 | 17 | 10 | %41 |
-| İş Hukuku | **4** | 13 | **9** | **%31** |
-| Boşanma Hukuku | **4** | 13 | **9** | **%31** |
-| Tazminat Hukuku | **5** | 14 | **9** | **%36** |
+| Kira Hukuku | 8 | 17 | 9 | %47 |
+| İş Hukuku | **5** | 13 | **8** | **%38** |
+| Boşanma Hukuku | **5** | 13 | **8** | **%38** |
+| Tazminat Hukuku | **6** | 14 | **8** | **%43** |
 
 ---
 
-## Kira Hukuku (10 Eksik)
+## Kira Hukuku (9 Eksik)
 
-- [ ] Kira Sözleşmesi Fesih Sebepleri ve Hukuki Süreç
+- [x] Kira Sözleşmesi Fesih Sebepleri ve Hukuki Süreç
 - [ ] Depozito İadesi Davası: Kiracının Hakları ve Süreç
 - [ ] Kiracının Aidat Borcu ve Ev Sahibinin Sorumlulukları
 - [ ] Kira Uyarlama Davası: Şartlar ve Yargıtay Kararları
@@ -30,10 +30,10 @@ Dengeli büyüme için her turda: **1 İş + 1 Boşanma + 1 Tazminat**, 2 turda 
 - [ ] Kira Artış Oranı Sınırı 2026: Güncel Hesaplama Rehberi
 - [ ] Eşya Hasarı Nedeniyle Kiracıya Tazminat Davası
 
-## İş Hukuku (10 Eksik)
+## İş Hukuku (8 Eksik)
 
 - [x] İşe İade Davası Şartları ve Arabuluculuk Süreci 2026
-- [ ] İhbar Tazminatı Nedir? Hesaplama ve Hak Kazanma Şartları
+- [x] İhbar Tazminatı Nedir? Hesaplama ve Hak Kazanma Şartları
 - [ ] Fazla Mesai Ücreti Alacağı: İspat ve Zamanaşımı
 - [ ] İşyerinde Mobbing: Hukuki Tanım ve Dava Süreci
 - [ ] Haklı Nedenle Fesih: İşçinin İş Sözleşmesini Sona Erdirmesi
@@ -43,10 +43,10 @@ Dengeli büyüme için her turda: **1 İş + 1 Boşanma + 1 Tazminat**, 2 turda 
 - [ ] Sendika Üyeliği Nedeniyle İşten Çıkarılma ve Sendikal Tazminat
 - [ ] Ücretsiz İzin Hakkı: İşverenin ve İşçinin Yükümlülükleri
 
-## Boşanma Hukuku (10 Eksik)
+## Boşanma Hukuku (8 Eksik)
 
 - [x] Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti
-- [ ] Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi
+- [x] Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi
 - [ ] Boşanmada Tazminat Davası: Maddi ve Manevi Tazminat
 - [ ] Velayet Değişikliği Davası: Şartlar ve Mahkeme Kriterleri
 - [ ] Aile İçi Şiddet ve Koruma Kararı Süreci (6284 Sayılı Kanun)
@@ -56,10 +56,10 @@ Dengeli büyüme için her turda: **1 İş + 1 Boşanma + 1 Tazminat**, 2 turda 
 - [ ] Yabancı Uyruklu Eşle Boşanma: Milletlerarası Özel Hukuk
 - [ ] Çocukla Kişisel İlişki Kurulması ve Teslim İcra Takibi
 
-## Tazminat Hukuku (10 Eksik)
+## Tazminat Hukuku (8 Eksik)
 
 - [x] Destekten Yoksun Kalma Tazminatı: Hesaplama ve Dava Süreci
-- [ ] Sigorta Tahkim Komisyonu Başvurusu: Trafik Kazası Tazminatı
+- [x] Sigorta Tahkim Komisyonu Başvurusu: Trafik Kazası Tazminatı
 - [ ] İş Göremezlik Raporu ve Maluliyet Tazminatı Davası
 - [ ] Haksız Fiil Tazminatı: TBK Kapsamında Sorumluluk
 - [ ] Trafik Kazasında Kusur Oranı ve Bilirkişi Raporu

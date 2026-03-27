@@ -217,6 +217,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/` → anchor: "iki haklı ihtar"
 - `/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/` → anchor: "zorunlu arabuluculuk"
 - `/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/` → anchor: "gayrimenkul hukuki gelişmeler"
+- `/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/` → anchor: "kira sözleşmesi fesih sebepleri"
 
 **Sözlük Terimleri:**
 - `/sozluk/tahliye-taahhutnamesi/` → "tahliye taahhütnamesi"
@@ -253,6 +254,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/kidem-tazminati-nasil-hesaplanir/` → anchor: "kıdem tazminatı hesaplama"
 - `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
 - `/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci/` → anchor: "işe iade davası şartları"
+- `/blog/ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari/` → anchor: "ihbar tazminatı hesaplama"
 
 **Sözlük Terimleri:**
 - `/sozluk/kidem-tazminati/` → "kıdem tazminatı"
@@ -288,6 +290,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/` → anchor: "velayet davası süreci"
 - `/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/` → anchor: "nafaka hesaplama"
 - `/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/` → anchor: "çekişmeli boşanma davası"
+- `/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/` → anchor: "boşanmada mal paylaşımı"
 
 **Sözlük Terimleri:**
 - `/sozluk/anlasmali-bosanma/` → "anlaşmalı boşanma"
@@ -324,6 +327,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/malpraktis-davasi-doktor-hatasi-tazminati/` → anchor: "malpraktis davası"
 - `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
 - `/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/` → anchor: "destekten yoksun kalma tazminatı"
+- `/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/` → anchor: "sigorta tahkim komisyonu başvurusu"
 
 **Sözlük Terimleri:**
 - `/sozluk/maddi-tazminat/` → "maddi tazminat"
@@ -404,7 +408,9 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 - [ ] En az 2 sibling (kardeş) makale linki var mı?
 - [ ] En az 1 sözlük terimi linki var mı?
 - [ ] Toplam 5+ iç link var mı?
+- [ ] **ARAŞTIRMA:** Kanun maddeleri ve Yargıtay kararları WebSearch ile doğrulandı mı?
 - [ ] Kanun maddesi referansı var mı?
+- [ ] Gerçek Yargıtay kararı referansı var mı (daire, esas/karar no, yıl)?
 - [ ] En az 2 pratik senaryo/örnek var mı?
 - [ ] FAQ bölümü var mı (4+ soru)?
 - [ ] "Profesyonel Hukuki Destek" CTA bölümü var mı?
@@ -422,16 +428,21 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 
 ## ÖNEMLİ NOTLAR
 
-1. **Yeni bir blog yazısı yazıldığında:** Bu SKILL.md'deki "Mevcut Blog Yazıları" bölümüne yeni yazıyı elle ekle veya kullanıcıya hatırlat.
-2. **Yeni bir sözlük terimi eklendiğinde:** "Sözlük Terimleri" bölümünü güncelle.
-3. **İçerik üretirken mevcut dosyaları MUTLAKA oku** — tekrar eden içerik üretme.
-4. **Her zaman Türkçe yaz.** İngilizce terim kullanma (zorunlu hukuki terimler hariç: mobbing, malpraktis vb.)
-5. **Unsplash görselleri için:** `?q=80&w=1200&auto=format&fit=crop` parametrelerini kullan.
-6. **ZORUNLU — Her blog yazısı üretildikten sonra sözlük güncellemesi yap:**
+1. **ZORUNLU — Derin Araştırma:** İçerik üretmeden önce WebSearch ile kapsamlı araştırma yap. Her yazıda:
+   - **Gerçek kanun maddeleri:** Spesifik madde numaralarını araştırarak doğrula (TBK, İK 4857, TMK, SGK 5510 vb.).
+   - **Gerçek Yargıtay kararları:** Doğru daire, esas/karar numarası ve yıl bilgisiyle atıf yap. Uydurma karar numarası KULLANMA. WebSearch ile "Yargıtay [daire] [konu] kararı" şeklinde araştır ve doğrulanmış kararları kullan.
+   - **Güncel mevzuat değişiklikleri:** Yazı konusuyla ilgili son yasal düzenlemeleri araştır.
+   - Araştırma yapılmadan, doğrulanmamış bilgiyle içerik üretme. Her hukuki iddia bir kaynağa dayanmalı.
+2. **Yeni bir blog yazısı yazıldığında:** Bu SKILL.md'deki "Mevcut Blog Yazıları" bölümüne yeni yazıyı elle ekle veya kullanıcıya hatırlat.
+3. **Yeni bir sözlük terimi eklendiğinde:** "Sözlük Terimleri" bölümünü güncelle.
+4. **İçerik üretirken mevcut dosyaları MUTLAKA oku** — tekrar eden içerik üretme.
+5. **Her zaman Türkçe yaz.** İngilizce terim kullanma (zorunlu hukuki terimler hariç: mobbing, malpraktis vb.)
+6. **Unsplash görselleri için:** `?q=80&w=1200&auto=format&fit=crop` parametrelerini kullan.
+7. **ZORUNLU — Her blog yazısı üretildikten sonra sözlük güncellemesi yap:**
    - Yazıda link verilen mevcut sözlük terimlerinin `relatedBlogSlugs` alanına yeni blog slug'ını ekle.
    - Yazıda sıkça geçen ama sözlükte bulunmayan kavramlar varsa yeni terim oluştur.
    - Bu adım atlanMAZ; blog + sözlük birlikte üretilir.
-7. **ZORUNLU — Her blog yazısı üretildikten sonra pillar sayfa güncellemesi yap:**
+8. **ZORUNLU — Her blog yazısı üretildikten sonra pillar sayfa güncellemesi yap:**
    - İlgili cluster'ın pillar sayfasındaki "İlgili Makaleler" bölümüne yeni yazının linkini ekle.
    - Pillar sayfada "İlgili Makaleler" bölümü yoksa SSS bölümünden önce oluştur.
    - Pillar sayfa dosyaları: `src/app/izmir-kira-avukati/page.tsx`, `src/app/izmir-is-avukati/page.tsx`, `src/app/izmir-bosanma-avukati/page.tsx`, `src/app/izmir-tazminat-avukati/page.tsx`

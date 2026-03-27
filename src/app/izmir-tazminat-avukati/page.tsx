@@ -657,6 +657,9 @@ export default function IzmirTazminatAvukatiPage() {
                                 <Link href="/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Destekten Yoksun Kalma Tazminatı: Hesaplama ve Dava Süreci
                                 </Link>
+                                <Link href="/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Sigorta Tahkim Komisyonu Başvurusu: Trafik Kazası Tazminatı
+                                </Link>
                             </div>
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
