@@ -218,6 +218,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/` → anchor: "zorunlu arabuluculuk"
 - `/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/` → anchor: "gayrimenkul hukuki gelişmeler"
 - `/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/` → anchor: "kira sözleşmesi fesih sebepleri"
+- `/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/` → anchor: "depozito iadesi davası"
 
 **Sözlük Terimleri:**
 - `/sozluk/tahliye-taahhutnamesi/` → "tahliye taahhütnamesi"
@@ -255,6 +256,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
 - `/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci/` → anchor: "işe iade davası şartları"
 - `/blog/ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari/` → anchor: "ihbar tazminatı hesaplama"
+- `/blog/fazla-mesai-ucreti-alacagi-ispat-ve-zamanasimi/` → anchor: "fazla mesai ücreti alacağı"
 
 **Sözlük Terimleri:**
 - `/sozluk/kidem-tazminati/` → "kıdem tazminatı"
@@ -263,6 +265,8 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/sozluk/mobbing/` → "mobbing"
 - `/sozluk/hakli-fesih/` → "haklı fesih"
 - `/sozluk/is-guvencesi/` → "iş güvencesi"
+- `/sozluk/fazla-mesai/` → "fazla mesai"
+- `/sozluk/is-goremezlik/` → "iş göremezlik"
 
 **Yazılabilecek Konular:**
 1. İşe İade Davası Şartları ve Arabuluculuk Süreci 2026
@@ -291,6 +295,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/` → anchor: "nafaka hesaplama"
 - `/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/` → anchor: "çekişmeli boşanma davası"
 - `/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/` → anchor: "boşanmada mal paylaşımı"
+- `/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/` → anchor: "boşanmada tazminat davası"
 
 **Sözlük Terimleri:**
 - `/sozluk/anlasmali-bosanma/` → "anlaşmalı boşanma"
@@ -328,6 +333,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
 - `/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/` → anchor: "destekten yoksun kalma tazminatı"
 - `/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/` → anchor: "sigorta tahkim komisyonu başvurusu"
+- `/blog/is-goremezlik-raporu-ve-maluliyet-tazminati-davasi/` → anchor: "iş göremezlik raporu ve maluliyet tazminatı"
 
 **Sözlük Terimleri:**
 - `/sozluk/maddi-tazminat/` → "maddi tazminat"

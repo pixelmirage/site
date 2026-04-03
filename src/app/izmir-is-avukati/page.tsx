@@ -708,6 +708,9 @@ export default function IzmirIsAvukatiPage() {
                                 <Link href="/blog/ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İhbar Tazminatı Nedir? 2026 Hesaplama Rehberi ve Hak Kazanma Şartları
                                 </Link>
+                                <Link href="/blog/fazla-mesai-ucreti-alacagi-ispat-ve-zamanasimi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Fazla Mesai Ücreti Alacağı: İspat Yöntemleri ve Zamanaşımı Rehberi
+                                </Link>
                             </div>
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />
