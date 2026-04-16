@@ -90,8 +90,16 @@ $body = @{
         'https://mertkagancetin.com/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/',
         'https://mertkagancetin.com/blog/trafik-kazasi-tazminati-alma-sureci/',
         'https://mertkagancetin.com/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/',
+        'https://mertkagancetin.com/blog/ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari/',
+        'https://mertkagancetin.com/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/',
+        'https://mertkagancetin.com/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/',
+        'https://mertkagancetin.com/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/',
+        'https://mertkagancetin.com/blog/fazla-mesai-ucreti-alacagi-ispat-ve-zamanasimi/',
+        'https://mertkagancetin.com/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/',
+        'https://mertkagancetin.com/blog/is-goremezlik-raporu-ve-maluliyet-tazminati-davasi/',
+        'https://mertkagancetin.com/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/',
 
-        # Glossary terms (30)
+        # Glossary terms (32)
         'https://mertkagancetin.com/sozluk/tahliye-taahhutnamesi/',
         'https://mertkagancetin.com/sozluk/kira-tespit-davasi/',
         'https://mertkagancetin.com/sozluk/ihtiyac-nedeniyle-tahliye/',
@@ -121,14 +129,16 @@ $body = @{
         'https://mertkagancetin.com/sozluk/haksiz-fiil/',
         'https://mertkagancetin.com/sozluk/is-guvencesi/',
         'https://mertkagancetin.com/sozluk/evlilik-birliginin-temelden-sarsilmasi/',
-        'https://mertkagancetin.com/sozluk/ecrimisil/'
+        'https://mertkagancetin.com/sozluk/ecrimisil/',
+        'https://mertkagancetin.com/sozluk/fazla-mesai/',
+        'https://mertkagancetin.com/sozluk/is-goremezlik/'
     )
 } | ConvertTo-Json -Depth 3
 
 try {
     $response = Invoke-WebRequest -Uri 'https://api.indexnow.org/indexnow' -Method POST -ContentType 'application/json; charset=utf-8' -Body $body -UseBasicParsing
     Write-Host "IndexNow Status: $($response.StatusCode)"
-    Write-Host "Submitted 106 URLs to Bing via IndexNow"
+    Write-Host "Submitted 117 URLs to Bing via IndexNow"
 } catch {
     Write-Host "IndexNow Status: $($_.Exception.Response.StatusCode.value__)"
     Write-Host "Response: $($_.Exception.Message)"

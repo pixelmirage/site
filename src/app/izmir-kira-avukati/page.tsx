@@ -762,6 +762,9 @@ export default function IzmirKiraAvukatiPage() {
                                 <Link href="/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Depozito İadesi Davası: Kiracının Hakları ve Hukuki Süreç
                                 </Link>
+                                <Link href="/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Kiracının Aidat Borcu ve Ev Sahibinin Sorumlulukları
+                                </Link>
                             </div>
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />

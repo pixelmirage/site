@@ -683,6 +683,9 @@ export default function IzmirBosanmaAvukatiPage() {
                                 <Link href="/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Boşanmada Tazminat Davası: Maddi ve Manevi Tazminat Şartları
                                 </Link>
+                                <Link href="/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    → Velayet Değişikliği Davası: Şartlar ve Mahkeme Kriterleri
+                                </Link>
                             </div>
                             <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
                                 Tüm Makaleler <ArrowRight className="w-3 h-3" />

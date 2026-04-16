@@ -149,7 +149,7 @@ Arabuluculukta anlaşma sağlanamazsa, son tutanağın düzenlendiği tarihten i
         legalBasis: "7445 sayılı Kanun",
         category: "haklar",
         relatedTermSlugs: ["kira-tespit-davasi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
-        relatedBlogSlugs: ["kira-hukukunda-zorunlu-arabuluculuk-sureci"],
+        relatedBlogSlugs: ["kira-hukukunda-zorunlu-arabuluculuk-sureci", "kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari"],
         relatedServiceAnchor: "#tahliye",
         faqs: [
             {
@@ -426,7 +426,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         legalBasis: "TBK m. 339-356",
         category: "haklar",
         relatedTermSlugs: ["kira-sozlesmesi", "depozito", "kira-artis-orani", "10-yillik-uzama-suresi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "depozito-iadesi-davasi-kiracinin-haklari-ve-surec"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "depozito-iadesi-davasi-kiracinin-haklari-ve-surec", "kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "UJ35T2zOXH0",
         faqs: [
@@ -775,7 +775,7 @@ Velayeti almayan ebeveynin kişisel ilişki kurma hakkı vardır. Bu hak, çocuk
         legalBasis: "TMK m. 335-351",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
-        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -811,7 +811,7 @@ Nafaka ödenmezse icra takibi yapılabilir ve 3 aya kadar tazyik hapsi kararı v
         legalBasis: "TMK m. 169, 175, 182",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "velayet", "mal-paylasimi"],
-        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri"],
+        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {

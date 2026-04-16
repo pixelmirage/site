@@ -1,7 +1,7 @@
 ---
 name: icerik-uret
 description: "mertkagancetin.com icin topical authority stratejisine uygun hukuki icerik uretir. Blog yazisi, sozluk terimi veya icerik analizi yapar. /icerik-uret komutuyla calistirilir."
-argument-hint: "[blog|sozluk|analiz] [kira|is|bosanma|tazminat] [konu]"
+argument-hint: "[blog|sozluk|analiz] [kira|bosanma] [konu]"
 ---
 
 # mertkagancetin.com Hukuki İçerik Üretici
@@ -14,7 +14,7 @@ Bu skill, Mert Kağan Çetin Hukuk Bürosu web sitesi (mertkagancetin.com) için
 /icerik-uret                              → Eksik içerik analizi, öneriler
 /icerik-uret analiz                       → Tüm cluster'ları tarayıp eksik konuları listeler
 /icerik-uret blog kira "Depozito İadesi"  → Spesifik blog yazısı üretir
-/icerik-uret sozluk is "İşe İade Davası"  → Sözlük terimi üretir
+/icerik-uret sozluk bosanma "Velayet"     → Sözlük terimi üretir
 ```
 
 Argüman verilmezse veya `analiz` komutu verilirse: mevcut içerikleri tara, eksik konuları listele, hangi cluster'da eksik var göster, öncelik sıralaması sun.
@@ -153,7 +153,7 @@ Sözlük terimleri `src/lib/glossary.ts` dosyasındaki `glossaryTerms` dizisine 
 Pratik örnekler, uygulama detayları, dikkat edilmesi gerekenler.
 Yargıtay kararı referansı içerebilir.`,
     legalBasis: "TBK m. XXX",
-    category: "is-hukuku",  // tahliye | kira-bedeli | sozlesme | haklar | is-hukuku | bosanma | tazminat
+    category: "bosanma",  // tahliye | kira-bedeli | sozlesme | haklar | bosanma
     relatedTermSlugs: ["ilgili-terim-1", "ilgili-terim-2"],
     relatedBlogSlugs: ["ilgili-blog-slug"],
     relatedServiceAnchor: "#ilgili-hizmet",
@@ -200,7 +200,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 
 ---
 
-## 4 Topic Cluster Tanımı
+## 2 Topic Cluster Tanımı
 
 ### CLUSTER 1: KİRA HUKUKU
 
@@ -219,6 +219,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler/` → anchor: "gayrimenkul hukuki gelişmeler"
 - `/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/` → anchor: "kira sözleşmesi fesih sebepleri"
 - `/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/` → anchor: "depozito iadesi davası"
+- `/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/` → anchor: "kiracının aidat borcu"
 
 **Sözlük Terimleri:**
 - `/sozluk/tahliye-taahhutnamesi/` → "tahliye taahhütnamesi"
@@ -243,46 +244,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 
 ---
 
-### CLUSTER 2: İŞ HUKUKU
-
-- **Pillar Sayfa:** `/izmir-is-avukati/`
-- **Anchor:** "İzmir iş avukatı"
-- **Kategori:** İş Hukuku
-- **Tags:** `["iş hukuku", "İzmir iş avukatı", "işçi hakları"]`
-
-**Mevcut Blog Yazıları:**
-- `/blog/isten-cikarildiginda-ne-yapmali/` → anchor: "işten çıkarılınca ne yapmalı"
-- `/blog/kidem-tazminati-nasil-hesaplanir/` → anchor: "kıdem tazminatı hesaplama"
-- `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
-- `/blog/ise-iade-davasi-sartlari-ve-arabuluculuk-sureci/` → anchor: "işe iade davası şartları"
-- `/blog/ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari/` → anchor: "ihbar tazminatı hesaplama"
-- `/blog/fazla-mesai-ucreti-alacagi-ispat-ve-zamanasimi/` → anchor: "fazla mesai ücreti alacağı"
-
-**Sözlük Terimleri:**
-- `/sozluk/kidem-tazminati/` → "kıdem tazminatı"
-- `/sozluk/ihbar-tazminati/` → "ihbar tazminatı"
-- `/sozluk/ise-iade-davasi/` → "işe iade davası"
-- `/sozluk/mobbing/` → "mobbing"
-- `/sozluk/hakli-fesih/` → "haklı fesih"
-- `/sozluk/is-guvencesi/` → "iş güvencesi"
-- `/sozluk/fazla-mesai/` → "fazla mesai"
-- `/sozluk/is-goremezlik/` → "iş göremezlik"
-
-**Yazılabilecek Konular:**
-1. İşe İade Davası Şartları ve Arabuluculuk Süreci 2026
-2. İhbar Tazminatı Nedir? Hesaplama ve Hak Kazanma Şartları
-3. Fazla Mesai Ücreti Alacağı: İspat ve Zamanaşımı
-4. İşyerinde Mobbing: Hukuki Tanım ve Dava Süreci
-5. Haklı Nedenle Fesih: İşçinin İş Sözleşmesini Sona Erdirmesi
-6. SGK Bildirimi Yapılmadan Çalıştırma: Hizmet Tespit Davası
-7. Yıllık İzin Ücreti Alacağı ve İşçinin Hakları
-8. İş Sözleşmesi Türleri: Belirli Süreli ve Belirsiz Süreli
-9. Sendika Üyeliği Nedeniyle İşten Çıkarılma ve Sendikal Tazminat
-10. Ücretsiz İzin Hakkı: İşverenin ve İşçinin Yükümlülükleri
-
----
-
-### CLUSTER 3: BOŞANMA HUKUKU
+### CLUSTER 2: BOŞANMA HUKUKU
 
 - **Pillar Sayfa:** `/izmir-bosanma-avukati/`
 - **Anchor:** "İzmir boşanma avukatı"
@@ -296,6 +258,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/` → anchor: "çekişmeli boşanma davası"
 - `/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/` → anchor: "boşanmada mal paylaşımı"
 - `/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/` → anchor: "boşanmada tazminat davası"
+- `/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/` → anchor: "velayet değişikliği davası"
 
 **Sözlük Terimleri:**
 - `/sozluk/anlasmali-bosanma/` → "anlaşmalı boşanma"
@@ -319,52 +282,14 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 
 ---
 
-### CLUSTER 4: TAZMİNAT HUKUKU
-
-- **Pillar Sayfa:** `/izmir-tazminat-avukati/`
-- **Anchor:** "İzmir tazminat avukatı"
-- **Kategori:** Tazminat Hukuku
-- **Tags:** `["tazminat hukuku", "İzmir tazminat avukatı", "tazminat davası"]`
-
-**Mevcut Blog Yazıları:**
-- `/blog/trafik-kazasi-tazminati-alma-sureci/` → anchor: "trafik kazası tazminatı"
-- `/blog/maddi-ve-manevi-tazminat-davasi-farklari/` → anchor: "maddi ve manevi tazminat farkları"
-- `/blog/malpraktis-davasi-doktor-hatasi-tazminati/` → anchor: "malpraktis davası"
-- `/blog/is-kazasi-tazminati-sureci-ve-haklariniz/` → anchor: "iş kazası tazminatı"
-- `/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/` → anchor: "destekten yoksun kalma tazminatı"
-- `/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/` → anchor: "sigorta tahkim komisyonu başvurusu"
-- `/blog/is-goremezlik-raporu-ve-maluliyet-tazminati-davasi/` → anchor: "iş göremezlik raporu ve maluliyet tazminatı"
-
-**Sözlük Terimleri:**
-- `/sozluk/maddi-tazminat/` → "maddi tazminat"
-- `/sozluk/manevi-tazminat/` → "manevi tazminat"
-- `/sozluk/malpraktis/` → "malpraktis"
-- `/sozluk/destekten-yoksun-kalma/` → "destekten yoksun kalma"
-- `/sozluk/haksiz-fiil/` → "haksız fiil"
-- `/sozluk/ecrimisil/` → "ecrimisil"
-
-**Yazılabilecek Konular:**
-1. Destekten Yoksun Kalma Tazminatı: Hesaplama ve Dava Süreci
-2. Sigorta Tahkim Komisyonu Başvurusu: Trafik Kazası Tazminatı
-3. İş Göremezlik Raporu ve Maluliyet Tazminatı Davası
-4. Haksız Fiil Tazminatı: TBK Kapsamında Sorumluluk
-5. Trafik Kazasında Kusur Oranı ve Bilirkişi Raporu
-6. Devlet Hastanesinde Tıbbi Hata: İdari Yargıda Tam Yargı Davası
-7. Manevi Tazminat Miktarı Nasıl Belirlenir? Yargıtay Kriterleri
-8. Ürün Sorumluluğundan Doğan Tazminat Davaları
-9. Belediye Hizmet Kusuru Nedeniyle Tazminat Davası
-10. Tazminat Davasında Zamanaşımı Süreleri ve İstisnalar
-
----
-
 ## Cross-Cluster Link Havuzu
 
-Diğer hukuk alanlarına cross-link verirken kullan:
+Kira ve boşanma cluster'ları arasında cross-link verirken kullan. İş ve tazminat sayfaları da sitede mevcut, gerektiğinde cross-link verilebilir:
 
 - `/izmir-kira-avukati/` → "kira avukatı"
-- `/izmir-is-avukati/` → "iş avukatı"
 - `/izmir-bosanma-avukati/` → "boşanma avukatı"
-- `/izmir-tazminat-avukati/` → "tazminat avukatı"
+- `/izmir-is-avukati/` → "iş avukatı" (cross-link)
+- `/izmir-tazminat-avukati/` → "tazminat avukatı" (cross-link)
 - `/hizmetler/` → "hizmetlerimiz"
 - `/hakkimda/` → "hakkımızda"
 - `/iletisim/` → "iletişim"
@@ -377,7 +302,7 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 
 1. `src/content/blog/` dizinindeki tüm `.mdx` dosyalarını tara.
 2. `src/lib/glossary.ts` dosyasındaki mevcut terimleri oku.
-3. Yukarıdaki 40 topic'i kontrol et: hangisi yazılmış, hangisi yazılmamış?
+3. Yukarıdaki 20 topic'i kontrol et: hangisi yazılmış, hangisi yazılmamış?
 4. Her cluster'daki blog yazısı sayısını göster.
 5. Dengeli büyüme için hangi cluster'a öncelik verilmesi gerektiğini öner.
 6. Sözlük'te eksik terimler var mı kontrol et.
@@ -390,10 +315,8 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 ### Blog Yazıları (Mevcut / Toplam Hedef)
 | Cluster | Mevcut | Hedef | Eksik |
 |---------|--------|-------|-------|
-| Kira    | 7/17   | ...   | ...   |
-| İş      | 3/13   | ...   | ...   |
-| Boşanma | 3/13   | ...   | ...   |
-| Tazminat| 4/14   | ...   | ...   |
+| Kira    | 9/19   | ...   | ...   |
+| Boşanma | 6/16   | ...   | ...   |
 
 ### Öncelik Sıralaması
 1. [En az içeriğe sahip cluster] — [önerilen konu]
@@ -451,5 +374,5 @@ Diğer hukuk alanlarına cross-link verirken kullan:
 8. **ZORUNLU — Her blog yazısı üretildikten sonra pillar sayfa güncellemesi yap:**
    - İlgili cluster'ın pillar sayfasındaki "İlgili Makaleler" bölümüne yeni yazının linkini ekle.
    - Pillar sayfada "İlgili Makaleler" bölümü yoksa SSS bölümünden önce oluştur.
-   - Pillar sayfa dosyaları: `src/app/izmir-kira-avukati/page.tsx`, `src/app/izmir-is-avukati/page.tsx`, `src/app/izmir-bosanma-avukati/page.tsx`, `src/app/izmir-tazminat-avukati/page.tsx`
+   - Pillar sayfa dosyaları: `src/app/izmir-kira-avukati/page.tsx`, `src/app/izmir-bosanma-avukati/page.tsx`
    - Bu adım atlanMAZ; blog + sözlük + pillar sayfa tek bir iş olarak ele alınır.
