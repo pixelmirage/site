@@ -74,7 +74,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-20",
+        "article:modified_time": "2026-04-16",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/",
@@ -232,7 +232,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 15 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 16 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p className="text-xl leading-relaxed">
@@ -445,7 +445,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </ul>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak velayet davalarında çocuğun üstün yararını gözetiyoruz. En adil sonucu almak için titizlikle çalışıyoruz. Kişisel ilişki (görüşme) düzenlemesi de velayet kararının önemli bir parçasıdır.
+                            <strong>İzmir boşanma avukatı</strong> olarak velayet davalarında çocuğun üstün yararını gözetiyoruz. En adil sonucu almak için titizlikle çalışıyoruz. Kişisel ilişki (görüşme) düzenlemesi de velayet kararının önemli bir parçasıdır. Boşanma sonrası koşulların değişmesi halinde <Link href="/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/" className="text-secondary font-bold">velayet değişikliği davası</Link> açılarak mevcut kararın yeniden değerlendirilmesi talep edilebilir.
                         </p>
 
                         <div className="not-prose my-6 p-4 bg-primary/5 border border-primary/10 rounded-xl">

@@ -75,7 +75,7 @@ export const metadata: Metadata = {
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-03-20",
+        "article:modified_time": "2026-04-16",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
@@ -241,7 +241,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 15 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 16 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p className="text-xl leading-relaxed">
@@ -586,6 +586,9 @@ export default function IzmirKiraAvukatiPage() {
                             </li>
                             <li>
                                 <strong>Onarım hakkı:</strong> Kiracı, taşınmazdaki esaslı ayıpların giderilmesini ev sahibinden isteyebilir. Onarım yapılmazsa kira bedelinden indirim talep edilebilir.
+                            </li>
+                            <li>
+                                <strong>Aidat ve yan giderler:</strong> Kiracı olağan kullanımdan doğan yan giderleri (aidat, ortak alan elektriği) ödemekle yükümlüdür. Ancak çatı onarımı veya asansör yenileme gibi demirbaş giderlerinden ev sahibi sorumludur. <Link href="/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/" className="text-secondary font-bold">Aidat borcu ve sorumluluk sınırları</Link> hakkında detaylı bilgi edinin.
                             </li>
                             <li>
                                 <strong>Ön alım hakkı:</strong> Kiralanan satışa çıkarıldığında kiracının öncelikli satın alma hakkı vardır. Yeni malik de mevcut <strong>kira sözleşmesi</strong>nin şartlarına uymak zorundadır.
