@@ -65,9 +65,9 @@ function LegalServiceSchema() {
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Kira Avukatı | Tahliye & Kira Tespit Davası | Av. Mert Kağan Çetin",
+        absolute: "İzmir Kira Avukatı - Uzman Hukuki Danışmanlık",
     },
-    description: "İzmir kira avukatı Av. Mert Kağan Çetin — kiracı tahliye davaları, kira tespit ve artırım davaları, kira sözleşmesi uyuşmazlıklarında uzman hukuki destek. Bayraklı, İzmir.",
+    description: "İzmir kira avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. Kira sözleşmesi, tahliye davası, kira bedeli artışı, kira alacağı gibi konularda size yardımcı olabiliriz.",
     keywords: ["İzmir kira avukatı", "kira avukatı izmir", "kira hukuku avukatı izmir", "izmir kira hukuku avukatı", "kira artırım avukatı izmir", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "izmir en iyi kira avukatı", "kira avukatı izmir yakınında", "kira hukuku avukatları izmir"],
     openGraph: {
         title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
