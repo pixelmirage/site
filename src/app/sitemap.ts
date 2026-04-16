@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog/utils';
-import { districts, getSlugFromDistrict, getAllServiceSlugs } from '@/lib/districts';
+import { districts } from '@/lib/districts';
 import { glossaryTerms } from '@/lib/glossary';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -15,19 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    // District Landing Pages (all services) — fixed date reflecting last content update
-    const districtLastModified = new Date('2026-03-16');
-    const districtSitemap = getAllServiceSlugs().map((slug) => ({
-        url: `${baseUrl}/${slug}/`,
-        lastModified: districtLastModified,
-        changeFrequency: 'monthly' as const,
-        priority: 0.8,
-    }));
+    // District Landing Pages — noindex olduğu için sitemap'ten çıkarıldı
 
     // Static Routes — individual last modified dates per page
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
         '': { lastModified: '2026-03-12', priority: 1 },
-        '/izmir-kira-avukati': { lastModified: '2026-03-20', priority: 1 },
+        '/izmir-kira-avukati': { lastModified: '2026-04-16', priority: 1 },
         '/izmir-is-avukati': { lastModified: '2026-03-20', priority: 1 },
         '/izmir-bosanma-avukati': { lastModified: '2026-03-20', priority: 1 },
         '/izmir-tazminat-avukati': { lastModified: '2026-03-22', priority: 1 },
@@ -72,5 +65,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    return [...routes, ...districtSitemap, ...glossarySitemap, ...blogSitemap];
+    return [...routes, ...glossarySitemap, ...blogSitemap];
 }

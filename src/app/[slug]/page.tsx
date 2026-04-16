@@ -44,6 +44,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             absolute: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
         },
         description: data.description || `${data.name} bölgesinde ${config.label.toLowerCase()} hizmetleri için profesyonel avukatlık desteği alın.`,
+        robots: {
+            index: false,
+            follow: true,
+        },
         openGraph: {
             title: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
             description: data.description,
