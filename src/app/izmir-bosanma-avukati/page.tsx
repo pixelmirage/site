@@ -231,10 +231,6 @@ export default function IzmirBosanmaAvukatiPage() {
                             <strong>İzmir boşanma avukatı</strong>, evlilik birliğinin sona erdirilmesi sürecinde eşleri hukuki olarak temsil eden avukattır. Anlaşmalı ve çekişmeli boşanma davaları, velayet, nafaka ve mal paylaşımı konularında uzmanlaşmıştır. Av. Mert Kağan Çetin, <a href="https://www.izmirbarosu.org.tr/" target="_blank" rel="noopener noreferrer">İzmir Barosu</a>&apos;na kayıtlıdır. Bayraklı merkezli ofisinden İzmir genelinde aile hukuku hizmeti verir.
                         </p>
 
-                        <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 16 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
-                        </p>
-
                         <p className="text-xl leading-relaxed">
                             İzmir'de aile hukuku alanında uzmanlaşmış bir avukat olarak boşanma sürecinde profesyonel hukuki destek sunuyoruz. <a href="https://izmir.adalet.gov.tr/" target="_blank" rel="noopener noreferrer" className="text-secondary font-bold no-underline"><strong>Bayraklı Adliyesi</strong></a> (İzmir Adliyesi) yakınındaki ofisimizden tüm süreçleri yakından takip ediyoruz. <strong>İzmir boşanma avukatı</strong> olarak anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında müvekkillerimize rehberlik ediyoruz.
                         </p>
@@ -829,6 +825,10 @@ export default function IzmirBosanmaAvukatiPage() {
                                 ))}
                             </div>
                         </div>
+
+                        <p className="text-sm text-slate-500 italic text-center mt-12">
+                            Son güncelleme: 16 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                        </p>
 
             </article>
 
