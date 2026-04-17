@@ -17,6 +17,7 @@ const serviceLinks = [
 
 const toolLinks = [
     { href: "/kira-artis-orani-hesaplama/", label: "Kira Artış Hesaplama" },
+    { href: "/kira-sozlesmesi-ornegi/", label: "Kira Sözleşmesi Örneği" },
     { href: "/tahliye-taahhutnamesi/", label: "Tahliye Taahhütnamesi" },
     { href: "/kidem-tazminati-hesaplama/", label: "Kıdem Tazminatı Hesaplama" },
     { href: "/sozluk/", label: "Hukuk Sözlüğü" },

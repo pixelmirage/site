@@ -37,6 +37,7 @@ export function Footer() {
                             <li><Link href="/izmir-is-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İşe İade & Tazminat</Link></li>
                             <li><Link href="/izmir-bosanma-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Boşanma & Velayet</Link></li>
                             <li><Link href="/kira-artis-orani-hesaplama/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Artış Hesaplama</Link></li>
+                            <li><Link href="/kira-sozlesmesi-ornegi/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Sözleşmesi Örneği</Link></li>
                             <li><Link href="/tahliye-taahhutnamesi/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tahliye Taahhütnamesi</Link></li>
                         </ul>
                     </div>
