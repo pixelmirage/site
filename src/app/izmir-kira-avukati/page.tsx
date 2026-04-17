@@ -288,6 +288,7 @@ export default function IzmirKiraAvukatiPage() {
                             <Image
                                 src="/images/infographics/tahliye-sebepleri-ve-dayanaklari.webp"
                                 alt="Kiracı tahliye sebepleri ve hukuki dayanakları: TBK m. 350 ihtiyaç, m. 352 taahhütname ve iki haklı ihtar, m. 347 süre sonu ile tahliye davası açma koşulları"
+                                title="Kiracı tahliye sebepleri ve hukuki dayanakları"
                                 width={768}
                                 height={1024}
                                 className="w-full max-w-md mx-auto rounded-xl"
@@ -351,7 +352,7 @@ export default function IzmirKiraAvukatiPage() {
                                 <p className="text-white font-bold">Yazar Hakkında</p>
                             </div>
                             <div className="p-6 flex flex-col sm:flex-row gap-5">
-                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira Avukatı" width={96} height={96} className="w-24 h-24 rounded-xl object-cover flex-shrink-0" />
+                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira Avukatı" title="Av. Mert Kağan Çetin - İzmir Kira Avukatı" width={96} height={96} className="w-24 h-24 rounded-xl object-cover flex-shrink-0" />
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-3">

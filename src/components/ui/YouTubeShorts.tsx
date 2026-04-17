@@ -32,6 +32,7 @@ export function YouTubeShorts({ videoId, title }: YouTubeShortsProps) {
                             <img
                                 src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                                 alt={title}
+                                title={title}
                                 loading="lazy"
                                 className="w-full h-full object-cover"
                             />
