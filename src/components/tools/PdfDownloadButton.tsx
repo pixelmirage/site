@@ -21,24 +21,27 @@ export function PdfDownloadButton() {
             doc.addFileToVFS("Roboto-Regular.ttf", RobotoBase64);
             doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
             doc.setFont("Roboto");
+            doc.setTextColor(0, 0, 0);
 
             const pw = doc.internal.pageSize.getWidth();
             const margin = 25;
             const contentWidth = pw - margin * 2;
 
             // Title
-            doc.setFontSize(18);
+            doc.setFontSize(20);
+            doc.setTextColor(0, 0, 0);
             const title = "TAHLİYE TAAHHÜTNAMESİ";
             const titleWidth = doc.getTextWidth(title);
             const titleX = (pw - titleWidth) / 2;
             doc.text(title, titleX, 35);
-            doc.setLineWidth(0.5);
-            doc.line(titleX - 2, 37, titleX + titleWidth + 2, 37);
+            doc.setLineWidth(0.6);
+            doc.line(titleX - 2, 38, titleX + titleWidth + 2, 38);
 
             // Form fields
-            doc.setFontSize(12);
-            let y = 55;
-            const lineGap = 14;
+            doc.setFontSize(13);
+            doc.setTextColor(0, 0, 0);
+            let y = 56;
+            const lineGap = 15;
             const dotLine = ".....................................................................................";
 
             const fields = [
@@ -49,7 +52,8 @@ export function PdfDownloadButton() {
 
             for (const field of fields) {
                 doc.setFont("Roboto", "normal");
-                doc.setFontSize(12);
+                doc.setFontSize(13);
+                doc.setTextColor(0, 0, 0);
                 doc.text(field.label, margin, y);
                 const labelWidth = doc.getTextWidth(field.label + " ");
                 doc.text(field.dots.substring(0, Math.floor((contentWidth - labelWidth) / 1.8)), margin + labelWidth, y);
@@ -57,19 +61,21 @@ export function PdfDownloadButton() {
             }
 
             // Address (2 lines)
+            doc.setTextColor(0, 0, 0);
             doc.text("TAHLİYE EDİLECEK MECURUN ADRESİ:", margin, y);
-            y += 7;
+            y += 8;
             doc.text(dotLine, margin, y);
-            y += 7;
+            y += 8;
             doc.text(dotLine, margin, y);
             y += lineGap;
 
             // Date
             doc.text("TAHLİYE TARİHİ:  ..... / ..... / 20.....", margin, y);
-            y += 20;
+            y += 22;
 
             // Commitment text
-            doc.setFontSize(11);
+            doc.setFontSize(12);
+            doc.setTextColor(0, 0, 0);
             const paragraphs = [
                 "Halen kiracı olarak kullanmakta olduğum yukarıda adresi yazılı taşınmazı, hiçbir ihtar ve ihbara gerek kalmaksızın, kayıtsız ve şartsız olarak, 6098 sayılı Türk Borçlar Kanunu'nun 352/1 maddesi gereğince, yukarıda belirtilen tarihte tahliye edeceğimi;",
                 "Belirtilen tarihte taşınmazı boş ve eksiksiz olarak mal sahibine teslim edeceğimi;",
@@ -79,28 +85,29 @@ export function PdfDownloadButton() {
             for (const para of paragraphs) {
                 const lines = doc.splitTextToSize(para, contentWidth);
                 doc.text(lines, margin, y, { align: "justify" });
-                y += lines.length * 5.5 + 4;
+                y += lines.length * 6 + 5;
             }
 
             // Signature area
             y = Math.max(y + 25, 230);
 
             // Left: Date
-            doc.setFontSize(12);
+            doc.setFontSize(13);
+            doc.setTextColor(0, 0, 0);
             doc.text("DÜZENLEME TARİHİ", margin, y);
-            doc.text("..... / ..... / 20.....", margin, y + 20);
+            doc.text("..... / ..... / 20.....", margin, y + 22);
 
             // Right: Signature
-            const rightX = pw - margin - 50;
+            const rightX = pw - margin - 55;
             doc.text("TAAHHÜT EDEN (KİRACI)", rightX, y);
             doc.setFontSize(9);
-            doc.setTextColor(150, 150, 150);
-            doc.text("(İmza)", rightX + 20, y + 12);
+            doc.setTextColor(130, 130, 130);
+            doc.text("(İmza)", rightX + 22, y + 14);
 
             // Footer
             doc.setFontSize(8);
-            doc.setTextColor(150, 150, 150);
-            doc.text("mertkagancetin.com | Bu şablon bilgilendirme amaçlıdır.", pw / 2, 285, { align: "center" });
+            doc.setTextColor(130, 130, 130);
+            doc.text("mertkagancetin.com | Bu sablon bilgilendirme amaclidir.", pw / 2, 285, { align: "center" });
 
             doc.save("tahliye-taahhutnamesi-2026.pdf");
         } catch (error) {
