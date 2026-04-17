@@ -7,7 +7,6 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
-import { HowToSchema } from "@/components/seo/HowToSchema";
 import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
@@ -77,17 +76,6 @@ export default function IzmirIsAvukatiPage() {
                 name="İş Hukuku Danışmanlığı"
                 description="İzmir'de işe iade davası, kıdem tazminatı, iş kazası tazminatı ve işçi alacakları davası hizmetleri."
                 serviceType="İş Hukuku"
-            />
-            <HowToSchema
-                name="İşten Çıkarılınca Ne Yapılır?"
-                description="Haksız işten çıkarma sonrası işe iade davası açma süreci."
-                steps={[
-                    { name: "Fesih bildirimini kontrol edin", text: "İşverenin fesih bildirimini yazılı olarak alın. Fesih tarihini ve sebebini not edin." },
-                    { name: "1 ay içinde arabulucuya başvurun", text: "Fesih bildiriminden itibaren 1 ay içinde zorunlu arabuluculuk başvurusu yapın. Bu süreyi kaçırmak hakkınızı kaybettirir." },
-                    { name: "Arabuluculuk sürecine katılın", text: "Arabuluculuk görüşmelerine katılın. Süreç en fazla 3 hafta sürer. Anlaşma sağlanırsa tutanak imzalanır." },
-                    { name: "2 hafta içinde işe iade davası açın", text: "Arabuluculuk anlaşmazlıkla sonuçlanırsa son tutanak tarihinden itibaren 2 hafta içinde iş mahkemesinde işe iade davası açın." },
-                    { name: "Tazminat haklarınızı talep edin", text: "Kıdem tazminatı, ihbar tazminatı, fazla mesai ve diğer işçi alacaklarınızı dava veya arabuluculuk yoluyla talep edin." },
-                ]}
             />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

@@ -7,7 +7,6 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
-import { HowToSchema } from "@/components/seo/HowToSchema";
 import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
@@ -77,17 +76,6 @@ export default function IzmirTazminatAvukatiPage() {
                 name="Tazminat Hukuku Danışmanlığı"
                 description="İzmir'de maddi-manevi tazminat, trafik kazası, iş kazası, malpraktis ve destekten yoksun kalma davası hizmetleri."
                 serviceType="Tazminat Hukuku"
-            />
-            <HowToSchema
-                name="Tazminat Davası Nasıl Açılır?"
-                description="Tazminat davası açma süreci adım adım rehber."
-                steps={[
-                    { name: "Zararı ve kusuru tespit edin", text: "Uğradığınız maddi veya manevi zararı belgeleyin. Kaza raporu, hastane raporu ve tanık ifadelerini toplayın." },
-                    { name: "Sigorta şirketine başvurun", text: "Trafik kazası tazminatında önce karşı tarafın sigorta şirketine yazılı başvuru yapın. Sigorta şirketi 15 gün içinde yanıt vermelidir." },
-                    { name: "Avukat ile görüşün", text: "Tazminat hukuku avukatı ile görüşerek tazminat miktarını hesaplatın ve dava stratejisini belirleyin." },
-                    { name: "Dava açın veya tahkim komisyonuna başvurun", text: "Sigorta şirketi talebi reddederse asliye hukuk mahkemesinde tazminat davası açın veya Sigorta Tahkim Komisyonu'na başvurun." },
-                    { name: "Bilirkişi raporu ve karar aşaması", text: "Mahkeme bilirkişi raporu ile tazminat miktarını belirler. Kusur oranı ve zarar hesaplaması yapılarak karar verilir." },
-                ]}
             />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

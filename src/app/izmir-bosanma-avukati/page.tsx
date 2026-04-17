@@ -7,7 +7,6 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
-import { HowToSchema } from "@/components/seo/HowToSchema";
 import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
@@ -77,17 +76,6 @@ export default function IzmirBosanmaAvukatiPage() {
                 name="Boşanma Hukuku Danışmanlığı"
                 description="İzmir'de anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davası hizmetleri."
                 serviceType="Aile Hukuku"
-            />
-            <HowToSchema
-                name="Boşanma Davası Nasıl Açılır?"
-                description="İzmir'de boşanma davası açma süreci adım adım rehber."
-                steps={[
-                    { name: "Boşanma türünü belirleyin", text: "Anlaşmalı mı yoksa çekişmeli mi boşanacağınızı belirleyin. Anlaşmalı boşanma için evliliğin en az 1 yıl sürmüş olması gerekir." },
-                    { name: "Avukat ile görüşün", text: "Aile hukuku avukatı ile görüşerek haklarınızı öğrenin ve strateji belirleyin." },
-                    { name: "Dava dilekçesini hazırlayın", text: "Boşanma sebepleri, velayet, nafaka ve mal paylaşımı taleplerini içeren dava dilekçesini hazırlayın." },
-                    { name: "Aile mahkemesine başvurun", text: "Eşlerden birinin yerleşim yeri veya son 6 ay birlikte oturulan yer aile mahkemesine dava dilekçesini verin." },
-                    { name: "Duruşmalara katılın ve kararı bekleyin", text: "Mahkeme duruşmalarına katılın. Anlaşmalı boşanma genellikle tek celsede, çekişmeli boşanma 1-3 yıl sürebilir." },
-                ]}
             />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
