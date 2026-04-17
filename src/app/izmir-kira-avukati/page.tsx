@@ -200,7 +200,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p>
-                            <strong>İzmir kira avukatları</strong>, <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/">kira sözleşmesi hazırlama</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira artışı</Link> ve kiracı tahliyesi gibi konularda müvekkillerine yardımcı olurlar. Ayrıca <strong>İzmir kira hukuku avukatları</strong>, kiracıların haklarını ve ev sahiplerinin haklarını savunmak için gerektiğinde mahkemede dava açabilirler.
+                            <strong>İzmir kira avukatları</strong>, <Link href="/kira-sozlesmesi-ornegi/">kira sözleşmesi hazırlama</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira artışı</Link> ve kiracı tahliyesi gibi konularda müvekkillerine yardımcı olurlar. Ayrıca <strong>İzmir kira hukuku avukatları</strong>, kiracıların haklarını ve ev sahiplerinin haklarını savunmak için gerektiğinde mahkemede dava açabilirler.
                         </p>
 
                         <p>
