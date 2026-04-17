@@ -313,7 +313,7 @@ export default function IzmirKiraAvukatiPage() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Tahliye Taahhüdü ile Tahliye</td>
+                                    <td><Link href="/sozluk/tahliye-taahhutnamesi/">Tahliye Taahhüdü</Link> ile Tahliye</td>
                                     <td>3-6 ay</td>
                                     <td>35.000 - 50.000 TL</td>
                                 </tr>
@@ -328,7 +328,7 @@ export default function IzmirKiraAvukatiPage() {
                                     <td>50.000 - 80.000 TL</td>
                                 </tr>
                                 <tr>
-                                    <td>Kira Tespit Davası</td>
+                                    <td><Link href="/sozluk/kira-tespit-davasi/">Kira Tespit Davası</Link></td>
                                     <td>6 ay - 1 yıl</td>
                                     <td>40.000 - 60.000 TL</td>
                                 </tr>
