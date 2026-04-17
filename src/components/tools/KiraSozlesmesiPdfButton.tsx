@@ -20,6 +20,7 @@ export function KiraSozlesmesiPdfButton() {
             doc.addFileToVFS("Roboto-Regular.ttf", RobotoBase64);
             doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
             doc.setFont("Roboto");
+            doc.setTextColor(0, 0, 0);
 
             const pw = doc.internal.pageSize.getWidth();
             const ph = doc.internal.pageSize.getHeight();
@@ -36,115 +37,104 @@ export function KiraSozlesmesiPdfButton() {
                 }
             }
 
-            function writeArticle(num: number, title: string, text: string) {
-                doc.setFontSize(11);
-                const heading = `MADDE ${num} - ${title}`;
-                checkPage(20);
-                doc.text(heading, margin, y);
-                y += 6;
-                doc.setFontSize(10);
-                const lines = doc.splitTextToSize(text, contentWidth);
-                checkPage(lines.length * 4.5 + 4);
-                doc.text(lines, margin, y);
-                y += lines.length * 4.5 + 6;
+            function sectionTitle(text: string) {
+                checkPage(14);
+                doc.setTextColor(0, 0, 0);
+                doc.setFontSize(13);
+                doc.text(text, margin, y);
+                doc.setLineWidth(0.3);
+                doc.line(margin, y + 1.5, margin + doc.getTextWidth(text), y + 1.5);
+                y += 8;
             }
 
-            // ===== SAYFA 1 =====
+            function writeArticle(num: number, title: string, text: string) {
+                doc.setTextColor(0, 0, 0);
+                doc.setFontSize(11.5);
+                const heading = `MADDE ${num} - ${title}`;
+                checkPage(22);
+                doc.text(heading, margin, y);
+                y += 6;
+                doc.setFontSize(10.5);
+                const lines = doc.splitTextToSize(text, contentWidth);
+                checkPage(lines.length * 5 + 4);
+                doc.text(lines, margin, y);
+                y += lines.length * 5 + 7;
+            }
 
-            // Başlık
-            doc.setFontSize(18);
+            function fieldLine(text: string, indent = true) {
+                doc.setTextColor(0, 0, 0);
+                doc.text(text, indent ? margin + 4 : margin, y);
+                y += 7;
+            }
+
+            // ===== BAŞLIK =====
+            doc.setFontSize(20);
+            doc.setTextColor(0, 0, 0);
             const title = "KİRA SÖZLEŞMESİ";
             const titleW = doc.getTextWidth(title);
             const titleX = (pw - titleW) / 2;
             doc.text(title, titleX, 30);
-            doc.setLineWidth(0.5);
-            doc.line(titleX - 2, 32, titleX + titleW + 2, 32);
+            doc.setLineWidth(0.6);
+            doc.line(titleX - 2, 33, titleX + titleW + 2, 33);
 
             // Tarih
-            doc.setFontSize(10);
-            doc.text("Düzenleme Tarihi: ..... / ..... / 20.....", pw - margin - 70, 40);
+            doc.setFontSize(10.5);
+            doc.text("Düzenleme Tarihi: ..... / ..... / 20.....", pw - margin - 72, 42);
 
-            y = 52;
+            y = 54;
 
-            // TARAFLAR
-            doc.setFontSize(12);
-            doc.text("TARAFLAR", margin, y);
-            y += 8;
-            doc.setFontSize(10);
+            // ===== TARAFLAR =====
+            sectionTitle("TARAFLAR");
 
-            const partyFields = [
-                "KİRAYA VEREN (Ev Sahibi)",
-                "Ad Soyad: " + dotLine,
-                "T.C. Kimlik No: " + dotLine,
-                "Adres: " + dotLine,
-                "",
-                "KİRACI",
-                "Ad Soyad: " + dotLine,
-                "T.C. Kimlik No: " + dotLine,
-                "Adres: " + dotLine,
-            ];
+            doc.setFontSize(11);
+            doc.text("KİRAYA VEREN (Ev Sahibi)", margin, y);
+            y += 7;
+            doc.setFontSize(10.5);
+            fieldLine("Ad Soyad: " + dotLine);
+            fieldLine("T.C. Kimlik No: " + dotLine);
+            fieldLine("Adres: " + dotLine);
 
-            for (const line of partyFields) {
-                if (line === "") { y += 4; continue; }
-                if (line === "KİRAYA VEREN (Ev Sahibi)" || line === "KİRACI") {
-                    doc.setFontSize(11);
-                    doc.text(line, margin, y);
-                    doc.setFontSize(10);
-                    y += 6;
-                } else {
-                    doc.text(line, margin + 4, y);
-                    y += 6;
-                }
-            }
+            y += 4;
+            doc.setFontSize(11);
+            doc.text("KİRACI", margin, y);
+            y += 7;
+            doc.setFontSize(10.5);
+            fieldLine("Ad Soyad: " + dotLine);
+            fieldLine("T.C. Kimlik No: " + dotLine);
+            fieldLine("Adres: " + dotLine);
 
-            y += 6;
+            y += 5;
 
-            // KİRALANAN
-            doc.setFontSize(12);
-            doc.text("KİRALANAN TAŞINMAZ", margin, y);
-            y += 8;
-            doc.setFontSize(10);
+            // ===== KİRALANAN =====
+            sectionTitle("KİRALANAN TAŞINMAZ");
+            doc.setFontSize(10.5);
+            fieldLine("Adres: " + dotLine);
+            fieldLine(dotLine);
+            fieldLine("Oda Sayısı: ............   Kat: ............   Daire No: ............");
+            fieldLine("Kullanım Amacı:  [ ] Konut    [ ] İşyeri");
 
-            const propertyFields = [
-                "Adres: " + dotLine,
-                dotLine,
-                "Oda Sayısı: ............   Kat: ............   Daire No: ............",
-                "Kullanım Amacı:  [ ] Konut    [ ] İşyeri",
-            ];
+            y += 5;
 
-            for (const line of propertyFields) {
-                doc.text(line, margin + 4, y);
-                y += 6;
-            }
-
-            y += 6;
-
-            // KİRA SÜRESİ VE BEDELİ
-            doc.setFontSize(12);
-            doc.text("KİRA SÜRESİ VE BEDELİ", margin, y);
-            y += 8;
-            doc.setFontSize(10);
-
-            const termFields = [
-                "Kira Başlangıç Tarihi: ..... / ..... / 20.....",
-                "Kira Bitiş Tarihi: ..... / ..... / 20.....",
-                "Aylık Kira Bedeli: ................................. TL",
-                "Ödeme Günü: Her ayın ..... 'inde / 'ünde",
-                "Ödeme Şekli:  [ ] Banka Havalesi    [ ] Elden    [ ] Diğer: ...............",
-                "Depozito (Güvence Bedeli): ................................. TL",
-            ];
-
-            for (const line of termFields) {
-                doc.text(line, margin + 4, y);
-                y += 6;
-            }
+            // ===== KİRA SÜRESİ VE BEDELİ =====
+            sectionTitle("KİRA SÜRESİ VE BEDELİ");
+            doc.setFontSize(10.5);
+            fieldLine("Kira Başlangıç Tarihi: ..... / ..... / 20.....");
+            fieldLine("Kira Bitiş Tarihi: ..... / ..... / 20.....");
+            fieldLine("Aylık Kira Bedeli: ................................. TL");
+            fieldLine("Ödeme Günü: Her ayın ..... 'inde / 'ünde");
+            fieldLine("Ödeme Şekli:  [ ] Banka Havalesi    [ ] Elden    [ ] Diğer: ...............");
+            fieldLine("Depozito (Güvence Bedeli): ................................. TL");
 
             y += 8;
 
-            // SÖZLEŞME MADDELERİ
-            doc.setFontSize(14);
+            // ===== SÖZLEŞME HÜKÜMLERİ =====
+            doc.setFontSize(15);
+            doc.setTextColor(0, 0, 0);
+            checkPage(16);
             doc.text("SÖZLEŞME HÜKÜMLERİ", margin, y);
-            y += 10;
+            doc.setLineWidth(0.4);
+            doc.line(margin, y + 2, margin + doc.getTextWidth("SÖZLEŞME HÜKÜMLERİ"), y + 2);
+            y += 12;
 
             writeArticle(1, "KİRA BEDELİNİN ÖDENMESİ",
                 "Kiracı, kira bedelini her ayın belirtilen gününde peşin olarak kiraya verenin bildireceği banka hesabına ödeyecektir. Kira bedelinin zamanında ödenmemesi halinde kiracı temerrüde düşmüş sayılır. Kiraya veren, Türk Borçlar Kanunu'nun 315. maddesi uyarınca kiracıya yazılı ihtarda bulunarak 30 gün içinde ödeme yapılmasını isteyebilir.");
@@ -152,7 +142,7 @@ export function KiraSozlesmesiPdfButton() {
             writeArticle(2, "KİRA BEDELİNİN ARTIRILMASI",
                 "Kira bedeli, her yıl kira başlangıç tarihinin yıl dönümünde, bir önceki kira yılının on iki aylık TÜFE (Tüketici Fiyat Endeksi) ortalamasındaki değişim oranını geçmemek koşuluyla artırılacaktır (TBK m. 344). Taraflar aksini kararlaştırmış olsa dahi yasal sınırı aşan artış oranı uygulanamaz.");
 
-            writeArticle(3, "DEPOZİTO (GÜVence BEDELİ)",
+            writeArticle(3, "DEPOZİTO (GÜVENCE BEDELİ)",
                 "Kiracı, sözleşme imzasında belirtilen depozito bedelini kiraya verene teslim edecektir. Depozito, kiralananın sözleşmeye uygun olarak tahliye edilmesi ve kiracının borçsuz olması halinde iade edilir. Kiraya veren, kiracının borçları veya hasarlar için depozitodan kesinti yapabilir (TBK m. 342).");
 
             writeArticle(4, "KİRALANANIN TESLİMİ VE KULLANIMI",
@@ -182,36 +172,39 @@ export function KiraSozlesmesiPdfButton() {
             writeArticle(12, "ÖZEL ŞARTLAR",
                 "........................................................................................................................\n........................................................................................................................\n........................................................................................................................");
 
-            // İMZA ALANI
-            checkPage(50);
+            // ===== İMZA ALANI =====
+            checkPage(55);
             y += 6;
-            doc.setFontSize(10);
-            doc.text("İşbu sözleşme 2 (iki) nüsha olarak düzenlenmiş olup, taraflar sözleşme hükümlerini", margin, y);
-            y += 5;
-            doc.text("okuduklarını, anladıklarını ve kabul ettiklerini beyan ederek imzalamışlardır.", margin, y);
-            y += 16;
+            doc.setTextColor(0, 0, 0);
+            doc.setFontSize(10.5);
+            const closingLines = doc.splitTextToSize(
+                "İşbu sözleşme 2 (iki) nüsha olarak düzenlenmiş olup, taraflar sözleşme hükümlerini okuduklarını, anladıklarını ve kabul ettiklerini beyan ederek imzalamışlardır.",
+                contentWidth
+            );
+            doc.text(closingLines, margin, y);
+            y += closingLines.length * 5 + 16;
 
-            // Sol: Kiraya Veren
-            doc.setFontSize(11);
+            doc.setFontSize(11.5);
+            doc.setTextColor(0, 0, 0);
             doc.text("KİRAYA VEREN", margin, y);
             doc.text("KİRACI", pw - margin - 40, y);
-            y += 6;
-            doc.setFontSize(10);
+            y += 7;
+            doc.setFontSize(10.5);
             doc.text("Ad Soyad:", margin, y);
             doc.text("Ad Soyad:", pw - margin - 40, y);
-            y += 14;
+            y += 16;
             doc.setFontSize(9);
-            doc.setTextColor(150, 150, 150);
+            doc.setTextColor(130, 130, 130);
             doc.text("(İmza)", margin + 10, y);
             doc.text("(İmza)", pw - margin - 30, y);
 
-            // Footer
+            // ===== FOOTER =====
             doc.setFontSize(8);
-            doc.setTextColor(150, 150, 150);
+            doc.setTextColor(130, 130, 130);
             const totalPages = doc.getNumberOfPages();
             for (let i = 1; i <= totalPages; i++) {
                 doc.setPage(i);
-                doc.text(`mertkagancetin.com | Bu şablon bilgilendirme amaçlıdır. Sayfa ${i}/${totalPages}`, pw / 2, ph - 10, { align: "center" });
+                doc.text(`mertkagancetin.com | Bu sablon bilgilendirme amaclidir. Sayfa ${i}/${totalPages}`, pw / 2, ph - 10, { align: "center" });
             }
 
             doc.save("kira-sozlesmesi-2026.pdf");
