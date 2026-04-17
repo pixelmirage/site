@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/iletisim': { lastModified: '2026-02-10', priority: 0.8 },
         '/kira-artis-orani-hesaplama': { lastModified: '2026-03-15', priority: 0.8 },
         '/tahliye-taahhutnamesi': { lastModified: '2026-03-15', priority: 0.8 },
+        '/kira-sozlesmesi-ornegi': { lastModified: '2026-04-17', priority: 0.8 },
         '/kidem-tazminati-hesaplama': { lastModified: '2026-03-16', priority: 0.8 },
         '/sozluk': { lastModified: '2026-03-15', priority: 0.8 },
         // Kira alt sayfaları
