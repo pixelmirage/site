@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: {
         absolute: "İzmir Boşanma Avukatı - Uzman Hukuki Danışmanlık",
     },
-    description: "İzmir boşanma avukatı arıyorsanız Av. Mert Kağan Çetin ile iletişime geçin. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında uzman destek.",
+    description: "İzmir boşanma avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı gibi konularda size yardımcı olabiliriz.",
     keywords: ["İzmir boşanma avukatı", "boşanma avukatı İzmir", "anlaşmalı boşanma avukatı İzmir", "çekişmeli boşanma avukatı İzmir", "velayet davası avukatı İzmir", "nafaka davası avukatı İzmir", "boşanma davası ücreti", "İzmir en iyi boşanma avukatı", "İzmir aile hukuku avukatı"],
     openGraph: {
         title: "İzmir Boşanma Avukatı | Av. Mert Kağan Çetin",

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: {
         absolute: "İzmir Tazminat Avukatı - Uzman Hukuki Danışmanlık",
     },
-    description: "İzmir tazminat avukatı arıyorsanız Av. Mert Kağan Çetin ile iletişime geçin. Maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis davalarında uzman destek.",
+    description: "İzmir tazminat avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. Maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis gibi konularda size yardımcı olabiliriz.",
     keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat avukatı İzmir", "manevi tazminat avukatı İzmir", "iş kazası avukatı İzmir", "trafik kazası avukatı İzmir", "malpraktis avukatı İzmir", "İzmir en iyi tazminat avukatı", "destekten yoksun kalma avukatı İzmir"],
     openGraph: {
         title: "İzmir Tazminat Avukatı | Av. Mert Kağan Çetin",

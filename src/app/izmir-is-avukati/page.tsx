@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: {
         absolute: "İzmir İş Avukatı - Uzman Hukuki Danışmanlık",
     },
-    description: "İzmir iş avukatı arıyorsanız Av. Mert Kağan Çetin ile iletişime geçin. İşe iade davası, kıdem tazminatı, iş kazası tazminatı ve işçi alacakları davalarında uzman destek.",
+    description: "İzmir iş avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. İşe iade davası, kıdem tazminatı, iş kazası tazminatı, işçi alacakları gibi konularda size yardımcı olabiliriz.",
     keywords: ["İzmir iş avukatı", "iş avukatı İzmir", "işe iade davası avukatı İzmir", "kıdem tazminatı avukatı İzmir", "iş kazası avukatı İzmir", "işçi hakları avukatı İzmir", "mobbing avukatı İzmir", "İzmir en iyi iş avukatı", "iş mahkemesi avukatı İzmir"],
     openGraph: {
         title: "İzmir İş Avukatı | Av. Mert Kağan Çetin",
