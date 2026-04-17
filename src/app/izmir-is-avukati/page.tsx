@@ -7,7 +7,6 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
-import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -72,11 +71,6 @@ export default function IzmirIsAvukatiPage() {
     return (
         <main className="bg-white">
             {/* Schema Markup */}
-            <ServiceSchema
-                name="İş Hukuku Danışmanlığı"
-                description="İzmir'de işe iade davası, kıdem tazminatı, iş kazası tazminatı ve işçi alacakları davası hizmetleri."
-                serviceType="İş Hukuku"
-            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[

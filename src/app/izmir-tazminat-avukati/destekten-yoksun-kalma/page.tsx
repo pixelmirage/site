@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function DestektenYoksunKalmaPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Destekten Yoksun Kalma Tazminatı" description="İzmir'de ölüm halinde hak sahiplerinin destekten yoksun kalma tazminatı davası hizmeti." serviceType="Destekten Yoksun Kalma Tazminatı" />
             <PersonSchema knowsAbout={["Destekten Yoksun Kalma Tazminatı", "Aktüer Hesap Raporu", "Destek Payı Hesaplaması", "Ölüm Tazminatı", "Trafik Kazası Tazminatı", "İş Kazası Tazminatı"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function NafakaDavasiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Nafaka Davası" description="İzmir'de yoksulluk nafakası, iştirak nafakası ve nafaka artırım davası hizmeti." serviceType="Nafaka Davası" />
             <PersonSchema knowsAbout={["Nafaka Davası", "Yoksulluk Nafakası", "İştirak Nafakası", "Nafaka Artırım Davası", "Nafaka Kaldırma Davası"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

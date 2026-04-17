@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function MalpraktisDavasiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Malpraktis Davası" description="İzmir'de doktor hatası ve tıbbi ihmal kaynaklı tazminat davası hizmeti." serviceType="Malpraktis Davası" />
             <PersonSchema knowsAbout={["Malpraktis Davası", "Tıbbi Hata Tazminatı", "Doktor Hatası", "Sağlık Hukuku", "Adli Tıp Raporu", "Haksız Fiil Sorumluluğu"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

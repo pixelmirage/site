@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function KidemTazminatiDavasiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Kıdem Tazminatı Davası" description="İzmir'de ödenmeyen kıdem ve ihbar tazminatı alacak davası hizmeti." serviceType="Kıdem Tazminatı Davası" />
             <PersonSchema knowsAbout={["Kıdem Tazminatı Davası", "İhbar Tazminatı", "İşçi Alacakları", "İş Hukuku Zamanaşımı", "Tazminat Hesaplama"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function KiraciTahliyeDavasiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Kiracı Tahliye Davası" description="İzmir'de ihtiyaç, taahhütname ve iki haklı ihtar ile kiracı tahliye davası hizmeti." serviceType="Kiracı Tahliye Davası" />
             <PersonSchema knowsAbout={["Kiracı Tahliye Davası", "Tahliye Taahhütnamesi", "İhtiyaç Nedeniyle Tahliye", "İki Haklı İhtar", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

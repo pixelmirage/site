@@ -9,7 +9,6 @@ import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
-import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -83,11 +82,6 @@ export default function IzmirKiraAvukatiPage() {
                 embedUrl="https://www.youtube.com/embed/JeM-o0sl9j8"
             />
 
-            <ServiceSchema
-                name="Kira Hukuku Danışmanlığı"
-                description="İzmir'de kira sözleşmesi, kiracı tahliye davası, kira tespit davası ve kira uyarlama davası hizmetleri."
-                serviceType="Kira Hukuku"
-            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[

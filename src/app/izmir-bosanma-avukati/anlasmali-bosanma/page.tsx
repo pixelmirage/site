@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function AnlasmaliBosanmaPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Anlaşmalı Boşanma" description="İzmir'de anlaşmalı boşanma protokolü hazırlama ve tek celsede boşanma hizmeti." serviceType="Anlaşmalı Boşanma" />
             <PersonSchema knowsAbout={["Anlaşmalı Boşanma", "Boşanma Protokolü", "Tek Celsede Boşanma", "Nafaka Düzenlemesi", "Velayet Düzenlemesi"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

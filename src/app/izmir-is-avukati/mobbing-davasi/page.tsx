@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function MobbingDavasiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Mobbing Davası" description="İzmir'de işyerinde psikolojik taciz ve manevi tazminat davası hizmeti." serviceType="Mobbing Davası" />
             <PersonSchema knowsAbout={["Mobbing Davası", "İş Yerinde Psikolojik Taciz", "Manevi Tazminat", "Haklı Fesih", "İşverenin Koruma Yükümlülüğü"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function IseIadeDavasiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="İşe İade Davası" description="İzmir'de haksız fesih sonrası işe iade davası ve arabuluculuk hizmeti." serviceType="İşe İade Davası" />
             <PersonSchema knowsAbout={["İşe İade Davası", "İş Güvencesi", "Haksız Fesih", "Zorunlu Arabuluculuk", "Boşta Geçen Süre Ücreti"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema

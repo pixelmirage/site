@@ -7,7 +7,6 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
-import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -72,11 +71,6 @@ export default function IzmirBosanmaAvukatiPage() {
     return (
         <main className="bg-white">
             {/* Schema Markup */}
-            <ServiceSchema
-                name="Boşanma Hukuku Danışmanlığı"
-                description="İzmir'de anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davası hizmetleri."
-                serviceType="Aile Hukuku"
-            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[

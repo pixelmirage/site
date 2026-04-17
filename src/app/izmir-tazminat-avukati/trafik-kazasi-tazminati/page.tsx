@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { SectionCTA } from "@/components/ui/SectionCTA";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -58,6 +59,7 @@ const tocItems = [
 export default function TrafikKazasiTazminatiPage() {
     return (
         <main className="bg-white">
+            <ServiceSchema name="Trafik Kazası Tazminatı" description="İzmir'de trafik kazası sonrası sigorta başvurusu ve tazminat davası hizmeti." serviceType="Trafik Kazası Tazminatı" />
             <PersonSchema knowsAbout={["Trafik Kazası Tazminatı", "Karayolları Trafik Kanunu", "ZMSS Başvurusu", "Sigorta Tahkim Komisyonu", "Güvence Hesabı", "Maddi ve Manevi Tazminat"]} />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
