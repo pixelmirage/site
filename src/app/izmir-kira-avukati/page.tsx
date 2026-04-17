@@ -9,6 +9,8 @@ import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
+import { HowToSchema } from "@/components/seo/HowToSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -82,6 +84,22 @@ export default function IzmirKiraAvukatiPage() {
                 embedUrl="https://www.youtube.com/embed/JeM-o0sl9j8"
             />
 
+            <ServiceSchema
+                name="Kira Hukuku Danışmanlığı"
+                description="İzmir'de kira sözleşmesi, kiracı tahliye davası, kira tespit davası ve kira uyarlama davası hizmetleri."
+                serviceType="Kira Hukuku"
+            />
+            <HowToSchema
+                name="Kiracı Nasıl Tahliye Edilir?"
+                description="İzmir'de kiracı tahliye süreci adım adım rehber."
+                steps={[
+                    { name: "Tahliye sebebini belirleyin", text: "TBK kapsamında geçerli bir tahliye sebebi (ihtiyaç, taahhütname, iki haklı ihtar, temerrüt, 10 yıl uzama) tespit edin." },
+                    { name: "İhtarname veya bildirim gönderin", text: "Noter aracılığıyla kiracıya yazılı ihtarname veya fesih bildirimi gönderin." },
+                    { name: "Zorunlu arabuluculuğa başvurun", text: "Dava öncesi zorunlu arabuluculuk sürecini başlatın ve arabuluculuk tutanağı alın." },
+                    { name: "Tahliye davası açın veya icra takibi başlatın", text: "Arabuluculuk anlaşmazlıkla sonuçlanırsa sulh hukuk mahkemesinde tahliye davası açın. Tahliye taahhütnamesi varsa doğrudan icra takibi başlatın." },
+                    { name: "Mahkeme kararını icra ettirin", text: "Mahkeme tahliye kararı verdikten sonra icra dairesi aracılığıyla tahliyeyi gerçekleştirin." },
+                ]}
+            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -200,7 +218,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p>
-                            <strong>İzmir kira avukatları</strong>, <Link href="/kira-sozlesmesi-ornegi/">kira sözleşmesi hazırlama</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira artışı</Link> ve kiracı tahliyesi gibi konularda müvekkillerine yardımcı olurlar. Ayrıca <strong>İzmir kira hukuku avukatları</strong>, kiracıların haklarını ve ev sahiplerinin haklarını savunmak için gerektiğinde mahkemede dava açabilirler.
+                            <strong>İzmir kira avukatları</strong>, <Link href="/kira-sozlesmesi-ornegi/">kira sözleşmesi hazırlama</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira artışı</Link> ve kiracı tahliyesi gibi konularda müvekkillerine yardımcı olurlar. Kira artış oranınızı öğrenmek için <Link href="/kira-artis-orani-hesaplama/">kira artış oranı hesaplama</Link> aracımızı kullanabilirsiniz. Ayrıca <strong>İzmir kira hukuku avukatları</strong>, kiracıların haklarını ve ev sahiplerinin haklarını savunmak için gerektiğinde mahkemede dava açabilirler.
                         </p>
 
                         <p>

@@ -7,6 +7,8 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
+import { HowToSchema } from "@/components/seo/HowToSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
         absolute: "İzmir İş Avukatı - Uzman Hukuki Danışmanlık",
     },
     description: "İzmir iş avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. İşe iade davası, kıdem tazminatı, iş kazası tazminatı, işçi alacakları gibi konularda size yardımcı olabiliriz.",
-    keywords: ["İzmir iş avukatı", "iş avukatı İzmir", "işe iade davası avukatı İzmir", "kıdem tazminatı avukatı İzmir", "iş kazası avukatı İzmir", "işçi hakları avukatı İzmir", "mobbing avukatı İzmir", "İzmir en iyi iş avukatı", "iş mahkemesi avukatı İzmir"],
+    keywords: ["İzmir iş avukatı", "iş avukatı İzmir", "işe iade davası avukatı İzmir", "kıdem tazminatı avukatı İzmir", "iş kazası avukatı İzmir", "işçi hakları avukatı İzmir", "mobbing avukatı İzmir", "İzmir en iyi iş avukatı", "iş mahkemesi avukatı İzmir", "iş avukatı İzmir yakınında"],
     openGraph: {
         title: "İzmir İş Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de iş hukuku, işe iade davaları ve tazminat davalarında uzman avukatlık hizmeti.",
@@ -71,6 +73,22 @@ export default function IzmirIsAvukatiPage() {
     return (
         <main className="bg-white">
             {/* Schema Markup */}
+            <ServiceSchema
+                name="İş Hukuku Danışmanlığı"
+                description="İzmir'de işe iade davası, kıdem tazminatı, iş kazası tazminatı ve işçi alacakları davası hizmetleri."
+                serviceType="İş Hukuku"
+            />
+            <HowToSchema
+                name="İşten Çıkarılınca Ne Yapılır?"
+                description="Haksız işten çıkarma sonrası işe iade davası açma süreci."
+                steps={[
+                    { name: "Fesih bildirimini kontrol edin", text: "İşverenin fesih bildirimini yazılı olarak alın. Fesih tarihini ve sebebini not edin." },
+                    { name: "1 ay içinde arabulucuya başvurun", text: "Fesih bildiriminden itibaren 1 ay içinde zorunlu arabuluculuk başvurusu yapın. Bu süreyi kaçırmak hakkınızı kaybettirir." },
+                    { name: "Arabuluculuk sürecine katılın", text: "Arabuluculuk görüşmelerine katılın. Süreç en fazla 3 hafta sürer. Anlaşma sağlanırsa tutanak imzalanır." },
+                    { name: "2 hafta içinde işe iade davası açın", text: "Arabuluculuk anlaşmazlıkla sonuçlanırsa son tutanak tarihinden itibaren 2 hafta içinde iş mahkemesinde işe iade davası açın." },
+                    { name: "Tazminat haklarınızı talep edin", text: "Kıdem tazminatı, ihbar tazminatı, fazla mesai ve diğer işçi alacaklarınızı dava veya arabuluculuk yoluyla talep edin." },
+                ]}
+            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -213,7 +231,7 @@ export default function IzmirIsAvukatiPage() {
 
                         <ul>
                             <li><strong>İşe iade hakkı:</strong> <Link href="/sozluk/is-guvencesi/">İş güvencesi</Link> kapsamındaki işçiler (30+ işçili işyeri, 6 ay kıdem) haksız fesih halinde işe iade davası açabilir.</li>
-                            <li><strong>Kıdem tazminatı:</strong> En az 1 yıl çalışmış işçi, haklı nedenle fesih veya işveren kaynaklı fesih halinde her yıl için 30 günlük brüt ücret alır.</li>
+                            <li><strong>Kıdem tazminatı:</strong> En az 1 yıl çalışmış işçi, haklı nedenle fesih veya işveren kaynaklı fesih halinde her yıl için 30 günlük brüt ücret alır. <Link href="/kidem-tazminati-hesaplama/">Kıdem tazminatı hesaplama</Link> aracımızla tutarınızı öğrenebilirsiniz.</li>
                             <li><strong><Link href="/sozluk/ihbar-tazminati/">İhbar tazminatı</Link>:</strong> Bildirim süresine uyulmadan yapılan fesihte karşı tarafa ödenir (2-8 haftalık ücret).</li>
                         </ul>
 

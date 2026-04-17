@@ -7,6 +7,8 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
+import { HowToSchema } from "@/components/seo/HowToSchema";
+import { ServiceSchema } from "@/components/seo/ServiceSchema";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
         absolute: "İzmir Tazminat Avukatı - Uzman Hukuki Danışmanlık",
     },
     description: "İzmir tazminat avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. Maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis gibi konularda size yardımcı olabiliriz.",
-    keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat avukatı İzmir", "manevi tazminat avukatı İzmir", "iş kazası avukatı İzmir", "trafik kazası avukatı İzmir", "malpraktis avukatı İzmir", "İzmir en iyi tazminat avukatı", "destekten yoksun kalma avukatı İzmir"],
+    keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat avukatı İzmir", "manevi tazminat avukatı İzmir", "iş kazası avukatı İzmir", "trafik kazası avukatı İzmir", "malpraktis avukatı İzmir", "İzmir en iyi tazminat avukatı", "destekten yoksun kalma avukatı İzmir", "tazminat avukatı İzmir yakınında"],
     openGraph: {
         title: "İzmir Tazminat Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de maddi ve manevi tazminat, iş kazası ve trafik kazası tazminatı davalarında uzman avukatlık hizmeti.",
@@ -71,6 +73,22 @@ export default function IzmirTazminatAvukatiPage() {
     return (
         <main className="bg-white">
             {/* Schema Markup */}
+            <ServiceSchema
+                name="Tazminat Hukuku Danışmanlığı"
+                description="İzmir'de maddi-manevi tazminat, trafik kazası, iş kazası, malpraktis ve destekten yoksun kalma davası hizmetleri."
+                serviceType="Tazminat Hukuku"
+            />
+            <HowToSchema
+                name="Tazminat Davası Nasıl Açılır?"
+                description="Tazminat davası açma süreci adım adım rehber."
+                steps={[
+                    { name: "Zararı ve kusuru tespit edin", text: "Uğradığınız maddi veya manevi zararı belgeleyin. Kaza raporu, hastane raporu ve tanık ifadelerini toplayın." },
+                    { name: "Sigorta şirketine başvurun", text: "Trafik kazası tazminatında önce karşı tarafın sigorta şirketine yazılı başvuru yapın. Sigorta şirketi 15 gün içinde yanıt vermelidir." },
+                    { name: "Avukat ile görüşün", text: "Tazminat hukuku avukatı ile görüşerek tazminat miktarını hesaplatın ve dava stratejisini belirleyin." },
+                    { name: "Dava açın veya tahkim komisyonuna başvurun", text: "Sigorta şirketi talebi reddederse asliye hukuk mahkemesinde tazminat davası açın veya Sigorta Tahkim Komisyonu'na başvurun." },
+                    { name: "Bilirkişi raporu ve karar aşaması", text: "Mahkeme bilirkişi raporu ile tazminat miktarını belirler. Kusur oranı ve zarar hesaplaması yapılarak karar verilir." },
+                ]}
+            />
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[

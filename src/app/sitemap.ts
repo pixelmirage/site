@@ -21,9 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
         '': { lastModified: '2026-03-12', priority: 1 },
         '/izmir-kira-avukati': { lastModified: '2026-04-16', priority: 1 },
-        '/izmir-is-avukati': { lastModified: '2026-03-20', priority: 1 },
-        '/izmir-bosanma-avukati': { lastModified: '2026-03-20', priority: 1 },
-        '/izmir-tazminat-avukati': { lastModified: '2026-03-22', priority: 1 },
+        '/izmir-is-avukati': { lastModified: '2026-04-17', priority: 1 },
+        '/izmir-bosanma-avukati': { lastModified: '2026-04-17', priority: 1 },
+        '/izmir-tazminat-avukati': { lastModified: '2026-04-17', priority: 1 },
         '/hakkimda': { lastModified: '2026-03-13', priority: 0.8 },
         '/hizmetler': { lastModified: '2026-03-04', priority: 0.8 },
         '/blog': { lastModified: '2026-03-12', priority: 0.8 },

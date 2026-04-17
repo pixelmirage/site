@@ -48,8 +48,33 @@ function Stars({ count }: { count: number }) {
 }
 
 export function GoogleReviews() {
+    const ratingSchema = {
+        "@context": "https://schema.org",
+        "@type": "Attorney",
+        "@id": "https://mertkagancetin.com/#attorney",
+        "name": "Av. Mert Kağan Çetin",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": reviews.length.toString(),
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": reviews.map((r) => ({
+            "@type": "Review",
+            "author": { "@type": "Person", "name": r.name },
+            "datePublished": r.date,
+            "reviewRating": { "@type": "Rating", "ratingValue": r.rating.toString(), "bestRating": "5" },
+            "reviewBody": r.text
+        }))
+    };
+
     return (
         <section className="py-16 md:py-20 bg-slate-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(ratingSchema) }}
+            />
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-10 md:mb-14">
