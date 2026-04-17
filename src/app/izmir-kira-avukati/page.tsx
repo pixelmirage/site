@@ -5,62 +5,12 @@ import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
-import { PersonSchema } from "@/components/seo/PersonSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
-
-function LegalServiceSchema() {
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "LegalService",
-        "name": "İzmir Kira Avukatı - Av. Mert Kağan Çetin",
-        "description": "İzmir'de kira hukuku, kiracı tahliye davaları, kira tespit davaları ve gayrimenkul uyuşmazlıklarında uzman avukatlık hizmeti.",
-        "url": "https://mertkagancetin.com/izmir-kira-avukati/",
-        "telephone": "+905445854645",
-        "email": "mertkagancetin@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
-            "addressLocality": "Bayraklı",
-            "addressRegion": "İzmir",
-            "postalCode": "35535",
-            "addressCountry": "TR"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 38.4517,
-            "longitude": 27.1845
-        },
-        "priceRange": "$$",
-        "areaServed": {
-            "@type": "City",
-            "name": "İzmir"
-        },
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Kira Hukuku Hizmetleri",
-            "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kiracı Tahliye Davası" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Tespit Davası" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tahliye Taahhütnamesi İcra Takibi" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Sözleşmesi Hazırlama" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zorunlu Arabuluculuk" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Artırım ve Tespit Davası" } }
-            ]
-        }
-    };
-
-    return (
-        <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-    );
-}
 
 export const metadata: Metadata = {
     title: {
@@ -123,8 +73,6 @@ export default function IzmirKiraAvukatiPage() {
     return (
         <main className="bg-white">
             {/* Schema Markup */}
-            <LegalServiceSchema />
-            <PersonSchema knowsAbout={["Kira Hukuku", "Kiracı Tahliye Davaları", "Kira Tespit Davası", "Tahliye Taahhütnamesi", "Gayrimenkul Hukuku", "Kira Sözleşmesi Hazırlama"]} />
             <VideoSchema
                 name="İzmir'de Kira Avukatıyla Çalışmanın Önemi | Kısa Video"
                 description="Kira davası sürecinde en sık yapılan hatalar ve uzman kira avukatının farkı. İzmir'de kira uyuşmazlıklarında profesyonel destek."
