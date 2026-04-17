@@ -22,7 +22,8 @@ export function SchemaMarkup() {
                 "@type": "WebSite",
                 "@id": "https://mertkagancetin.com/#website",
                 "url": "https://mertkagancetin.com",
-                "name": "Av. Mert Kağan Çetin - İzmir Avukat | Kira, İş ve Boşanma Hukuku",
+                "name": "Av. Mert Kağan Çetin",
+                "alternateName": "Mert Kağan Çetin Hukuk Bürosu",
                 "publisher": {
                     "@id": "https://mertkagancetin.com/#organization"
                 },
