@@ -92,6 +92,144 @@
   }
 }
 
+/* Article prose — moved from Tailwind arbitrary selectors for Style & Layout performance */
+.article-prose :where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  color: oklch(0.208 0.042 265.755);
+}
+
+.article-prose > h1 {
+  font-size: 2.5rem;
+  margin: 4rem -1.5rem 2rem;
+  line-height: 1.25;
+  background: linear-gradient(to right, oklch(0.25 0.03 260 / 0.1), transparent);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary);
+}
+
+.article-prose > h2 {
+  font-size: 1.75rem;
+  margin: 2rem -1.5rem 1rem;
+  background: oklch(0.968 0.007 264.536);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--secondary);
+  border-top: 1px solid oklch(0.929 0.013 255.508);
+}
+
+.article-prose > h3 {
+  font-size: 1.375rem;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--primary);
+  font-weight: 700;
+  border-bottom: 1px solid oklch(0.929 0.013 255.508);
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .article-prose > h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 0;
+  }
+
+  .article-prose > h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.article-prose > p {
+  font-size: 1rem;
+  color: oklch(0.442 0.017 257.281);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.article-prose > ul > li,
+.article-prose > ol > li {
+  font-size: 1rem;
+  color: oklch(0.442 0.017 257.281);
+  margin-bottom: 0.5rem;
+  line-height: 1.625;
+}
+
+.article-prose :where(strong) {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.article-prose :where(a) {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-prose :where(a):hover {
+  color: var(--primary);
+}
+
+.article-prose :where(img) {
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin: 2.5rem 0;
+}
+
+.article-prose :where(ul),
+.article-prose :where(ol) {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-prose :where(blockquote) {
+  border-left: 4px solid var(--secondary);
+  background: oklch(0.85 0.05 70 / 0.05);
+  padding: 1rem 1.5rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  font-style: normal;
+  margin: 2rem 0;
+  color: oklch(0.279 0.024 256.848);
+  font-weight: 500;
+}
+
+.article-prose :where(hr) {
+  margin: 3rem 0;
+  border-color: oklch(0.929 0.013 255.508);
+  border-top-width: 2px;
+}
+
+.article-prose :where(table) {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.article-prose :where(th) {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.article-prose :where(td) {
+  border: 1px solid oklch(0.929 0.013 255.508);
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.article-prose :where(tr):nth-child(even) {
+  background: oklch(0.984 0.003 247.858);
+}
+
 .legal-pattern {
   background-image: radial-gradient(var(--border) 0.5px, transparent 0.5px);
   background-size: 24px 24px;

@@ -8,7 +8,8 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { DefinedTermSchema } from "@/components/seo/DefinedTermSchema";
 import { VideoSchema } from "@/components/seo/VideoSchema";
-import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
+import dynamic from "next/dynamic";
+const YouTubeShorts = dynamic(() => import("@/components/ui/YouTubeShorts").then(m => ({ default: m.YouTubeShorts })));
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 
 export async function generateStaticParams() {

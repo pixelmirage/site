@@ -4,7 +4,8 @@ import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
-import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
+import dynamic from "next/dynamic";
+const YouTubeShorts = dynamic(() => import("@/components/ui/YouTubeShorts").then(m => ({ default: m.YouTubeShorts })));
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
