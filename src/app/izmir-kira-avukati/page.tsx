@@ -247,7 +247,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* İnfografik */}
-                        <figure className="not-prose my-10">
+                        <figure className="not-prose my-10 flex flex-col items-center">
                             <Image
                                 src="/images/infographics/tahliye-sebepleri-ve-dayanaklari.webp"
                                 alt="Kiracı tahliye sebepleri ve hukuki dayanakları: TBK m. 350 ihtiyaç, m. 352 taahhütname ve iki haklı ihtar, m. 347 süre sonu ile tahliye davası açma koşulları"
