@@ -12,16 +12,16 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İzmir Anlaşmalı Boşanma Avukatı",
-    description: "İzmir anlaşmalı boşanma avukatı Av. Mert Kağan Çetin. Protokol hazırlama, tek celsede boşanma ve nafaka düzenlemesinde uzman destek.",
-    keywords: ["anlaşmalı boşanma avukatı İzmir", "anlaşmalı boşanma", "tek celsede boşanma", "boşanma protokolü"],
+    title: "Anlaşmalı Boşanma İzmir | Tek Celsede Boşanma Avukatı",
+    description: "İzmir'de anlaşmalı boşanma süreci, şartları ve avukat desteği. Protokol hazırlama, tek celsede boşanma, nafaka ve velayet düzenlemesinde uzman hukuki destek.",
+    keywords: ["anlaşmalı boşanma İzmir", "anlaşmalı boşanma avukatı İzmir", "tek celsede boşanma İzmir", "boşanma protokolü İzmir", "anlaşmalı boşanma şartları"],
     openGraph: {
-        title: "İzmir Anlaşmalı Boşanma Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de anlaşmalı boşanma davalarında uzman avukatlık hizmeti. Protokol hazırlama ve tek celsede boşanma desteği.",
+        title: "Anlaşmalı Boşanma İzmir | Av. Mert Kağan Çetin",
+        description: "İzmir'de anlaşmalı boşanma süreci, şartları ve avukat desteği. Tek celsede boşanma için profesyonel hukuki destek.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/anlasmali-bosanma/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-04-18" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/anlasmali-bosanma/" },
 };
 

@@ -12,16 +12,16 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İzmir Nafaka Davası Avukatı",
-    description: "İzmir nafaka davası avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası ve nafaka artırım davalarında uzman destek.",
-    keywords: ["nafaka davası avukatı İzmir", "nafaka davası", "yoksulluk nafakası", "iştirak nafakası", "nafaka artırım davası"],
+    title: "Nafaka Davaları İzmir | Nafaka Avukatı",
+    description: "İzmir'de nafaka davaları avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası, tedbir nafakası ve nafaka artırım davalarında uzman hukuki destek.",
+    keywords: ["nafaka davaları İzmir", "nafaka davası avukatı İzmir", "yoksulluk nafakası İzmir", "iştirak nafakası", "nafaka artırım davası İzmir", "tedbir nafakası"],
     openGraph: {
-        title: "İzmir Nafaka Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de nafaka davalarında uzman avukatlık hizmeti. Adil nafaka miktarı için mücadele ediyoruz.",
+        title: "Nafaka Davaları İzmir | Av. Mert Kağan Çetin",
+        description: "İzmir'de nafaka türleri, hesaplama yöntemleri ve nafaka davası süreçlerinde uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/nafaka-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-04-18" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/nafaka-davasi/" },
 };
 

@@ -433,11 +433,18 @@ export default function IzmirBosanmaAvukatiPage() {
                         {/* Uzmanlık Alanları Alt Sayfalar */}
                         <div className="not-prose my-12">
                             <p className="text-xl font-playfair font-bold text-primary mb-6">Aile Hukuku Uzmanlık Alanlarımız</p>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                 {[
                                     { title: "Anlaşmalı Boşanma", desc: "Tek celsede anlaşmalı boşanma ve protokol hazırlama", url: "/izmir-bosanma-avukati/anlasmali-bosanma/" },
                                     { title: "Velayet Davası", desc: "Çocuk velayeti ve velayet değişikliği davaları", url: "/izmir-bosanma-avukati/velayet-davasi/" },
                                     { title: "Nafaka Davası", desc: "İştirak, yoksulluk ve tedbir nafakası davaları", url: "/izmir-bosanma-avukati/nafaka-davasi/" },
+                                    { title: "Çekişmeli Boşanma", desc: "Kusur tespiti, delil toplama ve çekişmeli boşanma davaları", url: "/izmir-bosanma-avukati/cekismeli-bosanma-izmir/" },
+                                    { title: "Boşanma Süreci Rehberi", desc: "Boşanma davası aşamaları ve süreç yönetimi", url: "/izmir-bosanma-avukati/bosanma-sureci-izmir/" },
+                                    { title: "Boşanma Avukatı Ücretleri", desc: "2026 boşanma avukat ücretleri ve dava masrafları", url: "/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/" },
+                                    { title: "Mal Paylaşımı Davası", desc: "Edinilmiş mallara katılma ve mal paylaşımı davaları", url: "/izmir-bosanma-avukati/mal-paylasimi-izmir/" },
+                                    { title: "Aldatma ve Boşanma", desc: "Zina sebebiyle boşanma davası ve tazminat hakları", url: "/izmir-bosanma-avukati/aldatma-bosanma-izmir/" },
+                                    { title: "Aile Hukuku Avukatı", desc: "Aile hukukunun tüm alanlarında uzman avukatlık hizmeti", url: "/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/" },
+                                    { title: "Boşanma Davası Nasıl Açılır?", desc: "Dava açma şartları, gerekli belgeler ve süreç rehberi", url: "/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" },
                                 ].map((item, i) => (
                                     <Link key={i} href={item.url} className="group block p-5 bg-slate-50 border border-slate-200 rounded-xl hover:border-secondary transition-all">
                                         <p className="font-bold text-primary group-hover:text-secondary transition-colors mb-1">{item.title}</p>

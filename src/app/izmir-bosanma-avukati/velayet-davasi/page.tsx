@@ -12,16 +12,16 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İzmir Velayet Davası Avukatı",
-    description: "İzmir velayet davası avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayetin değiştirilmesi ve kişisel ilişki düzenlemesinde uzman destek.",
-    keywords: ["velayet davası avukatı İzmir", "velayet davası", "çocuk velayeti", "velayet değişikliği"],
+    title: "Velayet Davaları İzmir | Velayet Avukatı",
+    description: "İzmir'de velayet davaları avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayet değişikliği, kişisel ilişki düzenlemesi ve mahkeme kriterlerinde uzman hukuki destek.",
+    keywords: ["velayet davaları İzmir", "velayet davası avukatı İzmir", "çocuk velayeti İzmir", "velayet değişikliği davası", "kişisel ilişki düzenlemesi"],
     openGraph: {
-        title: "İzmir Velayet Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de velayet davalarında uzman avukatlık hizmeti. Çocuğunuzun üstün yararı için mücadele ediyoruz.",
+        title: "Velayet Davaları İzmir | Av. Mert Kağan Çetin",
+        description: "İzmir'de çocuk velayeti, mahkeme kriterleri ve velayet davası süreçlerinde uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/velayet-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-04-18" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/velayet-davasi/" },
 };
 
