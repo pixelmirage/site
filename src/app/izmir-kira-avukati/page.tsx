@@ -3,11 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FAQSchema } from "@/components/seo/FAQSchema";
-import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
-import { VideoSchema } from "@/components/seo/VideoSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
-import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
@@ -32,33 +28,6 @@ export const metadata: Metadata = {
     },
 };
 
-const faqs = [
-    {
-        question: "Avukata soru sormak kaç TL?",
-        answer: "2026 yılı itibarıyla avukata soru sormak (danışma ücreti) İzmir Barosu tarifesine göre sözlü danışma için en az 3.000 TL, yazılı danışma için ise en az 6.000 TL'dir. Ancak bu tutarlar asgari ücretlerdir; avukatın deneyimine, konunun karmaşıklığına ve görüşme süresine göre değişiklik gösterebilir. Bazı avukatlar ilk görüşmeyi ücretsiz sunmaktadır. Büromuzda kira hukuku alanında ilk ön görüşme ücretsizdir. Bu görüşmede davanızın genel değerlendirmesi yapılır, hukuki haklarınız anlatılır ve izlenecek yol hakkında bilgilendirme sağlanır. Danışma ücreti, ileride dava açılması halinde avukatlık ücretinden mahsup edilebilir."
-    },
-    {
-        question: "Kira davalarında avukat ücreti ne kadar?",
-        answer: "2026 yılında İzmir'de kira davalarında avukat ücreti davanın türüne göre değişmektedir. Tahliye taahhütnamesi ile tahliye davalarında 35.000–50.000 TL, ihtiyaç nedeniyle tahliye davalarında 45.000–70.000 TL, iki haklı ihtar nedeniyle tahliye davalarında 50.000–80.000 TL, kira tespit davalarında ise 40.000–60.000 TL arasında ücret belirlenmektedir. Bu tutarlar İzmir Barosu asgari ücret tarifesinin üzerinde olup, davanın karmaşıklığına, süresine ve dava değerine göre farklılık gösterebilir. Ev sahibi kiracı anlaşmazlıklarında avukat ücreti konusunda kesin bilgi almak için ücretsiz ön görüşme hakkınızı kullanabilirsiniz."
-    },
-    {
-        question: "Kiracı tahliyesine hangi avukat bakar?",
-        answer: "Kiracı tahliye davalarına kira hukuku alanında uzmanlaşmış avukatlar bakar. Genel olarak \"gayrimenkul avukatı\" veya \"kira avukatı\" olarak anılan bu avukatlar, Türk Borçlar Kanunu'nun kira hükümlerini, İcra ve İflas Kanunu'nun tahliye prosedürlerini ve Yargıtay'ın güncel içtihatlarını yakından takip eder. Tahliye davaları hukuk mahkemelerinde (sulh hukuk mahkemesi) görülür ve avukat tutma zorunluluğu bulunmamakla birlikte, sürecin teknik detayları nedeniyle uzman avukat desteği kritik önem taşır. İzmir'de kiracı tahliye davaları için büromuz profesyonel hukuki destek sunmaktadır."
-    },
-    {
-        question: "1 dava için avukat ne kadar alır?",
-        answer: "2026 yılında İzmir'de bir kira davası için avukat ücreti davanın türüne ve karmaşıklığına göre 35.000 TL ile 80.000 TL arasında değişmektedir. Avukat ücreti belirlenirken davanın süresi, dava değeri, yapılacak işlem sayısı ve davanın zorluğu dikkate alınır. İzmir Barosu asgari ücret tarifesi altında ücret belirlenmesi mümkün değildir. Ücret genellikle dava başında peşin veya taksitli olarak ödenir. Bazı avukatlar başarıya bağlı (nispi) ücret de uygulayabilir. Ayrıca avukatlık ücreti dışında mahkeme harçları, bilirkişi ücreti, tebligat masrafı gibi yargılama giderleri de bulunmaktadır."
-    },
-    {
-        question: "10 yıllık kiracının tahliye davası ne kadar sürer?",
-        answer: "10 yıllık uzama süresini dolduran kiracının tahliye davası, TBK m. 347 kapsamında açılır ve ortalama 6 ay ile 1.5 yıl arasında sürer. Kiraya veren, 10 yıllık uzama süresinin sonunda herhangi bir sebep göstermeksizin sözleşmeyi feshedebilir; ancak bunun için sürenin bitiminden en az 3 ay önce yazılı bildirim (fesih ihtarnamesi) gönderilmesi şarttır. Kiracı tahliye etmezse dava açılır. Dava süresince kiracı taşınmazda oturmaya devam edebilir. Mahkeme genellikle bilirkişi incelemesi yapmaz, süre hesabı ve ihtarname incelemesi ile karar verir."
-    },
-    {
-        question: "Kiracı en hızlı nasıl tahliye edilir?",
-        answer: "Kiracıyı en hızlı tahliye etmenin yolu tahliye taahhütnamesi ile icra takibi başlatmaktır. Geçerli bir tahliye taahhütnamesi varsa, taahhüt edilen tarihte kiracı çıkmazsa 1 ay içinde icra dairesine başvurulur. Kiracı itiraz etmezse 15 gün içinde tahliye gerçekleşir; toplamda 1-2 ayda sonuç alınır. Tahliye taahhütnamesi yoksa en hızlı yol iki haklı ihtar yöntemidir: Kiracı bir kira yılı içinde iki kez kira bedelini geç öderse, kira yılı sonunda tahliye davası açılabilir. Kira borcunu hiç ödemeyen kiracı için ise ihtarname çekildikten 30 gün sonra tahliye davası açılabilir."
-    },
-];
-
 const tocItems = [
     { id: "iletisim-bilgileri", title: "İletişim" },
     { id: "kira-hukuku-avukatlari", title: "Kira Hukuku Avukatları" },
@@ -67,33 +36,18 @@ const tocItems = [
     { id: "kiraci-nasil-cikarilir", title: "Kiracı Nasıl Çıkarılır?" },
     { id: "kiraci-tahliye-davasi-avukati", title: "Tahliye Davası Avukatı" },
     { id: "avukatlik-ucreti", title: "Avukatlık Ücreti" },
+    { id: "tahliye-avukat-ucretini-kim-oder", title: "Ücreti Kim Öder?" },
     { id: "en-iyi-kira-avukati", title: "En İyi Kira Avukatı" },
-    { id: "kira-avukatligi-bransi", title: "Avukatlık Branşı mı?" },
-    { id: "kira-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
-    { id: "sss", title: "SSS" },
+{ id: "kira-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
+    { id: "avukata-soru-sormak", title: "Avukata Soru Sormak" },
+    { id: "kiraci-tahliye-avukat", title: "Kiracı Tahliyesi Avukatı" },
+    { id: "10-yillik-kiraci", title: "10 Yıllık Kiracı" },
+    { id: "kiraci-en-hizli-tahliye", title: "En Hızlı Tahliye" },
 ];
 
 export default function IzmirKiraAvukatiPage() {
     return (
         <main className="bg-white">
-            {/* Schema Markup */}
-            <VideoSchema
-                name="İzmir'de Kira Avukatıyla Çalışmanın Önemi | Kısa Video"
-                description="Kira davası sürecinde en sık yapılan hatalar ve uzman kira avukatının farkı. İzmir'de kira uyuşmazlıklarında profesyonel destek."
-                thumbnailUrl="https://img.youtube.com/vi/JeM-o0sl9j8/maxresdefault.jpg"
-                uploadDate="2026-03-13"
-                contentUrl="https://www.youtube.com/shorts/JeM-o0sl9j8"
-                embedUrl="https://www.youtube.com/embed/JeM-o0sl9j8"
-            />
-
-            <FAQSchema faqs={faqs} />
-            <BreadcrumbSchema
-                items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" }
-                ]}
-            />
-
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-28">
                 <div className="container mx-auto px-4">
@@ -359,8 +313,19 @@ export default function IzmirKiraAvukatiPage() {
                             Lütfen kira hukukunu ilgilendiren sorununuzla ilgili kesin fiyat bilgisi almak için <strong>kira hukuku avukatı</strong> ile <Link href="/iletisim/">iletişime geçiniz</Link>.
                         </p>
 
-                        {/* En İyi İzmir Kira Avukatı Nasıl Bulunur? */}
-                        <h2 id="en-iyi-kira-avukati" className="scroll-mt-24">En İyi İzmir Kira Avukatı Nasıl Bulunur?</h2>
+                        {/* Kiracı Tahliye Davası Avukat Ücretini Kim Öder? */}
+                        <h2 id="tahliye-avukat-ucretini-kim-oder" className="scroll-mt-24">Kiracı Tahliye Davası Avukat Ücretini Kim Öder?</h2>
+
+                        <p>
+                            Kiracı tahliye davasında her taraf kendi avukatlık ücretini öder. Davayı açan ev sahibi kendi avukatının ücretini, kiracı da kendi avukatının ücretini karşılar. Ancak dava sonunda kaybeden taraf, karşı tarafın avukatı lehine mahkeme tarafından belirlenen vekalet ücretini ödemekle yükümlü tutulur.
+                        </p>
+
+                        <p>
+                            Bu vekalet ücreti Avukatlık Asgari Ücret Tarifesi&apos;ne göre belirlenir ve tarafların avukatlarıyla anlaştıkları ücretten farklıdır. Örneğin ev sahibi tahliye davasını kazanırsa kiracı, mahkemenin hükmettiği karşı vekalet ücretini ev sahibinin avukatına ödemek zorunda kalır. Bunun yanı sıra mahkeme harçları ve yargılama giderleri de davayı kaybeden tarafa yüklenir.
+                        </p>
+
+                        {/* En İyi İzmir Kira Hukuku Avukatı Nasıl Bulunur? */}
+                        <h2 id="en-iyi-kira-avukati" className="scroll-mt-24">En İyi İzmir Kira Hukuku Avukatı Nasıl Bulunur?</h2>
 
                         <p>
                             En iyi <strong>İzmir kira avukatı</strong>nı bulmak için öncelikle avukatın kira hukuku alanındaki deneyimine ve dava geçmişine bakmanız gerekir. İzmir Barosu&apos;na kayıtlı avukatlar arasından kira hukuku konusunda uzmanlaşmış isimleri araştırabilirsiniz.
@@ -374,17 +339,6 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             En iyi <strong>kira avukatı</strong>; müvekkilin haklarını en etkili şekilde savunan, kira hukuku mevzuatını ve Yargıtay içtihatlarını yakından takip eden, dava süreçlerini zamanında ve eksiksiz yürüten avukattır. &quot;En iyi&quot; kavramı kişiden kişiye değişebilir; ancak avukatın alanında uzmanlaşmış olması, deneyim yılı ve müvekkil memnuniyeti en önemli göstergelerdir. İzmir&apos;de <strong>kira avukatı</strong> ararken mutlaka yüz yüze veya telefonla ön görüşme yapmanız ve davanızın değerlendirilmesini istemeniz tavsiye edilir.
-                        </p>
-
-                        {/* Kira Avukatlığı Avukatlık Branşı mıdır? */}
-                        <h2 id="kira-avukatligi-bransi" className="scroll-mt-24">Kira Avukatlığı Avukatlık Branşı mıdır?</h2>
-
-                        <p>
-                            Türkiye&apos;de avukatlık mesleğinde resmi bir branşlaşma sistemi bulunmamaktadır. Her avukat her alanda dava takip edebilir. Ancak pratikte avukatlar belirli hukuk dallarında uzmanlaşmaktadır. Kira avukatlığı da bu uzmanlık alanlarından biridir.
-                        </p>
-
-                        <p>
-                            Kira hukuku; Türk Borçlar Kanunu, İcra ve İflas Kanunu, Yargıtay içtihatları ve sürekli değişen mevzuat bilgisi gerektiren teknik bir alandır. Bu nedenle kira uyuşmazlıklarında genel pratik yapan bir avukat yerine kira hukukuna odaklanmış bir <strong>İzmir kira avukatı</strong> ile çalışmak daha etkili sonuçlar almanızı sağlar.
                         </p>
 
                         {/* İzmir Kira Avukatı Tutmak Zorunlu Mu? */}
@@ -428,10 +382,57 @@ export default function IzmirKiraAvukatiPage() {
                             <GoogleReviews />
                         </div>
 
-                        {/* SSS */}
-                        <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
+                        {/* Avukata Soru Sormak */}
+                        <h2 id="avukata-soru-sormak" className="scroll-mt-24">Avukata Soru Sormak Kaç TL?</h2>
 
-                        <FAQAccordion faqs={faqs} />
+                        <p>
+                            2026 yılı itibarıyla avukata soru sormak (danışma ücreti) İzmir Barosu tarifesine göre sözlü danışma için en az 3.000 TL, yazılı danışma için ise en az 6.000 TL&apos;dir. Ancak bu tutarlar asgari ücretlerdir; avukatın deneyimine, konunun karmaşıklığına ve görüşme süresine göre değişiklik gösterebilir.
+                        </p>
+
+                        <p>
+                            Bazı avukatlar ilk görüşmeyi ücretsiz sunmaktadır. Büromuzda kira hukuku alanında ilk ön görüşme ücretsizdir. Bu görüşmede davanızın genel değerlendirmesi yapılır, hukuki haklarınız anlatılır ve izlenecek yol hakkında bilgilendirme sağlanır. Danışma ücreti, ileride dava açılması halinde avukatlık ücretinden mahsup edilebilir.
+                        </p>
+
+                        <h3>Kira Davalarında Avukat Ücreti Ne Kadar?</h3>
+
+                        <p>
+                            2026 yılında İzmir&apos;de kira davalarında avukat ücreti davanın türüne göre değişmektedir. Tahliye taahhütnamesi ile tahliye davalarında 35.000-50.000 TL, ihtiyaç nedeniyle tahliye davalarında 45.000-70.000 TL, iki haklı ihtar nedeniyle tahliye davalarında 50.000-80.000 TL, kira tespit davalarında ise 40.000-60.000 TL arasında ücret belirlenmektedir. Bu tutarlar İzmir Barosu asgari ücret tarifesinin üzerinde olup, davanın karmaşıklığına, süresine ve dava değerine göre farklılık gösterebilir. Ev sahibi kiracı anlaşmazlıklarında avukat ücreti konusunda kesin bilgi almak için ücretsiz ön görüşme hakkınızı kullanabilirsiniz.
+                        </p>
+
+                        <h3>1 Dava İçin Avukat Ne Kadar Alır?</h3>
+
+                        <p>
+                            2026 yılında İzmir&apos;de bir kira davası için avukat ücreti davanın türüne ve karmaşıklığına göre 35.000 TL ile 80.000 TL arasında değişmektedir. Avukat ücreti belirlenirken davanın süresi, dava değeri, yapılacak işlem sayısı ve davanın zorluğu dikkate alınır. İzmir Barosu asgari ücret tarifesi altında ücret belirlenmesi mümkün değildir. Ücret genellikle dava başında peşin veya taksitli olarak ödenir. Bazı avukatlar başarıya bağlı (nispi) ücret de uygulayabilir. Ayrıca avukatlık ücreti dışında mahkeme harçları, bilirkişi ücreti, tebligat masrafı gibi yargılama giderleri de bulunmaktadır.
+                        </p>
+
+                        {/* Kiracı Tahliyesi Avukatı */}
+                        <h2 id="kiraci-tahliye-avukat" className="scroll-mt-24">Kiracı Tahliyesine Hangi Avukat Bakar?</h2>
+
+                        <p>
+                            Kiracı tahliye davalarına kira hukuku alanında uzmanlaşmış avukatlar bakar. Genel olarak &quot;gayrimenkul avukatı&quot; veya &quot;kira avukatı&quot; olarak anılan bu avukatlar, Türk Borçlar Kanunu&apos;nun kira hükümlerini, İcra ve İflas Kanunu&apos;nun tahliye prosedürlerini ve Yargıtay&apos;ın güncel içtihatlarını yakından takip eder. Tahliye davaları hukuk mahkemelerinde (sulh hukuk mahkemesi) görülür ve avukat tutma zorunluluğu bulunmamakla birlikte, sürecin teknik detayları nedeniyle uzman avukat desteği kritik önem taşır. İzmir&apos;de kiracı tahliye davaları için büromuz profesyonel hukuki destek sunmaktadır.
+                        </p>
+
+                        {/* 10 Yıllık Kiracı */}
+                        <h2 id="10-yillik-kiraci" className="scroll-mt-24">10 Yıllık Kiracının Tahliye Davası Ne Kadar Sürer?</h2>
+
+                        <p>
+                            10 yıllık uzama süresini dolduran kiracının tahliye davası, TBK m. 347 kapsamında açılır ve ortalama 6 ay ile 1.5 yıl arasında sürer. Kiraya veren, 10 yıllık uzama süresinin sonunda herhangi bir sebep göstermeksizin sözleşmeyi feshedebilir; ancak bunun için sürenin bitiminden en az 3 ay önce yazılı bildirim (fesih ihtarnamesi) gönderilmesi şarttır.
+                        </p>
+
+                        <p>
+                            Kiracı tahliye etmezse dava açılır. Dava süresince kiracı taşınmazda oturmaya devam edebilir. Mahkeme genellikle bilirkişi incelemesi yapmaz, süre hesabı ve ihtarname incelemesi ile karar verir.
+                        </p>
+
+                        {/* En Hızlı Tahliye */}
+                        <h2 id="kiraci-en-hizli-tahliye" className="scroll-mt-24">Kiracı En Hızlı Nasıl Tahliye Edilir?</h2>
+
+                        <p>
+                            Kiracıyı en hızlı tahliye etmenin yolu <Link href="/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link> ile icra takibi başlatmaktır. Geçerli bir tahliye taahhütnamesi varsa, taahhüt edilen tarihte kiracı çıkmazsa 1 ay içinde icra dairesine başvurulur. Kiracı itiraz etmezse 15 gün içinde tahliye gerçekleşir; toplamda 1-2 ayda sonuç alınır.
+                        </p>
+
+                        <p>
+                            Tahliye taahhütnamesi yoksa en hızlı yol <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> yöntemidir: Kiracı bir kira yılı içinde iki kez kira bedelini geç öderse, kira yılı sonunda tahliye davası açılabilir. Kira borcunu hiç ödemeyen kiracı için ise ihtarname çekildikten 30 gün sonra tahliye davası açılabilir.
+                        </p>
 
                         {/* İlgili Makaleler */}
                         <h2>Kira Hukuku Makaleleri</h2>

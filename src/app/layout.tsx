@@ -4,7 +4,6 @@ import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { SchemaMarkup } from "@/components/layout/SchemaMarkup";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter", display: "swap" });
@@ -95,7 +94,6 @@ export default function RootLayout({
         inter.variable,
         playfair.variable
       )}>
-        <SchemaMarkup />
         <Header />
         <main className="flex-1 w-full pt-[72px]">
           {children}
