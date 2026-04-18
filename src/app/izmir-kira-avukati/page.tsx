@@ -182,7 +182,7 @@ export default function IzmirKiraAvukatiPage() {
                         </ol>
 
                         {/* Kira İşlerine Hangi Avukat Bakar */}
-                        <h2 id="kira-davalarina-bakan-avukat" className="scroll-mt-24">İzmir'de Kira Davalarına Bakan Avukat</h2>
+                        <h3 id="kira-davalarina-bakan-avukat" className="scroll-mt-24">İzmir&apos;de Kira Davalarına Bakan Avukat</h3>
 
                         <p>
                             <strong>Kira hukuku avukatı</strong>, müvekkillerden gelen kira kontratlarını revize eden ve düzenleyen, TBK hükümlerine göre kira hukukuna uygun çeşitli sözleşme ve protokolleri hazırlayan, kira hukuku kaynaklı <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link> gibi her türlü kira ilişkisinden doğan uyuşmazlıklarla ilgilenen alanında uzman hukukçuya denir.
@@ -251,7 +251,7 @@ export default function IzmirKiraAvukatiPage() {
                         </figure>
 
                         {/* Kiracının Tahliyesi Davası Avukatı İzmir */}
-                        <h2 id="kiraci-tahliye-davasi-avukati" className="scroll-mt-24">Kiracının Tahliyesi Davası Avukatı İzmir</h2>
+                        <h3 id="kiraci-tahliye-davasi-avukati" className="scroll-mt-24">Kiracının Tahliyesi Davası Avukatı İzmir</h3>
 
                         <p>
                             İzmir&apos;de kiracının tahliyesi davası açmak isteyen ev sahipleri için deneyimli bir <strong>kira avukatı</strong> ile çalışmak büyük önem taşır. Tahliye davaları TBK&apos;nın öngördüğü sıkı usul kurallarına tabi olduğundan sürelerin doğru hesaplanması ve ihtarnamelerin usulüne uygun çekilmesi gerekmektedir.
@@ -310,7 +310,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* Kiracı Tahliye Davası Avukat Ücretini Kim Öder? */}
-                        <h2 id="tahliye-avukat-ucretini-kim-oder" className="scroll-mt-24">Kiracı Tahliye Davası Avukat Ücretini Kim Öder?</h2>
+                        <h3 id="tahliye-avukat-ucretini-kim-oder" className="scroll-mt-24">Kiracı Tahliye Davası Avukat Ücretini Kim Öder?</h3>
 
                         <p>
                             Kiracı tahliye davasında her taraf kendi avukatlık ücretini öder. Davayı açan ev sahibi kendi avukatının ücretini, kiracı da kendi avukatının ücretini karşılar. Ancak dava sonunda kaybeden taraf, karşı tarafın avukatı lehine mahkeme tarafından belirlenen vekalet ücretini ödemekle yükümlü tutulur.
