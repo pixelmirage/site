@@ -12,16 +12,16 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İzmir Kiracı Tahliye Davası Avukatı",
-    description: "İzmir kiracı tahliye davası avukatı Av. Mert Kağan Çetin. İhtiyaç, taahhütname, iki haklı ihtar ile tahliye davalarında uzman destek.",
-    keywords: ["kiracı tahliye davası avukatı İzmir", "tahliye davası avukatı", "kiracı tahliye davası", "İzmir tahliye avukatı", "tahliye davası ücreti"],
+    title: "Tahliye Davaları İzmir | Kiracı Tahliye Avukatı",
+    description: "İzmir'de tahliye davaları avukatı Av. Mert Kağan Çetin. İhtiyaç, taahhütname, iki haklı ihtar, 10 yıllık süre ve temerrüt nedeniyle tahliye davalarında uzman destek.",
+    keywords: ["tahliye davaları İzmir", "kiracı tahliye davası avukatı İzmir", "tahliye davası avukatı", "kiracı tahliye davası", "İzmir tahliye avukatı", "tahliye davası ücreti"],
     openGraph: {
-        title: "İzmir Kiracı Tahliye Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de kiracı tahliye davalarında uzman avukatlık hizmeti. Tüm tahliye sebeplerinde hukuki destek.",
+        title: "Tahliye Davaları İzmir | Av. Mert Kağan Çetin",
+        description: "İzmir'de tüm tahliye davası türlerinde uzman avukatlık hizmeti. İhtiyaç, taahhütname, iki haklı ihtar ve süre sonu tahliye.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-tahliye-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-04-18" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-tahliye-davasi/" },
 };
 

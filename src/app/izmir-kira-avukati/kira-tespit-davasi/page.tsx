@@ -12,16 +12,16 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İzmir Kira Tespit Davası Avukatı",
-    description: "İzmir kira tespit davası avukatı Av. Mert Kağan Çetin. Emsal kira araştırması ve adil kira bedeli tespiti davalarında uzman destek.",
-    keywords: ["kira tespit davası avukatı İzmir", "kira tespit davası", "kira bedeli tespiti", "emsal kira araştırması", "TÜFE kira artışı"],
+    title: "Kira Artışı ve Tespit Davası İzmir | Kira Avukatı",
+    description: "İzmir'de kira artışı ve kira tespit davası avukatı Av. Mert Kağan Çetin. TÜFE sınırı, emsal kira araştırması, 5 yıllık kira ilişkilerinde bedel tespiti davalarında uzman destek.",
+    keywords: ["kira artışı ve tespit davası İzmir", "kira tespit davası avukatı İzmir", "kira artışı avukatı İzmir", "kira bedeli tespiti", "emsal kira araştırması", "TÜFE kira artışı"],
     openGraph: {
-        title: "İzmir Kira Tespit Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de kira tespit davalarında uzman avukatlık hizmeti. Adil kira bedeli tespiti için hukuki destek.",
+        title: "Kira Artışı ve Tespit Davası İzmir | Av. Mert Kağan Çetin",
+        description: "İzmir'de kira artışı uyuşmazlıkları ve kira tespit davalarında uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-04-18" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/" },
 };
 
