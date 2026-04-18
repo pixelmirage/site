@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Static Routes — individual last modified dates per page
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
         '': { lastModified: '2026-03-12', priority: 1 },
-        '/izmir-kira-avukati': { lastModified: '2026-04-16', priority: 1 },
+        '/izmir-kira-avukati': { lastModified: '2026-04-18', priority: 1 },
         '/izmir-is-avukati': { lastModified: '2026-04-17', priority: 1 },
         '/izmir-bosanma-avukati': { lastModified: '2026-04-17', priority: 1 },
         '/izmir-tazminat-avukati': { lastModified: '2026-04-17', priority: 1 },
@@ -34,9 +34,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/kidem-tazminati-hesaplama': { lastModified: '2026-03-16', priority: 0.8 },
         '/sozluk': { lastModified: '2026-03-15', priority: 0.8 },
         // Kira alt sayfaları
-        '/izmir-kira-avukati/kiraci-tahliye-davasi': { lastModified: '2026-03-22', priority: 0.9 },
-        '/izmir-kira-avukati/kira-tespit-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-kira-avukati/kiraci-tahliye-davasi': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/kira-tespit-davasi': { lastModified: '2026-04-18', priority: 0.9 },
         '/izmir-kira-avukati/kira-uyarlama-davasi': { lastModified: '2026-03-22', priority: 0.9 },
+        '/izmir-kira-avukati/izmir-kira-hukuku': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/kiraci-haklari-izmir': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/ev-sahibi-haklari-izmir': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/kira-sozlesmesi-rehberi': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/kira-borcu-icra': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/on-yillik-kiraci-tahliye': { lastModified: '2026-04-18', priority: 0.9 },
+        '/izmir-kira-avukati/izmir-kira-avukati-ucret': { lastModified: '2026-04-18', priority: 0.9 },
         // İş alt sayfaları
         '/izmir-is-avukati/ise-iade-davasi': { lastModified: '2026-03-22', priority: 0.9 },
         '/izmir-is-avukati/kidem-tazminati-davasi': { lastModified: '2026-03-22', priority: 0.9 },
