@@ -91,7 +91,7 @@ export function GoogleReviews() {
                 </div>
 
                 {/* Google Attribution */}
-                <p className="text-center text-xs text-slate-400 mt-8">
+                <p className="text-center text-xs text-slate-500 mt-8">
                     Yorumlar Google Business Profile&apos;dan alınmıştır.
                 </p>
             </div>

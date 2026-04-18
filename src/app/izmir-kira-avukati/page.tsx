@@ -56,7 +56,7 @@ export default function IzmirKiraAvukatiPage() {
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-28">
                 <div className="container mx-auto px-4">
                     {/* Breadcrumb */}
-                    <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+                    <nav className="flex items-center gap-2 text-sm text-slate-300 mb-8">
                         <Link href="/" className="hover:text-white transition-colors flex items-center gap-1">
                             <Home className="w-4 h-4" />
                             Ana Sayfa

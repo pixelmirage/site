@@ -47,7 +47,7 @@ export function YouTubeShorts({ videoId, title }: YouTubeShortsProps) {
                         </button>
                     )}
                 </div>
-                <p className="text-xs text-slate-400 mt-3 text-center">{title}</p>
+                <p className="text-xs text-slate-500 mt-3 text-center">{title}</p>
             </div>
         </div>
     );
