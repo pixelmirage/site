@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
@@ -44,6 +45,13 @@ const tocItems = [
 export default function IzmirKiraAvukatiPage() {
     return (
         <main className="bg-white">
+            <BreadcrumbSchema
+                items={[
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" }
+                ]}
+            />
+
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-28">
                 <div className="container mx-auto px-4">
