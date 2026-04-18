@@ -39,10 +39,6 @@ const tocItems = [
     { id: "tahliye-avukat-ucretini-kim-oder", title: "Ücreti Kim Öder?" },
     { id: "en-iyi-kira-avukati", title: "En İyi Kira Avukatı" },
 { id: "kira-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
-    { id: "avukata-soru-sormak", title: "Avukata Soru Sormak" },
-    { id: "kiraci-tahliye-avukat", title: "Kiracı Tahliyesi Avukatı" },
-    { id: "10-yillik-kiraci", title: "10 Yıllık Kiracı" },
-    { id: "kiraci-en-hizli-tahliye", title: "En Hızlı Tahliye" },
 ];
 
 export default function IzmirKiraAvukatiPage() {
@@ -381,58 +377,6 @@ export default function IzmirKiraAvukatiPage() {
                         <div className="not-prose">
                             <GoogleReviews />
                         </div>
-
-                        {/* Avukata Soru Sormak */}
-                        <h2 id="avukata-soru-sormak" className="scroll-mt-24">Avukata Soru Sormak Kaç TL?</h2>
-
-                        <p>
-                            2026 yılı itibarıyla avukata soru sormak (danışma ücreti) İzmir Barosu tarifesine göre sözlü danışma için en az 3.000 TL, yazılı danışma için ise en az 6.000 TL&apos;dir. Ancak bu tutarlar asgari ücretlerdir; avukatın deneyimine, konunun karmaşıklığına ve görüşme süresine göre değişiklik gösterebilir.
-                        </p>
-
-                        <p>
-                            Bazı avukatlar ilk görüşmeyi ücretsiz sunmaktadır. Büromuzda kira hukuku alanında ilk ön görüşme ücretsizdir. Bu görüşmede davanızın genel değerlendirmesi yapılır, hukuki haklarınız anlatılır ve izlenecek yol hakkında bilgilendirme sağlanır. Danışma ücreti, ileride dava açılması halinde avukatlık ücretinden mahsup edilebilir.
-                        </p>
-
-                        <h3>Kira Davalarında Avukat Ücreti Ne Kadar?</h3>
-
-                        <p>
-                            2026 yılında İzmir&apos;de kira davalarında avukat ücreti davanın türüne göre değişmektedir. Tahliye taahhütnamesi ile tahliye davalarında 35.000-50.000 TL, ihtiyaç nedeniyle tahliye davalarında 45.000-70.000 TL, iki haklı ihtar nedeniyle tahliye davalarında 50.000-80.000 TL, kira tespit davalarında ise 40.000-60.000 TL arasında ücret belirlenmektedir. Bu tutarlar İzmir Barosu asgari ücret tarifesinin üzerinde olup, davanın karmaşıklığına, süresine ve dava değerine göre farklılık gösterebilir. Ev sahibi kiracı anlaşmazlıklarında avukat ücreti konusunda kesin bilgi almak için ücretsiz ön görüşme hakkınızı kullanabilirsiniz.
-                        </p>
-
-                        <h3>1 Dava İçin Avukat Ne Kadar Alır?</h3>
-
-                        <p>
-                            2026 yılında İzmir&apos;de bir kira davası için avukat ücreti davanın türüne ve karmaşıklığına göre 35.000 TL ile 80.000 TL arasında değişmektedir. Avukat ücreti belirlenirken davanın süresi, dava değeri, yapılacak işlem sayısı ve davanın zorluğu dikkate alınır. İzmir Barosu asgari ücret tarifesi altında ücret belirlenmesi mümkün değildir. Ücret genellikle dava başında peşin veya taksitli olarak ödenir. Bazı avukatlar başarıya bağlı (nispi) ücret de uygulayabilir. Ayrıca avukatlık ücreti dışında mahkeme harçları, bilirkişi ücreti, tebligat masrafı gibi yargılama giderleri de bulunmaktadır.
-                        </p>
-
-                        {/* Kiracı Tahliyesi Avukatı */}
-                        <h2 id="kiraci-tahliye-avukat" className="scroll-mt-24">Kiracı Tahliyesine Hangi Avukat Bakar?</h2>
-
-                        <p>
-                            Kiracı tahliye davalarına kira hukuku alanında uzmanlaşmış avukatlar bakar. Genel olarak &quot;gayrimenkul avukatı&quot; veya &quot;kira avukatı&quot; olarak anılan bu avukatlar, Türk Borçlar Kanunu&apos;nun kira hükümlerini, İcra ve İflas Kanunu&apos;nun tahliye prosedürlerini ve Yargıtay&apos;ın güncel içtihatlarını yakından takip eder. Tahliye davaları hukuk mahkemelerinde (sulh hukuk mahkemesi) görülür ve avukat tutma zorunluluğu bulunmamakla birlikte, sürecin teknik detayları nedeniyle uzman avukat desteği kritik önem taşır. İzmir&apos;de kiracı tahliye davaları için büromuz profesyonel hukuki destek sunmaktadır.
-                        </p>
-
-                        {/* 10 Yıllık Kiracı */}
-                        <h2 id="10-yillik-kiraci" className="scroll-mt-24">10 Yıllık Kiracının Tahliye Davası Ne Kadar Sürer?</h2>
-
-                        <p>
-                            10 yıllık uzama süresini dolduran kiracının tahliye davası, TBK m. 347 kapsamında açılır ve ortalama 6 ay ile 1.5 yıl arasında sürer. Kiraya veren, 10 yıllık uzama süresinin sonunda herhangi bir sebep göstermeksizin sözleşmeyi feshedebilir; ancak bunun için sürenin bitiminden en az 3 ay önce yazılı bildirim (fesih ihtarnamesi) gönderilmesi şarttır.
-                        </p>
-
-                        <p>
-                            Kiracı tahliye etmezse dava açılır. Dava süresince kiracı taşınmazda oturmaya devam edebilir. Mahkeme genellikle bilirkişi incelemesi yapmaz, süre hesabı ve ihtarname incelemesi ile karar verir.
-                        </p>
-
-                        {/* En Hızlı Tahliye */}
-                        <h2 id="kiraci-en-hizli-tahliye" className="scroll-mt-24">Kiracı En Hızlı Nasıl Tahliye Edilir?</h2>
-
-                        <p>
-                            Kiracıyı en hızlı tahliye etmenin yolu <Link href="/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link> ile icra takibi başlatmaktır. Geçerli bir tahliye taahhütnamesi varsa, taahhüt edilen tarihte kiracı çıkmazsa 1 ay içinde icra dairesine başvurulur. Kiracı itiraz etmezse 15 gün içinde tahliye gerçekleşir; toplamda 1-2 ayda sonuç alınır.
-                        </p>
-
-                        <p>
-                            Tahliye taahhütnamesi yoksa en hızlı yol <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> yöntemidir: Kiracı bir kira yılı içinde iki kez kira bedelini geç öderse, kira yılı sonunda tahliye davası açılabilir. Kira borcunu hiç ödemeyen kiracı için ise ihtarname çekildikten 30 gün sonra tahliye davası açılabilir.
-                        </p>
 
                         {/* İlgili Makaleler */}
                         <h2>Kira Hukuku Makaleleri</h2>
