@@ -40,7 +40,7 @@ export function Hero() {
                         >
                             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
                                 Kira, iş, boşanma ve tazminat hukuku alanlarında yılların deneyimiyle
-                                haklarınızı en üst düzeyde savunuyoruz.
+                                haklarınızı İzmir'de en üst düzeyde savunuyoruz.
                             </p>
                         </div>
                     </div>
