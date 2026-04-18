@@ -61,11 +61,15 @@ const faqs = [
 
 const tocItems = [
     { id: "iletisim-bilgileri", title: "İletişim" },
-    { id: "kira-avukatinin-onemi", title: "Kira Avukatının Önemi" },
+    { id: "kira-hukuku-avukatlari", title: "Kira Hukuku Avukatları" },
     { id: "kira-davalari", title: "Kira Davaları" },
-    { id: "kira-islerine-hangi-avukat-bakar", title: "Hangi Avukat Bakar?" },
+    { id: "kira-davalarina-bakan-avukat", title: "Kira Davalarına Bakan Avukat" },
     { id: "kiraci-nasil-cikarilir", title: "Kiracı Nasıl Çıkarılır?" },
+    { id: "kiraci-tahliye-davasi-avukati", title: "Tahliye Davası Avukatı" },
     { id: "avukatlik-ucreti", title: "Avukatlık Ücreti" },
+    { id: "en-iyi-kira-avukati", title: "En İyi Kira Avukatı" },
+    { id: "kira-avukatligi-bransi", title: "Avukatlık Branşı mı?" },
+    { id: "kira-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
     { id: "sss", title: "SSS" },
 ];
 
@@ -189,7 +193,7 @@ export default function IzmirKiraAvukatiPage() {
                         />
 
                         {/* İzmir Kira Avukatının Önemi */}
-                        <h2 id="kira-avukatinin-onemi" className="scroll-mt-24">İzmir Kira Avukatının Önemi</h2>
+                        <h2 id="kira-hukuku-avukatlari" className="scroll-mt-24">İzmir'de Kira Hukuku Avukatları</h2>
 
                         <p>
                             Kiraya ilişkin hususlar sıkı şekil şartlarına bağlanmıştır. Ev sahibi ve kiracı arasındaki anlaşmazlıkların yetkin bir <strong>kira avukatı</strong> tarafından takip edilmesi çok önemlidir. <strong>Kira hukuku avukatı</strong>nın yardımları sayesinde süreleri kaçırmazsınız. <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">Tahliye işlemlerini</Link> ve davaları daha hızlı sonuçlandırır, böylece hak kaybına uğramanın önüne geçmiş olursunuz.
@@ -228,7 +232,7 @@ export default function IzmirKiraAvukatiPage() {
                         </ol>
 
                         {/* Kira İşlerine Hangi Avukat Bakar */}
-                        <h2 id="kira-islerine-hangi-avukat-bakar" className="scroll-mt-24">Kira İşlerine Hangi Avukat Bakar?</h2>
+                        <h2 id="kira-davalarina-bakan-avukat" className="scroll-mt-24">İzmir'de Kira Davalarına Bakan Avukat</h2>
 
                         <p>
                             <strong>Kira hukuku avukatı</strong>, müvekkillerden gelen kira kontratlarını revize eden ve düzenleyen, TBK hükümlerine göre kira hukukuna uygun çeşitli sözleşme ve protokolleri hazırlayan, kira hukuku kaynaklı <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link> gibi her türlü kira ilişkisinden doğan uyuşmazlıklarla ilgilenen alanında uzman hukukçuya denir.
@@ -296,6 +300,17 @@ export default function IzmirKiraAvukatiPage() {
                             <figcaption className="text-center text-sm text-slate-500 mt-3">Kiracı tahliye sebepleri ve hukuki dayanakları</figcaption>
                         </figure>
 
+                        {/* Kiracının Tahliyesi Davası Avukatı İzmir */}
+                        <h2 id="kiraci-tahliye-davasi-avukati" className="scroll-mt-24">Kiracının Tahliyesi Davası Avukatı İzmir</h2>
+
+                        <p>
+                            İzmir&apos;de kiracının tahliyesi davası açmak isteyen ev sahipleri için deneyimli bir <strong>kira avukatı</strong> ile çalışmak büyük önem taşır. Tahliye davaları TBK&apos;nın öngördüğü sıkı usul kurallarına tabi olduğundan sürelerin doğru hesaplanması ve ihtarnamelerin usulüne uygun çekilmesi gerekmektedir.
+                        </p>
+
+                        <p>
+                            <strong>İzmir kira avukatı</strong> olarak <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye taahhütnamesi</Link>, <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/">ihtiyaç nedeniyle tahliye</Link>, <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> ve 10 yıllık uzama süresinin dolması gibi tüm tahliye sebeplerine dayalı davalarda müvekkillerimize profesyonel hukuki destek sunmaktayız. Tahliye davasında hak kaybı yaşamamak için sürecin başından itibaren uzman bir avukatla hareket etmeniz önerilir.
+                        </p>
+
                         {/* Avukatlık Ücreti */}
                         <h2 id="avukatlik-ucreti" className="scroll-mt-24">Ev Sahibi Kiracı Davalarında Avukatlık Ücreti</h2>
 
@@ -342,6 +357,45 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             Lütfen kira hukukunu ilgilendiren sorununuzla ilgili kesin fiyat bilgisi almak için <strong>kira hukuku avukatı</strong> ile <Link href="/iletisim/">iletişime geçiniz</Link>.
+                        </p>
+
+                        {/* En İyi İzmir Kira Avukatı Nasıl Bulunur? */}
+                        <h2 id="en-iyi-kira-avukati" className="scroll-mt-24">En İyi İzmir Kira Avukatı Nasıl Bulunur?</h2>
+
+                        <p>
+                            En iyi <strong>İzmir kira avukatı</strong>nı bulmak için öncelikle avukatın kira hukuku alanındaki deneyimine ve dava geçmişine bakmanız gerekir. İzmir Barosu&apos;na kayıtlı avukatlar arasından kira hukuku konusunda uzmanlaşmış isimleri araştırabilirsiniz.
+                        </p>
+
+                        <p>
+                            Avukatın daha önce yürüttüğü <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link> ve kira uyuşmazlıklarındaki başarı oranı önemli bir kriter olmalıdır. Ayrıca avukatın iletişim becerisi, müvekkile geri dönüş hızı ve ücret politikası da tercih sürecinde değerlendirilmesi gereken faktörlerdir. Ücretsiz ön görüşme imkanı sunan <strong>İzmir kira avukatları</strong>yla tanışarak kendinize en uygun avukatı belirleyebilirsiniz.
+                        </p>
+
+                        <h3>En İyi Kira Avukatı Hangisi?</h3>
+
+                        <p>
+                            En iyi <strong>kira avukatı</strong>; müvekkilin haklarını en etkili şekilde savunan, kira hukuku mevzuatını ve Yargıtay içtihatlarını yakından takip eden, dava süreçlerini zamanında ve eksiksiz yürüten avukattır. &quot;En iyi&quot; kavramı kişiden kişiye değişebilir; ancak avukatın alanında uzmanlaşmış olması, deneyim yılı ve müvekkil memnuniyeti en önemli göstergelerdir. İzmir&apos;de <strong>kira avukatı</strong> ararken mutlaka yüz yüze veya telefonla ön görüşme yapmanız ve davanızın değerlendirilmesini istemeniz tavsiye edilir.
+                        </p>
+
+                        {/* Kira Avukatlığı Avukatlık Branşı mıdır? */}
+                        <h2 id="kira-avukatligi-bransi" className="scroll-mt-24">Kira Avukatlığı Avukatlık Branşı mıdır?</h2>
+
+                        <p>
+                            Türkiye&apos;de avukatlık mesleğinde resmi bir branşlaşma sistemi bulunmamaktadır. Her avukat her alanda dava takip edebilir. Ancak pratikte avukatlar belirli hukuk dallarında uzmanlaşmaktadır. Kira avukatlığı da bu uzmanlık alanlarından biridir.
+                        </p>
+
+                        <p>
+                            Kira hukuku; Türk Borçlar Kanunu, İcra ve İflas Kanunu, Yargıtay içtihatları ve sürekli değişen mevzuat bilgisi gerektiren teknik bir alandır. Bu nedenle kira uyuşmazlıklarında genel pratik yapan bir avukat yerine kira hukukuna odaklanmış bir <strong>İzmir kira avukatı</strong> ile çalışmak daha etkili sonuçlar almanızı sağlar.
+                        </p>
+
+                        {/* İzmir Kira Avukatı Tutmak Zorunlu Mu? */}
+                        <h2 id="kira-avukati-zorunlu-mu" className="scroll-mt-24">İzmir Kira Avukatı Tutmak Zorunlu Mu?</h2>
+
+                        <p>
+                            Türk hukukunda kira davaları için avukat tutma zorunluluğu bulunmamaktadır. Kiracı veya ev sahibi davayı bizzat kendisi de takip edebilir. Ancak kira hukuku, sürelere ve şekil şartlarına sıkı sıkıya bağlı bir alan olduğundan avukatsız açılan davalarda usul hatası yapma riski oldukça yüksektir.
+                        </p>
+
+                        <p>
+                            Yanlış hesaplanan bir süre, eksik çekilen bir ihtarname veya hatalı hazırlanan bir dilekçe davanın reddine yol açabilir. Bu nedenle özellikle <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link> ve <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link>nda <strong>İzmir kira avukatı</strong> ile çalışmanız hak kaybını önlemek açısından büyük önem taşımaktadır.
                         </p>
 
                         <hr />
