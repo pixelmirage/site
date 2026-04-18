@@ -99,6 +99,34 @@ export function SchemaMarkup() {
                     "Nafaka Davası", "Mal Paylaşımı", "Tazminat Hukuku",
                     "Maddi Tazminat", "Manevi Tazminat", "Trafik Kazası Tazminatı"
                 ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "İzmir Ekonomi Üniversitesi",
+                    "department": {
+                        "@type": "Organization",
+                        "name": "Hukuk Fakültesi"
+                    }
+                },
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Bar Admission",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "İzmir Barosu"
+                        },
+                        "identifier": "15556"
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Bar Admission",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "Türkiye Barolar Birliği"
+                        },
+                        "identifier": "162439"
+                    }
+                ],
                 "memberOf": {
                     "@type": "Organization",
                     "name": "İzmir Barosu"
