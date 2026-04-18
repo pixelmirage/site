@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { YouTubeShorts } from "@/components/ui/YouTubeShorts";
@@ -276,42 +276,24 @@ export default function IzmirKiraAvukatiPage() {
                             Tahliye davalarında genellikle İzmir avukatları olarak yıllık kira bedelinin belirli bir yüzdesi üzerinden ücretlendirme yapılmaktadır. Ancak çoğu avukatın bir taban fiyat uygulaması bulunmaktadır. 2026 yılı güncel ücret aralıklarımız:
                         </p>
 
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Dava Türü</th>
-                                    <th>Süre (Ortalama)</th>
-                                    <th>Ücret Aralığı</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><Link href="/sozluk/tahliye-taahhutnamesi/">Tahliye Taahhüdü</Link> ile Tahliye</td>
-                                    <td>3-6 ay</td>
-                                    <td>35.000 - 50.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>İhtiyaç Nedeniyle Tahliye</td>
-                                    <td>6 ay - 1.5 yıl</td>
-                                    <td>45.000 - 70.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>İki Haklı İhtar Tahliyesi</td>
-                                    <td>1 - 2 yıl</td>
-                                    <td>50.000 - 80.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td><Link href="/sozluk/kira-tespit-davasi/">Kira Tespit Davası</Link></td>
-                                    <td>6 ay - 1 yıl</td>
-                                    <td>40.000 - 60.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>Kira Sözleşmesi Hazırlama</td>
-                                    <td>1-3 gün</td>
-                                    <td>5.000 - 15.000 TL</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div className="not-prose my-6 grid gap-3">
+                            {[
+                                { title: <><Link href="/sozluk/tahliye-taahhutnamesi/" className="text-primary hover:text-secondary transition-colors underline underline-offset-2">Tahliye Taahhüdü</Link> ile Tahliye</>, sure: "3-6 ay", ucret: "35.000 - 50.000 TL" },
+                                { title: "İhtiyaç Nedeniyle Tahliye", sure: "6 ay - 1.5 yıl", ucret: "45.000 - 70.000 TL" },
+                                { title: "İki Haklı İhtar Tahliyesi", sure: "1 - 2 yıl", ucret: "50.000 - 80.000 TL" },
+                                { title: <><Link href="/sozluk/kira-tespit-davasi/" className="text-primary hover:text-secondary transition-colors underline underline-offset-2">Kira Tespit Davası</Link></>, sure: "6 ay - 1 yıl", ucret: "40.000 - 60.000 TL" },
+                                { title: "Kira Sözleşmesi Hazırlama", sure: "1-3 gün", ucret: "5.000 - 15.000 TL" },
+                            ].map((item, i) => (
+                                <div key={i} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 rounded-xl border border-slate-200 bg-white">
+                                    <span className="font-bold text-primary text-sm sm:flex-1">{item.title}</span>
+                                    <div className="flex items-center gap-3 text-sm text-slate-600">
+                                        <span className="inline-flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400" />{item.sure}</span>
+                                        <span className="text-slate-300">|</span>
+                                        <span className="font-semibold text-slate-800">{item.ucret}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
 
                         <p>
                             Lütfen kira hukukunu ilgilendiren sorununuzla ilgili kesin fiyat bilgisi almak için <strong>kira hukuku avukatı</strong> ile <Link href="/iletisim/">iletişime geçiniz</Link>.
