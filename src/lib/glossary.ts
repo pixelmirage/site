@@ -44,7 +44,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
         legalBasis: "TBK m. 352/1",
         category: "tahliye",
         relatedTermSlugs: ["kira-sozlesmesi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "0I5No4QamYA",
         faqs: [
@@ -114,7 +114,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
         legalBasis: "TBK m. 350",
         category: "tahliye",
         relatedTermSlugs: ["tahliye-taahhutnamesi", "10-yillik-uzama-suresi", "kiraci-haklari"],
-        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "KrgeQm3tm_Q",
         faqs: [
@@ -218,7 +218,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
         legalBasis: "TBK m. 299-378",
         category: "sozlesme",
         relatedTermSlugs: ["depozito", "kira-artis-orani", "tahliye-taahhutnamesi"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec"],
+        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
         relatedServiceAnchor: "#gayrimenkul",
         faqs: [
             {
@@ -391,7 +391,7 @@ Süre hesaplamasında, sözleşmede belirtilen sürenin bitiminden itibaren on y
         legalBasis: "TBK m. 347",
         category: "tahliye",
         relatedTermSlugs: ["ihtiyac-nedeniyle-tahliye", "kira-sozlesmesi", "kira-tespit-davasi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "CNK9e52vzlo",
         faqs: [
@@ -426,7 +426,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         legalBasis: "TBK m. 339-356",
         category: "haklar",
         relatedTermSlugs: ["kira-sozlesmesi", "depozito", "kira-artis-orani", "10-yillik-uzama-suresi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "depozito-iadesi-davasi-kiracinin-haklari-ve-surec", "kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari"],
+        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "depozito-iadesi-davasi-kiracinin-haklari-ve-surec", "kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "UJ35T2zOXH0",
         faqs: [
@@ -741,11 +741,11 @@ Genel boşanma nedeni: Evlilik birliğinin temelinden sarsılması (TMK m. 166/1
         legalBasis: "TMK m. 161-166",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "velayet", "nafaka", "mal-paylasimi"],
-        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
-                question: "Çekişmeli boşanma ne kadar sürer?",
+                question: "Çekişmeli bo��anma ne kadar sürer?",
                 answer: "Ortalama 1-3 yıl sürer. Delil toplama, tanık dinleme, sosyal inceleme raporu ve bilirkişi süreçleri davanın süresini uzatabilir."
             },
             {
@@ -775,7 +775,7 @@ Velayeti almayan ebeveynin kişisel ilişki kurma hakkı vardır. Bu hak, çocuk
         legalBasis: "TMK m. 335-351",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
-        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -811,7 +811,7 @@ Nafaka ödenmezse icra takibi yapılabilir ve 3 aya kadar tazyik hapsi kararı v
         legalBasis: "TMK m. 169, 175, 182",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "velayet", "mal-paylasimi"],
-        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri"],
+        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -1093,7 +1093,7 @@ Yargıtay 2. Hukuk Dairesi, her somut olaydaki kusur dağılımını ayrıntıl�
         legalBasis: "TMK m. 166/1-2",
         category: "bosanma",
         relatedTermSlugs: ["cekismeli-bosanma", "anlasmali-bosanma", "nafaka", "velayet"],
-        relatedBlogSlugs: ["cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat"],
+        relatedBlogSlugs: ["cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -1145,6 +1145,40 @@ Ecrimisil talebi geriye dönük olarak 5 yıla kadar yapılabilir. Hazine taşı
         ],
         keywords: ["ecrimisil nedir", "ecrimisil hesaplama", "haksız işgal tazminatı", "ecrimisil davası"],
         lastUpdated: "2026-03-16",
+    },
+    {
+        term: "Koruma Kararı",
+        slug: "koruma-karari",
+        shortDescription: "6284 sayılı kanun kapsamında şiddet mağdurlarının korunması için verilen tedbir kararı.",
+        definition: "Koruma kararı, 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun kapsamında şiddete uğrayan veya şiddete uğrama tehlikesi bulunan kişilerin korunması amacıyla hakim, mülki amir veya kolluk tarafından verilen tedbir kararıdır. Koruyucu ve önleyici olmak üzere iki türü bulunmaktadır.",
+        detailedExplanation: `Koruma kararı, 6284 sayılı kanunun en temel koruma mekanizmasıdır. Kanun, fiziksel, psikolojik, cinsel ve ekonomik şiddete karşı geniş kapsamlı bir koruma sağlamaktadır.
+
+Koruyucu tedbirler (m. 3) mağdura yönelik olup barınma yeri sağlanması, geçici maddi yardım, psikolojik destek ve geçici koruma altına alınması gibi önlemleri kapsar. Bu tedbirler hem mülki amir hem de hakim tarafından verilebilir.
+
+Önleyici tedbirler (m. 5) ise şiddet uygulayana yönelik olup yalnızca hakim tarafından verilir. Bunların en bilineni uzaklaştırma kararıdır: müşterek konuttan uzaklaştırma, mağdura yaklaşmama, iletişim kurma yasağı ve silah teslimi gibi tedbirleri içerir.
+
+Koruma kararı başvurusunda delil veya belge sunulması zorunlu değildir; mağdurun beyanı esas alınır. Tedbirler en fazla altı ay süreyle verilir ancak uzatılabilir. Tedbir kararını ihlal eden kişiye 3 ila 30 gün arasında zorlama hapsi uygulanır.`,
+        legalBasis: "6284 sayılı Kanun m. 3, 5, 8, 13",
+        category: "bosanma",
+        relatedTermSlugs: ["cekismeli-bosanma", "velayet", "nafaka", "evlilik-birliginin-temelden-sarsilmasi"],
+        relatedBlogSlugs: ["aile-ici-siddet-koruma-karari-6284-sayili-kanun", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti"],
+        relatedServiceAnchor: "#aile-hukuku",
+        faqs: [
+            {
+                question: "Koruma kararı almak için avukat gerekli mi?",
+                answer: "Hayır, koruma kararı başvurusu için avukat zorunluluğu yoktur. Mağdur, doğrudan polis karakoluna, Aile Mahkemesine veya Şiddet Önleme ve İzleme Merkezi'ne başvurabilir. Başvuru ücretsizdir."
+            },
+            {
+                question: "Koruma kararı ne kadar sürede verilir?",
+                answer: "Hakim veya mülki amir, koruma kararını ilke olarak aynı gün, en geç yirmi dört saat içinde vermelidir. Acil durumlarda kolluk amirleri de geçici tedbir kararı verebilir."
+            },
+            {
+                question: "Koruma kararını sadece eşler mi alabilir?",
+                answer: "Hayır, 6284 sayılı kanun eşlerin yanı sıra aile bireylerini, birlikte yaşayan veya yaşamış kişileri, çocukları ve ısrarlı takip mağdurlarını da kapsar. Evli olma şartı aranmaz ve cinsiyet ayrımı yapılmaz."
+            }
+        ],
+        keywords: ["koruma kararı nedir", "uzaklaştırma kararı nasıl alınır", "6284 sayılı kanun", "koruma tedbiri başvurusu", "aile içi şiddet koruma"],
+        lastUpdated: "2026-05-02",
     },
 ];
 

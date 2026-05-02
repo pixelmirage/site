@@ -220,6 +220,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/` → anchor: "kira sözleşmesi fesih sebepleri"
 - `/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/` → anchor: "depozito iadesi davası"
 - `/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/` → anchor: "kiracının aidat borcu"
+- `/blog/10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi/` → anchor: "10 yıllık uzama süresi tahliye"
 
 **Sözlük Terimleri:**
 - `/sozluk/tahliye-taahhutnamesi/` → "tahliye taahhütnamesi"
@@ -259,6 +260,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/` → anchor: "boşanmada mal paylaşımı"
 - `/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/` → anchor: "boşanmada tazminat davası"
 - `/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/` → anchor: "velayet değişikliği davası"
+- `/blog/aile-ici-siddet-koruma-karari-6284-sayili-kanun/` → anchor: "aile içi şiddet koruma kararı"
 
 **Sözlük Terimleri:**
 - `/sozluk/anlasmali-bosanma/` → "anlaşmalı boşanma"
@@ -267,6 +269,7 @@ Her üretilen blog yazısında aşağıdaki iç link kurallarına MUTLAKA uyulma
 - `/sozluk/nafaka/` → "nafaka"
 - `/sozluk/mal-paylasimi/` → "mal paylaşımı"
 - `/sozluk/evlilik-birliginin-temelden-sarsilmasi/` → "evlilik birliğinin temelden sarsılması"
+- `/sozluk/koruma-karari/` → "koruma kararı"
 
 **Yazılabilecek Konular:**
 1. Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti

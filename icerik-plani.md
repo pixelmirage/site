@@ -1,6 +1,6 @@
 # mertkagancetin.com İçerik Üretim Planı
 
-> Son güncelleme: 2026-04-15
+> Son güncelleme: 2026-05-02
 
 ## Strateji
 
@@ -10,12 +10,12 @@ Sadece **Kira Hukuku** ve **Boşanma Hukuku** odaklı. Her turda: **1 Kira + 1 B
 
 | Cluster | Mevcut | Hedef | Eksik | Kapsam |
 |---------|--------|-------|-------|--------|
-| Kira Hukuku | 10 | 17 | 7 | %59 |
-| Boşanma Hukuku | 7 | 13 | 6 | %54 |
+| Kira Hukuku | 11 | 17 | 6 | %65 |
+| Boşanma Hukuku | 8 | 13 | 5 | %62 |
 
 ---
 
-## Kira Hukuku (7 Eksik)
+## Kira Hukuku (6 Eksik)
 
 - [x] Kira Sözleşmesi Fesih Sebepleri ve Hukuki Süreç
 - [x] Depozito İadesi Davası: Kiracının Hakları ve Süreç
@@ -24,17 +24,17 @@ Sadece **Kira Hukuku** ve **Boşanma Hukuku** odaklı. Her turda: **1 Kira + 1 B
 - [ ] Alt Kiracı ve Devir Yasağı: Kiracının Sözleşme İhlali
 - [ ] Fuzuli İşgal ve Haksız Kullanım Tazminatı Davası
 - [ ] Kentsel Dönüşümde Kiracı Hakları ve Tahliye Süreci
-- [ ] 10 Yıllık Uzama Süresi Dolan Kiracının Tahliyesi
+- [x] 10 Yıllık Uzama Süresi Dolan Kiracının Tahliyesi
 - [ ] Kira Artış Oranı Sınırı 2026: Güncel Hesaplama Rehberi
 - [ ] Eşya Hasarı Nedeniyle Kiracıya Tazminat Davası
 
-## Boşanma Hukuku (6 Eksik)
+## Boşanma Hukuku (5 Eksik)
 
 - [x] Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti
 - [x] Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi
 - [x] Boşanmada Tazminat Davası: Maddi ve Manevi Tazminat
 - [x] Velayet Değişikliği Davası: Şartlar ve Mahkeme Kriterleri
-- [ ] Aile İçi Şiddet ve Koruma Kararı Süreci (6284 Sayılı Kanun)
+- [x] Aile İçi Şiddet ve Koruma Kararı Süreci (6284 Sayılı Kanun)
 - [ ] Düğün Takılarının İadesi Davası: Yargıtay Kararları
 - [ ] Nafaka Artırım ve Nafaka Kaldırma Davası Şartları
 - [ ] Boşanma Davasında Sosyal Medya Delilleri ve Hukuki Geçerlilik

@@ -386,6 +386,7 @@ export default function IzmirBosanmaAvukatiPage() {
                             <li><Link href="/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/">Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi</Link></li>
                             <li><Link href="/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/">Boşanmada Tazminat Davası: Maddi ve Manevi Tazminat</Link></li>
                             <li><Link href="/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/">Velayet Değişikliği Davası: Şartlar ve Mahkeme Kriterleri</Link></li>
+                            <li><Link href="/blog/aile-ici-siddet-koruma-karari-6284-sayili-kanun/">Aile İçi Şiddet ve Koruma Kararı: 6284 Sayılı Kanun Rehberi</Link></li>
                         </ul>
 
                         <p>
