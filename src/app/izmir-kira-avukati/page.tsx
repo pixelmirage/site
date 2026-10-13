@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -13,18 +13,20 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Kira Avukatı - Tahliye ve Kira Davaları | Av. Mert Kağan Çetin",
+        absolute: "İzmir Kira Avukatı | Tahliye, Kira Tespit – Av. M.K. Çetin",
     },
-    description: "İzmir kira avukatı Mert Kağan Çetin ile tahliye, kira tespit ve depozito iadesi davalarında uzman destek alın. 2026 güncel ücretler. Hemen arayın: 0544 585 46 45",
-    keywords: ["İzmir kira avukatı", "kira avukatı izmir", "kira hukuku avukatı izmir", "izmir kira hukuku avukatı", "kira artırım avukatı izmir", "kiracı tahliye avukatı İzmir", "kira tespit davası", "tahliye davası İzmir", "izmir en iyi kira avukatı", "kira avukatı izmir yakınında", "kira hukuku avukatları izmir"],
+    description: "İzmir'de kiracı tahliyesi, kira tespit ve uyarlama davaları, depozito iadesi ve zorunlu arabuluculuk süreçlerinde avukatlık desteği. Bayraklı ofis.",
+    keywords: ["İzmir kira avukatı", "kira avukatı izmir", "kira hukuku avukatı izmir", "kiracı tahliye avukatı İzmir", "kira tespit davası izmir", "tahliye davası İzmir"],
     openGraph: {
-        title: "İzmir Kira Avukatı - Tahliye ve Kira Davaları | Av. Mert Kağan Çetin",
-        description: "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
+        title: "İzmir Kira Avukatı | Tahliye, Kira Tespit – Av. M.K. Çetin",
+        description: "İzmir'de kiracı tahliyesi, kira tespit ve uyarlama davaları, depozito iadesi ve zorunlu arabuluculuk süreçlerinde avukatlık desteği. Bayraklı ofis.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
-        type: "article",
+        type: "website",
+        locale: "tr_TR",
+        images: [{ url: "/og-image.jpg", alt: "Av. Mert Kağan Çetin - İzmir Kira Avukatı" }],
     },
     other: {
-        "article:modified_time": "2026-04-16",
+        "article:modified_time": "2026-10-13",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
@@ -35,13 +37,74 @@ const tocItems = [
     { id: "iletisim-bilgileri", title: "İletişim" },
     { id: "kira-hukuku-avukatlari", title: "Kira Hukuku Avukatları" },
     { id: "kira-davalari", title: "Kira Davaları" },
-    { id: "kira-davalarina-bakan-avukat", title: "Kira Davalarına Bakan Avukat" },
+    { id: "arabuluculuk", title: "Zorunlu Arabuluculuk" },
     { id: "kiraci-nasil-cikarilir", title: "Kiracı Nasıl Çıkarılır?" },
-    { id: "kiraci-tahliye-davasi-avukati", title: "Tahliye Davası Avukatı" },
+    { id: "yeni-malik-tahliye", title: "Yeni Malik Tahliyesi" },
+    { id: "icra-yoluyla-tahliye", title: "İcra Yoluyla Tahliye" },
+    { id: "kira-tespit-davasi", title: "Kira Tespit Davası" },
+    { id: "kira-artis-orani", title: "Kira Artış Oranı (TÜFE)" },
+    { id: "kira-uyarlama-davasi", title: "Kira Uyarlama Davası" },
+    { id: "depozito-iadesi", title: "Depozito İadesi" },
+    { id: "ticari-kira", title: "İşyeri Kirası" },
+    { id: "gorevli-mahkeme", title: "Görevli Mahkeme" },
     { id: "avukatlik-ucreti", title: "Avukatlık Ücreti" },
-    { id: "tahliye-avukat-ucretini-kim-oder", title: "Ücreti Kim Öder?" },
-    { id: "en-iyi-kira-avukati", title: "En İyi Kira Avukatı" },
-{ id: "kira-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
+    { id: "kira-avukati-secerken", title: "Avukat Seçerken" },
+    { id: "kira-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
+    { id: "ilceler", title: "Hizmet Verilen İlçeler" },
+    { id: "sss", title: "Sık Sorulan Sorular" },
+];
+
+const faqs = [
+    {
+        question: "İzmir'de kira davası hangi mahkemede açılır?",
+        answer: "Kira ilişkisinden doğan davalar, dava değerine bakılmaksızın Sulh Hukuk Mahkemesinde görülür (HMK m. 4/1-a). Yetkili mahkeme kural olarak davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmenin ifa yeri mahkemesinde de dava açılabilir (HMK m. 10)."
+    },
+    {
+        question: "Kira davalarında arabuluculuk zorunlu mu?",
+        answer: "Evet. 1 Eylül 2023'ten itibaren kira ilişkisinden kaynaklanan uyuşmazlıklarda dava açmadan önce arabulucuya başvurmak dava şartıdır (6325 sayılı HUAK m. 18/B; 7445 sayılı Kanun ile eklenmiştir). Ancak İcra ve İflas Kanunu hükümlerine göre ilamsız icra yoluyla tahliye talepleri bu şartın dışındadır."
+    },
+    {
+        question: "Kiracı nasıl çıkarılır?",
+        answer: "Kiracının tahliyesi için kanunda sayılan sebeplerden birinin bulunması gerekir: 10 yıllık uzama süresinin dolması (TBK m. 347), kiraya verenin veya yakınlarının konut ya da işyeri ihtiyacı, yeniden inşa ve imar (TBK m. 350), yeni malikin ihtiyacı (TBK m. 351), yazılı tahliye taahhüdü veya iki haklı ihtar (TBK m. 352) ve kira bedelinin ödenmemesi nedeniyle temerrüt (TBK m. 315)."
+    },
+    {
+        question: "Yeni ev sahibi kiracıyı çıkarabilir mi?",
+        answer: "Kiralananı sonradan edinen yeni malik, kendisi veya yakınları için konut ya da işyeri ihtiyacı varsa, edinme tarihinden itibaren bir ay içinde durumu kiracıya yazılı olarak bildirmek koşuluyla, edinme tarihinden itibaren altı ay sonra tahliye davası açabilir (TBK m. 351). Dilerse sözleşme süresinin bitiminden itibaren bir ay içinde de dava açabilir."
+    },
+    {
+        question: "Kira tespit davası ne zaman açılabilir?",
+        answer: "Kira bedelinin belirlenmesi için her zaman dava açılabilir; ancak beş yıldan uzun süreli veya beş yıldan sonra yenilenen sözleşmelerde yeni kira yılı bedeli hakim tarafından emsal kira bedelleri, TÜFE ve kiralananın durumu dikkate alınarak hakkaniyete uygun biçimde belirlenir (TBK m. 344). Tespit edilen bedelin yeni kira yılının başından itibaren geçerli olması için dava, yeni dönem başlangıcından en geç 30 gün önce açılmalı veya kiracıya bu süre içinde yazılı bildirimde bulunulmalıdır (TBK m. 345)."
+    },
+    {
+        question: "Kira artış oranı nasıl hesaplanır?",
+        answer: "Konut ve çatılı işyeri kiralarında taraflarca kararlaştırılan artış oranı, bir önceki kira yılındaki TÜFE'nin on iki aylık ortalamasına göre değişim oranını geçemez (TBK m. 344/1). Konut kiraları için uygulanan geçici %25 sınırı 1 Temmuz 2024 itibarıyla sona ermiştir."
+    },
+    {
+        question: "Depozito iade edilmezse ne yapılır?",
+        answer: "Para olarak verilen güvence bedeli en fazla üç aylık kira bedeli kadar olabilir ve bir bankada vadeli tasarruf hesabına yatırılmalıdır (TBK m. 342). Banka, kiracının rızası veya kiraya verenin kira sözleşmesinin bitiminden itibaren üç ay içinde kiracı aleyhine dava açtığını ya da icra takibi yaptığını bildirmemesi halinde güvenceyi kiracıya geri verir. Uyuşmazlık halinde önce arabulucuya başvurulur."
+    },
+    {
+        question: "Kira avukatı ücreti nasıl belirlenir ve kim öder?",
+        answer: "Avukatlık ücreti, işin niteliğine göre avukat ile müvekkil arasında yazılı olarak kararlaştırılır ve Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Her taraf kendi avukatının ücretini öder; dava sonunda haksız çıkan taraf ise mahkemenin tarifeye göre hükmettiği karşı vekalet ücreti ile yargılama giderlerini öder."
+    },
+    {
+        question: "Kira davasında avukat tutmak zorunlu mu?",
+        answer: "Hayır, kira davalarında avukatla temsil zorunlu değildir. Ancak kira hukuku sürelere ve şekil şartlarına sıkı biçimde bağlıdır; hatalı hesaplanan bir süre veya usulüne uygun çekilmemiş bir ihtarname hak kaybına yol açabilir."
+    }
+];
+
+const kiraDistricts = [
+    { name: "Bayraklı", slug: "bayrakli" },
+    { name: "Karşıyaka", slug: "karsiyaka" },
+    { name: "Bornova", slug: "bornova" },
+    { name: "Konak", slug: "konak" },
+    { name: "Buca", slug: "buca" },
+    { name: "Çiğli", slug: "cigli" },
+    { name: "Gaziemir", slug: "gaziemir" },
+    { name: "Balçova", slug: "balcova" },
+    { name: "Narlıdere", slug: "narlidere" },
+    { name: "Karabağlar", slug: "karabaglar" },
+    { name: "Güzelbahçe", slug: "guzelbahce" },
 ];
 
 export default function IzmirKiraAvukatiPage() {
@@ -53,52 +116,44 @@ export default function IzmirKiraAvukatiPage() {
                     { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" }
                 ]}
             />
-            <FAQSchema faqs={[
-                {
-                    question: "Kiracı nasıl çıkarılır?",
-                    answer: "Kiracının tahliyesi için kanunda öngörülen sebeplerden birini ileri sürmek gerekir: 10 yıllık uzama süresinin dolması (TBK m. 347), ihtiyaç nedeniyle tahliye (TBK m. 350), tahliye taahhüdü (TBK m. 352/1), iki haklı ihtar (TBK m. 352/2), kiracının temerrüdü veya yükümlülüklerine aykırı davranması."
-                },
-                {
-                    question: "Ev sahibi kiracı davalarında avukatlık ücreti ne kadar?",
-                    answer: "2026 yılı güncel ücretleri: Tahliye taahhüdü ile tahliye 35.000-50.000 TL, ihtiyaç nedeniyle tahliye 45.000-70.000 TL, iki haklı ihtar tahliyesi 50.000-80.000 TL, kira tespit davası 40.000-60.000 TL, kira sözleşmesi hazırlama 5.000-15.000 TL aralığındadır."
-                },
-                {
-                    question: "En iyi İzmir kira hukuku avukatı nasıl bulunur?",
-                    answer: "Avukatın kira hukuku alanındaki deneyimine, dava geçmişine ve başarı oranına bakılmalıdır. İzmir Barosu'na kayıtlı avukatlar arasından kira hukuku konusunda uzmanlaşmış isimleri araştırabilir, iletişim becerisi ve ücret politikasını değerlendirebilirsiniz."
-                },
-                {
-                    question: "İzmir kira avukatı tutmak zorunlu mu?",
-                    answer: "Kira davaları için avukat tutma zorunluluğu bulunmamaktadır. Ancak kira hukuku sürelere ve şekil şartlarına sıkı sıkıya bağlı olduğundan, yanlış hesaplanan bir süre veya eksik çekilen bir ihtarname davanın reddine yol açabilir. Bu nedenle uzman bir kira avukatı ile çalışmanız önerilir."
-                }
-            ]} />
+            <FAQSchema faqs={faqs} />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify({
                     "@context": "https://schema.org",
-                    "@type": "LegalService",
-                    "name": "Av. Mert Kağan Çetin - İzmir Kira Avukatı",
-                    "description": "İzmir'de kira hukuku, tahliye davaları ve kira tespit davalarında uzman avukatlık hizmeti.",
-                    "url": "https://mertkagancetin.com/izmir-kira-avukati/",
-                    "telephone": "+905445854645",
-                    "email": "mertkagancetin@gmail.com",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
-                        "addressLocality": "Bayraklı",
-                        "addressRegion": "İzmir",
-                        "addressCountry": "TR"
-                    },
-                    "areaServed": {
-                        "@type": "City",
-                        "name": "İzmir"
-                    },
-                    "priceRange": "₺₺",
-                    "openingHoursSpecification": {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                        "opens": "09:00",
-                        "closes": "18:00"
-                    }
+                    "@graph": [
+                        {
+                            "@type": "Service",
+                            "@id": "https://mertkagancetin.com/izmir-kira-avukati/#service",
+                            "name": "İzmir Kira Avukatı – Kira Hukuku Hizmetleri",
+                            "serviceType": "Kira hukuku avukatlığı",
+                            "url": "https://mertkagancetin.com/izmir-kira-avukati/",
+                            "provider": { "@id": "https://mertkagancetin.com/#attorney" },
+                            "areaServed": { "@type": "City", "name": "İzmir" },
+                            "hasOfferCatalog": {
+                                "@type": "OfferCatalog",
+                                "name": "Kira davaları",
+                                "itemListElement": [
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kiracı tahliye davası", "url": "https://mertkagancetin.com/izmir-kira-avukati/kiraci-tahliye-davasi/" } },
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira tespit davası", "url": "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/" } },
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira uyarlama davası", "url": "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/" } },
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira alacağı icra takibi", "url": "https://mertkagancetin.com/izmir-kira-avukati/kira-borcu-icra/" } },
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İhtiyaç nedeniyle tahliye", "url": "https://mertkagancetin.com/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/" } }
+                                ]
+                            }
+                        },
+                        {
+                            "@type": "WebPage",
+                            "@id": "https://mertkagancetin.com/izmir-kira-avukati/#webpage",
+                            "url": "https://mertkagancetin.com/izmir-kira-avukati/",
+                            "name": "İzmir Kira Avukatı",
+                            "isPartOf": { "@id": "https://mertkagancetin.com/#website" },
+                            "about": { "@id": "https://mertkagancetin.com/izmir-kira-avukati/#service" },
+                            "author": { "@id": "https://mertkagancetin.com/#person" },
+                            "dateModified": "2026-10-13",
+                            "inLanguage": "tr-TR"
+                        }
+                    ]
                 }) }}
             />
 
@@ -117,16 +172,16 @@ export default function IzmirKiraAvukatiPage() {
 
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İzmir Kira Avukatı
+                            İzmir Kira Avukatı – Ev Sahibi ve Kiracı Uyuşmazlıkları
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            <strong className="text-white">İzmir kira avukatı</strong> olarak kira bedelinin tespiti ve kiracının tahliyesi davalarında etkin hukuki hizmet sunmaktayız.
+                            <strong className="text-white">İzmir kira avukatı</strong> Av. Mert Kağan Çetin; tahliye, kira tespiti, kira uyarlama, depozito ve kira alacağı uyuşmazlıklarında Bayraklı ofisinden İzmir genelinde avukatlık hizmeti vermektedir.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <a href="tel:+905445854645">
                                     <Phone className="w-5 h-5" />
-                                    Hemen Arayın
+                                    0544 585 46 45
                                 </a>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -170,14 +225,14 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p>
-                            Bu sebeple kira hukuku konusunda deneyimli bir İzmir kira avukatı ile çalışmak hızlı sonuç almanızda büyük önem taşımaktadır. Kira hukukunu ilgilendiren sorunlarınıza ilişkin etkin bir kira avukatı hizmeti sunmaktayız.
+                            Kira uyuşmazlıklarında süreler, ihtarnamelerin şekli ve dava öncesi zorunlu arabuluculuk aşaması sonucu doğrudan etkiler. Bu sayfada İzmir&apos;de kira hukukuna ilişkin temel süreçleri, ilgili Türk Borçlar Kanunu (TBK) hükümleriyle birlikte özetledik.
                         </p>
 
                         {/* İletişim */}
                         <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Kira Avukatı İletişim</h2>
 
                         <p>
-                            İzmir&apos;de kira hukuku konusunda uzmanlaşmış avukatlar, hem kiracıların hem de ev sahiplerinin karşılaşabileceği hukuki sorunların çözümünde yardımcı olmaktadır. <Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/">Kira sözleşmelerinin</Link> hazırlanması, kiracı veya ev sahibi haklarının korunması, kira artışı uygulamaları, <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye işlemleri</Link> gibi konularda profesyonel destek almak isteyenler İzmir kira avukatına başvurabilir.
+                            İzmir&apos;de kira hukuku alanında çalışan avukatlar, hem kiracıların hem de ev sahiplerinin karşılaşabileceği hukuki sorunların çözümünde yardımcı olmaktadır. <Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/">Kira sözleşmelerinin</Link> hazırlanması, kiracı veya ev sahibi haklarının korunması, kira artışı uygulamaları, <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye işlemleri</Link> gibi konularda hukuki destek almak isteyenler İzmir kira avukatına başvurabilir.
                         </p>
 
                         <p>
@@ -185,7 +240,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p>
-                            Eğer siz de İzmir&apos;de kira hukuku konusunda uzman bir avukattan destek almak istiyorsanız, <strong>Av. Mert Kağan Çetin</strong> ile iletişime geçebilirsiniz.
+                            Kira hukukuna ilişkin sorularınız için <strong>Av. Mert Kağan Çetin</strong> ile iletişime geçebilirsiniz.
                         </p>
 
                         <ul>
@@ -201,10 +256,10 @@ export default function IzmirKiraAvukatiPage() {
                         />
 
                         {/* İzmir Kira Avukatının Önemi */}
-                        <h2 id="kira-hukuku-avukatlari" className="scroll-mt-24">İzmir'de Kira Hukuku Avukatları</h2>
+                        <h2 id="kira-hukuku-avukatlari" className="scroll-mt-24">İzmir&apos;de Kira Hukuku Avukatları</h2>
 
                         <p>
-                            Kiraya ilişkin hususlar sıkı şekil şartlarına bağlanmıştır. Ev sahibi ve kiracı arasındaki anlaşmazlıkların yetkin bir kira avukatı tarafından takip edilmesi çok önemlidir. Kira hukuku avukatının yardımları sayesinde süreleri kaçırmazsınız. <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">Tahliye işlemlerini</Link> ve davaları daha hızlı sonuçlandırır, böylece hak kaybına uğramanın önüne geçmiş olursunuz.
+                            Kiraya ilişkin hususlar sıkı şekil şartlarına bağlanmıştır. Ev sahibi ve kiracı arasındaki anlaşmazlıklarda sürelerin doğru hesaplanması ve <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye işlemlerinin</Link> usulüne uygun yürütülmesi, hak kaybını önlemek açısından önemlidir.
                         </p>
 
                         <p>
@@ -219,9 +274,6 @@ export default function IzmirKiraAvukatiPage() {
                             Kiralama sürecinde veya <Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/">kira sözleşmesinin sona ermesi</Link> ile ilgili birçok sorunla karşılaşma ihtimaliniz vardır. İzmir&apos;deki kira hukuku avukatları size bu konularda hukuki destek sağlayabilirler.
                         </p>
 
-                        <p>
-                            Profesyonel danışmanlık ve hukuki desteğe ihtiyaç duyduğunuzda, kira hukuku alanında uzmanlaşmış avukatlara başvurmanızda büyük yarar vardır.
-                        </p>
 
                         {/* Kira Davaları */}
                         <h2 id="kira-davalari" className="scroll-mt-24">Kira Davaları</h2>
@@ -243,11 +295,26 @@ export default function IzmirKiraAvukatiPage() {
                         <h3 id="kira-davalarina-bakan-avukat" className="scroll-mt-24">İzmir&apos;de Kira Davalarına Bakan Avukat</h3>
 
                         <p>
-                            Kira hukuku avukatı, müvekkillerden gelen kira kontratlarını revize eden ve düzenleyen, TBK hükümlerine göre kira hukukuna uygun çeşitli sözleşme ve protokolleri hazırlayan, kira hukuku kaynaklı <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link> gibi her türlü kira ilişkisinden doğan uyuşmazlıklarla ilgilenen alanında uzman hukukçuya denir.
+                            Kira hukuku avukatı, müvekkillerden gelen kira kontratlarını revize eden ve düzenleyen, TBK hükümlerine göre kira hukukuna uygun çeşitli sözleşme ve protokolleri hazırlayan, kira hukuku kaynaklı <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link> gibi kira ilişkisinden doğan uyuşmazlıklarla ilgilenen avukatı ifade eder.
                         </p>
 
                         <p>
-                            Kiraya verilen taşınmazın İzmir&apos;de bulunması durumunda kira hukuku avukatının İzmir&apos;den tutulması önerilir. Zira kira ile ilgili bir uyuşmazlık çıktığında erken, hızlı ve doğru müdahaleyi taşınmazın bulunduğu yerdeki avukat yapacaktır. Dava öncesi <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/">zorunlu arabuluculuk</Link> sürecinde de yerel avukatla çalışmak önemli bir avantaj sağlar.
+                            Kiraya verilen taşınmazın İzmir&apos;de bulunması durumunda kira hukuku avukatının İzmir&apos;den tutulması önerilir. Taşınmazın bulunduğu yerdeki avukat, keşif, bilirkişi incelemesi ve dava öncesi <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/">zorunlu arabuluculuk</Link> görüşmelerine katılım bakımından süreci yakından takip edebilir.
+                        </p>
+
+                        {/* Zorunlu Arabuluculuk */}
+                        <h2 id="arabuluculuk" className="scroll-mt-24">Kira Uyuşmazlıklarında Zorunlu Arabuluculuk</h2>
+
+                        <p>
+                            1 Eylül 2023 tarihinden itibaren kira ilişkisinden kaynaklanan uyuşmazlıklarda dava açmadan önce arabulucuya başvurulması <strong>dava şartıdır</strong> (6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu m. 18/B). Tahliye, kira tespiti, kira uyarlama, kira alacağı ve depozito iadesi talepleri bu kapsamdadır. Arabulucuya başvurmadan açılan dava, usulden reddedilir.
+                        </p>
+
+                        <p>
+                            Başvuru, karşı tarafın yerleşim yerindeki veya görevli mahkemenin bulunduğu yerdeki arabuluculuk bürosuna yapılır. Arabulucu, görevlendirildiği tarihten itibaren üç hafta içinde süreci sonuçlandırır; bu süre zorunlu hallerde en fazla bir hafta uzatılabilir. Anlaşma sağlanırsa düzenlenen anlaşma belgesi, avukatlar tarafından imzalandığında ilam niteliğinde belge sayılır. Anlaşma sağlanamazsa son tutanakla birlikte dava açılabilir.
+                        </p>
+
+                        <p>
+                            <strong>İstisna:</strong> İcra ve İflas Kanunu kapsamında ilamsız icra yoluyla tahliye talepleri (kira bedelinin ödenmemesi veya tahliye taahhüdüne dayalı takipler) zorunlu arabuluculuk şartına tabi değildir. Ayrıntılar için <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/">kira hukukunda zorunlu arabuluculuk süreci</Link> yazımızı inceleyebilirsiniz.
                         </p>
 
                         {/* Kiracı Nasıl Çıkarılır */}
@@ -312,42 +379,101 @@ export default function IzmirKiraAvukatiPage() {
                         <h3 id="kiraci-tahliye-davasi-avukati" className="scroll-mt-24">Kiracının Tahliyesi Davası Avukatı İzmir</h3>
 
                         <p>
-                            İzmir&apos;de kiracının tahliyesi davası açmak isteyen ev sahipleri için deneyimli bir kira avukatı ile çalışmak büyük önem taşır. Tahliye davaları TBK&apos;nın öngördüğü sıkı usul kurallarına tabi olduğundan sürelerin doğru hesaplanması ve ihtarnamelerin usulüne uygun çekilmesi gerekmektedir.
+                            İzmir&apos;de kiracının tahliyesi davası açmak isteyen ev sahiplerinin sürecin başında hukuki durumu değerlendirmesi önemlidir. Tahliye davaları TBK&apos;nın öngördüğü sıkı usul kurallarına tabi olduğundan sürelerin doğru hesaplanması ve ihtarnamelerin usulüne uygun çekilmesi gerekmektedir.
                         </p>
 
                         <p>
-                            İzmir kira avukatı olarak <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye taahhütnamesi</Link>, <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/">ihtiyaç nedeniyle tahliye</Link>, <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> ve 10 yıllık uzama süresinin dolması gibi tüm tahliye sebeplerine dayalı davalarda müvekkillerimize profesyonel hukuki destek sunmaktayız. Tahliye davasında hak kaybı yaşamamak için sürecin başından itibaren uzman bir avukatla hareket etmeniz önerilir.
+                            İzmir kira avukatı olarak <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye taahhütnamesi</Link>, <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/">ihtiyaç nedeniyle tahliye</Link>, <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> ve 10 yıllık uzama süresinin dolması gibi tahliye sebeplerine dayalı davalarda hukuki destek vermekteyiz. Tahliye sebebine göre dava açma süreleri farklıdır; bu sürelerin kaçırılması halinde tahliye hakkı bir sonraki döneme kalabilir.
+                        </p>
+
+                        {/* Yeni Malik */}
+                        <h3 id="yeni-malik-tahliye" className="scroll-mt-24">Yeni Malikin İhtiyacı Nedeniyle Tahliye (TBK m. 351)</h3>
+
+                        <p>
+                            Kiralananı satın alma veya başka bir yolla sonradan edinen yeni malik, kendisi, eşi, altsoyu, üstsoyu veya kanun gereği bakmakla yükümlü olduğu kişiler için konut ya da işyeri ihtiyacı varsa kira sözleşmesini dava yoluyla sona erdirebilir. Bunun için iki yol vardır:
+                        </p>
+
+                        <ul>
+                            <li>Sözleşme süresinin bitiminden itibaren <strong>bir ay içinde</strong> tahliye davası açmak,</li>
+                            <li>Edinme tarihinden itibaren <strong>bir ay içinde</strong> durumu kiracıya yazılı olarak bildirmek ve edinme tarihinden <strong>altı ay sonra</strong> tahliye davası açmak.</li>
+                        </ul>
+
+                        <p>
+                            İhtiyacın gerçek, samimi ve sürekli olması gerekir. Ayrıca kiraya veren, haklı sebep olmaksızın kiralananı üç yıl geçmedikçe eski kiracı dışındaki birine kiralayamaz (TBK m. 355).
+                        </p>
+
+                        {/* İcra Yoluyla Tahliye */}
+                        <h2 id="icra-yoluyla-tahliye" className="scroll-mt-24">Kira Alacağı ve İcra Yoluyla Tahliye</h2>
+
+                        <p>
+                            Kira bedeli ödenmediğinde kiraya veren, dava açmak yerine doğrudan icra dairesine başvurarak <strong>ilamsız tahliye takibi</strong> başlatabilir (İİK m. 269 vd.). Kiracıya gönderilen ödeme emrinde, konut ve çatılı işyeri kiralarında 30 günlük ödeme süresi verilir ve bu süre içinde borç ödenmezse tahliye edileceği ihtar edilir. Kiracı yedi gün içinde itiraz edebilir; itiraz halinde kiraya veren icra mahkemesinden itirazın kaldırılmasını ve tahliyeyi talep eder.
+                        </p>
+
+                        <p>
+                            Yazılı <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü</Link> bulunan durumlarda da taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılabilir (İİK m. 272). Bu takipler zorunlu arabuluculuk şartının dışındadır. Ayrıntılı bilgi için <Link href="/izmir-kira-avukati/kira-borcu-icra/">kira borcu icra takibi</Link> sayfamıza bakabilirsiniz.
+                        </p>
+
+                        {/* Kira Tespit */}
+                        <h2 id="kira-tespit-davasi" className="scroll-mt-24">Kira Tespit Davası İzmir</h2>
+
+                        <p>
+                            Kira tespit davası, yeni kira yılında uygulanacak kira bedelinin mahkemece belirlenmesi için açılır. Beş yıldan uzun süreli kira sözleşmelerinde ve beş yıldan sonra yenilenen sözleşmelerde, her beş yılın sonunda ve izleyen kira yıllarında yeni kira bedeli; TÜFE&apos;nin on iki aylık ortalamasına göre değişim oranı, kiralananın durumu ve emsal kira bedelleri göz önünde tutularak hakkaniyete uygun biçimde belirlenir (TBK m. 344/3).
+                        </p>
+
+                        <p>
+                            Mahkemece belirlenen bedelin yeni kira yılının başından itibaren geçerli olması için davanın yeni kira döneminin başlangıcından en geç <strong>30 gün önce</strong> açılması veya kiraya verenin bu süre içinde kiracıya yazılı bildirimde bulunmuş olması gerekir; aksi halde belirlenen bedel bir sonraki kira yılından itibaren uygulanır (TBK m. 345). Dava, taşınmazın bulunduğu yerdeki keşif ve bilirkişi incelemesiyle yürütülür. Ayrıntılar: <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davası</Link>.
+                        </p>
+
+                        {/* Kira Artışı */}
+                        <h3 id="kira-artis-orani" className="scroll-mt-24">Kira Artış Oranı ve TÜFE Sınırı</h3>
+
+                        <p>
+                            Konut ve çatılı işyeri kiralarında taraflarca kararlaştırılan kira artış oranı, bir önceki kira yılında <strong>tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalara göre değişim oranını</strong> geçemez (TBK m. 344/1). Taraflar bir anlaşma yapmamışsa kira bedeli, bu oranı geçmemek koşuluyla hakim tarafından belirlenir. Konut kiralarında 11 Haziran 2022 ile 1 Temmuz 2024 arasında uygulanan geçici %25 artış sınırı sona ermiştir. Güncel oranı <Link href="/kira-artis-orani-hesaplama/">kira artış oranı hesaplama</Link> aracımızla hesaplayabilirsiniz.
+                        </p>
+
+                        {/* Kira Uyarlama */}
+                        <h2 id="kira-uyarlama-davasi" className="scroll-mt-24">Kira Uyarlama Davası</h2>
+
+                        <p>
+                            Sözleşmenin kurulduğu sırada taraflarca öngörülemeyen olağanüstü bir durum ortaya çıkar ve bu durum borçluya yüklenemeyecek bir sebeple sözleşmenin ifasını aşırı ölçüde güçleştirirse, kira bedelinin yeni koşullara uyarlanması istenebilir (TBK m. 138 – aşırı ifa güçlüğü). Uyarlama davası, özellikle kira bedelinin döviz cinsinden kararlaştırıldığı veya ekonomik dengenin ağır biçimde bozulduğu uzun süreli sözleşmelerde gündeme gelir. Kira tespit davasından farkı, beş yıllık süre şartına bağlı olmaması ve olağanüstü değişikliğin ispatını gerektirmesidir. Ayrıntılar: <Link href="/izmir-kira-avukati/kira-uyarlama-davasi/">kira uyarlama davası</Link>.
+                        </p>
+
+                        {/* Depozito */}
+                        <h2 id="depozito-iadesi" className="scroll-mt-24">Depozito (Güvence Bedeli) İadesi</h2>
+
+                        <p>
+                            Konut ve çatılı işyeri kiralarında kiracıya güvence verme borcu yüklenmişse, güvence bedeli <strong>üç aylık kira bedelini aşamaz</strong>. Para olarak verilen güvencenin, kiraya verenin onayı olmadan çekilemeyecek şekilde bir bankada vadeli tasarruf hesabına yatırılması gerekir (TBK m. 342). Banka, kiracının rızası varsa veya kiraya veren, kira sözleşmesinin sona ermesinden itibaren üç ay içinde kiracı aleyhine dava açtığını ya da icra takibi yaptığını bildirmemişse güvenceyi kiracıya geri verir.
+                        </p>
+
+                        <p>
+                            Uygulamada depozitonun elden verildiği ve iade edilmediği durumlarda kiracı, zorunlu arabuluculuk sonrasında alacak davası açabilir. Kiraya veren ise kiralananın olağan kullanım dışında hasar gördüğünü ispat ederek zararı mahsup etmek isteyebilir. Ayrıntılar: <Link href="/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/">depozito iadesi davası</Link>.
+                        </p>
+
+                        {/* Ticari Kira */}
+                        <h2 id="ticari-kira" className="scroll-mt-24">İşyeri (Çatılı İşyeri) Kira Uyuşmazlıkları</h2>
+
+                        <p>
+                            Dükkan, ofis ve mağaza gibi çatılı işyeri kiraları da konut kiralarına ilişkin koruyucu hükümlere tabidir (TBK m. 339 vd.). Bu nedenle TÜFE artış sınırı, tahliye sebepleri, kira tespit ve güvence bedeli kuralları işyeri kiralarında da uygulanır. Kiracı ile kiraya verenin tacir olduğu işyeri kiralarında sözleşmeye konulan cezai şart, muacceliyet ve kira artışına ilişkin bazı kayıtlar ayrıca değerlendirilmelidir. İşyeri devri, kira sözleşmesinin devri (TBK m. 323) ve alt kira konularında kiraya verenin yazılı rızası önem taşır. Ayrıntılar: <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/">işyeri kira sözleşmelerinde dikkat edilmesi gereken hususlar</Link>.
+                        </p>
+
+                        {/* Görevli Mahkeme */}
+                        <h2 id="gorevli-mahkeme" className="scroll-mt-24">İzmir&apos;de Kira Davalarında Görevli ve Yetkili Mahkeme</h2>
+
+                        <p>
+                            Kira ilişkisinden doğan alacak davaları da dahil olmak üzere tüm kira uyuşmazlıklarında, dava değerine bakılmaksızın <strong>Sulh Hukuk Mahkemesi</strong> görevlidir (HMK m. 4/1-a). Yetkili mahkeme kural olarak davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmeden doğan davalarda sözleşmenin ifa yeri mahkemesinde de dava açılabilir (HMK m. 10). İcra yoluyla tahliye takiplerinde itirazın kaldırılması ve tahliye talepleri ise İcra Hukuk Mahkemesinde incelenir.
                         </p>
 
                         {/* Avukatlık Ücreti */}
-                        <h2 id="avukatlik-ucreti" className="scroll-mt-24">Ev Sahibi Kiracı Davalarında Avukatlık Ücreti Ne Kadar?</h2>
+                        <h2 id="avukatlik-ucreti" className="scroll-mt-24">Kira Davalarında Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            Tahliye davalarında genellikle İzmir avukatları olarak yıllık kira bedelinin belirli bir yüzdesi üzerinden ücretlendirme yapılmaktadır. Ancak çoğu avukatın bir taban fiyat uygulaması bulunmaktadır. 2026 yılı güncel ücret aralıklarımız:
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan <strong>Avukatlık Asgari Ücret Tarifesi</strong>&apos;nin altında olamaz. İzmir Barosu da yerel uygulamaya yön veren tavsiye niteliğinde ücret tarifesi yayımlamaktadır.
                         </p>
-
-                        <div className="not-prose my-6 grid gap-3">
-                            {[
-                                { title: <><Link href="/sozluk/tahliye-taahhutnamesi/" className="text-primary hover:text-secondary transition-colors underline underline-offset-2">Tahliye Taahhüdü</Link> ile Tahliye</>, sure: "3-6 ay", ucret: "35.000 - 50.000 TL" },
-                                { title: "İhtiyaç Nedeniyle Tahliye", sure: "6 ay - 1.5 yıl", ucret: "45.000 - 70.000 TL" },
-                                { title: "İki Haklı İhtar Tahliyesi", sure: "1 - 2 yıl", ucret: "50.000 - 80.000 TL" },
-                                { title: <><Link href="/sozluk/kira-tespit-davasi/" className="text-primary hover:text-secondary transition-colors underline underline-offset-2">Kira Tespit Davası</Link></>, sure: "6 ay - 1 yıl", ucret: "40.000 - 60.000 TL" },
-                                { title: "Kira Sözleşmesi Hazırlama", sure: "1-3 gün", ucret: "5.000 - 15.000 TL" },
-                            ].map((item, i) => (
-                                <div key={i} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 rounded-xl border border-slate-200 bg-white">
-                                    <span className="font-bold text-primary text-sm sm:flex-1">{item.title}</span>
-                                    <div className="flex items-center gap-3 text-sm text-slate-600">
-                                        <span className="inline-flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-slate-400" />{item.sure}</span>
-                                        <span className="text-slate-300">|</span>
-                                        <span className="font-semibold text-slate-800">{item.ucret}</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
 
                         <p>
-                            Lütfen kira hukukunu ilgilendiren sorununuzla ilgili kesin fiyat bilgisi almak için kira hukuku avukatı ile <Link href="/iletisim/">iletişime geçiniz</Link>.
+                            Somut dosyanıza ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ayrıntılı açıklama için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti</Link> sayfamıza bakabilir veya <Link href="/iletisim/">iletişim</Link> sayfamızdan ulaşabilirsiniz.
                         </p>
+
 
                         {/* Kiracı Tahliye Davası Avukat Ücretini Kim Öder? */}
                         <h3 id="tahliye-avukat-ucretini-kim-oder" className="scroll-mt-24">Kiracı Tahliye Davası Avukat Ücretini Kim Öder?</h3>
@@ -360,22 +486,16 @@ export default function IzmirKiraAvukatiPage() {
                             Bu vekalet ücreti Avukatlık Asgari Ücret Tarifesi&apos;ne göre belirlenir ve tarafların avukatlarıyla anlaştıkları ücretten farklıdır. Örneğin ev sahibi tahliye davasını kazanırsa kiracı, mahkemenin hükmettiği karşı vekalet ücretini ev sahibinin avukatına ödemek zorunda kalır. Bunun yanı sıra mahkeme harçları ve yargılama giderleri de davayı kaybeden tarafa yüklenir.
                         </p>
 
-                        {/* En İyi İzmir Kira Hukuku Avukatı Nasıl Bulunur? */}
-                        <h2 id="en-iyi-kira-avukati" className="scroll-mt-24">En İyi İzmir Kira Hukuku Avukatı Nasıl Bulunur?</h2>
+                        {/* Kira Avukatı Seçerken */}
+                        <h2 id="kira-avukati-secerken" className="scroll-mt-24">İzmir&apos;de Kira Avukatı Seçerken Nelere Dikkat Edilmeli?</h2>
 
-                        <p>
-                            En iyi <strong>İzmir kira avukatı</strong>nı bulmak için öncelikle avukatın kira hukuku alanındaki deneyimine ve dava geçmişine bakmanız gerekir. İzmir Barosu&apos;na kayıtlı avukatlar arasından kira hukuku konusunda uzmanlaşmış isimleri araştırabilirsiniz.
-                        </p>
+                        <ul>
+                            <li>Avukatın İzmir Barosu&apos;na kayıtlı olup olmadığını baro sicil numarasıyla kontrol edebilirsiniz.</li>
+                            <li>Kira hukukunda süreler kısa olduğundan, sözleşme, ihtarname ve ödeme belgeleriyle erken aşamada görüşme yapılması önemlidir.</li>
+                            <li>Ücretin, kapsamı belli bir yazılı ücret sözleşmesiyle kararlaştırılması tarafların haklarını korur.</li>
+                            <li>Hiçbir avukat dava sonucunu garanti edemez; sonuç vaat eden yaklaşımlara karşı dikkatli olunmalıdır.</li>
+                        </ul>
 
-                        <p>
-                            Avukatın daha önce yürüttüğü <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link> ve kira uyuşmazlıklarındaki başarı oranı önemli bir kriter olmalıdır. Ayrıca avukatın iletişim becerisi, müvekkile geri dönüş hızı ve ücret politikası da tercih sürecinde değerlendirilmesi gereken faktörlerdir. Ücretsiz ön görüşme imkanı sunan İzmir kira avukatlarıyla tanışarak kendinize en uygun avukatı belirleyebilirsiniz.
-                        </p>
-
-                        <h3>En İyi Kira Avukatı Hangisi?</h3>
-
-                        <p>
-                            En iyi kira avukatı; müvekkilin haklarını en etkili şekilde savunan, kira hukuku mevzuatını ve Yargıtay içtihatlarını yakından takip eden, dava süreçlerini zamanında ve eksiksiz yürüten avukattır. &quot;En iyi&quot; kavramı kişiden kişiye değişebilir; ancak avukatın alanında uzmanlaşmış olması, deneyim yılı ve müvekkil memnuniyeti en önemli göstergelerdir. İzmir&apos;de kira avukatı ararken mutlaka yüz yüze veya telefonla ön görüşme yapmanız ve davanızın değerlendirilmesini istemeniz tavsiye edilir.
-                        </p>
 
                         {/* İzmir Kira Avukatı Tutmak Zorunlu Mu? */}
                         <h2 id="kira-avukati-zorunlu-mu" className="scroll-mt-24">İzmir Kira Avukatı Tutmak Zorunlu Mu?</h2>
@@ -385,8 +505,37 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p>
-                            Yanlış hesaplanan bir süre, eksik çekilen bir ihtarname veya hatalı hazırlanan bir dilekçe davanın reddine yol açabilir. Bu nedenle özellikle <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link> ve <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link>nda İzmir kira avukatı ile çalışmanız hak kaybını önlemek açısından büyük önem taşımaktadır.
+                            Yanlış hesaplanan bir süre, eksik çekilen bir ihtarname veya hatalı hazırlanan bir dilekçe davanın reddine yol açabilir. Bu nedenle özellikle <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye davaları</Link> ve <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davaları</Link>nda sürecin başında hukuki destek alınması, hak kaybı riskini azaltır.
                         </p>
+
+                        {/* İlçeler */}
+                        <h2 id="ilceler" className="scroll-mt-24">İzmir&apos;de Hizmet Verilen İlçeler</h2>
+
+                        <p>
+                            Bayraklı&apos;daki ofisimizden İzmir&apos;in merkez ilçelerindeki kira uyuşmazlıklarında hizmet vermekteyiz. İlçeye özgü bilgiler için ilgili sayfaları inceleyebilirsiniz:
+                        </p>
+
+                        <ul className="not-prose grid grid-cols-2 sm:grid-cols-3 gap-2 my-6">
+                            {kiraDistricts.map((d) => (
+                                <li key={d.slug}>
+                                    <Link href={`/${d.slug}-kira-avukati/`} className="block px-3 py-2 rounded-lg border border-slate-200 text-sm text-primary hover:border-secondary hover:text-secondary transition-colors">
+                                        {d.name} Kira Avukatı
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+
+                        {/* SSS */}
+                        <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı – Sık Sorulan Sorular</h2>
+
+                        {faqs.map((f) => (
+                            <div key={f.question}>
+                                <h3>{f.question}</h3>
+                                <p>{f.answer}</p>
+                            </div>
+                        ))}
+
+                        <p className="text-sm text-slate-500">Son güncelleme: 13 Ekim 2026</p>
 
                         <hr />
 
@@ -451,7 +600,7 @@ export default function IzmirKiraAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-2xl p-8 md:p-10">
                                 <p className="text-2xl font-playfair font-bold mb-3">İzmir Kira Avukatı ile Görüşün</p>
                                 <p className="text-slate-300 mb-6">
-                                    Kira davalarınız için hemen randevu alın.
+                                    Kira uyuşmazlığınızla ilgili görüşme için randevu oluşturabilirsiniz.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-6 mb-6 text-sm">
@@ -486,7 +635,7 @@ export default function IzmirKiraAvukatiPage() {
 
                         {/* Uzmanlık Alanları Alt Sayfalar */}
                         <div className="not-prose my-12">
-                            <p className="text-xl font-playfair font-bold text-primary mb-6">Kira Hukuku Uzmanlık Alanlarımız</p>
+                            <p className="text-xl font-playfair font-bold text-primary mb-6">Kira Hukuku Çalışma Alanlarımız</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                 {[
                                     { title: "Kiracı Tahliye Davası", desc: "Tüm tahliye sebepleri ve dava süreçleri", url: "/izmir-kira-avukati/kiraci-tahliye-davasi/" },
@@ -499,7 +648,7 @@ export default function IzmirKiraAvukatiPage() {
                                     { title: "Kira Borcu İcra Takibi", desc: "Ödenmeyen kira alacağı ve icra süreçleri", url: "/izmir-kira-avukati/kira-borcu-icra/" },
                                     { title: "İhtiyaç Nedeniyle Tahliye", desc: "TBK m. 350 kapsamında tahliye davaları", url: "/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/" },
                                     { title: "10 Yıllık Kiracı Tahliyesi", desc: "Uzama süresini dolduran kiracının tahliyesi", url: "/izmir-kira-avukati/on-yillik-kiraci-tahliye/" },
-                                    { title: "Kira Avukatı Ücretleri", desc: "2026 güncel avukatlık ücretleri ve danışmanlık", url: "/izmir-kira-avukati/izmir-kira-avukati-ucret/" },
+                                    { title: "Kira Avukatı Ücretleri", desc: "Avukatlık ücretinin belirlenmesi", url: "/izmir-kira-avukati/izmir-kira-avukati-ucret/" },
                                 ].map((item, i) => (
                                     <Link key={i} href={item.url} className="group block p-5 bg-slate-50 border border-slate-200 rounded-xl hover:border-secondary transition-all">
                                         <p className="font-bold text-primary group-hover:text-secondary transition-colors mb-1">{item.title}</p>

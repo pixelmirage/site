@@ -89,7 +89,7 @@ export function SchemaMarkup() {
                     "closes": "18:00"
                 },
                 "priceRange": "$$",
-                "description": "İzmir'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıkları alanında uzman avukatlık hizmeti. Kiracı tahliye, kira tespit, işe iade, kıdem tazminatı, anlaşmalı boşanma, velayet ve nafaka davaları.",
+                "description": "İzmir'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıkları alanında avukatlık hizmeti. Kiracı tahliye, kira tespit, işe iade, kıdem tazminatı, anlaşmalı boşanma, velayet ve nafaka davaları.",
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Gayrimenkul Hukuku",
                     "Kira Tespit Davası", "Tahliye Taahhütnamesi", "Zorunlu Arabuluculuk",
