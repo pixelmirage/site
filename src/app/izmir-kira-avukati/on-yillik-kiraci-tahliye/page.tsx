@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     keywords: ["10 yıllık kiracı tahliyesi İzmir", "TBK 347 tahliye", "uzama süresi tahliye", "10 yıllık kiracı hakları", "süre sonu tahliye avukatı İzmir"],
     openGraph: {
         title: "10 Yıllık Kiracı Tahliyesi İzmir - TBK m. 347 | Av. Mert Kağan Çetin",
-        description: "İzmir'de TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliyesi süreçlerinde uzman avukat desteği.",
+        description: "İzmir'de TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliyesi süreçlerinde avukat desteği.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/on-yillik-kiraci-tahliye/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-13" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/on-yillik-kiraci-tahliye/" },
 };
 
@@ -40,7 +40,7 @@ const faqs = [
     },
     {
         question: "10 yıllık kiracı tahliye davası ne kadar sürer?",
-        answer: "İzmir&apos;de 10 yıllık kiracının tahliye davası ortalama 6-12 ay arasında sürmektedir. Süre, Bayraklı Adliyesi&apos;ndeki iş yoğunluğuna, davanın çekişmeli olup olmamasına ve kiracının itirazlarına göre değişir. Dava öncesi zorunlu arabuluculuk süreci de eklendiğinde toplam süre uzayabilir. Tahliye kararı kesinleştikten sonra kiracı çıkmazsa icra yoluyla tahliye 1-2 ay daha sürebilir."
+        answer: "İzmir&apos;de 10 yıllık kiracının tahliye davası ortalama 6-12 ay arasında sürmektedir. Süre, İzmir Adliyesi (Bayraklı)&apos;ndeki iş yoğunluğuna, davanın çekişmeli olup olmamasına ve kiracının itirazlarına göre değişir. Dava öncesi zorunlu arabuluculuk süreci de eklendiğinde toplam süre uzayabilir. Tahliye kararı kesinleştikten sonra kiracı çıkmazsa icra yoluyla tahliye 1-2 ay daha sürebilir."
     },
     {
         question: "Kiracı 10 yılı doldurmadan tahliye edilebilir mi?",
@@ -86,11 +86,11 @@ export default function OnYillikKiraciTahliyePage() {
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliyesi süreçlerinde
-                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile uzman avukat desteği.
+                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile kira hukuku alanında hukuki destek.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -120,7 +120,7 @@ export default function OnYillikKiraciTahliyePage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>10 yıllık kiracı tahliyesi</strong>, Türk Borçlar Kanunu&apos;nun 347. maddesi kapsamında kiraya verene tanınan en önemli haklardan biridir. İzmir&apos;de 10 yıllık uzama süresini dolduran kiracının tahliyesi sürecinde <strong>Av. Mert Kağan Çetin</strong> olarak fesih bildirimi hazırlanmasından dava takibine kadar tüm aşamalarda profesyonel hukuki destek sunuyoruz.
+                            <strong>10 yıllık kiracı tahliyesi</strong>, Türk Borçlar Kanunu&apos;nun 347. maddesi kapsamında kiraya verene tanınan en önemli haklardan biridir. İzmir&apos;de 10 yıllık uzama süresini dolduran kiracının tahliyesi sürecinde <strong>Av. Mert Kağan Çetin</strong> olarak fesih bildirimi hazırlanmasından dava takibine kadar tüm aşamalarda hukuki destek vermektediruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -223,7 +223,7 @@ export default function OnYillikKiraciTahliyePage() {
                             Sürecin her aşamasında usul hatası yapılması davanın reddine veya uzamasına yol açabilir. Özellikle süre hesabı ve fesih bildiriminin usulüne uygunluğu mahkemece titizlikle incelenir. <strong>10 yıllık kiracı tahliyesi</strong> konusunda deneyimli bir avukattan destek almak sürecin hızlı ve sorunsuz tamamlanmasını sağlar.
                         </p>
 
-                        <SectionCTA text="10 yıllık kiracı tahliyesi süreciniz için uzman avukat desteği almak ister misiniz?" />
+                        <SectionCTA text="10 yıllık kiracı tahliyesi süreciniz için avukat desteği almak ister misiniz?" />
 
                         <h2 id="sik-yapilan-hatalar" className="scroll-mt-24">Sık Yapılan Hatalar</h2>
 
@@ -240,7 +240,7 @@ export default function OnYillikKiraciTahliyePage() {
                         </ul>
 
                         <p>
-                            Bu hataların önlenebilmesi için sürecin başından itibaren <Link href="/izmir-kira-avukati/">kira hukuku alanında uzman bir avukattan</Link> destek alınması önerilir. Özellikle süre hesabı ve ihtarname hazırlığı aşamasında yapılacak profesyonel bir değerlendirme, ileride telafisi güç sorunların önüne geçer.
+                            Bu hataların önlenebilmesi için sürecin başından itibaren <Link href="/izmir-kira-avukati/">kira hukuku alanında çalışan bir avukattan</Link> destek alınması önerilir. Özellikle süre hesabı ve ihtarname hazırlığı aşamasında yapılacak profesyonel bir değerlendirme, ileride telafisi güç sorunların önüne geçer.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -253,7 +253,7 @@ export default function OnYillikKiraciTahliyePage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracıların tahliyesi davalarında kiraya verenlere profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracıların tahliyesi davalarında kiraya verenlere hukuki destek vermektedir. İzmir Adliyesi (Bayraklı) yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -298,7 +298,7 @@ export default function OnYillikKiraciTahliyePage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">10 Yıllık Kiracı Tahliyesi İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    10 yıllık uzama süresini dolduran kiracınızın tahliyesi için hemen randevu alın.
+                                    10 yıllık uzama süresini dolduran kiracınızın tahliyesi için randevu oluşturabilirsiniz.
                                     <strong className="text-white"> 10 yıllık kiracı tahliyesi avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

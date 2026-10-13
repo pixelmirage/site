@@ -12,27 +12,27 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İzmir Kira Avukatı Ücretleri 2026 - Danışmanlık ve Dava Ücretleri",
-    description: "İzmir'de kira avukatı ücretleri 2026 güncel fiyat listesi. Tahliye davası, kira tespit davası, sözleşme hazırlama ve danışmanlık ücretleri hakkında detaylı bilgi.",
-    keywords: ["kira avukatı ücreti İzmir", "tahliye davası ücreti", "kira tespit davası ücreti", "kira avukatı danışmanlık ücreti", "İzmir avukat ücretleri 2026"],
+    title: "Kira Avukatı Ücreti Nasıl Belirlenir? | İzmir Kira Avukatı",
+    description: "İzmir'de kira davalarında avukatlık ücretinin nasıl belirlendiği: Avukatlık Kanunu m. 163-164, Avukatlık Asgari Ücret Tarifesi, karşı vekalet ücreti ve yargılama giderleri.",
+    keywords: ["kira avukatı ücreti İzmir", "tahliye davası ücreti", "kira tespit davası ücreti", "kira avukatı danışmanlık ücreti", "avukatlık asgari ücret tarifesi kira"],
     openGraph: {
-        title: "İzmir Kira Avukatı Ücretleri 2026 | Av. Mert Kağan Çetin",
+        title: "Kira Avukatı Ücreti Nasıl Belirlenir? | Av. Mert Kağan Çetin",
         description: "İzmir'de kira davalarında avukatlık ücretleri, danışmanlık ücretleri ve dava masrafları hakkında güncel bilgi.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/izmir-kira-avukati-ucret/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-13" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/izmir-kira-avukati-ucret/" },
 };
 
 const faqs = [
     {
         question: "Kira avukatı ne kadar ücret alır?",
-        answer: "İzmir'de kira avukatı ücreti dava türüne göre değişir. 2026 yılında tahliye davası ücreti 25.000-60.000 TL, kira tespit davası 30.000-50.000 TL, kira uyarlama davası 30.000-50.000 TL arasındadır. Ücret, davanın karmaşıklığına, süresine ve dava değerine göre ilk görüşmede belirlenir. İzmir Barosu Asgari Ücret Tarifesi altında ücret belirlenemez."
+        answer: "Avukatlık ücreti; davanın türü, dava değeri, işin güçlüğü ve gerektirdiği emek dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz; dava değerine göre yüzde olarak belirlenen ücret ise dava değerinin yüzde yirmi beşini aşamaz (m. 164). Somut dosyaya ilişkin ücret, belgeler incelendikten sonra bildirilir."
     },
     {
         question: "Avukata danışma ücreti ne kadar?",
-        answer: "İzmir'de kira hukuku alanında avukat danışma ücreti 2026 yılında 3.000-6.000 TL arasında değişmektedir. Danışma görüşmesinde kira uyuşmazlığınız değerlendirilir, hukuki seçenekleriniz açıklanır ve izlenecek yol haritası belirlenir. Büromuzda ilk ön görüşme ücretsizdir; bu görüşmede davanızın genel değerlendirmesi yapılır."
+        answer: "Sözlü ve yazılı danışma (hukuki görüş) için ücret, Avukatlık Asgari Ücret Tarifesi'nin büroda ve çağrı üzerine danışma kalemlerinin altında olamaz. Danışma görüşmesinde kira uyuşmazlığınız değerlendirilir, hukuki seçenekleriniz açıklanır ve izlenecek yol belirlenir."
     },
     {
         question: "Tahliye davası masrafını kim öder?",
@@ -40,19 +40,19 @@ const faqs = [
     },
     {
         question: "Avukatlık ücreti taksitle ödenebilir mi?",
-        answer: "Evet, büromuzda avukatlık ücreti taksitle ödenebilir. İlk görüşmede davanın niteliği değerlendirildikten sonra ücret belirlenir ve müvekkille birlikte uygun bir ödeme planı oluşturulur. Genellikle başlangıçta bir peşinat alınır, kalan tutar dava sürecine yayılarak taksitlendirilir. Ödeme koşulları avukatlık sözleşmesinde açıkça belirtilir."
+        answer: "Ücretin ödeme zamanı ve şekli, avukat ile müvekkil arasında yazılı ücret sözleşmesinde serbestçe kararlaştırılabilir. Sözleşmede ödeme planı açıkça belirtilmelidir."
     },
     {
         question: "Avukat ücreti dava sonucuna göre değişir mi?",
-        answer: "Avukatlık Kanunu'na göre avukatlık ücreti tamamen dava sonucuna bağlı olarak belirlenemez (salt hasılat payı yasağı). Ancak sabit bir ücrete ek olarak dava sonucuna göre başarı primi kararlaştırılabilir. Kira tespit ve kira uyarlama davalarında dava değeri üzerinden yüzdelik bir başarı primi belirlenmesi yaygın bir uygulamadır."
+        answer: "Avukatlık Kanunu m. 164 uyarınca ücret, dava değeri veya müvekkilin elde edeceği yarar üzerinden yüzde olarak da kararlaştırılabilir; ancak bu oran dava değerinin yüzde yirmi beşini aşamaz."
     }
 ];
 
 const tocItems = [
-    { id: "ucretler", title: "2026 Kira Avukatı Ücretleri" },
+    { id: "ucretler", title: "Ücret Nasıl Belirlenir?" },
     { id: "faktorler", title: "Ücreti Etkileyen Faktörler" },
     { id: "dava-masraflari", title: "Dava Masrafları" },
-    { id: "ucretsiz-gorusme", title: "Ücretsiz Ön Görüşme" },
+    { id: "on-gorusme", title: "Ön Görüşme" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -82,15 +82,14 @@ export default function IzmirKiraAvukatiUcretPage() {
                     </nav>
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İzmir Kira Avukatı Ücretleri 2026
+                            Kira Avukatı Ücreti Nasıl Belirlenir?
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            İzmir&apos;de kira davalarında avukatlık ücretleri, danışmanlık ücretleri ve dava masrafları hakkında güncel bilgi.
-                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile ücretsiz ön görüşme yapın.
+                            İzmir&apos;de kira davalarında avukatlık ücretinin hangi kurallara göre belirlendiği, karşı vekalet ücreti ve yargılama giderleri hakkında bilgi.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -120,53 +119,26 @@ export default function IzmirKiraAvukatiUcretPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir kira avukatı ücretleri</strong>, dava türüne, davanın karmaşıklığına ve süresine göre değişiklik gösterir. Bu sayfada 2026 yılı güncel avukatlık ücretleri, dava masrafları ve danışmanlık ücretleri hakkında detaylı bilgi bulabilirsiniz.
+                            <strong>Kira avukatı ücreti</strong>, dava türüne, dava değerine ve işin gerektirdiği emeğe göre değişir. Bu sayfada ücretin hangi yasal kurallara göre belirlendiğini, karşı vekalet ücretini ve yargılama giderlerini açıklıyoruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 13 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
-                            Kira uyuşmazlıklarında avukatlık ücreti, Avukatlık Kanunu ve İzmir Barosu Asgari Ücret Tarifesi çerçevesinde belirlenir. Avukatlık ücreti, baro tarifesinin altında kararlaştırılamaz. Aşağıda yer alan ücretler 2026 yılı İzmir piyasa koşullarına göre ortalama değerler olup, kesin ücret davanın niteliğine göre ilk görüşmede belirlenmektedir. Dava masrafları (mahkeme harcı, tebligat, bilirkişi ücreti) avukatlık ücretine dahil değildir.
+                            Kira uyuşmazlıklarında avukatlık ücreti, Avukatlık Kanunu ve Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi (AAÜT) çerçevesinde belirlenir. Avukatlık meslek kuralları, ücret üzerinden tanıtım yapılmasını ve fiyat listesi yayımlanmasını sınırladığından bu sayfada rakam verilmemektedir. Dava masrafları (mahkeme harcı, tebligat, bilirkişi ücreti) avukatlık ücretine dahil değildir.
                         </p>
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Kira Avukatı Ücretleri</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
-                        <p>
-                            Aşağıdaki tabloda İzmir&apos;de kira hukuku alanındaki başlıca hizmetler ve 2026 yılı güncel ücret aralıkları yer almaktadır. Bu ücretler, davanın karmaşıklığına, süresine ve dava değerine bağlı olarak değişebilir. Ücretler İzmir Barosu Asgari Ücret Tarifesi&apos;nin üzerindedir ve KDV dahildir.
-                        </p>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
-                                <thead className="bg-primary text-white">
-                                    <tr>
-                                        <th className="px-6 py-4 text-left">Hizmet Türü</th>
-                                        <th className="px-6 py-4 text-left">Ücret Aralığı (2026)</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-100">
-                                    {[
-                                        { title: "Tahliye Taahhütnamesi ile Tahliye", price: "25.000 - 40.000 TL" },
-                                        { title: "İhtiyaç Nedeniyle Tahliye Davası", price: "35.000 - 60.000 TL" },
-                                        { title: "İki Haklı İhtar ile Tahliye Davası", price: "35.000 - 55.000 TL" },
-                                        { title: "Kira Tespit Davası", price: "30.000 - 50.000 TL" },
-                                        { title: "Kira Uyarlama Davası", price: "30.000 - 50.000 TL" },
-                                        { title: "Kira Sözleşmesi Hazırlama", price: "5.000 - 15.000 TL" },
-                                        { title: "Hukuki Danışmanlık (Seans)", price: "3.000 - 6.000 TL" },
-                                    ].map((item, i) => (
-                                        <tr key={i} className={`hover:bg-slate-50 transition-colors ${i % 2 === 1 ? "bg-slate-50" : ""}`}>
-                                            <td className="px-6 py-4 font-bold text-primary">{item.title}</td>
-                                            <td className="px-6 py-4 text-slate-600 font-medium">{item.price}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <p>
-                            Yukarıdaki ücretler ortalama değerlerdir ve her dava için kesin ücret ilk görüşmede belirlenir. Kira tespit ve kira uyarlama davalarında dava değeri yüksekse, ücretin bir kısmı başarı primi olarak dava sonucuna bağlanabilir. Tüm ücretler avukatlık sözleşmesiyle yazılı olarak kararlaştırılır.
-                        </p>
+                        <ul>
+                            <li><strong>Yazılı ücret sözleşmesi (Av. K. m. 163):</strong> Ücretin miktarı, ödeme zamanı ve kapsamı avukat ile müvekkil arasında yazılı olarak kararlaştırılır. Sözleşmenin kapsamı (arabuluculuk, ilk derece, istinaf, icra) açıkça belirtilmelidir.</li>
+                            <li><strong>Asgari ücret tarifesi (Av. K. m. 164):</strong> Kararlaştırılan ücret, TBB Avukatlık Asgari Ücret Tarifesi&apos;nde ilgili iş için öngörülen tutarın altında olamaz. Tarife her yıl yeniden belirlenir; İzmir Barosu da tavsiye niteliğinde ücret tarifesi yayımlar.</li>
+                            <li><strong>Yüzde yirmi beş sınırı (Av. K. m. 164/2):</strong> Ücret dava değeri üzerinden yüzde olarak kararlaştırılırsa, oran dava değerinin yüzde yirmi beşini aşamaz.</li>
+                            <li><strong>Sözleşme yoksa (Av. K. m. 164/4):</strong> Ücret, değeri belli davalarda tarifenin altında ve dava değerinin yüzde on ile yirmi beşi arasında olmak üzere belirlenir.</li>
+                            <li><strong>Karşı vekalet ücreti:</strong> Mahkemenin dava sonunda haksız çıkan taraf aleyhine hükmettiği vekalet ücreti tarifeye göre belirlenir ve avukata aittir (Av. K. m. 164/5); müvekkil ile kararlaştırılan ücretten ayrıdır.</li>
+                        </ul>
 
                         <p>
                             Tahliye davalarının detaylı bilgisi için <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">kiracı tahliye davası</Link> sayfamızı, kira tespit davaları için <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davası</Link> sayfamızı inceleyebilirsiniz.
@@ -175,7 +147,7 @@ export default function IzmirKiraAvukatiUcretPage() {
                         <h2 id="faktorler" className="scroll-mt-24">Avukatlık Ücretini Etkileyen Faktörler</h2>
 
                         <p>
-                            Kira davalarında avukatlık ücreti sabit bir rakam olmayıp, birçok faktöre bağlı olarak değişir. Avukatlık Kanunu&apos;nun 164. maddesi uyarınca ücret, baro asgari ücret tarifesinin altında belirlenemez ve dava değerinin yüzde yirmi beşini aşamaz. Bu sınırlar dahilinde ücret, aşağıdaki faktörlere göre şekillenir:
+                            Kira davalarında avukatlık ücreti sabit bir rakam olmayıp, yukarıdaki yasal sınırlar içinde birçok faktöre bağlı olarak değişir. Bu sınırlar dahilinde ücret, aşağıdaki faktörlere göre şekillenir:
                         </p>
 
                         <ul>
@@ -183,14 +155,14 @@ export default function IzmirKiraAvukatiUcretPage() {
                             <li><strong>Dava değeri:</strong> Kira tespit ve kira uyarlama davalarında dava değeri (yıllık kira farkı) doğrudan avukatlık ücretini etkiler. Dava değeri arttıkça avukatlık ücreti de artar.</li>
                             <li><strong>Davanın karmaşıklığı:</strong> Birden fazla tahliye sebebinin bir arada ileri sürülmesi, karşı tarafın aktif savunma yapması veya istinaf aşamasına geçilmesi ücreti artıran faktörlerdir.</li>
                             <li><strong>Dava süresi:</strong> Duruşma sayısı, bilirkişi incelemesi ve istinaf başvurusu gibi süreyi uzatan unsurlar avukatlık ücretine yansıyabilir.</li>
-                            <li><strong>Zorunlu arabuluculuk:</strong> 2024 yılından itibaren kira davalarında zorunlu arabuluculuk uygulanmaktadır. Arabuluculuk aşamasında anlaşma sağlanırsa dava açılmadığından toplam maliyet düşer.</li>
+                            <li><strong>Zorunlu arabuluculuk:</strong> 1 Eylül 2023 tarihinden itibaren kira uyuşmazlıklarında dava açmadan önce arabulucuya başvurmak dava şartıdır (HUAK m. 18/B). Arabuluculuk aşamasında anlaşma sağlanırsa dava açılmadığından toplam maliyet düşer.</li>
                         </ul>
 
                         <p>
-                            Bu faktörlerin tamamı ilk görüşmede değerlendirilir ve müvekkile şeffaf bir şekilde açıklanır. Büromuz, ücret konusunda sürpriz yaşanmaması için tüm olası maliyetleri önceden bildirmektedir.
+                            Bu faktörlerin tamamı ilk görüşmede değerlendirilir ve müvekkile şeffaf bir şekilde açıklanır. Olası yargılama giderleri de önceden açıklanır.
                         </p>
 
-                        <SectionCTA text="Kira davanızın ücretini öğrenmek için ücretsiz ön görüşme randevusu alın." />
+                        <SectionCTA text="Kira uyuşmazlığınızı değerlendirmek için görüşme randevusu oluşturabilirsiniz." />
 
                         <h2 id="dava-masraflari" className="scroll-mt-24">Dava Masrafları ve Yargılama Giderleri</h2>
 
@@ -203,32 +175,32 @@ export default function IzmirKiraAvukatiUcretPage() {
                         </p>
 
                         <ul>
-                            <li><strong>Mahkeme harcı:</strong> Dava açılırken ve karar aşamasında ödenir. Tahliye davalarında maktu harç alınırken, kira tespit ve uyarlama davalarında dava değeri üzerinden nispi harç hesaplanır. 2026 yılında maktu harç tutarları birkaç yüz TL düzeyindedir.</li>
-                            <li><strong>Tebligat masrafları:</strong> Dava dilekçesinin, duruşma davetiyelerinin ve mahkeme kararlarının taraflara tebliğ edilmesi için ödenen ücrettir. Her tebligat için ortalama 150-300 TL masraf oluşur.</li>
-                            <li><strong>Bilirkişi ücreti:</strong> Kira tespit ve kira uyarlama davalarında mahkeme bilirkişi ataması yapar. Bilirkişi ücreti genellikle 5.000-15.000 TL arasında değişir ve rapor isteyen tarafça peşin olarak depo edilir.</li>
+                            <li><strong>Mahkeme harcı:</strong> Dava açılırken ve karar aşamasında ödenir. Tahliye davalarında maktu harç alınırken, kira tespit ve uyarlama davalarında dava değeri üzerinden nispi harç hesaplanır. Harç tutarları her yıl Harçlar Kanunu tarifeleriyle güncellenir.</li>
+                            <li><strong>Tebligat masrafları:</strong> Dava dilekçesinin, duruşma davetiyelerinin ve mahkeme kararlarının taraflara tebliğ edilmesi için ödenen ücrettir. Tebligat ücretleri PTT tarifesine göre belirlenir.</li>
+                            <li><strong>Bilirkişi ücreti:</strong> Kira tespit ve kira uyarlama davalarında mahkeme bilirkişi ataması yapar. Bilirkişi ücreti, Bilirkişilik Asgari Ücret Tarifesi esas alınarak mahkemece belirlenir ve rapor isteyen tarafça peşin olarak depo edilir.</li>
                             <li><strong>Keşif masrafı:</strong> Kira tespit davalarında mahkemenin taşınmazda keşif yapması gerekebilir. Keşif masrafları (ulaşım, bilirkişi gündeliği) ayrıca ödenir.</li>
-                            <li><strong>Arabuluculuk ücreti:</strong> Zorunlu arabuluculuk görüşmeleri ilk iki saat ücretsizdir. Görüşmelerin uzaması halinde arabuluculuk ücreti saatlik olarak hesaplanır. Anlaşma sağlanamazsa arabuluculuk ücreti Hazine tarafından karşılanır.</li>
+                            <li><strong>Arabuluculuk ücreti:</strong> Arabuluculuk ücreti Arabuluculuk Asgari Ücret Tarifesi&apos;ne göre belirlenir. Anlaşma sağlanırsa ücret kural olarak taraflarca eşit ödenir; anlaşma sağlanamazsa iki saatlik ücret Adalet Bakanlığı bütçesinden karşılanır ve daha sonra yargılama giderlerine dahil edilir.</li>
                         </ul>
 
                         <p>
-                            Dava masraflarının toplam tutarı, davanın türüne ve süresine göre 2.000-20.000 TL arasında değişebilir. İlk görüşmede tahmini dava masrafları konusunda da bilgilendirme yapılmaktadır. <Link href="/izmir-kira-avukati/kira-uyarlama-davasi/">Kira uyarlama davası</Link> ve <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davası</Link> gibi bilirkişi gerektiren davalarda masraflar nispeten daha yüksektir.
+                            Dava masraflarının toplam tutarı davanın türüne, bilirkişi ve keşif ihtiyacına göre değişir. İlk görüşmede tahmini dava masrafları konusunda da bilgilendirme yapılmaktadır. <Link href="/izmir-kira-avukati/kira-uyarlama-davasi/">Kira uyarlama davası</Link> ve <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit davası</Link> gibi bilirkişi gerektiren davalarda masraflar nispeten daha yüksektir.
                         </p>
 
-                        <h2 id="ucretsiz-gorusme" className="scroll-mt-24">Ücretsiz Ön Görüşme</h2>
+                        <h2 id="on-gorusme" className="scroll-mt-24">Ön Görüşme</h2>
 
                         <p>
-                            Büromuz, kira uyuşmazlıklarında <strong>ücretsiz ilk ön görüşme</strong> sunmaktadır. Bu görüşmede kira sorununuz genel hatlarıyla değerlendirilir, hukuki seçenekleriniz açıklanır ve izlenecek yol haritası belirlenir. Ön görüşme herhangi bir ücret veya taahhüt gerektirmez.
+                            Kira uyuşmazlığınız ön görüşmede genel hatlarıyla değerlendirilir, hukuki seçenekleriniz açıklanır ve izlenecek yol belirlenir.
                         </p>
 
                         <p>
-                            Ücretsiz ön görüşmede neler beklemelisiniz:
+                            Ön görüşmede neler konuşulur:
                         </p>
 
                         <ul>
                             <li><strong>Dosya ön değerlendirmesi:</strong> Kira sözleşmeniz, ihtarnameler, ödeme belgeleri ve diğer evraklar incelenerek uyuşmazlığınızın hukuki niteliği belirlenir.</li>
                             <li><strong>Hukuki seçeneklerin açıklanması:</strong> Durumunuza uygun tahliye sebebi, dava türü veya arabuluculuk gibi alternatif çözüm yolları değerlendirilir.</li>
                             <li><strong>Süre ve maliyet tahmini:</strong> Davanızın tahmini süresi, avukatlık ücreti ve dava masrafları hakkında bilgi verilir.</li>
-                            <li><strong>Başarı olasılığının değerlendirilmesi:</strong> Mevcut delil durumuna göre davanın güçlü ve zayıf yönleri şeffaf bir şekilde paylaşılır.</li>
+                            <li><strong>Dosyanın güçlü ve zayıf yönleri:</strong> Mevcut delil durumuna göre davanın riskleri açıkça paylaşılır; dava sonucu garanti edilemez.</li>
                         </ul>
 
                         <p>
@@ -245,7 +217,7 @@ export default function IzmirKiraAvukatiUcretPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Kira hukuku alanında tahliye davaları, kira tespit davaları, kira uyarlama davaları ve sözleşme hazırlama hizmetleri sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde kira uyuşmazlıklarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Kira hukuku alanında tahliye davaları, kira tespit davaları, kira uyarlama davaları ve sözleşme hazırlama hizmetleri sunuyor. İzmir Adliyesi (Bayraklı) yakınındaki ofisinden İzmir genelinde kira uyuşmazlıklarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -288,9 +260,9 @@ export default function IzmirKiraAvukatiUcretPage() {
                         {/* İletişim CTA */}
                         <div id="iletisim" className="not-prose scroll-mt-24">
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
-                                <h2 className="text-3xl font-playfair font-bold mb-4">Kira Davanız İçin Ücretsiz Ön Görüşme Alın</h2>
+                                <h2 className="text-3xl font-playfair font-bold mb-4">Kira Uyuşmazlığınız İçin Görüşme</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kira uyuşmazlığınız için hemen ücretsiz ön görüşme randevusu alın.
+                                    Randevu için iletişim bilgilerimizi kullanabilirsiniz. Genel bilgi için <Link href="/izmir-kira-avukati/">İzmir kira avukatı</Link> sayfamıza da göz atabilirsiniz.
                                     <strong className="text-white"> Kira avukatı</strong> olarak size en uygun çözümü sunmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

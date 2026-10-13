@@ -13,26 +13,26 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Kira Artışı ve Tespit Davası İzmir | Kira Avukatı",
-    description: "İzmir'de kira artışı ve kira tespit davası avukatı Av. Mert Kağan Çetin. TÜFE sınırı, emsal kira araştırması, 5 yıllık kira ilişkilerinde bedel tespiti davalarında uzman destek.",
+    description: "İzmir'de kira artışı ve kira tespit davası avukatı Av. Mert Kağan Çetin. TÜFE sınırı, emsal kira araştırması, 5 yıllık kira ilişkilerinde bedel tespiti davalarında avukatlık desteği.",
     keywords: ["kira artışı ve tespit davası İzmir", "kira tespit davası avukatı İzmir", "kira artışı avukatı İzmir", "kira bedeli tespiti", "emsal kira araştırması", "TÜFE kira artışı"],
     openGraph: {
         title: "Kira Artışı ve Tespit Davası İzmir | Av. Mert Kağan Çetin",
-        description: "İzmir'de kira artışı uyuşmazlıkları ve kira tespit davalarında uzman avukatlık hizmeti.",
+        description: "İzmir'de kira artışı uyuşmazlıkları ve kira tespit davalarında avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-13" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/" },
 };
 
 const faqs = [
     {
         question: "Kira tespit davası ne kadar sürer?",
-        answer: "İzmir'de kira tespit davası ortalama 6-12 ay sürer. Süreyi etkileyen başlıca faktörler bilirkişi incelemesi, keşif aşaması ve Bayraklı Adliyesi'ndeki iş yüküdür. Bilirkişi raporu mahkemenin kararını doğrudan etkilediğinden bu aşama genellikle 2-3 ay sürer. Dava sonuçlanana kadar kiracı mevcut kira bedelini ödemeye devam eder."
+        answer: "İzmir'de kira tespit davası ortalama 6-12 ay sürer. Süreyi etkileyen başlıca faktörler bilirkişi incelemesi, keşif aşaması ve İzmir Adliyesi (Bayraklı)'ndeki iş yüküdür. Bilirkişi raporu mahkemenin kararını doğrudan etkilediğinden bu aşama genellikle 2-3 ay sürer. Dava sonuçlanana kadar kiracı mevcut kira bedelini ödemeye devam eder."
     },
     {
         question: "Kira tespit davası açmak ne kadara mal olur?",
-        answer: "2026 yılında İzmir'de kira tespit davası avukatlık ücreti 30.000-50.000 TL arasında değişir. Buna ek olarak mahkeme harcı, bilirkişi ücreti, keşif masrafı ve tebligat giderleri de söz konusudur. Mahkeme harcı dava konusu kira farkı üzerinden nispi olarak hesaplanır. Kesin ücret ilk görüşmede davanın kapsamına göre belirlenir."
+        answer: "Avukatlık ücreti; davanın türü, dava değeri ve işin gerektirdiği emek dikkate alınarak avukat ile müvekkil arasında yazılı olarak kararlaştırılır ve Türkiye Barolar Birliği Avukatlık Asgari Ücret Tarifesi'nin altında olamaz (Avukatlık Kanunu m. 163-164). Buna ek olarak mahkeme harcı, tebligat, bilirkişi ve keşif giderleri gibi yargılama giderleri söz konusudur; davada haklı çıkan taraf bu giderleri ve tarifeye göre belirlenen karşı vekalet ücretini karşı taraftan talep edebilir."
     },
     {
         question: "Kira tespit davası ne zaman açılmalıdır?",
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "kira-tespit-nedir", title: "Kira Tespit Davası Nedir?" },
     { id: "surecimiz", title: "İzmir'de Kira Tespit Davası Sürecimiz" },
     { id: "neden-avukat", title: "Neden Avukat Gerekli?" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Süreler ve Ücret" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -86,11 +86,11 @@ export default function KiraTespitDavasiPage() {
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             Kira bedeli tespiti, emsal kira araştırması ve TÜFE kira artışı davalarında
-                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile profesyonel hukuki destek alın.
+                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile görüşebilirsiniz.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -120,7 +120,7 @@ export default function KiraTespitDavasiPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir kira tespit davası avukatı</strong> olarak kira bedelinin adil seviyede belirlenmesi için müvekkillerimizi temsil ediyoruz. Emsal kira araştırması, bilirkişi süreci ve <Link href="/sozluk/kira-tespit-davasi/">kira tespit davası</Link> sürecinin her aşamasında profesyonel hukuki destek sunuyoruz. Kira bedelinizin piyasa koşullarını yansıtmasını sağlamak için TBK m. 344 kapsamında haklarınızı koruyoruz.
+                            <strong>İzmir kira tespit davası avukatı</strong> olarak kira bedelinin adil seviyede belirlenmesi için müvekkillerimizi temsil ediyoruz. Emsal kira araştırması, bilirkişi süreci ve <Link href="/sozluk/kira-tespit-davasi/">kira tespit davası</Link> sürecinin her aşamasında hukuki destek vermektediruz. Kira bedelinizin piyasa koşullarını yansıtmasını sağlamak için TBK m. 344 kapsamında haklarınızı koruyoruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -181,7 +181,7 @@ export default function KiraTespitDavasiPage() {
                         <h2 id="neden-avukat" className="scroll-mt-24">Kira Tespit Davasında Neden Avukat Gerekli?</h2>
 
                         <p>
-                            Kira tespit davaları teknik bilgi ve deneyim gerektiren uzmanlık davalarıdır. Avukatsız açılan kira tespit davalarında sık karşılaşılan sorunlar:
+                            Kira tespit davaları teknik bilgi ve deneyim gerektiren davalardır. Avukatsız açılan kira tespit davalarında sık karşılaşılan sorunlar:
                         </p>
 
                         <ul>
@@ -198,7 +198,7 @@ export default function KiraTespitDavasiPage() {
 
                         <SectionCTA text="Kira tespit davanız için avukat desteği almak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Kira Tespit Davası Ücretleri</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">Ortalama Süreler ve Avukatlık Ücreti</h2>
 
                         <div className="not-prose my-8 overflow-x-auto">
                             <table className="w-full border-collapse">
@@ -206,18 +206,17 @@ export default function KiraTespitDavasiPage() {
                                     <tr className="bg-primary text-white">
                                         <th className="px-4 py-3 text-left">Dava Türü</th>
                                         <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Kira Tespit Davası</td><td className="px-4 py-3">6-12 ay</td><td className="px-4 py-3">30.000 - 50.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Kira Uyarlama Davası</td><td className="px-4 py-3">6-18 ay</td><td className="px-4 py-3">35.000 - 55.000 TL</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Kira Tespit Davası</td><td className="px-4 py-3">6-12 ay</td></tr>
+                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Kira Uyarlama Davası</td><td className="px-4 py-3">6-18 ay</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret davanın karmaşıklığına ve dava konusu kira bedeline göre ilk görüşmede belirlenir. Mahkeme harcı, bilirkişi ücreti ve keşif masrafları bu ücretlere dahil değildir.
+                            Süreler ortalama değerler olup mahkemenin iş yüküne ve dosyanın özelliklerine göre değişebilir. Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak yazılı ücret sözleşmesiyle kararlaştırılır ve Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz (Av. K. m. 163-164). Ayrıntılar için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti nasıl belirlenir</Link> sayfamıza bakabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -230,7 +229,7 @@ export default function KiraTespitDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Kira tespit davaları, kira uyarlama davaları ve kira uyuşmazlıklarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Kira tespit davaları, kira uyarlama davaları ve kira uyuşmazlıklarında hukuki destek vermektedir. İzmir Adliyesi (Bayraklı) yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -275,7 +274,7 @@ export default function KiraTespitDavasiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kira Tespit Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kira bedelinizin adil seviyede belirlenmesi için hemen randevu alın.
+                                    Kira bedelinizin adil seviyede belirlenmesi için randevu oluşturabilirsiniz.
                                     <strong className="text-white"> Kira tespit davası avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
