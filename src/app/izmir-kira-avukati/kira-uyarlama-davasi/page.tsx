@@ -13,15 +13,15 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "İzmir Kira Uyarlama Davası Avukatı",
-    description: "İzmir kira uyarlama davası avukatı Av. Mert Kağan Çetin. TBK m. 138 kapsamında kira bedeli uyarlama davalarında uzman destek.",
+    description: "İzmir kira uyarlama davası avukatı Av. Mert Kağan Çetin. TBK m. 138 kapsamında kira bedeli uyarlama davalarında avukatlık desteği.",
     keywords: ["kira uyarlama davası avukatı İzmir", "kira uyarlama davası", "TBK 138", "aşırı ifa güçlüğü", "kira bedeli uyarlama"],
     openGraph: {
         title: "İzmir Kira Uyarlama Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de kira uyarlama davalarında uzman avukatlık hizmeti. TBK m. 138 kapsamında kira bedeli uyarlama davalarında hukuki destek.",
+        description: "İzmir'de kira uyarlama davalarında avukatlık hizmeti. TBK m. 138 kapsamında kira bedeli uyarlama davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-10-13" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/" },
 };
 
@@ -36,7 +36,7 @@ const faqs = [
     },
     {
         question: "Kira uyarlama davası ne kadar sürer?",
-        answer: "İzmir'de kira uyarlama davası ortalama 6-18 ay arasında sürmektedir. Süre, davanın karmaşıklığına, bilirkişi raporu süresine ve Bayraklı Adliyesi'ndeki iş yüküne göre değişir. Bilirkişi incelemesi ve keşif aşaması süreyi doğrudan etkiler. Tarafların uzlaşması halinde dava daha kısa sürede sonuçlanabilir."
+        answer: "İzmir'de kira uyarlama davası ortalama 6-18 ay arasında sürmektedir. Süre, davanın karmaşıklığına, bilirkişi raporu süresine ve İzmir Adliyesi (Bayraklı)'ndeki iş yüküne göre değişir. Bilirkişi incelemesi ve keşif aşaması süreyi doğrudan etkiler. Tarafların uzlaşması halinde dava daha kısa sürede sonuçlanabilir."
     },
     {
         question: "Kira uyarlama davası açmak için hangi şartlar gereklidir?",
@@ -53,7 +53,7 @@ const tocItems = [
     { id: "sartlari", title: "Dava Şartları" },
     { id: "surecimiz", title: "İzmir'de Dava Sürecimiz" },
     { id: "neden-avukat", title: "Neden Avukat Gerekli?" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Süreler ve Ücret" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -87,11 +87,11 @@ export default function KiraUyarlamaDavasiPage() {
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             TBK m. 138 kapsamında enflasyon, ekonomik kriz ve olağanüstü koşullar nedeniyle kira bedeli uyarlama davalarında
-                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile profesyonel hukuki destek alın.
+                            <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile görüşebilirsiniz.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -121,7 +121,7 @@ export default function KiraUyarlamaDavasiPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir kira uyarlama davası avukatı</strong> olarak ekonomik koşulların olağanüstü değiştiği durumlarda kiracı ve kiraya veren adına <Link href="/sozluk/kira-uyarlama-davasi/">kira uyarlama davası</Link> açıyor ve yürütüyoruz. TBK m. 138 kapsamında aşırı ifa güçlüğü nedeniyle kira bedelinin hakkaniyete uygun şekilde yeniden belirlenmesi için profesyonel hukuki destek sunuyoruz.
+                            <strong>İzmir kira uyarlama davası avukatı</strong> olarak ekonomik koşulların olağanüstü değiştiği durumlarda kiracı ve kiraya veren adına <Link href="/sozluk/kira-uyarlama-davasi/">kira uyarlama davası</Link> açıyor ve yürütüyoruz. TBK m. 138 kapsamında aşırı ifa güçlüğü nedeniyle kira bedelinin hakkaniyete uygun şekilde yeniden belirlenmesi için hukuki destek vermektediruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -129,7 +129,7 @@ export default function KiraUyarlamaDavasiPage() {
                         </p>
 
                         <p>
-                            Yüksek enflasyon, devalüasyon ve ekonomik kriz gibi olağanüstü koşullar kira sözleşmelerindeki dengeyi bozabilir. Bu durumda hem kiracı hem kiraya veren, mahkemeden kira bedelinin güncel koşullara göre uyarlanmasını talep edebilir. <strong>Kira uyarlama davası avukatı</strong> olarak Bayraklı Adliyesi&apos;ndeki tüm kira uyarlama davalarını yakından takip ediyor, müvekkillerimize en hızlı ve etkili sonucu sağlıyoruz.
+                            Yüksek enflasyon, devalüasyon ve ekonomik kriz gibi olağanüstü koşullar kira sözleşmelerindeki dengeyi bozabilir. Bu durumda hem kiracı hem kiraya veren, mahkemeden kira bedelinin güncel koşullara göre uyarlanmasını talep edebilir. <strong>Kira uyarlama davası avukatı</strong> olarak İzmir Adliyesi (Bayraklı)&apos;ndeki tüm kira uyarlama davalarını yakından takip ediyor, müvekkillerimize en hızlı ve etkili sonucu sağlıyoruz.
                         </p>
 
                         <h2 id="nedir" className="scroll-mt-24">Kira Uyarlama Davası Nedir?</h2>
@@ -201,7 +201,7 @@ export default function KiraUyarlamaDavasiPage() {
                             {[
                                 { step: "1", title: "Kira Sözleşmesi ve Ekonomik Analiz", desc: "Kira sözleşmesini, kira bedelinin geçmiş dönemlerdeki seyrini ve güncel ekonomik koşulları inceliyoruz. Sözleşme tarihinden bu yana meydana gelen olağanüstü değişiklikleri belgeliyoruz." },
                                 { step: "2", title: "Emsal ve Rayiç Bedel Araştırması", desc: "Taşınmazın bulunduğu bölgedeki emsal kira bedellerini araştırıyor, rayiç bedel analizini hazırlıyoruz. Bölgedeki benzer taşınmazların kira bedellerini karşılaştırmalı olarak ortaya koyuyoruz." },
-                                { step: "3", title: "Dava Dilekçesi ve Delil Sunumu", desc: "Bayraklı Adliyesi nezdinde kira uyarlama davasını açıyor, ekonomik verileri, emsal kiraları ve sözleşme şartlarını delil olarak sunuyoruz. Gerektiğinde ihtiyati tedbir talebinde bulunuyoruz." },
+                                { step: "3", title: "Dava Dilekçesi ve Delil Sunumu", desc: "İzmir Adliyesi (Bayraklı) nezdinde kira uyarlama davasını açıyor, ekonomik verileri, emsal kiraları ve sözleşme şartlarını delil olarak sunuyoruz. Gerektiğinde ihtiyati tedbir talebinde bulunuyoruz." },
                                 { step: "4", title: "Bilirkişi Raporu ve Keşif", desc: "Mahkemece atanan bilirkişi heyetinin taşınmaz keşfini ve rayiç bedel incelemesini takip ediyoruz. Bilirkişi raporuna gerektiğinde itiraz ediyor, ek rapor talep ediyoruz." },
                                 { step: "5", title: "Karar ve Yeni Kira Bedeli Uygulaması", desc: "Mahkeme kararıyla belirlenen yeni kira bedelinin uygulanmasını sağlıyoruz. Karşı tarafın itiraz etmesi halinde istinaf sürecini de yönetiyoruz." },
                             ].map((item, i) => (
@@ -237,7 +237,7 @@ export default function KiraUyarlamaDavasiPage() {
 
                         <SectionCTA text="Kira uyarlama davanız için avukat desteği almak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Kira Uyarlama Davası Ücretleri</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">Ortalama Süreler ve Avukatlık Ücreti</h2>
 
                         <div className="not-prose my-8 overflow-x-auto">
                             <table className="w-full border-collapse">
@@ -245,18 +245,17 @@ export default function KiraUyarlamaDavasiPage() {
                                     <tr className="bg-primary text-white">
                                         <th className="px-4 py-3 text-left">Dava Türü</th>
                                         <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Kira Uyarlama Davası</td><td className="px-4 py-3">6-18 ay</td><td className="px-4 py-3">35.000 - 55.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Kira Tespit Davası</td><td className="px-4 py-3">6-12 ay</td><td className="px-4 py-3">30.000 - 50.000 TL</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Kira Uyarlama Davası</td><td className="px-4 py-3">6-18 ay</td></tr>
+                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Kira Tespit Davası</td><td className="px-4 py-3">6-12 ay</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret davanın karmaşıklığına ve taşınmazın değerine göre ilk görüşmede belirlenir. <Link href="/sozluk/kira-uyarlama-davasi/">Kira uyarlama davası</Link> kavramının detaylı açıklamasını sözlüğümüzden inceleyebilirsiniz.
+                            Süreler ortalama değerler olup mahkemenin iş yüküne ve dosyanın özelliklerine göre değişebilir. Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak yazılı ücret sözleşmesiyle kararlaştırılır ve Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz (Av. K. m. 163-164). Ayrıntılar için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti nasıl belirlenir</Link> sayfamıza bakabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -269,7 +268,7 @@ export default function KiraUyarlamaDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Kira uyarlama davaları, kira tespit davaları ve kira uyuşmazlıklarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Kira uyarlama davaları, kira tespit davaları ve kira uyuşmazlıklarında hukuki destek vermektedir. İzmir Adliyesi (Bayraklı) yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -311,7 +310,7 @@ export default function KiraUyarlamaDavasiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kira Uyarlama Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kira uyarlama süreciniz için hemen randevu alın.
+                                    Kira uyarlama süreciniz için randevu oluşturabilirsiniz.
                                     <strong className="text-white"> Kira uyarlama davası avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

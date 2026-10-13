@@ -44,10 +44,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             absolute: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
         },
         description: data.description || `${data.name} bölgesinde ${config.label.toLowerCase()} hizmetleri için profesyonel avukatlık desteği alın.`,
-        robots: {
-            index: false,
-            follow: true,
-        },
+        // Kira ilçe sayfaları ilçeye özgü içerikle indekslenir; diğer hizmetler henüz şablon içerikli olduğundan noindex kalır.
+        robots: serviceType === "kira" ? { index: true, follow: true } : { index: false, follow: true },
         openGraph: {
             title: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
             description: data.description,
@@ -66,11 +64,11 @@ function getFaqs(district: string, serviceType: ServiceType) {
             return [
                 {
                     question: `${district} bölgesinde kira davaları ne kadar sürer?`,
-                    answer: `${district} Adliyesi'nin bağlı olduğu İzmir mahkemelerinin iş yüküne göre değişmekle birlikte, tahliye davaları ortalama 6 ay ile 1.5 yıl arasında sürebilmektedir. Tahliye taahhütnamesi varlığı süreci hızlandırır.`
+                    answer: `Süre, mahkemenin iş yüküne ve dosyanın niteliğine göre değişir. Dava öncesi zorunlu arabuluculuk aşaması genellikle birkaç hafta sürer; tahliye davaları ise çoğunlukla aylar ile bir yılı aşan süreler arasında sonuçlanır. Tahliye taahhüdüne veya kira borcuna dayalı icra yoluyla tahliye, dava yoluna göre genellikle daha kısa sürer.`
                 },
                 {
-                    question: `${district} kira avukatı ücretleri ne kadar?`,
-                    answer: "2026 yılı avukatlık asgari ücret tarifesi ve davanın niteliğine göre belirlenmektedir. Tahliye davaları için ortalama ücretler 35.000 TL - 60.000 TL aralığında değişmektedir."
+                    question: `${district} kira avukatı ücreti nasıl belirlenir?`,
+                    answer: "Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak avukat ile müvekkil arasında yazılı olarak kararlaştırılır ve Türkiye Barolar Birliği Avukatlık Asgari Ücret Tarifesi'nin altında olamaz (Avukatlık Kanunu m. 163-164). Somut dosyaya ilişkin ücret, belgeler incelendikten sonra bildirilir."
                 },
                 {
                     question: `${district} için hizmet veriyor musunuz?`,
@@ -84,8 +82,8 @@ function getFaqs(district: string, serviceType: ServiceType) {
                     answer: `İş mahkemelerinde basit yargılama usulü uygulandığından, ${district} bölgesindeki iş davaları ortalama 6 ay ile 1 yıl arasında sonuçlanmaktadır. Zorunlu arabuluculuk süreci dava öncesi 3-4 hafta sürmektedir.`
                 },
                 {
-                    question: `${district} iş avukatı ücretleri ne kadar?`,
-                    answer: "2026 yılı avukatlık asgari ücret tarifesine göre iş davaları için ücretler 30.000 TL - 60.000 TL aralığında değişmektedir. İşe iade davalarında nispi vekalet ücreti de uygulanabilmektedir."
+                    question: `${district} iş avukatı ücreti nasıl belirlenir?`,
+                    answer: "Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak avukat ile müvekkil arasında yazılı olarak kararlaştırılır ve Türkiye Barolar Birliği Avukatlık Asgari Ücret Tarifesi'nin altında olamaz (Avukatlık Kanunu m. 163-164). Somut dosyaya ilişkin ücret, belgeler incelendikten sonra bildirilir."
                 },
                 {
                     question: `${district} bölgesinde iş davası için hizmet veriyor musunuz?`,
@@ -99,8 +97,8 @@ function getFaqs(district: string, serviceType: ServiceType) {
                     answer: `Anlaşmalı boşanma davaları tek celsede sonuçlanabilirken, ${district} bölgesindeki çekişmeli boşanma davaları ortalama 1-2 yıl sürmektedir. Velayet ve mal paylaşımı uyuşmazlıkları süreci uzatabilmektedir.`
                 },
                 {
-                    question: `${district} boşanma avukatı ücretleri ne kadar?`,
-                    answer: "2026 yılı avukatlık asgari ücret tarifesine göre anlaşmalı boşanma için 25.000 - 40.000 TL, çekişmeli boşanma için 40.000 - 80.000 TL aralığında ücretler belirlenmektedir."
+                    question: `${district} boşanma avukatı ücreti nasıl belirlenir?`,
+                    answer: "Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak avukat ile müvekkil arasında yazılı olarak kararlaştırılır ve Türkiye Barolar Birliği Avukatlık Asgari Ücret Tarifesi'nin altında olamaz (Avukatlık Kanunu m. 163-164). Somut dosyaya ilişkin ücret, belgeler incelendikten sonra bildirilir."
                 },
                 {
                     question: `${district} bölgesinde boşanma davası için hizmet veriyor musunuz?`,
@@ -114,8 +112,8 @@ function getFaqs(district: string, serviceType: ServiceType) {
                     answer: `${district} bölgesindeki tazminat davaları, bilirkişi raporları ve delil toplama sürecine bağlı olarak ortalama 1-2 yıl sürmektedir. Sigorta tahkim komisyonuna başvuru alternatif bir çözüm yolu olabilmektedir.`
                 },
                 {
-                    question: `${district} tazminat avukatı ücretleri ne kadar?`,
-                    answer: "2026 yılı avukatlık asgari ücret tarifesine göre tazminat davaları için 30.000 - 60.000 TL başlangıç ücreti ve kazanılan tazminattan nispi vekalet ücreti uygulanmaktadır."
+                    question: `${district} tazminat avukatı ücreti nasıl belirlenir?`,
+                    answer: "Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak avukat ile müvekkil arasında yazılı olarak kararlaştırılır ve Türkiye Barolar Birliği Avukatlık Asgari Ücret Tarifesi'nin altında olamaz (Avukatlık Kanunu m. 163-164). Somut dosyaya ilişkin ücret, belgeler incelendikten sonra bildirilir."
                 },
                 {
                     question: `${district} bölgesinde tazminat davası için hizmet veriyor musunuz?`,
@@ -130,26 +128,26 @@ function getIntroText(district: string, serviceType: ServiceType, description: s
         case "kira":
             return {
                 intro: `İzmir'in önemli yerleşim merkezlerinden ${district}, gayrimenkul hareketliliğinin yüksek olduğu bir bölgedir. ${description} Bu durum, zaman zaman ev sahipleri ve kiracılar arasında hukuki uyuşmazlıkları da beraberinde getirmektedir.`,
-                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} kira avukatı ihtiyaçlarınızda, bölgenin dinamiklerine hakim bir yaklaşımla çözüm üretiyoruz.`,
-                action: `Kiracınız kira ödemiyorsa, 10 yıllık uzama süresi dolduysa veya kendiniz/yakınınız için konut ihtiyacı doğduysa ${district} tahliye avukatı desteği ile süreci en hızlı şekilde yönetebilirsiniz.`,
+                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} kira avukatı ihtiyaçlarınızda, kira uyuşmazlıklarında hukuki destek vermekteyiz.`,
+                action: `Kiracınız kira ödemiyorsa, 10 yıllık uzama süresi dolduysa veya kendiniz/yakınınız için konut ihtiyacı doğduysa tahliye sebebine uygun yol (ihtar, arabuluculuk, dava veya icra takibi) baştan belirlenmelidir.`,
             };
         case "is":
             return {
                 intro: `İzmir'in dinamik ilçelerinden ${district}, çeşitli sektörlerde istihdam sağlayan önemli bir bölgedir. ${description} Bu yapı, işçi-işveren uyuşmazlıklarının çeşitli biçimlerde ortaya çıkmasına neden olmaktadır.`,
                 expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} iş avukatı ihtiyaçlarınızda, bölgenin iş piyasası dinamiklerini bilen bir yaklaşımla çözüm üretiyoruz.`,
-                action: `Haksız yere işten çıkarıldıysanız, kıdem tazminatınız ödenmiyorsa veya iş kazası geçirdiyseniz ${district} iş avukatı desteği ile haklarınızı en etkili şekilde koruyabilirsiniz.`,
+                action: `Haksız yere işten çıkarıldıysanız, kıdem tazminatınız ödenmiyorsa veya iş kazası geçirdiyseniz süreler kısa olduğundan ${district} iş avukatı ile erken aşamada görüşmeniz önerilir.`,
             };
         case "bosanma":
             return {
                 intro: `İzmir'in köklü ilçelerinden ${district}, farklı sosyoekonomik yapılarıyla çeşitli aile hukuku uyuşmazlıklarının yaşandığı bir bölgedir. ${description}`,
-                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} boşanma avukatı ihtiyaçlarınızda, aile hukuku alanındaki uzmanlığımızla çözüm üretiyoruz.`,
+                expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} boşanma avukatı ihtiyaçlarınızda, aile hukuku alanında hukuki destek vermekteyiz.`,
                 action: `Boşanma kararı aldıysanız, velayet veya nafaka konusunda haklarınızı korumak istiyorsanız ${district} boşanma avukatı desteği ile süreci güvenle yönetebilirsiniz.`,
             };
         case "tazminat":
             return {
                 intro: `İzmir'in önemli ilçelerinden ${district}, çeşitli risk faktörleriyle tazminat davalarının sıkça görüldüğü bir bölgedir. ${description}`,
                 expertise: `Av. Mert Kağan Çetin Hukuk Bürosu olarak, ${district} tazminat avukatı ihtiyaçlarınızda, bölgedeki risk profilini bilen bir yaklaşımla çözüm üretiyoruz.`,
-                action: `Trafik kazası, iş kazası veya tıbbi hata nedeniyle zarar gördüyseniz ${district} tazminat avukatı desteği ile hak ettiğiniz tazminatı alabilirsiniz.`,
+                action: `Trafik kazası, iş kazası veya tıbbi hata nedeniyle zarar gördüyseniz zamanaşımı süreleri dolmadan ${district} tazminat avukatı ile görüşmeniz önerilir.`,
             };
     }
 }
@@ -212,7 +210,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim/">
                                     <Phone className="w-5 h-5" />
-                                    Hemen Arayın
+                                    İletişime Geçin
                                 </Link>
                             </Button>
                         </div>
@@ -267,10 +265,35 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 {texts.action}
                             </p>
 
-                            <h3>Uzman Hukuki Destek</h3>
+                            {serviceType === "kira" && districtData.courthouse && (
+                                <>
+                                    <h3>{district} Kira Davalarında Görevli ve Yetkili Mahkeme</h3>
+                                    <p>
+                                        Kira ilişkisinden doğan davalara, dava değerine bakılmaksızın Sulh Hukuk Mahkemesi bakar (HMK m. 4/1-a). {district} ilçesindeki uyuşmazlıklarda bu davalar genel olarak <strong>{districtData.courthouse}</strong> önünde görülür. Yetkili mahkeme kural olarak davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmenin ifa yeri mahkemesinde de dava açılabilir (HMK m. 10). Dava açmadan önce zorunlu arabuluculuk başvurusu yapılmalıdır (HUAK m. 18/B).
+                                    </p>
+                                </>
+                            )}
+
+                            {serviceType === "kira" && districtData.localNotes && districtData.localNotes.length > 0 && (
+                                <>
+                                    <h3>{district} İçin Kira Hukuku Notları</h3>
+                                    {districtData.localNotes.map((note, i) => (
+                                        <p key={i}>{note}</p>
+                                    ))}
+                                </>
+                            )}
+
+                            <p>
+                                {serviceType === "kira"
+                                    ? "İzmir genelinde tahliye, kira tespiti, depozito ve zorunlu arabuluculuk süreçleri hakkında kapsamlı bilgi için "
+                                    : "İzmir genelindeki süreçler hakkında kapsamlı bilgi için "}
+                                <Link href={`${config.parentUrl}/`}>{config.parentTitle}</Link> sayfamıza bakabilirsiniz.
+                            </p>
+
+                            <h3>Hukuki Destek</h3>
                             <p>
                                 Hukuki süreçlerde teknik detaylar davanın kaderini belirleyebilir. Özellikle <strong>{district}</strong> gibi dinamik bölgelerde
-                                hak kaybı yaşamamak büyük önem taşır. Ofisimiz Bayraklı Adliyesi yakınında bulunmakla birlikte, {district} bölgesindeki
+                                hak kaybı yaşamamak büyük önem taşır. Ofisimiz Bayraklı&apos;da, İzmir Adliyesi yakınında bulunmakla birlikte, {district} bölgesindeki
                                 tüm davalarda aktif rol almaktadır.
                             </p>
 
@@ -331,7 +354,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                         {/* Sidebar */}
                         <div className="space-y-8">
                             <div className="bg-primary text-white p-8 rounded-2xl sticky top-24">
-                                <h3 className="text-2xl font-playfair font-bold mb-4">Hemen Arayın</h3>
+                                <h3 className="text-2xl font-playfair font-bold mb-4">İletişime Geçin</h3>
                                 <p className="text-slate-300 mb-6">
                                     {district} bölgesindeki hukuki sorununuzu dinleyelim, çözüm yolunu birlikte belirleyelim.
                                 </p>

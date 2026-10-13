@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-borcu-icra/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-13" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kira-borcu-icra/" },
 };
 
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "icra-takibi-nedir", title: "Kira Borcu İcra Takibi Nedir?" },
     { id: "icra-sureci", title: "İcra Takibi Süreci" },
     { id: "temerut-tahliye", title: "Temerrüt Nedeniyle Tahliye" },
-    { id: "ucretler", title: "İcra Takibi Ücretleri" },
+    { id: "ucretler", title: "Süreler ve Ücret" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -89,7 +89,7 @@ export default function KiraBorcuIcraPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -119,7 +119,7 @@ export default function KiraBorcuIcraPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>Kira borcu icra takibi</strong>, ödenmeyen kira alacaklarının yasal yollarla tahsil edilmesi sürecidir. Kiracının kira bedelini ödememesi durumunda kiraya veren, icra takibi başlatarak hem alacağını tahsil edebilir hem de kiracının tahliyesini sağlayabilir. İzmir&apos;de kira borcu icra takibi süreçlerinde profesyonel hukuki destek sunuyoruz.
+                            <strong>Kira borcu icra takibi</strong>, ödenmeyen kira alacaklarının yasal yollarla tahsil edilmesi sürecidir. Kiracının kira bedelini ödememesi durumunda kiraya veren, icra takibi başlatarak hem alacağını tahsil edebilir hem de kiracının tahliyesini sağlayabilir. İzmir&apos;de kira borcu icra takibi süreçlerinde hukuki destek vermektediruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -190,7 +190,7 @@ export default function KiraBorcuIcraPage() {
 
                         <SectionCTA text="Kira alacağınızın tahsili için icra takibi başlatmak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">Kira Borcu İcra Takibi Ücretleri</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">Ortalama Süreler ve Avukatlık Ücreti</h2>
 
                         <div className="not-prose my-8 overflow-x-auto">
                             <table className="w-full border-collapse">
@@ -198,20 +198,19 @@ export default function KiraBorcuIcraPage() {
                                     <tr className="bg-primary text-white">
                                         <th className="px-4 py-3 text-left">İşlem Türü</th>
                                         <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">İhtarname Hazırlama</td><td className="px-4 py-3">1-3 gün</td><td className="px-4 py-3">3.000 - 5.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">İcra Takibi Başlatma</td><td className="px-4 py-3">2-8 ay</td><td className="px-4 py-3">15.000 - 30.000 TL</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">İtirazın Kaldırılması Davası</td><td className="px-4 py-3">3-6 ay</td><td className="px-4 py-3">20.000 - 35.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Temerrüt Nedeniyle Tahliye Davası</td><td className="px-4 py-3">6-12 ay</td><td className="px-4 py-3">35.000 - 55.000 TL</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">İhtarname Hazırlama</td><td className="px-4 py-3">1-3 gün</td></tr>
+                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">İcra Takibi Başlatma</td><td className="px-4 py-3">2-8 ay</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">İtirazın Kaldırılması Davası</td><td className="px-4 py-3">3-6 ay</td></tr>
+                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Temerrüt Nedeniyle Tahliye Davası</td><td className="px-4 py-3">6-12 ay</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret alacak miktarına ve davanın karmaşıklığına göre ilk görüşmede belirlenir. İcra takibi masrafları (harç, tebligat, haciz masrafları) ayrıca borçludan tahsil edilir.
+                            Süreler ortalama değerler olup mahkemenin iş yüküne ve dosyanın özelliklerine göre değişebilir. Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak yazılı ücret sözleşmesiyle kararlaştırılır ve Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz (Av. K. m. 163-164). Ayrıntılar için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti nasıl belirlenir</Link> sayfamıza bakabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -224,7 +223,7 @@ export default function KiraBorcuIcraPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Kira borcu icra takibi, kira alacağı tahsilatı ve temerrüt nedeniyle tahliye davalarında profesyonel hukuki destek sunuyor. İzmir icra müdürlüklerinde kira alacağı takiplerini etkin şekilde yürütüyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Kira borcu icra takibi, kira alacağı tahsilatı ve temerrüt nedeniyle tahliye davalarında hukuki destek vermektedir. İzmir icra müdürlüklerinde kira alacağı takiplerini etkin şekilde yürütüyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -269,7 +268,7 @@ export default function KiraBorcuIcraPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kira Alacağınızın Tahsili İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Ödenmeyen kira alacağınız için icra takibi başlatmak üzere hemen randevu alın.
+                                    Ödenmeyen kira alacağınız için icra takibi başlatmak üzere randevu oluşturabilirsiniz.
                                     <strong className="text-white"> Kira borcu avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

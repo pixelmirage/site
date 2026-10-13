@@ -13,15 +13,15 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Kiracı Hakları İzmir - Yasal Haklar ve Korunma Yolları",
-    description: "İzmir'de kiracı hakları hakkında kapsamlı bilgi. Kira artışı sınırları, tahliye koruması, depozito iadesi ve kiracının yasal hakları konusunda uzman avukat desteği.",
+    description: "İzmir'de kiracı hakları hakkında kapsamlı bilgi. Kira artışı sınırları, tahliye koruması, depozito iadesi ve kiracının yasal hakları konusunda avukat desteği.",
     keywords: ["kiracı hakları İzmir", "kiracı hakları nelerdir", "kiracı yasal hakları", "kira artışı sınırı", "kiracı tahliye koruması İzmir"],
     openGraph: {
         title: "Kiracı Hakları İzmir - Yasal Haklar ve Korunma Yolları | Av. Mert Kağan Çetin",
-        description: "İzmir'de kiracı hakları hakkında kapsamlı bilgi. Kira artışı sınırları, tahliye koruması ve depozito iadesi konusunda uzman avukat desteği.",
+        description: "İzmir'de kiracı hakları hakkında kapsamlı bilgi. Kira artışı sınırları, tahliye koruması ve depozito iadesi konusunda avukat desteği.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-haklari-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-13" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-haklari-izmir/" },
 };
 
@@ -85,11 +85,11 @@ export default function KiraciHaklariIzmirPage() {
                             Kiracı Hakları İzmir
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            İzmir&apos;de kiracı olarak yasal haklarınızı öğrenin. Kira artışı sınırları, tahliye koruması ve depozito iadesi konularında uzman avukat desteği.
+                            İzmir&apos;de kiracı olarak yasal haklarınızı öğrenin. Kira artışı sınırları, tahliye koruması ve depozito iadesi konularında avukat desteği.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -204,7 +204,7 @@ export default function KiraciHaklariIzmirPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Kiracı hakları, kira artışı uyuşmazlıkları, depozito iadesi ve tahliye davalarında kiracılara profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Kiracı hakları, kira artışı uyuşmazlıkları, depozito iadesi ve tahliye davalarında kiracılara hukuki destek vermektedir. İzmir Adliyesi (Bayraklı) yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -249,7 +249,7 @@ export default function KiraciHaklariIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kiracı Haklarınız İçin Hukuki Destek Alın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kiracı haklarınız konusunda hemen randevu alın.
+                                    Kiracı haklarınız konusunda randevu oluşturabilirsiniz.
                                     <strong className="text-white"> Kiracı hakları avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
