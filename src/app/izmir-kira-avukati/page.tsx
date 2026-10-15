@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     title: {
         absolute: "İzmir Kira Avukatı | Tahliye, Kira Tespit – Av. M.K. Çetin",
     },
-    description: "İzmir'de kiracı tahliyesi, kira tespit ve uyarlama davaları, depozito iadesi ve zorunlu arabuluculuk süreçlerinde avukatlık desteği. Bayraklı ofis.",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
     keywords: ["İzmir kira avukatı", "kira avukatı izmir", "kira hukuku avukatı izmir", "kiracı tahliye avukatı İzmir", "kira tespit davası izmir", "tahliye davası İzmir"],
     openGraph: {
         title: "İzmir Kira Avukatı | Tahliye, Kira Tespit – Av. M.K. Çetin",
-        description: "İzmir'de kiracı tahliyesi, kira tespit ve uyarlama davaları, depozito iadesi ve zorunlu arabuluculuk süreçlerinde avukatlık desteği. Bayraklı ofis.",
+        description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
         type: "website",
         locale: "tr_TR",

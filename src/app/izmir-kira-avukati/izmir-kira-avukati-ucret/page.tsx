@@ -12,7 +12,7 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Kira Avukatı Ücreti Nasıl Belirlenir? | İzmir Kira Avukatı",
+    title: "Kira Avukatı Ücreti Nasıl Belirlenir? (İzmir)",
     description: "İzmir'de kira davalarında avukatlık ücretinin nasıl belirlendiği: Avukatlık Kanunu m. 163-164, Avukatlık Asgari Ücret Tarifesi, karşı vekalet ücreti ve yargılama giderleri.",
     keywords: ["kira avukatı ücreti İzmir", "tahliye davası ücreti", "kira tespit davası ücreti", "kira avukatı danışmanlık ücreti", "avukatlık asgari ücret tarifesi kira"],
     openGraph: {
