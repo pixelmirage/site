@@ -119,7 +119,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             <article className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                        <div className="lg:col-span-2 prose prose-slate prose-lg">
+                        <div className="lg:col-span-2 min-w-0 doc-prose">
                             {/* Featured Snippet Definition */}
                             <div className="not-prose bg-slate-50 border-l-4 border-secondary p-6 rounded-r-xl mb-8">
                                 <p className="text-xl leading-relaxed font-medium text-slate-800">
