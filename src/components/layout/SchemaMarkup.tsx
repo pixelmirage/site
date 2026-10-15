@@ -49,6 +49,10 @@ export function SchemaMarkup() {
                     "@type": "Organization",
                     "name": "İzmir Barosu"
                 },
+                "identifier": [
+                    { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
+                    { "@type": "PropertyValue", "propertyID": "TBB Sicil No", "value": "162439" }
+                ],
                 "knowsAbout": [
                     "Kira Hukuku", "İş Hukuku", "Boşanma Hukuku", "Tazminat Hukuku",
                     "Tahliye Davaları", "Kira Tespit Davası", "İşe İade Davası",
