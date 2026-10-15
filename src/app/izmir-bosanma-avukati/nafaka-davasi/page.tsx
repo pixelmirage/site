@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Nafaka Davaları İzmir | Nafaka Avukatı",
     description: "İzmir'de nafaka davaları avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası, tedbir nafakası ve nafaka artırım davalarında uzman hukuki destek.",
-    keywords: ["nafaka davaları İzmir", "nafaka davası avukatı İzmir", "yoksulluk nafakası İzmir", "iştirak nafakası", "nafaka artırım davası İzmir", "tedbir nafakası"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Nafaka Davaları İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de nafaka türleri, hesaplama yöntemleri ve nafaka davası süreçlerinde uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/nafaka-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function NafakaDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Nafaka Davası" description="İzmir'de yoksulluk nafakası, iştirak nafakası ve nafaka artırım davası hizmeti." serviceType="Nafaka Davası" />
             <PersonSchema knowsAbout={["Nafaka Davası", "Yoksulluk Nafakası", "İştirak Nafakası", "Nafaka Artırım Davası", "Nafaka Kaldırma Davası"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function NafakaDavasiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -333,6 +333,6 @@ export default function NafakaDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

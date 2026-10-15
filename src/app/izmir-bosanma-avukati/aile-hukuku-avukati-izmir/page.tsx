@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Aile Hukuku Avukatı İzmir | Av. Mert Kağan Çetin",
     description: "İzmir'de aile hukuku avukatı Av. Mert Kağan Çetin. Boşanma, velayet, nafaka, mal paylaşımı, evlat edinme ve aile içi şiddet konularında uzman hukuki destek.",
-    keywords: ["aile hukuku avukatı İzmir", "İzmir aile avukatı", "aile hukuku danışmanlık", "aile mahkemesi avukatı İzmir", "aile hukuku davaları"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Aile Hukuku Avukatı İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de aile hukuku avukatı. Boşanma, velayet, nafaka, mal paylaşımı ve aile içi şiddet konularında uzman hukuki destek.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function AileHukukuAvukatiIzmirPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Aile Hukuku Danışmanlığı" description="İzmir'de aile hukuku alanında kapsamlı avukatlık ve danışmanlık hizmeti." serviceType="Aile Hukuku Danışmanlığı" />
             <PersonSchema knowsAbout={["Aile Hukuku", "Boşanma Hukuku", "Velayet Hukuku", "Nafaka Hukuku", "Mal Rejimi Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -280,6 +280,6 @@ export default function AileHukukuAvukatiIzmirPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

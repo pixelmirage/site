@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Boşanma Süreci Rehberi İzmir | Adım Adım Rehber",
     description: "İzmir'de boşanma sürecinin başından sonuna adım adım rehber. Dava açma, dilekçe hazırlama, duruşma süreci ve karar aşamalarında bilmeniz gerekenler.",
-    keywords: ["boşanma süreci İzmir", "boşanma süreci rehberi", "boşanma davası nasıl ilerler", "boşanma aşamaları", "İzmir boşanma süreci"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Boşanma Süreci Rehberi İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de boşanma sürecinin başından sonuna adım adım rehber. Dava açma, dilekçe hazırlama ve duruşma süreci hakkında bilmeniz gerekenler.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-sureci-izmir/",
@@ -40,7 +40,7 @@ const faqs = [
     },
     {
         question: "Boşanma davası hangi mahkemede açılır?",
-        answer: "Boşanma davası aile mahkemesinde açılır. Yetkili mahkeme, eşlerden birinin yerleşim yeri veya davadan önce son altı ay birlikte oturdukları yer mahkemesidir. İzmir&apos;de boşanma davaları Bayraklı Adliyesi&apos;ndeki aile mahkemelerinde görülmektedir."
+        answer: "Boşanma davası aile mahkemesinde açılır. Yetkili mahkeme, eşlerden birinin yerleşim yeri veya davadan önce son altı ay birlikte oturdukları yer mahkemesidir. İzmir&apos;de boşanma davaları İzmir Adliyesi&apos;ndeki aile mahkemelerinde görülmektedir."
     },
     {
         question: "Boşanma kararı ne zaman kesinleşir?",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function BosanmaSureciIzmirPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Boşanma Davası Takibi" description="İzmir'de boşanma davası sürecinin başından sonuna profesyonel hukuki destek." serviceType="Boşanma Davası Takibi" />
             <PersonSchema knowsAbout={["Boşanma Süreci", "Boşanma Davası Aşamaları", "Dava Dilekçesi", "Duruşma Süreci", "Aile Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function BosanmaSureciIzmirPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -142,7 +142,7 @@ export default function BosanmaSureciIzmirPage() {
                         </p>
 
                         <p>
-                            İzmir&apos;de boşanma davaları Bayraklı Adliyesi&apos;ndeki aile mahkemelerinde görülmektedir. Yetkili mahkeme, eşlerden birinin yerleşim yeri veya davadan önce son altı ay birlikte oturdukları yer mahkemesidir. Görevli mahkeme ise aile mahkemesidir; aile mahkemesi bulunmayan yerlerde asliye hukuk mahkemesi aile mahkemesi sıfatıyla davaya bakar.
+                            İzmir&apos;de boşanma davaları İzmir Adliyesi&apos;ndeki aile mahkemelerinde görülmektedir. Yetkili mahkeme, eşlerden birinin yerleşim yeri veya davadan önce son altı ay birlikte oturdukları yer mahkemesidir. Görevli mahkeme ise aile mahkemesidir; aile mahkemesi bulunmayan yerlerde asliye hukuk mahkemesi aile mahkemesi sıfatıyla davaya bakar.
                         </p>
 
                         <h2 id="bosanma-davasi-asamalari" className="scroll-mt-24">Boşanma Davası Aşamaları</h2>
@@ -299,6 +299,6 @@ export default function BosanmaSureciIzmirPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

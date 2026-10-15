@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
         title: `${term.term} Nedir?`,
         description: term.shortDescription,
-        keywords: term.keywords,
         openGraph: {
+        images: ["/og-image.jpg"],
             title: `${term.term} Nedir?`,
             description: term.shortDescription,
             url: url,
@@ -56,7 +56,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
     const paragraphs = term.detailedExplanation.split("\n\n").filter(Boolean);
 
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <DefinedTermSchema
                 term={term.term}
                 description={term.definition}
@@ -131,6 +131,14 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {paragraphs.map((p, i) => (
                                 <p key={i}>{p}</p>
                             ))}
+
+                            {term.pillarLink && (
+                                <p>
+                                    {term.pillarLink.before}
+                                    <Link href={term.pillarLink.href}>{term.pillarLink.anchor}</Link>
+                                    {term.pillarLink.after}
+                                </p>
+                            )}
 
                             {/* YouTube Shorts Video */}
                             {term.youtubeVideoId && (
@@ -240,7 +248,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                Hemen Arayın <ArrowRight className="w-4 h-4" />
+                                İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (
                                 <Link href={`/hizmetler${term.relatedServiceAnchor}`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
@@ -254,6 +262,6 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
     );
 }

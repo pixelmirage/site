@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Destekten Yoksun Kalma Avukatı",
     description: "İzmir destekten yoksun kalma tazminatı avukatı Av. Mert Kağan Çetin. Ölüm halinde hak sahiplerinin tazminat davalarında uzman destek.",
-    keywords: ["destekten yoksun kalma tazminatı avukatı İzmir", "destekten yoksun kalma", "ölüm tazminatı", "destek tazminatı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Destekten Yoksun Kalma Tazminatı Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de destekten yoksun kalma tazminatı davalarında uzman avukatlık hizmeti. Kaybedilen yakının desteği için tazminat.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/destekten-yoksun-kalma/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function DestektenYoksunKalmaPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Destekten Yoksun Kalma Tazminatı" description="İzmir'de ölüm halinde hak sahiplerinin destekten yoksun kalma tazminatı davası hizmeti." serviceType="Destekten Yoksun Kalma Tazminatı" />
             <PersonSchema knowsAbout={["Destekten Yoksun Kalma Tazminatı", "Aktüer Hesap Raporu", "Destek Payı Hesaplaması", "Ölüm Tazminatı", "Trafik Kazası Tazminatı", "İş Kazası Tazminatı"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function DestektenYoksunKalmaPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -310,6 +310,6 @@ export default function DestektenYoksunKalmaPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

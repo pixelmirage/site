@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İhtiyaç Nedeniyle Tahliye Davası İzmir",
     description: "İzmir'de ihtiyaç nedeniyle kiracı tahliye davası. TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle tahliye süreçleri ve dava şartları.",
-    keywords: ["ihtiyaç nedeniyle tahliye İzmir", "ihtiyaç nedeniyle tahliye davası", "TBK 350 tahliye", "ev sahibi ihtiyaç tahliye", "ihtiyaç tahliye avukatı İzmir"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İhtiyaç Nedeniyle Tahliye Davası İzmir | Av. Mert Kağan Çetin",
         description: "TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle kiracı tahliye davası hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function IhtiyacNedeniyleTahliyePage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="İhtiyaç Nedeniyle Tahliye Davası" description="İzmir'de ev sahibinin konut veya işyeri ihtiyacı nedeniyle kiracı tahliye davası hizmeti." serviceType="İhtiyaç Nedeniyle Tahliye Davası" />
             <PersonSchema knowsAbout={["İhtiyaç Nedeniyle Tahliye", "TBK Madde 350", "Kiracı Tahliyesi", "Konut İhtiyacı", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -89,7 +89,7 @@ export default function IhtiyacNedeniyleTahliyePage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -229,7 +229,7 @@ export default function IhtiyacNedeniyleTahliyePage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← İzmir&apos;deki kira uyuşmazlıkları sayfası
                                 </Link>
                                 <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?
@@ -281,6 +281,6 @@ export default function IhtiyacNedeniyleTahliyePage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

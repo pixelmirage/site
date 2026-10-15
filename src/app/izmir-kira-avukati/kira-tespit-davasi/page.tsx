@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Kira Artışı ve Tespit Davası İzmir | Kira Avukatı",
     description: "İzmir'de kira artışı ve kira tespit davası avukatı Av. Mert Kağan Çetin. TÜFE sınırı, emsal kira araştırması, 5 yıllık kira ilişkilerinde bedel tespiti davalarında avukatlık desteği.",
-    keywords: ["kira artışı ve tespit davası İzmir", "kira tespit davası avukatı İzmir", "kira artışı avukatı İzmir", "kira bedeli tespiti", "emsal kira araştırması", "TÜFE kira artışı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kira Artışı ve Tespit Davası İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de kira artışı uyuşmazlıkları ve kira tespit davalarında avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function KiraTespitDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kira Tespit Davası" description="İzmir'de kira bedelinin tespiti ve emsal kira araştırması davası hizmeti." serviceType="Kira Tespit Davası" />
             <PersonSchema knowsAbout={["Kira Tespit Davası", "Kira Bedeli Tespiti", "TÜFE Kira Artışı", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -244,7 +244,7 @@ export default function KiraTespitDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Kira hukuku hizmetlerine genel bakış
                                 </Link>
                                 <Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Hangi Durumlarda Kira Tespit Davası Açılabilir?
@@ -296,6 +296,6 @@ export default function KiraTespitDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

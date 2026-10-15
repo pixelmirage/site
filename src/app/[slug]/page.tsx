@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { GoogleReviews } from "@/components/sections/GoogleReviews";
 
 const allDistrictsByService: Record<ServiceType, DistrictData[]> = {
     kira: allKiraDistricts,
@@ -47,6 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         // Kira ilçe sayfaları ilçeye özgü içerikle indekslenir; diğer hizmetler henüz şablon içerikli olduğundan noindex kalır.
         robots: serviceType === "kira" ? { index: true, follow: true } : { index: false, follow: true },
         openGraph: {
+        images: ["/og-image.jpg"],
             title: `${data.name} ${config.label} | Av. Mert Kağan Çetin`,
             description: data.description,
             url: `https://mertkagancetin.com/${slug}/`,
@@ -172,7 +172,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
     const suffix = serviceSuffix[serviceType];
 
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
                 items={[
@@ -297,10 +297,6 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 tüm davalarda aktif rol almaktadır.
                             </p>
 
-                            {/* Danışan Yorumları */}
-                            <div className="not-prose">
-                                <GoogleReviews />
-                            </div>
 
                             {/* Related Blog Posts - Internal Linking */}
                             <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
@@ -379,6 +375,6 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

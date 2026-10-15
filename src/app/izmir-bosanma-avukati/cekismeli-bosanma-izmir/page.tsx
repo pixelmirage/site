@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Çekişmeli Boşanma İzmir | Boşanma Avukatı",
     description: "İzmir'de çekişmeli boşanma davası avukatı Av. Mert Kağan Çetin. Kusur tespiti, delil toplama, tazminat ve nafaka taleplerinde uzman hukuki destek.",
-    keywords: ["çekişmeli boşanma İzmir", "çekişmeli boşanma avukatı İzmir", "çekişmeli boşanma davası", "boşanma kusur tespiti", "çekişmeli boşanma süreci"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Çekişmeli Boşanma İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında uzman avukat desteği.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function CekismeliBosanmaIzmirPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Çekişmeli Boşanma Davası" description="İzmir'de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava takibi hizmeti." serviceType="Çekişmeli Boşanma Davası" />
             <PersonSchema knowsAbout={["Çekişmeli Boşanma", "Kusur Tespiti", "Boşanma Tazminatı", "Delil Toplama", "Aile Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -89,7 +89,7 @@ export default function CekismeliBosanmaIzmirPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -295,6 +295,6 @@ export default function CekismeliBosanmaIzmirPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

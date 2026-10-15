@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Malpraktis Davası Avukatı",
     description: "İzmir malpraktis davası avukatı Av. Mert Kağan Çetin. Doktor hatası ve tıbbi ihmal kaynaklı tazminat davalarında uzman destek.",
-    keywords: ["malpraktis davası avukatı İzmir", "doktor hatası avukatı", "malpraktis tazminatı", "tıbbi hata davası"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Malpraktis Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de malpraktis davalarında uzman avukatlık hizmeti. Doktor hatası ve tıbbi ihmal tazminat davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/malpraktis-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function MalpraktisDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Malpraktis Davası" description="İzmir'de doktor hatası ve tıbbi ihmal kaynaklı tazminat davası hizmeti." serviceType="Malpraktis Davası" />
             <PersonSchema knowsAbout={["Malpraktis Davası", "Tıbbi Hata Tazminatı", "Doktor Hatası", "Sağlık Hukuku", "Adli Tıp Raporu", "Haksız Fiil Sorumluluğu"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function MalpraktisDavasiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -308,6 +308,6 @@ export default function MalpraktisDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

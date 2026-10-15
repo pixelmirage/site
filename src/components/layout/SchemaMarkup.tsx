@@ -58,6 +58,8 @@ export function SchemaMarkup() {
             {
                 "@type": ["Attorney", "LegalService", "LocalBusiness"],
                 "@id": "https://mertkagancetin.com/#attorney",
+                "founder": { "@id": "https://mertkagancetin.com/#person" },
+                "parentOrganization": { "@id": "https://mertkagancetin.com/#organization" },
                 "name": "Av. Mert Kağan Çetin",
                 "image": "https://mertkagancetin.com/attorney-photo.jpg",
                 "url": "https://mertkagancetin.com",
@@ -80,7 +82,7 @@ export function SchemaMarkup() {
                 "geo": {
                     "@type": "GeoCoordinates",
                     "latitude": 38.4517,
-                    "longitude": 27.1845
+                    "longitude": 27.1853
                 },
                 "openingHoursSpecification": {
                     "@type": "OpeningHoursSpecification",
@@ -88,7 +90,6 @@ export function SchemaMarkup() {
                     "opens": "09:00",
                     "closes": "18:00"
                 },
-                "priceRange": "$$",
                 "description": "İzmir'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıkları alanında avukatlık hizmeti. Kiracı tahliye, kira tespit, işe iade, kıdem tazminatı, anlaşmalı boşanma, velayet ve nafaka davaları.",
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Gayrimenkul Hukuku",

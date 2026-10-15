@@ -16,7 +16,7 @@ export function Footer() {
                     </div>
 
                     <div className="space-y-6">
-                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Uzmanlık Alanları</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Çalışma Alanları</p>
                         <ul className="space-y-4">
                             <li><Link href="/izmir-kira-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Kira Avukatı</Link></li>
                             <li><Link href="/izmir-is-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir İş Avukatı</Link></li>

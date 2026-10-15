@@ -6,21 +6,20 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir İş Avukatı - Uzman Hukuki Danışmanlık",
+        absolute: "İzmir İş Avukatı | İşe İade, Kıdem Tazminatı – Av. M.K. Çetin",
     },
-    description: "İzmir iş avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. İşe iade davası, kıdem tazminatı, iş kazası tazminatı, işçi alacakları gibi konularda size yardımcı olabiliriz.",
-    keywords: ["İzmir iş avukatı", "iş avukatı İzmir", "işe iade davası avukatı İzmir", "kıdem tazminatı avukatı İzmir", "iş kazası avukatı İzmir", "işçi hakları avukatı İzmir", "mobbing avukatı İzmir", "İzmir en iyi iş avukatı", "iş mahkemesi avukatı İzmir", "iş avukatı İzmir yakınında"],
+    description: "İzmir iş avukatı Av. Mert Kağan Çetin; işe iade, kıdem ve ihbar tazminatı, iş kazası ve işçi alacakları davalarında işçi ve işverenlere hukuki destek.",
     openGraph: {
-        title: "İzmir İş Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de iş hukuku, işe iade davaları ve tazminat davalarında uzman avukatlık hizmeti.",
+        images: ["/og-image.jpg"],
+        title: "İzmir İş Avukatı | İşe İade, Kıdem Tazminatı – Av. M.K. Çetin",
+        description: "İzmir iş avukatı Av. Mert Kağan Çetin; işe iade, kıdem ve ihbar tazminatı, iş kazası ve işçi alacakları davalarında işçi ve işverenlere hukuki destek.",
         url: "https://mertkagancetin.com/izmir-is-avukati/",
-        type: "article",
+        type: "website",
     },
     other: {
         "article:modified_time": "2026-04-17",
@@ -69,7 +68,7 @@ const tocItems = [
 
 export default function IzmirIsAvukatiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             {/* Schema Markup */}
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
@@ -103,7 +102,7 @@ export default function IzmirIsAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <a href="tel:+905445854645">
                                     <Phone className="w-5 h-5" />
-                                    Hemen Arayın
+                                    İletişime Geçin
                                 </a>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -154,7 +153,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir İş Avukatı İletişim</h2>
 
                         <p>
-                            İzmir&apos;de iş hukuku konusunda uzmanlaşmış avukatımız, <Link href="/blog/isten-cikarildiginda-ne-yapmali/">işten çıkarma süreçleri</Link>, <Link href="/izmir-is-avukati/ise-iade-davasi/">işe iade davaları</Link>, <Link href="/izmir-is-avukati/kidem-tazminati-davasi/">kıdem tazminatı</Link> ve iş kazası davalarında profesyonel destek sunmaktadır.
+                            İzmir&apos;de iş hukuku alanında çalışan avukat olarak Av. Mert Kağan Çetin, <Link href="/blog/isten-cikarildiginda-ne-yapmali/">işten çıkarma süreçleri</Link>, <Link href="/izmir-is-avukati/ise-iade-davasi/">işe iade davaları</Link>, <Link href="/izmir-is-avukati/kidem-tazminati-davasi/">kıdem tazminatı</Link> ve iş kazası davalarında profesyonel destek sunmaktadır.
                         </p>
 
                         <ul>
@@ -286,7 +285,7 @@ export default function IzmirIsAvukatiPage() {
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                                        İzmir Barosu&apos;na kayıtlı avukat. 2019 yılından bu yana iş, kira, boşanma ve tazminat hukuku alanlarında hizmet vermektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukat. iş, kira, boşanma ve tazminat hukuku alanlarında hizmet vermektedir.
                                     </p>
                                     <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
                                         <span>İzmir Barosu Sicil: 15556</span>
@@ -299,10 +298,6 @@ export default function IzmirIsAvukatiPage() {
                             </div>
                         </div>
 
-                        {/* Google Reviews */}
-                        <div className="not-prose">
-                            <GoogleReviews />
-                        </div>
 
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
@@ -365,7 +360,7 @@ export default function IzmirIsAvukatiPage() {
 
                         {/* Uzmanlık Alanları Alt Sayfalar */}
                         <div className="not-prose my-12">
-                            <p className="text-xl font-playfair font-bold text-primary mb-6">İş Hukuku Uzmanlık Alanlarımız</p>
+                            <p className="text-xl font-playfair font-bold text-primary mb-6">İş Hukuku Çalışma Alanları</p>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {[
                                     { title: "İşe İade Davası", desc: "Haksız fesih halinde işe iade ve arabuluculuk süreci", url: "/izmir-is-avukati/ise-iade-davasi/" },
@@ -383,6 +378,6 @@ export default function IzmirIsAvukatiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

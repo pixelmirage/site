@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Kira Uyarlama Davası Avukatı",
     description: "İzmir kira uyarlama davası avukatı Av. Mert Kağan Çetin. TBK m. 138 kapsamında kira bedeli uyarlama davalarında avukatlık desteği.",
-    keywords: ["kira uyarlama davası avukatı İzmir", "kira uyarlama davası", "TBK 138", "aşırı ifa güçlüğü", "kira bedeli uyarlama"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Kira Uyarlama Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de kira uyarlama davalarında avukatlık hizmeti. TBK m. 138 kapsamında kira bedeli uyarlama davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/",
@@ -59,7 +59,7 @@ const tocItems = [
 
 export default function KiraUyarlamaDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kira Uyarlama Davası" description="İzmir'de TBK m. 138 kapsamında kira bedeli uyarlama davası hizmeti." serviceType="Kira Uyarlama Davası" />
             <PersonSchema knowsAbout={["Kira Uyarlama Davası", "Aşırı İfa Güçlüğü", "TBK m. 138", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -283,7 +283,7 @@ export default function KiraUyarlamaDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← İzmir&apos;deki kira uyuşmazlıkları sayfası
                                 </Link>
                                 <Link href="/izmir-kira-avukati/kira-tespit-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Kira Tespit Davası Avukatı
@@ -332,6 +332,6 @@ export default function KiraUyarlamaDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

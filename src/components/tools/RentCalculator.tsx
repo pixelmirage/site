@@ -58,8 +58,9 @@ export function RentCalculator() {
             <CardContent className="p-6 space-y-6">
                 <div className="space-y-4">
                     <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Mevcut Kira Bedeli (TL)</label>
+                        <label htmlFor="kira-mevcut" className="text-sm font-bold text-slate-700">Mevcut Kira Bedeli (TL)</label>
                         <Input
+                            id="kira-mevcut"
                             type="number"
                             placeholder="Örn: 10000"
                             value={currentRent}
@@ -69,8 +70,9 @@ export function RentCalculator() {
                     </div>
 
                     <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Artış Oranı (%)</label>
+                        <label htmlFor="kira-oran" className="text-sm font-bold text-slate-700">Artış Oranı (%)</label>
                         <Input
+                            id="kira-oran"
                             type="number"
                             placeholder="Örn: 65.07"
                             value={manualRate}

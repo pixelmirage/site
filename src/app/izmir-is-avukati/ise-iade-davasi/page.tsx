@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir İşe İade Davası Avukatı",
     description: "İzmir işe iade davası avukatı Av. Mert Kağan Çetin. Haksız fesih, arabuluculuk ve iş güvencesi tazminatı davalarında uzman destek.",
-    keywords: ["işe iade davası avukatı İzmir", "işe iade davası", "haksız işten çıkarma", "iş güvencesi avukatı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir İşe İade Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de işe iade davalarında uzman avukatlık hizmeti. Haksız fesih ve iş güvencesi davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-is-avukati/ise-iade-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function IseIadeDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="İşe İade Davası" description="İzmir'de haksız fesih sonrası işe iade davası ve arabuluculuk hizmeti." serviceType="İşe İade Davası" />
             <PersonSchema knowsAbout={["İşe İade Davası", "İş Güvencesi", "Haksız Fesih", "Zorunlu Arabuluculuk", "Boşta Geçen Süre Ücreti"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function IseIadeDavasiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -196,7 +196,7 @@ export default function IseIadeDavasiPage() {
                             İşten çıkarıldığınızda atmanız gereken adımları öğrenmek için <Link href="/blog/isten-cikarildiginda-ne-yapmali/">işten çıkarıldığında ne yapmalı rehberimizi</Link> okuyun.
                         </p>
 
-                        <SectionCTA text="Haksız şekilde işten mi çıkarıldınız? İşe iade davanız için hemen arayın." />
+                        <SectionCTA text="Haksız şekilde işten mi çıkarıldınız? İşe iade davanız için iletişime geçebilirsiniz." />
 
                         <h2 id="tazminatlar" className="scroll-mt-24">İşe İade Davasında Tazminat ve Haklar</h2>
 
@@ -324,6 +324,6 @@ export default function IseIadeDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

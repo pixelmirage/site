@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Kiracı Hakları İzmir - Yasal Haklar ve Korunma Yolları",
     description: "İzmir'de kiracı hakları hakkında kapsamlı bilgi. Kira artışı sınırları, tahliye koruması, depozito iadesi ve kiracının yasal hakları konusunda avukat desteği.",
-    keywords: ["kiracı hakları İzmir", "kiracı hakları nelerdir", "kiracı yasal hakları", "kira artışı sınırı", "kiracı tahliye koruması İzmir"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kiracı Hakları İzmir - Yasal Haklar ve Korunma Yolları | Av. Mert Kağan Çetin",
         description: "İzmir'de kiracı hakları hakkında kapsamlı bilgi. Kira artışı sınırları, tahliye koruması ve depozito iadesi konusunda avukat desteği.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-haklari-izmir/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function KiraciHaklariIzmirPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kiracı Hakları Danışmanlığı" description="İzmir'de kiracıların yasal haklarının korunması ve hukuki danışmanlık hizmeti." serviceType="Kiracı Hakları Danışmanlığı" />
             <PersonSchema knowsAbout={["Kiracı Hakları", "Kira Artış Sınırı", "Tahliye Koruması", "Depozito İadesi", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -219,7 +219,7 @@ export default function KiraciHaklariIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Ev sahibi ve kiracı uyuşmazlıkları
                                 </Link>
                                 <Link href="/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Depozito İadesi Davası: Kiracının Hakları ve Süreç
@@ -271,6 +271,6 @@ export default function KiraciHaklariIzmirPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

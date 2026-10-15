@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/sozluk/",
     },
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Hukuk Sözlüğü | Hukuki Terimler | Av. Mert Kağan Çetin",
         description: "Kira hukuku, iş hukuku, boşanma hukuku ve tazminat hukuku terimlerinin anlaşılır açıklamaları.",
         url: "https://mertkagancetin.com/sozluk/",
@@ -44,7 +45,7 @@ export default function GlossaryPage() {
     const allTerms = getAllGlossaryTerms();
 
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
@@ -151,7 +152,7 @@ export default function GlossaryPage() {
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                Hemen Arayın <ArrowRight className="w-4 h-4" />
+                                İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler
@@ -164,6 +165,6 @@ export default function GlossaryPage() {
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
     );
 }

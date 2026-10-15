@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Home, BookOpen, Phone, Scale, ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = {
+    title: { absolute: "Sayfa bulunamadı | Av. Mert Kağan Çetin" },
+    description: "Aradığınız sayfa bulunamadı.",
+    robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
     return (
@@ -11,8 +18,8 @@ export default function NotFound() {
                         <Scale className="w-10 h-10 text-slate-400" />
                     </div>
 
-                    <h1 className="text-6xl font-playfair font-bold text-primary mb-4">404</h1>
-                    <h2 className="text-2xl font-playfair font-bold text-primary mb-4">Sayfa Bulunamadı</h2>
+                    <p className="text-6xl font-playfair font-bold text-primary mb-4" aria-hidden="true">404</p>
+                    <h1 className="text-2xl font-playfair font-bold text-primary mb-4">Sayfa bulunamadı</h1>
                     <p className="text-muted-foreground mb-10 max-w-md mx-auto">
                         Aradığınız sayfa taşınmış, kaldırılmış veya hiç var olmamış olabilir.
                     </p>
