@@ -40,6 +40,7 @@ export const metadata: Metadata = {
 };
 
 const tocItems = [
+    { id: "iletisim-bilgileri", title: "İletişim ve Ofis" },
     { id: "kira-davalari", title: "Hangi Davalara Bakar?" },
     { id: "kiraci-tahliyesi", title: "Kiracı Tahliyesi" },
     { id: "kira-tespit-davasi", title: "Kira Tespit ve Uyarlama" },
@@ -47,7 +48,6 @@ const tocItems = [
     { id: "arabuluculuk", title: "Zorunlu Arabuluculuk" },
     { id: "gorevli-mahkeme", title: "Görevli Mahkeme" },
     { id: "avukatlik-ucreti", title: "Avukatlık Ücreti" },
-    { id: "iletisim-bilgileri", title: "İletişim ve Ofis" },
     { id: "sss", title: "Sık Sorulan Sorular" },
 ];
 
@@ -208,6 +208,20 @@ export default function IzmirKiraAvukatiPage() {
                             </nav>
                         </details>
 
+                        {/* İletişim */}
+                        <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Kira Avukatı İletişim ve Ofis</h2>
+
+                        <p>
+                            Ofis Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir adresindedir. Ön görüşmeler telefonla yapılır; kira sözleşmesi, ihtarname ve ödeme kayıtları bu görüşmede değerlendirilerek izlenecek yol belirlenir. Bayraklı, Karşıyaka, Bornova, Konak, Buca, Çiğli, Gaziemir, Balçova, Narlıdere, Karabağlar ve Güzelbahçe başta olmak üzere İzmir genelinde hizmet verilmektedir (ör. <Link href="/bayrakli-kira-avukati/">Bayraklı</Link>, <Link href="/karsiyaka-kira-avukati/">Karşıyaka</Link>, <Link href="/bornova-kira-avukati/">Bornova</Link>).
+                        </p>
+
+                        <ul>
+                            <li><strong>Avukat:</strong> Av. Mert Kağan Çetin (İzmir Barosu Sicil No: 15556)</li>
+                            <li><strong>Telefon:</strong> <a href="tel:+905445854645">0544 585 46 45</a></li>
+                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
+                            <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
+                        </ul>
+
                         {/* 1. Hangi Davalara Bakar */}
                         <h2 id="kira-davalari" className="scroll-mt-24">İzmir Kira Avukatı Hangi Davalara Bakar?</h2>
 
@@ -332,20 +346,6 @@ export default function IzmirKiraAvukatiPage() {
                         <p>
                             Her taraf kendi avukatının ücretini öder; dava sonunda haksız çıkan taraf, mahkemenin tarifeye göre hükmettiği karşı vekalet ücreti ile harç ve yargılama giderlerini öder. Bu vekalet ücreti, tarafların avukatlarıyla anlaştıkları ücretten farklıdır. Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ayrıntılı açıklama için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti</Link> sayfamıza bakabilirsiniz.
                         </p>
-
-                        {/* 8. İletişim */}
-                        <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Kira Avukatı İletişim ve Ofis</h2>
-
-                        <p>
-                            Ofis Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir adresindedir. Ön görüşmeler telefonla yapılır; kira sözleşmesi, ihtarname ve ödeme kayıtları bu görüşmede değerlendirilerek izlenecek yol belirlenir. Bayraklı, Karşıyaka, Bornova, Konak, Buca, Çiğli, Gaziemir, Balçova, Narlıdere, Karabağlar ve Güzelbahçe başta olmak üzere İzmir genelinde hizmet verilmektedir (ör. <Link href="/bayrakli-kira-avukati/">Bayraklı</Link>, <Link href="/karsiyaka-kira-avukati/">Karşıyaka</Link>, <Link href="/bornova-kira-avukati/">Bornova</Link>).
-                        </p>
-
-                        <ul>
-                            <li><strong>Avukat:</strong> Av. Mert Kağan Çetin (İzmir Barosu Sicil No: 15556)</li>
-                            <li><strong>Telefon:</strong> <a href="tel:+905445854645">0544 585 46 45</a></li>
-                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
-                            <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
-                        </ul>
 
                         {/* 9. SSS */}
                         <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı – Sık Sorulan Sorular</h2>
