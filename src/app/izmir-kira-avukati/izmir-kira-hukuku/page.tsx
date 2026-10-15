@@ -249,7 +249,7 @@ export default function IzmirKiraHukukuPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kira Hukuku Danışmanlığı İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kira hukuku konusunda hemen randevu alın.
+                                    Kira hukuku konusunda randevu oluşturabilirsiniz.
                                     <strong className="text-white"> Kira hukuku avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

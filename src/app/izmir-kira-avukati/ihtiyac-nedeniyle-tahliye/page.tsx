@@ -44,7 +44,7 @@ const faqs = [
     },
     {
         question: "İhtiyaç nedeniyle tahliye davası ücreti ne kadar?",
-        answer: "2026 yılında İzmir'de ihtiyaç nedeniyle tahliye davası avukatlık ücreti 35.000-60.000 TL arasında değişmektedir. Buna ek olarak mahkeme harçları, tebligat masrafları ve bilirkişi ücreti gibi yargılama giderleri de söz konusudur. Kesin ücret davanın karmaşıklığına ve taşınmazın değerine göre ilk görüşmede belirlenir."
+        answer: "Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164) ve Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Buna ek olarak mahkeme harçları, tebligat masrafları ve bilirkişi ücreti gibi yargılama giderleri de söz konusudur. Somut dosyanıza ilişkin ücret, belgeler incelendikten sonra ön görüşmede bildirilir."
     }
 ];
 
@@ -259,7 +259,7 @@ export default function IhtiyacNedeniyleTahliyePage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">İhtiyaç Nedeniyle Tahliye Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    İhtiyaç nedeniyle tahliye süreciniz için hemen randevu alın.
+                                    İhtiyaç nedeniyle tahliye süreciniz için randevu oluşturabilirsiniz.
                                     <strong className="text-white"> İhtiyaç nedeniyle tahliye avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
