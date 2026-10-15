@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/" },
 };
 
@@ -43,8 +43,8 @@ const faqs = [
         answer: "2024 yılından itibaren boşanma davalarının mali sonuçlarına ilişkin uyuşmazlıklarda (nafaka, tazminat, mal paylaşımı) dava açılmadan önce arabulucuya başvuru zorunlu hale getirilmiştir. Ancak boşanmanın kendisi, velayet ve kişisel ilişki düzenlemesi gibi konularda arabuluculuk zorunlu değildir. Koruma kararı başvurularında da arabuluculuk şartı aranmaz."
     },
     {
-        question: "Aile hukuku avukatı ücreti ne kadar?",
-        answer: "2026 yılında İzmir&apos;de aile hukuku davalarında avukat ücretleri davanın türüne ve karmaşıklığına göre değişir. Anlaşmalı boşanma 25.000-40.000 TL, çekişmeli boşanma 40.000-80.000 TL, velayet davası 25.000-50.000 TL, nafaka davası 15.000-30.000 TL arasında değişmektedir. Kesin ücret ilk görüşmede davanın detaylarına göre belirlenir."
+        question: "Aile hukuku avukatı ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır."
     }
 ];
 
@@ -124,7 +124,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -162,7 +162,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </ul>
 
                         <p>
-                            Her dava türünün kendine özgü süreleri, delil gereksinimleri ve usul kuralları vardır. Bu nedenle aile hukuku alanında deneyimli bir avukatla çalışmanız, haklarınızın tam olarak korunması açısından büyük önem taşır.
+                            Her dava türünün kendine özgü süreleri, delil gereksinimleri ve usul kuralları vardır. Bu nedenle aile hukuku alanında çalışan bir avukatla çalışmanız, haklarınızın tam olarak korunması açısından büyük önem taşır.
                         </p>
 
                         <h2 id="aile-ici-siddet" className="scroll-mt-24">Aile İçi Şiddet ve Koruma Kararı</h2>
@@ -188,7 +188,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         <h2 id="aile-hukuku-avukati-neden-onemli" className="scroll-mt-24">Aile Hukuku Avukatı Neden Önemli?</h2>
 
                         <p>
-                            Aile hukuku davaları, kişilerin en hassas dönemlerinde açılır. Boşanma, velayet, nafaka gibi konular duygusal yükü ağır süreçlerdir. Bu süreçlerde duygusal kararlar vermek, telafisi güç hak kayıplarına yol açabilir. Aile hukuku avukatı, müvekkilinin duygusal durumunu anlayarak rasyonel ve hukuki bir çerçevede en iyi sonucu elde etmeye çalışır.
+                            Aile hukuku davaları, kişilerin en hassas dönemlerinde açılır. Boşanma, velayet, nafaka gibi konular duygusal yükü ağır süreçlerdir. Bu süreçlerde duygusal kararlar vermek, telafisi güç hak kayıplarına yol açabilir. Aile hukuku avukatı, müvekkilinin duygusal durumunu anlayarak süreci rasyonel ve hukuki bir çerçevede yürütür.
                         </p>
 
                         <p>
@@ -200,7 +200,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </p>
 
                         <p>
-                            <strong>Uzlaşma ve müzakere:</strong> Aile hukuku davalarında taraflar arasında uzlaşma sağlanması hem zaman hem maliyet açısından avantajlıdır. Deneyimli bir aile hukuku avukatı, müzakere sürecini profesyonelce yöneterek her iki tarafın da kabul edebileceği çözümler üretir. Bu yaklaşım özellikle çocukların olduğu davalarda, taraflar arasındaki ilişkinin korunması açısından büyük önem taşır.
+                            <strong>Uzlaşma ve müzakere:</strong> Aile hukuku davalarında taraflar arasında uzlaşma sağlanması hem zaman hem maliyet açısından avantajlıdır. Bir aile hukuku avukatı, müzakere sürecini profesyonelce yöneterek her iki tarafın da kabul edebileceği çözümler üretir. Bu yaklaşım özellikle çocukların olduğu davalarda, taraflar arasındaki ilişkinin korunması açısından büyük önem taşır.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -258,7 +258,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Aile Hukuku Danışmanlığı İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Aile hukukunun tüm alanlarında profesyonel hukuki destek için hemen randevu alın.
+                                    Aile hukukunun tüm alanlarında profesyonel hukuki destek için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Aile hukuku avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

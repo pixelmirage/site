@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/anlasmali-bosanma/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/anlasmali-bosanma/" },
 };
 
@@ -39,8 +39,8 @@ const faqs = [
         answer: "Evet, çocuk varsa da anlaşmalı boşanma mümkündür. Ancak protokolde çocuğun velayetinin kime verileceği, iştirak nafakası miktarı ve diğer ebeveynle kişisel ilişki düzenlemesi açıkça belirtilmelidir. Hakim çocuğun üstün yararını gözetir ve protokoldeki düzenlemeyi yeterli bulmadığında değişiklik isteyebilir veya protokolü reddedebilir."
     },
     {
-        question: "Anlaşmalı boşanma avukat ücreti ne kadardır?",
-        answer: "2026 yılında İzmir'de anlaşmalı boşanma avukat ücreti 25.000-40.000 TL arasında değişmektedir. Bu ücrete protokol hazırlama, dava açma, duruşma takibi ve kararın kesinleştirilmesi dahildir. Çekişmeli boşanmaya kıyasla hem süre hem maliyet açısından çok daha avantajlıdır. Kesin ücret ilk görüşmede davanın detaylarına göre belirlenir."
+        question: "Anlaşmalı boşanma avukat ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır."
     },
     {
         question: "Eşim anlaşmalı boşanmayı kabul etmezse ne olur?",
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "anlasmali-bosanma-nedir", title: "Anlaşmalı Boşanma Nedir?" },
     { id: "protokol-hazirlama", title: "Protokol Hazırlama Süreci" },
     { id: "tek-celsede-bosanma", title: "Tek Celsede Boşanma" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Avukatlık Ücreti" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -120,11 +120,11 @@ export default function AnlasmaliBosanmaPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir anlaşmalı boşanma avukatı</strong> olarak eşlerin karşılıklı anlaşmasıyla en hızlı ve en az yıpratıcı şekilde boşanma sürecini yönetiyoruz. <Link href="/sozluk/anlasmali-bosanma/">Anlaşmalı boşanma</Link> protokolü hazırlama, nafaka, velayet ve mal paylaşımı konularında kapsamlı hukuki destek sunuyoruz.
+                            <strong>İzmir anlaşmalı boşanma avukatı</strong> olarak eşlerin karşılıklı anlaşmasıyla yürütülen boşanma süreçlerinde hukuki destek veriyoruz. <Link href="/sozluk/anlasmali-bosanma/">Anlaşmalı boşanma</Link> protokolü hazırlama, nafaka, velayet ve mal paylaşımı konularında çalışıyoruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -226,25 +226,14 @@ export default function AnlasmaliBosanmaPage() {
 
                         <SectionCTA text="Anlaşmalı boşanma protokolü hazırlatmak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Anlaşmalı Boşanma Ücretleri</h2>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-primary text-white">
-                                        <th className="px-4 py-3 text-left">Hizmet</th>
-                                        <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Anlaşmalı Boşanma</td><td className="px-4 py-3">1-3 ay</td><td className="px-4 py-3">25.000 - 40.000 TL</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h2 id="ucretler" className="scroll-mt-24">Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret davanın detaylarına göre ilk görüşmede belirlenir. <Link href="/izmir-bosanma-avukati/">Boşanma hukuku hizmetlerimizin</Link> tamamı hakkında bilgi alabilirsiniz.
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz. Harç ve gider avansı gibi yargılama giderleri avukatlık ücretinden ayrıdır.
+                        </p>
+
+                        <p>
+                            Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır. <Link href="/iletisim/">İletişim bilgilerimize</Link> buradan ulaşabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -299,7 +288,7 @@ export default function AnlasmaliBosanmaPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Anlaşmalı Boşanma Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Boşanma protokolü hazırlanması ve dava süreci için hemen randevu alın.
+                                    Boşanma protokolü hazırlanması ve dava süreci için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Anlaşmalı boşanma avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

@@ -21,18 +21,18 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-tahliye-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-10-13" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-tahliye-davasi/" },
 };
 
 const faqs = [
     {
         question: "Kiracı tahliye davası ne kadar sürer?",
-        answer: "İzmir'de kiracı tahliye davası süresi tahliye sebebine göre değişir. Tahliye taahhütnamesi ile icra yoluyla tahliye 1-3 ay içinde sonuçlanabilir. İhtiyaç nedeniyle tahliye davası 6-12 ay, iki haklı ihtar ile tahliye 6-18 ay sürebilir. 10 yıllık uzama süresi dolan kiracının tahliyesi de benzer sürelerde tamamlanır. İzmir Adliyesi (Bayraklı)'ndeki iş yükü süreyi doğrudan etkiler."
+        answer: "Kesin bir süre verilemez. Süre; tahliye sebebine, tebligatların ne zaman yapıldığına, delil ve bilirkişi incelemesi gerekip gerekmediğine ve mahkemenin iş yüküne göre değişir. Dava yoluyla tahliyede kural olarak önce zorunlu arabuluculuğa başvurulur. Tahliye taahhüdüne dayalı icra takibinde ise yasal süreler bellidir: kiracı tahliye emrinin tebliğinden itibaren 7 gün içinde itiraz edebilir (İİK m. 274); itiraz yoksa tahliye emrindeki 15 günlük sürenin sonunda tahliye istenebilir (İİK m. 272)."
     },
     {
         question: "Kiracıyı avukatsız tahliye edebilir miyim?",
-        answer: "Hukuken avukat tutma zorunluluğu yoktur. Ancak tahliye davalarında usul hataları davanın reddine yol açar. Yanlış tahliye sebebi seçmek, ihtar süresini kaçırmak veya eksik delil sunmak sık yapılan hatalardır. Özellikle çekişmeli tahliye davalarında avukat desteği sonucu doğrudan etkiler. Reddedilen bir dava yeniden açılamayacağından ilk seferde doğru hareket etmek kritiktir."
+        answer: "Hukuken avukat tutma zorunluluğu yoktur. Ancak tahliye davalarında usul hataları davanın reddine yol açar. Yanlış tahliye sebebi seçmek, ihtar süresini kaçırmak veya eksik delil sunmak sık yapılan hatalardır. Ayrıca tahliye sebeplerinin çoğunda dava veya takip için kanunda öngörülen süreler hak düşürücüdür; süre kaçırılırsa aynı sebebe dayanılamayabilir."
     },
     {
         question: "Tahliye davası masrafı ne kadar?",
@@ -40,11 +40,11 @@ const faqs = [
     },
     {
         question: "Kiracı evden çıkmıyorsa ne yapmalıyım?",
-        answer: "Kiracı tahliye kararına rağmen evden çıkmıyorsa icra müdürlüğüne başvurarak zorla tahliye işlemi başlatılır. Kendi başınıza kiracıyı çıkarmaya çalışmak suç teşkil eder. Mahkeme kararı olmadan kiracının eşyalarını dışarı çıkarmak, kilitleri değiştirmek veya su-elektriği kesmek hukuka aykırıdır ve tazminat sorumluluğu doğurur."
+        answer: "Kiracı tahliye kararına rağmen evden çıkmıyorsa icra müdürlüğüne başvurarak zorla tahliye işlemi başlatılır. Kendi başınıza kiracıyı çıkarmaya çalışmak suç oluşturabilir. Mahkeme kararı olmadan kiracının eşyalarını dışarı çıkarmak, kilitleri değiştirmek veya su-elektriği kesmek hukuka aykırıdır ve tazminat sorumluluğu doğurur."
     },
     {
         question: "Hangi sebeplerle kiracı tahliye edilebilir?",
-        answer: "Türk Borçlar Kanunu'na göre kiracı şu sebeplerle tahliye edilebilir: İhtiyaç nedeniyle tahliye (TBK m. 350), tahliye taahhütnamesi (TBK m. 352/1), iki haklı ihtar (TBK m. 352/2), 10 yıllık uzama süresinin dolması (TBK m. 347), yeni malikin ihtiyacı (TBK m. 351), kiracının sözleşmeye aykırı davranışı ve kira bedelini ödememe. Her sebebin kendine özgü şartları ve süreleri vardır."
+        answer: "Türk Borçlar Kanunu'na göre kiracı şu sebeplerle tahliye edilebilir: İhtiyaç nedeniyle tahliye (TBK m. 350), tahliye taahhütnamesi (TBK m. 352/1), iki haklı ihtar (TBK m. 352/2), 10 yıllık uzama süresinin dolması (TBK m. 347), yeni malikin ihtiyacı (TBK m. 351), kiracının özen ve komşulara saygı borcuna aykırılığı (TBK m. 316) ve kira bedelinin ödenmemesi nedeniyle temerrüt (TBK m. 315). Her sebebin kendine özgü şartları ve süreleri vardır."
     }
 ];
 
@@ -120,15 +120,15 @@ export default function KiraciTahliyeDavasiPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir kiracı tahliye davası avukatı</strong> olarak kiracının tahliyesini gerektiren tüm hukuki sebeplerde müvekkillerimizi temsil ediyoruz. İhtiyaç nedeniyle tahliye, <Link href="/sozluk/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link> ile tahliye, iki haklı ihtar ve 10 yıllık uzama süresinin dolması gibi her tahliye türünde hukuki destek vermektediruz.
+                            <strong>İzmir kiracı tahliye davası avukatı</strong> olarak kiracının tahliyesini gerektiren tüm hukuki sebeplerde müvekkillerimizi temsil ediyoruz. İhtiyaç nedeniyle tahliye, <Link href="/sozluk/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link> ile tahliye, iki haklı ihtar ve 10 yıllık uzama süresinin dolması gibi her tahliye türünde hukuki destek veriyoruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
-                            Kiracı tahliye davaları, Türk Borçlar Kanunu&apos;nun 350-356. maddeleri kapsamında düzenlenir ve her tahliye sebebinin kendine özgü usul kuralları vardır. Yanlış tahliye sebebi seçmek, süreleri kaçırmak veya eksik delil sunmak davanın reddine neden olur. <strong>Kiracı tahliye davası avukatı</strong> olarak İzmir Adliyesi (Bayraklı)&apos;ndeki tüm kira davalarını yakından takip ediyoruz.
+                            Kiracı tahliye davaları, Türk Borçlar Kanunu&apos;nun 347-356. maddeleri ile kira bedelinin ödenmemesine ilişkin 315. maddesi kapsamında düzenlenir ve her tahliye sebebinin kendine özgü usul kuralları vardır. Yanlış tahliye sebebi seçmek, süreleri kaçırmak veya eksik delil sunmak davanın reddine neden olur.
                         </p>
 
                         <p>
@@ -138,7 +138,7 @@ export default function KiraciTahliyeDavasiPage() {
                         <h2 id="tahliye-turleri" className="scroll-mt-24">Kiracı Tahliye Davası Türleri</h2>
 
                         <p>
-                            İzmir&apos;de en sık karşılaştığımız tahliye davası türlerini ve her birinde sunduğumuz hizmeti aşağıda özetliyoruz:
+                            Başlıca tahliye davası türlerini ve her birinde sunduğumuz hizmeti aşağıda özetliyoruz:
                         </p>
 
                         <div className="not-prose my-8 overflow-x-auto">
@@ -152,8 +152,8 @@ export default function KiraciTahliyeDavasiPage() {
                                 <tbody className="divide-y divide-slate-100">
                                     {[
                                         { title: "İhtiyaç Nedeniyle Tahliye", desc: "TBK m. 350-351: Ev sahibinin veya yakınının gerçek ihtiyacı ispat edilir. İhtarname hazırlanması, ihtiyacın belgelenmesi ve dava sürecini yönetiyoruz." },
-                                        { title: "Tahliye Taahhütnamesi", desc: "TBK m. 352/1: Kiracının imzaladığı tahliye taahhütnamesine dayanarak icra takibi veya dava yoluyla tahliye sağlıyoruz." },
-                                        { title: "İki Haklı İhtar", desc: "TBK m. 352/2: Bir kira yılı içinde iki kez kira bedelini ödemeyen kiracıya ihtarname çekerek tahliye davası açıyoruz." },
+                                        { title: "Tahliye Taahhütnamesi", desc: "TBK m. 352/1: Kiracının yazılı tahliye taahhüdüne dayanarak, taahhüt edilen tarihten itibaren 1 ay içinde icra takibi (İİK m. 272-275) veya tahliye davası yoluna gidilebilir." },
+                                        { title: "İki Haklı İhtar", desc: "TBK m. 352/2: Kiracı bir kira yılı içinde kira bedelini ödemediği için iki kez haklı yazılı ihtara sebep olmuşsa, kira süresinin veya ilgili kira yılının bitiminden itibaren 1 ay içinde tahliye davası açılabilir." },
                                         { title: "10 Yıllık Uzama Süresi", desc: "TBK m. 347: 10 yıllık uzama süresi dolan kiracının tahliyesi için sürelere uygun bildirim ve dava sürecini yürütüyoruz." },
                                         { title: "Yeni Malik Tahliyesi", desc: "TBK m. 351: Taşınmazı satın alan yeni malik, edinme tarihinden itibaren 1 ay içinde ihtarname çekerek 6 ay sonra tahliye davası açabilir." },
                                     ].map((item, i) => (
@@ -190,9 +190,9 @@ export default function KiraciTahliyeDavasiPage() {
                         <div className="not-prose my-8 space-y-4">
                             {[
                                 { step: "1", title: "Dosya İnceleme ve Strateji Belirleme", desc: "Kira sözleşmesi, tahliye taahhütnamesi, ihtarnameler ve ödeme kayıtlarını inceliyoruz. En uygun tahliye sebebini ve stratejiyi belirliyoruz." },
-                                { step: "2", title: "İhtarname Hazırlama ve Tebliğ", desc: "Tahliye sebebine uygun noter ihtarnamesini hazırlıyor ve usulüne uygun tebliğ ettiriyoruz. Sürelerin doğru hesaplanması kritiktir." },
-                                { step: "3", title: "Dava Dilekçesi ve Delil Sunumu", desc: "İzmir Adliyesi (Bayraklı) nezdinde tahliye davası açıyor, tüm delilleri eksiksiz sunuyoruz. Gerektiğinde ihtiyati tedbir talep ediyoruz." },
-                                { step: "4", title: "Duruşma Takibi ve Savunma", desc: "Tüm duruşmalara katılıyor, tanık dinletme ve bilirkişi raporlarını takip ediyoruz. Karşı tarafın itirazlarına etkin yanıt veriyoruz." },
+                                { step: "2", title: "İhtarname Hazırlama ve Tebliğ", desc: "Tahliye sebebine uygun noter ihtarnamesini hazırlıyor ve usulüne uygun tebliğ ettiriyoruz. Sürelerin doğru hesaplanması önemlidir." },
+                                { step: "3", title: "Dava Dilekçesi ve Delil Sunumu", desc: "İzmir Adliyesi (Bayraklı) nezdinde tahliye davası açıyor, tüm delilleri eksiksiz sunuyoruz." },
+                                { step: "4", title: "Duruşma Takibi ve Savunma", desc: "Tüm duruşmalara katılıyor, tanık dinletme ve bilirkişi raporlarını takip ediyoruz. Karşı tarafın itirazlarına yanıt veriyoruz." },
                                 { step: "5", title: "Karar ve İcra Takibi", desc: "Tahliye kararını aldıktan sonra kiracı tahliye etmezse icra müdürlüğü aracılığıyla zorla tahliye işlemini başlatıyoruz." },
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4 p-5 bg-slate-50 rounded-xl border-l-4 border-secondary">
@@ -221,12 +221,12 @@ export default function KiraciTahliyeDavasiPage() {
                         <h2 id="neden-avukat" className="scroll-mt-24">Tahliye Davasında Neden Avukat Gerekli?</h2>
 
                         <p>
-                            Tahliye davaları usul açısından en riskli kira davalarıdır. Avukatsız açılan tahliye davalarında sık karşılaşılan sorunlar:
+                            Tahliye davaları usul ve süre kuralları sıkı olan davalardır. Avukatsız açılan tahliye davalarında sık karşılaşılan sorunlar:
                         </p>
 
                         <ul>
                             <li><strong>Yanlış tahliye sebebi seçimi:</strong> Her sebebin farklı şartları ve süreleri vardır. Yanlış sebep dava reddine yol açar</li>
-                            <li><strong>İhtarname hataları:</strong> Eksik veya usulsüz ihtarname tüm süreyi baştan başlatır</li>
+                            <li><strong>İhtarname hataları:</strong> Eksik veya usulsüz ihtarname, dayanılan tahliye sebebini işlevsiz bırakabilir</li>
                             <li><strong>Süre hesaplama hataları:</strong> Her tahliye sebebinde dava açma süreleri farklıdır ve hak düşürücüdür</li>
                             <li><strong>Delil yetersizliği:</strong> İhtiyaç iddiasını destekleyecek belgelerin sunulmaması davanın kaybedilmesine neden olur</li>
                             <li><strong>İcra takibinde hatalar:</strong> Tahliye kararı alınsa bile icra sürecindeki hatalar tahliyeyi geciktirir</li>
@@ -238,27 +238,28 @@ export default function KiraciTahliyeDavasiPage() {
 
                         <SectionCTA text="Kiracı tahliye davanız için avukat desteği almak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">Ortalama Süreler ve Avukatlık Ücreti</h2>
+                        <h2 id="ucretler" className="scroll-mt-24">Süreler ve Avukatlık Ücreti</h2>
 
                         <div className="not-prose my-8 overflow-x-auto">
                             <table className="w-full border-collapse">
                                 <thead>
                                     <tr className="bg-primary text-white">
                                         <th className="px-4 py-3 text-left">Tahliye Türü</th>
-                                        <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
+                                        <th className="px-4 py-3 text-left">Kanundaki Süre</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Taahhütname ile İcra Takibi</td><td className="px-4 py-3">1-3 ay</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">İhtiyaç Nedeniyle Tahliye</td><td className="px-4 py-3">6-12 ay</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">İki Haklı İhtar ile Tahliye</td><td className="px-4 py-3">6-18 ay</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">10 Yıllık Süre Dolması</td><td className="px-4 py-3">6-12 ay</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Tahliye Taahhüdü</td><td className="px-4 py-3">Taahhüt tarihinden itibaren 1 ay içinde icra takibi veya dava (TBK m. 352/1); itiraz 7 gün (İİK m. 274), tahliye emri 15 gün (İİK m. 272)</td></tr>
+                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">İhtiyaç Nedeniyle Tahliye</td><td className="px-4 py-3">Belirli süreli sözleşmede süre sonunda, belirsiz süreli sözleşmede fesih dönemi ve süresine uyularak; bunlardan itibaren 1 ay içinde dava (TBK m. 350)</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">İki Haklı İhtar</td><td className="px-4 py-3">Kira süresinin veya (bir yıldan uzun sözleşmelerde) ihtarların verildiği kira yılının bitiminden itibaren 1 ay içinde dava (TBK m. 352/2)</td></tr>
+                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Temerrüt</td><td className="px-4 py-3">Konut ve çatılı işyerinde en az 30 gün süreli yazılı ihtar; süre sonunda ödeme yoksa fesih (TBK m. 315)</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-medium">10 Yıllık Uzama Süresi</td><td className="px-4 py-3">10 yıllık uzama süresinden sonra her uzama yılının bitiminden en az 3 ay önce bildirimle fesih (TBK m. 347)</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <p>
-                            Süreler ortalama değerler olup mahkemenin iş yüküne ve dosyanın özelliklerine göre değişebilir. Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak yazılı ücret sözleşmesiyle kararlaştırılır ve Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz (Av. K. m. 163-164). Ayrıntılar için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti nasıl belirlenir</Link> sayfamıza bakabilirsiniz.
+                            Tablodaki süreler kanunda öngörülen başvuru ve bildirim süreleridir. Davanın ne kadar süreceği ise mahkemenin iş yüküne, tebligatlara ve dosyanın özelliklerine göre değişir; bu nedenle ortalama bir süre verilmemektedir. Avukatlık ücreti; işin niteliği, dava değeri ve gerektirdiği emek dikkate alınarak yazılı ücret sözleşmesiyle kararlaştırılır ve Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz (Av. K. m. 163-164). Ayrıntılar için <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/">kira avukatı ücreti nasıl belirlenir</Link> sayfamıza bakabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -316,7 +317,7 @@ export default function KiraciTahliyeDavasiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kiracı Tahliye Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Tahliye süreciniz için randevu oluşturabilirsiniz.
+                                    Ön görüşmeler telefonla yapılır.
                                     <strong className="text-white"> Kiracı tahliye davası avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

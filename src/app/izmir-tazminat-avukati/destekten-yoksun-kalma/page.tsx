@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/destekten-yoksun-kalma/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-tazminat-avukati/destekten-yoksun-kalma/" },
 };
 
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "destekten-yoksun-kalma-nedir", title: "Destekten Yoksun Kalma Nedir?" },
     { id: "kimler-talep-edebilir", title: "Kimler Talep Edebilir?" },
     { id: "hesaplama-yontemi", title: "Tazminat Hesaplama Yöntemi" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Avukatlık Ücreti" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -124,7 +124,7 @@ export default function DestektenYoksunKalmaPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -214,26 +214,14 @@ export default function DestektenYoksunKalmaPage() {
 
                         <SectionCTA text="Destekten yoksun kalma tazminatınız için avukat desteği almak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Destekten Yoksun Kalma Davası Ücretleri</h2>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-primary text-white">
-                                        <th className="px-4 py-3 text-left">Dava Türü</th>
-                                        <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Destekten Yoksun Kalma Davası</td><td className="px-4 py-3">1-2 yıl</td><td className="px-4 py-3">50.000 - 100.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Nispi Ücret (Tazminata Oranla)</td><td className="px-4 py-3">1-2 yıl</td><td className="px-4 py-3">%10 - %20</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h2 id="ucretler" className="scroll-mt-24">Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret davanın karmaşıklığına ve tazminat miktarına göre ilk görüşmede belirlenir. Trafik kazası ve malpraktis kaynaklı tazminat davalarınız için <Link href="/izmir-tazminat-avukati/trafik-kazasi-tazminati/">trafik kazası tazminatı</Link> ve <Link href="/izmir-tazminat-avukati/malpraktis-davasi/">malpraktis davası</Link> sayfalarımızı ziyaret edebilirsiniz.
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz. Harç ve gider avansı gibi yargılama giderleri avukatlık ücretinden ayrıdır.
+                        </p>
+
+                        <p>
+                            Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır. <Link href="/iletisim/">İletişim bilgilerimize</Link> buradan ulaşabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}

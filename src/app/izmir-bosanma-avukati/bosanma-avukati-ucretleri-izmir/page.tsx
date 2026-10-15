@@ -12,47 +12,47 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Boşanma Avukatı Ücretleri İzmir 2026",
-    description: "İzmir'de boşanma avukatı ücretleri 2026 güncel fiyat listesi. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı dava ücretleri.",
+    title: "Boşanma Avukatı Ücreti Nasıl Belirlenir? İzmir",
+    description: "İzmir'de boşanma davalarında avukatlık ücretinin nasıl belirlendiği: yazılı ücret sözleşmesi, Avukatlık Asgari Ücret Tarifesi, karşı vekalet ücreti ve yargılama giderleri.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Boşanma Avukatı Ücretleri İzmir 2026 | Av. Mert Kağan Çetin",
-        description: "İzmir'de boşanma avukatı ücretleri 2026 güncel fiyat listesi. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı dava ücretleri.",
+        title: "Boşanma Avukatı Ücreti Nasıl Belirlenir? | Av. Mert Kağan Çetin",
+        description: "İzmir'de boşanma davalarında avukatlık ücretinin nasıl belirlendiği: yazılı ücret sözleşmesi, Avukatlık Asgari Ücret Tarifesi, karşı vekalet ücreti ve yargılama giderleri.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/" },
 };
 
 const faqs = [
     {
-        question: "Boşanma avukatı ne kadar ücret alır?",
-        answer: "2026 yılında İzmir'de boşanma avukatı ücretleri dava türüne göre değişmektedir. Anlaşmalı boşanma için 25.000-40.000 TL, çekişmeli boşanma için 40.000-80.000 TL arasında ücret uygulanmaktadır. Ücret; davanın karmaşıklığına, süresine ve kapsamına göre ilk görüşmede belirlenir. İzmir Barosu tarafından belirlenen asgari ücret tarifesinin altında ücret talep edilmesi yasaktır."
+        question: "Boşanma avukatı ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir."
     },
     {
-        question: "Anlaşmalı boşanma ücreti ne kadar?",
-        answer: "İzmir'de anlaşmalı boşanma avukat ücreti 2026 yılında ortalama 25.000-40.000 TL arasındadır. Bu ücrete boşanma protokolü hazırlama, dava dilekçesi yazımı, duruşma takibi ve kararın kesinleştirilmesi dahildir. Anlaşmalı boşanma, çekişmeli boşanmaya kıyasla hem süre hem maliyet açısından daha avantajlıdır. Tek celsede sonuçlandığı için avukatın iş yükü de daha azdır."
+        question: "Anlaşmalı boşanmada ücret neye göre değişir?",
+        answer: "Anlaşmalı boşanmada ücret; protokolün kapsamına (velayet, nafaka, mal paylaşımı düzenlemeleri), dava dilekçesi ve duruşma takibi gibi yapılacak işlere göre yazılı ücret sözleşmesiyle belirlenir. Ücret, Avukatlık Asgari Ücret Tarifesi'nin altında olamaz."
     },
     {
-        question: "Avukata danışma ücreti var mı?",
-        answer: "Büromuz ilk görüşmeyi ücretsiz olarak gerçekleştirmektedir. İlk görüşmede davanızın kapsamı, hukuki süreç ve tahmini ücret hakkında bilgi alabilirsiniz. İlk görüşme sonrasında devam eden danışmanlık hizmetleri için 3.000-6.000 TL arasında danışmanlık ücreti uygulanmaktadır. Danışmanlık ücreti, dava açılması halinde avukatlık ücretinden mahsup edilir."
+        question: "Ön görüşme nasıl yapılır?",
+        answer: "Ön görüşmeler telefonla yapılır. Görüşmede dosyanın kapsamı, izlenecek hukuki yol ve ücretin hangi esaslara göre belirleneceği açıklanır."
     },
     {
         question: "Boşanma dava masraflarını kim öder?",
-        answer: "Boşanma dava masrafları (mahkeme harcı, tebligat gideri, bilirkişi ücreti) davayı açan tarafça peşin olarak ödenir. Dava sonunda mahkeme, masrafları kusurlu tarafa yükleyebilir. Anlaşmalı boşanmada masraflar genellikle taraflar arasında paylaşılır. 2026 yılında bir boşanma davasının toplam masrafı (avukat ücreti hariç) yaklaşık 5.000-15.000 TL arasında değişmektedir."
+        answer: "Harç, tebligat, bilirkişi ve keşif giderleri gibi yargılama giderleri davayı açan tarafça peşin olarak yatırılır. Dava sonunda mahkeme, yargılama giderlerini ve tarifeye göre belirlenen karşı vekalet ücretini kural olarak aleyhine hüküm verilen tarafa yükler (HMK m. 326). Harç tutarları Harçlar Kanunu tarifesine göre her yıl yeniden belirlenir."
     },
     {
-        question: "Avukatlık ücreti taksitle ödenebilir mi?",
-        answer: "Evet, büromuz avukatlık ücretinin taksitlendirilmesi konusunda müvekkillerine esneklik sağlamaktadır. Dava başlangıcında belirli bir ön ödeme alınarak kalan ücret aylık taksitler halinde ödenebilir. Taksit planı ve ödeme koşulları ilk görüşmede davanın detaylarına göre birlikte belirlenir. Ödeme planı avukatlık sözleşmesinde açıkça düzenlenir."
+        question: "Avukatlık ücretinin ödeme koşulları nasıl belirlenir?",
+        answer: "Ücretin tutarı ve ödeme koşulları, avukat ile müvekkil arasında yapılan yazılı ücret sözleşmesinde açıkça düzenlenir."
     }
 ];
 
 const tocItems = [
-    { id: "2026-bosanma-avukati-ucretleri", title: "2026 Boşanma Avukatı Ücretleri" },
+    { id: "ucret-nasil-belirlenir", title: "Ücret Nasıl Belirlenir?" },
     { id: "ucreti-etkileyen-faktorler", title: "Ücreti Etkileyen Faktörler" },
     { id: "dava-masraflari", title: "Dava Masrafları" },
-    { id: "ucretsiz-on-gorusme", title: "Ücretsiz Ön Görüşme" },
+    { id: "on-gorusme", title: "Ön Görüşme" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -82,10 +82,10 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                     </nav>
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            Boşanma Avukatı Ücretleri İzmir 2026
+                            Boşanma Avukatı Ücreti Nasıl Belirlenir?
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            İzmir&apos;de boşanma davalarında avukatlık ücretleri, danışmanlık ücretleri ve dava masrafları hakkında güncel bilgi.
+                            İzmir&apos;de boşanma davalarında avukatlık ücretinin belirlenme esasları ve yargılama giderleri hakkında genel bilgi.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
@@ -119,132 +119,64 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir boşanma avukatı ücretleri</strong> dava türüne, kapsamına ve süresine göre değişmektedir. 2026 yılı güncel avukatlık ücret tarifesi, dava masrafları ve ödeme koşulları hakkında detaylı bilgiyi bu sayfada bulabilirsiniz.
+                            <strong>İzmir boşanma avukatı ücreti</strong>, davanın türüne, kapsamına ve gerektirdiği emeğe göre yazılı ücret sözleşmesiyle belirlenir. Bu sayfada ücretin hangi esaslara göre belirlendiğini ve yargılama giderlerini genel hatlarıyla açıklıyoruz; ücret tutarı paylaşılmamaktadır.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                        </p>
+
+                        <h2 id="ucret-nasil-belirlenir" className="scroll-mt-24">Boşanma Avukatı Ücreti Nasıl Belirlenir?</h2>
+
+                        <p>
+                            Avukatlık ücreti, Avukatlık Kanunu m. 163-164 uyarınca avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır. Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan <strong>Avukatlık Asgari Ücret Tarifesi</strong>&apos;nin altında olamaz. Avukatlık Kanunu m. 164 uyarınca avukatlık ücreti, dava veya hükmolunacak şeyin değerinin yüzde yirmi beşini geçemez.
                         </p>
 
                         <p>
-                            Boşanma davası açmayı düşünen kişilerin en çok merak ettiği konuların başında avukatlık ücretleri gelmektedir. Avukatlık ücreti, Avukatlık Kanunu m. 164 uyarınca avukat ile müvekkil arasında serbestçe belirlenir; ancak İzmir Barosu tarafından her yıl yayımlanan asgari ücret tarifesinin altında bir ücret kararlaştırılması mümkün değildir. Bu sayfada 2026 yılına ait güncel boşanma avukatı ücretlerini ve dava masraflarını şeffaf bir şekilde paylaşıyoruz.
-                        </p>
-
-                        <h2 id="2026-bosanma-avukati-ucretleri" className="scroll-mt-24">2026 Boşanma Avukatı Ücretleri</h2>
-
-                        <p>
-                            Aşağıdaki tabloda İzmir&apos;de 2026 yılında uygulanan ortalama boşanma avukatı ücretlerini dava türüne göre inceleyebilirsiniz. Bu ücretler piyasa ortalamasını yansıtmakta olup kesin ücret davanın detaylarına göre ilk görüşmede belirlenir.
-                        </p>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
-                                <thead className="bg-primary text-white">
-                                    <tr>
-                                        <th className="px-6 py-4 text-left">Dava Türü</th>
-                                        <th className="px-6 py-4 text-left">Ortalama Süre</th>
-                                        <th className="px-6 py-4 text-left">Ücret Aralığı (2026)</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-100">
-                                    {[
-                                        { type: "Anlaşmalı Boşanma", duration: "1-3 ay", price: "25.000 - 40.000 TL" },
-                                        { type: "Çekişmeli Boşanma", duration: "1-3 yıl", price: "40.000 - 80.000 TL" },
-                                        { type: "Velayet Davası", duration: "6 ay - 2 yıl", price: "30.000 - 60.000 TL" },
-                                        { type: "Nafaka Davası", duration: "3 ay - 1 yıl", price: "20.000 - 40.000 TL" },
-                                        { type: "Mal Paylaşımı Davası", duration: "1-3 yıl", price: "40.000 - 80.000 TL" },
-                                        { type: "Hukuki Danışmanlık", duration: "Tek seans", price: "3.000 - 6.000 TL" },
-                                    ].map((item, i) => (
-                                        <tr key={i} className="hover:bg-slate-50 transition-colors">
-                                            <td className="px-6 py-4 font-bold text-primary">{item.type}</td>
-                                            <td className="px-6 py-4 text-slate-600">{item.duration}</td>
-                                            <td className="px-6 py-4 text-slate-600 font-medium">{item.price}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <p>
-                            Yukarıdaki ücretler ortalama değerlerdir ve davanın özel koşullarına göre farklılık gösterebilir. Birden fazla dava (boşanma + velayet + nafaka) birlikte yürütüldüğünde paket ücretlendirme uygulanabilir. <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı boşanma</Link> ücretleri, çekişmeli boşanmaya kıyasla önemli ölçüde düşüktür.
-                        </p>
-
-                        <p>
-                            Avukatlık Kanunu m. 164/4 uyarınca avukatlık ücreti, dava veya hükmolunacak şeyin değerinin yüzde yirmi beşini geçemez. Ayrıca avukat ile müvekkil arasında yapılan avukatlık sözleşmesinin yazılı olması zorunludur.
+                            Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Birden fazla talebin (boşanma, <Link href="/izmir-bosanma-avukati/velayet-davasi/">velayet</Link>, <Link href="/izmir-bosanma-avukati/nafaka-davasi/">nafaka</Link>, mal paylaşımı) birlikte yürütülüp yürütülmeyeceği de ücret sözleşmesinde belirtilir.
                         </p>
 
                         <h2 id="ucreti-etkileyen-faktorler" className="scroll-mt-24">Ücreti Etkileyen Faktörler</h2>
 
                         <p>
-                            Boşanma avukatı ücretleri sabit bir rakam olmayıp çeşitli faktörlere göre değişir. Ücretin belirlenmesinde rol oynayan başlıca faktörler şunlardır:
+                            Ücretin belirlenmesinde rol oynayan başlıca unsurlar şunlardır:
                         </p>
 
                         <ul>
-                            <li><strong>Dava türü:</strong> Anlaşmalı boşanma tek celsede sonuçlandığı için çekişmeli boşanmaya göre daha düşük ücretlidir. Çekişmeli boşanma, uzun süren yargılama süreci nedeniyle daha yüksek avukatlık ücreti gerektirir.</li>
-                            <li><strong>Davanın karmaşıklığı:</strong> Yüksek değerli mal varlığı bulunan, yurt dışı bağlantılı veya çok sayıda uyuşmazlık konusu içeren davalarda ücret artabilir.</li>
-                            <li><strong>Dava süresi:</strong> Çekişmeli boşanma davalarında duruşma sayısı arttıkça avukatın iş yükü de artar. Uzun süren davalarda ücret buna göre belirlenir.</li>
-                            <li><strong>Dava değeri:</strong> Tazminat ve mal paylaşımı taleplerinin miktarı ücretin belirlenmesinde etkili olabilir.</li>
-                            <li><strong>Ek davalar:</strong> Boşanma davasıyla birlikte velayet, nafaka, tazminat veya mal paylaşımı davaları açılması halinde toplam ücret farklılık gösterir.</li>
+                            <li><strong>Dava türü:</strong> <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı boşanma</Link> ile çekişmeli boşanma arasında yapılacak iş ve duruşma sayısı farklıdır.</li>
+                            <li><strong>Davanın kapsamı:</strong> Mal varlığının niteliği, yurt dışı bağlantısı veya uyuşmazlık konularının sayısı yapılacak işi etkiler.</li>
+                            <li><strong>Yargılamanın seyri:</strong> Delil toplama, tanık ve bilirkişi incelemesi gerektiren dosyalarda iş yükü artar.</li>
+                            <li><strong>Dava değeri:</strong> Tazminat ve mal paylaşımı taleplerinin miktarı ücretin belirlenmesinde dikkate alınabilir.</li>
+                            <li><strong>Ek talepler:</strong> Velayet, nafaka, tazminat veya mal paylaşımı talepleri ücret sözleşmesinin kapsamını değiştirir.</li>
                         </ul>
 
-                        <p>
-                            Ücret belirlenirken avukatın deneyimi, uzmanlık alanı ve barodaki kıdemi de dikkate alınır. Ancak en düşük ücret her durumda İzmir Barosu asgari ücret tarifesinin altına düşemez. Düşük ücret teklif eden avukatlara karşı dikkatli olunmalıdır; hukuki süreçte alınacak yetersiz hizmet, telafisi güç hak kayıplarına yol açabilir.
-                        </p>
-
-                        <SectionCTA text="Davanıza özel ücret bilgisi almak için ücretsiz ön görüşme randevusu alın." />
+                        <SectionCTA text="Ücretin belirlenme esasları ön görüşmede açıklanır. Ön görüşmeler telefonla yapılır." />
 
                         <h2 id="dava-masraflari" className="scroll-mt-24">Dava Masrafları</h2>
 
                         <p>
-                            Boşanma davasında avukatlık ücreti dışında çeşitli dava masrafları da bulunmaktadır. Bu masraflar avukatlık ücretinden bağımsız olup davayı açan tarafça peşin olarak ödenir. Dava sonunda mahkeme, masrafları kusurlu tarafa yükleyebilir.
+                            Boşanma davasında avukatlık ücreti dışında harç, tebligat, bilirkişi, keşif ve tanık giderleri gibi yargılama giderleri bulunur. Bu giderler davayı açan tarafça peşin olarak yatırılır; dava sonunda mahkeme yargılama giderlerini kural olarak aleyhine hüküm verilen tarafa yükler (HMK m. 326). Harç tutarları Harçlar Kanunu tarifesine göre her yıl yeniden belirlenir.
                         </p>
 
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse bg-white rounded-lg shadow-sm overflow-hidden border border-slate-200">
-                                <thead className="bg-primary text-white">
-                                    <tr>
-                                        <th className="px-6 py-4 text-left">Masraf Kalemi</th>
-                                        <th className="px-6 py-4 text-left">Açıklama</th>
-                                        <th className="px-6 py-4 text-left">Tahmini Tutar (2026)</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-100">
-                                    {[
-                                        { item: "Mahkeme Harcı", desc: "Başvuru harcı ve karar harcı olarak ikiye ayrılır", price: "2.000 - 5.000 TL" },
-                                        { item: "Tebligat Gideri", desc: "Dava dilekçesinin karşı tarafa ve tanıklara tebliğ masrafı", price: "500 - 1.500 TL" },
-                                        { item: "Bilirkişi Ücreti", desc: "Mal paylaşımı, gelir tespiti gibi konularda bilirkişi incelemesi", price: "3.000 - 8.000 TL" },
-                                        { item: "Keşif Gideri", desc: "Taşınmaz değer tespiti için yapılan keşif masrafı", price: "2.000 - 5.000 TL" },
-                                        { item: "Tanık Gideri", desc: "Tanıkların duruşmaya getirilmesi için tebligat ve yol masrafı", price: "500 - 2.000 TL" },
-                                    ].map((item, i) => (
-                                        <tr key={i} className="hover:bg-slate-50 transition-colors">
-                                            <td className="px-6 py-4 font-bold text-primary">{item.item}</td>
-                                            <td className="px-6 py-4 text-slate-600">{item.desc}</td>
-                                            <td className="px-6 py-4 text-slate-600 font-medium">{item.price}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
+                        <ul>
+                            <li><strong>Harçlar:</strong> Başvurma ve karar harcı gibi kalemler.</li>
+                            <li><strong>Tebligat giderleri:</strong> Dava dilekçesinin ve duruşma davetiyelerinin tebliği.</li>
+                            <li><strong>Bilirkişi ve keşif giderleri:</strong> Mal paylaşımı veya gelir tespiti gibi incelemeler.</li>
+                            <li><strong>Tanık giderleri:</strong> Tanıkların duruşmaya çağrılmasına ilişkin giderler.</li>
+                        </ul>
 
                         <p>
-                            Toplam dava masrafı, davanın türüne ve kapsamına göre 5.000 ila 15.000 TL arasında değişmektedir. Çekişmeli boşanma davalarında bilirkişi ve keşif giderleri nedeniyle masraflar daha yüksek olabilir. Anlaşmalı boşanmalarda ise genellikle sadece mahkeme harcı ve tebligat gideri söz konusudur.
+                            Yargılama giderlerini karşılama gücü bulunmayan kişiler, koşulları varsa adli yardım talep edebilir (HMK m. 334 vd.).
+                        </p>
+
+                        <h2 id="on-gorusme" className="scroll-mt-24">Ön Görüşme</h2>
+
+                        <p>
+                            Ön görüşmeler telefonla yapılır. Görüşmede mevcut durum ve hukuki seçenekler değerlendirilir; izlenecek yol ve ücretin hangi esaslara göre belirleneceği açıklanır. Dava sonucu hakkında herhangi bir taahhütte bulunulmaz.
                         </p>
 
                         <p>
-                            Ekonomik durumu yetersiz olan kişiler adli yardım kurumuna başvurarak mahkeme masraflarından muafiyet talep edebilir. Adli yardım, geliri asgari ücretin altında olan kişilere sağlanan bir haktır.
-                        </p>
-
-                        <h2 id="ucretsiz-on-gorusme" className="scroll-mt-24">Ücretsiz Ön Görüşme</h2>
-
-                        <p>
-                            Büromuz, boşanma davası düşünen müvekkillerine ücretsiz ilk görüşme imkanı sunmaktadır. Bu görüşmede davanızın kapsamı, başarı şansı, tahmini süre ve ücret hakkında detaylı bilgi alabilirsiniz. Ücretsiz ön görüşme, herhangi bir taahhüt içermez ve tamamen bilgilendirme amaçlıdır.
-                        </p>
-
-                        <p>
-                            Ön görüşme sırasında şu konular ele alınır: mevcut durumun değerlendirilmesi, hukuki seçeneklerin açıklanması, dava stratejisinin belirlenmesi, tahmini süre ve maliyet bilgisi ile ödeme koşullarının görüşülmesi. Görüşme yüz yüze veya online olarak gerçekleştirilebilir.
-                        </p>
-
-                        <p>
-                            Ücretsiz ön görüşme randevusu almak için <Link href="/iletisim/">iletişim sayfamızı</Link> ziyaret edebilir veya doğrudan 0544 585 46 45 numaralı telefonu arayabilirsiniz. İzmir Adliyesi yakınındaki ofisimizde veya online olarak görüşme yapılabilir.
+                            İletişim için <Link href="/iletisim/">iletişim sayfamızı</Link> ziyaret edebilir veya 0544 585 46 45 numaralı telefonu arayabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -257,7 +189,7 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Boşanma davaları, nafaka, velayet ve mal paylaşımı uyuşmazlıklarında profesyonel hukuki destek sunuyor. Şeffaf ücretlendirme politikası ve ücretsiz ilk görüşme imkanı ile müvekkillerine güven veriyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Boşanma davaları, nafaka, velayet ve mal paylaşımı uyuşmazlıklarında avukatlık hizmeti vermektedir.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -300,10 +232,9 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                         {/* İletişim CTA */}
                         <div id="iletisim" className="not-prose scroll-mt-24">
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
-                                <h2 className="text-3xl font-playfair font-bold mb-4">Boşanma Davanız İçin Ücretsiz Ön Görüşme Alın</h2>
+                                <h2 className="text-3xl font-playfair font-bold mb-4">Boşanma Davanız İçin İletişim</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Davanıza özel ücret bilgisi ve hukuki danışmanlık için ücretsiz ön görüşme randevusu alın.
-                                    <strong className="text-white"> Boşanma avukatı</strong> olarak size yardımcı olmaya hazırız.
+                                    Ön görüşmeler telefonla yapılır.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                                     <div className="flex items-center gap-3"><Phone className="w-6 h-6 text-secondary" /><div><p className="text-sm text-slate-400">Telefon</p><a href="tel:+905445854645" className="font-bold hover:text-secondary transition-colors">0544 585 46 45</a></div></div>

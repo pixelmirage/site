@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-10-13" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/" },
 };
 
@@ -124,7 +124,7 @@ export default function KiraTespitDavasiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <h2 id="kira-tespit-nedir" className="scroll-mt-24">Kira Tespit Davası Nedir?</h2>
@@ -181,7 +181,7 @@ export default function KiraTespitDavasiPage() {
                         <h2 id="neden-avukat" className="scroll-mt-24">Kira Tespit Davasında Neden Avukat Gerekli?</h2>
 
                         <p>
-                            Kira tespit davaları teknik bilgi ve deneyim gerektiren davalardır. Avukatsız açılan kira tespit davalarında sık karşılaşılan sorunlar:
+                            Kira tespit davaları teknik bilgi ve özen gerektiren davalardır. Avukatsız açılan kira tespit davalarında sık karşılaşılan sorunlar:
                         </p>
 
                         <ul>

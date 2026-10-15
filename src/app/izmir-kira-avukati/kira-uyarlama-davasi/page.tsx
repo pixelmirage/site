@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-10-13" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/" },
 };
 
@@ -125,11 +125,11 @@ export default function KiraUyarlamaDavasiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
-                            Yüksek enflasyon, devalüasyon ve ekonomik kriz gibi olağanüstü koşullar kira sözleşmelerindeki dengeyi bozabilir. Bu durumda hem kiracı hem kiraya veren, mahkemeden kira bedelinin güncel koşullara göre uyarlanmasını talep edebilir. <strong>Kira uyarlama davası avukatı</strong> olarak İzmir Adliyesi (Bayraklı)&apos;ndeki tüm kira uyarlama davalarını yakından takip ediyor, müvekkillerimize en hızlı ve etkili sonucu sağlıyoruz.
+                            Yüksek enflasyon, devalüasyon ve ekonomik kriz gibi olağanüstü koşullar kira sözleşmelerindeki dengeyi bozabilir. Bu durumda hem kiracı hem kiraya veren, mahkemeden kira bedelinin güncel koşullara göre uyarlanmasını talep edebilir. <strong>Kira uyarlama davası avukatı</strong> olarak İzmir Adliyesi (Bayraklı)&apos;ndeki kira uyarlama davalarında müvekkillerimizi temsil ediyoruz.
                         </p>
 
                         <h2 id="nedir" className="scroll-mt-24">Kira Uyarlama Davası Nedir?</h2>
@@ -224,7 +224,7 @@ export default function KiraUyarlamaDavasiPage() {
                         </p>
 
                         <ul>
-                            <li><strong>TBK m. 138 şartlarının ispat edilememesi:</strong> Olağanüstü değişiklik, öngörülemezlik ve aşırı ifa güçlüğünün hukuki olarak doğru şekilde ortaya konması uzmanlık gerektirir</li>
+                            <li><strong>TBK m. 138 şartlarının ispat edilememesi:</strong> Olağanüstü değişiklik, öngörülemezlik ve aşırı ifa güçlüğünün hukuki olarak doğru şekilde ortaya konması özen gerektirir</li>
                             <li><strong>Kira tespit davası ile karıştırılması:</strong> Yanlış dava türü seçmek zaman ve masraf kaybına yol açar</li>
                             <li><strong>Ekonomik verilerin yetersiz sunulması:</strong> Enflasyon oranları, döviz kuru değişimleri ve emsal kira bedellerinin sistematik olarak sunulmaması davanın reddine neden olabilir</li>
                             <li><strong>Bilirkişi raporuna etkili itiraz yapılamaması:</strong> Hatalı bilirkişi raporlarına zamanında ve gerekçeli itiraz edilmemesi olumsuz sonuç doğurur</li>

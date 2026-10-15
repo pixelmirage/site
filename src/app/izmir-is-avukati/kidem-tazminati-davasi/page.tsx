@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-is-avukati/kidem-tazminati-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-is-avukati/kidem-tazminati-davasi/" },
 };
 
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "kidem-hakki", title: "Kıdem Tazminatı Hakkı" },
     { id: "dava-sureci", title: "Kıdem Tazminatı Dava Süreci" },
     { id: "hesaplama", title: "Hesaplama ve Tavan Tutar" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Avukatlık Ücreti" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -124,7 +124,7 @@ export default function KidemTazminatiDavasiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -233,26 +233,14 @@ export default function KidemTazminatiDavasiPage() {
                             <strong>Dikkat:</strong> Bu sayfa kıdem tazminatınızın ödenmemesi halinde açılacak davayı anlatmaktadır. Tazminatınızı hesaplamak için <Link href="/kidem-tazminati-hesaplama/">hesaplama aracımızı</Link> kullanın. Hesaplama yöntemini öğrenmek için <Link href="/blog/kidem-tazminati-nasil-hesaplanir/">rehber yazımızı</Link> okuyun.
                         </blockquote>
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Kıdem Tazminatı Davası Ücretleri</h2>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-primary text-white">
-                                        <th className="px-4 py-3 text-left">Hizmet</th>
-                                        <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Kıdem Tazminatı Davası</td><td className="px-4 py-3">6-12 ay</td><td className="px-4 py-3">30.000 - 50.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">İhbar Tazminatı Davası</td><td className="px-4 py-3">6-12 ay</td><td className="px-4 py-3">25.000 - 40.000 TL</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h2 id="ucretler" className="scroll-mt-24">Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret davanın karmaşıklığına ve tazminat tutarına göre ilk görüşmede belirlenir. <Link href="/izmir-is-avukati/">İş hukuku hizmetlerimizin</Link> tamamı hakkında bilgi alın.
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz. Harç ve gider avansı gibi yargılama giderleri avukatlık ücretinden ayrıdır.
+                        </p>
+
+                        <p>
+                            Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır. <Link href="/iletisim/">İletişim bilgilerimize</Link> buradan ulaşabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -310,7 +298,7 @@ export default function KidemTazminatiDavasiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Kıdem Tazminatı Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Kıdem tazminatınız ödenmedi mi? Hemen randevu alın.
+                                    Kıdem tazminatınız ödenmedi mi? İletişime geçebilirsiniz.
                                     <strong className="text-white"> Kıdem tazminatı davası avukatı</strong> olarak hakkınızı almanıza yardımcı oluyoruz.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

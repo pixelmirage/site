@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/aldatma-bosanma-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/aldatma-bosanma-izmir/" },
 };
 
@@ -36,7 +36,7 @@ const faqs = [
     },
     {
         question: "Aldatılan eş ne kadar tazminat alır?",
-        answer: "Aldatılan eş, hem maddi hem de manevi tazminat talep edebilir. Manevi tazminat miktarı tarafların ekonomik durumu, evlilik süresi ve olayın ağırlığına göre belirlenir. 2026 yılında İzmir aile mahkemelerinde zina nedeniyle hükmedilen manevi tazminat miktarları genellikle 50.000 TL ile 250.000 TL arasında değişmektedir. Maddi tazminat ise boşanma nedeniyle uğranılan somut zararın ispatına bağlıdır."
+        answer: "Aldatılan eş, hem maddi hem de manevi tazminat talep edebilir. Manevi tazminat miktarı tarafların ekonomik durumu, evlilik süresi ve olayın ağırlığına göre belirlenir. Miktar, somut olayın özelliklerine göre hakim tarafından takdir edilir (TMK m. 174). Maddi tazminat ise boşanma nedeniyle uğranılan somut zararın ispatına bağlıdır."
     },
     {
         question: "Aldatma affedilirse dava açılabilir mi?",
@@ -124,7 +124,7 @@ export default function AldatmaBosanmaIzmirPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -268,7 +268,7 @@ export default function AldatmaBosanmaIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Aldatma Nedeniyle Boşanma Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Aldatma nedeniyle boşanma ve tazminat davası sürecinde profesyonel hukuki destek için hemen randevu alın.
+                                    Aldatma nedeniyle boşanma ve tazminat davası sürecinde profesyonel hukuki destek için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Boşanma avukatı</strong> olarak haklarınızı korumaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

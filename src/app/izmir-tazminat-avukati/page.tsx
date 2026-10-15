@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: "website",
     },
     other: {
-        "article:modified_time": "2026-04-17",
+        "article:modified_time": "2026-10-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-tazminat-avukati/",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "Tazminat davası avukat ücreti ne kadar?",
-        answer: "2026 yılında İzmir'de trafik kazası tazminatı davalarında 40.000–80.000 TL, iş kazası tazminatı davalarında 50.000–100.000 TL, malpraktis davalarında 60.000–120.000 TL arasında ücret belirlenmektedir. Bazı davalarda nispi ücret (tazminat miktarının %10-25'i) de uygulanabilir."
+        question: "Tazminat davalarında avukat ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır."
     },
     {
         question: "Maddi tazminat nasıl hesaplanır?",
@@ -146,7 +146,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
 
                         <p>
-                            Bu sebeple tazminat hukuku konusunda deneyimli bir <strong>İzmir tazminat avukatı</strong> ile çalışmak, hak ettiğiniz tazminatı tam ve zamanında almanız açısından büyük önem taşımaktadır.
+                            Tazminat taleplerinde zamanaşımı süreleri ve delil durumu sonucu doğrudan etkilediğinden, sürecin başında dosyanın bir <strong>İzmir tazminat avukatı</strong> ile birlikte değerlendirilmesi önerilir.
                         </p>
 
                         {/* İletişim */}
@@ -159,7 +159,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <ul>
                             <li><strong>Tazminat Avukatı:</strong> Av. Mert Kağan Çetin</li>
                             <li><strong>Telefon:</strong> <a href="tel:+905445854645">0544 585 46 45</a></li>
-                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
+                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir</li>
                             <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
                         </ul>
 
@@ -244,51 +244,14 @@ export default function IzmirTazminatAvukatiPage() {
                         </ul>
 
                         {/* Avukatlık Ücreti */}
-                        <h2 id="avukatlik-ucreti" className="scroll-mt-24">Tazminat Davalarında Avukatlık Ücreti</h2>
+                        <h2 id="avukatlik-ucreti" className="scroll-mt-24">Tazminat Davalarında Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            <strong>İzmir tazminat avukatı</strong> olarak şeffaf fiyatlandırma politikası uyguluyoruz. 2026 yılı güncel ücret aralıklarımız:
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan <strong>Avukatlık Asgari Ücret Tarifesi</strong>&apos;nin altında olamaz.
                         </p>
 
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Dava Türü</th>
-                                    <th>Süre (Ortalama)</th>
-                                    <th>Ücret Aralığı</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><Link href="/izmir-tazminat-avukati/trafik-kazasi-tazminati/">Trafik Kazası Tazminatı</Link></td>
-                                    <td>1 - 3 yıl</td>
-                                    <td>40.000 - 80.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>İş Kazası Tazminatı</td>
-                                    <td>1 - 2 yıl</td>
-                                    <td>50.000 - 100.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td><Link href="/izmir-tazminat-avukati/malpraktis-davasi/">Malpraktis Davası</Link></td>
-                                    <td>1 - 3 yıl</td>
-                                    <td>60.000 - 120.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td><Link href="/izmir-tazminat-avukati/destekten-yoksun-kalma/">Destekten Yoksun Kalma</Link></td>
-                                    <td>1 - 2 yıl</td>
-                                    <td>50.000 - 100.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>Maddi-Manevi Tazminat</td>
-                                    <td>6 ay - 2 yıl</td>
-                                    <td>30.000 - 80.000 TL</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
                         <p>
-                            Lütfen kesin fiyat bilgisi almak için <strong>tazminat avukatı</strong> ile <Link href="/iletisim/">iletişime geçiniz</Link>.
+                            Her taraf kendi avukatının ücretini öder; dava sonunda aleyhine hüküm verilen taraf, mahkemenin tarifeye göre hükmettiği karşı vekalet ücreti ile yargılama giderlerini öder. Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır.
                         </p>
 
                         <hr />
@@ -303,7 +266,7 @@ export default function IzmirTazminatAvukatiPage() {
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                                        İzmir Barosu&apos;na kayıtlı avukat. tazminat, kira, iş ve boşanma hukuku alanlarında hizmet vermektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Tazminat, kira, iş ve boşanma hukuku alanlarında hizmet vermektedir.
                                     </p>
                                     <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
                                         <span>İzmir Barosu Sicil: 15556</span>
@@ -344,7 +307,7 @@ export default function IzmirTazminatAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-2xl p-8 md:p-10">
                                 <p className="text-2xl font-playfair font-bold mb-3">İzmir Tazminat Avukatı ile Görüşün</p>
                                 <p className="text-slate-300 mb-6">
-                                    Tazminat davalarınız için hemen randevu alın.
+                                    Tazminat davalarınız için iletişime geçebilirsiniz.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-6 mb-6 text-sm">

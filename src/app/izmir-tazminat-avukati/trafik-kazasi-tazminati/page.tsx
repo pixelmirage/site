@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/trafik-kazasi-tazminati/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-tazminat-avukati/trafik-kazasi-tazminati/" },
 };
 
@@ -32,7 +32,7 @@ const faqs = [
     },
     {
         question: "Sigorta Tahkim Komisyonu süreci nasıl işler?",
-        answer: "Sigorta Tahkim Komisyonu, sigorta şirketiyle anlaşmazlık halinde başvurulan bağımsız bir karar organıdır. Başvuru için önce sigorta şirketine yazılı başvuru yapılmış ve 15 iş günü içinde yanıt alınamamış veya olumsuz yanıt alınmış olmalıdır. Komisyona başvuru ücreti dava masraflarından düşüktür. 40.000 TL altı uyuşmazlıklarda hakem kararı kesindir, üzerinde itiraz yolu açıktır. Süreç genellikle 4-6 ay içinde sonuçlanır."
+        answer: "Sigorta Tahkim Komisyonu, sigorta şirketiyle anlaşmazlık halinde başvurulan bağımsız bir karar organıdır. Başvuru için önce sigorta şirketine yazılı başvuru yapılmış ve 15 iş günü içinde yanıt alınamamış veya olumsuz yanıt alınmış olmalıdır. Komisyona başvuru ücreti dava masraflarından düşüktür. Sigortacılık Kanunu m. 30 uyarınca belirlenen ve her yıl güncellenen parasal sınırın altındaki uyuşmazlıklarda hakem kararı kesindir; bu sınırın üzerindeki kararlara itiraz yolu açıktır. Süreç genellikle 4-6 ay içinde sonuçlanır."
     },
     {
         question: "Kusur oranına nasıl itiraz edebilirim?",
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "trafik-kazasi-turleri", title: "Trafik Kazası Türleri" },
     { id: "tazminat-sureci", title: "Tazminat Başvuru Süreci" },
     { id: "sigorta-basvurusu", title: "Sigorta ve Tahkim Süreci" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Avukatlık Ücreti" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -124,7 +124,7 @@ export default function TrafikKazasiTazminatiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -216,27 +216,14 @@ export default function TrafikKazasiTazminatiPage() {
 
                         <SectionCTA text="Trafik kazası tazminatınız için avukat desteği almak ister misiniz?" />
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Trafik Kazası Tazminat Dava Ücretleri</h2>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-primary text-white">
-                                        <th className="px-4 py-3 text-left">Dava Türü</th>
-                                        <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Sigorta Tahkim Başvurusu</td><td className="px-4 py-3">4-6 ay</td><td className="px-4 py-3">30.000 - 50.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Trafik Kazası Tazminat Davası</td><td className="px-4 py-3">6 ay - 2 yıl</td><td className="px-4 py-3">40.000 - 80.000 TL</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Nispi Ücret (Tazminata Oranla)</td><td className="px-4 py-3">6 ay - 2 yıl</td><td className="px-4 py-3">%10 - %20</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h2 id="ucretler" className="scroll-mt-24">Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Kesin ücret davanın karmaşıklığına ve tazminat miktarına göre ilk görüşmede belirlenir. Destekten yoksun kalma tazminatı hakkında bilgi almak için <Link href="/izmir-tazminat-avukati/destekten-yoksun-kalma/">destekten yoksun kalma tazminatı sayfamızı</Link> ziyaret edebilirsiniz.
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz. Harç ve gider avansı gibi yargılama giderleri avukatlık ücretinden ayrıdır.
+                        </p>
+
+                        <p>
+                            Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır. <Link href="/iletisim/">İletişim bilgilerimize</Link> buradan ulaşabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -291,7 +278,7 @@ export default function TrafikKazasiTazminatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Trafik Kazası Tazminatınız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Trafik kazası tazminat süreciniz için hemen randevu alın.
+                                    Trafik kazası tazminat süreciniz için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Trafik kazası tazminat avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
