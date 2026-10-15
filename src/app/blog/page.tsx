@@ -8,7 +8,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "Hukuki Makaleler ve Blog Yazıları",
-    description: "Kira hukuku, iş hukuku, boşanma davaları, tahliye süreçleri ve güncel yargı kararları hakkında uzman görüşleri ve bilgilendirici makaleler.",
+    description: "Kira hukuku, iş hukuku, boşanma davaları, tahliye süreçleri ve güncel yargı kararları hakkında bilgilendirici makaleler.",
     alternates: {
         canonical: "https://mertkagancetin.com/blog/",
     },

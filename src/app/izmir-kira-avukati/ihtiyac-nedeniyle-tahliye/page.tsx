@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const faqs = [
     {
         question: "İhtiyaç nedeniyle tahliye davası ne kadar sürer?",
-        answer: "İzmir'de ihtiyaç nedeniyle tahliye davası ortalama 6-12 ay sürmektedir. Süre, mahkemenin iş yüküne, delil durumuna ve kiracının savunmasına göre değişir. Bayraklı Adliyesi Sulh Hukuk Mahkemeleri'ndeki yoğunluk da süreyi etkileyen faktörlerdendir. Tahliye kararı kesinleştikten sonra kiracı tahliye etmezse icra yoluyla zorla tahliye 1-2 ay daha sürebilir."
+        answer: "İzmir'de ihtiyaç nedeniyle tahliye davası ortalama 6-12 ay sürmektedir. Süre, mahkemenin iş yüküne, delil durumuna ve kiracının savunmasına göre değişir. İzmir Adliyesi Sulh Hukuk Mahkemeleri'ndeki yoğunluk da süreyi etkileyen faktörlerdendir. Tahliye kararı kesinleştikten sonra kiracı tahliye etmezse icra yoluyla zorla tahliye 1-2 ay daha sürebilir."
     },
     {
         question: "İhtiyacın ispatı nasıl yapılır?",
@@ -85,7 +85,7 @@ export default function IhtiyacNedeniyleTahliyePage() {
                             İhtiyaç Nedeniyle Tahliye Davası İzmir
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle kiracı tahliye davası süreçlerinde uzman avukat desteği.
+                            TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle kiracı tahliye davası süreçlerinde avukat desteği.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
@@ -214,7 +214,7 @@ export default function IhtiyacNedeniyleTahliyePage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. İhtiyaç nedeniyle tahliye davaları, yeni malik tahliyesi ve konut ihtiyacı nedeniyle kiracı tahliye davalarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi&apos;ndeki Sulh Hukuk Mahkemeleri&apos;nde tahliye davalarını etkin şekilde takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. İhtiyaç nedeniyle tahliye davaları, yeni malik tahliyesi ve konut ihtiyacı nedeniyle kiracı tahliye davalarında profesyonel hukuki destek sunuyor. İzmir Adliyesi&apos;ndeki Sulh Hukuk Mahkemeleri&apos;nde tahliye davalarını etkin şekilde takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>

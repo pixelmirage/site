@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Velayet Davaları İzmir | Velayet Avukatı",
-    description: "İzmir'de velayet davaları avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayet değişikliği, kişisel ilişki düzenlemesi ve mahkeme kriterlerinde uzman hukuki destek.",
+    description: "İzmir'de velayet davaları avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayet değişikliği, kişisel ilişki düzenlemesi ve mahkeme kriterlerinde hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "Velayet Davaları İzmir | Av. Mert Kağan Çetin",
-        description: "İzmir'de çocuk velayeti, mahkeme kriterleri ve velayet davası süreçlerinde uzman avukatlık hizmeti.",
+        description: "İzmir'de çocuk velayeti, mahkeme kriterleri ve velayet davası süreçlerinde avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/velayet-davasi/",
         type: "article",
     },
@@ -128,7 +128,7 @@ export default function VelayetDavasiPage() {
                         </p>
 
                         <p>
-                            Velayet davaları, Türk Medeni Kanunu&apos;nun 335-351. maddeleri kapsamında düzenlenir. Velayet kararlarında temel ölçüt çocuğun üstün yararıdır. <strong>Velayet davası avukatı</strong> olarak Bayraklı Adliyesi Aile Mahkemesi&apos;ndeki velayet davalarını yakından takip ediyoruz.
+                            Velayet davaları, Türk Medeni Kanunu&apos;nun 335-351. maddeleri kapsamında düzenlenir. Velayet kararlarında temel ölçüt çocuğun üstün yararıdır. <strong>Velayet davası avukatı</strong> olarak İzmir Adliyesi Aile Mahkemesi&apos;ndeki velayet davalarını yakından takip ediyoruz.
                         </p>
 
                         <h2 id="velayet-hukuku" className="scroll-mt-24">Velayet Hukuku ve Çocuğun Üstün Yararı</h2>
@@ -221,7 +221,7 @@ export default function VelayetDavasiPage() {
                             Velayet değişikliği davası açmadan önce yeterli delil toplamak kritik önem taşır. <strong>Velayet davası avukatı</strong> olarak delil stratejinizi belirliyor ve güçlü bir dosya hazırlıyoruz. <Link href="/izmir-bosanma-avukati/nafaka-davasi/">Nafaka davası</Link> konusunda da bilgi alabilirsiniz.
                         </p>
 
-                        <SectionCTA text="Velayet davanız için uzman avukat desteği almak ister misiniz?" />
+                        <SectionCTA text="Velayet davanız için avukat desteği almak ister misiniz?" />
 
                         <h2 id="ucretler" className="scroll-mt-24">2026 Velayet Davası Ücretleri</h2>
 
@@ -255,7 +255,7 @@ export default function VelayetDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Velayet davaları, velayetin değiştirilmesi ve kişisel ilişki düzenlemesi konularında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde aile hukuku davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Velayet davaları, velayetin değiştirilmesi ve kişisel ilişki düzenlemesi konularında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde aile hukuku davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -270,7 +270,7 @@ export default function VelayetDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; Velayet Davası Süreci ve Mahkeme Kriterleri

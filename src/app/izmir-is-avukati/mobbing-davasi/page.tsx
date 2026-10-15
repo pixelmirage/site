@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "İzmir Mobbing Davası Avukatı",
-    description: "İzmir mobbing davası avukatı Av. Mert Kağan Çetin. Psikolojik taciz, haklı fesih ve manevi tazminat davalarında uzman destek.",
+    description: "İzmir mobbing davası avukatı Av. Mert Kağan Çetin. Psikolojik taciz, haklı fesih ve manevi tazminat davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "İzmir Mobbing Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de mobbing davalarında uzman avukatlık hizmeti. İş yerinde psikolojik tacize karşı hukuki koruma.",
+        description: "İzmir'de mobbing davalarında avukatlık hizmeti. İş yerinde psikolojik tacize karşı hukuki koruma.",
         url: "https://mertkagancetin.com/izmir-is-avukati/mobbing-davasi/",
         type: "article",
     },
@@ -270,7 +270,7 @@ export default function MobbingDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Mobbing davaları, iş yerinde psikolojik taciz ve manevi tazminat davalarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde iş davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Mobbing davaları, iş yerinde psikolojik taciz ve manevi tazminat davalarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde iş davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -285,7 +285,7 @@ export default function MobbingDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-is-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir İş Avukatı (Ana Sayfa)
+                                    ← İzmir İş Avukatı
                                 </Link>
                                 <Link href="/izmir-is-avukati/ise-iade-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir İşe İade Davası Avukatı

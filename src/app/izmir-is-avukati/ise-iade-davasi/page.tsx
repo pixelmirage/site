@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "İzmir İşe İade Davası Avukatı",
-    description: "İzmir işe iade davası avukatı Av. Mert Kağan Çetin. Haksız fesih, arabuluculuk ve iş güvencesi tazminatı davalarında uzman destek.",
+    description: "İzmir işe iade davası avukatı Av. Mert Kağan Çetin. Haksız fesih, arabuluculuk ve iş güvencesi tazminatı davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "İzmir İşe İade Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de işe iade davalarında uzman avukatlık hizmeti. Haksız fesih ve iş güvencesi davalarında hukuki destek.",
+        description: "İzmir'de işe iade davalarında avukatlık hizmeti. Haksız fesih ve iş güvencesi davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-is-avukati/ise-iade-davasi/",
         type: "article",
     },
@@ -257,7 +257,7 @@ export default function IseIadeDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. İşe iade davaları, iş güvencesi tazminatı ve haksız fesih davalarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde iş davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. İşe iade davaları, iş güvencesi tazminatı ve haksız fesih davalarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde iş davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -272,7 +272,7 @@ export default function IseIadeDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-is-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir İş Avukatı (Ana Sayfa)
+                                    ← İzmir İş Avukatı
                                 </Link>
                                 <Link href="/izmir-is-avukati/kidem-tazminati-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Kıdem Tazminatı Davası Avukatı

@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Aile Hukuku Avukatı İzmir | Av. Mert Kağan Çetin",
-    description: "İzmir'de aile hukuku avukatı Av. Mert Kağan Çetin. Boşanma, velayet, nafaka, mal paylaşımı, evlat edinme ve aile içi şiddet konularında uzman hukuki destek.",
+    description: "İzmir'de aile hukuku avukatı Av. Mert Kağan Çetin. Boşanma, velayet, nafaka, mal paylaşımı, evlat edinme ve aile içi şiddet konularında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "Aile Hukuku Avukatı İzmir | Av. Mert Kağan Çetin",
-        description: "İzmir'de aile hukuku avukatı. Boşanma, velayet, nafaka, mal paylaşımı ve aile içi şiddet konularında uzman hukuki destek.",
+        description: "İzmir'de aile hukuku avukatı. Boşanma, velayet, nafaka, mal paylaşımı ve aile içi şiddet konularında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/",
         type: "article",
     },
@@ -120,7 +120,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir aile hukuku avukatı</strong> olarak boşanma, velayet, nafaka, mal paylaşımı, evlat edinme ve aile içi şiddet konularında kapsamlı hukuki destek sunuyoruz. Aile hukuku, kişilerin en hassas ve duygusal süreçlerini kapsadığından, bu alanda uzman avukat desteği büyük önem taşır.
+                            <strong>İzmir aile hukuku avukatı</strong> olarak boşanma, velayet, nafaka, mal paylaşımı, evlat edinme ve aile içi şiddet konularında kapsamlı hukuki destek sunuyoruz. Aile hukuku, kişilerin en hassas ve duygusal süreçlerini kapsadığından, bu alanda avukat desteği büyük önem taşır.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -128,7 +128,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </p>
 
                         <p>
-                            Aile hukuku, Türk Medeni Kanunu&apos;nun ikinci kitabında düzenlenen ve evlenme, boşanma, velayet, nafaka, mal rejimi, soybağı ve vesayet gibi konuları kapsayan geniş bir hukuk dalıdır. İzmir&apos;de aile hukuku davaları Bayraklı Adliyesi&apos;ndeki aile mahkemelerinde görülmektedir. Aile mahkemeleri, 4787 sayılı Aile Mahkemelerinin Kuruluş, Görev ve Yargılama Usullerine Dair Kanun ile kurulmuş özel mahkemelerdir.
+                            Aile hukuku, Türk Medeni Kanunu&apos;nun ikinci kitabında düzenlenen ve evlenme, boşanma, velayet, nafaka, mal rejimi, soybağı ve vesayet gibi konuları kapsayan geniş bir hukuk dalıdır. İzmir&apos;de aile hukuku davaları İzmir Adliyesi&apos;ndeki aile mahkemelerinde görülmektedir. Aile mahkemeleri, 4787 sayılı Aile Mahkemelerinin Kuruluş, Görev ve Yargılama Usullerine Dair Kanun ile kurulmuş özel mahkemelerdir.
                         </p>
 
                         <h2 id="aile-hukuku-nedir" className="scroll-mt-24">Aile Hukuku Nedir?</h2>
@@ -142,7 +142,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </p>
 
                         <p>
-                            Aile hukuku davaları, kişilerin en özel ve hassas konularını içerdiğinden, bu alanda uzmanlaşmış bir avukatla çalışmak büyük önem taşır. Duyguların yoğun olduğu bu süreçlerde, haklarınızı koruyacak ve süreci profesyonelce yönetecek bir avukat desteği vazgeçilmezdir.
+                            Aile hukuku davaları, kişilerin en özel ve hassas konularını içerdiğinden, bu alanda çalışan bir avukatla çalışmak büyük önem taşır. Duyguların yoğun olduğu bu süreçlerde, haklarınızı koruyacak ve süreci profesyonelce yönetecek bir avukat desteği vazgeçilmezdir.
                         </p>
 
                         <h2 id="aile-hukuku-dava-turleri" className="scroll-mt-24">Aile Hukuku Dava Türleri</h2>
@@ -196,7 +196,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                         </p>
 
                         <p>
-                            <strong>Hakların korunması:</strong> Boşanma sürecinde nafaka, tazminat ve mal paylaşımı konularında hak kayıpları yaşanmaması için uzman avukat desteği şarttır. Avukatsız yürütülen davalarda protokollerde gözden kaçan maddeler, eksik talepler veya hatalı beyanlar ileride büyük sorunlara yol açabilir. Aile hukuku avukatı, tüm haklarınızı eksiksiz şekilde talep eder ve korur.
+                            <strong>Hakların korunması:</strong> Boşanma sürecinde nafaka, tazminat ve mal paylaşımı konularında hak kayıpları yaşanmaması için avukat desteği şarttır. Avukatsız yürütülen davalarda protokollerde gözden kaçan maddeler, eksik talepler veya hatalı beyanlar ileride büyük sorunlara yol açabilir. Aile hukuku avukatı, tüm haklarınızı eksiksiz şekilde talep eder ve korur.
                         </p>
 
                         <p>
@@ -213,7 +213,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Aile hukuku alanında boşanma, velayet, nafaka, mal paylaşımı ve aile içi şiddet davalarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde aile hukuku davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Aile hukuku alanında boşanma, velayet, nafaka, mal paylaşımı ve aile içi şiddet davalarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde aile hukuku davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -228,7 +228,7 @@ export default function AileHukukuAvukatiIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; İzmir Anlaşmalı Boşanma Avukatı

@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Çekişmeli Boşanma İzmir | Boşanma Avukatı",
-    description: "İzmir'de çekişmeli boşanma davası avukatı Av. Mert Kağan Çetin. Kusur tespiti, delil toplama, tazminat ve nafaka taleplerinde uzman hukuki destek.",
+    description: "İzmir'de çekişmeli boşanma davası avukatı Av. Mert Kağan Çetin. Kusur tespiti, delil toplama, tazminat ve nafaka taleplerinde hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "Çekişmeli Boşanma İzmir | Av. Mert Kağan Çetin",
-        description: "İzmir'de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında uzman avukat desteği.",
+        description: "İzmir'de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında avukat desteği.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/",
         type: "article",
     },
@@ -85,7 +85,7 @@ export default function CekismeliBosanmaIzmirPage() {
                             Çekişmeli Boşanma İzmir
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            İzmir&apos;de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında uzman avukat desteği.
+                            İzmir&apos;de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında avukat desteği.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
@@ -193,7 +193,7 @@ export default function CekismeliBosanmaIzmirPage() {
                             Her aşamada doğru stratejinin belirlenmesi davanın sonucunu doğrudan etkiler. Özellikle delillerin zamanında toplanması ve mahkemeye sunulması, tanık ifadelerinin tutarlılığı ve hukuki argümanların güçlü bir şekilde ortaya konması kritik önem taşır.
                         </p>
 
-                        <SectionCTA text="Çekişmeli boşanma davanız için uzman avukat desteği almak ister misiniz?" />
+                        <SectionCTA text="Çekişmeli boşanma davanız için avukat desteği almak ister misiniz?" />
 
                         <h2 id="kusur-tespiti-ve-deliller" className="scroll-mt-24">Kusur Tespiti ve Deliller</h2>
 
@@ -228,7 +228,7 @@ export default function CekismeliBosanmaIzmirPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Çekişmeli boşanma davaları, kusur tespiti, delil toplama ve aile hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde boşanma davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Çekişmeli boşanma davaları, kusur tespiti, delil toplama ve aile hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde boşanma davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -243,7 +243,7 @@ export default function CekismeliBosanmaIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti

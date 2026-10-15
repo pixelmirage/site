@@ -13,7 +13,7 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Anlaşmalı Boşanma İzmir | Tek Celsede Boşanma Avukatı",
-    description: "İzmir'de anlaşmalı boşanma süreci, şartları ve avukat desteği. Protokol hazırlama, tek celsede boşanma, nafaka ve velayet düzenlemesinde uzman hukuki destek.",
+    description: "İzmir'de anlaşmalı boşanma süreci, şartları ve avukat desteği. Protokol hazırlama, tek celsede boşanma, nafaka ve velayet düzenlemesinde hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "Anlaşmalı Boşanma İzmir | Av. Mert Kağan Çetin",
@@ -32,7 +32,7 @@ const faqs = [
     },
     {
         question: "Anlaşmalı boşanma davası tek celsede biter mi?",
-        answer: "Evet, anlaşmalı boşanma davası koşulları sağlandığında tek celsede sonuçlanır. Bunun için evliliğin en az 1 yıl sürmüş olması, her iki tarafın da boşanmayı kabul etmesi ve hakimin protokolü uygun bulması gerekir. Tarafların duruşmaya bizzat katılarak iradelerini beyan etmeleri zorunludur. Bayraklı Adliyesi'nde anlaşmalı boşanma davaları genellikle 1-3 ay içinde kesinleşir."
+        answer: "Evet, anlaşmalı boşanma davası koşulları sağlandığında tek celsede sonuçlanır. Bunun için evliliğin en az 1 yıl sürmüş olması, her iki tarafın da boşanmayı kabul etmesi ve hakimin protokolü uygun bulması gerekir. Tarafların duruşmaya bizzat katılarak iradelerini beyan etmeleri zorunludur. İzmir Adliyesi'nde anlaşmalı boşanma davaları genellikle 1-3 ay içinde kesinleşir."
     },
     {
         question: "Çocuk varsa anlaşmalı boşanma olabilir mi?",
@@ -128,7 +128,7 @@ export default function AnlasmaliBosanmaPage() {
                         </p>
 
                         <p>
-                            Anlaşmalı boşanma, Türk Medeni Kanunu&apos;nun 166/3. maddesi kapsamında düzenlenen ve eşlerin boşanmanın tüm sonuçları üzerinde anlaşarak tek celsede boşanmasını sağlayan bir yoldur. <strong>Anlaşmalı boşanma avukatı</strong> olarak Bayraklı Adliyesi&apos;nde açılan anlaşmalı boşanma davalarını yakından takip ediyoruz.
+                            Anlaşmalı boşanma, Türk Medeni Kanunu&apos;nun 166/3. maddesi kapsamında düzenlenen ve eşlerin boşanmanın tüm sonuçları üzerinde anlaşarak tek celsede boşanmasını sağlayan bir yoldur. <strong>Anlaşmalı boşanma avukatı</strong> olarak İzmir Adliyesi&apos;nde açılan anlaşmalı boşanma davalarını yakından takip ediyoruz.
                         </p>
 
                         <h2 id="anlasmali-bosanma-nedir" className="scroll-mt-24">Anlaşmalı Boşanma Nedir?</h2>
@@ -174,7 +174,7 @@ export default function AnlasmaliBosanmaPage() {
                                 { step: "1", title: "Ön Görüşme ve İhtiyaç Analizi", desc: "Eşlerin boşanma konusundaki taleplerini, nafaka beklentilerini, çocuk varsa velayet tercihlerini ve mal paylaşımı konusundaki görüşlerini ayrı ayrı dinliyoruz." },
                                 { step: "2", title: "Protokol Taslağı Hazırlama", desc: "Nafaka miktarı ve süresi, velayet düzenlemesi, kişisel ilişki takvimi, mal paylaşımı ve tazminat konularını içeren protokol taslağını hazırlıyoruz." },
                                 { step: "3", title: "Müzakere ve Revizyon", desc: "Taraflar arasında anlaşmazlık olan konularda müzakere yürütüyor ve protokolü her iki tarafın da kabul edeceği hale getiriyoruz." },
-                                { step: "4", title: "Dava Dilekçesi ve Başvuru", desc: "Protokolü ve boşanma dava dilekçesini hazırlayarak Bayraklı Adliyesi Aile Mahkemesi&apos;ne başvuruyoruz." },
+                                { step: "4", title: "Dava Dilekçesi ve Başvuru", desc: "Protokolü ve boşanma dava dilekçesini hazırlayarak İzmir Adliyesi Aile Mahkemesi&apos;ne başvuruyoruz." },
                                 { step: "5", title: "Duruşma ve Kararın Kesinleşmesi", desc: "Tek celsede duruşmaya katılarak hakimin tarafları dinlemesini sağlıyoruz. Kararın kesinleşmesi ve nüfus kaydının güncellenmesini takip ediyoruz." },
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4 p-5 bg-slate-50 rounded-xl border-l-4 border-secondary">
@@ -257,7 +257,7 @@ export default function AnlasmaliBosanmaPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Anlaşmalı boşanma davaları, boşanma protokolü hazırlama ve aile hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde boşanma davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Anlaşmalı boşanma davaları, boşanma protokolü hazırlama ve aile hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde boşanma davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -272,7 +272,7 @@ export default function AnlasmaliBosanmaPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/blog/anlasmali-bosanma-nasil-acilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; Anlaşmalı Boşanma Nasıl Açılır?

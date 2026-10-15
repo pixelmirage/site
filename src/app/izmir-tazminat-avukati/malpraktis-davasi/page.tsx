@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "İzmir Malpraktis Davası Avukatı",
-    description: "İzmir malpraktis davası avukatı Av. Mert Kağan Çetin. Doktor hatası ve tıbbi ihmal kaynaklı tazminat davalarında uzman destek.",
+    description: "İzmir malpraktis davası avukatı Av. Mert Kağan Çetin. Doktor hatası ve tıbbi ihmal kaynaklı tazminat davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "İzmir Malpraktis Davası Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de malpraktis davalarında uzman avukatlık hizmeti. Doktor hatası ve tıbbi ihmal tazminat davalarında hukuki destek.",
+        description: "İzmir'de malpraktis davalarında avukatlık hizmeti. Doktor hatası ve tıbbi ihmal tazminat davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/malpraktis-davasi/",
         type: "article",
     },
@@ -244,7 +244,7 @@ export default function MalpraktisDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Malpraktis davaları, doktor hatası tazminat davaları ve sağlık hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde tazminat davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Malpraktis davaları, doktor hatası tazminat davaları ve sağlık hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde tazminat davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -259,7 +259,7 @@ export default function MalpraktisDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-tazminat-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Tazminat Avukatı (Ana Sayfa)
+                                    ← İzmir Tazminat Avukatı
                                 </Link>
                                 <Link href="/blog/malpraktis-davasi-doktor-hatasi-tazminati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Malpraktis Davası ve Doktor Hatası Tazminatı Rehberi

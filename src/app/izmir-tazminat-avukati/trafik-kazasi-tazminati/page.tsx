@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "İzmir Trafik Kazası Tazminat Avukatı",
-    description: "İzmir trafik kazası tazminat avukatı Av. Mert Kağan Çetin. Sigorta başvurusu ve trafik kazası tazminat davalarında uzman destek.",
+    description: "İzmir trafik kazası tazminat avukatı Av. Mert Kağan Çetin. Sigorta başvurusu ve trafik kazası tazminat davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "İzmir Trafik Kazası Tazminat Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de trafik kazası tazminat davalarında uzman avukatlık hizmeti. Sigorta başvurusu ve dava sürecinde hukuki destek.",
+        description: "İzmir'de trafik kazası tazminat davalarında avukatlık hizmeti. Sigorta başvurusu ve dava sürecinde hukuki destek.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/trafik-kazasi-tazminati/",
         type: "article",
     },
@@ -249,7 +249,7 @@ export default function TrafikKazasiTazminatiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Trafik kazası tazminat davaları, sigorta uyuşmazlıkları ve Tahkim Komisyonu başvurularında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde tazminat davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Trafik kazası tazminat davaları, sigorta uyuşmazlıkları ve Tahkim Komisyonu başvurularında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde tazminat davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -264,7 +264,7 @@ export default function TrafikKazasiTazminatiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-tazminat-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Tazminat Avukatı (Ana Sayfa)
+                                    ← İzmir Tazminat Avukatı
                                 </Link>
                                 <Link href="/blog/trafik-kazasi-tazminati-alma-sureci/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Trafik Kazası Tazminatı Alma Süreci Rehberi

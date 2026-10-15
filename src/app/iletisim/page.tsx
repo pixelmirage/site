@@ -8,14 +8,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "İletişim | İzmir Hukuk Bürosu",
-    description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+    description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında çalışan hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
     openGraph: {
         images: ["/og-image.jpg"],
         title: "İletişim | Av. Mert Kağan Çetin Hukuk Bürosu",
-        description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+        description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında çalışan hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
         url: "https://mertkagancetin.com/iletisim/",
     },
 };

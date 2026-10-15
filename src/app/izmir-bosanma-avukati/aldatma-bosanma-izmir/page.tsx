@@ -32,7 +32,7 @@ const faqs = [
     },
     {
         question: "Aldatma nedeniyle boşanma davası ne kadar sürer?",
-        answer: "Aldatma nedeniyle boşanma davası ortalama 1-2 yıl sürer. Süre, delillerin niteliğine, tanıkların sayısına ve karşı tarafın tutumuna göre değişir. Zina sebebiyle açılan davalarda delil toplama süreci özellikle önem taşır. İzmir Bayraklı Adliyesi&apos;nde bu tür davalar genellikle 12-18 ay içinde sonuçlanmaktadır."
+        answer: "Aldatma nedeniyle boşanma davası ortalama 1-2 yıl sürer. Süre, delillerin niteliğine, tanıkların sayısına ve karşı tarafın tutumuna göre değişir. Zina sebebiyle açılan davalarda delil toplama süreci özellikle önem taşır. İzmir Adliyesi&apos;nde bu tür davalar genellikle 12-18 ay içinde sonuçlanmaktadır."
     },
     {
         question: "Aldatılan eş ne kadar tazminat alır?",
@@ -85,7 +85,7 @@ export default function AldatmaBosanmaIzmirPage() {
                             Aldatma Nedeniyle Boşanma İzmir
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            TMK m. 161 kapsamında aldatma (zina) sebebiyle boşanma davası süreçlerinde uzman avukat desteği.
+                            TMK m. 161 kapsamında aldatma (zina) sebebiyle boşanma davası süreçlerinde avukat desteği.
                             <strong className="text-white"> Av. Mert Kağan Çetin</strong> ile haklarınızı koruyun.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -128,7 +128,7 @@ export default function AldatmaBosanmaIzmirPage() {
                         </p>
 
                         <p>
-                            Aldatma, evlilik birliğinde en ağır güven ihlallerinden biridir. TMK m. 185 uyarınca eşler birbirlerine sadakat yükümlülüğü altındadır. Bu yükümlülüğün ihlali, aldatılan eşe hem boşanma davası açma hem de maddi ve manevi tazminat talep etme hakkı verir. İzmir&apos;de aldatma nedeniyle boşanma davalarında uzman avukat desteği, haklarınızın eksiksiz korunması için büyük önem taşır.
+                            Aldatma, evlilik birliğinde en ağır güven ihlallerinden biridir. TMK m. 185 uyarınca eşler birbirlerine sadakat yükümlülüğü altındadır. Bu yükümlülüğün ihlali, aldatılan eşe hem boşanma davası açma hem de maddi ve manevi tazminat talep etme hakkı verir. İzmir&apos;de aldatma nedeniyle boşanma davalarında avukat desteği, haklarınızın eksiksiz korunması için büyük önem taşır.
                         </p>
 
                         <h2 id="aldatma-nedeniyle-bosanma-nedir" className="scroll-mt-24">Aldatma (Zina) Nedeniyle Boşanma Nedir?</h2>
@@ -223,7 +223,7 @@ export default function AldatmaBosanmaIzmirPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Aldatma nedeniyle boşanma davaları, zina tazminatı ve aile hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde boşanma davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Aldatma nedeniyle boşanma davaları, zina tazminatı ve aile hukuku uyuşmazlıklarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde boşanma davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -238,7 +238,7 @@ export default function AldatmaBosanmaIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; Çekişmeli Boşanma Davası Süreci ve Kusur Tespiti
