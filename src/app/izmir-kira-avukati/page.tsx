@@ -12,11 +12,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Kira Avukatı | Tahliye, Kira Tespit – Av. M.K. Çetin",
+        absolute: "İzmir Kira Avukatı | Kiracı Tahliye, Kira Tespit – Av. Çetin",
     },
     description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
     openGraph: {
-        title: "İzmir Kira Avukatı | Tahliye, Kira Tespit – Av. M.K. Çetin",
+        title: "İzmir Kira Avukatı | Kiracı Tahliye, Kira Tespit – Av. Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
         type: "website",
@@ -37,6 +37,7 @@ const tocItems = [
     { id: "kira-davalari", title: "Kira Davaları" },
     { id: "arabuluculuk", title: "Zorunlu Arabuluculuk" },
     { id: "kiraci-nasil-cikarilir", title: "Kiracı Nasıl Çıkarılır?" },
+    { id: "tahliye-taahhudu", title: "Tahliye Taahhüdü" },
     { id: "yeni-malik-tahliye", title: "Yeni Malik Tahliyesi" },
     { id: "icra-yoluyla-tahliye", title: "İcra Yoluyla Tahliye" },
     { id: "kira-tespit-davasi", title: "Kira Tespit Davası" },
@@ -53,6 +54,10 @@ const tocItems = [
 ];
 
 const faqs = [
+    {
+        question: "Tahliye Taahhüdü ile Kiracı Nasıl Çıkarılır?",
+        answer: "Kiracı, kiralananın tesliminden sonra belli bir tarihte boşaltmayı yazılı olarak taahhüt edip çıkmamışsa, kiraya veren bu tarihten itibaren bir ay içinde icraya başvurabilir veya dava açabilir (TBK m. 352/1). İcra yolunda kiracıya tahliye emri tebliğ edilir; taşınmazı boşaltmak için 15 gün, itiraz için 7 gün süre vardır (İİK m. 272, 274)."
+    },
     {
         question: "İzmir'de kira davası hangi mahkemede açılır?",
         answer: "Kira ilişkisinden doğan davalar, dava değerine bakılmaksızın Sulh Hukuk Mahkemesinde görülür (HMK m. 4/1-a). Yetkili mahkeme kural olarak davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmenin ifa yeri mahkemesinde de dava açılabilir (HMK m. 10)."
@@ -136,7 +141,8 @@ export default function IzmirKiraAvukatiPage() {
                                     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira tespit davası", "url": "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/" } },
                                     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira uyarlama davası", "url": "https://mertkagancetin.com/izmir-kira-avukati/kira-uyarlama-davasi/" } },
                                     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira alacağı icra takibi", "url": "https://mertkagancetin.com/izmir-kira-avukati/kira-borcu-icra/" } },
-                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İhtiyaç nedeniyle tahliye", "url": "https://mertkagancetin.com/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/" } }
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İhtiyaç nedeniyle tahliye", "url": "https://mertkagancetin.com/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/" } },
+                                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tahliye taahhüdüne dayalı icra takibi", "url": "https://mertkagancetin.com/tahliye-taahhutnamesi/" } }
                                 ]
                             }
                         },
@@ -170,7 +176,7 @@ export default function IzmirKiraAvukatiPage() {
 
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İzmir Kira Avukatı – Ev Sahibi ve Kiracı Uyuşmazlıkları
+                            İzmir Kira Avukatı – Kiracı Tahliye ve Kira Tespit Davaları
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             <strong className="text-white">İzmir kira avukatı</strong> Av. Mert Kağan Çetin; tahliye, kira tespiti, kira uyarlama, depozito ve kira alacağı uyuşmazlıklarında Bayraklı ofisinden İzmir genelinde avukatlık hizmeti vermektedir.
@@ -230,11 +236,11 @@ export default function IzmirKiraAvukatiPage() {
                         <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Kira Avukatı İletişim</h2>
 
                         <p>
-                            İzmir&apos;de kira hukuku alanında çalışan avukatlar, hem kiracıların hem de ev sahiplerinin karşılaşabileceği hukuki sorunların çözümünde yardımcı olmaktadır. <Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/">Kira sözleşmelerinin</Link> hazırlanması, kiracı veya ev sahibi haklarının korunması, kira artışı uygulamaları, <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye işlemleri</Link> gibi konularda hukuki destek almak isteyenler İzmir kira avukatına başvurabilir.
+                            Ofisimiz Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir adresindedir. İlk görüşme telefonla yapılabilir; kira sözleşmesi, ihtarname ve ödeme kayıtları gibi belgeler bu görüşmede değerlendirilerek izlenecek yol belirlenir.
                         </p>
 
                         <p>
-                            İzmir kira avukatları, müvekkillerine hukuki danışmanlık hizmeti sunarak kira hukuku konusunda doğru adımlar atmalarına yardımcı olurlar. Kiracıların veya ev sahiplerinin haklarını korumak için gerekli olan tüm prosedürleri takip ederek müvekkillerinin haklarını savunurlar.
+                            Kira davaları İzmir Adliyesi&apos;ndeki sulh hukuk mahkemelerinde, icra yoluyla tahliye takiplerine ilişkin itirazlar ise icra hukuk mahkemelerinde görülür. Bayraklı, Karşıyaka, Bornova, Konak, Buca, Çiğli, Gaziemir, Balçova, Narlıdere, Karabağlar ve Güzelbahçe başta olmak üzere İzmir genelinde ev sahibi ve kiracılara <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye</Link>, <Link href="/izmir-kira-avukati/kira-tespit-davasi/">kira tespit</Link> ve <Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/">kira sözleşmesi</Link> uyuşmazlıklarında hukuki destek verilmektedir.
                         </p>
 
                         <p>
@@ -319,7 +325,7 @@ export default function IzmirKiraAvukatiPage() {
                         <h2 id="kiraci-nasil-cikarilir" className="scroll-mt-24">Kiracı Nasıl Çıkarılır?</h2>
 
                         <p>
-                            Kiracılarıyla sorun yaşayan ev sahipleri &quot;kiracı nasıl çıkarılır?&quot;, &quot;kirasını düzenli ödeyen kiracı evden çıkarılabilir mi?&quot; şeklinde sorular sormaktadır.
+                            Kiracı yalnızca kanunda sayılan sebeplerle çıkarılabilir: kira borcunda temerrüt (TBK m. 315), iki haklı ihtar (TBK m. 352/2), yazılı tahliye taahhüdü (TBK m. 352/1), konut veya işyeri ihtiyacı (TBK m. 350), yeniden inşa ve imar (TBK m. 350) ya da on yıllık uzama süresinin dolması (TBK m. 347). Tahliye dava veya icra yoluyla sağlanır; kiracı hiçbir durumda zorla çıkarılamaz.
                         </p>
 
                         <p>
@@ -341,7 +347,7 @@ export default function IzmirKiraAvukatiPage() {
                             <li>Yeni malikin gereksinimi nedeniyle tahliye davası</li>
                             <li>Yazılı olarak verilmiş <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü</Link> nedeniyle kiracının tahliyesi (TBK m. 352/1; bkz. <Link href="/sozluk/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link>)</li>
                             <li>Bir kira döneminde <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> nedeniyle tahliye davası (TBK m. 352/2; terim için <Link href="/sozluk/iki-hakli-ihtar/">iki haklı ihtar</Link> açıklaması)</li>
-                            <li>Kiracının veya birlikte yaşadığı eşinin aynı ilçe sınırları içinde konutunun bulunması</li>
+                            <li>Kiracının veya birlikte yaşadığı eşinin aynı ilçe veya belde belediye sınırları içinde oturmaya elverişli bir konutunun bulunması ve kiraya verenin bunu sözleşmenin kurulması sırasında bilmemesi; dava, kira süresinin sona ermesinden itibaren bir ay içinde açılmalıdır (TBK m. 352/3)</li>
                         </ul>
 
                         <h3>3. Kiracının Yükümlülüklerine Aykırı Davranması Nedeniyle Fesih</h3>
@@ -357,7 +363,7 @@ export default function IzmirKiraAvukatiPage() {
                         <h3>4. Kiracının Temerrüdü Nedeniyle Tahliye</h3>
 
                         <p>
-                            Borcunu sözleşmede kararlaştırılan tarihte ödemeyen kiracıya ihtarname çekilerek 30 günlük süre verilir. 30 gün içerisinde kirasını ödemeyen kiracı temerrüt sebebiyle tahliye edilebilir. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">İki haklı ihtar nedeniyle tahliye</Link> sebebiyle karıştırılmaması gerekir.
+                            Kira bedelini ödemeyen kiracıya yazılı ihtarla süre verilir; konut ve çatılı işyeri kiralarında bu süre en az 30 gündür. İhtarnamede, süre içinde ödeme yapılmazsa sözleşmenin feshedileceği açıkça bildirilmelidir (TBK m. 315). Süre sonunda ödeme yapılmazsa kiraya veren tahliye davası açabilir veya İİK m. 269 uyarınca icra yoluyla tahliye talep edebilir. <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">İki haklı ihtar nedeniyle tahliye</Link> sebebiyle karıştırılmaması gerekir.
                         </p>
 
                         {/* İnfografik */}
@@ -382,6 +388,12 @@ export default function IzmirKiraAvukatiPage() {
 
                         <p>
                             İzmir kira avukatı olarak <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/">tahliye taahhütnamesi</Link>, <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/">ihtiyaç nedeniyle tahliye</Link>, <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">iki haklı ihtar</Link> ve 10 yıllık uzama süresinin dolması gibi tahliye sebeplerine dayalı davalarda hukuki destek vermekteyiz. Tahliye sebebine göre dava açma süreleri farklıdır; bu sürelerin kaçırılması halinde tahliye hakkı bir sonraki döneme kalabilir.
+                        </p>
+
+                        <h2 id="tahliye-taahhudu" className="scroll-mt-24">Tahliye Taahhüdü ile Kiracı Nasıl Çıkarılır?</h2>
+
+                        <p>
+                            Kiracı, kiralananın tesliminden sonra belli bir tarihte boşaltmayı yazılı olarak taahhüt edip çıkmamışsa, kiraya veren bu tarihten itibaren bir ay içinde icraya başvurabilir veya dava açabilir (TBK m. 352/1). İcra yolunda kiracıya tahliye emri tebliğ edilir; taşınmazı boşaltmak için 15 gün, itiraz için 7 gün süre vardır (İİK m. 272, 274). Adımlar ve taahhütname örneği için <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü ile icra yoluyla tahliye</Link> rehberimize bakabilirsiniz.
                         </p>
 
                         {/* Yeni Malik */}
