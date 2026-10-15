@@ -32,7 +32,7 @@ const faqs = [
     },
     {
         question: "Aldatma nedeniyle boşanma davası ne kadar sürer?",
-        answer: "Aldatma nedeniyle boşanma davası ortalama 1-2 yıl sürer. Süre, delillerin niteliğine, tanıkların sayısına ve karşı tarafın tutumuna göre değişir. Zina sebebiyle açılan davalarda delil toplama süreci özellikle önem taşır. İzmir İzmir Adliyesi&apos;nde bu tür davalar genellikle 12-18 ay içinde sonuçlanmaktadır."
+        answer: "Aldatma nedeniyle boşanma davası ortalama 1-2 yıl sürer. Süre, delillerin niteliğine, tanıkların sayısına ve karşı tarafın tutumuna göre değişir. Zina sebebiyle açılan davalarda delil toplama süreci özellikle önem taşır. İzmir Adliyesi&apos;nde bu tür davalar genellikle 12-18 ay içinde sonuçlanmaktadır."
     },
     {
         question: "Aldatılan eş ne kadar tazminat alır?",

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const faqs = [
     {
         question: "Boşanma davası ne kadar sürer?",
-        answer: "Anlaşmalı boşanma davaları genellikle 1-3 ay içinde sonuçlanırken, çekişmeli boşanma davaları 1-3 yıl arasında sürebilir. Süre mahkemenin iş yükü, delillerin toplanması, tanıkların dinlenmesi ve bilirkişi raporlarının beklenmesi gibi faktörlere bağlıdır. İzmir İzmir Adliyesi&apos;nde ortalama çekişmeli boşanma davası 12-18 ay arasında sonuçlanmaktadır."
+        answer: "Anlaşmalı boşanma davaları genellikle 1-3 ay içinde sonuçlanırken, çekişmeli boşanma davaları 1-3 yıl arasında sürebilir. Süre mahkemenin iş yükü, delillerin toplanması, tanıkların dinlenmesi ve bilirkişi raporlarının beklenmesi gibi faktörlere bağlıdır. İzmir Adliyesi&apos;nde ortalama çekişmeli boşanma davası 12-18 ay arasında sonuçlanmaktadır."
     },
     {
         question: "Boşanma davası için hangi belgeler gerekli?",
