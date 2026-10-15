@@ -15,12 +15,12 @@ const oldDomainRedirects = [
       source,
       has: OLD_HOST,
       destination: `${NEW}${dst}`,
-      permanent: true,
+      statusCode: 301 as const,
     }));
   }),
-  { source: '/post/:slug*', has: OLD_HOST, destination: `${NEW}/blog/`, permanent: true },
-  { source: '/blog/:path*', has: OLD_HOST, destination: `${NEW}/blog/`, permanent: true },
-  { source: '/:path*', has: OLD_HOST, destination: `${NEW}/`, permanent: true },
+  { source: '/post/:slug*', has: OLD_HOST, destination: `${NEW}/blog/`, statusCode: 301 as const },
+  { source: '/blog/:path*', has: OLD_HOST, destination: `${NEW}/blog/`, statusCode: 301 as const },
+  { source: '/:path*', has: OLD_HOST, destination: `${NEW}/`, statusCode: 301 as const },
 ];
 
 const nextConfig: NextConfig = {

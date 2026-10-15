@@ -711,7 +711,7 @@ SGK'dan iş göremezlik geliri almak, işverene karşı tazminat davası açma h
         slug: "anlasmali-bosanma",
         shortDescription: "Eşlerin nafaka, velayet ve mal paylaşımı konusunda anlaşarak birlikte açtığı boşanma davası. TMK m. 166/3 uyarınca en az 1 yıllık evlilik şartı aranır.",
         definition: "Anlaşmalı boşanma, TMK m. 166/3 uyarınca en az 1 yıllık evliliği olan eşlerin nafaka, velayet, mal paylaşımı ve tazminat konularında mutabık kalarak birlikte veya bir eşin diğerinin davasını kabul ederek açtığı, genellikle tek celsede sonuçlanan boşanma davası türüdür.",
-        detailedExplanation: `Anlaşmalı boşanma, Türk hukukundaki en hızlı ve en az yıpratıcı boşanma yoludur. Eşler, boşanmanın tüm mali ve kişisel sonuçları üzerinde anlaşarak mahkemeye birlikte başvurur.
+        detailedExplanation: `Anlaşmalı boşanma, eşlerin boşanmanın sonuçları üzerinde uzlaştığı, çekişmeli boşanmaya göre genellikle daha kısa süren boşanma yoludur. Eşler, boşanmanın tüm mali ve kişisel sonuçları üzerinde anlaşarak mahkemeye birlikte başvurur.
 
 Anlaşmalı boşanma şartları: Evliliğin en az 1 yıl sürmüş olması, eşlerin birlikte başvurması veya bir eşin davasını diğerinin kabul etmesi, nafaka, velayet, mal paylaşımı ve tazminat konularında anlaşma sağlanması.
 
@@ -738,7 +738,7 @@ Mahkeme, protokolü hakkaniyete uygun bulursa ve tarafların özgür iradeleriyl
             }
         ],
         keywords: ["anlaşmalı boşanma nedir", "anlaşmalı boşanma şartları", "anlaşmalı boşanma protokolü", "anlaşmalı boşanma süresi"],
-        lastUpdated: "2026-03-11",
+        lastUpdated: "2026-10-15",
     },
     {
         term: "Çekişmeli Boşanma",

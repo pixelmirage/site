@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-is-avukati/mobbing-davasi/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-03-22" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-is-avukati/mobbing-davasi/" },
 };
 
@@ -36,7 +36,7 @@ const faqs = [
     },
     {
         question: "Mobbing tazminatı ne kadar?",
-        answer: "Mobbing tazminatı birkaç kalemden oluşur. Manevi tazminat olarak mahkemeler 50.000-300.000 TL arasında tazminata hükmedebilir. Buna ek olarak işçi haklı nedenle istifa ederse kıdem tazminatı ve ihbar tazminatı da alır. Maddi zarar ispat edilirse (tedavi masrafları, gelir kaybı) maddi tazminat da talep edilir. Toplam tazminat tutarı mobbing süresine, ağırlığına ve işçinin kıdemine göre değişir."
+        answer: "Mobbing tazminatı birkaç kalemden oluşur. Manevi tazminat miktarı; mobbingin süresi, ağırlığı ve işçi üzerindeki etkisi dikkate alınarak hakim tarafından belirlenir (TBK m. 58). Buna ek olarak işçi haklı nedenle istifa ederse kıdem tazminatı ve ihbar tazminatı da alır. Maddi zarar ispat edilirse (tedavi masrafları, gelir kaybı) maddi tazminat da talep edilir. Toplam tazminat tutarı mobbing süresine, ağırlığına ve işçinin kıdemine göre değişir."
     },
     {
         question: "İstifa etmeden mobbing davası açılabilir mi?",
@@ -52,7 +52,7 @@ const tocItems = [
     { id: "mobbing-nedir", title: "Mobbing Nedir?" },
     { id: "dava-sureci", title: "Mobbing Davası Süreci" },
     { id: "ispat-ve-delil", title: "İspat ve Delil Yöntemleri" },
-    { id: "ucretler", title: "2026 Ücret Bilgileri" },
+    { id: "ucretler", title: "Avukatlık Ücreti" },
     { id: "sss", title: "Sıkça Sorulan Sorular" },
 ];
 
@@ -124,7 +124,7 @@ export default function MobbingDavasiPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 22 Mart 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -238,26 +238,14 @@ export default function MobbingDavasiPage() {
                             <figcaption className="text-center text-sm text-slate-500 mt-3">Mobbing davasında ispat ve delil rehberi</figcaption>
                         </figure>
 
-                        <h2 id="ucretler" className="scroll-mt-24">2026 Mobbing Davası Ücretleri</h2>
-
-                        <div className="not-prose my-8 overflow-x-auto">
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-primary text-white">
-                                        <th className="px-4 py-3 text-left">Hizmet</th>
-                                        <th className="px-4 py-3 text-left">Süre (Ortalama)</th>
-                                        <th className="px-4 py-3 text-left">Ücret Aralığı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-medium">Mobbing Davası</td><td className="px-4 py-3">6-18 ay</td><td className="px-4 py-3">35.000 - 60.000 TL</td></tr>
-                                    <tr className="border-b bg-slate-50"><td className="px-4 py-3 font-medium">Manevi Tazminat (ek dava)</td><td className="px-4 py-3">6-18 ay</td><td className="px-4 py-3">25.000 - 40.000 TL</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h2 id="ucretler" className="scroll-mt-24">Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            Ücretler ortalama değerlerdir. Mobbing davalarının karmaşıklığı ve delil durumu ücretlendirmeyi doğrudan etkiler. Kesin ücret ilk görüşmede belirlenir. <Link href="/izmir-is-avukati/">İş hukuku hizmetlerimizin</Link> tamamı hakkında bilgi alın.
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi&apos;nin altında olamaz. Harç ve gider avansı gibi yargılama giderleri avukatlık ücretinden ayrıdır.
+                        </p>
+
+                        <p>
+                            Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır. <Link href="/iletisim/">İletişim bilgilerimize</Link> buradan ulaşabilirsiniz.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -309,7 +297,7 @@ export default function MobbingDavasiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Mobbing Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    İş yerinde psikolojik tacize maruz kalıyorsanız hemen randevu alın.
+                                    İş yerinde psikolojik tacize maruz kalıyorsanız iletişime geçebilirsiniz.
                                     <strong className="text-white"> Mobbing davası avukatı</strong> olarak haklarınızı korumaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

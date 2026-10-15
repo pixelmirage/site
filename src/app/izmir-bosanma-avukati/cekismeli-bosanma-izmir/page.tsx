@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/" },
 };
 
@@ -39,8 +39,8 @@ const faqs = [
         answer: "Çekişmeli boşanmada mal paylaşımı, boşanma davasından ayrı bir dava olarak açılır. TMK m. 218-241 kapsamındaki edinilmiş mallara katılma rejimi uygulanır. Evlilik süresince edinilen mallar (maaş, kira geliri, yatırım kazancı vb.) eşit olarak paylaşılırken, kişisel mallar (miras, evlilik öncesi mallar) paylaşıma dahil edilmez. Mal paylaşımı davası boşanma kararının kesinleşmesinden itibaren 10 yıl içinde açılmalıdır."
     },
     {
-        question: "Çekişmeli boşanma avukat ücreti ne kadar?",
-        answer: "2026 yılında İzmir'de çekişmeli boşanma avukat ücreti 40.000 ila 80.000 TL arasında değişmektedir. Ücret, davanın karmaşıklığına, velayet ve mal paylaşımı taleplerine, duruşma sayısına ve davanın süresine göre belirlenir. Ayrıca mahkeme harcı, bilirkişi ücreti ve tebligat giderleri gibi dava masrafları avukatlık ücretinden ayrıdır. Kesin ücret bilgisi ilk görüşmede davanın detaylarına göre belirlenir."
+        question: "Çekişmeli boşanma avukat ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır. Mahkeme harcı, bilirkişi ve tebligat giderleri gibi yargılama giderleri avukatlık ücretinden ayrıdır."
     },
     {
         question: "Çekişmeli boşanma anlaşmalıya dönüşebilir mi?",
@@ -119,11 +119,11 @@ export default function CekismeliBosanmaIzmirPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir çekişmeli boşanma avukatı</strong> olarak eşlerin boşanma koşulları üzerinde anlaşamadığı davalarda kusur tespiti, delil toplama ve dava stratejisi konularında kapsamlı hukuki destek sunuyoruz. Çekişmeli boşanma sürecinde haklarınızı en iyi şekilde korumak için yanınızdayız.
+                            <strong>İzmir çekişmeli boşanma avukatı</strong> olarak eşlerin boşanma koşulları üzerinde anlaşamadığı davalarda kusur tespiti, delil toplama ve dava stratejisi konularında kapsamlı hukuki destek sunuyoruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -273,7 +273,7 @@ export default function CekismeliBosanmaIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Çekişmeli Boşanma Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Çekişmeli boşanma sürecinde kusur tespiti, delil toplama ve dava stratejisi için hemen randevu alın.
+                                    Çekişmeli boşanma sürecinde kusur tespiti, delil toplama ve dava stratejisi için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Çekişmeli boşanma avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

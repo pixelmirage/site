@@ -16,14 +16,14 @@ export function PersonSchema({ knowsAbout }: PersonSchemaProps) {
         "email": "mertkagancetin@gmail.com",
         "worksFor": {
             "@type": "LegalService",
-            "name": "Av. Mert Kağan Çetin Hukuk Bürosu",
+            "name": "Av. Mert Kağan Çetin",
             "url": "https://mertkagancetin.com",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
                 "addressLocality": "Bayraklı",
                 "addressRegion": "İzmir",
-                "postalCode": "35535",
+                "postalCode": "35000",
                 "addressCountry": "TR"
             }
         },

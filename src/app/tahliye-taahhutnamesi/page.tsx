@@ -11,8 +11,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const PAGE_URL = "https://mertkagancetin.com/tahliye-taahhutnamesi/";
-const TITLE = "Tahliye Taahhüdü ile İcra Yoluyla Tahliye: Adım Adım Rehber";
-const DESCRIPTION = "Kiracı taahhüt ettiği tarihte çıkmazsa: 1 aylık başvuru süresi, tahliye emri, 7 gün itiraz, 15 gün tahliye. TBK 352/1 ve İİK 272-276 adım adım.";
+const TITLE = "Tahliye Taahhütnamesi Nedir? Geçerlilik Şartları ve Örnek (2026)";
+const DESCRIPTION = "Tahliye taahhütnamesi nedir, ne zaman geçerli olur? Yazılı şekil, teslimden sonra imza, belli tarih şartları; örnek metin ve 1 ay içinde icra veya dava ile tahliye (TBK 352/1, İİK 272-275).";
 const DATE_MODIFIED = "2026-10-15";
 const TBK_URL = "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6098.pdf";
 const IIK_URL = "https://www.mevzuat.gov.tr/MevzuatMetin/1.3.2004.pdf";
@@ -37,6 +37,26 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
+        question: "Kiracı tahliye taahhütnamesi nedir?",
+        answer: "Tahliye taahhütnamesi, kiracının kiraladığı taşınmazı belli bir tarihte boşaltacağını kiraya verene karşı yazılı olarak üstlendiği belgedir. Dayanağı TBK m. 352/1'dir. Kiracı bu tarihte taşınmazı boşaltmazsa kiraya veren, bu tarihten başlayarak bir ay içinde icraya başvurarak veya dava açarak kira sözleşmesini sona erdirebilir.",
+    },
+    {
+        question: "Tahliye taahhütnamesi hangi şartlarda geçersiz olur?",
+        answer: "TBK m. 352/1'deki şartlardan biri eksikse taahhüde dayanılamaz: sözlü verilen taahhüt, kiralananın tesliminden önce (örneğin kira sözleşmesiyle aynı anda) imzalatılan taahhüt, belli bir boşaltma tarihi içermeyen taahhüt ve kiracı dışındaki biri tarafından verilen taahhüt bu kapsamdadır. Ayrıca taahhüt yanılma, aldatma veya korkutma altında verilmişse TBK m. 30-39 uyarınca iptali ileri sürülebilir. Taahhüt tarihinden itibaren bir aylık süre geçirilmişse de o taahhüde dayanılarak tahliye istenemeyebilir.",
+    },
+    {
+        question: "Boş (tarihsiz) tahliye taahhütnamesi geçerli mi?",
+        answer: "Kanun belli bir boşaltma tarihi arar. Kira başında boş imzalatılıp sonradan doldurulan taahhütlerde asıl tartışma, taahhüdün teslimden önce verilip verilmediğidir. Kiracı, boş imzaladığı belgenin anlaşmaya aykırı doldurulduğunu ileri sürerse bunu kural olarak yazılı delille ispat etmelidir (HMK m. 207). Bu nedenle tarihlerin imza anında el yazısıyla ve açıkça yazılması önerilir.",
+    },
+    {
+        question: "Tahliye taahhütnamesi nasıl doldurulur?",
+        answer: "Taahhütnamede kiracının ve kiraya verenin kimlik bilgileri, taşınmazın açık adresi, kiralananın teslim tarihi, taahhüdün düzenlendiği tarih ve taşınmazın boşaltılacağı belli tarih yer almalı; belgeyi kiracı imzalamalıdır. Düzenleme tarihi teslim tarihinden sonra olmalıdır. Boşaltma tarihi boş bırakılmamalıdır.",
+    },
+    {
+        question: "Tahliye taahhüdü varsa ihtarname çekmek gerekir mi?",
+        answer: "TBK m. 352/1 tahliye taahhüdüne dayalı icra takibi veya dava için ayrıca ihtar şartı öngörmez. Önemli olan, taahhüt edilen boşaltma tarihinden başlayarak bir aylık süre içinde icraya başvurulması veya dava açılmasıdır.",
+    },
+    {
         question: "Tahliye taahhüdü noterden mi alınmalı?",
         answer: "Kanun noter şartı aramaz; TBK m. 352/1 yalnızca yazılı şekli öngörür. Ancak adi yazılı taahhütte kiracı imzayı veya tarihi inkâr ederse icra mahkemesi itirazı kaldıramaz (İİK m. 275) ve uyuşmazlık genel mahkemede çözülür. Noterce düzenlenen veya onaylanan taahhüt bu ispat sorununu azaltır.",
     },
@@ -58,7 +78,7 @@ const faqs = [
     },
     {
         question: "Kiracı imzayı inkâr ederse süreç nasıl ilerler?",
-        answer: "Adi yazılı taahhütteki imza veya tarih kiracı tarafından inkâr edilirse icra mahkemesi itirazı kaldıramaz (İİK m. 275). Bu konuda 4.12.1957 tarihli Yargıtay İçtihadı Birleştirme Kararı genel bir referans olarak kabul edilir. Bu durumda uyuşmazlık genel mahkemede yargılamayı gerektirir.",
+        answer: "Adi yazılı taahhütteki imza veya tarih kiracı tarafından inkâr edilirse icra mahkemesi itirazı kaldıramaz (İİK m. 275). Bu durumda uyuşmazlık genel mahkemede yargılamayı gerektirir.",
     },
     {
         question: "Tahliye taahhüdü için icra mı dava mı daha uygun?",
@@ -81,7 +101,7 @@ const faqs = [
 const legalServiceSchema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": "Av. Mert Kağan Çetin Avukatlık & Hukuk Danışmanlığı",
+    "name": "Av. Mert Kağan Çetin",
     "url": "https://mertkagancetin.com",
     "telephone": "+905445854645",
     "address": {
@@ -89,17 +109,17 @@ const legalServiceSchema = {
         "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
         "addressLocality": "Bayraklı",
         "addressRegion": "İzmir",
-        "postalCode": "35535",
+        "postalCode": "35000",
         "addressCountry": "TR",
     },
     "areaServed": { "@type": "City", "name": "İzmir" },
-    "knowsAbout": ["Kira hukuku", "Tahliye taahhüdü", "İcra yoluyla tahliye"],
+    "knowsAbout": ["Kira hukuku", "Tahliye taahhütnamesi", "İcra yoluyla tahliye"],
 };
 
 const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Tahliye Taahhüdü ile İcra Yoluyla Tahliye: Adım Adım Süreç (TBK 352/1)",
+    "headline": "Tahliye Taahhütnamesi: Nedir, Geçerlilik Şartları, Örnek ve İcra Yoluyla Tahliye",
     "description": DESCRIPTION,
     "mainEntityOfPage": PAGE_URL,
     "image": "https://mertkagancetin.com/og-image.jpg",
@@ -112,7 +132,7 @@ const articleSchema = {
     },
     "publisher": {
         "@type": "Organization",
-        "name": "Av. Mert Kağan Çetin Avukatlık & Hukuk Danışmanlığı",
+        "name": "Av. Mert Kağan Çetin",
         "url": "https://mertkagancetin.com",
     },
 };
@@ -146,9 +166,9 @@ export default function EvictionTemplatePage() {
             {/* Hero / Header - Hidden in Print */}
             <section className="bg-primary text-white py-16 print:hidden">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-3xl md:text-5xl font-playfair font-bold mb-4">Tahliye Taahhüdü ile İcra Yoluyla Tahliye: Adım Adım Süreç (TBK 352/1)</h1>
+                    <h1 className="text-3xl md:text-5xl font-playfair font-bold mb-4">Tahliye Taahhütnamesi: Nedir, Ne Zaman Geçerli Olur?</h1>
                     <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                        Kiracı taahhüt ettiği tarihte taşınmazı boşaltmazsa izlenecek icra sürecini, süreleri ve taahhütnamenin geçerlilik şartlarını kanun maddeleriyle anlatıyoruz. Sayfanın devamında taahhütname örneğini yazdırabilir veya PDF olarak kaydedebilirsiniz.
+                        Tahliye taahhütnamesinin ne olduğunu, geçerlilik şartlarını, nasıl doldurulacağını ve kiracı taahhüt ettiği tarihte çıkmazsa izlenecek icra ve dava yolunu kanun maddeleriyle anlatıyoruz. Sayfadaki taahhütname örneğini yazdırabilir veya PDF olarak kaydedebilirsiniz.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <PrintButton />
@@ -164,9 +184,12 @@ export default function EvictionTemplatePage() {
                         Son güncelleme: 15 Ekim 2026 – Hukuki inceleme: <Link href="/hakkimda/" className={ext}>Av. Mert Kağan Çetin</Link>, İzmir Barosu
                     </p>
 
-                    <h2 id="kisa-cevap">Kısa cevap: Tahliye taahhüdü ile kiracı nasıl çıkarılır?</h2>
+                    <h2 id="kisa-cevap">Kısa cevap: Tahliye taahhütnamesi nedir?</h2>
                     <p>
-                        Kiracı, kiralananın tesliminden sonra belli bir tarihte boşaltmayı yazılı olarak taahhüt etmiş ve o tarihte çıkmamışsa, kiraya veren bu tarihten başlayarak bir ay içinde icra dairesine başvurabilir veya tahliye davası açabilir (TBK m. 352/1). İcra yolunda kiracıya tahliye emri gönderilir; kiracının yedi gün itiraz hakkı vardır.
+                        <strong>Tahliye taahhütnamesi</strong>, kiracının kiraladığı konutu veya işyerini belli bir tarihte boşaltacağını kiraya verene karşı yazılı olarak üstlendiği belgedir (TBK m. 352/1). Geçerli olması için üç temel şart aranır: <strong>yazılı</strong> olmalı, kiralananın kiracıya <strong>tesliminden sonra</strong> imzalanmalı ve <strong>belli bir boşaltma tarihi</strong> içermelidir. Yargıtay uygulamasında kira sözleşmesiyle aynı anda, teslimden önce alınan taahhütler geçerli kabul edilmemektedir.
+                    </p>
+                    <p>
+                        Kiracı taahhüt ettiği tarihte çıkmazsa kiraya veren, bu tarihten başlayarak <strong>bir ay içinde</strong> icra dairesine başvurabilir (İİK m. 272-275) veya tahliye davası açabilir (TBK m. 352/1). İcra yolunda kiracıya tahliye emri gönderilir; kiracının yedi gün itiraz hakkı vardır.
                     </p>
                     <div className="not-prose overflow-x-auto my-6">
                         <table className="w-full text-sm border-collapse bg-white">
@@ -203,7 +226,7 @@ export default function EvictionTemplatePage() {
                         Bu sayfa hem kiracısı taahhüt ettiği tarihte çıkmayan ev sahiplerine hem de taahhüt imzalamış kiracılara yöneliktir. Ev sahibi tarafının genel çerçevesi için <Link href="/izmir-kira-avukati/ev-sahibi-haklari-izmir/" className={ext}>ev sahibi hakları</Link>, kira uyuşmazlıklarının tamamı için <Link href="/izmir-kira-avukati/" className={ext}>İzmir kira avukatı</Link> sayfamıza bakabilirsiniz.
                     </p>
 
-                    <h2 id="nedir">Tahliye taahhüdü (taahhütnamesi) nedir?</h2>
+                    <h2 id="nedir">Kanuni dayanak: TBK m. 352/1</h2>
                     <YouTubeShorts
                         videoId="0I5No4QamYA"
                         title="Tahliye Taahhütnamesi Nedir? - Kısa Video ile Açıklama"
@@ -239,8 +262,37 @@ export default function EvictionTemplatePage() {
                     </p>
                     <h3>Kiracı tarafından kiraya verene verilmeli</h3>
                     <p>
-                        Taahhüt, kiracı tarafından kiraya verene karşı verilmelidir. Birden çok kiracının bulunduğu, kiracının şirket olduğu veya taşınmazın aile konutu olarak kullanıldığı durumlarda kimin imzasının gerektiği uygulamada tartışmalıdır; bu hâllerde somut olaya göre bir avukata danışılması önerilir.
+                        Taahhüt, kiracı tarafından kiraya verene karşı verilmelidir. Birden çok kiracının bulunduğu, kiracının şirket olduğu veya taşınmazın aile konutu olarak kullanıldığı durumlarda kimin imzasının gerektiği uygulamada tartışmalıdır; bu hâllerde somut olaya göre bir avukata danışılması önerilir. Taşınmaz aile konutu ise, kiracı eşin aile konutuna ilişkin kira sözleşmesini diğer eşin açık rızası olmadan feshedemeyeceğini düzenleyen TMK m. 194 de dikkate alınmalıdır.
                     </p>
+
+                    <h2 id="gecersiz-olur-mu">Tahliye taahhütnamesi hangi durumlarda geçersiz olur?</h2>
+                    <p>
+                        Aşağıdaki durumlarda taahhüde dayanarak tahliye istemek ya mümkün değildir ya da ciddi uyuşmazlık riski doğar:
+                    </p>
+                    <ul>
+                        <li><strong>Teslimden önce alınan taahhüt:</strong> Kira sözleşmesiyle aynı gün ve teslimden önce imzalatılan taahhüt, TBK m. 352/1&apos;deki &quot;teslim edilmesinden sonra&quot; şartını karşılamaz.</li>
+                        <li><strong>Sözlü taahhüt:</strong> Kanun yazılı şekil arar; sözlü boşaltma sözü bu madde kapsamında tahliye sebebi değildir.</li>
+                        <li><strong>Belli bir tarih içermeyen taahhüt:</strong> &quot;Ev satılırsa&quot; gibi belirsiz bir olaya bağlanan veya tarihi boş bırakılan taahhütler uyuşmazlık konusu olur.</li>
+                        <li><strong>Kiracı dışındaki birinin verdiği taahhüt:</strong> Taahhüt kiracı tarafından (veya yetkili temsilcisi tarafından) verilmelidir.</li>
+                        <li><strong>İrade sakatlığı:</strong> Yanılma, aldatma veya korkutma altında verilen taahhüt TBK m. 30-39 çerçevesinde iptal edilebilir; ispat yükü bunu ileri sürene aittir.</li>
+                        <li><strong>Bir aylık sürenin kaçırılması:</strong> Taahhüt edilen tarihten itibaren bir ay içinde icraya başvurulmaz veya dava açılmazsa o taahhüde dayanılamayabilir.</li>
+                    </ul>
+                    <p>
+                        <strong>Boş imzalanan taahhüt:</strong> Kira başında tarihleri boş imzalatılıp sonradan doldurulan taahhütlerde kiracı, belgenin anlaşmaya aykırı doldurulduğunu ileri sürerse bunu kural olarak yazılı delille ispat etmelidir (HMK m. 207). Bu nedenle tarihlerin imza anında açıkça yazılması hem kiracı hem kiraya veren açısından önemlidir.
+                    </p>
+
+                    <h2 id="nasil-doldurulur">Tahliye taahhütnamesi nasıl doldurulur?</h2>
+                    <p>
+                        Aşağıdaki örnek, kanundaki şartları karşılamaya yönelik genel bir şablondur. Doldururken şunlara dikkat edin:
+                    </p>
+                    <ol>
+                        <li>Kiracının ve kiraya verenin ad-soyad ve T.C. kimlik numaralarını eksiksiz yazın.</li>
+                        <li>Taşınmazın açık adresini (varsa bağımsız bölüm numarasıyla) yazın.</li>
+                        <li>Kiralananın kiracıya <strong>teslim tarihini</strong> yazın.</li>
+                        <li><strong>Düzenleme tarihinin</strong> teslim tarihinden sonra olduğuna dikkat edin.</li>
+                        <li><strong>Boşaltma tarihini</strong> gün/ay/yıl olarak açıkça yazın; boş bırakmayın.</li>
+                        <li>Belgeyi kiracı imzalasın. İspat kolaylığı için imzanın noterde onaylatılması değerlendirilebilir.</li>
+                    </ol>
                 </div>
             </section>
 
@@ -266,12 +318,15 @@ export default function EvictionTemplatePage() {
                                 ................................................................................................................................................................
                             </p>
                             <p>
-                                <strong>TAHLİYE TARİHİ:</strong> ..... / ..... / 20.....
+                                <strong>KİRALANANIN TESLİM TARİHİ:</strong> ..... / ..... / 20.....
+                            </p>
+                            <p>
+                                <strong>TAHLİYE (BOŞALTMA) TARİHİ:</strong> ..... / ..... / 20.....
                             </p>
 
                             <div className="my-12 text-justify">
                                 <p className="mb-4">
-                                    Halen kiracı olarak kullanmakta olduğum yukarıda adresi yazılı taşınmazı, hiçbir ihtar ve ihbara gerek kalmaksızın,
+                                    Yukarıda belirtilen tarihte tarafıma teslim edilen ve halen kiracı olarak kullanmakta olduğum yukarıda adresi yazılı taşınmazı, hiçbir ihtar ve ihbara gerek kalmaksızın,
                                     kayıtsız ve şartsız olarak, 6098 sayılı Türk Borçlar Kanunu'nun 352/1 maddesi gereğince, yukarıda belirtilen tarihte
                                     tahliye edeceğimi;
                                 </p>
@@ -340,7 +395,7 @@ export default function EvictionTemplatePage() {
                         Süresinde itiraz edilirse takip durur. Kiraya veren, icra mahkemesinden itirazın kaldırılmasını ve tahliyeyi isteyebilir (İİK m. 275). Ancak adi yazılı taahhütteki imza veya tarih kiracı tarafından inkâr edilirse icra mahkemesi itirazı kaldıramaz; uyuşmazlık bu durumda genel mahkemede yapılacak yargılamayı gerektirir ve süreç uzayabilir.
                     </p>
                     <p>
-                        Bu konuda 4.12.1957 tarihli Yargıtay İçtihadı Birleştirme Kararı genel bir referans olarak kabul edilir. İcra mahkemesinin sınırlı inceleme yetkisi nedeniyle, imza veya tarih tartışmasının olduğu dosyalarda genel mahkemede açılacak dava gündeme gelir.
+                        İcra mahkemesinin sınırlı inceleme yetkisi nedeniyle, imza veya tarih tartışmasının olduğu dosyalarda genel mahkemede açılacak dava gündeme gelir.
                     </p>
                     <h3>Taşınmazda kiracıdan başka biri varsa</h3>
                     <p>
@@ -425,7 +480,7 @@ export default function EvictionTemplatePage() {
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
                         <h3 className="text-2xl font-serif font-bold text-primary mb-4">Tahliye Sürecinde Hukuki Destek</h3>
                         <p className="mb-6 text-muted-foreground">Tahliye taahhüdünüzün geçerliliğini veya başlattığınız takibe yapılan itirazı değerlendirmek için ön görüşme talep edebilirsiniz.</p>
-                        <p className="mb-6 text-sm text-slate-600">Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı / İZMİR · 0544 585 46 45</p>
+                        <p className="mb-6 text-sm text-slate-600">Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir · 0544 585 46 45</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>
                                 <Link href="/iletisim/">İletişim</Link>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-kira-avukati/on-yillik-kiraci-tahliye/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-10-13" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-kira-avukati/on-yillik-kiraci-tahliye/" },
 };
 
@@ -124,7 +124,7 @@ export default function OnYillikKiraciTahliyePage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -220,7 +220,7 @@ export default function OnYillikKiraciTahliyePage() {
                         </div>
 
                         <p>
-                            Sürecin her aşamasında usul hatası yapılması davanın reddine veya uzamasına yol açabilir. Özellikle süre hesabı ve fesih bildiriminin usulüne uygunluğu mahkemece titizlikle incelenir. <strong>10 yıllık kiracı tahliyesi</strong> konusunda deneyimli bir avukattan destek almak sürecin hızlı ve sorunsuz tamamlanmasını sağlar.
+                            Sürecin her aşamasında usul hatası yapılması davanın reddine veya uzamasına yol açabilir. Özellikle süre hesabı ve fesih bildiriminin usulüne uygunluğu mahkemece titizlikle incelenir. <strong>10 yıllık kiracı tahliyesi</strong> konusunda bir avukattan destek almak sürecin hızlı ve sorunsuz tamamlanmasını sağlar.
                         </p>
 
                         <SectionCTA text="10 yıllık kiracı tahliyesi süreciniz için avukat desteği almak ister misiniz?" />

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" },
 };
 
@@ -39,8 +39,8 @@ const faqs = [
         answer: "Boşanma davası için gerekli belgeler: nüfus cüzdanı fotokopisi, evlilik cüzdanı fotokopisi veya nüfus kayıt örneği, varsa deliller (mesajlar, fotoğraflar, raporlar), tanık listesi ve dava dilekçesidir. Anlaşmalı boşanmada ayrıca tarafların imzaladığı anlaşmalı boşanma protokolü gerekir."
     },
     {
-        question: "Boşanma davası açmak ne kadar tutar?",
-        answer: "2026 yılında boşanma davası açma masrafları; mahkeme harcı, başvurma harcı, vekalet pulu ve tebligat giderleri olarak toplam yaklaşık 3.000-5.000 TL arasında değişmektedir. Bunun dışında avukatlık ücreti, bilirkişi ücreti ve ek tebligat giderleri ayrıca hesaplanır. Anlaşmalı boşanmada masraflar daha düşük, çekişmeli boşanmada ise duruşma sayısına göre artabilir."
+        question: "Boşanma davası açmanın masrafları nelerdir?",
+        answer: "Boşanma davası açılırken başvurma harcı, peşin harç, gider avansı (tebligat ve diğer yargılama giderleri için) ve vekaletname ile dava açılıyorsa vekalet pulu ödenir. Harç tutarları Harçlar Kanunu tarifelerine göre her yıl yeniden belirlenir; güncel tutarlar dava açılırken adliyede veya UYAP üzerinden öğrenilebilir. Avukatlık ücreti bu giderlerden ayrıdır ve yazılı ücret sözleşmesiyle, Avukatlık Asgari Ücret Tarifesi'nin altında olmamak üzere belirlenir."
     },
     {
         question: "Eşim boşanmayı kabul etmezse ne olur?",
@@ -124,7 +124,7 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -137,22 +137,15 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                             Boşanma davası açabilmek için TMK&apos;da belirtilen boşanma sebeplerinden en az birinin mevcut olması gerekir. Boşanma sebepleri genel ve özel sebepler olmak üzere ikiye ayrılır:
                         </p>
 
-                        <div className="not-prose overflow-x-auto my-8">
-                            <table className="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
-                                <thead className="bg-primary text-white">
-                                    <tr>
-                                        <th className="text-left p-4 font-semibold">Dava Türü</th>
-                                        <th className="text-left p-4 font-semibold">Şartlar</th>
-                                        <th className="text-left p-4 font-semibold">Süre</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-200">
-                                    <tr className="bg-white"><td className="p-4 font-medium">Anlaşmalı Boşanma</td><td className="p-4">En az 1 yıl evli olma, tarafların birlikte başvurusu veya birinin açtığı davanın diğerince kabulü, protokol</td><td className="p-4">1-3 ay</td></tr>
-                                    <tr className="bg-slate-50"><td className="p-4 font-medium">Çekişmeli Boşanma (Genel)</td><td className="p-4">Evlilik birliğinin temelinden sarsılması (TMK m. 166)</td><td className="p-4">1-3 yıl</td></tr>
-                                    <tr className="bg-white"><td className="p-4 font-medium">Çekişmeli Boşanma (Özel)</td><td className="p-4">Zina, hayata kast, terk, suç işleme, akıl hastalığı (TMK m. 161-165)</td><td className="p-4">1-2 yıl</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <ul>
+                            <li><strong>Başvurma harcı ve peşin harç:</strong> Dava açılırken ödenir; tutarları Harçlar Kanunu tarifelerine göre her yıl yeniden belirlenir.</li>
+                            <li><strong>Gider avansı:</strong> Tebligat, bilirkişi ve tanık giderleri gibi yargılama masrafları için yatırılır (HMK m. 120).</li>
+                            <li><strong>Vekalet pulu:</strong> Dava vekaletname ile açılıyorsa ödenir.</li>
+                        </ul>
+
+                        <p>
+                            Güncel harç tutarları dava açılırken adliyede veya UYAP üzerinden öğrenilebilir.
+                        </p>
 
                         <p>
                             <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı boşanma</Link> için evliliğin en az 1 yıl sürmüş olması ve tarafların boşanmanın tüm sonuçları üzerinde anlaşmış olması gerekir. <Link href="/izmir-bosanma-avukati/cekismeli-bosanma-izmir/">Çekişmeli boşanma</Link> için ise süre şartı aranmaz; özel boşanma sebeplerine dayanılarak evliliğin ilk gününden itibaren dava açılabilir.
@@ -229,30 +222,21 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                         <h2 id="dava-masraflari" className="scroll-mt-24">Boşanma Davası Masrafları</h2>
 
                         <p>
-                            Boşanma davası açarken ödenmesi gereken masraflar mahkeme harçları, gider avansı ve avukatlık ücretinden oluşur. 2026 yılı itibarıyla İzmir&apos;de boşanma davası masrafları aşağıdaki gibidir:
+                            Boşanma davası açarken ödenmesi gereken masraflar mahkeme harçları, gider avansı ve avukatlık ücretinden oluşur. Başlıca masraf kalemleri şunlardır:
                         </p>
 
-                        <div className="not-prose overflow-x-auto my-8">
-                            <table className="w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
-                                <thead className="bg-primary text-white">
-                                    <tr>
-                                        <th className="text-left p-4 font-semibold">Masraf Kalemi</th>
-                                        <th className="text-left p-4 font-semibold">Yaklaşık Tutar (2026)</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="divide-y divide-slate-200">
-                                    <tr className="bg-white"><td className="p-4 font-medium">Başvurma harcı</td><td className="p-4">400-600 TL</td></tr>
-                                    <tr className="bg-slate-50"><td className="p-4 font-medium">Peşin harç</td><td className="p-4">400-600 TL</td></tr>
-                                    <tr className="bg-white"><td className="p-4 font-medium">Gider avansı</td><td className="p-4">1.500-2.500 TL</td></tr>
-                                    <tr className="bg-slate-50"><td className="p-4 font-medium">Vekalet pulu</td><td className="p-4">100-200 TL</td></tr>
-                                    <tr className="bg-white"><td className="p-4 font-medium">Tebligat giderleri</td><td className="p-4">200-500 TL</td></tr>
-                                    <tr className="bg-slate-50 font-bold"><td className="p-4">Toplam (avukatlık ücreti hariç)</td><td className="p-4">2.600-4.400 TL</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <ul>
+                            <li><strong>Başvurma harcı ve peşin harç:</strong> Dava açılırken ödenir; tutarları Harçlar Kanunu tarifelerine göre her yıl yeniden belirlenir.</li>
+                            <li><strong>Gider avansı:</strong> Tebligat, bilirkişi ve tanık giderleri gibi yargılama masrafları için yatırılır (HMK m. 120).</li>
+                            <li><strong>Vekalet pulu:</strong> Dava vekaletname ile açılıyorsa ödenir.</li>
+                        </ul>
 
                         <p>
-                            Bu masraflar avukatlık ücretinden ayrıdır. Avukatlık ücreti dava türüne, karmaşıklığına ve süresine göre değişmektedir. <Link href="/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/">İzmir boşanma avukatı ücretleri</Link> hakkında detaylı bilgi alabilirsiniz.
+                            Güncel harç tutarları dava açılırken adliyede veya UYAP üzerinden öğrenilebilir.
+                        </p>
+
+                        <p>
+                            Bu masraflar avukatlık ücretinden ayrıdır. Avukatlık ücreti yazılı ücret sözleşmesiyle, Avukatlık Asgari Ücret Tarifesi&apos;nin altında olmamak üzere belirlenir. <Link href="/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/">Boşanma avukatı ücretinin nasıl belirlendiği</Link> hakkında detaylı bilgi alabilirsiniz.
                         </p>
 
                         <p>
@@ -314,7 +298,7 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Boşanma Davası Açmak İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Boşanma davası açma sürecinde dilekçe hazırlama, belge toplama ve dava takibi için hemen randevu alın.
+                                    Boşanma davası açma sürecinde dilekçe hazırlama, belge toplama ve dava takibi için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Boşanma avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-sureci-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-sureci-izmir/" },
 };
 
@@ -124,7 +124,7 @@ export default function BosanmaSureciIzmirPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -138,7 +138,7 @@ export default function BosanmaSureciIzmirPage() {
                         </p>
 
                         <p>
-                            Boşanma kararı aldıktan sonra yapılması gereken ilk iş, aile hukuku alanında deneyimli bir avukatla görüşmektir. Avukat, davanızın güçlü ve zayıf yönlerini değerlendirerek size en uygun stratejiyi belirleyecektir. Delil toplama, tanık belirleme ve dava dilekçesinin hazırlanması gibi önemli adımlar avukat desteğiyle çok daha sağlıklı yürütülür.
+                            Boşanma kararı aldıktan sonra yapılması gereken ilk iş, aile hukuku alanında çalışan bir avukatla görüşmektir. Avukat, davanızın güçlü ve zayıf yönlerini değerlendirerek size en uygun stratejiyi belirleyecektir. Delil toplama, tanık belirleme ve dava dilekçesinin hazırlanması gibi önemli adımlar avukat desteğiyle çok daha sağlıklı yürütülür.
                         </p>
 
                         <p>
@@ -153,7 +153,7 @@ export default function BosanmaSureciIzmirPage() {
 
                         <div className="not-prose my-8 space-y-4">
                             {[
-                                { step: "1", title: "Avukat Görüşmesi ve Strateji Belirleme", desc: "Deneyimli bir aile hukuku avukatıyla görüşerek davanızın detaylarını paylaşın. Avukatınız boşanma sebebinizi, delillerinizi ve taleplerinizi değerlendirerek dava stratejisini belirleyecektir." },
+                                { step: "1", title: "Avukat Görüşmesi ve Strateji Belirleme", desc: "Bir aile hukuku avukatıyla görüşerek davanızın detaylarını paylaşın. Avukatınız boşanma sebebinizi, delillerinizi ve taleplerinizi değerlendirerek dava stratejisini belirleyecektir." },
                                 { step: "2", title: "Dava Dilekçesinin Hazırlanması ve Dava Açılması", desc: "Boşanma sebeplerini, delilleri ve talepleri (nafaka, velayet, tazminat, mal paylaşımı) içeren dava dilekçesi hazırlanır. Dilekçe, gerekli harçlarla birlikte aile mahkemesine sunularak dava açılır." },
                                 { step: "3", title: "Tensip Zaptı ve Tebligat", desc: "Mahkeme, dava dilekçesini inceleyerek tensip zaptı düzenler. Bu zaptla birlikte dava dilekçesi karşı tarafa tebliğ edilir. Davalı eş, tebliğden itibaren iki hafta içinde cevap dilekçesini sunar." },
                                 { step: "4", title: "Ön İnceleme Duruşması", desc: "Hakimin tarafları ve varsa vekillerini dinlediği ilk duruşmadır. Bu aşamada uyuşmazlık konuları belirlenir, sulh imkanı araştırılır ve deliller değerlendirilir. Taraflar anlaşırsa dava anlaşmalı boşanmaya dönüştürülebilir." },
@@ -277,7 +277,7 @@ export default function BosanmaSureciIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Boşanma Süreciniz İçin Hukuki Destek Alın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Boşanma sürecinizin her aşamasında profesyonel hukuki destek için hemen randevu alın.
+                                    Boşanma sürecinizin her aşamasında profesyonel hukuki destek için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Boşanma avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

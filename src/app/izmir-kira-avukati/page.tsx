@@ -212,13 +212,13 @@ export default function IzmirKiraAvukatiPage() {
                         <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Kira Avukatı İletişim ve Ofis</h2>
 
                         <p>
-                            Ofis Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir adresindedir. Ön görüşmeler telefonla yapılır; kira sözleşmesi, ihtarname ve ödeme kayıtları bu görüşmede değerlendirilerek izlenecek yol belirlenir. Bayraklı, Karşıyaka, Bornova, Konak, Buca, Çiğli, Gaziemir, Balçova, Narlıdere, Karabağlar ve Güzelbahçe başta olmak üzere İzmir genelinde hizmet verilmektedir (ör. <Link href="/bayrakli-kira-avukati/">Bayraklı</Link>, <Link href="/karsiyaka-kira-avukati/">Karşıyaka</Link>, <Link href="/bornova-kira-avukati/">Bornova</Link>).
+                            Ofis Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir adresindedir. Ön görüşmeler telefonla yapılır; kira sözleşmesi, ihtarname ve ödeme kayıtları bu görüşmede değerlendirilerek izlenecek yol belirlenir. Bayraklı, Karşıyaka, Bornova, Konak, Buca, Çiğli, Gaziemir, Balçova, Narlıdere, Karabağlar ve Güzelbahçe başta olmak üzere İzmir genelinde hizmet verilmektedir (ör. <Link href="/bayrakli-kira-avukati/">Bayraklı</Link>, <Link href="/karsiyaka-kira-avukati/">Karşıyaka</Link>, <Link href="/bornova-kira-avukati/">Bornova</Link>).
                         </p>
 
                         <ul>
                             <li><strong>Avukat:</strong> Av. Mert Kağan Çetin (İzmir Barosu Sicil No: 15556)</li>
                             <li><strong>Telefon:</strong> <a href="tel:+905445854645">0544 585 46 45</a></li>
-                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
+                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir</li>
                             <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
                         </ul>
 

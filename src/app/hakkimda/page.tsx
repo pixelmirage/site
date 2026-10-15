@@ -88,7 +88,7 @@ export default function AboutPage() {
                                         <h3 className="font-bold text-primary">Vizyonumuz</h3>
                                     </div>
                                     <p className="text-sm text-muted-foreground">
-                                        Müvekkillerimize her aşamada şeffaf bilgi vererek, hukuki süreci anlaşılır kılmak. İzmir'de güvenilir hukuki danışmanlık deneyimi sağlamak.
+                                        Müvekkillerimize her aşamada şeffaf bilgi vererek, hukuki süreci anlaşılır kılmak.
                                     </p>
                                 </div>
                             </div>

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: "website",
     },
     other: {
-        "article:modified_time": "2026-04-17",
+        "article:modified_time": "2026-10-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-is-avukati/",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "İş davası avukat ücreti ne kadar?",
-        answer: "2026 yılında İzmir'de işe iade davalarında 35.000–55.000 TL, kıdem tazminatı davalarında 30.000–60.000 TL, iş kazası tazminatı davalarında 50.000–100.000 TL arasında ücret belirlenmektedir. Büromuzda ilk ön görüşme ücretsizdir."
+        question: "İş davalarında avukat ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır."
     },
     {
         question: "İşe iade davası ne kadar sürer?",
@@ -40,7 +40,7 @@ const faqs = [
     },
     {
         question: "Kıdem tazminatı nasıl hesaplanır?",
-        answer: "Her tam çalışma yılı için brüt 30 günlük ücret üzerinden hesaplanır. Temel ücretin yanı sıra yemek, yol ve prim gibi düzenli ödemeler dahil edilir. 2026 yılı kıdem tazminatı tavanı 41.828,44 TL'dir."
+        answer: "Her tam çalışma yılı için brüt 30 günlük ücret üzerinden hesaplanır. Temel ücretin yanı sıra yemek, yol ve prim gibi düzenli ödemeler dahil edilir. Kıdem tazminatı tavanı yılda iki kez (Ocak ve Temmuz) güncellenir; güncel tavan tutarı kıdem tazminatı hesaplama sayfamızda yer alır."
     },
     {
         question: "İşten çıkarıldım, ne yapmalıyım?",
@@ -142,11 +142,11 @@ export default function IzmirIsAvukatiPage() {
 
                         {/* Giriş */}
                         <p>
-                            <strong>İzmir iş avukatı</strong> olarak işe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı ve tüm işçi alacakları davalarında İzmir genelinde hizmet vermekteyiz. İş hukuku, teknik süreleri ve ispat yükü nedeniyle uzmanlık gerektiren bir alandır.
+                            <strong>İzmir iş avukatı</strong> olarak işe iade davaları, kıdem ve ihbar tazminatı, iş kazası tazminatı ve tüm işçi alacakları davalarında İzmir genelinde hizmet vermekteyiz. İş hukuku, teknik süreleri ve ispat yükü nedeniyle özen gerektiren bir alandır.
                         </p>
 
                         <p>
-                            Bu sebeple iş hukuku konusunda deneyimli bir <strong>İzmir iş avukatı</strong> ile çalışmak, haklarınızı zamanında ve eksiksiz talep etmeniz açısından büyük önem taşımaktadır.
+                            İş hukukunda hak düşürücü süreler ve zorunlu arabuluculuk aşaması bulunduğundan, sürecin başında haklarınızın bir <strong>İzmir iş avukatı</strong> ile birlikte değerlendirilmesi önerilir.
                         </p>
 
                         {/* İletişim */}
@@ -159,7 +159,7 @@ export default function IzmirIsAvukatiPage() {
                         <ul>
                             <li><strong>İş Avukatı:</strong> Av. Mert Kağan Çetin</li>
                             <li><strong>Telefon:</strong> <a href="tel:+905445854645">0544 585 46 45</a></li>
-                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
+                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir</li>
                             <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
                         </ul>
 
@@ -194,7 +194,7 @@ export default function IzmirIsAvukatiPage() {
                         <h2 id="is-islerine-hangi-avukat-bakar" className="scroll-mt-24">İş Davalarına Hangi Avukat Bakar?</h2>
 
                         <p>
-                            İş davalarına <strong>iş hukuku avukatı</strong> bakar. 4857 sayılı İş Kanunu, Borçlar Kanunu ve Sosyal Sigortalar mevzuatı kapsamındaki uyuşmazlıklar bu avukatların uzmanlık alanına girer. <Link href="/sozluk/ise-iade-davasi/">İşe iade davaları</Link>, <Link href="/sozluk/kidem-tazminati/">kıdem tazminatı</Link> hesaplama, <Link href="/sozluk/mobbing/">mobbing</Link> tespiti ve iş kazası tazminatı talepleri iş avukatının faaliyet alanıdır.
+                            İş davalarına <strong>iş hukuku avukatı</strong> bakar. 4857 sayılı İş Kanunu, Borçlar Kanunu ve Sosyal Sigortalar mevzuatı kapsamındaki uyuşmazlıklar bu avukatların çalışma alanına girer. <Link href="/sozluk/ise-iade-davasi/">İşe iade davaları</Link>, <Link href="/sozluk/kidem-tazminati/">kıdem tazminatı</Link> hesaplama, <Link href="/sozluk/mobbing/">mobbing</Link> tespiti ve iş kazası tazminatı talepleri iş avukatının faaliyet alanıdır.
                         </p>
 
                         <p>
@@ -226,51 +226,14 @@ export default function IzmirIsAvukatiPage() {
                         </ul>
 
                         {/* Avukatlık Ücreti */}
-                        <h2 id="avukatlik-ucreti" className="scroll-mt-24">İş Davalarında Avukatlık Ücreti</h2>
+                        <h2 id="avukatlik-ucreti" className="scroll-mt-24">İş Davalarında Avukatlık Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            <strong>İzmir iş avukatı</strong> olarak şeffaf fiyatlandırma politikası uyguluyoruz. 2026 yılı güncel ücret aralıklarımız:
+                            Avukatlık ücreti; davanın türü, dava değeri, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan <strong>Avukatlık Asgari Ücret Tarifesi</strong>&apos;nin altında olamaz.
                         </p>
 
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Dava Türü</th>
-                                    <th>Süre (Ortalama)</th>
-                                    <th>Ücret Aralığı</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><Link href="/izmir-is-avukati/ise-iade-davasi/">İşe İade Davası</Link></td>
-                                    <td>3-6 ay</td>
-                                    <td>35.000 - 55.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td><Link href="/izmir-is-avukati/kidem-tazminati-davasi/">Kıdem Tazminatı Davası</Link></td>
-                                    <td>6 ay - 1.5 yıl</td>
-                                    <td>30.000 - 60.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>İş Kazası Tazminatı</td>
-                                    <td>1 - 2 yıl</td>
-                                    <td>50.000 - 100.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>Fazla Mesai ve İşçi Alacakları</td>
-                                    <td>6 ay - 1 yıl</td>
-                                    <td>25.000 - 50.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>İş Sözleşmesi Hazırlama</td>
-                                    <td>1-3 gün</td>
-                                    <td>5.000 - 15.000 TL</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
                         <p>
-                            Lütfen kesin fiyat bilgisi almak için <strong>iş avukatı</strong> ile <Link href="/iletisim/">iletişime geçiniz</Link>.
+                            Her taraf kendi avukatının ücretini öder; dava sonunda aleyhine hüküm verilen taraf, mahkemenin tarifeye göre hükmettiği karşı vekalet ücreti ile yargılama giderlerini öder. Somut dosyaya ilişkin ücret bilgisi belgeler incelendikten sonra ön görüşmede verilir; ön görüşmeler telefonla yapılır.
                         </p>
 
                         <hr />
@@ -285,7 +248,7 @@ export default function IzmirIsAvukatiPage() {
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                                        İzmir Barosu&apos;na kayıtlı avukat. iş, kira, boşanma ve tazminat hukuku alanlarında hizmet vermektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukat. İş, kira, boşanma ve tazminat hukuku alanlarında hizmet vermektedir.
                                     </p>
                                     <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
                                         <span>İzmir Barosu Sicil: 15556</span>
@@ -325,7 +288,7 @@ export default function IzmirIsAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-2xl p-8 md:p-10">
                                 <p className="text-2xl font-playfair font-bold mb-3">İzmir İş Avukatı ile Görüşün</p>
                                 <p className="text-slate-300 mb-6">
-                                    İş davalarınız için hemen randevu alın.
+                                    İş davalarınız için iletişime geçebilirsiniz.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-6 mb-6 text-sm">

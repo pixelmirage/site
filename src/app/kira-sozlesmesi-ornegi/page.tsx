@@ -8,17 +8,17 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-    title: "Kira Sözleşmesi Örneği 2026 - Ücretsiz PDF İndir",
-    description: "2026 güncel kira sözleşmesi örneğini ücretsiz PDF olarak indirin. TBK'ya uygun, konut ve işyeri kira kontratı şablonu. Kira bedeli, depozito, fesih şartları ve tüm maddeler.",
+    title: "Kira Sözleşmesi Örneği 2026 - PDF İndir",
+    description: "2026 güncel kira sözleşmesi örneğini PDF olarak indirin. TBK'ya uygun, konut ve işyeri kira kontratı şablonu. Kira bedeli, depozito, fesih şartları ve tüm maddeler.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Kira Sözleşmesi Örneği 2026 | Ücretsiz PDF İndir",
-        description: "TBK'ya uygun güncel kira sözleşmesi şablonunu ücretsiz olarak PDF formatında indirin.",
+        title: "Kira Sözleşmesi Örneği 2026 | PDF İndir",
+        description: "TBK'ya uygun güncel kira sözleşmesi şablonunu PDF formatında indirin.",
         url: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/",
         type: "article",
     },
     other: {
-        "article:modified_time": "2026-04-17",
+        "article:modified_time": "2026-10-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/",
@@ -69,7 +69,7 @@ export default function KiraSozlesmesiPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-3xl md:text-5xl font-playfair font-bold mb-4">Kira Sözleşmesi Örneği 2026</h1>
                     <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                        Türk Borçlar Kanunu&apos;na uygun, güncel kira sözleşmesi şablonunu ücretsiz olarak PDF formatında indirin veya yazdırın.
+                        Türk Borçlar Kanunu&apos;na uygun, güncel kira sözleşmesi şablonunu PDF formatında indirin veya yazdırın.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <PrintButton />

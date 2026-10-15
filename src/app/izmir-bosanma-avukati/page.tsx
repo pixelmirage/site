@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         type: "website",
     },
     other: {
-        "article:modified_time": "2026-04-17",
+        "article:modified_time": "2026-10-15",
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/",
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "Boşanma avukatı kaç TL alır?",
-        answer: "2026 yılında İzmir'de anlaşmalı boşanma davalarında 25.000–40.000 TL, çekişmeli boşanma davalarında 40.000–80.000 TL arasında ücret belirlenmektedir. Velayet, nafaka veya mal paylaşımı davası ayrıca açılacaksa her biri için ek ücret talep edilir. Büromuzda ilk ön görüşme ücretsizdir."
+        question: "Boşanma avukatı ücreti nasıl belirlenir?",
+        answer: "Avukatlık ücreti; davanın türü, kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır."
     },
     {
         question: "Anlaşmalı boşanma ne kadar sürer?",
-        answer: "Anlaşmalı boşanma Türkiye'deki en hızlı boşanma yoludur. Protokol hazırlandıktan sonra genellikle tek celsede sonuçlanır. Mahkeme yoğunluğuna göre toplam süreç 1-3 ay arasında tamamlanır."
+        answer: "Anlaşmalı boşanma, çekişmeli boşanmaya göre genellikle daha kısa sürer. Protokol hazırlandıktan sonra çoğunlukla tek celsede sonuçlanır; toplam süre mahkemenin iş yüküne göre değişir."
     },
     {
         question: "Velayet kime verilir?",
@@ -62,9 +62,7 @@ const tocItems = [
     { id: "bosanma-davasi-avukati-izmir", title: "Boşanma Davası Avukatı" },
     { id: "bosanma-sebepleri", title: "Boşanma Sebepleri" },
     { id: "bosanma-avukati-ucreti", title: "Avukatlık Ücreti" },
-    { id: "en-iyi-bosanma-avukati", title: "En İyi Boşanma Avukatı" },
     { id: "bosanma-avukati-zorunlu-mu", title: "Avukat Zorunlu Mu?" },
-    { id: "avukata-soru-sormak", title: "Danışma Ücreti" },
     { id: "bosanma-davasi-suresi", title: "Dava Süresi" },
     { id: "bosanma-kadinin-haklari", title: "Kadının Hakları" },
     { id: "sss", title: "SSS" },
@@ -150,7 +148,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p>
-                            Bu sebeple aile hukuku konusunda deneyimli bir <strong>İzmir boşanma avukatı</strong> ile çalışmak, haklarınızı korumak ve süreci en az hasarla tamamlamak açısından büyük önem taşımaktadır.
+                            Bu nedenle sürecin başında haklarınızın, sürelerin ve delil durumunun bir <strong>İzmir boşanma avukatı</strong> ile birlikte değerlendirilmesi önerilir.
                         </p>
 
                         {/* İletişim */}
@@ -163,7 +161,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <ul>
                             <li><strong>Boşanma Avukatı:</strong> Av. Mert Kağan Çetin</li>
                             <li><strong>Telefon:</strong> <a href="tel:+905445854645">0544 585 46 45</a></li>
-                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
+                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir</li>
                             <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
                         </ul>
 
@@ -175,7 +173,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p>
-                            Özellikle <Link href="/sozluk/velayet/">velayet</Link>, <Link href="/sozluk/nafaka/">nafaka</Link> ve <Link href="/sozluk/mal-paylasimi/">mal paylaşımı</Link> konularında hak kaybı yaşamamak için deneyimli bir avukatla çalışmanız kritik önem taşır. <strong>İzmir boşanma avukatı</strong> olarak müvekkillerimizin haklarını titizlikle koruyoruz.
+                            Özellikle <Link href="/sozluk/velayet/">velayet</Link>, <Link href="/sozluk/nafaka/">nafaka</Link> ve <Link href="/sozluk/mal-paylasimi/">mal paylaşımı</Link> konularında hak kaybı yaşamamak için hukuki destek almanız önerilir. <strong>İzmir boşanma avukatı</strong> olarak müvekkillerimizin haklarını titizlikle koruyoruz.
                         </p>
 
                         {/* Boşanma Davaları */}
@@ -224,68 +222,14 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         {/* Avukatlık Ücreti */}
-                        <h2 id="bosanma-avukati-ucreti" className="scroll-mt-24">İzmir Boşanma Avukatı Ücreti</h2>
+                        <h2 id="bosanma-avukati-ucreti" className="scroll-mt-24">İzmir Boşanma Avukatı Ücreti Nasıl Belirlenir?</h2>
 
                         <p>
-                            <strong>İzmir boşanma avukatı</strong> olarak şeffaf fiyatlandırma politikası uyguluyoruz. 2026 yılı güncel ücret aralıklarımız:
-                        </p>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Dava Türü</th>
-                                    <th>Süre (Ortalama)</th>
-                                    <th>Ücret Aralığı</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı Boşanma</Link></td>
-                                    <td>1-3 ay</td>
-                                    <td>25.000 - 40.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>Çekişmeli Boşanma</td>
-                                    <td>1 - 3 yıl</td>
-                                    <td>40.000 - 80.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td><Link href="/izmir-bosanma-avukati/velayet-davasi/">Velayet Davası</Link></td>
-                                    <td>6 ay - 1.5 yıl</td>
-                                    <td>30.000 - 60.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td><Link href="/izmir-bosanma-avukati/nafaka-davasi/">Nafaka Davası</Link></td>
-                                    <td>3 - 6 ay</td>
-                                    <td>20.000 - 40.000 TL</td>
-                                </tr>
-                                <tr>
-                                    <td>Mal Paylaşımı Davası</td>
-                                    <td>1 - 2 yıl</td>
-                                    <td>40.000 - 80.000 TL</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p>
-                            Lütfen kesin fiyat bilgisi almak için <strong>boşanma avukatı</strong> ile <Link href="/iletisim/">iletişime geçiniz</Link>.
-                        </p>
-
-                        {/* En İyi İzmir Boşanma Avukatı Nasıl Bulunur? */}
-                        <h2 id="en-iyi-bosanma-avukati" className="scroll-mt-24">En İyi İzmir Boşanma Avukatı Nasıl Bulunur?</h2>
-
-                        <p>
-                            En iyi <strong>İzmir boşanma avukatı</strong>nı bulmak için avukatın aile hukuku alanındaki deneyimine, dava geçmişine ve müvekkil memnuniyetine bakmanız gerekir. İzmir Barosu&apos;na kayıtlı avukatlar arasından boşanma hukuku alanında çalışan isimleri araştırabilirsiniz.
+                            Avukatlık ücreti; davanın türü (<Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">anlaşmalı</Link> veya çekişmeli boşanma, <Link href="/izmir-bosanma-avukati/velayet-davasi/">velayet</Link>, <Link href="/izmir-bosanma-avukati/nafaka-davasi/">nafaka</Link>, mal paylaşımı), kapsamı, işin gerektirdiği emek ve süre dikkate alınarak avukat ile müvekkil arasında yazılı ücret sözleşmesiyle kararlaştırılır (Avukatlık Kanunu m. 163-164). Kararlaştırılan ücret, Türkiye Barolar Birliği tarafından her yıl yayımlanan <strong>Avukatlık Asgari Ücret Tarifesi</strong>&apos;nin altında olamaz.
                         </p>
 
                         <p>
-                            Avukatın <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">anlaşmalı</Link> ve <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/">çekişmeli boşanma</Link> davalarındaki tecrübesi, <Link href="/izmir-bosanma-avukati/velayet-davasi/">velayet</Link> ve <Link href="/izmir-bosanma-avukati/nafaka-davasi/">nafaka</Link> konularındaki bilgisi önemli kriterlerdir. Ücretsiz ön görüşme imkanı sunan <strong>İzmir boşanma avukatları</strong>yla tanışarak davanızın ilk değerlendirmesini yaptırmanız tavsiye edilir.
-                        </p>
-
-                        <h3>İzmir&apos;de En İyi Boşanma Avukatı Hangisi?</h3>
-
-                        <p>
-                            En iyi <strong>boşanma avukatı</strong>; müvekkilin haklarını en etkili şekilde savunan, aile hukuku mevzuatını ve Yargıtay içtihatlarını yakından takip eden, dava süreçlerini zamanında ve eksiksiz yürüten avukattır. &quot;En iyi&quot; kavramı kişiden kişiye değişebilir; ancak avukatın aile hukuku alanında çalışıyor olması ve süreç hakkında düzenli bilgi vermesi önemli göstergelerdir. İzmir&apos;de <strong>boşanma avukatı</strong> ararken mutlaka yüz yüze veya telefonla ön görüşme yapmanız ve davanızın değerlendirilmesini istemeniz tavsiye edilir.
+                            Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır; ayrıntılı açıklama için <Link href="/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/">boşanma avukatı ücretleri</Link> sayfamıza bakabilir veya <Link href="/iletisim/">iletişim</Link> sayfamızdan ulaşabilirsiniz.
                         </p>
 
                         {/* Boşanma Avukatı Tutmak Zorunlu Mu? */}
@@ -299,17 +243,6 @@ export default function IzmirBosanmaAvukatiPage() {
                             Özellikle <Link href="/blog/cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti/">çekişmeli boşanma</Link> davalarında delil toplama, kusur tespiti ve strateji belirleme aşamalarında <strong>İzmir boşanma avukatı</strong> ile çalışmanız büyük önem taşır.
                         </p>
 
-                        {/* Avukata Soru Sormak Ücretli midir? */}
-                        <h2 id="avukata-soru-sormak" className="scroll-mt-24">Avukata Soru Sormak Ücretli midir?</h2>
-
-                        <p>
-                            Avukata soru sormak (hukuki danışmanlık) kural olarak ücretlidir. 2026 yılı itibarıyla İzmir Barosu asgari ücret tarifesine göre sözlü danışma ücreti en az 3.000 TL, yazılı danışma ücreti ise en az 6.000 TL&apos;dir. Ancak birçok <strong>İzmir boşanma avukatı</strong> ilk ön görüşmeyi ücretsiz olarak sunmaktadır.
-                        </p>
-
-                        <p>
-                            Büromuzda boşanma hukuku alanında ilk ön görüşme ücretsizdir. Bu görüşmede davanızın genel değerlendirmesi yapılır, hukuki haklarınız anlatılır ve izlenecek yol hakkında bilgilendirme sağlanır.
-                        </p>
-
                         {/* Boşanma Davaları Ne Kadar Sürer? */}
                         <h2 id="bosanma-davasi-suresi" className="scroll-mt-24">Boşanma Davaları Ne Kadar Sürer?</h2>
 
@@ -318,7 +251,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p>
-                            <Link href="/izmir-bosanma-avukati/velayet-davasi/">Velayet</Link> veya <Link href="/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/">mal paylaşımı</Link> davası da açılmışsa süreç daha da uzayabilir. <strong>İzmir boşanma avukatı</strong> ile çalışmak, dilekçelerin zamanında sunulması ve duruşmaların etkin takibi sayesinde dava sürecini hızlandırmanıza yardımcı olur.
+                            <Link href="/izmir-bosanma-avukati/velayet-davasi/">Velayet</Link> veya <Link href="/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/">mal paylaşımı</Link> davası da açılmışsa süreç daha da uzayabilir. Dava süresi büyük ölçüde mahkemenin iş yüküne, delillerin toplanmasına ve tarafların tutumuna bağlıdır.
                         </p>
 
                         {/* Boşanma Davasında Kadının Hakları */}
@@ -393,7 +326,7 @@ export default function IzmirBosanmaAvukatiPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-2xl p-8 md:p-10">
                                 <p className="text-2xl font-playfair font-bold mb-3">İzmir Boşanma Avukatı ile Görüşün</p>
                                 <p className="text-slate-300 mb-6">
-                                    Boşanma davalarınız için hemen randevu alın.
+                                    Boşanma davalarınız için iletişime geçebilirsiniz.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-6 mb-6 text-sm">

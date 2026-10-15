@@ -70,14 +70,16 @@ export function PdfDownloadButton() {
             y += lineGap;
 
             // Date
-            doc.text("TAHLİYE TARİHİ:  ..... / ..... / 20.....", margin, y);
+            doc.text("KİRALANANIN TESLİM TARİHİ:  ..... / ..... / 20.....", margin, y);
+            y += lineGap;
+            doc.text("TAHLİYE (BOŞALTMA) TARİHİ:  ..... / ..... / 20.....", margin, y);
             y += 22;
 
             // Commitment text
             doc.setFontSize(12);
             doc.setTextColor(0, 0, 0);
             const paragraphs = [
-                "Halen kiracı olarak kullanmakta olduğum yukarıda adresi yazılı taşınmazı, hiçbir ihtar ve ihbara gerek kalmaksızın, kayıtsız ve şartsız olarak, 6098 sayılı Türk Borçlar Kanunu'nun 352/1 maddesi gereğince, yukarıda belirtilen tarihte tahliye edeceğimi;",
+                "Yukarıda belirtilen tarihte tarafıma teslim edilen ve halen kiracı olarak kullanmakta olduğum yukarıda adresi yazılı taşınmazı, hiçbir ihtar ve ihbara gerek kalmaksızın, kayıtsız ve şartsız olarak, 6098 sayılı Türk Borçlar Kanunu'nun 352/1 maddesi gereğince, yukarıda belirtilen tarihte tahliye edeceğimi;",
                 "Belirtilen tarihte taşınmazı boş ve eksiksiz olarak mal sahibine teslim edeceğimi;",
                 "Tahliye etmediğim takdirde, mal sahibinin icra dairesi aracılığıyla tahliye işlemini gerçekleştirebileceğini, bu nedenle oluşacak tüm mahkeme masrafları, icra harçları, avukatlık ücretleri ve diğer tüm giderleri peşinen ödemeyi kabul, beyan ve taahhüt ederim.",
             ];

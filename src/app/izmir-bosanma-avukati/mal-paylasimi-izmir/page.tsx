@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/mal-paylasimi-izmir/",
         type: "article",
     },
-    other: { "article:modified_time": "2026-04-18" },
+    other: { "article:modified_time": "2026-10-15" },
     alternates: { canonical: "https://mertkagancetin.com/izmir-bosanma-avukati/mal-paylasimi-izmir/" },
 };
 
@@ -123,7 +123,7 @@ export default function MalPaylasimiIzmirPage() {
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
-                            Son güncelleme: 18 Nisan 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
+                            Son güncelleme: 15 Ekim 2026 | Yazar: Av. Mert Kağan Çetin, İzmir Barosu
                         </p>
 
                         <p>
@@ -288,7 +288,7 @@ export default function MalPaylasimiIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Mal Paylaşımı Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında hukuki destek için hemen randevu alın.
+                                    Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında hukuki destek için iletişime geçebilirsiniz.
                                     <strong className="text-white"> Mal paylaşımı avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
