@@ -80,8 +80,8 @@ export default function KiraSozlesmesiPage() {
 
             {/* Template Preview */}
             <section className="py-12 container mx-auto px-4">
-                <div className="max-w-[210mm] mx-auto bg-white shadow-xl p-[15mm] md:p-[20mm] min-h-[297mm] text-black print:shadow-none print:p-0 print:w-full print:max-w-none">
-                    <div className="print-content font-serif leading-relaxed">
+                <div className="max-w-[210mm] mx-auto bg-white shadow-xl p-6 sm:p-[15mm] md:p-[20mm] min-h-[297mm] text-black print:shadow-none print:p-0 print:w-full print:max-w-none">
+                    <div className="print-content font-serif leading-relaxed [overflow-wrap:anywhere]">
 
                         {/* Başlık */}
                         <h2 className="text-center font-bold text-2xl mb-10 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">
@@ -236,10 +236,13 @@ export default function KiraSozlesmesiPage() {
                 </div>
 
                 {/* SEO Content - Hidden in Print */}
-                <div className="max-w-[210mm] mx-auto mt-12 prose prose-slate prose-lg print:hidden">
+                <div className="mx-auto mt-12 doc-prose print:hidden">
                     <h2>Kira Sözleşmesi Nedir?</h2>
                     <p>
-                        Kira sözleşmesi, kiraya verenin bir taşınmazın kullanımını kiracıya bırakmayı, kiracının ise bunun karşılığında kira bedeli ödemeyi taahhüt ettiği bir sözleşmedir. Türk Borçlar Kanunu&apos;nun 299-378. maddeleri arasında düzenlenmiştir. <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
+                        Kira sözleşmesi, kiraya verenin bir taşınmazın kullanımını kiracıya bırakmayı, kiracının ise bunun karşılığında kira bedeli ödemeyi taahhüt ettiği bir sözleşmedir. Türk Borçlar Kanunu&apos;nun 299-378. maddeleri arasında düzenlenmiştir.
+                    </p>
+                    <p>
+                        <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
                     </p>
                     <p>
                         Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması kesinlikle önerilir. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link> alanında profesyonel destek almak, tarafların haklarının korunması açısından büyük önem taşır.
@@ -281,12 +284,18 @@ export default function KiraSozlesmesiPage() {
 
                     <h2>Kira Sözleşmesinin Süresi ve Yenilenmesi</h2>
                     <p>
-                        Belirli süreli kira sözleşmeleri, süre sonunda kendiliğinden sona ermez. Kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunmadıkça sözleşme aynı koşullarla 1 yıl uzamış sayılır (TBK m. 347). Kiraya veren, sözleşme süresinin bitmesi sebebiyle tek taraflı olarak sözleşmeyi feshedemez; ancak 10 yıllık uzama süresinin sonunda fesih hakkı doğar.
+                        Belirli süreli kira sözleşmeleri, süre sonunda kendiliğinden sona ermez. Kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunmadıkça sözleşme aynı koşullarla 1 yıl uzamış sayılır (TBK m. 347).
+                    </p>
+                    <p>
+                        Kiraya veren, sözleşme süresinin bitmesi sebebiyle tek taraflı olarak sözleşmeyi feshedemez; ancak 10 yıllık uzama süresinin sonunda fesih hakkı doğar.
                     </p>
 
                     <h2>Kira Sözleşmesiyle İlgili Uyuşmazlıklar</h2>
                     <p>
-                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/" className="text-secondary hover:underline">depozito iadesi</Link>, <Link href="/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/" className="text-secondary hover:underline">aidat borcu</Link> vb.) 2024 yılından itibaren <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary hover:underline">zorunlu arabuluculuk</Link> uygulanmaktadır. Dava açılmadan önce arabulucuya başvurulması şarttır. Arabuluculuk sürecinde anlaşma sağlanamaması halinde sulh hukuk mahkemesinde dava açılabilir.
+                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/" className="text-secondary hover:underline">depozito iadesi</Link>, <Link href="/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/" className="text-secondary hover:underline">aidat borcu</Link> vb.) 2024 yılından itibaren <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary hover:underline">zorunlu arabuluculuk</Link> uygulanmaktadır.
+                    </p>
+                    <p>
+                        Dava açılmadan önce arabulucuya başvurulması şarttır. Arabuluculuk sürecinde anlaşma sağlanamaması halinde sulh hukuk mahkemesinde dava açılabilir.
                     </p>
 
                     <h2>Sıkça Sorulan Sorular</h2>

@@ -222,7 +222,7 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
             <article className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                        <div className="lg:col-span-2 prose prose-slate prose-lg">
+                        <div className="lg:col-span-2 min-w-0 doc-prose">
                             <p>
                                 {texts.intro}
                             </p>
@@ -269,7 +269,10 @@ export default async function DistrictPage({ params }: { params: Promise<{ slug:
                                 <>
                                     <h3>{district} Kira Davalarında Görevli ve Yetkili Mahkeme</h3>
                                     <p>
-                                        Kira ilişkisinden doğan davalara, dava değerine bakılmaksızın Sulh Hukuk Mahkemesi bakar (HMK m. 4/1-a). {district} ilçesindeki uyuşmazlıklarda bu davalar genel olarak <strong>{districtData.courthouse}</strong> önünde görülür. Yetkili mahkeme kural olarak davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmenin ifa yeri mahkemesinde de dava açılabilir (HMK m. 10). Dava açmadan önce zorunlu arabuluculuk başvurusu yapılmalıdır (HUAK m. 18/B).
+                                        Kira ilişkisinden doğan davalara, dava değerine bakılmaksızın Sulh Hukuk Mahkemesi bakar (HMK m. 4/1-a). {district} ilçesindeki uyuşmazlıklarda bu davalar genel olarak <strong>{districtData.courthouse}</strong> önünde görülür.
+                                    </p>
+                                    <p>
+                                        Yetkili mahkeme kural olarak davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmenin ifa yeri mahkemesinde de dava açılabilir (HMK m. 10). Dava açmadan önce zorunlu arabuluculuk başvurusu yapılmalıdır (HUAK m. 18/B).
                                     </p>
                                 </>
                             )}

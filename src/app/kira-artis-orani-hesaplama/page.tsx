@@ -81,7 +81,7 @@ export default function RentCalculatorPage() {
             {/* SEO Content */}
             <section className="pb-24">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-slate-100 prose prose-slate prose-lg">
+                    <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-slate-100 doc-prose">
 
                         <h2>Yasal Kira Artış Oranı Nedir?</h2>
                         <p>

@@ -94,68 +94,67 @@
 
 /* Article prose — moved from Tailwind arbitrary selectors for Style & Layout performance */
 @layer components {
-.article-prose :where(h1, h2, h3, h4, h5, h6) {
-  font-family: var(--font-serif);
-  font-weight: 900;
-  color: oklch(0.208 0.042 265.755);
+.article-prose {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: oklch(0.372 0.044 257.287);
 }
 
+.article-prose :where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-serif);
+}
+
+/* Unified with .doc-prose (same heading/paragraph/list rhythm sitewide) */
 .article-prose > h1 {
-  font-size: 2.5rem;
-  margin: 4rem -1.5rem 2rem;
+  font-size: 2.25rem;
   line-height: 1.25;
-  background: linear-gradient(to right, oklch(0.25 0.03 260 / 0.1), transparent);
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  border-left: 4px solid var(--primary);
+  font-weight: 800;
+  color: var(--primary);
+  margin: 3rem 0 1.25rem;
 }
 
 .article-prose > h2 {
   font-size: 1.75rem;
-  margin: 2rem -1.5rem 1rem;
-  background: oklch(0.968 0.007 264.536);
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  border-left: 4px solid var(--secondary);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 3rem 0 1rem;
+  padding-top: 1.5rem;
   border-top: 1px solid oklch(0.929 0.013 255.508);
 }
 
+.article-prose > h2:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+
 .article-prose > h3 {
-  font-size: 1.375rem;
-  margin: 1.5rem 0 0.75rem;
-  color: var(--primary);
+  font-size: 1.25rem;
+  line-height: 1.4;
   font-weight: 700;
-  border-bottom: 1px solid oklch(0.929 0.013 255.508);
-  padding-bottom: 0.5rem;
+  color: oklch(0.279 0.041 260.031);
+  margin: 2rem 0 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .article-prose > h2 {
-    margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
-    border-top: 0;
-  }
+.article-prose > h2 + h3 { margin-top: 1.25rem; }
 
-  .article-prose > h3 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-  }
+.article-prose > h4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: oklch(0.279 0.041 260.031);
+  margin: 1.5rem 0 0.5rem;
 }
 
-.article-prose > p {
-  font-size: 1rem;
-  color: oklch(0.442 0.017 257.281);
-  line-height: 1.85;
-  margin-bottom: 1.25rem;
-}
+.article-prose > p { margin: 0 0 1rem; }
+
+.article-prose > ul { list-style: disc; }
+.article-prose > ol { list-style: decimal; }
 
 .article-prose > ul > li,
 .article-prose > ol > li {
-  font-size: 1rem;
-  color: oklch(0.442 0.017 257.281);
-  margin-bottom: 0.5rem;
-  line-height: 1.625;
+  margin-bottom: 0.625rem;
+  padding-left: 0.25rem;
 }
+
+.article-prose > ul > li::marker,
+.article-prose > ol > li::marker { color: var(--secondary); font-weight: 700; }
 
 .article-prose :where(strong) {
   color: var(--primary);
@@ -181,7 +180,7 @@
 
 .article-prose :where(ul),
 .article-prose :where(ol) {
-  margin: 1.5rem 0;
+  margin: 0 0 1.5rem;
   padding-left: 1.5rem;
 }
 
@@ -370,4 +369,20 @@
 }
 .doc-prose > .not-prose { margin-top: 2rem; margin-bottom: 2rem; }
 .doc-prose :where(strong) { color: oklch(0.208 0.042 265.755); font-weight: 700; }
+}
+
+/* doc-prose: unclassed links (e.g. district/glossary pages) */
+@layer components {
+.doc-prose :where(a:not([class])) {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.doc-prose :where(a:not([class])):hover { color: var(--primary); }
+}
+
+@layer components {
+.article-prose > hr + h2,
+.doc-prose > hr + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
 }
