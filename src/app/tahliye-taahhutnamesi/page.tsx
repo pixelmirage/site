@@ -440,7 +440,7 @@ export default function EvictionTemplatePage() {
                     </div>
 
                     <div className="not-prose mt-8 border-t border-slate-200 pt-6 text-sm text-slate-600">
-                        <p className="mb-2"><strong>Yazar:</strong> <Link href="/hakkimda/" className={ext}>Av. Mert Kağan Çetin</Link>, İzmir Barosu. Son güncelleme: 15 Ekim 2026.</p>
+                        <p className="mb-2"><strong>Yazar:</strong> <Link href="/hakkimda/" className={ext}>Av. Mert Kağan Çetin</Link>, İzmir Barosu Sicil: 15556. Son güncelleme: 15 Ekim 2026.</p>
                         <p className="mb-2"><strong>Kaynaklar:</strong> <a href={TBK_URL} target="_blank" rel="noopener noreferrer" className={ext}>6098 sayılı Türk Borçlar Kanunu</a>; <a href={IIK_URL} target="_blank" rel="noopener noreferrer" className={ext}>2004 sayılı İcra ve İflas Kanunu</a> (mevzuat.gov.tr).</p>
                         <p><em>Bu içerik genel bilgilendirme amaçlıdır, hukuki mütalaa değildir.</em></p>
                     </div>
