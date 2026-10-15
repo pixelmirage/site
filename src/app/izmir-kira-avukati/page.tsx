@@ -408,7 +408,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         <p>
-                            Yazılı <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü</Link> bulunan durumlarda da taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılabilir (İİK m. 272). Bu takipler zorunlu arabuluculuk şartının dışındadır. Ayrıntılı bilgi için <Link href="/izmir-kira-avukati/kira-borcu-icra/">kira borcu icra takibi</Link> sayfamıza bakabilirsiniz.
+                            Yazılı <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü</Link> bulunan durumlarda da taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılabilir (İİK m. 272). Bu takipler zorunlu arabuluculuk şartının dışındadır. Tahliye emri, 7 günlük itiraz süresi ve 15 günlük tahliye süresi dahil adımlar için <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü ile icra yoluyla tahliye</Link> rehberimize, kira alacağına ilişkin ayrıntılı bilgi için <Link href="/izmir-kira-avukati/kira-borcu-icra/">kira borcu icra takibi</Link> sayfamıza bakabilirsiniz.
                         </p>
 
                         {/* Kira Tespit */}

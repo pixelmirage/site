@@ -131,6 +131,10 @@ export default function KiraciTahliyeDavasiPage() {
                             Kiracı tahliye davaları, Türk Borçlar Kanunu&apos;nun 350-356. maddeleri kapsamında düzenlenir ve her tahliye sebebinin kendine özgü usul kuralları vardır. Yanlış tahliye sebebi seçmek, süreleri kaçırmak veya eksik delil sunmak davanın reddine neden olur. <strong>Kiracı tahliye davası avukatı</strong> olarak İzmir Adliyesi (Bayraklı)&apos;ndeki tüm kira davalarını yakından takip ediyoruz.
                         </p>
 
+                        <p>
+                            Kiracı yazılı tahliye taahhüdü vermiş ve taahhüt ettiği tarihte çıkmamışsa, dava yerine icra yolu da kullanılabilir (TBK m. 352/1). Süreler ve adımlar için <Link href="/tahliye-taahhutnamesi/">tahliye taahhüdü ile icra yoluyla tahliye</Link> rehberimizi inceleyebilirsiniz.
+                        </p>
+
                         <h2 id="tahliye-turleri" className="scroll-mt-24">Kiracı Tahliye Davası Türleri</h2>
 
                         <p>
