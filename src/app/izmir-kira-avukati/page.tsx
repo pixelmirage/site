@@ -325,12 +325,14 @@ export default function IzmirKiraAvukatiPage() {
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı – Sık Sorulan Sorular</h2>
 
-                        {faqs.map((f) => (
-                            <div key={f.question}>
-                                <h3>{f.question}</h3>
-                                <p>{f.answer}</p>
-                            </div>
-                        ))}
+                        <div className="not-prose my-6 space-y-3 md:space-y-4">
+                            {faqs.map((f) => (
+                                <div key={f.question} className="rounded-xl border border-slate-200 bg-white px-5 py-4 md:px-6 md:py-5 shadow-sm">
+                                    <h3 className="font-serif text-base md:text-lg font-bold leading-snug text-primary">{f.question}</h3>
+                                    <p className="mt-2 text-[0.95rem] md:text-base leading-7 text-slate-600">{f.answer}</p>
+                                </div>
+                            ))}
+                        </div>
 
                         <YouTubeShorts
                             videoId="JeM-o0sl9j8"
