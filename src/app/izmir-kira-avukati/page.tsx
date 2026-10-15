@@ -10,7 +10,7 @@ const YouTubeShorts = dynamic(() => import("@/components/ui/YouTubeShorts").then
 import { articleProseClasses } from "@/lib/prose-classes";
 
 const pageTitle = "İzmir Kira Avukatı – Tahliye ve Kira Tespit | Av. Mert Kağan Çetin";
-const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin (İzmir Barosu, sicil 15556): ev sahibi ve kiracılar için tahliye, kira tespit ve arabuluculuk. Bayraklı ofis, telefonla ön görüşme.";
+const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin; tahliye, kira tespiti ve kira artışı uyuşmazlıklarında ev sahibi ve kiracılara hukuki danışmanlık ve dava takibi hizmeti sunmaktadır.";
 
 export const metadata: Metadata = {
     title: {
