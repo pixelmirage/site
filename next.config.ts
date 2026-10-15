@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 
+// NOTE: mirrored in vercel.json (regenerate when editing) - Vercel edge applies the
+// trailingSlash redirect before next.config redirects, vercel.json runs first.
 // Old Wix domain (av-mertkagancetin.com) -> mertkagancetin.com 301 map.
 // Source list: Wayback CDX + archived sitemaps (blog-posts / pages / blog-categories).
 const OLD_HOST = [{ type: 'host' as const, value: '(www\\.)?av-mertkagancetin\\.com' }];
