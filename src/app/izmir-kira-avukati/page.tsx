@@ -12,11 +12,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Kira Avukatı | Kiracı Tahliye, Kira Tespit – Av. Çetin",
+        absolute: "İzmir Kira Avukatı | Kiracı Tahliye – Av. Mert Kağan Çetin",
     },
     description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
     openGraph: {
-        title: "İzmir Kira Avukatı | Kiracı Tahliye, Kira Tespit – Av. Çetin",
+        title: "İzmir Kira Avukatı | Kiracı Tahliye – Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/",
         type: "website",
@@ -24,7 +24,13 @@ export const metadata: Metadata = {
         images: [{ url: "/og-image.jpg", alt: "Av. Mert Kağan Çetin - İzmir Kira Avukatı" }],
     },
     other: {
-        "article:modified_time": "2026-10-13",
+        "article:modified_time": "2026-10-15",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "İzmir Kira Avukatı | Kiracı Tahliye – Av. Mert Kağan Çetin",
+        description: "İzmir kira avukatı Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespit, depozito ve zorunlu arabuluculuk süreçlerinde hukuki destek.",
+        images: ["/og-image.jpg"],
     },
     alternates: {
         canonical: "https://mertkagancetin.com/izmir-kira-avukati/",
@@ -154,7 +160,7 @@ export default function IzmirKiraAvukatiPage() {
                             "isPartOf": { "@id": "https://mertkagancetin.com/#website" },
                             "about": { "@id": "https://mertkagancetin.com/izmir-kira-avukati/#service" },
                             "author": { "@id": "https://mertkagancetin.com/#person" },
-                            "dateModified": "2026-10-13",
+                            "dateModified": "2026-10-15",
                             "inLanguage": "tr-TR"
                         }
                     ]
@@ -179,7 +185,7 @@ export default function IzmirKiraAvukatiPage() {
                             İzmir Kira Avukatı – Kiracı Tahliye ve Kira Tespit Davaları
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            <strong className="text-white">İzmir kira avukatı</strong> Av. Mert Kağan Çetin; tahliye, kira tespiti, kira uyarlama, depozito ve kira alacağı uyuşmazlıklarında Bayraklı ofisinden İzmir genelinde avukatlık hizmeti vermektedir.
+                            <strong className="text-white">İzmir kira avukatı</strong> Av. Mert Kağan Çetin; ev sahibi ve kiracılar için tahliye, kira tespiti, kira uyarlama, depozito ve kira alacağı uyuşmazlıklarında Bayraklı ofisinden İzmir genelinde avukatlık hizmeti vermektedir.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
@@ -545,7 +551,7 @@ export default function IzmirKiraAvukatiPage() {
                             </div>
                         ))}
 
-                        <p className="text-sm text-slate-500">Son güncelleme: 13 Ekim 2026</p>
+                        <p className="text-sm text-slate-500">Son güncelleme: 15 Ekim 2026</p>
 
                         <hr />
 
