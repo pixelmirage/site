@@ -229,7 +229,7 @@ export default function IzmirKiraAvukatiPage() {
                         <ul>
                             <li><strong>Kira Avukatı:</strong> Av. Mert Kağan Çetin (İzmir Barosu Sicil No: 15556)</li>
                             <li><strong>Telefon:</strong> <a href="tel:+905445854645">+90 544 585 46 45</a></li>
-                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir</li>
+                            <li><strong>Adres:</strong> Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, Bayraklı/İzmir</li>
                             <li><strong>E-posta:</strong> <a href="mailto:mertkagancetin@gmail.com">mertkagancetin@gmail.com</a></li>
                         </ul>
 

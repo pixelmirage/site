@@ -109,7 +109,6 @@ const legalServiceSchema = {
         "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
         "addressLocality": "Bayraklı",
         "addressRegion": "İzmir",
-        "postalCode": "35000",
         "addressCountry": "TR",
     },
     "areaServed": { "@type": "City", "name": "İzmir" },
@@ -179,17 +178,23 @@ export default function EvictionTemplatePage() {
 
             {/* Main Content - Hidden in Print */}
             <section className="pt-12 container mx-auto px-4 print:hidden">
-                <div className="max-w-[210mm] mx-auto prose prose-slate prose-lg">
-                    <p className="text-sm text-slate-500 italic">
+                <div className="mx-auto doc-prose">
+                    <p className="text-sm text-slate-500 italic mb-8">
                         Son güncelleme: 15 Ekim 2026 – Hukuki inceleme: <Link href="/hakkimda/" className={ext}>Av. Mert Kağan Çetin</Link>, İzmir Barosu
                     </p>
 
                     <h2 id="kisa-cevap">Kısa cevap: Tahliye taahhütnamesi nedir?</h2>
                     <p>
-                        <strong>Tahliye taahhütnamesi</strong>, kiracının kiraladığı konutu veya işyerini belli bir tarihte boşaltacağını kiraya verene karşı yazılı olarak üstlendiği belgedir (TBK m. 352/1). Geçerli olması için üç temel şart aranır: <strong>yazılı</strong> olmalı, kiralananın kiracıya <strong>tesliminden sonra</strong> imzalanmalı ve <strong>belli bir boşaltma tarihi</strong> içermelidir. Yargıtay uygulamasında kira sözleşmesiyle aynı anda, teslimden önce alınan taahhütler geçerli kabul edilmemektedir.
+                        <strong>Tahliye taahhütnamesi</strong>, kiracının kiraladığı konutu veya işyerini belli bir tarihte boşaltacağını kiraya verene karşı yazılı olarak üstlendiği belgedir (TBK m. 352/1). Geçerli olması için üç temel şart aranır: <strong>yazılı</strong> olmalı, kiralananın kiracıya <strong>tesliminden sonra</strong> imzalanmalı ve <strong>belli bir boşaltma tarihi</strong> içermelidir.
                     </p>
                     <p>
-                        Kiracı taahhüt ettiği tarihte çıkmazsa kiraya veren, bu tarihten başlayarak <strong>bir ay içinde</strong> icra dairesine başvurabilir (İİK m. 272-275) veya tahliye davası açabilir (TBK m. 352/1). İcra yolunda kiracıya tahliye emri gönderilir; kiracının yedi gün itiraz hakkı vardır.
+                        Yargıtay uygulamasında kira sözleşmesiyle aynı anda, teslimden önce alınan taahhütler geçerli kabul edilmemektedir.
+                    </p>
+                    <p>
+                        Kiracı taahhüt ettiği tarihte çıkmazsa kiraya veren, bu tarihten başlayarak <strong>bir ay içinde</strong> icra dairesine başvurabilir (İİK m. 272-275) veya tahliye davası açabilir (TBK m. 352/1).
+                    </p>
+                    <p>
+                        İcra yolunda kiracıya tahliye emri gönderilir; kiracının yedi gün itiraz hakkı vardır.
                     </p>
                     <div className="not-prose overflow-x-auto my-6">
                         <table className="w-full text-sm border-collapse bg-white">
@@ -238,7 +243,14 @@ export default function EvictionTemplatePage() {
                         &quot;Kiracı, kiralananın teslim edilmesinden sonra, kiraya verene karşı, kiralananı belli bir tarihte boşaltmayı yazılı olarak üstlendiği hâlde boşaltmamışsa kiraya veren, kira sözleşmesini bu tarihten başlayarak bir ay içinde icraya başvurmak veya dava açmak suretiyle sona erdirebilir.&quot; (<a href={TBK_URL} target="_blank" rel="noopener noreferrer" className={ext}>TBK m. 352/1, mevzuat.gov.tr</a>)
                     </blockquote>
                     <p>
-                        Aynı maddenin ikinci fıkrası ise farklı bir tahliye sebebi olan <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className={ext}>iki haklı ihtar</Link> durumunu düzenler. Bu ikisi sıkça karıştırılır: tahliye taahhüdünde sebep kiracının kendi yazılı beyanıdır; iki haklı ihtarda ise kira bedelinin ödenmemesi nedeniyle yapılan ihtarlardır. Kira borcunun ödenmemesine dayalı takip de ayrı bir yoldur; bunun için <Link href="/izmir-kira-avukati/kira-borcu-icra/" className={ext}>kira borcu nedeniyle icra takibi</Link> sayfamıza bakabilirsiniz.
+                        Aynı maddenin ikinci fıkrası ise farklı bir tahliye sebebi olan <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className={ext}>iki haklı ihtar</Link> durumunu düzenler. Bu ikisi sıkça karıştırılır.
+                    </p>
+                    <ul>
+                        <li><strong>Tahliye taahhüdünde</strong> sebep, kiracının kendi yazılı beyanıdır.</li>
+                        <li><strong>İki haklı ihtarda</strong> sebep, kira bedelinin ödenmemesi nedeniyle yapılan ihtarlardır.</li>
+                    </ul>
+                    <p>
+                        Kira borcunun ödenmemesine dayalı takip de ayrı bir yoldur; bunun için <Link href="/izmir-kira-avukati/kira-borcu-icra/" className={ext}>kira borcu nedeniyle icra takibi</Link> sayfamıza bakabilirsiniz.
                     </p>
 
                     <h2 id="gecerlilik-sartlari">Tahliye taahhüdünün geçerlilik şartları</h2>
@@ -262,7 +274,10 @@ export default function EvictionTemplatePage() {
                     </p>
                     <h3>Kiracı tarafından kiraya verene verilmeli</h3>
                     <p>
-                        Taahhüt, kiracı tarafından kiraya verene karşı verilmelidir. Birden çok kiracının bulunduğu, kiracının şirket olduğu veya taşınmazın aile konutu olarak kullanıldığı durumlarda kimin imzasının gerektiği uygulamada tartışmalıdır; bu hâllerde somut olaya göre bir avukata danışılması önerilir. Taşınmaz aile konutu ise, kiracı eşin aile konutuna ilişkin kira sözleşmesini diğer eşin açık rızası olmadan feshedemeyeceğini düzenleyen TMK m. 194 de dikkate alınmalıdır.
+                        Taahhüt, kiracı tarafından kiraya verene karşı verilmelidir. Birden çok kiracının bulunduğu, kiracının şirket olduğu veya taşınmazın aile konutu olarak kullanıldığı durumlarda kimin imzasının gerektiği uygulamada tartışmalıdır; bu hâllerde somut olaya göre bir avukata danışılması önerilir.
+                    </p>
+                    <p>
+                        Taşınmaz aile konutu ise, kiracı eşin aile konutuna ilişkin kira sözleşmesini diğer eşin açık rızası olmadan feshedemeyeceğini düzenleyen TMK m. 194 de dikkate alınmalıdır.
                     </p>
 
                     <h2 id="gecersiz-olur-mu">Tahliye taahhütnamesi hangi durumlarda geçersiz olur?</h2>
@@ -298,12 +313,12 @@ export default function EvictionTemplatePage() {
 
             {/* Template Preview Section */}
             <section className="py-12 container mx-auto px-4">
-                <div className="max-w-[210mm] mx-auto bg-white shadow-xl p-[20mm] min-h-[297mm] text-black print:shadow-none print:p-0 print:w-full print:max-w-none">
+                <div className="max-w-[210mm] mx-auto bg-white shadow-xl p-6 sm:p-[20mm] min-h-[297mm] text-black print:shadow-none print:p-0 print:w-full print:max-w-none">
 
                     <div className="print-content font-serif leading-relaxed">
                         <h2 className="text-center font-bold text-2xl mb-12 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">Tahliye Taahhütnamesi</h2>
 
-                        <div className="space-y-6 text-lg">
+                        <div className="space-y-6 text-base sm:text-lg [overflow-wrap:anywhere]">
                             <p>
                                 <strong>TAAHHÜT EDEN (KİRACI):</strong> ....................................................................................
                             </p>
@@ -340,7 +355,7 @@ export default function EvictionTemplatePage() {
                                 </p>
                             </div>
 
-                            <div className="flex justify-between mt-24 px-8">
+                            <div className="flex justify-between gap-4 mt-24 sm:px-8">
                                 <div className="text-center">
                                     <p className="font-bold mb-16">DÜZENLEME TARİHİ</p>
                                     <p>..... / ..... / 20.....</p>
@@ -369,7 +384,7 @@ export default function EvictionTemplatePage() {
                 </div>
 
                 {/* SEO Content - Hidden in Print */}
-                <div className="max-w-[210mm] mx-auto mt-12 prose prose-slate prose-lg print:hidden">
+                <div className="mx-auto mt-12 doc-prose print:hidden">
                     <h2 id="icra-yoluyla-tahliye">Kiracı taahhüt tarihinde çıkmazsa: icra yoluyla tahliye adım adım</h2>
                     <p>
                         Kiracı taahhüt ettiği tarihte taşınmazı boşaltmazsa süreç, <a href={IIK_URL} target="_blank" rel="noopener noreferrer" className={ext}>İcra ve İflas Kanunu</a>&apos;nun 272-276. maddelerine göre aşağıdaki sırayla ilerler.
@@ -392,7 +407,10 @@ export default function EvictionTemplatePage() {
                     </p>
                     <h3>4b. İtiraz varsa: itirazın kaldırılması ve tahliye</h3>
                     <p>
-                        Süresinde itiraz edilirse takip durur. Kiraya veren, icra mahkemesinden itirazın kaldırılmasını ve tahliyeyi isteyebilir (İİK m. 275). Ancak adi yazılı taahhütteki imza veya tarih kiracı tarafından inkâr edilirse icra mahkemesi itirazı kaldıramaz; uyuşmazlık bu durumda genel mahkemede yapılacak yargılamayı gerektirir ve süreç uzayabilir.
+                        Süresinde itiraz edilirse takip durur. Kiraya veren, icra mahkemesinden itirazın kaldırılmasını ve tahliyeyi isteyebilir (İİK m. 275). Ancak adi yazılı taahhütteki imza veya tarih kiracı tarafından inkâr edilirse icra mahkemesi itirazı kaldıramaz.
+                    </p>
+                    <p>
+                        Uyuşmazlık bu durumda genel mahkemede yapılacak yargılamayı gerektirir ve süreç uzayabilir.
                     </p>
                     <p>
                         İcra mahkemesinin sınırlı inceleme yetkisi nedeniyle, imza veya tarih tartışmasının olduğu dosyalarda genel mahkemede açılacak dava gündeme gelir.
@@ -442,7 +460,13 @@ export default function EvictionTemplatePage() {
 
                     <h2 id="icra-mi-dava-mi">İcra yolu mu, tahliye davası mı?</h2>
                     <p>
-                        TBK m. 352/1 kiraya verene iki yol tanır: &quot;icraya başvurmak veya dava açmak&quot;. Her iki yolda da bir aylık süre geçerlidir. İcra yolu, imza ve tarihin tartışılmadığı dosyalarda daha doğrudan bir yol olarak düşünülebilir. İmza veya tarih inkârı beklenen, taahhüdün teslimden önce verildiği iddia edilebilecek ya da birden fazla tahliye sebebinin birlikte ileri sürüleceği durumlarda ise doğrudan <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className={ext}>kiracı tahliye davası</Link> açılması değerlendirilebilir. Hangi yolun uygun olduğu somut olaya göre değişir; hiçbir yol belirli bir sonucu garanti etmez.
+                        TBK m. 352/1 kiraya verene iki yol tanır: &quot;icraya başvurmak veya dava açmak&quot;. Her iki yolda da bir aylık süre geçerlidir. İcra yolu, imza ve tarihin tartışılmadığı dosyalarda daha doğrudan bir yol olarak düşünülebilir.
+                    </p>
+                    <p>
+                        İmza veya tarih inkârı beklenen, taahhüdün teslimden önce verildiği iddia edilebilecek ya da birden fazla tahliye sebebinin birlikte ileri sürüleceği durumlarda ise doğrudan <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className={ext}>kiracı tahliye davası</Link> açılması değerlendirilebilir.
+                    </p>
+                    <p>
+                        Hangi yolun uygun olduğu somut olaya göre değişir; hiçbir yol belirli bir sonucu garanti etmez.
                     </p>
                     <p>
                         Dava yolunu tercih etmeden önce dava şartı arabuluculuğun somut uyuşmazlığa uygulanıp uygulanmadığı güncel mevzuat çerçevesinde kontrol edilmelidir. Genel bilgi için <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className={ext}>kira uyuşmazlıklarında arabuluculuk</Link> yazımızı inceleyebilirsiniz.
@@ -463,11 +487,11 @@ export default function EvictionTemplatePage() {
                     </p>
 
                     <h2 id="sss">Sık sorulan sorular</h2>
-                    <div className="not-prose space-y-4 my-6">
+                    <div className="not-prose space-y-3">
                         {faqs.map((faq) => (
-                            <details key={faq.question} className="bg-white border border-slate-200 rounded-lg p-4">
+                            <details key={faq.question} className="bg-white border border-slate-200 rounded-lg px-5 py-4 open:shadow-sm">
                                 <summary className="font-semibold text-primary cursor-pointer"><h3 className="inline text-base">{faq.question}</h3></summary>
-                                <p className="mt-3 text-slate-700 leading-relaxed">{faq.answer}</p>
+                                <p className="mt-3 pt-3 border-t border-slate-100 text-slate-700 leading-7">{faq.answer}</p>
                             </details>
                         ))}
                     </div>
@@ -480,7 +504,7 @@ export default function EvictionTemplatePage() {
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
                         <h3 className="text-2xl font-serif font-bold text-primary mb-4">Tahliye Sürecinde Hukuki Destek</h3>
                         <p className="mb-6 text-muted-foreground">Tahliye taahhüdünüzün geçerliliğini veya başlattığınız takibe yapılan itirazı değerlendirmek için ön görüşme talep edebilirsiniz.</p>
-                        <p className="mb-6 text-sm text-slate-600">Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, 35000 Bayraklı/İzmir · 0544 585 46 45</p>
+                        <p className="mb-6 text-sm text-slate-600">Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, Bayraklı/İzmir · 0544 585 46 45</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>
                                 <Link href="/iletisim/">İletişim</Link>

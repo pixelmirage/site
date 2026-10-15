@@ -59,7 +59,7 @@ export default function ContactPage() {
                                             <h4 className="font-bold text-primary mb-1">Ofis Adresi</h4>
                                             <p className="text-muted-foreground text-sm leading-relaxed">
                                                 Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, <br />
-                                                35000 Bayraklı/İzmir
+                                                Bayraklı/İzmir
                                             </p>
                                             <a href="https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7" target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
                                                 Google Maps'te Yol Tarifi Al &rarr;
