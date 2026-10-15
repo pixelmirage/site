@@ -40,7 +40,7 @@ const faqs = [
     },
     {
         question: "Kira davalarına hangi mahkeme bakar?",
-        answer: "Kira davalarında görevli mahkeme Sulh Hukuk Mahkemesi'dir (HMK m. 4). Yetkili mahkeme ise kiralanan taşınmazın bulunduğu yer mahkemesidir. İzmir'de kira davaları Bayraklı Adliyesi'ndeki Sulh Hukuk Mahkemeleri tarafından görülür. Kira alacağına ilişkin icra takipleri ise İzmir İcra Müdürlükleri nezdinde yürütülür."
+        answer: "Kira davalarında görevli mahkeme Sulh Hukuk Mahkemesi'dir (HMK m. 4). Yetkili mahkeme ise kiralanan taşınmazın bulunduğu yer mahkemesidir. İzmir'de kira davaları İzmir Adliyesi'ndeki Sulh Hukuk Mahkemeleri tarafından görülür. Kira alacağına ilişkin icra takipleri ise İzmir İcra Müdürlükleri nezdinde yürütülür."
     },
     {
         question: "Kiracı hakları nelerdir?",
@@ -165,7 +165,7 @@ export default function IzmirKiraHukukuPage() {
                         </p>
 
                         <p>
-                            Arabuluculuk sürecinde anlaşma sağlanamazsa kira davaları Sulh Hukuk Mahkemesi&apos;nde görülür. İzmir&apos;de kira davaları Bayraklı Adliyesi&apos;ndeki Sulh Hukuk Mahkemeleri tarafından karara bağlanır. Kira tespit davası, tahliye davası, kira uyarlama davası ve kiralananın ayıplarının giderilmesi davası en sık açılan kira davası türleridir.
+                            Arabuluculuk sürecinde anlaşma sağlanamazsa kira davaları Sulh Hukuk Mahkemesi&apos;nde görülür. İzmir&apos;de kira davaları İzmir Adliyesi&apos;ndeki Sulh Hukuk Mahkemeleri tarafından karara bağlanır. Kira tespit davası, tahliye davası, kira uyarlama davası ve kiralananın ayıplarının giderilmesi davası en sık açılan kira davası türleridir.
                         </p>
 
                         <p>
@@ -204,7 +204,7 @@ export default function IzmirKiraHukukuPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Kira hukuku, kira tespit davaları, tahliye davaları ve kira uyuşmazlıklarında kapsamlı hukuki danışmanlık sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Kira hukuku, kira tespit davaları, tahliye davaları ve kira uyuşmazlıklarında kapsamlı hukuki danışmanlık sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde kira davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>

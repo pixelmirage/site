@@ -229,7 +229,7 @@ export default function KiraSozlesmesiPage() {
                         <div>
                             <h4 className="font-bold text-amber-800 mb-2">Dikkat Edilmesi Gerekenler</h4>
                             <p className="text-sm text-amber-700 leading-relaxed">
-                                Bu şablon genel bilgilendirme amaçlıdır ve tüm kira ilişkilerine birebir uygun olmayabilir. Özellikle <strong>işyeri kiraları</strong>, <strong>yüksek bedelli kira sözleşmeleri</strong> veya <strong>özel durumlar</strong> için uzman bir avukattan hukuki danışmanlık almanız tavsiye edilir.
+                                Bu şablon genel bilgilendirme amaçlıdır ve tüm kira ilişkilerine birebir uygun olmayabilir. Özellikle <strong>işyeri kiraları</strong>, <strong>yüksek bedelli kira sözleşmeleri</strong> veya <strong>özel durumlar</strong> için bir avukattan hukuki danışmanlık almanız tavsiye edilir.
                             </p>
                         </div>
                     </div>

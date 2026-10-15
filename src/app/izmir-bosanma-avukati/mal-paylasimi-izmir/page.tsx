@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Mal Paylaşımı Davaları İzmir | Boşanma Avukatı",
-    description: "İzmir'de boşanmada mal paylaşımı davası avukatı Av. Mert Kağan Çetin. Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında uzman destek.",
+    description: "İzmir'de boşanmada mal paylaşımı davası avukatı Av. Mert Kağan Çetin. Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "Mal Paylaşımı Davaları İzmir | Av. Mert Kağan Çetin",
-        description: "İzmir'de boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi ve katkı payı davalarında uzman avukat desteği.",
+        description: "İzmir'de boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi ve katkı payı davalarında avukat desteği.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/mal-paylasimi-izmir/",
         type: "article",
     },
@@ -85,7 +85,7 @@ export default function MalPaylasimiIzmirPage() {
                             Mal Paylaşımı Davaları İzmir
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            İzmir&apos;de boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi ve katkı payı davalarında uzman avukat desteği.
+                            İzmir&apos;de boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi ve katkı payı davalarında avukat desteği.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
@@ -119,7 +119,7 @@ export default function MalPaylasimiIzmirPage() {
                     <div className={`max-w-4xl mx-auto ${articleProseClasses}`}>
 
                         <p className="text-xl leading-relaxed font-medium">
-                            <strong>İzmir mal paylaşımı avukatı</strong> olarak boşanma sürecinde edinilmiş mallara katılma rejimi, katkı payı alacağı ve değer artış payı davalarında kapsamlı hukuki destek sunuyoruz. <Link href="/sozluk/mal-paylasimi/">Mal paylaşımı</Link> hukuki süreci hakkında uzman rehberlik sağlıyoruz.
+                            <strong>İzmir mal paylaşımı avukatı</strong> olarak boşanma sürecinde edinilmiş mallara katılma rejimi, katkı payı alacağı ve değer artış payı davalarında kapsamlı hukuki destek sunuyoruz. <Link href="/sozluk/mal-paylasimi/">Mal paylaşımı</Link> hukuki süreci hakkında hukuki rehberlik sağlıyoruz.
                         </p>
 
                         <p className="text-sm text-slate-500 italic">
@@ -243,7 +243,7 @@ export default function MalPaylasimiIzmirPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde mal paylaşımı davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde mal paylaşımı davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -258,7 +258,7 @@ export default function MalPaylasimiIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi
@@ -288,7 +288,7 @@ export default function MalPaylasimiIzmirPage() {
                             <div className="bg-gradient-to-br from-primary to-slate-800 text-white rounded-3xl p-8 md:p-12 my-12">
                                 <h2 className="text-3xl font-playfair font-bold mb-4">Mal Paylaşımı Davanız İçin Bize Ulaşın</h2>
                                 <p className="text-slate-300 mb-8 text-lg">
-                                    Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında uzman hukuki destek için hemen randevu alın.
+                                    Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında hukuki destek için hemen randevu alın.
                                     <strong className="text-white"> Mal paylaşımı avukatı</strong> olarak size yardımcı olmaya hazırız.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

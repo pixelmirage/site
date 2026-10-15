@@ -244,7 +244,7 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                         </p>
 
                         <p>
-                            Ücretsiz ön görüşme randevusu almak için <Link href="/iletisim/">iletişim sayfamızı</Link> ziyaret edebilir veya doğrudan 0544 585 46 45 numaralı telefonu arayabilirsiniz. Bayraklı Adliyesi yakınındaki ofisimizde veya online olarak görüşme yapılabilir.
+                            Ücretsiz ön görüşme randevusu almak için <Link href="/iletisim/">iletişim sayfamızı</Link> ziyaret edebilir veya doğrudan 0544 585 46 45 numaralı telefonu arayabilirsiniz. İzmir Adliyesi yakınındaki ofisimizde veya online olarak görüşme yapılabilir.
                         </p>
 
                         {/* E-E-A-T Author Box */}
@@ -272,7 +272,7 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; İzmir Anlaşmalı Boşanma Avukatı

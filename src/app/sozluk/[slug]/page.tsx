@@ -244,7 +244,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
                         <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Hukuki Desteğe mi İhtiyacınız Var?</h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
-                            Kira, iş, boşanma ve tazminat hukuku alanlarında uzman avukatlık hizmeti alın. Hemen bize ulaşın.
+                            Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık hizmeti alın. Hemen bize ulaşın.
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">

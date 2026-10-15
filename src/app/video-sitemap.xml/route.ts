@@ -56,7 +56,7 @@ export async function GET() {
         pageUrl: `${baseUrl}/izmir-kira-avukati/`,
         videoId: 'JeM-o0sl9j8',
         title: 'İzmir\'de Kira Avukatıyla Çalışmanın Önemi | Kısa Video',
-        description: 'Kira davası sürecinde en sık yapılan hatalar ve uzman kira avukatının farkı.',
+        description: 'Kira davası sürecinde en sık yapılan hatalar ve kira avukatının farkı.',
         date: '2026-03-13',
     });
 

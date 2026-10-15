@@ -198,7 +198,7 @@ export default function KiraSozlesmesiRehberiPage() {
                         </div>
 
                         <p>
-                            İşyeri kira sözleşmelerinde dikkat edilmesi gereken özel hususlar bulunmaktadır. Detaylı bilgi için <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/">işyeri kira sözleşmelerinde dikkat edilmesi gereken hususlar</Link> yazımızı inceleyebilirsiniz. Her sözleşme türünde tarafların hak ve yükümlülükleri farklılık gösterdiğinden, sözleşme hazırlanırken uzman hukuki destek alınması büyük önem taşır.
+                            İşyeri kira sözleşmelerinde dikkat edilmesi gereken özel hususlar bulunmaktadır. Detaylı bilgi için <Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/">işyeri kira sözleşmelerinde dikkat edilmesi gereken hususlar</Link> yazımızı inceleyebilirsiniz. Her sözleşme türünde tarafların hak ve yükümlülükleri farklılık gösterdiğinden, sözleşme hazırlanırken hukuki destek alınması büyük önem taşır.
                         </p>
 
                         <SectionCTA text="Kira sözleşmenizin hukuki incelemesi için avukat desteği almak ister misiniz?" />

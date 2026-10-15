@@ -13,11 +13,11 @@ import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
     title: "Nafaka Davaları İzmir | Nafaka Avukatı",
-    description: "İzmir'de nafaka davaları avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası, tedbir nafakası ve nafaka artırım davalarında uzman hukuki destek.",
+    description: "İzmir'de nafaka davaları avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası, tedbir nafakası ve nafaka artırım davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
         title: "Nafaka Davaları İzmir | Av. Mert Kağan Çetin",
-        description: "İzmir'de nafaka türleri, hesaplama yöntemleri ve nafaka davası süreçlerinde uzman avukatlık hizmeti.",
+        description: "İzmir'de nafaka türleri, hesaplama yöntemleri ve nafaka davası süreçlerinde avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/nafaka-davasi/",
         type: "article",
     },
@@ -128,7 +128,7 @@ export default function NafakaDavasiPage() {
                         </p>
 
                         <p>
-                            Nafaka davaları, Türk Medeni Kanunu&apos;nun 169, 175 ve 182. maddeleri kapsamında düzenlenir. Her nafaka türünün kendine özgü koşulları ve hesaplama yöntemi vardır. <strong>Nafaka davası avukatı</strong> olarak Bayraklı Adliyesi Aile Mahkemesi&apos;ndeki nafaka davalarını yakından takip ediyoruz.
+                            Nafaka davaları, Türk Medeni Kanunu&apos;nun 169, 175 ve 182. maddeleri kapsamında düzenlenir. Her nafaka türünün kendine özgü koşulları ve hesaplama yöntemi vardır. <strong>Nafaka davası avukatı</strong> olarak İzmir Adliyesi Aile Mahkemesi&apos;ndeki nafaka davalarını yakından takip ediyoruz.
                         </p>
 
                         <h2 id="nafaka-turleri" className="scroll-mt-24">Nafaka Türleri</h2>
@@ -235,7 +235,7 @@ export default function NafakaDavasiPage() {
                             <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı boşanma</Link> sürecinde de nafaka düzenlemesi yapılır ve protokolde net olarak belirtilir.
                         </p>
 
-                        <SectionCTA text="Nafaka davanız için uzman avukat desteği almak ister misiniz?" />
+                        <SectionCTA text="Nafaka davanız için avukat desteği almak ister misiniz?" />
 
                         <h2 id="ucretler" className="scroll-mt-24">2026 Nafaka Davası Ücretleri</h2>
 
@@ -269,7 +269,7 @@ export default function NafakaDavasiPage() {
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
-                                        İzmir Barosu&apos;na kayıtlı avukat. Nafaka davaları, nafaka artırım ve azaltım davaları ile nafaka icra takiplerinde profesyonel hukuki destek sunuyor. Bayraklı Adliyesi yakınındaki ofisinden İzmir genelinde aile hukuku davalarını takip ediyor.
+                                        İzmir Barosu&apos;na kayıtlı avukat. Nafaka davaları, nafaka artırım ve azaltım davaları ile nafaka icra takiplerinde profesyonel hukuki destek sunuyor. İzmir Adliyesi yakınındaki ofisinden İzmir genelinde aile hukuku davalarını takip ediyor.
                                     </p>
                                     <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500">
                                         <span><strong className="text-slate-700">İzmir Barosu Sicil:</strong> 15556</span>
@@ -284,7 +284,7 @@ export default function NafakaDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &larr; İzmir Boşanma Avukatı (Ana Sayfa)
+                                    &larr; İzmir Boşanma Avukatı
                                 </Link>
                                 <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; Nafaka Hesaplama: Yoksulluk ve İştirak Nafakası
