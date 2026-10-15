@@ -23,7 +23,6 @@ export function PersonSchema({ knowsAbout }: PersonSchemaProps) {
                 "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
                 "addressLocality": "Bayraklı",
                 "addressRegion": "İzmir",
-                "postalCode": "35000",
                 "addressCountry": "TR"
             }
         },
