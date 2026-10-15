@@ -237,6 +237,12 @@ export default function AldatmaBosanmaIzmirPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-bosanma-avukati/mal-paylasimi-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; İzmir Mal Paylaşımı Davası Avukatı
+                                </Link>
+                                <Link href="/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Boşanma Davası Nasıl Açılır?
+                                </Link>
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &larr; İzmir Boşanma Avukatı
                                 </Link>

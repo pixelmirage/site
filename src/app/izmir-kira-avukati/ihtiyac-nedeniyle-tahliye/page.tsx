@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "İhtiyaç Nedeniyle Tahliye Davası İzmir",
+    title: "İzmir İhtiyaç Nedeniyle Tahliye Davası Avukatı",
     description: "İzmir'de ihtiyaç nedeniyle kiracı tahliye davası. TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle tahliye süreçleri ve dava şartları.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "İhtiyaç Nedeniyle Tahliye Davası İzmir | Av. Mert Kağan Çetin",
+        title: "İzmir İhtiyaç Nedeniyle Tahliye Davası Avukatı | Av. Mert Kağan Çetin",
         description: "TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle kiracı tahliye davası hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/",
         type: "article",
@@ -82,7 +82,7 @@ export default function IhtiyacNedeniyleTahliyePage() {
                     </nav>
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            İhtiyaç Nedeniyle Tahliye Davası İzmir
+                            İzmir İhtiyaç Nedeniyle Tahliye Davası Avukatı
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             TBK m. 350 kapsamında ev sahibinin konut veya işyeri ihtiyacı nedeniyle kiracı tahliye davası süreçlerinde avukat desteği.
@@ -228,6 +228,15 @@ export default function IhtiyacNedeniyleTahliyePage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-kira-avukati/kira-sozlesmesi-rehberi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Kira Sözleşmesi Rehberi
+                                </Link>
+                                <Link href="/izmir-kira-avukati/kira-borcu-icra/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Kira Borcu İcra Takibi İzmir
+                                </Link>
+                                <Link href="/izmir-kira-avukati/ev-sahibi-haklari-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Ev Sahibi Hakları İzmir
+                                </Link>
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     ← İzmir&apos;deki kira uyuşmazlıkları sayfası
                                 </Link>

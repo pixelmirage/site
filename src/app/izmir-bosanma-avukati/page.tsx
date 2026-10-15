@@ -218,7 +218,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h3>3. Velayet ve Nafaka</h3>
 
                         <p>
-                            <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/">Velayet davası</Link>nda çocuğun üstün yararı esastır. <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/">Nafaka</Link> ise tedbir nafakası, yoksulluk nafakası ve iştirak nafakası olmak üzere üç türdür. <Link href="/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/">Velayet değişikliği</Link> koşulların değişmesi halinde her zaman talep edilebilir.
+                            <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/">Velayet davası</Link>nda çocuğun üstün yararı esastır. <Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/">Nafaka</Link> ise tedbir nafakası, yoksulluk nafakası ve iştirak nafakası olmak üzere üç türdür. <Link href="/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/">Velayet değişikliği</Link> koşulların değişmesi halinde her zaman talep edilebilir.
                         </p>
 
                         {/* Avukatlık Ücreti */}
@@ -229,7 +229,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         </p>
 
                         <p>
-                            Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır; ayrıntılı açıklama için <Link href="/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/">boşanma avukatı ücretleri</Link> sayfamıza bakabilir veya <Link href="/iletisim/">iletişim</Link> sayfamızdan ulaşabilirsiniz.
+                            Somut dosyaya ilişkin ücret bilgisi, belgeler incelendikten sonra ön görüşmede verilir. Ön görüşmeler telefonla yapılır; ayrıntılı bilgi için <Link href="/iletisim/">iletişim</Link> sayfamızdan ulaşabilirsiniz.
                         </p>
 
                         {/* Boşanma Avukatı Tutmak Zorunlu Mu? */}
@@ -299,6 +299,25 @@ export default function IzmirBosanmaAvukatiPage() {
 
 
                         {/* SSS */}
+                        <h2 id="aile-ici-siddet" className="scroll-mt-24">Aile İçi Şiddet ve Koruma Kararı</h2>
+
+                        <p>
+                            Aile içi şiddet, Türkiye&apos;de 6284 sayılı Ailenin Korunması ve Kadına Karşı Şiddetin Önlenmesine Dair Kanun ile düzenlenmiştir. Bu kanun, şiddet mağdurlarının korunması amacıyla çıkarılmıştır. Şiddet mağduru, doğrudan aile mahkemesine, savcılığa veya kolluk kuvvetlerine başvurarak koruma kararı talep edebilir.
+                        </p>
+
+                        <p>
+                            <strong>Uzaklaştırma kararı:</strong> 6284 sayılı Kanun&apos;un 5. maddesi uyarınca hakim, şiddet uygulayan kişiye yönelik uzaklaştırma kararı verebilir. Bu karar kapsamında şiddet uygulayan; ortak konuttan uzaklaştırılabilir, mağdura ve çocuklara yaklaşması yasaklanabilir, mağdurun işyerine ve çocukların okuluna yaklaşması engellenebilir. Uzaklaştırma kararı genellikle 1-6 ay süreyle verilir ve gerektiğinde uzatılabilir.
+                        </p>
+
+                        <p>
+                            <strong>Koruma tedbirleri:</strong> Mahkeme, mağdurun korunması için çeşitli tedbirler alabilir. Bunlar arasında geçici nafaka bağlanması, mağdura barınma yeri sağlanması, kimlik ve iletişim bilgilerinin gizlenmesi, şiddet uygulayana silah teslim etme yükümlülüğü getirilmesi yer alır. Koruma kararına aykırı davranan kişi hakkında zorlama hapsi uygulanır.
+                        </p>
+
+                        <p>
+                            ALO 183 hattı, KADES uygulaması ve kolluk birimleri üzerinden de başvuru yapılabilir. Koruma kararlarına ilişkin genel bilgi için <Link href="/blog/aile-ici-siddet-koruma-karari-6284-sayili-kanun/">6284 sayılı Kanun kapsamında koruma kararı</Link> yazımıza bakabilirsiniz.
+                        </p>
+
+
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
 
                         <FAQAccordion faqs={faqs} />
@@ -313,7 +332,6 @@ export default function IzmirBosanmaAvukatiPage() {
                             <li><Link href="/blog/nafaka-hesaplama-yoksulluk-istirak-nafakasi/">Nafaka Hesaplama: Yoksulluk ve İştirak Nafakası</Link></li>
                             <li><Link href="/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/">Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi</Link></li>
                             <li><Link href="/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/">Boşanmada Tazminat Davası: Maddi ve Manevi Tazminat</Link></li>
-                            <li><Link href="/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri/">Velayet Değişikliği Davası: Şartlar ve Mahkeme Kriterleri</Link></li>
                             <li><Link href="/blog/aile-ici-siddet-koruma-karari-6284-sayili-kanun/">Aile İçi Şiddet ve Koruma Kararı: 6284 Sayılı Kanun Rehberi</Link></li>
                         </ul>
 
@@ -368,11 +386,9 @@ export default function IzmirBosanmaAvukatiPage() {
                                     { title: "Velayet Davası", desc: "Çocuk velayeti ve velayet değişikliği davaları", url: "/izmir-bosanma-avukati/velayet-davasi/" },
                                     { title: "Nafaka Davası", desc: "İştirak, yoksulluk ve tedbir nafakası davaları", url: "/izmir-bosanma-avukati/nafaka-davasi/" },
                                     { title: "Çekişmeli Boşanma", desc: "Kusur tespiti, delil toplama ve çekişmeli boşanma davaları", url: "/izmir-bosanma-avukati/cekismeli-bosanma-izmir/" },
-                                    { title: "Boşanma Süreci Rehberi", desc: "Boşanma davası aşamaları ve süreç yönetimi", url: "/izmir-bosanma-avukati/bosanma-sureci-izmir/" },
-                                    { title: "Boşanma Avukatı Ücretleri", desc: "2026 boşanma avukat ücretleri ve dava masrafları", url: "/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/" },
+                                    { title: "Boşanma Süreci Rehberi", desc: "Boşanma davası aşamaları ve süreç yönetimi", url: "/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" },
                                     { title: "Mal Paylaşımı Davası", desc: "Edinilmiş mallara katılma ve mal paylaşımı davaları", url: "/izmir-bosanma-avukati/mal-paylasimi-izmir/" },
                                     { title: "Aldatma ve Boşanma", desc: "Zina sebebiyle boşanma davası ve tazminat hakları", url: "/izmir-bosanma-avukati/aldatma-bosanma-izmir/" },
-                                    { title: "Aile Hukuku Avukatı", desc: "Aile hukukunun tüm alanlarında avukatlık hizmeti", url: "/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/" },
                                     { title: "Boşanma Davası Nasıl Açılır?", desc: "Dava açma şartları, gerekli belgeler ve süreç rehberi", url: "/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" },
                                 ].map((item, i) => (
                                     <Link key={i} href={item.url} className="group block p-5 bg-slate-50 border border-slate-200 rounded-xl hover:border-secondary transition-all">

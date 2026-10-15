@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Nafaka Davaları İzmir | Nafaka Avukatı",
+    title: "İzmir Nafaka Davası Avukatı",
     description: "İzmir'de nafaka davaları avukatı Av. Mert Kağan Çetin. Yoksulluk nafakası, iştirak nafakası, tedbir nafakası ve nafaka artırım davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Nafaka Davaları İzmir | Av. Mert Kağan Çetin",
+        title: "İzmir Nafaka Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de nafaka türleri, hesaplama yöntemleri ve nafaka davası süreçlerinde avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/nafaka-davasi/",
         type: "article",

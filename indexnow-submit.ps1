@@ -44,7 +44,6 @@ $body = @{
         'https://mertkagancetin.com/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/',
         'https://mertkagancetin.com/blog/ihbar-tazminati-hesaplama-ve-hak-kazanma-sartlari/',
         'https://mertkagancetin.com/blog/bosanmada-mal-paylasimi-edinilmis-mallara-katilma-rejimi/',
-        'https://mertkagancetin.com/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/',
         'https://mertkagancetin.com/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/',
         'https://mertkagancetin.com/blog/fazla-mesai-ucreti-alacagi-ispat-ve-zamanasimi/',
         'https://mertkagancetin.com/blog/bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat/',

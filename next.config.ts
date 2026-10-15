@@ -42,6 +42,13 @@ const nextConfig: NextConfig = {
     return [
       ...oldDomainRedirects,
       // Slashless variants are excluded from the trailing-slash rule below and handled here / in src/proxy.ts.
+      // Merged subpages / blog posts (2026-10-16): single-hop 301.
+      { source: '/izmir-kira-avukati/izmir-kira-hukuku', destination: '/izmir-kira-avukati/', statusCode: 301 },
+      { source: '/izmir-bosanma-avukati/bosanma-sureci-izmir', destination: '/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/', statusCode: 301 },
+      { source: '/izmir-bosanma-avukati/aile-hukuku-avukati-izmir', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
+      { source: '/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
+      { source: '/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri', destination: '/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/', statusCode: 301 },
+      { source: '/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati', destination: '/blog/trafik-kazasi-tazminati-alma-sureci/', statusCode: 301 },
       // Removed district pages (2026-10-16): single-hop 301 to service hub; source matches with/without trailing slash.
       { source: '/balcova-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
       { source: '/bayrakli-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
@@ -96,7 +103,7 @@ const nextConfig: NextConfig = {
         missing: [{ type: 'header', key: 'x-nextjs-data' }],
       },
       {
-        source: '/:notfile((?!\\.well-known(?:/.*)?)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))',
+        source: '/:notfile((?!\\.well-known(?:/.*)?)(?!(?:izmir-kira-avukati/izmir-kira-hukuku|izmir-bosanma-avukati/bosanma-sureci-izmir|izmir-bosanma-avukati/aile-hukuku-avukati-izmir|izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir|blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri|blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati)$)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))',
         destination: '/:notfile/',
         permanent: true,
         missing: OLD_HOST,

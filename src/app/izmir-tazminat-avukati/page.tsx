@@ -171,7 +171,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
 
                         <p>
-                            <strong>İzmir tazminat avukatı</strong> olarak müvekkillerimizin hak ettikleri tazminatı tam olarak almaları için titizlikle çalışıyoruz. <Link href="/blog/maddi-ve-manevi-tazminat-davasi-farklari/">Maddi ve manevi tazminat</Link> hesaplaması, <Link href="/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/">sigorta tahkim komisyonu</Link> başvuruları ve dava takibi konularında kapsamlı hizmet sunuyoruz.
+                            <strong>İzmir tazminat avukatı</strong> olarak müvekkillerimizin hak ettikleri tazminatı tam olarak almaları için titizlikle çalışıyoruz. <Link href="/blog/maddi-ve-manevi-tazminat-davasi-farklari/">Maddi ve manevi tazminat</Link> hesaplaması, <Link href="/blog/trafik-kazasi-tazminati-alma-sureci/">sigorta tahkim komisyonu</Link> başvuruları ve dava takibi konularında kapsamlı hizmet sunuyoruz.
                         </p>
 
                         {/* Tazminat Davaları */}
@@ -198,7 +198,7 @@ export default function IzmirTazminatAvukatiPage() {
                         </p>
 
                         <p>
-                            Tazminat davaları asliye hukuk mahkemelerinde görülür. Trafik kazası davalarında ayrıca <Link href="/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/">Sigorta Tahkim Komisyonu</Link>&apos;na başvuru da mümkündür. İş kazası tazminatı davaları ise iş mahkemelerinde görülür. <strong>İzmir tazminat avukatı</strong> olarak davanın türüne göre en uygun hukuki yolu belirleyerek müvekkillerimizi temsil ediyoruz.
+                            Tazminat davaları asliye hukuk mahkemelerinde görülür. Trafik kazası davalarında ayrıca <Link href="/blog/trafik-kazasi-tazminati-alma-sureci/">Sigorta Tahkim Komisyonu</Link>&apos;na başvuru da mümkündür. İş kazası tazminatı davaları ise iş mahkemelerinde görülür. <strong>İzmir tazminat avukatı</strong> olarak davanın türüne göre en uygun hukuki yolu belirleyerek müvekkillerimizi temsil ediyoruz.
                         </p>
 
                         {/* Tazminat Türleri */}
@@ -294,7 +294,6 @@ export default function IzmirTazminatAvukatiPage() {
                             <li><Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz/">İş Kazası Tazminatı Süreci ve Haklarınız</Link></li>
                             <li><Link href="/blog/malpraktis-davasi-doktor-hatasi-tazminati/">Malpraktis Davası: Doktor Hatası Tazminatı</Link></li>
                             <li><Link href="/blog/destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci/">Destekten Yoksun Kalma Tazminatı Hesaplama</Link></li>
-                            <li><Link href="/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati/">Sigorta Tahkim Komisyonu Başvurusu</Link></li>
                             <li><Link href="/blog/is-goremezlik-raporu-ve-maluliyet-tazminati-davasi/">İş Göremezlik Raporu ve Maluliyet Tazminatı</Link></li>
                         </ul>
 

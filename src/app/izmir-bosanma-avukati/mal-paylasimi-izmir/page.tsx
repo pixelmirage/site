@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Mal Paylaşımı Davaları İzmir | Boşanma Avukatı",
+    title: "İzmir Mal Paylaşımı Davası Avukatı",
     description: "İzmir'de boşanmada mal paylaşımı davası avukatı Av. Mert Kağan Çetin. Edinilmiş mallara katılma rejimi, katkı payı ve değer artış payı davalarında hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Mal Paylaşımı Davaları İzmir | Av. Mert Kağan Çetin",
+        title: "İzmir Mal Paylaşımı Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi ve katkı payı davalarında avukat desteği.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/mal-paylasimi-izmir/",
         type: "article",
@@ -82,7 +82,7 @@ export default function MalPaylasimiIzmirPage() {
                     </nav>
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            Mal Paylaşımı Davaları İzmir
+                            İzmir Mal Paylaşımı Davası Avukatı
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             İzmir&apos;de boşanmada mal paylaşımı, edinilmiş mallara katılma rejimi ve katkı payı davalarında avukat desteği.
