@@ -41,6 +41,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       ...oldDomainRedirects,
+      // Slashless variants are excluded from the trailing-slash rule below and handled here / in src/proxy.ts.
       // Removed district pages (2026-10-16): single-hop 301 to service hub; source matches with/without trailing slash.
       { source: '/balcova-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
       { source: '/bayrakli-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
@@ -95,7 +96,7 @@ const nextConfig: NextConfig = {
         missing: [{ type: 'header', key: 'x-nextjs-data' }],
       },
       {
-        source: '/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+(?!/))',
+        source: '/:notfile((?!\\.well-known(?:/.*)?)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))',
         destination: '/:notfile/',
         permanent: true,
         missing: OLD_HOST,
