@@ -234,7 +234,7 @@ export default function IzmirKiraAvukatiPage() {
                         </ul>
 
                         <p>
-                            Bayraklı, Karşıyaka, Bornova, Konak, Buca, Çiğli ve diğer ilçeler başta olmak üzere İzmir genelinde hizmet verilmektedir (ör. <Link href="/bayrakli-kira-avukati/">Bayraklı</Link>, <Link href="/karsiyaka-kira-avukati/">Karşıyaka</Link>, <Link href="/bornova-kira-avukati/">Bornova</Link>).
+                            Ofisimiz Bayraklı&apos;dadır; Bayraklı, Bornova, Karşıyaka, Buca, Konak, Çiğli, Gaziemir, Balçova, Narlıdere, Güzelbahçe ve Karabağlar başta olmak üzere İzmir genelindeki kira uyuşmazlıklarında hizmet verilmektedir.
                         </p>
 
                         {/* 3 */}

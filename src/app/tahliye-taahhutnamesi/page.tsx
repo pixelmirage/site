@@ -498,7 +498,7 @@ export default function EvictionTemplatePage() {
 
                     <h2 id="hukuki-destek">İzmir&apos;de tahliye taahhüdü süreçlerinde hukuki destek</h2>
                     <p>
-                        Bayraklı&apos;daki ofisimizden İzmir genelinde kira hukuku uyuşmazlıklarında avukatlık hizmeti veriyoruz. Ofis bilgilerimiz ve <Link href="/bayrakli-kira-avukati/" className={ext}>Bayraklı kira avukatı</Link> sayfamız üzerinden çalışma şeklimiz hakkında bilgi alabilirsiniz. Ücretlendirmeye ilişkin genel bilgi <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/" className={ext}>kira avukatı ücreti</Link> sayfasında yer almaktadır.
+                        Bayraklı&apos;daki ofisimizden İzmir genelinde kira hukuku uyuşmazlıklarında avukatlık hizmeti veriyoruz. Ofis bilgilerimiz ve çalışma şeklimiz hakkında <Link href="/iletisim/" className={ext}>iletişim</Link> sayfamızdan bilgi alabilirsiniz. Ücretlendirmeye ilişkin genel bilgi <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/" className={ext}>kira avukatı ücreti</Link> sayfasında yer almaktadır.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
