@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         authors: [{ name: "Av. Mert Kağan Çetin" }],
         openGraph: {
             type: 'article',
-            locale: 'tr_TR',
+            locale: post.lang === 'en' ? 'en_US' : 'tr_TR',
             url: url,
             title: post.title,
             description: post.excerpt,
@@ -76,7 +76,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     const articleUrl = `https://mertkagancetin.com/blog/${slug}/`;
 
     return (
-        <article className="bg-white min-h-screen pb-24">
+        <article lang={post.lang || "tr"} className="bg-white min-h-screen pb-24">
             {/* SEO Schemas */}
             <ArticleSchema
                 title={post.title}
@@ -197,7 +197,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                Hemen Arayın <ArrowRight className="w-4 h-4" />
+                                İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Hizmetler

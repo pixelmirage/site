@@ -22,6 +22,7 @@ export interface PostData {
     youtubeVideoId?: string;
     videoDuration?: string;
     readingTime: number;
+    lang?: string;
 }
 
 export function getAllPosts(): PostData[] {
@@ -45,7 +46,7 @@ export function getAllPosts(): PostData[] {
                 slug,
                 content,
                 readingTime,
-                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string }),
+                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string }),
             };
         });
 
@@ -65,7 +66,7 @@ export function getPostBySlug(slug: string): PostData | null {
             slug,
             content,
             readingTime,
-            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string }),
+            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string }),
         };
     } catch (e) {
         return null;

@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Kira Avukatı Ücreti Nasıl Belirlenir? (İzmir)",
     description: "İzmir'de kira davalarında avukatlık ücretinin nasıl belirlendiği: Avukatlık Kanunu m. 163-164, Avukatlık Asgari Ücret Tarifesi, karşı vekalet ücreti ve yargılama giderleri.",
-    keywords: ["kira avukatı ücreti İzmir", "tahliye davası ücreti", "kira tespit davası ücreti", "kira avukatı danışmanlık ücreti", "avukatlık asgari ücret tarifesi kira"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kira Avukatı Ücreti Nasıl Belirlenir? | Av. Mert Kağan Çetin",
         description: "İzmir'de kira davalarında avukatlık ücretleri, danışmanlık ücretleri ve dava masrafları hakkında güncel bilgi.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/izmir-kira-avukati-ucret/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function IzmirKiraAvukatiUcretPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kira Hukuku Danışmanlığı" description="İzmir'de kira hukuku alanında avukatlık ve danışmanlık hizmeti." serviceType="Kira Hukuku Danışmanlığı" />
             <PersonSchema knowsAbout={["Kira Avukatı Ücretleri", "Avukatlık Ücret Tarifesi", "Kira Davası Masrafları", "İzmir Barosu Ücret Tarifesi", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -232,7 +232,7 @@ export default function IzmirKiraAvukatiUcretPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Ev sahibi ve kiracı uyuşmazlıkları
                                 </Link>
                                 <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Kiracı Tahliye Davası Avukatı
@@ -284,6 +284,6 @@ export default function IzmirKiraAvukatiUcretPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

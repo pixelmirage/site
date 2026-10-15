@@ -92,19 +92,19 @@ export function SeveranceCalculator() {
                 <div className="space-y-4">
                     {/* Çalışma Süresi */}
                     <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Çalışma Süresi</label>
+                        <p id="kidem-sure" className="text-sm font-bold text-slate-700">Çalışma Süresi</p>
                         <div className="grid grid-cols-3 gap-3">
                             <div>
-                                <Input type="number" placeholder="Yıl" value={years} onChange={(e) => setYears(e.target.value)} className="h-12 text-lg" min="0" />
-                                <span className="text-xs text-muted-foreground">Yıl</span>
+                                <Input id="kidem-yil" type="number" placeholder="Yıl" value={years} onChange={(e) => setYears(e.target.value)} className="h-12 text-lg" min="0" />
+                                <label htmlFor="kidem-yil" className="text-xs text-muted-foreground">Yıl</label>
                             </div>
                             <div>
-                                <Input type="number" placeholder="Ay" value={months} onChange={(e) => setMonths(e.target.value)} className="h-12 text-lg" min="0" max="11" />
-                                <span className="text-xs text-muted-foreground">Ay</span>
+                                <Input id="kidem-ay" type="number" placeholder="Ay" value={months} onChange={(e) => setMonths(e.target.value)} className="h-12 text-lg" min="0" max="11" />
+                                <label htmlFor="kidem-ay" className="text-xs text-muted-foreground">Ay</label>
                             </div>
                             <div>
-                                <Input type="number" placeholder="Gün" value={days} onChange={(e) => setDays(e.target.value)} className="h-12 text-lg" min="0" max="30" />
-                                <span className="text-xs text-muted-foreground">Gün</span>
+                                <Input id="kidem-gun" type="number" placeholder="Gün" value={days} onChange={(e) => setDays(e.target.value)} className="h-12 text-lg" min="0" max="30" />
+                                <label htmlFor="kidem-gun" className="text-xs text-muted-foreground">Gün</label>
                             </div>
                         </div>
                         <p className="text-xs text-muted-foreground">* En az 1 yıl çalışma şartı aranır.</p>
@@ -112,21 +112,21 @@ export function SeveranceCalculator() {
 
                     {/* Brüt Maaş */}
                     <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Aylık Brüt Maaş (TL)</label>
-                        <Input type="number" placeholder="Örn: 40000" value={grossSalary} onChange={(e) => setGrossSalary(e.target.value)} className="h-12 text-lg" />
+                        <label htmlFor="kidem-brut-maas" className="text-sm font-bold text-slate-700">Aylık Brüt Maaş (TL)</label>
+                        <Input id="kidem-brut-maas" type="number" placeholder="Örn: 40000" value={grossSalary} onChange={(e) => setGrossSalary(e.target.value)} className="h-12 text-lg" />
                     </div>
 
                     {/* Yan Haklar */}
                     <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Yan Haklar (Opsiyonel)</label>
+                        <p className="text-sm font-bold text-slate-700">Yan Haklar (Opsiyonel)</p>
                         <div className="grid grid-cols-2 gap-3">
                             <div>
-                                <Input type="number" placeholder="Yemek (TL/ay)" value={mealAllowance} onChange={(e) => setMealAllowance(e.target.value)} className="h-10" />
-                                <span className="text-xs text-muted-foreground">Yemek yardımı</span>
+                                <Input id="kidem-yemek" type="number" placeholder="Yemek (TL/ay)" value={mealAllowance} onChange={(e) => setMealAllowance(e.target.value)} className="h-10" />
+                                <label htmlFor="kidem-yemek" className="text-xs text-muted-foreground">Yemek yardımı</label>
                             </div>
                             <div>
-                                <Input type="number" placeholder="Yol (TL/ay)" value={transportAllowance} onChange={(e) => setTransportAllowance(e.target.value)} className="h-10" />
-                                <span className="text-xs text-muted-foreground">Yol yardımı</span>
+                                <Input id="kidem-yol" type="number" placeholder="Yol (TL/ay)" value={transportAllowance} onChange={(e) => setTransportAllowance(e.target.value)} className="h-10" />
+                                <label htmlFor="kidem-yol" className="text-xs text-muted-foreground">Yol yardımı</label>
                             </div>
                             <div>
                                 <Input type="number" placeholder="İkramiye (TL/yıl)" value={annualBonus} onChange={(e) => setAnnualBonus(e.target.value)} className="h-10" />

@@ -10,8 +10,8 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
     title: "Kira Sözleşmesi Örneği 2026 - Ücretsiz PDF İndir",
     description: "2026 güncel kira sözleşmesi örneğini ücretsiz PDF olarak indirin. TBK'ya uygun, konut ve işyeri kira kontratı şablonu. Kira bedeli, depozito, fesih şartları ve tüm maddeler.",
-    keywords: ["kira sözleşmesi örneği", "kira sözleşmesi pdf", "kira kontratı örneği 2026", "boş kira sözleşmesi", "konut kira sözleşmesi", "kira sözleşmesi indir", "kira kontratı pdf"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kira Sözleşmesi Örneği 2026 | Ücretsiz PDF İndir",
         description: "TBK'ya uygun güncel kira sözleşmesi şablonunu ücretsiz olarak PDF formatında indirin.",
         url: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/",
@@ -54,7 +54,7 @@ const faqs = [
 
 export default function KiraSozlesmesiPage() {
     return (
-        <main className="bg-slate-50 min-h-screen pb-24">
+        <div className="bg-slate-50 min-h-screen pb-24">
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
@@ -320,7 +320,7 @@ export default function KiraSozlesmesiPage() {
                         <p className="mb-6 text-muted-foreground">Kira sözleşmesi hazırlama veya mevcut sözleşmenizin hukuki incelemesi için bizimle iletişime geçin.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>
-                                <Link href="/iletisim/">Hemen Arayın</Link>
+                                <Link href="/iletisim/">İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
                                 <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>
@@ -330,6 +330,6 @@ export default function KiraSozlesmesiPage() {
                 </div>
 
             </section>
-        </main>
+        </div>
     );
 }

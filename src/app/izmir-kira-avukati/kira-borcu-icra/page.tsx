@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Kira Borcu İcra Takibi İzmir - Tahsilat Süreçleri",
     description: "İzmir'de kira borcu icra takibi ve tahsilat süreçleri. Ödenmeyen kira alacağı, icra takibi başlatma, haciz işlemleri ve temerrüt nedeniyle tahliye hakkında bilgi alın.",
-    keywords: ["kira borcu icra takibi İzmir", "kira alacağı tahsilat", "kira borcu haciz", "ödenmeyen kira icra", "kira borcu avukatı İzmir"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kira Borcu İcra Takibi İzmir - Tahsilat Süreçleri | Av. Mert Kağan Çetin",
         description: "İzmir'de ödenmeyen kira alacaklarının icra yoluyla tahsili ve temerrüt nedeniyle tahliye hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-borcu-icra/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function KiraBorcuIcraPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kira Borcu İcra Takibi" description="İzmir'de ödenmeyen kira alacaklarının icra yoluyla tahsili hizmeti." serviceType="Kira Borcu İcra Takibi" />
             <PersonSchema knowsAbout={["Kira Borcu İcra Takibi", "Kira Alacağı Tahsilatı", "İcra ve İflas Hukuku", "Temerrüt Tahliyesi", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -238,7 +238,7 @@ export default function KiraBorcuIcraPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Kira hukuku ana sayfası
                                 </Link>
                                 <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Kiracı Tahliye Davası Avukatı
@@ -290,6 +290,6 @@ export default function KiraBorcuIcraPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

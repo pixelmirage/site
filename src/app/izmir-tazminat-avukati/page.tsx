@@ -6,21 +6,20 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Tazminat Avukatı - Uzman Hukuki Danışmanlık",
+        absolute: "İzmir Tazminat Avukatı | Trafik, Malpraktis – Av. M.K. Çetin",
     },
-    description: "İzmir tazminat avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. Maddi-manevi tazminat, iş kazası, trafik kazası ve malpraktis gibi konularda size yardımcı olabiliriz.",
-    keywords: ["İzmir tazminat avukatı", "tazminat avukatı İzmir", "maddi tazminat avukatı İzmir", "manevi tazminat avukatı İzmir", "iş kazası avukatı İzmir", "trafik kazası avukatı İzmir", "malpraktis avukatı İzmir", "İzmir en iyi tazminat avukatı", "destekten yoksun kalma avukatı İzmir", "tazminat avukatı İzmir yakınında"],
+    description: "İzmir tazminat avukatı Av. Mert Kağan Çetin; maddi ve manevi tazminat, trafik kazası, iş kazası ve malpraktis davalarında hukuki destek.",
     openGraph: {
-        title: "İzmir Tazminat Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de maddi ve manevi tazminat, iş kazası ve trafik kazası tazminatı davalarında uzman avukatlık hizmeti.",
+        images: ["/og-image.jpg"],
+        title: "İzmir Tazminat Avukatı | Trafik, Malpraktis – Av. M.K. Çetin",
+        description: "İzmir tazminat avukatı Av. Mert Kağan Çetin; maddi ve manevi tazminat, trafik kazası, iş kazası ve malpraktis davalarında hukuki destek.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/",
-        type: "article",
+        type: "website",
     },
     other: {
         "article:modified_time": "2026-04-17",
@@ -69,7 +68,7 @@ const tocItems = [
 
 export default function IzmirTazminatAvukatiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             {/* Schema Markup */}
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
@@ -103,7 +102,7 @@ export default function IzmirTazminatAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <a href="tel:+905445854645">
                                     <Phone className="w-5 h-5" />
-                                    Hemen Arayın
+                                    İletişime Geçin
                                 </a>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -154,7 +153,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Tazminat Avukatı İletişim</h2>
 
                         <p>
-                            İzmir&apos;de tazminat hukuku konusunda uzmanlaşmış avukatımız, <Link href="/blog/trafik-kazasi-tazminati-alma-sureci/">trafik kazası tazminatı</Link>, <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz/">iş kazası tazminatı</Link>, <Link href="/izmir-tazminat-avukati/malpraktis-davasi/">malpraktis davaları</Link> ve <Link href="/izmir-tazminat-avukati/destekten-yoksun-kalma/">destekten yoksun kalma</Link> davalarında profesyonel destek sunmaktadır.
+                            İzmir&apos;de tazminat hukuku alanında çalışan avukat olarak Av. Mert Kağan Çetin, <Link href="/blog/trafik-kazasi-tazminati-alma-sureci/">trafik kazası tazminatı</Link>, <Link href="/blog/is-kazasi-tazminati-sureci-ve-haklariniz/">iş kazası tazminatı</Link>, <Link href="/izmir-tazminat-avukati/malpraktis-davasi/">malpraktis davaları</Link> ve <Link href="/izmir-tazminat-avukati/destekten-yoksun-kalma/">destekten yoksun kalma</Link> davalarında profesyonel destek sunmaktadır.
                         </p>
 
                         <ul>
@@ -195,7 +194,7 @@ export default function IzmirTazminatAvukatiPage() {
                         <h2 id="tazminat-islerine-hangi-avukat-bakar" className="scroll-mt-24">Tazminat Davalarına Hangi Avukat Bakar?</h2>
 
                         <p>
-                            Tazminat davalarına <strong>borçlar hukuku ve haksız fiil alanında uzmanlaşmış avukatlar</strong> bakar. Trafik kazası tazminatında sigorta hukuku bilgisi, iş kazası tazminatında iş hukuku bilgisi, malpraktis davalarında sağlık hukuku bilgisi gerekir.
+                            Tazminat davalarına <strong>borçlar hukuku ve haksız fiil alanında çalışan avukatlar</strong> bakar. Trafik kazası tazminatında sigorta hukuku bilgisi, iş kazası tazminatında iş hukuku bilgisi, malpraktis davalarında sağlık hukuku bilgisi gerekir.
                         </p>
 
                         <p>
@@ -304,7 +303,7 @@ export default function IzmirTazminatAvukatiPage() {
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                                        İzmir Barosu&apos;na kayıtlı avukat. 2019 yılından bu yana tazminat, kira, iş ve boşanma hukuku alanlarında hizmet vermektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukat. tazminat, kira, iş ve boşanma hukuku alanlarında hizmet vermektedir.
                                     </p>
                                     <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
                                         <span>İzmir Barosu Sicil: 15556</span>
@@ -317,10 +316,6 @@ export default function IzmirTazminatAvukatiPage() {
                             </div>
                         </div>
 
-                        {/* Google Reviews */}
-                        <div className="not-prose">
-                            <GoogleReviews />
-                        </div>
 
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
@@ -384,7 +379,7 @@ export default function IzmirTazminatAvukatiPage() {
 
                         {/* Uzmanlık Alanları Alt Sayfalar */}
                         <div className="not-prose my-12">
-                            <p className="text-xl font-playfair font-bold text-primary mb-6">Tazminat Hukuku Uzmanlık Alanlarımız</p>
+                            <p className="text-xl font-playfair font-bold text-primary mb-6">Tazminat Hukuku Çalışma Alanları</p>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 {[
                                     { title: "Trafik Kazası Tazminatı", desc: "Trafik kazası sonrası maddi ve manevi tazminat davaları", url: "/izmir-tazminat-avukati/trafik-kazasi-tazminati/" },
@@ -402,6 +397,6 @@ export default function IzmirTazminatAvukatiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

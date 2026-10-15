@@ -1,7 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { AboutBrief } from "@/components/sections/AboutBrief";
-import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -14,6 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://mertkagancetin.com/",
   },
   openGraph: {
+        images: ["/og-image.jpg"],
     url: "https://mertkagancetin.com/",
     title: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
     description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
@@ -48,8 +48,6 @@ export default function Home() {
       {/* About Section */}
       <AboutBrief />
 
-      {/* Google Reviews — GBP yorumları */}
-      <GoogleReviews />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary relative overflow-hidden">

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/blog/",
     },
     openGraph: {
+        images: ["/og-image.jpg"],
         url: "https://mertkagancetin.com/blog/",
     },
 };

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Hizmetlerimiz | İzmir Hukuk Bürosu | Av. Mert Kağan Çetin",
         description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin Hukuk Bürosu, Bayraklı.",
         url: "https://mertkagancetin.com/hizmetler/",

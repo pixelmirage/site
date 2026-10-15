@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Boşanma Avukatı Ücretleri İzmir 2026",
     description: "İzmir'de boşanma avukatı ücretleri 2026 güncel fiyat listesi. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı dava ücretleri.",
-    keywords: ["boşanma avukatı ücretleri İzmir", "boşanma avukatı ücreti", "anlaşmalı boşanma ücreti İzmir", "çekişmeli boşanma ücreti", "İzmir boşanma avukatı fiyat"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Boşanma Avukatı Ücretleri İzmir 2026 | Av. Mert Kağan Çetin",
         description: "İzmir'de boşanma avukatı ücretleri 2026 güncel fiyat listesi. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı dava ücretleri.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function BosanmaAvukatiUcretleriIzmirPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Boşanma Hukuku Danışmanlığı" description="İzmir'de boşanma hukuku alanında avukatlık ve danışmanlık hizmeti." serviceType="Boşanma Hukuku Danışmanlığı" />
             <PersonSchema knowsAbout={["Boşanma Avukatı Ücretleri", "Avukatlık Ücret Tarifesi", "Boşanma Davası Masrafları", "İzmir Barosu Ücret Tarifesi", "Aile Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -89,7 +89,7 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -324,6 +324,6 @@ export default function BosanmaAvukatiUcretleriIzmirPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

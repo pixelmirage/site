@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Kıdem Tazminatı Davası Avukatı",
     description: "İzmir kıdem tazminatı davası avukatı Av. Mert Kağan Çetin. Ödenmeyen kıdem ve ihbar tazminatı alacak davalarında uzman destek.",
-    keywords: ["kıdem tazminatı davası avukatı İzmir", "kıdem tazminatı davası", "kıdem tazminatı avukatı", "ödenmeyen kıdem tazminatı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Kıdem Tazminatı Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de ödenmeyen kıdem tazminatı davalarında uzman avukatlık hizmeti. Tazminat alacağınızı dava yoluyla tahsil ediyoruz.",
         url: "https://mertkagancetin.com/izmir-is-avukati/kidem-tazminati-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function KidemTazminatiDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kıdem Tazminatı Davası" description="İzmir'de ödenmeyen kıdem ve ihbar tazminatı alacak davası hizmeti." serviceType="Kıdem Tazminatı Davası" />
             <PersonSchema knowsAbout={["Kıdem Tazminatı Davası", "İhbar Tazminatı", "İşçi Alacakları", "İş Hukuku Zamanaşımı", "Tazminat Hesaplama"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function KidemTazminatiDavasiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -203,7 +203,7 @@ export default function KidemTazminatiDavasiPage() {
                             ))}
                         </div>
 
-                        <SectionCTA text="Kıdem tazminatınız ödenmedi mi? Hakkınızı almak için hemen arayın." />
+                        <SectionCTA text="Kıdem tazminatınız ödenmedi mi? Hakkınızı almak için iletişime geçebilirsiniz." />
 
                         <h2 id="hesaplama" className="scroll-mt-24">Kıdem Tazminatı Hesaplama ve Tavan Tutar</h2>
 
@@ -332,6 +332,6 @@ export default function KidemTazminatiDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

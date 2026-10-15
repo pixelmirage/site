@@ -21,6 +21,8 @@ export interface GlossaryTerm {
     relatedTermSlugs: string[];
     relatedBlogSlugs: string[];
     relatedServiceAnchor?: string;
+    /** Ana hizmet sayfasına bağlamsal link: before + [anchor](href) + after */
+    pillarLink?: { href: string; before: string; anchor: string; after: string };
     youtubeVideoId?: string;
     videoDuration?: string;
     faqs: { question: string; answer: string }[];
@@ -32,6 +34,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Tahliye Taahhütnamesi",
         slug: "tahliye-taahhutnamesi",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Taahhüde dayalı tahliyede süreler kısa olduğundan, sürecin bir ", anchor: "kiracı tahliye avukatı", after: " ile baştan planlanması faydalıdır." },
         shortDescription: "Kiracının belirli bir tarihte taşınmazı boşaltacağını yazılı olarak taahhüt ettiği hukuki belge. TBK m. 352/1 kapsamında düzenlenir.",
         definition: "Tahliye taahhütnamesi, kiracının kiralanmış taşınmazı belirli bir tarihte boşaltacağını yazılı olarak taahhüt ettiği hukuki belgedir. Türk Borçlar Kanunu m. 352/1 uyarınca, kiralananın tesliminden sonra alınan bu taahhütname ile kiraya veren, taahhüt edilen tarihte tahliye davası açabilir.",
         detailedExplanation: `Tahliye taahhütnamesi, kira hukukunda ev sahibinin en güçlü tahliye araçlarından biridir. TBK m. 352/1'e göre, kiracı kiralananın teslim edilmesinden sonra yazılı olarak belirli bir tarihte taşınmazı boşaltacağını taahhüt etmişse, bu tarih geldiğinde kiraya veren icra takibi başlatabilir veya tahliye davası açabilir.
@@ -67,6 +70,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
     {
         term: "Kira Tespit Davası",
         slug: "kira-tespit-davasi",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "İzmir'de kira tespit davası açmadan önce bir ", anchor: "İzmir kira avukatı", after: " ile emsal kiraları değerlendirmek faydalı olabilir." },
         shortDescription: "Kira bedelinin güncel rayiçlere uygun olarak mahkeme tarafından yeniden belirlenmesini amaçlayan dava türü.",
         definition: "Kira tespit davası, kira bedelinin güncel piyasa koşullarına uygun olarak mahkeme tarafından yeniden belirlenmesini sağlayan hukuki süreçtir. TBK m. 344 uyarınca, beş yıldan uzun süreli kira ilişkilerinde taraflardan biri hakkaniyete uygun kira bedeli tespiti için dava açabilir.",
         detailedExplanation: `Kira tespit davası, özellikle uzun süreli kira ilişkilerinde kira bedelinin piyasa değerinin çok altında veya üstünde kalması durumunda başvurulan önemli bir hukuki yoldur.
@@ -102,6 +106,7 @@ Dava, yeni kira döneminin başlangıcından en az otuz gün önce açılmalı v
     {
         term: "İhtiyaç Nedeniyle Tahliye",
         slug: "ihtiyac-nedeniyle-tahliye",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "İhtiyaç iddiasının ispatı ve dava süreleri için ", anchor: "İzmir'deki kira uyuşmazlıkları", after: " sayfamıza bakabilirsiniz." },
         shortDescription: "Kiraya verenin kendisi veya yakınlarının konut/işyeri ihtiyacı nedeniyle kiracının tahliyesini talep etmesi.",
         definition: "İhtiyaç nedeniyle tahliye, kiraya verenin kendisinin, eşinin, altsoyunun, üstsoyunun veya kanun gereği bakmakla yükümlü olduğu kişilerin konut ya da işyeri gereksinimi sebebiyle kiracının tahliyesini talep ettiği dava türüdür. TBK m. 350 uyarınca, ihtiyacın gerçek, samimi ve zorunlu olması gerekir.",
         detailedExplanation: `İhtiyaç nedeniyle tahliye davası, ev sahiplerinin en sık başvurduğu tahliye yollarından biridir. TBK m. 350'ye göre kiraya veren, kendisinin, eşinin, altsoyunun, üstsoyunun veya kanun gereği bakmakla yükümlü olduğu diğer kişilerin konut ya da işyeri gereksinimi sebebiyle tahliye davası açabilir.
@@ -137,6 +142,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
     {
         term: "Zorunlu Arabuluculuk",
         slug: "zorunlu-arabuluculuk",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Arabuluculuk görüşmesine hazırlık için ", anchor: "kira uyuşmazlıklarında avukat desteği", after: " sayfamız yol gösterir." },
         shortDescription: "Kira uyuşmazlıklarında dava açmadan önce başvurulması zorunlu olan alternatif çözüm yöntemi. 7445 sayılı Kanun ile 2023'ten itibaren uygulanır.",
         definition: "Zorunlu arabuluculuk, 7445 sayılı Kanun ile 1 Eylül 2023 tarihinden itibaren kira ilişkisinden kaynaklanan uyuşmazlıklarda dava açmadan önce başvurulması zorunlu tutulan alternatif uyuşmazlık çözüm yöntemidir. Arabuluculuğa başvurulmadan açılan davalar usulden reddedilir.",
         detailedExplanation: `7445 sayılı Kanun ile getirilen düzenleme uyarınca, 1 Eylül 2023 tarihinden itibaren kira ilişkisinden kaynaklanan uyuşmazlıklarda (tahliye davaları dahil) dava açmadan önce arabulucuya başvurulması zorunlu hale gelmiştir.
@@ -171,6 +177,7 @@ Arabuluculukta anlaşma sağlanamazsa, son tutanağın düzenlendiği tarihten i
     {
         term: "İki Haklı İhtar",
         slug: "iki-hakli-ihtar",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "İhtarların şekli ve dava süresi ", anchor: "kira davaları", after: " sayfamızda özetlenmiştir." },
         shortDescription: "Kiracının bir kira yılı içinde iki kez kira bedelini geç ödemesi sebebiyle açılan tahliye davası. TBK m. 352/2 hükmüne dayanır.",
         definition: "İki haklı ihtar, kiracının bir kira yılı veya bir kira yılını aşan süre içinde kira bedelini ödememesi nedeniyle kendisine yazılı olarak iki haklı ihtarda bulunulmasına dayanılarak açılan tahliye davası türüdür. TBK m. 352/2 uyarınca, kira süresinin veya yenileme döneminin sonunda bir ay içinde dava açılabilir.",
         detailedExplanation: `İki haklı ihtar yoluyla tahliye, kiracının kira ödeme yükümlülüğünü düzenli olarak yerine getirmemesi halinde başvurulan bir tahliye yoludur.
@@ -206,6 +213,7 @@ TBK m. 352/2'ye göre, kiracı bir yıldan kısa süreli kira sözleşmelerinde 
     {
         term: "Kira Sözleşmesi",
         slug: "kira-sozlesmesi",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "", anchor: "Kira sözleşmesinden doğan uyuşmazlıklar", after: " için İzmir'deki çalışma alanımızı inceleyebilirsiniz." },
         shortDescription: "Kiraya verenin taşınmazı kullanıma bırakmasını, kiracının da kira bedeli ödemesini düzenleyen sözleşme.",
         definition: "Kira sözleşmesi, kiraya verenin bir şeyin kullanılmasını veya kullanılmasıyla birlikte ondan yararlanılmasını kiracıya bırakmayı, kiracının da buna karşılık kararlaştırılan kira bedelini ödemeyi üstlendiği sözleşmedir. TBK m. 299 ve devamı maddelerinde düzenlenmiştir.",
         detailedExplanation: `Kira sözleşmesi, Türk Borçlar Kanunu'nun 299. maddesi ve devamında düzenlenen, tarafların karşılıklı hak ve yükümlülüklerini belirleyen iki tarafa borç yükleyen bir sözleşmedir.
@@ -240,6 +248,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
     {
         term: "Depozito",
         slug: "depozito",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Depozito iadesi dahil ", anchor: "ev sahibi ve kiracı uyuşmazlıkları", after: " için ayrıntılı rehberimize göz atabilirsiniz." },
         shortDescription: "Kiracının kira sözleşmesi başlangıcında güvence olarak ödediği teminat bedeli. TBK m. 342'ye göre en fazla üç aylık kira tutarı olabilir.",
         definition: "Depozito (güvence bedeli), kiracının kira sözleşmesinin başlangıcında kiraya verene olası zararları karşılamak amacıyla verdiği teminat bedelidir. TBK m. 342'ye göre, konut ve çatılı işyeri kiralarında güvence bedeli üç aylık kira bedelini aşamaz ve kiracının bankada açılacak vadeli bir hesaba yatırılması gerekir.",
         detailedExplanation: `Depozito, kira ilişkisinin başlangıcında kiracı tarafından ödenen ve kira sözleşmesinin sona ermesinde iade edilen güvence bedelidir.
@@ -275,6 +284,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
     {
         term: "Kira Artış Oranı",
         slug: "kira-artis-orani",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "TÜFE sınırı ve beş yıl sonrası belirleme konusunda bir ", anchor: "kira hukuku avukatından", after: " bilgi alabilirsiniz." },
         shortDescription: "Kira bedelinin yıllık yenilenmesinde uygulanabilecek azami artış oranını belirleyen yasal sınır. TBK m. 344 uyarınca TÜFE oranıyla sınırlıdır.",
         definition: "Kira artış oranı, konut kiralarında yıllık kira yenilemesinde uygulanabilecek azami artış oranıdır. TBK m. 344'e göre, taraflar arasında kira artışına ilişkin anlaşma yapılmışsa bile bu artış bir önceki kira yılında tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalardaki değişim oranını geçemez.",
         detailedExplanation: `Kira artış oranı, kiracıları aşırı kira artışlarından koruyan önemli bir yasal düzenlemedir. TBK m. 344 uyarınca, konut kiralarında yıllık artış oranı TÜFE on iki aylık ortalamasını geçemez.
@@ -310,6 +320,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
     {
         term: "Kira Uyarlama Davası",
         slug: "kira-uyarlama-davasi",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Uyarlama koşulları dar yorumlandığından ", anchor: "İzmir'de kira avukatı", after: " ile ön değerlendirme yapılabilir." },
         shortDescription: "Olağanüstü koşullar nedeniyle kira bedelinin değişen şartlara uyarlanmasını talep eden dava. TBK m. 138 aşırı ifa güçlüğü hükmüne dayanır.",
         definition: "Kira uyarlama davası, sözleşmenin kurulmasından sonra ortaya çıkan olağanüstü durumlar (ekonomik kriz, aşırı enflasyon, pandemi vb.) nedeniyle kira bedelinin veya sözleşme koşullarının değişen şartlara uyarlanmasını talep eden dava türüdür. TBK m. 138 (aşırı ifa güçlüğü) hükmüne dayanır.",
         detailedExplanation: `Kira uyarlama davası, olağanüstü koşullar sebebiyle kira ilişkisinin taraflarından biri için sözleşmeye devam etmenin çekilmez hale geldiği durumlarda başvurulan hukuki yoldur.
@@ -344,6 +355,7 @@ Türkiye'de yaşanan yüksek enflasyon dönemlerinde, özellikle uzun süreli i�
     {
         term: "Fuzuli İşgal",
         slug: "fuzuli-isgal",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Kira ilişkisi bulunan durumlarda ", anchor: "tahliye süreçleri", after: " farklı işler." },
         shortDescription: "Hukuki bir hakka dayanmaksızın bir taşınmazı kullanma veya işgal etme durumu. Fuzuli işgalci ecrimisil tazminatı ödemekle yükümlüdür.",
         definition: "Fuzuli işgal, bir kişinin herhangi bir hukuki hakka (kira sözleşmesi, mülkiyet, intifa hakkı vb.) dayanmaksızın bir taşınmazı kullanması veya işgal etmesidir. Kira sözleşmesi sona erdikten sonra taşınmazı boşaltmayan kiracı da fuzuli işgalci konumuna düşer ve ecrimisil (haksız işgal tazminatı) ödemekle yükümlü olabilir.",
         detailedExplanation: `Fuzuli işgal, mülkiyet hakkının korunması açısından önemli bir hukuki kavramdır. Bir taşınmazı herhangi bir hukuki dayanağı olmadan kullanan kişi fuzuli işgalci (fuzuli şagil) olarak nitelendirilir.
@@ -379,6 +391,7 @@ Fuzuli işgalci, iyiniyetli veya kötüniyetli olmasına göre farklı hukuki so
     {
         term: "10 Yıllık Uzama Süresi",
         slug: "10-yillik-uzama-suresi",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "On yıllık süre dolduktan sonra ", anchor: "kiracının tahliyesi", after: " için bildirim süresine dikkat edilmelidir." },
         shortDescription: "Kira sözleşmesinin on yıllık uzama süresini doldurmasının ardından kiraya verene tanınan fesih hakkı.",
         definition: "10 yıllık uzama süresi, TBK m. 347 uyarınca konut ve çatılı işyeri kiralarında, kiraya verenin herhangi bir gerekçe göstermeksizin kira sözleşmesini feshedebileceği süreyi ifade eder. On yıllık uzama süresinin sonunda kiraya veren, üç ay önceden yazılı bildirimde bulunarak sözleşmeyi sona erdirebilir.",
         detailedExplanation: `TBK m. 347'ye göre, konut ve çatılı işyeri kiralarında kiracı, belirli süreli sözleşmenin süresinin bitiminden en az on beş gün önce bildirimde bulunmadıkça sözleşme aynı koşullarla bir yıl uzar. Kiraya veren ise süre bitimi nedeniyle sözleşmeyi sona erdiremez.
@@ -414,6 +427,7 @@ Süre hesaplamasında, sözleşmede belirtilen sürenin bitiminden itibaren on y
     {
         term: "Kiracı Hakları",
         slug: "kiraci-haklari",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Haksız tahliye talebiyle karşılaşan ", anchor: "kiracılar için hukuki destek", after: " sayfamıza bakabilirsiniz." },
         shortDescription: "Türk Borçlar Kanunu tarafından konut ve çatılı işyeri kiracılarına tanınan yasal koruma ve haklar. Kira artış sınırı ve tahliye güvencesi içerir.",
         definition: "Kiracı hakları, Türk Borçlar Kanunu'nun konut ve çatılı işyeri kiralarına ilişkin emredici hükümleri kapsamında kiracıya tanınan yasal koruma ve haklardır. Bu haklar arasında kira bedelinde TÜFE sınırı, sözleşme süresinin bitiminde otomatik uzama, tahliye sebeplerinin sınırlı sayıda olması ve depozito güvencesi yer almaktadır.",
         detailedExplanation: `Türk hukuk sisteminde kiracı, konut ve çatılı işyeri kiralarında güçlü bir şekilde korunmaktadır. Bu koruma, TBK'nın emredici hükümlerinden kaynaklanır ve taraflar anlaşsa bile kiracı aleyhine değiştirilemez.
@@ -1115,6 +1129,7 @@ Yargıtay 2. Hukuk Dairesi, her somut olaydaki kusur dağılımını ayrıntıl�
     {
         term: "Ecrimisil",
         slug: "ecrimisil",
+        pillarLink: { href: "/izmir-kira-avukati/", before: "Kira ilişkisi varsa ecrimisil yerine ", anchor: "kira alacağı ve tahliye", after: " hükümleri uygulanır." },
         shortDescription: "Bir taşınmazın haksız olarak işgal edilmesi nedeniyle ödenmesi gereken haksız işgal tazminatı. Emsal kira bedeli esas alınarak hesaplanır.",
         definition: "Ecrimisil, bir taşınmazı hukuki bir hakka dayanmadan kullanan kişinin (fuzuli şagil), taşınmaz sahibine ödemekle yükümlü olduğu haksız işgal tazminatıdır. Kötüniyetli haksız zilyedin ödemesi gereken bir tazminat türü olup TMK m. 995 ve TBK m. 77 kapsamında değerlendirilir.",
         detailedExplanation: `Ecrimisil, mülkiyet hakkının korunmasında önemli bir tazminat aracıdır. Bir taşınmazı herhangi bir hukuki dayanağı olmadan kullanan kişi (fuzuli şagil), taşınmaz sahibine ecrimisil ödemekle yükümlüdür.

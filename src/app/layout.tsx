@@ -4,6 +4,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SchemaMarkup } from "@/components/layout/SchemaMarkup";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -16,7 +17,6 @@ export const metadata: Metadata = {
     default: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
   },
   description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
-  keywords: ["İzmir avukat", "İzmir hukuk bürosu", "Bayraklı avukat", "tazminat avukatı", "kira tespit davası", "tahliye taahhütnamesi", "iş hukuku avukatı", "işe iade davası", "kıdem tazminatı", "boşanma avukatı", "velayet davası", "nafaka davası", "İzmir iş avukatı", "İzmir boşanma avukatı", "İzmir tazminat avukatı"],
   authors: [{ name: "Av. Mert Kağan Çetin" }],
   creator: "Mert Kağan Çetin Hukuk Bürosu",
   publisher: "Mert Kağan Çetin Hukuk Bürosu",
@@ -77,6 +77,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="scroll-smooth">
+      <head>
+        <SchemaMarkup />
+      </head>
       <body className={cn(
         "min-h-screen bg-background font-sans antialiased",
         inter.variable,

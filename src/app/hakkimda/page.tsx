@@ -9,13 +9,14 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata: Metadata = {
     title: "Hakkımda | İzmir Avukat Profili",
-    description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
+    description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık.",
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Hakkımda | İzmir Avukat Profili | Av. Mert Kağan Çetin",
-        description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
+        description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık.",
         url: "https://mertkagancetin.com/hakkimda/",
     },
 };
@@ -49,7 +50,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    Avukat Mert Kağan Çetin, İzmir Bayraklı'da faaliyet gösteren hukuk bürosunun kurucusudur. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link>, <Link href="/izmir-is-avukati/" className="text-secondary hover:underline">iş hukuku</Link>, <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma hukuku</Link> ve <Link href="/izmir-tazminat-avukati/" className="text-secondary hover:underline">tazminat hukuku</Link> alanlarında uzmanlaşmıştır.
+                                    Avukat Mert Kağan Çetin, İzmir Bayraklı'da faaliyet gösteren hukuk bürosunun kurucusudur. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link>, <Link href="/izmir-is-avukati/" className="text-secondary hover:underline">iş hukuku</Link>, <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma hukuku</Link> ve <Link href="/izmir-tazminat-avukati/" className="text-secondary hover:underline">tazminat hukuku</Link> alanlarında çalışmaktadır.
                                 </p>
                                 <p>
                                     Müvekkillerine yalnızca mahkeme süreçlerinde değil, dava öncesi danışmanlık aşamasında da yol göstermektedir. Uyuşmazlığın çözümünde arabuluculuk ve müzakere yöntemlerini de aktif olarak kullanmaktadır.
@@ -58,7 +59,7 @@ export default function AboutPage() {
                                     "Hukuk teknik bir alan olabilir; ancak müvekkilin kendi davasını anlaması bir lütuf değil, hakkıdır."
                                 </blockquote>
                                 <p>
-                                    İzmir ve çevre illerde yüzlerce davayı başarıyla sonuçlandıran Çetin, yerel mahkemelerin işleyişine ve güncel Yargıtay kararlarına hakimdir.
+                                    Çetin, İzmir&apos;deki yargılama süreçlerini ve güncel Yargıtay kararlarını yakından takip etmektedir.
                                 </p>
                                 <p>
                                     Hukuki süreçleri herkesin anlayabileceği şekilde açıkladığı <a href="https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">YouTube kanalını</a> takip ederek kira, iş ve aile hukuku konularında kısa bilgilendirme videolarına ulaşabilirsiniz.
@@ -87,7 +88,7 @@ export default function AboutPage() {
                                         <h3 className="font-bold text-primary">Vizyonumuz</h3>
                                     </div>
                                     <p className="text-sm text-muted-foreground">
-                                        Müvekkillerimize her aşamada şeffaf bilgi vererek, en hızlı ve en etkili çözümleri sunmak. İzmir'de güvenilir hukuki danışmanlık deneyimi sağlamak.
+                                        Müvekkillerimize her aşamada şeffaf bilgi vererek, hukuki süreci anlaşılır kılmak. İzmir'de güvenilir hukuki danışmanlık deneyimi sağlamak.
                                     </p>
                                 </div>
                             </div>
@@ -106,14 +107,6 @@ export default function AboutPage() {
                                 <CardContent className="p-8 space-y-8">
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-center border-b pb-4">
-                                            <span className="text-muted-foreground">Tecrübe</span>
-                                            <span className="font-bold text-primary">7+ Yıl</span>
-                                        </div>
-                                        <div className="flex justify-between items-center border-b pb-4">
-                                            <span className="text-muted-foreground">Dava Sayısı</span>
-                                            <span className="font-bold text-primary">500+</span>
-                                        </div>
-                                        <div className="flex justify-between items-center border-b pb-4">
                                             <span className="text-muted-foreground">Çalışma Alanları</span>
                                             <span className="font-bold text-primary text-right">Kira, İş, Aile, Tazminat</span>
                                         </div>
@@ -123,7 +116,7 @@ export default function AboutPage() {
                                                         <h4 className="font-bold text-primary text-sm uppercase tracking-widest">Neden Bizi Seçmelisiniz?</h4>
                                         {[
                                             "Birebir İletişim",
-                                            "Sonuç Odaklılık",
+                                            "Süreç Hakkında Düzenli Bilgilendirme",
                                             "Şeffaf Ücret Politikası",
                                             "Hızlı Geri Dönüş"
                                         ].map((item, i) => (

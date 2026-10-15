@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Trafik Kazası Tazminat Avukatı",
     description: "İzmir trafik kazası tazminat avukatı Av. Mert Kağan Çetin. Sigorta başvurusu ve trafik kazası tazminat davalarında uzman destek.",
-    keywords: ["trafik kazası tazminat avukatı İzmir", "trafik kazası tazminatı", "sigorta tazminatı", "trafik kazası avukatı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Trafik Kazası Tazminat Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de trafik kazası tazminat davalarında uzman avukatlık hizmeti. Sigorta başvurusu ve dava sürecinde hukuki destek.",
         url: "https://mertkagancetin.com/izmir-tazminat-avukati/trafik-kazasi-tazminati/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function TrafikKazasiTazminatiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Trafik Kazası Tazminatı" description="İzmir'de trafik kazası sonrası sigorta başvurusu ve tazminat davası hizmeti." serviceType="Trafik Kazası Tazminatı" />
             <PersonSchema knowsAbout={["Trafik Kazası Tazminatı", "Karayolları Trafik Kanunu", "ZMSS Başvurusu", "Sigorta Tahkim Komisyonu", "Güvence Hesabı", "Maddi ve Manevi Tazminat"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function TrafikKazasiTazminatiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -313,6 +313,6 @@ export default function TrafikKazasiTazminatiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

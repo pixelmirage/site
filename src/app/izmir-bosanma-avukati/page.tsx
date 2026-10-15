@@ -6,21 +6,20 @@ import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 
 export const metadata: Metadata = {
     title: {
-        absolute: "İzmir Boşanma Avukatı - Uzman Hukuki Danışmanlık",
+        absolute: "İzmir Boşanma Avukatı | Velayet, Nafaka – Av. M.K. Çetin",
     },
-    description: "İzmir boşanma avukatı arıyorsanız avukat Mert Kağan Çetin ile iletişime geçebilirsiniz. Anlaşmalı boşanma, çekişmeli boşanma, velayet, nafaka ve mal paylaşımı gibi konularda size yardımcı olabiliriz.",
-    keywords: ["İzmir boşanma avukatı", "boşanma avukatı İzmir", "anlaşmalı boşanma avukatı İzmir", "çekişmeli boşanma avukatı İzmir", "velayet davası avukatı İzmir", "nafaka davası avukatı İzmir", "boşanma davası ücreti", "İzmir en iyi boşanma avukatı", "İzmir aile hukuku avukatı", "boşanma avukatı İzmir yakınında"],
+    description: "İzmir boşanma avukatı Av. Mert Kağan Çetin; anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında hukuki destek. Bayraklı ofis.",
     openGraph: {
-        title: "İzmir Boşanma Avukatı | Av. Mert Kağan Çetin",
-        description: "İzmir'de boşanma davaları, velayet ve nafaka davalarında uzman avukatlık hizmeti.",
+        images: ["/og-image.jpg"],
+        title: "İzmir Boşanma Avukatı | Velayet, Nafaka – Av. M.K. Çetin",
+        description: "İzmir boşanma avukatı Av. Mert Kağan Çetin; anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı davalarında hukuki destek. Bayraklı ofis.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/",
-        type: "article",
+        type: "website",
     },
     other: {
         "article:modified_time": "2026-04-17",
@@ -73,7 +72,7 @@ const tocItems = [
 
 export default function IzmirBosanmaAvukatiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             {/* Schema Markup */}
             <FAQSchema faqs={faqs} />
             <BreadcrumbSchema
@@ -107,7 +106,7 @@ export default function IzmirBosanmaAvukatiPage() {
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <a href="tel:+905445854645">
                                     <Phone className="w-5 h-5" />
-                                    Hemen Arayın
+                                    İletişime Geçin
                                 </a>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
@@ -158,7 +157,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="izmir-bosanma-avukati-mert-kagan-cetin" className="scroll-mt-24">İzmir Boşanma Avukatı Mert Kağan Çetin</h2>
 
                         <p>
-                            İzmir&apos;de aile hukuku konusunda uzmanlaşmış avukatımız, boşanma sürecinin her aşamasında profesyonel destek sunmaktadır. <Link href="/blog/anlasmali-bosanma-nasil-acilir/">Anlaşmalı boşanma</Link> protokolü hazırlama, <Link href="/izmir-bosanma-avukati/velayet-davasi/">velayet davaları</Link>, <Link href="/izmir-bosanma-avukati/nafaka-davasi/">nafaka talepleri</Link> ve mal paylaşımı konularında danışmanlık almak için iletişime geçebilirsiniz.
+                            İzmir&apos;de aile hukuku alanında çalışan avukat olarak Av. Mert Kağan Çetin, boşanma sürecinin her aşamasında profesyonel destek sunmaktadır. <Link href="/blog/anlasmali-bosanma-nasil-acilir/">Anlaşmalı boşanma</Link> protokolü hazırlama, <Link href="/izmir-bosanma-avukati/velayet-davasi/">velayet davaları</Link>, <Link href="/izmir-bosanma-avukati/nafaka-davasi/">nafaka talepleri</Link> ve mal paylaşımı konularında danışmanlık almak için iletişime geçebilirsiniz.
                         </p>
 
                         <ul>
@@ -337,7 +336,7 @@ export default function IzmirBosanmaAvukatiPage() {
                         <h2 id="izmirde-bosanma-avukati-sonuc" className="scroll-mt-24">İzmir&apos;de Boşanma Avukatı</h2>
 
                         <p>
-                            İzmir&apos;de <strong>boşanma avukatı</strong> arıyorsanız aile hukuku alanında uzmanlaşmış bir avukatla çalışmanız, sürecin her aşamasında haklarınızın korunması açısından kritik önem taşır. <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı</Link> veya çekişmeli boşanma, velayet, nafaka ve mal paylaşımı konularında profesyonel hukuki destek almak için <strong>İzmir boşanma avukatı</strong> Av. Mert Kağan Çetin ile <Link href="/iletisim/">iletişime geçebilirsiniz</Link>.
+                            İzmir&apos;de <strong>boşanma avukatı</strong> arıyorsanız aile hukuku alanında çalışan bir avukatla çalışmanız, sürecin her aşamasında haklarınızın korunması açısından kritik önem taşır. <Link href="/izmir-bosanma-avukati/anlasmali-bosanma/">Anlaşmalı</Link> veya çekişmeli boşanma, velayet, nafaka ve mal paylaşımı konularında profesyonel hukuki destek almak için <strong>İzmir boşanma avukatı</strong> Av. Mert Kağan Çetin ile <Link href="/iletisim/">iletişime geçebilirsiniz</Link>.
                         </p>
 
                         <hr />
@@ -352,7 +351,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                                        İzmir Barosu&apos;na kayıtlı avukat. 2019 yılından bu yana boşanma, kira, iş ve tazminat hukuku alanlarında hizmet vermektedir.
+                                        İzmir Barosu&apos;na kayıtlı avukat. boşanma, kira, iş ve tazminat hukuku alanlarında hizmet vermektedir.
                                     </p>
                                     <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
                                         <span>İzmir Barosu Sicil: 15556</span>
@@ -365,10 +364,6 @@ export default function IzmirBosanmaAvukatiPage() {
                             </div>
                         </div>
 
-                        {/* Google Reviews */}
-                        <div className="not-prose">
-                            <GoogleReviews />
-                        </div>
 
                         {/* SSS */}
                         <h2 id="sss" className="scroll-mt-24">Sıkça Sorulan Sorular</h2>
@@ -433,7 +428,7 @@ export default function IzmirBosanmaAvukatiPage() {
 
                         {/* Uzmanlık Alanları Alt Sayfalar */}
                         <div className="not-prose my-12">
-                            <p className="text-xl font-playfair font-bold text-primary mb-6">Aile Hukuku Uzmanlık Alanlarımız</p>
+                            <p className="text-xl font-playfair font-bold text-primary mb-6">Aile Hukuku Çalışma Alanları</p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                 {[
                                     { title: "Anlaşmalı Boşanma", desc: "Tek celsede anlaşmalı boşanma ve protokol hazırlama", url: "/izmir-bosanma-avukati/anlasmali-bosanma/" },
@@ -444,7 +439,7 @@ export default function IzmirBosanmaAvukatiPage() {
                                     { title: "Boşanma Avukatı Ücretleri", desc: "2026 boşanma avukat ücretleri ve dava masrafları", url: "/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/" },
                                     { title: "Mal Paylaşımı Davası", desc: "Edinilmiş mallara katılma ve mal paylaşımı davaları", url: "/izmir-bosanma-avukati/mal-paylasimi-izmir/" },
                                     { title: "Aldatma ve Boşanma", desc: "Zina sebebiyle boşanma davası ve tazminat hakları", url: "/izmir-bosanma-avukati/aldatma-bosanma-izmir/" },
-                                    { title: "Aile Hukuku Avukatı", desc: "Aile hukukunun tüm alanlarında uzman avukatlık hizmeti", url: "/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/" },
+                                    { title: "Aile Hukuku Avukatı", desc: "Aile hukukunun tüm alanlarında avukatlık hizmeti", url: "/izmir-bosanma-avukati/aile-hukuku-avukati-izmir/" },
                                     { title: "Boşanma Davası Nasıl Açılır?", desc: "Dava açma şartları, gerekli belgeler ve süreç rehberi", url: "/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" },
                                 ].map((item, i) => (
                                     <Link key={i} href={item.url} className="group block p-5 bg-slate-50 border border-slate-200 rounded-xl hover:border-secondary transition-all">
@@ -458,6 +453,6 @@ export default function IzmirBosanmaAvukatiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

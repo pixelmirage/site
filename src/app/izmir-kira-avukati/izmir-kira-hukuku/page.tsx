@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Kira Hukuku Rehberi",
     description: "İzmir'de kira hukuku hakkında kapsamlı rehber. TBK kira hükümleri, kiracı ve ev sahibi hakları, kira sözleşmesi, tahliye sebepleri ve dava süreçleri hakkında bilgi alın.",
-    keywords: ["İzmir kira hukuku", "kira hukuku rehberi", "kira hukuku avukatı İzmir", "TBK kira hükümleri", "kira hukuku danışmanlık İzmir"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Kira Hukuku Rehberi | Av. Mert Kağan Çetin",
         description: "İzmir'de kira hukuku hakkında kapsamlı rehber. TBK kira hükümleri, kiracı ve ev sahibi hakları, kira sözleşmesi ve dava süreçleri.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/izmir-kira-hukuku/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function IzmirKiraHukukuPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="İzmir Kira Hukuku Danışmanlığı" description="İzmir'de kira hukuku alanında kapsamlı hukuki danışmanlık hizmeti." serviceType="Kira Hukuku Danışmanlığı" />
             <PersonSchema knowsAbout={["Kira Hukuku", "Türk Borçlar Kanunu", "Kira Sözleşmesi", "Kiracı Hakları", "Ev Sahibi Hakları"]} />
             <FAQSchema faqs={faqs} />
@@ -89,7 +89,7 @@ export default function IzmirKiraHukukuPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -219,7 +219,7 @@ export default function IzmirKiraHukukuPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Kira davaları rehberi
                                 </Link>
                                 <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Kiracı Tahliye Davası Avukatı
@@ -271,6 +271,6 @@ export default function IzmirKiraHukukuPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

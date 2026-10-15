@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İletişim | Av. Mert Kağan Çetin Hukuk Bürosu",
         description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında uzman hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
         url: "https://mertkagancetin.com/iletisim/",
@@ -99,7 +100,7 @@ export default function ContactPage() {
                             </div>
 
                             <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 italic text-muted-foreground text-sm leading-relaxed">
-                                "Ofisimiz İzmir Bayraklı Adliyesi'ne yürüme mesafesinde, merkezi bir konumdadır. Randevu alarak gelmeniz, size daha iyi hizmet vermemizi sağlar."
+                                "Ofisimiz İzmir Adliyesi'ne yürüme mesafesinde, merkezi bir konumdadır. Randevu alarak gelmeniz, size daha iyi hizmet vermemizi sağlar."
                             </div>
 
                             <Button className="w-full bg-green-600 hover:bg-green-700 text-white gap-2 h-14 text-lg font-bold" asChild>
@@ -126,23 +127,23 @@ export default function ContactPage() {
                                     >
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="space-y-2">
-                                                <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Ad Soyad</label>
-                                                <Input name="ad-soyad" placeholder="Adınız ve Soyadınız" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                                <label htmlFor="iletisim-ad-soyad" className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Ad Soyad</label>
+                                                <Input id="iletisim-ad-soyad" name="ad-soyad" placeholder="Adınız ve Soyadınız" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Telefon</label>
-                                                <Input name="telefon" placeholder="05XX XXX XX XX" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                                <label htmlFor="iletisim-telefon" className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Telefon</label>
+                                                <Input id="iletisim-telefon" name="telefon" placeholder="05XX XXX XX XX" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                             </div>
                                         </div>
 
                                         <div className="space-y-2">
-                                            <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">E-posta</label>
-                                            <Input name="email" type="email" placeholder="ornek@mail.com" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                            <label htmlFor="iletisim-email" className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">E-posta</label>
+                                            <Input id="iletisim-email" name="email" type="email" placeholder="ornek@mail.com" required className="h-12 bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                         </div>
 
                                         <div className="space-y-2">
-                                            <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Konu / Hizmet</label>
-                                            <select name="konu" className="flex h-12 w-full rounded-md border border-transparent bg-slate-50 px-3 py-2 text-base font-sans">
+                                            <label htmlFor="iletisim-konu" className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Konu / Hizmet</label>
+                                            <select id="iletisim-konu" name="konu" className="flex h-12 w-full rounded-md border border-transparent bg-slate-50 px-3 py-2 text-base font-sans">
                                                 <option>Tahliye Davası</option>
                                                 <option>Kira Tespit Davası</option>
                                                 <option>Gayrimenkul Hukuku</option>
@@ -156,8 +157,8 @@ export default function ContactPage() {
                                         </div>
 
                                         <div className="space-y-2">
-                                            <label className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Mesajınız</label>
-                                            <Textarea name="mesaj" placeholder="Hukuki uyuşmazlığınızı kısaca özetleyin..." required className="min-h-[150px] bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
+                                            <label htmlFor="iletisim-mesaj" className="text-sm font-bold text-primary ml-1 uppercase tracking-wider">Mesajınız</label>
+                                            <Textarea id="iletisim-mesaj" name="mesaj" placeholder="Hukuki uyuşmazlığınızı kısaca özetleyin..." required className="min-h-[150px] bg-slate-50 border-transparent focus:bg-white focus:border-primary/20" />
                                         </div>
 
                                         <input type="hidden" name="_replyto" value="mertkagancetin@gmail.com" />

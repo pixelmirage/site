@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Ev Sahibi Hakları İzmir - Kiraya Verenin Yasal Hakları",
     description: "İzmir'de ev sahibi hakları hakkında kapsamlı rehber. Kiracı tahliyesi, kira artışı, sözleşme feshi ve ev sahibinin yasal hakları konusunda avukat desteği.",
-    keywords: ["ev sahibi hakları İzmir", "kiraya veren hakları", "ev sahibi kiracı hakları", "ev sahibi tahliye hakkı", "kira artışı ev sahibi hakları"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Ev Sahibi Hakları İzmir - Kiraya Verenin Yasal Hakları | Av. Mert Kağan Çetin",
         description: "İzmir'de ev sahibi hakları hakkında kapsamlı rehber. Kiracı tahliyesi, kira artışı ve sözleşme yönetimi konusunda avukat desteği.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/ev-sahibi-haklari-izmir/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function EvSahibiHaklariIzmirPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Ev Sahibi Hakları Danışmanlığı" description="İzmir'de ev sahiplerinin yasal haklarının korunması ve kiracı tahliyesi süreçlerinde hukuki danışmanlık." serviceType="Ev Sahibi Hakları Danışmanlığı" />
             <PersonSchema knowsAbout={["Ev Sahibi Hakları", "Kiracı Tahliyesi", "Kira Artışı", "Kira Sözleşmesi Feshi", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -217,7 +217,7 @@ export default function EvSahibiHaklariIzmirPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Kira hukuku hizmetlerine genel bakış
                                 </Link>
                                 <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → Ev Sahibi Hangi Durumlarda Kiracıyı Hemen Çıkarabilir?
@@ -269,6 +269,6 @@ export default function EvSahibiHaklariIzmirPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

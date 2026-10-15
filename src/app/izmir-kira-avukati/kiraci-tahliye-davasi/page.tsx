@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Tahliye Davaları İzmir | Kiracı Tahliye Avukatı",
     description: "İzmir'de tahliye davaları avukatı Av. Mert Kağan Çetin. İhtiyaç, taahhütname, iki haklı ihtar, 10 yıllık süre ve temerrüt nedeniyle tahliye davalarında avukatlık desteği.",
-    keywords: ["tahliye davaları İzmir", "kiracı tahliye davası avukatı İzmir", "tahliye davası avukatı", "kiracı tahliye davası", "İzmir tahliye avukatı", "tahliye davası ücreti"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Tahliye Davaları İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de tüm tahliye davası türlerinde avukatlık hizmeti. İhtiyaç, taahhütname, iki haklı ihtar ve süre sonu tahliye.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kiraci-tahliye-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function KiraciTahliyeDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Kiracı Tahliye Davası" description="İzmir'de ihtiyaç, taahhütname ve iki haklı ihtar ile kiracı tahliye davası hizmeti." serviceType="Kiracı Tahliye Davası" />
             <PersonSchema knowsAbout={["Kiracı Tahliye Davası", "Tahliye Taahhütnamesi", "İhtiyaç Nedeniyle Tahliye", "İki Haklı İhtar", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -282,7 +282,7 @@ export default function KiraciTahliyeDavasiPage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Kira davaları rehberi
                                 </Link>
                                 <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İhtiyaç Nedeniyle Tahliye Davası Nasıl Açılır?
@@ -334,6 +334,6 @@ export default function KiraciTahliyeDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

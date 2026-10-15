@@ -10,8 +10,8 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
     title: "Kıdem Tazminatı Hesaplama 2026",
     description: "2026 güncel tavan (64.948,77 TL) ile kıdem tazminatınızı hesaplayın. Giydirilmiş brüt ücret, damga vergisi ve net tazminat tutarını anında öğrenin.",
-    keywords: ["kıdem tazminatı hesaplama", "kıdem tazminatı hesaplama 2026", "kıdem tazminatı tavanı 2026", "net kıdem tazminatı", "giydirilmiş brüt ücret hesaplama", "kıdem tazminatı hesaplama aracı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kıdem Tazminatı Hesaplama Aracı 2026 | Av. Mert Kağan Çetin",
         description: "Giydirilmiş brüt ücretiniz ve çalışma sürenize göre net kıdem tazminatınızı saniyeler içinde hesaplayın.",
         url: "https://mertkagancetin.com/kidem-tazminati-hesaplama/",
@@ -47,7 +47,7 @@ const faqs = [
 
 export default function SeveranceCalculatorPage() {
     return (
-        <main className="bg-slate-50 min-h-screen">
+        <div className="bg-slate-50 min-h-screen">
             <FAQSchema faqs={faqs} />
             <HowToSchema
                 name="Kıdem Tazminatı Nasıl Hesaplanır?"
@@ -150,7 +150,7 @@ export default function SeveranceCalculatorPage() {
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Hemen Arayın</h3>
+                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">İletişime Geçin</h3>
                             <p className="mb-6 text-muted-foreground">Tazminat hesaplamanızı birlikte kontrol edelim, haklarınızı koruyalım.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>
@@ -174,6 +174,6 @@ export default function SeveranceCalculatorPage() {
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
     );
 }

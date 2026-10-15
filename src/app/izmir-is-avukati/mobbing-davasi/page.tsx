@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "İzmir Mobbing Davası Avukatı",
     description: "İzmir mobbing davası avukatı Av. Mert Kağan Çetin. Psikolojik taciz, haklı fesih ve manevi tazminat davalarında uzman destek.",
-    keywords: ["mobbing davası avukatı İzmir", "mobbing davası", "iş yerinde psikolojik taciz", "mobbing tazminatı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "İzmir Mobbing Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de mobbing davalarında uzman avukatlık hizmeti. İş yerinde psikolojik tacize karşı hukuki koruma.",
         url: "https://mertkagancetin.com/izmir-is-avukati/mobbing-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function MobbingDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Mobbing Davası" description="İzmir'de işyerinde psikolojik taciz ve manevi tazminat davası hizmeti." serviceType="Mobbing Davası" />
             <PersonSchema knowsAbout={["Mobbing Davası", "İş Yerinde Psikolojik Taciz", "Manevi Tazminat", "Haklı Fesih", "İşverenin Koruma Yükümlülüğü"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function MobbingDavasiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -198,7 +198,7 @@ export default function MobbingDavasiPage() {
                             ))}
                         </div>
 
-                        <SectionCTA text="İş yerinde mobbinge mi maruz kalıyorsunuz? Hukuki haklarınız için hemen arayın." />
+                        <SectionCTA text="İş yerinde mobbinge mi maruz kalıyorsunuz? Hukuki haklarınız için iletişime geçebilirsiniz." />
 
                         <h2 id="ispat-ve-delil" className="scroll-mt-24">Mobbing Davalarında İspat ve Delil Yöntemleri</h2>
 
@@ -331,6 +331,6 @@ export default function MobbingDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

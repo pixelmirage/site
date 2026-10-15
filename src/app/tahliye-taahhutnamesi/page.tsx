@@ -13,8 +13,8 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
     title: "Tahliye Taahhütnamesi Örneği 2026",
     description: "2026 güncel tahliye taahhütnamesi örneğini indirin. Yargıtay uyumlu taahhütname nasıl doldurulur? TBK m. 352 şartları ve geçerlilik rehberi.",
-    keywords: ["tahliye taahhütnamesi örneği", "tahliye taahhütnamesi pdf", "boş tahliye taahhütnamesi", "kiracı tahliye taahhütnamesi"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Tahliye Taahhütnamesi Örneği | Ücretsiz İndir",
         description: "Geçerli ve garantili tahliye taahhütnamesi şablonu. Hemen yazdırın veya PDF olarak kaydedin.",
         url: "https://mertkagancetin.com/tahliye-taahhutnamesi/",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function EvictionTemplatePage() {
     return (
-        <main className="bg-slate-50 min-h-screen pb-24">
+        <div className="bg-slate-50 min-h-screen pb-24">
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
@@ -279,7 +279,7 @@ export default function EvictionTemplatePage() {
                         <p className="mb-6 text-muted-foreground">Taahhütname hazırlama, icra takibi veya itiraz süreçlerinde hukuki danışmanlık alın.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>
-                                <Link href="/iletisim/">Hemen Arayın</Link>
+                                <Link href="/iletisim/">İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" asChild>
                                 <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>
@@ -289,6 +289,6 @@ export default function EvictionTemplatePage() {
                 </div>
 
             </section>
-        </main>
+        </div>
     );
 }

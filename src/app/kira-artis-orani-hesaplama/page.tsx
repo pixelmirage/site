@@ -10,8 +10,8 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
     title: "Kira Artış Oranı Hesaplama 2026",
     description: "2026 güncel TÜFE oranları ile işyeri ve konut kira artış oranını hesaplayın. Yasal zam sınırı, TEFE-TÜFE farkı ve ev sahibi hakları hakkında detaylı bilgi.",
-    keywords: ["kira artış oranı hesaplama", "kira zammı hesaplama", "2026 kira artış oranı", "işyeri kira artış oranı", "tüfe kira artışı"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Kira Artış Oranı Hesaplama Aracı | Av. Mert Kağan Çetin",
         description: "Yasal kira artış oranını saniyeler içinde hesaplayın. Güncel TÜFE verileriyle hatasız sonuç.",
         url: "https://mertkagancetin.com/kira-artis-orani-hesaplama/",
@@ -39,7 +39,7 @@ const faqs = [
 
 export default function RentCalculatorPage() {
     return (
-        <main className="bg-slate-50 min-h-screen">
+        <div className="bg-slate-50 min-h-screen">
             <FAQSchema faqs={faqs} />
             <HowToSchema
                 name="Kira Artış Oranı Nasıl Hesaplanır?"
@@ -150,7 +150,7 @@ export default function RentCalculatorPage() {
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Hemen Arayın</h3>
+                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">İletişime Geçin</h3>
                             <p className="mb-6 text-muted-foreground">Durumunuzu değerlendirelim, en doğru hukuki yolu birlikte belirleyelim.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>
@@ -174,6 +174,6 @@ export default function RentCalculatorPage() {
                     </div>
                 </div>
             </section>
-        </main>
+        </div>
     );
 }

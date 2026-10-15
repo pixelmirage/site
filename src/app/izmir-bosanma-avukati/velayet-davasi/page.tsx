@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "Velayet Davaları İzmir | Velayet Avukatı",
     description: "İzmir'de velayet davaları avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayet değişikliği, kişisel ilişki düzenlemesi ve mahkeme kriterlerinde uzman hukuki destek.",
-    keywords: ["velayet davaları İzmir", "velayet davası avukatı İzmir", "çocuk velayeti İzmir", "velayet değişikliği davası", "kişisel ilişki düzenlemesi"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "Velayet Davaları İzmir | Av. Mert Kağan Çetin",
         description: "İzmir'de çocuk velayeti, mahkeme kriterleri ve velayet davası süreçlerinde uzman avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/velayet-davasi/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function VelayetDavasiPage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="Velayet Davası" description="İzmir'de çocuk velayeti, velayet değişikliği ve kişisel ilişki düzenlemesi hizmeti." serviceType="Velayet Davası" />
             <PersonSchema knowsAbout={["Velayet Davası", "Çocuk Velayeti", "Velayetin Değiştirilmesi", "Kişisel İlişki Düzenlemesi", "Aile Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -90,7 +90,7 @@ export default function VelayetDavasiPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
-                                <Link href="/iletisim/"><Phone className="w-5 h-5" />Hemen Arayın</Link>
+                                <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>
                             </Button>
                             <Button size="lg" variant="outline" className="!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2" asChild>
                                 <a href="tel:+905445854645">0544 585 46 45</a>
@@ -319,6 +319,6 @@ export default function VelayetDavasiPage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }

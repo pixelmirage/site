@@ -14,8 +14,8 @@ import { articleProseClasses } from "@/lib/prose-classes";
 export const metadata: Metadata = {
     title: "10 Yıllık Kiracı Tahliyesi İzmir - TBK m. 347",
     description: "İzmir'de 10 yıllık kiracı tahliyesi süreci. TBK m. 347 kapsamında uzama süresini dolduran kiracının tahliyesi, fesih bildirimi süreleri ve dava şartları.",
-    keywords: ["10 yıllık kiracı tahliyesi İzmir", "TBK 347 tahliye", "uzama süresi tahliye", "10 yıllık kiracı hakları", "süre sonu tahliye avukatı İzmir"],
     openGraph: {
+        images: ["/og-image.jpg"],
         title: "10 Yıllık Kiracı Tahliyesi İzmir - TBK m. 347 | Av. Mert Kağan Çetin",
         description: "İzmir'de TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliyesi süreçlerinde avukat desteği.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/on-yillik-kiraci-tahliye/",
@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function OnYillikKiraciTahliyePage() {
     return (
-        <main className="bg-white">
+        <div className="bg-white">
             <ServiceSchema name="10 Yıllık Kiracı Tahliyesi" description="İzmir'de TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliye davası hizmeti." serviceType="10 Yıllık Kiracı Tahliyesi" />
             <PersonSchema knowsAbout={["10 Yıllık Kiracı Tahliyesi", "TBK Madde 347", "Uzama Süresi", "Fesih Bildirimi", "Kira Hukuku"]} />
             <FAQSchema faqs={faqs} />
@@ -268,7 +268,7 @@ export default function OnYillikKiraciTahliyePage() {
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    ← İzmir Kira Avukatı (Ana Sayfa)
+                                    ← Kira hukuku ana sayfası
                                 </Link>
                                 <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     → İzmir Kiracı Tahliye Davası Avukatı
@@ -320,6 +320,6 @@ export default function OnYillikKiraciTahliyePage() {
                     </div>
                 </div>
             </article>
-        </main>
+        </div>
     );
 }
