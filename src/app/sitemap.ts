@@ -1,6 +1,5 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog/utils';
-import { districtData } from '@/lib/districts';
 import { glossaryTerms } from '@/lib/glossary';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,14 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/blog/${post.slug}/`,
         lastModified: new Date(post.dateModified || post.date),
         changeFrequency: 'weekly' as const,
-        priority: 0.7,
-    }));
-
-    // Kira ilçe sayfaları (indekslenebilir). Diğer hizmetlerin ilçe sayfaları noindex olduğundan eklenmez.
-    const districtSitemap = districtData.map((d) => ({
-        url: `${baseUrl}/${d.slug}-kira-avukati/`,
-        lastModified: new Date('2026-10-13'),
-        changeFrequency: 'monthly' as const,
         priority: 0.7,
     }));
 
@@ -87,5 +78,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    return [...routes, ...districtSitemap, ...glossarySitemap, ...blogSitemap];
+    return [...routes, ...glossarySitemap, ...blogSitemap];
 }

@@ -18,57 +18,9 @@ $body = @{
         'https://mertkagancetin.com/kidem-tazminati-hesaplama/',
         'https://mertkagancetin.com/sozluk/',
 
-        # District - Kira (11)
-        'https://mertkagancetin.com/bayrakli-kira-avukati/',
-        'https://mertkagancetin.com/karsiyaka-kira-avukati/',
-        'https://mertkagancetin.com/bornova-kira-avukati/',
-        'https://mertkagancetin.com/konak-kira-avukati/',
-        'https://mertkagancetin.com/buca-kira-avukati/',
-        'https://mertkagancetin.com/cigli-kira-avukati/',
-        'https://mertkagancetin.com/gaziemir-kira-avukati/',
-        'https://mertkagancetin.com/balcova-kira-avukati/',
-        'https://mertkagancetin.com/narlidere-kira-avukati/',
-        'https://mertkagancetin.com/karabaglar-kira-avukati/',
-        'https://mertkagancetin.com/guzelbahce-kira-avukati/',
 
-        # District - Is (11)
-        'https://mertkagancetin.com/bayrakli-is-avukati/',
-        'https://mertkagancetin.com/karsiyaka-is-avukati/',
-        'https://mertkagancetin.com/bornova-is-avukati/',
-        'https://mertkagancetin.com/konak-is-avukati/',
-        'https://mertkagancetin.com/buca-is-avukati/',
-        'https://mertkagancetin.com/cigli-is-avukati/',
-        'https://mertkagancetin.com/gaziemir-is-avukati/',
-        'https://mertkagancetin.com/balcova-is-avukati/',
-        'https://mertkagancetin.com/narlidere-is-avukati/',
-        'https://mertkagancetin.com/karabaglar-is-avukati/',
-        'https://mertkagancetin.com/guzelbahce-is-avukati/',
 
-        # District - Bosanma (11)
-        'https://mertkagancetin.com/bayrakli-bosanma-avukati/',
-        'https://mertkagancetin.com/karsiyaka-bosanma-avukati/',
-        'https://mertkagancetin.com/bornova-bosanma-avukati/',
-        'https://mertkagancetin.com/konak-bosanma-avukati/',
-        'https://mertkagancetin.com/buca-bosanma-avukati/',
-        'https://mertkagancetin.com/cigli-bosanma-avukati/',
-        'https://mertkagancetin.com/gaziemir-bosanma-avukati/',
-        'https://mertkagancetin.com/balcova-bosanma-avukati/',
-        'https://mertkagancetin.com/narlidere-bosanma-avukati/',
-        'https://mertkagancetin.com/karabaglar-bosanma-avukati/',
-        'https://mertkagancetin.com/guzelbahce-bosanma-avukati/',
 
-        # District - Tazminat (11)
-        'https://mertkagancetin.com/bayrakli-tazminat-avukati/',
-        'https://mertkagancetin.com/karsiyaka-tazminat-avukati/',
-        'https://mertkagancetin.com/bornova-tazminat-avukati/',
-        'https://mertkagancetin.com/konak-tazminat-avukati/',
-        'https://mertkagancetin.com/buca-tazminat-avukati/',
-        'https://mertkagancetin.com/cigli-tazminat-avukati/',
-        'https://mertkagancetin.com/gaziemir-tazminat-avukati/',
-        'https://mertkagancetin.com/balcova-tazminat-avukati/',
-        'https://mertkagancetin.com/narlidere-tazminat-avukati/',
-        'https://mertkagancetin.com/karabaglar-tazminat-avukati/',
-        'https://mertkagancetin.com/guzelbahce-tazminat-avukati/',
 
         # Blog posts (19)
         'https://mertkagancetin.com/blog/anlasmali-bosanma-nasil-acilir/',

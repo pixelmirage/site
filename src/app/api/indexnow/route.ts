@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllPosts } from '@/lib/blog/utils';
-import { getAllServiceSlugs } from '@/lib/districts';
 import { glossaryTerms } from '@/lib/glossary';
 
 const INDEXNOW_KEY = '8bb539d0a5f7442b92ff3b3b983189d3';
@@ -65,9 +64,6 @@ export async function GET(request: NextRequest) {
         `${base}/sozluk/`,
     ];
 
-    // District pages
-    const districtUrls = getAllServiceSlugs().map((slug) => `${base}/${slug}/`);
-
     // Blog posts
     const posts = getAllPosts();
     const blogUrls = posts.map((post) => `${base}/blog/${post.slug}/`);
@@ -75,7 +71,7 @@ export async function GET(request: NextRequest) {
     // Glossary terms
     const glossaryUrls = glossaryTerms.map((term) => `${base}/sozluk/${term.slug}/`);
 
-    const allUrls = [...staticUrls, ...districtUrls, ...blogUrls, ...glossaryUrls];
+    const allUrls = [...staticUrls, ...blogUrls, ...glossaryUrls];
 
     const payload = {
         host: HOST,
