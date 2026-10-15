@@ -9,13 +9,13 @@ import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata: Metadata = {
     title: "Hakkımda | İzmir Avukat Profili",
-    description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve uzmanlık alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
+    description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
     openGraph: {
         title: "Hakkımda | İzmir Avukat Profili | Av. Mert Kağan Çetin",
-        description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve uzmanlık alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
+        description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında 500+ dava deneyimi.",
         url: "https://mertkagancetin.com/hakkimda/",
     },
 };
@@ -114,7 +114,7 @@ export default function AboutPage() {
                                             <span className="font-bold text-primary">500+</span>
                                         </div>
                                         <div className="flex justify-between items-center border-b pb-4">
-                                            <span className="text-muted-foreground">Uzmanlık</span>
+                                            <span className="text-muted-foreground">Çalışma Alanları</span>
                                             <span className="font-bold text-primary text-right">Kira, İş, Aile, Tazminat</span>
                                         </div>
                                     </div>
@@ -165,8 +165,8 @@ export default function AboutPage() {
                                 icon: ShieldCheck
                             },
                             {
-                                title: "Uzmanlık",
-                                desc: "Sadece uzman olduğumuz alanlarda hizmet vererek, müvekkilllerimize en yüksek kalitede hukuki destek sağlarız.",
+                                title: "Odaklı Çalışma",
+                                desc: "Belirli hukuk alanlarına odaklanarak her dosyayı yakından takip ederiz.",
                                 icon: Award
                             }
                         ].map((item, i) => (

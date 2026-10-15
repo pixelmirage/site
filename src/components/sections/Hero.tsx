@@ -29,7 +29,7 @@ export function Hero() {
 
                     <div className="space-y-6">
                         <h1 className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight">
-                            İzmir'de Uzman{" "}
+                            İzmir'de{" "}
                             <br className="hidden md:block" />
                             <span className="text-secondary italic">Avukatlık</span> Hizmeti
                         </h1>
@@ -39,8 +39,8 @@ export function Hero() {
                             style={{ animationDelay: '0.3s' }}
                         >
                             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
-                                Kira, iş, boşanma ve tazminat hukuku alanlarında yılların deneyimiyle
-                                haklarınızı İzmir'de en üst düzeyde savunuyoruz.
+                                Av. Mert Kağan Çetin Hukuk Bürosu; iş, boşanma, tazminat ve kira hukuku
+                                alanlarında İzmir genelinde avukatlık ve hukuki danışmanlık hizmeti verir.
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ export function Hero() {
                             className="bg-primary text-white hover:bg-primary/95 px-12 h-16 text-lg font-serif tracking-wide transition-all shadow-xl hover:shadow-2xl"
                             asChild
                         >
-                            <Link href="/iletisim/">Hemen Arayın</Link>
+                            <Link href="/iletisim/">İletişime Geçin</Link>
                         </Button>
                         <Link
                             href="tel:+905445854645"

@@ -7,13 +7,13 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
     title: "Hizmetlerimiz | İzmir Hukuk Bürosu",
-    description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
+    description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin Hukuk Bürosu, Bayraklı.",
     alternates: {
         canonical: "https://mertkagancetin.com/hizmetler/",
     },
     openGraph: {
         title: "Hizmetlerimiz | İzmir Hukuk Bürosu | Av. Mert Kağan Çetin",
-        description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin ile profesyonel hukuki destek alın.",
+        description: "İzmir'de kira hukuku, iş hukuku, boşanma ve tazminat davaları alanında avukatlık hizmetleri. Av. Mert Kağan Çetin Hukuk Bürosu, Bayraklı.",
         url: "https://mertkagancetin.com/hizmetler/",
     },
 };
@@ -42,14 +42,14 @@ const services = [
     },
     {
         title: "Gayrimenkul Hukuku",
-        description: "Taşınmaz malların mülkiyeti, kullanımı ve devrine ilişkin tüm uyuşmazlıklarda uzman temsil.",
+        description: "Taşınmaz malların mülkiyeti, kullanımı ve devrine ilişkin uyuşmazlıklarda hukuki temsil.",
         icon: Home,
         details: ["Tapu iptal ve tescil", "İzale-i şuyu davaları", "Kamulaştırma davaları", "Ecrimisil talepleri"],
         href: "/izmir-kira-avukati/"
     },
     {
         title: "Kira Sözleşmesi Yönetimi",
-        description: "İşyeri ve konutlar için riskleri minimize eden, tarafları koruyan profesyonel sözleşme hazırlığı.",
+        description: "İşyeri ve konutlar için riskleri minimize eden, tarafları koruyan sözleşme hazırlığı.",
         icon: Gavel,
         details: ["Özel şartların belirlenmesi", "Depozito yönetimi", "Kefalet şartları", "Devir ve alt kira izinleri"],
         href: "/izmir-kira-avukati/"
@@ -70,7 +70,7 @@ const services = [
     },
     {
         title: "İş Kazası Tazminatı",
-        description: "İş kazası ve meslek hastalığı nedeniyle maddi ve manevi tazminat davalarında uzman temsil.",
+        description: "İş kazası ve meslek hastalığı nedeniyle maddi ve manevi tazminat davalarında hukuki temsil.",
         icon: ShieldCheck,
         details: ["Maddi tazminat", "Manevi tazminat", "SGK bildirimi", "Kusur tespiti"],
         href: "/izmir-tazminat-avukati/"
@@ -91,7 +91,7 @@ const services = [
     },
     {
         title: "Velayet & Nafaka",
-        description: "Boşanma sonrası çocuk velayeti, iştirak nafakası ve yoksulluk nafakası davalarında profesyonel destek.",
+        description: "Boşanma sonrası çocuk velayeti, iştirak nafakası ve yoksulluk nafakası davalarında hukuki destek.",
         icon: Heart,
         details: ["Velayet değişikliği", "İştirak nafakası", "Yoksulluk nafakası", "Kişisel ilişki düzeni"],
         href: "/izmir-bosanma-avukati/"
@@ -119,7 +119,7 @@ export default function ServicesPage() {
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                         <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link>,{" "}
                         <Link href="/izmir-is-avukati/" className="text-secondary hover:underline">iş hukuku</Link> ve{" "}
-                        <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma davaları</Link> alanlarında uzmanlaşmış kadromuzla yanınızdayız.
+                        <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma davaları</Link> alanlarında hukuki destek vermekteyiz.
                     </p>
                 </div>
             </section>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
             {/* Trust Section */}
             <section className="py-24 bg-primary text-white">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-playfair font-bold mb-8">Neden Uzman Bir Avukat İle Çalışmalısınız?</h2>
+                    <h2 className="text-3xl font-playfair font-bold mb-8">Neden Bir Avukatla Çalışmalısınız?</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                         <div className="space-y-4">
                             <div className="text-4xl font-bold text-secondary">01</div>
@@ -183,11 +183,11 @@ export default function ServicesPage() {
                         <div className="space-y-4">
                             <div className="text-4xl font-bold text-secondary">03</div>
                             <h3 className="text-xl font-bold">Stratejik Planlama</h3>
-                            <p className="text-primary-foreground/70 text-sm">Sadece dava açmak değil, uyuşmazlığı en kısa ve az maliyetli yoldan çözmek profesyonel bir bakış açısı gerektirir.</p>
+                            <p className="text-primary-foreground/70 text-sm">Sadece dava açmak değil, uyuşmazlığı en kısa ve az maliyetli yoldan çözmek hukuki bir bakış açısı gerektirir.</p>
                         </div>
                     </div>
                     <Button size="lg" className="mt-16 bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-12" asChild>
-                        <Link href="/iletisim/">Hemen Arayın</Link>
+                        <Link href="/iletisim/">İletişime Geçin</Link>
                     </Button>
                 </div>
             </section>

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     template: "%s | Av. Mert Kağan Çetin",
     default: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
   },
-  description: "Av. Mert Kağan Çetin; kira hukuku, iş hukuku, boşanma davaları ve tazminat hukuku alanında İzmir merkezli avukatlık hizmeti sunar.",
-  keywords: ["kira hukuku avukatı", "tahliye davası avukatı", "tazminat avukatı", "İzmir avukat", "kira tespit davası", "tahliye taahhütnamesi", "iş hukuku avukatı", "işe iade davası", "kıdem tazminatı", "boşanma avukatı", "velayet davası", "nafaka davası", "İzmir iş avukatı", "İzmir boşanma avukatı", "İzmir tazminat avukatı"],
+  description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
+  keywords: ["İzmir avukat", "İzmir hukuk bürosu", "Bayraklı avukat", "tazminat avukatı", "kira tespit davası", "tahliye taahhütnamesi", "iş hukuku avukatı", "işe iade davası", "kıdem tazminatı", "boşanma avukatı", "velayet davası", "nafaka davası", "İzmir iş avukatı", "İzmir boşanma avukatı", "İzmir tazminat avukatı"],
   authors: [{ name: "Av. Mert Kağan Çetin" }],
   creator: "Mert Kağan Çetin Hukuk Bürosu",
   publisher: "Mert Kağan Çetin Hukuk Bürosu",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: 'https://mertkagancetin.com',
     siteName: 'Av. Mert Kağan Çetin',
     title: 'İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu',
-    description: 'İzmir\'de kira hukuku, iş hukuku, boşanma davaları ve tazminat davalarında avukatlık hizmeti.',
+    description: 'İzmir\'de iş hukuku, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık.',
     images: [
       {
         url: '/og-image.jpg',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu',
-    description: 'İzmir\'de kira hukuku, iş hukuku, boşanma davaları ve tazminat davalarında avukatlık hizmeti.',
+    description: 'İzmir\'de iş hukuku, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık.',
     images: ['/og-image.jpg'],
   },
   icons: {
