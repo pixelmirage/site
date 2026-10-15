@@ -47,6 +47,7 @@ const tocItems = [
     { id: "kira-davalari", title: "Kira Davaları" },
     { id: "hangi-avukat-bakar", title: "Hangi Avukat Bakar?" },
     { id: "kiraci-nasil-cikarilir", title: "Kiracı Nasıl Çıkarılır?" },
+    { id: "sik-yapilan-hatalar", title: "Kira Hukukunda Sık Yapılan Hatalar" },
     { id: "sss", title: "Sık Sorulan Sorular" },
 ];
 
@@ -323,6 +324,23 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* SSS */}
+                        <h2 id="sik-yapilan-hatalar" className="scroll-mt-24">Kira Hukukunda Sık Yapılan Hatalar</h2>
+
+                        <p>
+                            Kira ilişkilerinde hem kiracılar hem de ev sahipleri çeşitli hatalar yaparak hak kayıplarına uğrayabilmektedir. Sık görülen hatalar şunlardır:
+                        </p>
+
+                        <ul>
+                            <li><strong>Yazılı sözleşme yapılmaması:</strong> Sözlü kira sözleşmeleri geçerli olmakla birlikte, ispat güçlüğü yaratır. Kira bedeli, artış oranı ve özel şartların yazılı belirlenmemesi ciddi uyuşmazlıklara yol açar</li>
+                            <li><strong>Kira artış oranının yanlış hesaplanması:</strong> Konut kiralarında TÜFE sınırını aşan artış yapılması veya artış oranının yanlış döneme göre hesaplanması sık karşılaşılan bir hatadır</li>
+                            <li><strong>Tahliye taahhütnamesinin usulsüz düzenlenmesi:</strong> Kira sözleşmesiyle aynı tarihte alınan veya baskı altında imzalatılan tahliye taahhütnameleri geçersiz sayılabilir</li>
+                            <li><strong>İhtarname sürelerinin kaçırılması:</strong> Tahliye davası açmadan önce çekilmesi gereken ihtarnamelerin süresinde gönderilmemesi, dava hakkının kaybedilmesine yol açar</li>
+                            <li><strong>Depozitonun belgesiz alınması:</strong> Depozito bedelinin banka hesabı veya makbuz olmaksızın elden alınması, iade aşamasında ispat sorunlarına neden olur</li>
+                            <li><strong>Kira bedelinin elden ödenmesi:</strong> Banka havalesi yerine elden yapılan kira ödemeleri, ödeme yapıldığının ispatını zorlaştırır ve iki haklı ihtar sürecinde sorun yaratır</li>
+                            <li><strong>Dava açma sürelerinin bilinmemesi:</strong> Her tahliye sebebinin kendine özgü dava açma süreleri vardır ve bu süreler hak düşürücüdür; süresinde açılmayan dava reddedilir</li>
+                        </ul>
+
+
                         <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı – Sık Sorulan Sorular</h2>
 
                         <div className="not-prose my-6 space-y-3 md:space-y-4">
@@ -441,7 +459,6 @@ export default function IzmirKiraAvukatiPage() {
                                     { title: "Kiracı Tahliye Davası", desc: "Tüm tahliye sebepleri ve dava süreçleri", url: "/izmir-kira-avukati/kiraci-tahliye-davasi/" },
                                     { title: "Kira Tespit Davası", desc: "Kira bedelinin rayice göre tespiti", url: "/izmir-kira-avukati/kira-tespit-davasi/" },
                                     { title: "Kira Uyarlama Davası", desc: "Kira bedelinin uyarlanması davası", url: "/izmir-kira-avukati/kira-uyarlama-davasi/" },
-                                    { title: "Kira Hukuku Rehberi", desc: "Temel kavramlar ve yasal süreçler", url: "/izmir-kira-avukati/izmir-kira-hukuku/" },
                                     { title: "Kiracı Hakları", desc: "Kiracıların yasal hakları ve korunma yolları", url: "/izmir-kira-avukati/kiraci-haklari-izmir/" },
                                     { title: "Ev Sahibi Hakları", desc: "Ev sahiplerinin hakları ve yasal başvuru yolları", url: "/izmir-kira-avukati/ev-sahibi-haklari-izmir/" },
                                     { title: "Kira Sözleşmesi Rehberi", desc: "Sözleşme hazırlama ve hukuki detaylar", url: "/izmir-kira-avukati/kira-sozlesmesi-rehberi/" },

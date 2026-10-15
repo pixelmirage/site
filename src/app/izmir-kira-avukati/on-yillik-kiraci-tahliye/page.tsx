@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "10 Yıllık Kiracı Tahliyesi İzmir - TBK m. 347",
+    title: "İzmir 10 Yıllık Kiracı Tahliyesi Avukatı (TBK m. 347)",
     description: "İzmir'de 10 yıllık kiracı tahliyesi süreci. TBK m. 347 kapsamında uzama süresini dolduran kiracının tahliyesi, fesih bildirimi süreleri ve dava şartları.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "10 Yıllık Kiracı Tahliyesi İzmir - TBK m. 347 | Av. Mert Kağan Çetin",
+        title: "İzmir 10 Yıllık Kiracı Tahliyesi Avukatı (TBK m. 347) | Av. Mert Kağan Çetin",
         description: "İzmir'de TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliyesi süreçlerinde avukat desteği.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/on-yillik-kiraci-tahliye/",
         type: "article",
@@ -82,7 +82,7 @@ export default function OnYillikKiraciTahliyePage() {
                     </nav>
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            10 Yıllık Kiracı Tahliyesi İzmir
+                            İzmir 10 Yıllık Kiracı Tahliyesi Avukatı (TBK m. 347)
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             TBK m. 347 kapsamında 10 yıllık uzama süresini dolduran kiracının tahliyesi süreçlerinde
@@ -267,6 +267,9 @@ export default function OnYillikKiraciTahliyePage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/blog/10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; 10 Yıllık Uzama Süresi Dolan Kiracının Tahliyesi: Şartlar ve Süreç
+                                </Link>
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     ← Kira hukuku ana sayfası
                                 </Link>

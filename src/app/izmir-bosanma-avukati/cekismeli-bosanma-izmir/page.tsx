@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Çekişmeli Boşanma İzmir | Boşanma Avukatı",
+    title: "İzmir Çekişmeli Boşanma Avukatı",
     description: "İzmir'de çekişmeli boşanma davası avukatı Av. Mert Kağan Çetin. Kusur tespiti, delil toplama, tazminat ve nafaka taleplerinde hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Çekişmeli Boşanma İzmir | Av. Mert Kağan Çetin",
+        title: "İzmir Çekişmeli Boşanma Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında avukat desteği.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/",
         type: "article",
@@ -66,7 +66,7 @@ export default function CekismeliBosanmaIzmirPage() {
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
                     { name: "İzmir Boşanma Avukatı", url: "https://mertkagancetin.com/izmir-bosanma-avukati/" },
-                    { name: "Çekişmeli Boşanma İzmir", url: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/" }
+                    { name: "İzmir Çekişmeli Boşanma Avukatı", url: "https://mertkagancetin.com/izmir-bosanma-avukati/cekismeli-bosanma-izmir/" }
                 ]}
             />
 
@@ -82,7 +82,7 @@ export default function CekismeliBosanmaIzmirPage() {
                     </nav>
                     <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 leading-tight">
-                            Çekişmeli Boşanma İzmir
+                            İzmir Çekişmeli Boşanma Avukatı
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             İzmir&apos;de çekişmeli boşanma davalarında kusur tespiti, delil toplama ve dava stratejisi konularında avukat desteği.
@@ -242,6 +242,12 @@ export default function CekismeliBosanmaIzmirPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Boşanma Davası Nasıl Açılır?
+                                </Link>
+                                <Link href="/izmir-bosanma-avukati/aldatma-bosanma-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Aldatma Nedeniyle Boşanma İzmir
+                                </Link>
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &larr; İzmir Boşanma Avukatı
                                 </Link>

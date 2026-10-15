@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Velayet Davaları İzmir | Velayet Avukatı",
+    title: "İzmir Velayet Davası Avukatı",
     description: "İzmir'de velayet davaları avukatı Av. Mert Kağan Çetin. Çocuk velayeti, velayet değişikliği, kişisel ilişki düzenlemesi ve mahkeme kriterlerinde hukuki destek.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Velayet Davaları İzmir | Av. Mert Kağan Çetin",
+        title: "İzmir Velayet Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de çocuk velayeti, mahkeme kriterleri ve velayet davası süreçlerinde avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-bosanma-avukati/velayet-davasi/",
         type: "article",

@@ -216,6 +216,15 @@ export default function EvSahibiHaklariIzmirPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-kira-avukati/kira-sozlesmesi-rehberi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Kira Sözleşmesi Rehberi
+                                </Link>
+                                <Link href="/izmir-kira-avukati/kira-borcu-icra/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Kira Borcu İcra Takibi İzmir
+                                </Link>
+                                <Link href="/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; İzmir İhtiyaç Nedeniyle Tahliye Davası Avukatı
+                                </Link>
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     ← Kira hukuku hizmetlerine genel bakış
                                 </Link>

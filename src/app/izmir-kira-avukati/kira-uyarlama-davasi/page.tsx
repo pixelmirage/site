@@ -282,6 +282,12 @@ export default function KiraUyarlamaDavasiPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-kira-avukati/on-yillik-kiraci-tahliye/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; İzmir 10 Yıllık Kiracı Tahliyesi Avukatı (TBK m. 347)
+                                </Link>
+                                <Link href="/izmir-kira-avukati/kiraci-haklari-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Kiracı Hakları İzmir
+                                </Link>
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     ← İzmir&apos;deki kira uyuşmazlıkları sayfası
                                 </Link>

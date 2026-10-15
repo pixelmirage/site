@@ -216,7 +216,6 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                         </div>
 
                         <p>
-                            <Link href="/izmir-bosanma-avukati/bosanma-sureci-izmir/">Boşanma süreci</Link> hakkında daha detaylı bilgi almak için ilgili sayfamızı ziyaret edebilirsiniz.
                         </p>
 
                         <h2 id="dava-masraflari" className="scroll-mt-24">Boşanma Davası Masrafları</h2>
@@ -236,12 +235,35 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                         </p>
 
                         <p>
-                            Bu masraflar avukatlık ücretinden ayrıdır. Avukatlık ücreti yazılı ücret sözleşmesiyle, Avukatlık Asgari Ücret Tarifesi&apos;nin altında olmamak üzere belirlenir. <Link href="/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/">Boşanma avukatı ücretinin nasıl belirlendiği</Link> hakkında detaylı bilgi alabilirsiniz.
+                            Bu masraflar avukatlık ücretinden ayrıdır. Avukatlık ücreti yazılı ücret sözleşmesiyle, Avukatlık Asgari Ücret Tarifesi&apos;nin altında olmamak üzere belirlenir. <Link href="/izmir-bosanma-avukati/">Boşanma avukatı ücretinin nasıl belirlendiği</Link> hakkında detaylı bilgi alabilirsiniz.
                         </p>
 
                         <p>
                             Ekonomik durumu yetersiz olan kişiler adli yardım talebinde bulunarak mahkeme harçlarından ve avukatlık ücretinden muaf tutulabilir. Adli yardım talebi dava dilekçesiyle birlikte mahkemeye sunulur.
                         </p>
+
+                        <h2 id="bosanma-sonrasi-islemler" className="scroll-mt-24">Boşanma Sonrası İşlemler</h2>
+
+                        <p>
+                            Boşanma kararının kesinleşmesiyle birlikte yapılması gereken önemli işlemler vardır.
+                        </p>
+
+                        <p>
+                            <strong>Nüfus kaydının güncellenmesi:</strong> Kesinleşen boşanma kararı mahkeme tarafından otomatik olarak nüfus müdürlüğüne bildirilir. Ancak bu süreçte gecikme yaşanabilir. Boşanma kararının kesinleşme şerhli bir suretini alarak nüfus müdürlüğüne bizzat başvurmanız süreci kolaylaştırabilir. Kadın eşin soyadı boşanma ile birlikte kızlık soyadına döner.
+                        </p>
+
+                        <p>
+                            <strong>Mal tasfiyesi:</strong> Boşanma kararında mal paylaşımına ilişkin hüküm kurulmamışsa veya anlaşmalı boşanma protokolünde mal paylaşımı düzenlenmemişse ayrı bir mal rejimi tasfiyesi davası açılması gerekir. Edinilmiş mallara katılma rejimi kapsamında boşanma tarihine kadar edinilen malların tasfiyesi yapılır.
+                        </p>
+
+                        <p>
+                            <strong>Nafaka icrası:</strong> Mahkeme kararında hükmedilen nafakanın ödenmemesi durumunda icra takibi başlatılabilir. Nafaka alacağı imtiyazlı bir alacak olup, nafaka yükümlüsünün maaşından doğrudan kesinti yapılabilir. Ayrıca nafaka borcunu ödemeyen kişi hakkında İcra İflas Kanunu&apos;nun 344. maddesi uyarınca tazyik hapsi kararı verilebilir. <Link href="/izmir-bosanma-avukati/nafaka-davasi/">Nafaka davası</Link> hakkında detaylı bilgi alabilirsiniz.
+                        </p>
+
+                        <p>
+                            <strong>Velayet uygulaması:</strong> Velayet kendisine verilmeyen ebeveynin çocukla kişisel ilişki kurma hakkı mahkeme kararında düzenlenir. Kişisel ilişki düzenlemesine uyulmaması halinde çocuk teslimi yoluyla icra takibi yapılabilir. Velayet koşullarında değişiklik olması halinde velayet değişikliği davası açılabilir. <Link href="/izmir-bosanma-avukati/velayet-davasi/">Velayet davası</Link> konusunda detaylı bilgi edinebilirsiniz.
+                        </p>
+
 
                         {/* E-E-A-T Author Box */}
                         <div className="not-prose my-12 bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
@@ -267,6 +289,12 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-bosanma-avukati/mal-paylasimi-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; İzmir Mal Paylaşımı Davası Avukatı
+                                </Link>
+                                <Link href="/izmir-bosanma-avukati/aldatma-bosanma-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Aldatma Nedeniyle Boşanma İzmir
+                                </Link>
                                 <Link href="/izmir-bosanma-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &larr; İzmir Boşanma Avukatı
                                 </Link>
@@ -276,14 +304,8 @@ export default function BosanmaDavasiNasilAcilirIzmirPage() {
                                 <Link href="/izmir-bosanma-avukati/cekismeli-bosanma-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; İzmir Çekişmeli Boşanma Avukatı
                                 </Link>
-                                <Link href="/izmir-bosanma-avukati/bosanma-sureci-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &rarr; İzmir Boşanma Süreci Rehberi
-                                </Link>
                                 <Link href="/izmir-bosanma-avukati/nafaka-davasi/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     &rarr; İzmir Nafaka Davası Avukatı
-                                </Link>
-                                <Link href="/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
-                                    &rarr; İzmir Boşanma Avukatı Ücretleri
                                 </Link>
                             </div>
                         </div>

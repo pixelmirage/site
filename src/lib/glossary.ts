@@ -789,7 +789,7 @@ Velayeti almayan ebeveynin kişisel ilişki kurma hakkı vardır. Bu hak, çocuk
         legalBasis: "TMK m. 335-351",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "nafaka"],
-        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
+        relatedBlogSlugs: ["velayet-davasi-sureci-ve-mahkeme-kriterleri", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "nafaka-hesaplama-yoksulluk-istirak-nafakasi", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -825,7 +825,7 @@ Nafaka ödenmezse icra takibi yapılabilir ve 3 aya kadar tazyik hapsi kararı v
         legalBasis: "TMK m. 169, 175, 182",
         category: "bosanma",
         relatedTermSlugs: ["anlasmali-bosanma", "cekismeli-bosanma", "velayet", "mal-paylasimi"],
-        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri", "velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
+        relatedBlogSlugs: ["nafaka-hesaplama-yoksulluk-istirak-nafakasi", "cekismeli-bosanma-davasi-sureci-ve-kusur-tespiti", "anlasmali-bosanma-nasil-acilir", "velayet-davasi-sureci-ve-mahkeme-kriterleri", "aile-ici-siddet-koruma-karari-6284-sayili-kanun"],
         relatedServiceAnchor: "#aile-hukuku",
         faqs: [
             {
@@ -897,7 +897,7 @@ Maddi tazminat talebi için hukuka aykırı fiil, kusur (veya kusursuz sorumlulu
         legalBasis: "TBK m. 49-52",
         category: "tazminat",
         relatedTermSlugs: ["manevi-tazminat", "haksiz-fiil", "destekten-yoksun-kalma"],
-        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "malpraktis-davasi-doktor-hatasi-tazminati", "sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati", "is-goremezlik-raporu-ve-maluliyet-tazminati-davasi", "bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat"],
+        relatedBlogSlugs: ["maddi-ve-manevi-tazminat-davasi-farklari", "trafik-kazasi-tazminati-alma-sureci", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "malpraktis-davasi-doktor-hatasi-tazminati", "is-goremezlik-raporu-ve-maluliyet-tazminati-davasi", "bosanmada-tazminat-davasi-maddi-ve-manevi-tazminat"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {
@@ -1001,7 +1001,7 @@ Trafik kazası, iş kazası ve tıbbi malpraktis sonucu ölüm hallerinde en sı
         legalBasis: "TBK m. 53/3",
         category: "tazminat",
         relatedTermSlugs: ["maddi-tazminat", "manevi-tazminat", "haksiz-fiil"],
-        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "maddi-ve-manevi-tazminat-davasi-farklari", "malpraktis-davasi-doktor-hatasi-tazminati", "sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati"],
+        relatedBlogSlugs: ["trafik-kazasi-tazminati-alma-sureci", "is-kazasi-tazminati-sureci-ve-haklariniz", "destekten-yoksun-kalma-tazminati-hesaplama-ve-dava-sureci", "maddi-ve-manevi-tazminat-davasi-farklari", "malpraktis-davasi-doktor-hatasi-tazminati"],
         relatedServiceAnchor: "#tazminat",
         faqs: [
             {

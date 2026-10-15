@@ -12,11 +12,11 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { articleProseClasses } from "@/lib/prose-classes";
 
 export const metadata: Metadata = {
-    title: "Kira Artışı ve Tespit Davası İzmir | Kira Avukatı",
+    title: "İzmir Kira Tespit Davası Avukatı",
     description: "İzmir'de kira artışı ve kira tespit davası avukatı Av. Mert Kağan Çetin. TÜFE sınırı, emsal kira araştırması, 5 yıllık kira ilişkilerinde bedel tespiti davalarında avukatlık desteği.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Kira Artışı ve Tespit Davası İzmir | Av. Mert Kağan Çetin",
+        title: "İzmir Kira Tespit Davası Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de kira artışı uyuşmazlıkları ve kira tespit davalarında avukatlık hizmeti.",
         url: "https://mertkagancetin.com/izmir-kira-avukati/kira-tespit-davasi/",
         type: "article",
@@ -243,6 +243,12 @@ export default function KiraTespitDavasiPage() {
                         <div className="not-prose bg-slate-50 border border-slate-200 rounded-xl p-6 my-8">
                             <p className="font-bold text-primary text-xl mb-4">İlgili İçerikler</p>
                             <div className="space-y-3">
+                                <Link href="/izmir-kira-avukati/on-yillik-kiraci-tahliye/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; İzmir 10 Yıllık Kiracı Tahliyesi Avukatı (TBK m. 347)
+                                </Link>
+                                <Link href="/izmir-kira-avukati/kiraci-haklari-izmir/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
+                                    &rarr; Kiracı Hakları İzmir
+                                </Link>
                                 <Link href="/izmir-kira-avukati/" className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium">
                                     ← Kira hukuku hizmetlerine genel bakış
                                 </Link>
