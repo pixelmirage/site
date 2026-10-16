@@ -35,7 +35,7 @@ export function SchemaMarkup() {
                 "name": "Av. Mert Kağan Çetin",
                 "jobTitle": "Avukat",
                 "url": "https://mertkagancetin.com/hakkimda/",
-                "image": "https://mertkagancetin.com/attorney-photo.jpg",
+                "image": "https://mertkagancetin.com/logo.png",
                 "sameAs": [
                     "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
                     "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
@@ -65,7 +65,7 @@ export function SchemaMarkup() {
                 "founder": { "@id": "https://mertkagancetin.com/#person" },
                 "parentOrganization": { "@id": "https://mertkagancetin.com/#organization" },
                 "name": "Av. Mert Kağan Çetin",
-                "image": "https://mertkagancetin.com/attorney-photo.jpg",
+                "image": "https://mertkagancetin.com/logo.png",
                 "url": "https://mertkagancetin.com/",
                 "employee": { "@id": "https://mertkagancetin.com/#person" },
                 "identifier": { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
