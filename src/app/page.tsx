@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { KiraFocus } from "@/components/sections/KiraFocus";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { AboutBrief } from "@/components/sections/AboutBrief";
 import { Button } from "@/components/ui/button";
@@ -7,16 +8,16 @@ import Link from "next/link";
 import { PhoneCall } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu" },
-  description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
+  title: { absolute: "İzmir Kira Avukatı | Kira Hukuku – Av. Mert Kağan Çetin" },
+  description: "İzmir kira hukuku: ev sahibi ve kiracılara tahliye, kira tespit, kira uyarlama, kira borcu icra ve kira sözleşmesi konularında avukatlık. Av. Mert Kağan Çetin.",
   alternates: {
     canonical: "https://mertkagancetin.com/",
   },
   openGraph: {
         images: ["/og-image.jpg"],
     url: "https://mertkagancetin.com/",
-    title: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
-    description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
+    title: "İzmir Kira Avukatı | Kira Hukuku – Av. Mert Kağan Çetin",
+    description: "İzmir kira hukuku: ev sahibi ve kiracılara tahliye, kira tespit, kira uyarlama, kira borcu icra ve kira sözleşmesi konularında avukatlık. Av. Mert Kağan Çetin.",
   },
 };
 
@@ -26,24 +27,24 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Services Section */}
-      <ServicesGrid />
+      {/* Kira hukuku: subpages, tools, articles */}
+      <KiraFocus />
 
-      {/* Çalışma Alanları – her alan kendi sayfasına yönlendirir */}
-      <section className="py-16 bg-white">
+      {/* Büro tanıtımı – kira hukuku öncelikli */}
+      <section className="py-16 bg-slate-50 border-y border-border/50">
         <div className="container mx-auto px-4 max-w-3xl text-slate-700 leading-relaxed space-y-4">
-          <h2 className="text-3xl font-serif font-bold text-primary">İzmir&apos;de Hukuk Büromuz</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary">İzmir Kira Hukuku Bürosu</h2>
           <p>
-            Av. Mert Kağan Çetin Hukuk Bürosu, Bayraklı&apos;daki ofisinden İzmir genelinde iş hukuku, aile hukuku, tazminat hukuku ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık hizmeti vermektedir.
+            Av. Mert Kağan Çetin Hukuk Bürosu, Bayraklı&apos;daki ofisinden İzmir genelinde ağırlıklı olarak kira hukuku alanında avukatlık ve hukuki danışmanlık hizmeti vermektedir. Ev sahipleri için tahliye, kira tespit ve kira alacağının icra yoluyla takibi; kiracılar için kira artışına itiraz, kira uyarlama ve depozito iadesi başlıca çalışma konularıdır.
           </p>
           <p>
-            İşçi ve işveren uyuşmazlıkları için <Link href="/izmir-is-avukati/" className="text-secondary underline underline-offset-2">İzmir iş avukatı</Link>, boşanma, velayet ve nafaka için <Link href="/izmir-bosanma-avukati/" className="text-secondary underline underline-offset-2">İzmir boşanma avukatı</Link>, trafik ve iş kazası kaynaklı talepler için <Link href="/izmir-tazminat-avukati/" className="text-secondary underline underline-offset-2">İzmir tazminat avukatı</Link> sayfalarımızı inceleyebilirsiniz.
-          </p>
-          <p>
-            Ev sahibi ve kiracı uyuşmazlıklarında tahliye, kira tespiti ve depozito konularındaki bilgiler <Link href="/izmir-kira-avukati/" className="text-secondary underline underline-offset-2">İzmir kira avukatı</Link> sayfamızda yer almaktadır.
+            Kira uyuşmazlıklarında dava açılmadan önce zorunlu arabuluculuk aşaması bulunmaktadır. Süreçlere ilişkin ayrıntılı bilgiler <Link href="/izmir-kira-avukati/" className="text-secondary underline underline-offset-2">İzmir kira avukatı</Link> sayfamızda yer almaktadır. Ön görüşme için telefonla ulaşabilirsiniz.
           </p>
         </div>
       </section>
+
+      {/* Diğer Çalışma Alanları */}
+      <ServicesGrid />
 
       {/* About Section */}
       <AboutBrief />
@@ -56,10 +57,10 @@ export default function Home() {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white mb-6">
-            Hukuki Sorunlarınız İçin Bize Ulaşın
+            Kira Uyuşmazlığınız İçin Telefonla Görüşün
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            İzmir'de iş hukuku, boşanma, tazminat veya kira hukukuna ilişkin sorularınız için bizimle iletişime geçebilirsiniz.
+            Tahliye, kira tespit, kira uyarlama veya kira borcuna ilişkin sorularınız için telefonla ön görüşme yapabilirsiniz. İş, aile ve tazminat hukuku soruları için de ulaşabilirsiniz.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold px-10 h-14 text-lg" asChild>
