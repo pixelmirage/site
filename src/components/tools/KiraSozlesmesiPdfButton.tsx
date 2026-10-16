@@ -167,7 +167,7 @@ export function KiraSozlesmesiPdfButton() {
                 "Taraflar, bu sözleşmede belirtilen adreslerini tebligat adresi olarak kabul ederler. Adres değişikliği yazılı olarak karşı tarafa bildirilmediği sürece, sözleşmedeki adrese yapılan tebligatlar geçerli sayılır.");
 
             writeArticle(11, "UYUŞMAZLIKLARIN ÇÖZÜMÜ",
-                "Bu sözleşmeden doğan uyuşmazlıklarda 7036 sayılı Kanun uyarınca dava açılmadan önce arabulucuya başvurulması zorunludur. Arabuluculuk sürecinde anlaşma sağlanamaması halinde kiralananın bulunduğu yer sulh hukuk mahkemesi yetkilidir.");
+                "Bu sözleşmeden doğan uyuşmazlıklarda, 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu m. 18/B uyarınca dava açılmadan önce arabulucuya başvurulması zorunludur. Arabuluculukta anlaşma sağlanamaması halinde yetkili sulh hukuk mahkemesinde dava açılabilir; icra yoluyla tahliye talepleri bu şartın dışındadır.");
 
             writeArticle(12, "ÖZEL ŞARTLAR",
                 "........................................................................................................................\n........................................................................................................................\n........................................................................................................................");

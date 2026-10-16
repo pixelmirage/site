@@ -16,20 +16,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Static Routes — individual last modified dates per page
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
-        '': { lastModified: '2026-10-15', priority: 1 },
+        '': { lastModified: '2026-10-16', priority: 1 },
         '/izmir-kira-avukati': { lastModified: '2026-10-16', priority: 1 },
         '/izmir-is-avukati': { lastModified: '2026-10-15', priority: 1 },
         '/izmir-bosanma-avukati': { lastModified: '2026-10-16', priority: 1 },
         '/izmir-tazminat-avukati': { lastModified: '2026-10-15', priority: 1 },
         '/hakkimda': { lastModified: '2026-10-15', priority: 0.8 },
         '/hizmetler': { lastModified: '2026-03-04', priority: 0.8 },
-        '/blog': { lastModified: '2026-03-12', priority: 0.8 },
+        '/blog': { lastModified: '2026-10-16', priority: 0.8 },
         '/iletisim': { lastModified: '2026-10-15', priority: 0.8 },
-        '/kira-artis-orani-hesaplama': { lastModified: '2026-03-15', priority: 0.8 },
-        '/tahliye-taahhutnamesi': { lastModified: '2026-10-15', priority: 0.8 },
-        '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-15', priority: 0.8 },
+        '/kira-artis-orani-hesaplama': { lastModified: '2026-10-16', priority: 0.8 },
+        '/tahliye-taahhutnamesi': { lastModified: '2026-10-16', priority: 0.8 },
+        '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-16', priority: 0.8 },
         '/kidem-tazminati-hesaplama': { lastModified: '2026-03-16', priority: 0.8 },
-        '/sozluk': { lastModified: '2026-10-15', priority: 0.8 },
+        '/sozluk': { lastModified: '2026-10-16', priority: 0.8 },
         // Kira alt sayfaları
         '/izmir-kira-avukati/kiraci-tahliye-davasi': { lastModified: '2026-10-16', priority: 0.9 },
         '/izmir-kira-avukati/kira-tespit-davasi': { lastModified: '2026-10-16', priority: 0.9 },

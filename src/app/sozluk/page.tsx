@@ -98,7 +98,7 @@ export default function GlossaryPage() {
                                     {terms.map((term) => (
                                         <Link
                                             key={term.slug}
-                                            href={`/sozluk/${term.slug}`}
+                                            href={`/sozluk/${term.slug}/`}
                                             className="group border border-slate-200 rounded-xl p-6 hover:border-secondary/50 hover:shadow-md transition-all"
                                         >
                                             <div className="flex items-start justify-between gap-3 mb-3">

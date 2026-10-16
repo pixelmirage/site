@@ -35,7 +35,7 @@ export function RelatedPosts({ currentSlug, currentTags = [], limit = 3 }: Relat
                 {relatedPosts.map((post) => (
                     <Link
                         key={post.slug}
-                        href={`/blog/${post.slug}`}
+                        href={`/blog/${post.slug}/`}
                         className="group block bg-slate-50 rounded-2xl p-6 hover:bg-slate-100 transition-colors"
                     >
                         <div className="text-xs text-muted-foreground mb-2 font-medium">

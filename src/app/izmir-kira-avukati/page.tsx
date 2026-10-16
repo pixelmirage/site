@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 const YouTubeShorts = dynamic(() => import("@/components/ui/YouTubeShorts").then(m => ({ default: m.YouTubeShorts })));
 import { articleProseClasses } from "@/lib/prose-classes";
 
-const pageTitle = "İzmir Kira Avukatı – Tahliye ve Kira Tespit | Av. Mert Kağan Çetin";
+const pageTitle = "İzmir Kira Avukatı | Kira ve Tahliye Davaları – Av. Mert Kağan Çetin";
 const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin; tahliye, kira tespiti ve kira artışı uyuşmazlıklarında ev sahibi ve kiracılara hukuki danışmanlık ve dava takibi hizmeti sunmaktadır.";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         images: [{ url: "/og-image.jpg", alt: "Av. Mert Kağan Çetin - İzmir Kira Avukatı" }],
     },
     other: {
-        "article:modified_time": "2026-10-15",
+        "article:modified_time": "2026-10-16",
     },
     twitter: {
         card: "summary_large_image",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 };
 
 const tocItems = [
-    { id: "izmir-kira-avukati", title: "İzmir Kira Avukatı" },
-    { id: "iletisim-bilgileri", title: "İletişim" },
-    { id: "kira-avukatinin-onemi", title: "Kira Avukatının Önemi" },
+    { id: "izmir-kira-avukati", title: "Kira ve Tahliye Davaları" },
+    { id: "iletisim-bilgileri", title: "Bayraklı Ofis ve İletişim" },
+    { id: "kira-avukatinin-onemi", title: "Avukatın Rolü" },
     { id: "avukatlik-ucreti", title: "Avukatlık Ücreti" },
     { id: "kira-davalari", title: "Kira Davaları" },
     { id: "hangi-avukat-bakar", title: "Hangi Avukat Bakar?" },
@@ -173,7 +173,7 @@ export default function IzmirKiraAvukatiPage() {
                             <a href="tel:+905445854645" className="hover:text-white">0544 585 46 45</a>
                         </p>
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
-                            <strong className="text-white">İzmir kira avukatı</strong> Av. Mert Kağan Çetin, ev sahibi ve kiracılar için tahliye, kira tespit, kira uyarlama, depozito ve kira alacağı uyuşmazlıklarında İzmir genelinde avukatlık hizmeti verir. Ofis Bayraklı/İzmir&apos;dedir; ön görüşmeler telefonla yapılır.
+                            <strong className="text-white">İzmir kira avukatı</strong> Av. Mert Kağan Çetin, ev sahibi ve kiracılar için kira davası ve tahliye davası süreçlerinde; kira tespit, kira uyarlama, depozito ve kira alacağı uyuşmazlıklarında İzmir genelinde avukatlık hizmeti verir. Ofis Bayraklı/İzmir&apos;dedir; ön görüşmeler telefonla yapılır.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
@@ -214,14 +214,14 @@ export default function IzmirKiraAvukatiPage() {
                         </details>
 
                         {/* 1 */}
-                        <h2 id="izmir-kira-avukati" className="scroll-mt-24">İzmir Kira Avukatı</h2>
+                        <h2 id="izmir-kira-avukati" className="scroll-mt-24">Kira ve Tahliye Davalarında Hukuki Destek</h2>
 
                         <p>
                             <strong>İzmir kira avukatı</strong> olarak kira bedelinin tespiti ve kiracının tahliyesi davalarında ev sahibi ve kiracılara hizmet vermekteyiz. Kiracının tahliyesi, Türk Borçlar Kanunu&apos;nda oldukça sıkı şekil şartlarına ve sürelere bağlanmış olması sebebiyle üzerinde titizlikle çalışılması gereken bir konudur. Kira hukukunu ilgilendiren sorunlarınızda İzmir genelinde avukatlık hizmeti sunuyoruz.
                         </p>
 
                         {/* 2 */}
-                        <h2 id="iletisim-bilgileri" className="scroll-mt-24">İzmir Kira Avukatı İletişim</h2>
+                        <h2 id="iletisim-bilgileri" className="scroll-mt-24">Bayraklı Ofis, İzmir Adliyesi ve İletişim</h2>
 
                         <p>
                             Kira avukatı; kiracılar ve ev sahipleri için kira sözleşmesinin hazırlanması, tarafların haklarının korunması, kira artışı ve tahliye gibi konularda hukuki destek verir. Ön görüşmeler telefonla yapılır; kira sözleşmesi, ihtarname ve ödeme kayıtları bu görüşmede değerlendirilir.
@@ -238,8 +238,24 @@ export default function IzmirKiraAvukatiPage() {
                             Ofisimiz Bayraklı&apos;dadır; Bayraklı, Bornova, Karşıyaka, Buca, Konak, Çiğli, Gaziemir, Balçova, Narlıdere, Güzelbahçe ve Karabağlar başta olmak üzere İzmir genelindeki kira uyuşmazlıklarında hizmet verilmektedir.
                         </p>
 
+                        <p>
+                            Kira davaları kural olarak davalının yerleşim yeri veya sözleşmenin ifa edildiği yer mahkemesinde, görevli Sulh Hukuk Mahkemesinde açılır (HMK m. 4, 6, 10). İzmir merkez ilçelerine ilişkin kira davalarının önemli bir kısmı Bayraklı&apos;daki İzmir Adliyesi bünyesindeki sulh hukuk mahkemelerinde görülür; Karşıyaka gibi ayrı adliyesi bulunan ilçelerde o yer mahkemeleri yetkilidir. Kira alacağı ve tahliye taahhüdüne dayalı icra takipleri ise İzmir icra dairelerinde yürütülür. Ofisimiz Bayraklı&apos;da, İzmir Adliyesi&apos;ne yakın konumdadır.
+                        </p>
+
+                        <div className="not-prose my-6 overflow-hidden rounded-xl border border-slate-200">
+                            <iframe
+                                title="Av. Mert Kağan Çetin ofis konumu – Dedemhan Plaza, Bayraklı/İzmir"
+                                src="https://www.google.com/maps?q=Dedemhan+Plaza,+Mansuro%C4%9Flu+Mah.+286%2F3+Sk.,+Bayrakl%C4%B1,+%C4%B0zmir&output=embed"
+                                className="block h-72 w-full border-0"
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                allowFullScreen
+                            />
+                            <a href="https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7" target="_blank" rel="noopener noreferrer" className="block bg-slate-50 px-4 py-2 text-sm font-semibold text-secondary hover:text-primary">Google Haritalar&apos;da aç →</a>
+                        </div>
+
                         {/* 3 */}
-                        <h2 id="kira-avukatinin-onemi" className="scroll-mt-24">İzmir Kira Avukatının Önemi</h2>
+                        <h2 id="kira-avukatinin-onemi" className="scroll-mt-24">Kira Uyuşmazlıklarında Avukatın Rolü</h2>
 
                         <ul>
                             <li><strong>Sıkı şekil şartları:</strong> İhtarname, bildirim ve tahliye taahhüdü kanunda belirli şekil şartlarına bağlıdır; şekle aykırı bir işlem hak kaybına yol açabilir.</li>
@@ -341,7 +357,7 @@ export default function IzmirKiraAvukatiPage() {
                         </ul>
 
 
-                        <h2 id="sss" className="scroll-mt-24">İzmir Kira Avukatı – Sık Sorulan Sorular</h2>
+                        <h2 id="sss" className="scroll-mt-24">Kira ve Tahliye Davaları Hakkında Sık Sorulan Sorular</h2>
 
                         <div className="not-prose my-6 space-y-3 md:space-y-4">
                             {faqs.map((f) => (
@@ -357,7 +373,7 @@ export default function IzmirKiraAvukatiPage() {
                             title="İzmir'de Kira Avukatıyla Çalışmanın Önemi - Kısa Video"
                         />
 
-                        <p className="text-sm text-slate-500">Son güncelleme: 15 Ekim 2026</p>
+                        <p className="text-sm text-slate-600">Son güncelleme: 16 Ekim 2026</p>
 
                         <hr />
 
@@ -370,10 +386,10 @@ export default function IzmirKiraAvukatiPage() {
                                 <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira Avukatı" title="Av. Mert Kağan Çetin - İzmir Kira Avukatı" width={96} height={96} className="w-24 h-24 rounded-xl object-cover flex-shrink-0" />
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
-                                    <p className="text-sm text-slate-600 leading-relaxed mb-3">
+                                    <p className="text-base text-slate-700 leading-relaxed mb-3">
                                         İzmir Barosu&apos;na kayıtlı avukat. Kira, iş, boşanma ve tazminat hukuku alanlarında hizmet vermektedir.
                                     </p>
-                                    <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-500">
+                                    <div className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-600">
                                         <span>İzmir Barosu Sicil: 15556</span>
                                         <span>TBB Sicil: 162439</span>
                                     </div>
@@ -406,7 +422,7 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* Hukuki Uyarı */}
-                        <div className="not-prose my-8 bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900 leading-relaxed">
+                        <div className="not-prose my-8 bg-amber-50 border border-amber-200 rounded-xl p-5 text-base text-amber-900 leading-relaxed">
                             <p className="font-bold mb-1">Hukuki Uyarı</p>
                             <p>
                                 Bu sayfadaki bilgiler genel bilgilendirme amacıyla hazırlanmış olup hukuki danışmanlık veya avukatlık hizmeti niteliği taşımamaktadır. Her hukuki uyuşmazlık kendine özgü koşullar içerdiğinden, somut durumunuza ilişkin değerlendirme için mutlaka bir avukatla görüşmeniz önerilir.
@@ -469,7 +485,7 @@ export default function IzmirKiraAvukatiPage() {
                                 ].map((item, i) => (
                                     <Link key={i} href={item.url} className="group block p-5 bg-slate-50 border border-slate-200 rounded-xl hover:border-secondary transition-all">
                                         <p className="font-bold text-primary group-hover:text-secondary transition-colors mb-1">{item.title}</p>
-                                        <p className="text-sm text-slate-600">{item.desc}</p>
+                                        <p className="text-base text-slate-700">{item.desc}</p>
                                     </Link>
                                 ))}
                             </div>

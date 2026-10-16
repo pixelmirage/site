@@ -48,7 +48,7 @@ export function ServicesGrid() {
                         Diğer Çalışma Alanları
                     </div>
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">Kira Hukuku Dışındaki Alanlar</h2>
-                    <p className="text-muted-foreground font-light text-lg">
+                    <p className="text-muted-foreground text-lg">
                         Kira hukukunun yanı sıra iş, aile ve tazminat hukuku alanlarında da avukatlık hizmeti verilmektedir.
                     </p>
                 </div>
@@ -68,7 +68,7 @@ export function ServicesGrid() {
                                     <h3 className="text-xl font-serif font-bold text-primary">{area.title}</h3>
                                     <ul className="space-y-2.5">
                                         {area.services.map((service) => (
-                                            <li key={service} className="flex items-center gap-2 text-muted-foreground text-sm font-light">
+                                            <li key={service} className="flex items-center gap-2 text-muted-foreground text-sm">
                                                 <span className="w-1.5 h-1.5 rounded-full bg-secondary/60 flex-shrink-0" />
                                                 {service}
                                             </li>

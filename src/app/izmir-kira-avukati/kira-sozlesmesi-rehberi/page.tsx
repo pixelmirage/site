@@ -87,6 +87,9 @@ export default function KiraSozlesmesiRehberiPage() {
                         <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
                             Kira sözleşmesi hazırlamadan önce bilmeniz gereken tüm hukuki detaylar. Sözleşme maddeleri, fesih koşulları ve dikkat edilmesi gerekenler.
                         </p>
+                        <p className="-mt-4 mb-8 text-base md:text-lg text-slate-300">
+                            Sözleşme kaynaklı uyuşmazlıklarda <Link href="/izmir-kira-avukati/" className="font-semibold text-secondary underline underline-offset-4 hover:text-white">İzmir kira avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
+                        </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2" asChild>
                                 <Link href="/iletisim/"><Phone className="w-5 h-5" />İletişime Geçin</Link>

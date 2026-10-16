@@ -11,7 +11,7 @@ export function Footer() {
                         <Link href="/" className="inline-block hover:opacity-90 transition-opacity">
                             <Logo />
                         </Link>
-                        <p className="text-sm text-muted-foreground leading-relaxed font-light">
+                        <p className="text-sm text-muted-foreground leading-relaxed">
                             İzmir Bayraklı merkezli hukuk bürosu. Ağırlıklı olarak kira hukuku; ayrıca iş, aile ve tazminat hukuku alanlarında avukatlık hizmeti.
                         </p>
                     </div>
@@ -43,7 +43,7 @@ export function Footer() {
 
                     <div className="space-y-6">
                         <p className="text-xs font-bold uppercase tracking-widest text-primary">İletişim</p>
-                        <div className="text-sm text-muted-foreground space-y-2 leading-relaxed font-light">
+                        <div className="text-sm text-muted-foreground space-y-2 leading-relaxed">
                             <p>Mansuroğlu Mah. 286/3 Sk.</p>
                             <p>Dedemhan Plaza D:17, Bayraklı/İzmir</p>
                             <p className="pt-4 font-bold text-primary tracking-widest">0544 585 46 45</p>

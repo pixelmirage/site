@@ -17,7 +17,7 @@ export function AboutBrief() {
                             <p>
                                 Bayraklı&apos;daki ofisimizden, ağırlıklı olarak kira hukuku alanında ev sahibi ve kiracılara hukuki destek veriyoruz. Her dosyada önce dinler, sonra izlenecek yolu birlikte belirleriz.
                             </p>
-                            <p className="not-italic font-sans text-base text-muted-foreground font-light">
+                            <p className="not-italic font-sans text-base text-muted-foreground">
                                 Mert Kağan Çetin Hukuk Bürosu olarak süreçleri şeffaf yönetiyor, müvekkillerimizi her aşamada bilgilendiriyoruz. Tahliye, kira tespit, kira uyarlama ve kira borcu kaynaklı icra takiplerinin yanı sıra iş hukuku, aile hukuku ve tazminat davalarında da danışmanlık hizmeti veriyoruz.
                             </p>
                         </div>

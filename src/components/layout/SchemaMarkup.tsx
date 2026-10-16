@@ -21,7 +21,7 @@ export function SchemaMarkup() {
             {
                 "@type": "WebSite",
                 "@id": "https://mertkagancetin.com/#website",
-                "url": "https://mertkagancetin.com",
+                "url": "https://mertkagancetin.com/",
                 "name": "Av. Mert Kağan Çetin",
                 "alternateName": "Mert Kağan Çetin Hukuk Bürosu",
                 "publisher": {
@@ -66,7 +66,9 @@ export function SchemaMarkup() {
                 "parentOrganization": { "@id": "https://mertkagancetin.com/#organization" },
                 "name": "Av. Mert Kağan Çetin",
                 "image": "https://mertkagancetin.com/attorney-photo.jpg",
-                "url": "https://mertkagancetin.com",
+                "url": "https://mertkagancetin.com/",
+                "employee": { "@id": "https://mertkagancetin.com/#person" },
+                "identifier": { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
                 "telephone": "+905445854645",
                 "email": "mertkagancetin@gmail.com",
                 "sameAs": [

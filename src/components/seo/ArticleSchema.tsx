@@ -32,9 +32,11 @@ export function ArticleSchema({
         },
         "datePublished": datePublished,
         "dateModified": dateModified || datePublished,
+        "@id": `${url}#article`,
+        "url": url,
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": url
+            "@id": `${url}#webpage`
         },
         "isPartOf": {
             "@id": "https://mertkagancetin.com/#website"

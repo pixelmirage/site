@@ -65,7 +65,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
             }
         ],
         keywords: ["tahliye taahhütnamesi nedir", "tahliye taahhütnamesi örneği", "tahliye taahhütnamesi geçerlilik şartları", "tahliye taahhütnamesi noter"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Kira Tespit Davası",
@@ -101,7 +101,7 @@ Dava, yeni kira döneminin başlangıcından en az otuz gün önce açılmalı v
             }
         ],
         keywords: ["kira tespit davası nedir", "kira tespit davası nasıl açılır", "kira tespit davası süresi", "kira bedeli tespiti"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "İhtiyaç Nedeniyle Tahliye",
@@ -137,7 +137,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
             }
         ],
         keywords: ["ihtiyaç nedeniyle tahliye nedir", "ihtiyaç nedeniyle tahliye davası şartları", "ihtiyaç nedeniyle tahliye süresi"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Zorunlu Arabuluculuk",
@@ -172,7 +172,7 @@ Arabuluculukta anlaşma sağlanamazsa, son tutanağın düzenlendiği tarihten i
             }
         ],
         keywords: ["zorunlu arabuluculuk nedir", "kira arabuluculuk", "arabuluculuk süreci", "kira davası arabuluculuk"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "İki Haklı İhtar",
@@ -208,7 +208,7 @@ TBK m. 352/2'ye göre, kiracı bir yıldan kısa süreli kira sözleşmelerinde 
             }
         ],
         keywords: ["iki haklı ihtar nedir", "iki haklı ihtar ile tahliye", "iki haklı ihtar şartları", "kiracı iki haklı ihtar"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Kira Sözleşmesi",
@@ -243,7 +243,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
             }
         ],
         keywords: ["kira sözleşmesi nedir", "kira sözleşmesi örneği", "kira sözleşmesi nasıl yapılır", "kira kontratı"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Depozito",
@@ -279,7 +279,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
             }
         ],
         keywords: ["depozito nedir", "kira depozito iade", "depozito kaç aylık kira", "güvence bedeli"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Kira Artış Oranı",
@@ -315,7 +315,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
             }
         ],
         keywords: ["kira artış oranı nedir", "kira artış oranı hesaplama", "TÜFE kira artış oranı", "kira zam oranı 2026"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Kira Uyarlama Davası",
@@ -350,7 +350,7 @@ Türkiye'de yaşanan yüksek enflasyon dönemlerinde, özellikle uzun süreli i�
             }
         ],
         keywords: ["kira uyarlama davası nedir", "kira uyarlama davası şartları", "aşırı ifa güçlüğü kira"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Fuzuli İşgal",
@@ -386,7 +386,7 @@ Fuzuli işgalci, iyiniyetli veya kötüniyetli olmasına göre farklı hukuki so
             }
         ],
         keywords: ["fuzuli işgal nedir", "ecrimisil nedir", "haksız işgal tazminatı", "fuzuli şagil"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "10 Yıllık Uzama Süresi",
@@ -422,7 +422,7 @@ Süre hesaplamasında, sözleşmede belirtilen sürenin bitiminden itibaren on y
             }
         ],
         keywords: ["10 yıllık uzama süresi nedir", "kira 10 yıl tahliye", "10 yıllık kiracı hakları", "TBK 347"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
     {
         term: "Kiracı Hakları",
@@ -458,7 +458,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
             }
         ],
         keywords: ["kiracı hakları nedir", "kiracı hakları 2026", "kiracı tahliye edilemez mi", "kiracı korunması"],
-        lastUpdated: "2026-03-04",
+        lastUpdated: "2026-10-16",
     },
 
     // ═══════════════════════════════════════

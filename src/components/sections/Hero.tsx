@@ -30,20 +30,23 @@ export function Hero() {
 
                     <div className="space-y-6">
                         <h1 className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight">
-                            İzmir{" "}
+                            İzmir Avukat
+                            <br />
                             <span className="text-secondary italic">Kira Hukuku</span>
-                            <br className="hidden md:block" />{" "}
-                            Avukatı
                         </h1>
 
                         <div
                             className="max-w-2xl mx-auto animate-fade-in"
                             style={{ animationDelay: '0.3s' }}
                         >
-                            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
+                            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                                 Av. Mert Kağan Çetin; ev sahibi ve kiracılara tahliye, kira tespit, kira uyarlama,
                                 kira borcu icra takibi ve kira sözleşmesi konularında İzmir genelinde
                                 avukatlık ve hukuki danışmanlık hizmeti verir.
+                            </p>
+                            <p className="mt-5 text-base md:text-lg text-primary">
+                                Kira ve tahliye davaları için:{" "}
+                                <Link href="/izmir-kira-avukati/" className="font-semibold text-secondary underline underline-offset-4 hover:text-primary">İzmir kira avukatı</Link>
                             </p>
                         </div>
                     </div>

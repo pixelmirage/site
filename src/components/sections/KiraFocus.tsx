@@ -28,7 +28,7 @@ export function KiraFocus() {
                             Kira Hukuku
                         </div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">İzmir&apos;de Kira Uyuşmazlıkları</h2>
-                        <p className="text-muted-foreground font-light text-lg">
+                        <p className="text-muted-foreground text-lg">
                             Ev sahibi ve kiracı arasındaki uyuşmazlıklarda arabuluculuk, ihtar, icra takibi ve dava aşamalarında hukuki destek.
                         </p>
                     </div>
@@ -41,7 +41,7 @@ export function KiraFocus() {
                                 className="group bg-white border border-border/60 hover:border-secondary/40 p-7 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(15,23,42,0.06)] flex flex-col"
                             >
                                 <h3 className="text-xl font-serif font-bold text-primary group-hover:text-secondary transition-colors">{item.name}</h3>
-                                <p className="mt-2 text-sm text-muted-foreground font-light flex-1">{item.desc}</p>
+                                <p className="mt-2 text-sm text-muted-foreground flex-1">{item.desc}</p>
                                 <span className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-secondary">
                                     Detaylı Bilgi <MoveRight className="w-4 h-4" />
                                 </span>
@@ -73,7 +73,7 @@ export function KiraFocus() {
                 <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-14">
                     <div>
                         <h2 className="text-3xl font-serif font-bold text-primary mb-3">Kira Hesaplama ve Belge Araçları</h2>
-                        <p className="text-muted-foreground font-light mb-8">Kira artışı hesaplama, kira sözleşmesi örneği ve tahliye taahhütnamesi metinleri.</p>
+                        <p className="text-muted-foreground mb-8">Kira artışı hesaplama, kira sözleşmesi örneği ve tahliye taahhütnamesi metinleri.</p>
                         <div className="space-y-4">
                             {kiraTools.map((tool, i) => {
                                 const Icon = toolIcons[i] ?? FileText;
@@ -88,7 +88,7 @@ export function KiraFocus() {
                                         </div>
                                         <div>
                                             <p className="font-serif font-bold text-primary">{tool.name}</p>
-                                            <p className="text-sm text-muted-foreground font-light">{tool.desc}</p>
+                                            <p className="text-sm text-muted-foreground">{tool.desc}</p>
                                         </div>
                                     </Link>
                                 );
@@ -97,7 +97,7 @@ export function KiraFocus() {
                     </div>
                     <div>
                         <h2 className="text-3xl font-serif font-bold text-primary mb-3">Kira Hukuku Makaleleri</h2>
-                        <p className="text-muted-foreground font-light mb-8">Ev sahibi ve kiracıların sık karşılaştığı konulara ilişkin bilgilendirici yazılar.</p>
+                        <p className="text-muted-foreground mb-8">Ev sahibi ve kiracıların sık karşılaştığı konulara ilişkin bilgilendirici yazılar.</p>
                         <ul className="divide-y divide-border/60 border-y border-border/60">
                             {kiraPosts.map((post) => (
                                 <li key={post.href}>
