@@ -78,6 +78,7 @@
   }
 
   body {
+    font-weight: 400;
     @apply bg-background text-foreground;
     font-feature-settings: "cv11", "ss01";
   }

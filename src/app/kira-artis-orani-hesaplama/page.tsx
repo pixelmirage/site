@@ -146,12 +146,12 @@ export default function RentCalculatorPage() {
                         <h2>Hukuki Sorun mu Yaşıyorsunuz?</h2>
                         <p>
                             Kira artış oranında anlaşmazlık yaşıyorsanız veya ev sahibiniz yasal sınırın üzerinde zam talep ediyorsa,
-                            haklarınızı korumak için profesyonel destek almanız önemlidir. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak uyuşmazlıklarınızda yanınızdayız.
+                            yasal sınır ve tespit davası koşullarını birlikte değerlendirmek faydalı olabilir. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> sayfamızda kira artışı ve kira tespit süreçlerine ilişkin ayrıntılı bilgi bulabilirsiniz.
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
                             <h3 className="text-2xl font-serif font-bold text-primary mb-4">İletişime Geçin</h3>
-                            <p className="mb-6 text-muted-foreground">Durumunuzu değerlendirelim, en doğru hukuki yolu birlikte belirleyelim.</p>
+                            <p className="mb-6 text-muted-foreground">Kira artışına ilişkin sorularınız için telefonla ön görüşme yapabilirsiniz.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>
                                     <Link href="/iletisim/">Bize Ulaşın</Link>

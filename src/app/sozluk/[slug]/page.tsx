@@ -42,6 +42,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
 }
 
+const serviceHref: Record<string, string> = {
+    "#tahliye": "/izmir-kira-avukati/kiraci-tahliye-davasi/",
+    "#kira": "/izmir-kira-avukati/",
+    "#gayrimenkul": "/izmir-kira-avukati/",
+    "#is-hukuku": "/izmir-is-avukati/",
+    "#aile-hukuku": "/izmir-bosanma-avukati/",
+    "#tazminat": "/izmir-tazminat-avukati/",
+};
+const serviceLabel: Record<string, string> = {
+    "#tahliye": "İzmir Tahliye Davası",
+    "#kira": "İzmir Kira Avukatı",
+    "#gayrimenkul": "İzmir Kira Avukatı",
+};
+
 export default async function GlossaryTermPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const term = getGlossaryTerm(slug);
@@ -167,7 +181,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                         {relatedTerms.map((rt) => (
                                             <Link
                                                 key={rt.slug}
-                                                href={`/sozluk/${rt.slug}`}
+                                                href={`/sozluk/${rt.slug}/`}
                                                 className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium"
                                             >
                                                 → {rt.term}: {rt.shortDescription}
@@ -191,7 +205,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                         {term.relatedBlogSlugs.map((blogSlug) => (
                                             <Link
                                                 key={blogSlug}
-                                                href={`/blog/${blogSlug}`}
+                                                href={`/blog/${blogSlug}/`}
                                                 className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium"
                                             >
                                                 → {blogSlug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")}
@@ -251,8 +265,8 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                 İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (
-                                <Link href={`/hizmetler${term.relatedServiceAnchor}`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                                    İlgili Hizmet
+                                <Link href={serviceHref[term.relatedServiceAnchor] ?? `/hizmetler/${term.relatedServiceAnchor}`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                                    {serviceLabel[term.relatedServiceAnchor] ?? "İlgili Hizmet"}
                                 </Link>
                             )}
                             <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">

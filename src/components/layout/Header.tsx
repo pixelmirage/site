@@ -7,6 +7,7 @@ import { Logo } from "@/components/ui/logo";
 import { MobileNav } from "./MobileNav";
 import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
+import { kiraHub, kiraLinks, kiraTools, otherAreas, type NavLink } from "@/lib/nav";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -16,21 +17,7 @@ import {
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-const serviceLinks = [
-    { name: "İzmir Kira Avukatı", href: "/izmir-kira-avukati/", desc: "Kira tespit, tahliye ve arabuluculuk" },
-    { name: "İzmir İş Avukatı", href: "/izmir-is-avukati/", desc: "İşe iade, kıdem tazminatı, iş kazası" },
-    { name: "İzmir Boşanma Avukatı", href: "/izmir-bosanma-avukati/", desc: "Anlaşmalı/çekişmeli boşanma, velayet" },
-    { name: "İzmir Tazminat Avukatı", href: "/izmir-tazminat-avukati/", desc: "Maddi, manevi tazminat, malpraktis" },
-    { name: "Tüm Hizmetler", href: "/hizmetler/", desc: "Hizmet alanlarımızın tamamı" },
-];
-
-const toolLinks = [
-    { name: "Kira Artış Hesaplama", href: "/kira-artis-orani-hesaplama/", desc: "TÜFE bazlı kira artış oranı hesaplayıcı" },
-    { name: "Kira Sözleşmesi Örneği", href: "/kira-sozlesmesi-ornegi/", desc: "Güncel kira sözleşmesi şablonu PDF indir" },
-    { name: "Tahliye Taahhütnamesi", href: "/tahliye-taahhutnamesi/", desc: "Online tahliye taahhütnamesi oluşturucu" },
-    { name: "Kıdem Tazminatı Hesaplama", href: "/kidem-tazminati-hesaplama/", desc: "Güncel tavan ile net kıdem tazminatı hesaplayıcı" },
-    { name: "Hukuk Sözlüğü", href: "/sozluk/", desc: "Hukuki terimlerin açıklamaları" },
-];
+const navItemClass = "block select-none rounded-sm p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground";
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -65,57 +52,40 @@ export function Header() {
                     <div className="hidden lg:flex items-center gap-2">
                         <NavigationMenu>
                             <NavigationMenuList className="gap-1">
-                                {/* Hizmetler Dropdown */}
+                                {/* Kira Hukuku Dropdown (primary) */}
                                 <NavigationMenuItem>
                                     <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/80 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
-                                        Hizmetler
+                                        Kira Hukuku
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
-                                        <ul className="grid w-[340px] gap-1 p-2">
-                                            {serviceLinks.map((link) => (
-                                                <li key={link.href}>
-                                                    <NavigationMenuLink asChild>
-                                                        <Link
-                                                            href={link.href}
-                                                            className={cn(
-                                                                "block select-none rounded-sm p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                                                                pathname === link.href && "bg-accent/50"
-                                                            )}
-                                                        >
-                                                            <div className="text-sm font-semibold leading-none text-primary">{link.name}</div>
-                                                            <p className="text-xs leading-snug text-muted-foreground mt-1.5">{link.desc}</p>
-                                                        </Link>
-                                                    </NavigationMenuLink>
-                                                </li>
+                                        <div className="grid w-[640px] grid-cols-2 gap-1 p-2">
+                                            <div className="col-span-2">
+                                                <NavItem link={kiraHub} active={pathname === kiraHub.href} strong />
+                                            </div>
+                                            {kiraLinks.map((link) => (
+                                                <NavItem key={link.href} link={link} active={pathname === link.href} />
                                             ))}
-                                        </ul>
+                                            <p className="col-span-2 px-3 pt-3 pb-1 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Kira Araçları</p>
+                                            {kiraTools.map((link) => (
+                                                <NavItem key={link.href} link={link} active={pathname === link.href} />
+                                            ))}
+                                        </div>
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
 
-                                {/* Araçlar Dropdown */}
+                                {/* Diğer Çalışma Alanları Dropdown (secondary) */}
                                 <NavigationMenuItem>
                                     <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/80 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
-                                        Araçlar
+                                        Diğer Alanlar
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
-                                        <ul className="grid w-[320px] gap-1 p-2">
-                                            {toolLinks.map((link) => (
-                                                <li key={link.href}>
-                                                    <NavigationMenuLink asChild>
-                                                        <Link
-                                                            href={link.href}
-                                                            className={cn(
-                                                                "block select-none rounded-sm p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                                                                pathname === link.href && "bg-accent/50"
-                                                            )}
-                                                        >
-                                                            <div className="text-sm font-semibold leading-none text-primary">{link.name}</div>
-                                                            <p className="text-xs leading-snug text-muted-foreground mt-1.5">{link.desc}</p>
-                                                        </Link>
-                                                    </NavigationMenuLink>
-                                                </li>
+                                        <div className="grid w-[340px] gap-1 p-2">
+                                            <p className="px-3 pt-2 pb-1 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Diğer Çalışma Alanları</p>
+                                            {otherAreas.map((link) => (
+                                                <NavItem key={link.href} link={link} active={pathname === link.href} />
                                             ))}
-                                        </ul>
+                                            <NavItem link={{ name: "Hukuk Sözlüğü", href: "/sozluk/", desc: "Hukuki terimlerin açıklamaları" }} active={pathname === "/sozluk/"} />
+                                        </div>
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
 
@@ -176,5 +146,16 @@ export function Header() {
                 </nav>
             </div>
         </header>
+    );
+}
+
+function NavItem({ link, active, strong }: { link: NavLink; active?: boolean; strong?: boolean }) {
+    return (
+        <NavigationMenuLink asChild>
+            <Link href={link.href} className={cn(navItemClass, active && "bg-accent/50", strong && "bg-primary/5")}>
+                <div className={cn("text-sm leading-none text-primary", strong ? "font-bold" : "font-semibold")}>{link.name}</div>
+                {link.desc && <p className="text-xs leading-snug text-muted-foreground mt-1.5">{link.desc}</p>}
+            </Link>
+        </NavigationMenuLink>
     );
 }

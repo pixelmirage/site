@@ -21,7 +21,7 @@ export function SchemaMarkup() {
             {
                 "@type": "WebSite",
                 "@id": "https://mertkagancetin.com/#website",
-                "url": "https://mertkagancetin.com",
+                "url": "https://mertkagancetin.com/",
                 "name": "Av. Mert Kağan Çetin",
                 "alternateName": "Mert Kağan Çetin Hukuk Bürosu",
                 "publisher": {
@@ -66,7 +66,9 @@ export function SchemaMarkup() {
                 "parentOrganization": { "@id": "https://mertkagancetin.com/#organization" },
                 "name": "Av. Mert Kağan Çetin",
                 "image": "https://mertkagancetin.com/attorney-photo.jpg",
-                "url": "https://mertkagancetin.com",
+                "url": "https://mertkagancetin.com/",
+                "employee": { "@id": "https://mertkagancetin.com/#person" },
+                "identifier": { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
                 "telephone": "+905445854645",
                 "email": "mertkagancetin@gmail.com",
                 "sameAs": [
@@ -93,10 +95,10 @@ export function SchemaMarkup() {
                     "opens": "09:00",
                     "closes": "18:00"
                 },
-                "description": "İzmir'de kira hukuku, iş hukuku, boşanma davaları ve gayrimenkul uyuşmazlıkları alanında avukatlık hizmeti. Kiracı tahliye, kira tespit, işe iade, kıdem tazminatı, anlaşmalı boşanma, velayet ve nafaka davaları.",
+                "description": "İzmir'de ağırlıklı olarak kira hukuku alanında avukatlık hizmeti: ev sahibi ve kiracı uyuşmazlıkları, tahliye, kira tespit, kira uyarlama, kira borcu icra takibi ve kira sözleşmesi. Ayrıca iş hukuku, aile hukuku ve tazminat davaları.",
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Gayrimenkul Hukuku",
-                    "Kira Tespit Davası", "Tahliye Taahhütnamesi", "Zorunlu Arabuluculuk",
+                    "Kira Tespit Davası", "Kira Uyarlama Davası", "Kira Borcu İcra Takibi", "Tahliye Taahhütnamesi", "Zorunlu Arabuluculuk",
                     "Kira Sözleşmesi", "İş Hukuku", "İşe İade Davası",
                     "Kıdem Tazminatı", "İhbar Tazminatı", "İş Kazası Tazminatı",
                     "Boşanma Hukuku", "Aile Hukuku", "Velayet Davası",

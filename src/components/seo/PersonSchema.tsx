@@ -6,26 +6,16 @@ export function PersonSchema({ knowsAbout }: PersonSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://mertkagancetin.com/#person",
         "name": "Av. Mert Kağan Çetin",
         "givenName": "Mert Kağan",
         "familyName": "Çetin",
         "jobTitle": "Avukat",
-        "url": "https://mertkagancetin.com/hakkimda",
+        "url": "https://mertkagancetin.com/hakkimda/",
         "image": "https://mertkagancetin.com/attorney-photo.jpg",
         "telephone": "+905445854645",
         "email": "mertkagancetin@gmail.com",
-        "worksFor": {
-            "@type": "LegalService",
-            "name": "Av. Mert Kağan Çetin",
-            "url": "https://mertkagancetin.com",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
-                "addressLocality": "Bayraklı",
-                "addressRegion": "İzmir",
-                "addressCountry": "TR"
-            }
-        },
+        "worksFor": { "@id": "https://mertkagancetin.com/#organization" },
         "alumniOf": {
             "@type": "CollegeOrUniversity",
             "name": "İzmir Ekonomi Üniversitesi",

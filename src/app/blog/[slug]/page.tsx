@@ -72,6 +72,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     if (!post) {
         notFound();
     }
+    const extraFaqs = (post.faqs || []).filter((f) => !post.content.includes(f.question.slice(0, 25)));
+    const isKira = /kira|tahliye|depozito|kiraci/.test(post.slug);
+    const kiraNotes = [
+        { before: "Kira ve tahliye süreçlerine ilişkin hizmet bilgileri için ", anchor: "İzmir kira avukatı", after: " sayfamızı inceleyebilirsiniz." },
+        { before: "Ev sahibi ve kiracı uyuşmazlıklarında dava ve icra süreçleri hakkında ayrıntılı bilgi ", anchor: "İzmir kira avukatı Av. Mert Kağan Çetin", after: " sayfasında yer almaktadır." },
+        { before: "Somut dosyanızın değerlendirilmesi için ", anchor: "İzmir'de kira davaları", after: " sayfasındaki iletişim bilgilerinden telefonla ön görüşme yapabilirsiniz." },
+    ];
+    const kiraNote = kiraNotes[post.slug.length % kiraNotes.length];
 
     const articleUrl = `https://mertkagancetin.com/blog/${slug}/`;
 
@@ -147,7 +155,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     {/* Breadcrumb Navigation */}
                     <BreadcrumbNav
                         items={[
-                            { label: "Blog", href: "/blog" },
+                            { label: "Blog", href: "/blog/" },
                             { label: post.title }
                         ]}
                     />
@@ -164,6 +172,27 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <div className={articleProseClasses}>
                         <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
                     </div>
+
+                    {/* Visible FAQ: frontmatter FAQs not already in the body (keeps FAQPage schema == visible content) */}
+                    {extraFaqs.length > 0 && (
+                        <section className="mt-12">
+                            <h2 className="font-serif text-2xl md:text-3xl font-extrabold text-primary mb-6">Sık Sorulan Sorular</h2>
+                            <div className="space-y-4">
+                                {extraFaqs.map((f) => (
+                                    <div key={f.question} className="rounded-xl border border-slate-200 bg-white px-5 py-4 md:px-6 md:py-5 shadow-sm">
+                                        <h3 className="font-serif text-lg font-bold text-primary">{f.question}</h3>
+                                        <p className="mt-3 border-t border-slate-100 pt-3 text-slate-700 leading-7">{f.answer}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                    {isKira && (
+                        <div className="mt-12 rounded-xl border border-secondary/30 bg-secondary/5 p-5 text-slate-700 leading-7">
+                            {kiraNote.before}<Link href="/izmir-kira-avukati/" className="font-semibold text-secondary underline underline-offset-2 hover:text-primary">{kiraNote.anchor}</Link>{kiraNote.after}
+                        </div>
+                    )}
 
                     <div className="mt-16 pt-16 border-t border-slate-100 italic text-slate-400 text-sm">
                         Uyarı: Bu makale bilgilendirme amaçlıdır. Hukuki işlemlerinizde hak kaybı yaşamamak için mutlaka bir avukat ile iletişime geçiniz.

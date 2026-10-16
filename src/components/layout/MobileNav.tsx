@@ -5,23 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { kiraHub, kiraLinks, kiraTools, otherAreas } from "@/lib/nav";
 import { Logo } from "@/components/ui/logo";
-
-const serviceLinks = [
-    { href: "/izmir-kira-avukati/", label: "Kira Avukatı" },
-    { href: "/izmir-is-avukati/", label: "İş Avukatı" },
-    { href: "/izmir-bosanma-avukati/", label: "Boşanma Avukatı" },
-    { href: "/izmir-tazminat-avukati/", label: "Tazminat Avukatı" },
-    { href: "/hizmetler/", label: "Tüm Hizmetler" },
-];
-
-const toolLinks = [
-    { href: "/kira-artis-orani-hesaplama/", label: "Kira Artış Hesaplama" },
-    { href: "/kira-sozlesmesi-ornegi/", label: "Kira Sözleşmesi Örneği" },
-    { href: "/tahliye-taahhutnamesi/", label: "Tahliye Taahhütnamesi" },
-    { href: "/kidem-tazminati-hesaplama/", label: "Kıdem Tazminatı Hesaplama" },
-    { href: "/sozluk/", label: "Hukuk Sözlüğü" },
-];
 
 export function MobileNav() {
     const [open, setOpen] = useState(false);
@@ -36,53 +21,53 @@ export function MobileNav() {
                     <span className="sr-only">Menüyü Aç</span>
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto">
                 <div className="flex flex-col gap-6 py-8">
                     <div className="px-2">
                         <Logo />
                     </div>
                     <nav className="flex flex-col gap-1">
-                        {/* Hizmetler Collapsible */}
+                        {/* Kira Hukuku Collapsible (primary) */}
                         <button
                             onClick={() => setServicesOpen(!servicesOpen)}
                             className="flex items-center justify-between text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
-                            Hizmetler
+                            Kira Hukuku
                             <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} />
                         </button>
                         {servicesOpen && (
                             <div className="ml-4 flex flex-col gap-0.5">
-                                {serviceLinks.map((item) => (
+                                {[kiraHub, ...kiraLinks, ...kiraTools].map((item) => (
                                     <Link
                                         key={item.href}
                                         href={item.href}
                                         onClick={() => setOpen(false)}
                                         className="flex items-center text-base text-muted-foreground px-4 py-2.5 hover:bg-muted hover:text-primary rounded-md transition-colors"
                                     >
-                                        {item.label}
+                                        {item.name}
                                     </Link>
                                 ))}
                             </div>
                         )}
 
-                        {/* Araçlar Collapsible */}
+                        {/* Diğer Çalışma Alanları Collapsible */}
                         <button
                             onClick={() => setToolsOpen(!toolsOpen)}
                             className="flex items-center justify-between text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
-                            Araçlar
+                            Diğer Çalışma Alanları
                             <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${toolsOpen ? "rotate-180" : ""}`} />
                         </button>
                         {toolsOpen && (
                             <div className="ml-4 flex flex-col gap-0.5">
-                                {toolLinks.map((item) => (
+                                {[...otherAreas, { name: "Hukuk Sözlüğü", href: "/sozluk/" }].map((item) => (
                                     <Link
                                         key={item.href}
                                         href={item.href}
                                         onClick={() => setOpen(false)}
                                         className="flex items-center text-base text-muted-foreground px-4 py-2.5 hover:bg-muted hover:text-primary rounded-md transition-colors"
                                     >
-                                        {item.label}
+                                        {item.name}
                                     </Link>
                                 ))}
                             </div>

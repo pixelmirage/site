@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { HowToSchema } from "@/components/seo/HowToSchema";
 import { AlertCircle } from "lucide-react";
 import { PrintButton } from "@/components/tools/PrintButton";
 import { KiraSozlesmesiPdfButton } from "@/components/tools/KiraSozlesmesiPdfButton";
@@ -25,10 +26,32 @@ export const metadata: Metadata = {
     },
 };
 
+const filledExample: [string, string][] = [
+    ["Düzenleme tarihi", "01.11.2026"],
+    ["Kiraya veren", "Ayşe Yılmaz – Örnek Mah. 100 Sk. No:1, Bayraklı/İzmir"],
+    ["Kiracı", "Mehmet Demir – Deneme Mah. 200 Sk. No:2, Bornova/İzmir"],
+    ["Kiralanan", "Örnek Mah. 300 Sk. No:3 D:5, Bayraklı/İzmir – 3+1, 2. kat, konut"],
+    ["Kira süresi", "01.11.2026 – 31.10.2027 (1 yıl, belirli süreli)"],
+    ["Aylık kira / ödeme günü", "[tarafların belirlediği tutar] TL – her ayın 5'i, banka havalesi"],
+    ["Depozito", "[tutar] TL – en fazla üç aylık kira (TBK m. 342)"],
+    ["Kira artışı", "Yıllık, önceki 12 aylık TÜFE ortalamasını aşmamak üzere (TBK m. 344)"],
+    ["Özel şart", "Evcil hayvan beslenmesi kiraya verenin yazılı iznine bağlıdır; teslim tutanağı ektedir."],
+    ["İmza", "Her iki taraf, 2 nüsha"],
+];
+
+const howToSteps = [
+    { name: "Tarafları yazın", text: "Kiraya veren ve kiracının ad soyad, T.C. kimlik numarası ve tebligat adreslerini eksiksiz doldurun." },
+    { name: "Kiralananı tanımlayın", text: "Taşınmazın açık adresini, oda sayısını, kat ve daire numarasını ve konut/işyeri kullanım amacını belirtin." },
+    { name: "Süre ve bedeli belirleyin", text: "Başlangıç ve bitiş tarihini, aylık kira bedelini, ödeme gününü ve ödeme şeklini yazın; banka ile ödeme ispat açısından kolaylık sağlar." },
+    { name: "Depozitoyu kararlaştırın", text: "Güvence bedeli üç aylık kirayı aşamaz ve konutlarda vadeli bir banka hesabına yatırılır (TBK m. 342)." },
+    { name: "Özel şartları ekleyin", text: "Evcil hayvan, eşya listesi, aidat gibi konuları özel şartlar bölümüne yazın; kanuna aykırı şartlar geçersizdir." },
+    { name: "İmzalayın ve teslim tutanağı düzenleyin", text: "Sözleşmeyi iki nüsha imzalayın ve taşınmazın teslim anındaki durumunu fotoğraflı bir tutanakla kayıt altına alın." },
+];
+
 const faqs = [
     {
         question: "Kira sözleşmesi yazılı olmak zorunda mı?",
-        answer: "Hayır, kira sözleşmesi yazılı olmak zorunda değildir. Sözlü olarak da geçerlidir. Ancak ispat kolaylığı açısından yazılı sözleşme yapılması kesinlikle tavsiye edilir. Yazılı sözleşme, ileride çıkabilecek uyuşmazlıklarda tarafların haklarını korur."
+        answer: "Hayır, kira sözleşmesi yazılı olmak zorunda değildir. Sözlü olarak da geçerlidir. Ancak ispat kolaylığı açısından yazılı sözleşme yapılması faydalıdır. Yazılı sözleşme, ileride çıkabilecek uyuşmazlıklarda tarafların haklarını korur."
     },
     {
         question: "Kira sözleşmesi noter onayı gerektirir mi?",
@@ -63,17 +86,23 @@ export default function KiraSozlesmesiPage() {
             />
 
             <FAQSchema faqs={faqs} />
+            <HowToSchema name="Kira sözleşmesi nasıl doldurulur?" description="Kira sözleşmesi şablonunun adım adım doldurulması." steps={howToSteps} />
 
             {/* Hero - Hidden in Print */}
             <section className="bg-primary text-white py-16 print:hidden">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-3xl md:text-5xl font-playfair font-bold mb-4">Kira Sözleşmesi Örneği 2026</h1>
                     <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                        Türk Borçlar Kanunu&apos;na uygun, güncel kira sözleşmesi şablonunu PDF formatında indirin veya yazdırın.
+                        Türk Borçlar Kanunu&apos;na uygun kira sözleşmesi şablonunu Word (DOCX) veya PDF olarak indirin, yazdırın ya da doldurulmuş örneği inceleyin.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <PrintButton />
                         <KiraSozlesmesiPdfButton />
+                    </div>
+                    <div className="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
+                        <a href="/indir/kira-sozlesmesi-ornegi-2026.docx" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-6 text-sm font-semibold text-white hover:bg-white hover:text-primary transition-colors">Word (DOCX) İndir</a>
+                        <a href="/indir/kira-sozlesmesi-ornegi-2026.pdf" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-6 text-sm font-semibold text-white hover:bg-white hover:text-primary transition-colors">Boş Şablon PDF</a>
+                        <a href="#doldurulmus-ornek" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-6 text-sm font-semibold text-white hover:bg-white hover:text-primary transition-colors">Doldurulmuş Örnek</a>
                     </div>
                 </div>
             </section>
@@ -187,7 +216,7 @@ export default function KiraSozlesmesiPage() {
 
                             <div>
                                 <p className="font-bold mb-1">MADDE 11 - UYUŞMAZLIKLARIN ÇÖZÜMÜ</p>
-                                <p className="text-justify">Bu sözleşmeden doğan uyuşmazlıklarda 7036 sayılı Kanun uyarınca dava açılmadan önce arabulucuya başvurulması zorunludur. Arabuluculuk sürecinde anlaşma sağlanamaması halinde kiralananın bulunduğu yer sulh hukuk mahkemesi yetkilidir.</p>
+                                <p className="text-justify">Bu sözleşmeden doğan uyuşmazlıklarda, 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu m. 18/B uyarınca dava açılmadan önce arabulucuya başvurulması zorunludur. Arabuluculukta anlaşma sağlanamaması halinde yetkili sulh hukuk mahkemesinde dava açılabilir; icra yoluyla tahliye talepleri bu şartın dışındadır.</p>
                             </div>
 
                             <div>
@@ -245,8 +274,32 @@ export default function KiraSozlesmesiPage() {
                         <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
                     </p>
                     <p>
-                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması kesinlikle önerilir. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link> alanında profesyonel destek almak, tarafların haklarının korunması açısından büyük önem taşır.
+                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması faydalıdır. Sözleşmenin hazırlanmasında veya incelenmesinde <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
                     </p>
+
+                    <h2 id="doldurulmus-ornek" className="scroll-mt-24">Doldurulmuş Kira Sözleşmesi Örneği</h2>
+                    <p>
+                        Aşağıdaki tablo, şablonun nasıl doldurulacağını gösteren hayali bir örnektir. Kişi, adres ve bedeller gerçek değildir; kira bedeli ve depozito alanları bilinçli olarak boş bırakılmıştır. Doldurulmuş örneğin tamamını <a href="/indir/kira-sozlesmesi-doldurulmus-ornek-2026.docx" download>Word (DOCX)</a> veya <a href="/indir/kira-sozlesmesi-doldurulmus-ornek-2026.pdf" download>PDF</a> olarak indirebilirsiniz.
+                    </p>
+                    <div className="not-prose overflow-x-auto rounded-xl border border-slate-200">
+                        <table className="w-full text-left text-[15px]">
+                            <tbody className="divide-y divide-slate-200">
+                                {filledExample.map(([k, v]) => (
+                                    <tr key={k}>
+                                        <th scope="row" className="w-2/5 bg-slate-50 px-4 py-3 font-semibold text-slate-800 align-top">{k}</th>
+                                        <td className="px-4 py-3 text-slate-700">{v}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Kira Sözleşmesi Nasıl Doldurulur?</h2>
+                    <ol>
+                        {howToSteps.map((st) => (
+                            <li key={st.name}><strong>{st.name}:</strong> {st.text}</li>
+                        ))}
+                    </ol>
 
                     <h2>Kira Sözleşmesinde Bulunması Gereken Bilgiler</h2>
                     <p>
@@ -321,7 +374,7 @@ export default function KiraSozlesmesiPage() {
 
                     <h2>Hukuki Destek Alın</h2>
                     <p>
-                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarında profesyonel hukuki desteğe ihtiyaç duyarsanız, <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> olarak yanınızdayız. <Link href="/hizmetler/" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
+                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarına ilişkin bilgi için <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir&apos;de kira avukatı</Link> sayfamızı inceleyebilirsiniz. <Link href="/hizmetler/" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">

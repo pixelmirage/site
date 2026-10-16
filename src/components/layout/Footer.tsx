@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
+import { kiraHub, kiraLinks, kiraTools, otherAreas } from "@/lib/nav";
 
 export function Footer() {
     return (
@@ -10,19 +11,30 @@ export function Footer() {
                         <Link href="/" className="inline-block hover:opacity-90 transition-opacity">
                             <Logo />
                         </Link>
-                        <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                            İzmir Bayraklı merkezli hukuk bürosu. Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık hizmeti.
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                            İzmir Bayraklı merkezli hukuk bürosu. Ağırlıklı olarak kira hukuku; ayrıca iş, aile ve tazminat hukuku alanlarında avukatlık hizmeti.
                         </p>
                     </div>
 
                     <div className="space-y-6">
-                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Çalışma Alanları</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Kira Hukuku</p>
                         <ul className="space-y-4">
-                            <li><Link href="/izmir-kira-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Kira Avukatı</Link></li>
-                            <li><Link href="/izmir-is-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir İş Avukatı</Link></li>
-                            <li><Link href="/izmir-bosanma-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Boşanma Avukatı</Link></li>
-                            <li><Link href="/izmir-tazminat-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İzmir Tazminat Avukatı</Link></li>
-                            <li><Link href="/hizmetler/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tüm Hizmetler</Link></li>
+                            <li><Link href={kiraHub.href} className="text-sm font-semibold text-primary hover:text-secondary transition-colors">{kiraHub.name}</Link></li>
+                            {kiraLinks.slice(0, 6).map((l) => (
+                                <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
+                            ))}
+                            {kiraTools.map((l) => (
+                                <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className="space-y-6">
+                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Diğer Çalışma Alanları</p>
+                        <ul className="space-y-4">
+                            {otherAreas.map((l) => (
+                                <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
+                            ))}
                             <li><Link href="/blog/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuki Makaleler</Link></li>
                             <li><Link href="/sozluk/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuk Sözlüğü</Link></li>
                             <li><Link href="/hakkimda/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hakkımızda</Link></li>
@@ -30,27 +42,14 @@ export function Footer() {
                     </div>
 
                     <div className="space-y-6">
-                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Hizmetler</p>
-                        <ul className="space-y-4">
-                            <li><Link href="/hizmetler#tahliye" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tahliye Davaları</Link></li>
-                            <li><Link href="/hizmetler#kira" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Tespit</Link></li>
-                            <li><Link href="/izmir-is-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İşe İade & Tazminat</Link></li>
-                            <li><Link href="/izmir-bosanma-avukati/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Boşanma & Velayet</Link></li>
-                            <li><Link href="/kira-artis-orani-hesaplama/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Artış Hesaplama</Link></li>
-                            <li><Link href="/kira-sozlesmesi-ornegi/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Sözleşmesi Örneği</Link></li>
-                            <li><Link href="/tahliye-taahhutnamesi/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tahliye Taahhütnamesi</Link></li>
-                        </ul>
-                    </div>
-
-                    <div className="space-y-6">
                         <p className="text-xs font-bold uppercase tracking-widest text-primary">İletişim</p>
-                        <div className="text-sm text-muted-foreground space-y-2 leading-relaxed font-light">
+                        <div className="text-sm text-muted-foreground space-y-2 leading-relaxed">
                             <p>Mansuroğlu Mah. 286/3 Sk.</p>
                             <p>Dedemhan Plaza D:17, Bayraklı/İzmir</p>
                             <p className="pt-4 font-bold text-primary tracking-widest">0544 585 46 45</p>
                             <p className="text-muted-foreground">mertkagancetin@gmail.com</p>
                             <a href="https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-xs font-medium text-secondary hover:text-primary transition-colors">
-                                Google Maps'te Görüntüle &rarr;
+                                Google Maps&apos;te Görüntüle &rarr;
                             </a>
                         </div>
                     </div>

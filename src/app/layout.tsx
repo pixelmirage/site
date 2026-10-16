@@ -5,6 +5,8 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SchemaMarkup } from "@/components/layout/SchemaMarkup";
+import { StickyContact } from "@/components/layout/StickyContact";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -14,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),
   title: {
     template: "%s | Av. Mert Kağan Çetin",
-    default: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
+    default: "İzmir Avukat – Kira Hukuku | Av. Mert Kağan Çetin",
   },
   description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
   authors: [{ name: "Av. Mert Kağan Çetin" }],
@@ -90,6 +92,9 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <div className="h-14 lg:hidden print:hidden" aria-hidden="true" />
+        <StickyContact />
+        <GoogleAnalytics />
       </body>
     </html>
   );
