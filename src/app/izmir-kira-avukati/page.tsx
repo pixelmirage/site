@@ -1,3 +1,4 @@
+import { ArabuluculukKutusu, TahliyeSureciAkis } from "@/components/visuals/KiraVisuals";
 import { Metadata } from "next";
 import Link from "next/link";
 import { InitialsBadge } from "@/components/ui/InitialsBadge";
@@ -269,6 +270,8 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* 4 */}
+                        <ArabuluculukKutusu />
+
                         <h2 id="avukatlik-ucreti" className="scroll-mt-24">Ev Sahibi Kiracı Davalarında Avukatlık Ücreti</h2>
 
                         <p>
@@ -340,6 +343,8 @@ export default function IzmirKiraAvukatiPage() {
                         </p>
 
                         {/* SSS */}
+                        <TahliyeSureciAkis />
+
                         <h2 id="sik-yapilan-hatalar" className="scroll-mt-24">Kira Hukukunda Sık Yapılan Hatalar</h2>
 
                         <p>

@@ -1,3 +1,4 @@
+import { ArabuluculukKutusu, KiraTespitAdimlari } from "@/components/visuals/KiraVisuals";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -181,6 +182,10 @@ export default function KiraTespitDavasiPage() {
                                 </div>
                             ))}
                         </div>
+
+                        <KiraTespitAdimlari />
+
+                        <ArabuluculukKutusu />
 
                         <h2 id="neden-avukat" className="scroll-mt-24">Kira Tespit Davasında Neden Avukat Gerekli?</h2>
 

@@ -1,3 +1,4 @@
+import { KiraArtisOrnekTablosu } from "@/components/visuals/KiraVisuals";
 import { Metadata } from "next";
 import { RentCalculator } from "@/components/tools/RentCalculator";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -142,6 +143,8 @@ export default function RentCalculatorPage() {
                                 </ul>
                             </div>
                         </div>
+
+                        <KiraArtisOrnekTablosu />
 
                         <h2>Hukuki Sorun mu Yaşıyorsunuz?</h2>
                         <p>

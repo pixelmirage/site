@@ -1,3 +1,4 @@
+import { TahliyeSebepleriTablosu } from "@/components/visuals/KiraVisuals";
 import { Metadata } from "next";
 import Link from "next/link";
 import { InitialsBadge } from "@/components/ui/InitialsBadge";
@@ -162,6 +163,8 @@ export default function EvSahibiHaklariIzmirPage() {
                         </p>
 
                         <SectionCTA text="Kiracı tahliyesi konusunda hukuki destek almak ister misiniz?" />
+
+                        <TahliyeSebepleriTablosu />
 
                         <h2 id="kira-artisi-tespit" className="scroll-mt-24">Kira Artışı ve Tespit Hakkı</h2>
 

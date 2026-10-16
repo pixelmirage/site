@@ -1,3 +1,4 @@
+import { ArabuluculukKutusu } from "@/components/visuals/KiraVisuals";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -220,6 +221,8 @@ export default function KiraUyarlamaDavasiPage() {
                                 </div>
                             ))}
                         </div>
+
+                        <ArabuluculukKutusu />
 
                         <h2 id="neden-avukat" className="scroll-mt-24">Kira Uyarlama Davasında Neden Avukat Gerekli?</h2>
 
