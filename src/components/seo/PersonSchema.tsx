@@ -12,7 +12,7 @@ export function PersonSchema({ knowsAbout }: PersonSchemaProps) {
         "familyName": "Çetin",
         "jobTitle": "Avukat",
         "url": "https://mertkagancetin.com/hakkimda/",
-        "image": "https://mertkagancetin.com/attorney-photo.jpg",
+        "image": "https://mertkagancetin.com/logo.png",
         "telephone": "+905445854645",
         "email": "mertkagancetin@gmail.com",
         "worksFor": { "@id": "https://mertkagancetin.com/#organization" },

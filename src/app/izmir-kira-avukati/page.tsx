@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import { InitialsBadge } from "@/components/ui/InitialsBadge";
 import { Phone, Mail, MapPin, ArrowRight, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -383,7 +383,7 @@ export default function IzmirKiraAvukatiPage() {
                                 <p className="text-white font-bold">Yazar Hakkında</p>
                             </div>
                             <div className="p-6 flex flex-col sm:flex-row gap-5">
-                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Kira Avukatı" title="Av. Mert Kağan Çetin - İzmir Kira Avukatı" width={96} height={96} className="w-24 h-24 rounded-xl object-cover flex-shrink-0" />
+                                <InitialsBadge className="w-24 h-24 flex-shrink-0" />
                                 <div>
                                     <p className="text-lg font-bold text-primary mb-1">Av. Mert Kağan Çetin</p>
                                     <p className="text-base text-slate-700 leading-relaxed mb-3">
@@ -393,7 +393,7 @@ export default function IzmirKiraAvukatiPage() {
                                         <span>İzmir Barosu Sicil: 15556</span>
                                         <span>TBB Sicil: 162439</span>
                                     </div>
-                                    <Link href="/hakkimda/" className="inline-block mt-3 text-secondary font-bold text-sm hover:text-primary transition-colors">
+                                    <Link href="/hakkimda/" className="inline-flex items-center mt-3 rounded-md bg-primary px-4 py-2 text-sm font-bold text-white hover:bg-primary/90 transition-colors">
                                         Detaylı Özgeçmiş →
                                     </Link>
                                 </div>

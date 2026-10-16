@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { InitialsBadge } from "@/components/ui/InitialsBadge";
 import { Phone, Mail, MapPin, CheckCircle, ArrowRight, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -239,7 +240,7 @@ export default function VelayetDavasiPage() {
                                 <p className="text-white font-bold text-lg">Velayet Davası Avukatı</p>
                             </div>
                             <div className="p-8 flex flex-col sm:flex-row gap-6">
-                                <Image src="/attorney-photo.jpg" alt="Av. Mert Kağan Çetin - İzmir Velayet Davası Avukatı" width={120} height={120} className="w-28 h-28 rounded-xl object-cover flex-shrink-0" />
+                                <InitialsBadge className="w-28 h-28 flex-shrink-0" />
                                 <div>
                                     <h3 className="text-xl font-bold text-primary mb-2">Av. Mert Kağan Çetin</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed mb-4">
