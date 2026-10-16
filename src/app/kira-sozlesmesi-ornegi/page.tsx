@@ -286,7 +286,7 @@ export default function KiraSozlesmesiPage() {
                             <tbody className="divide-y divide-slate-200">
                                 {filledExample.map(([k, v]) => (
                                     <tr key={k}>
-                                        <th scope="row" className="w-2/5 bg-slate-50 px-4 py-3 font-semibold text-slate-800 align-top">{k}</th>
+                                        <td className="w-2/5 bg-slate-50 px-4 py-3 font-semibold text-slate-800 align-top">{k}</td>
                                         <td className="px-4 py-3 text-slate-700">{v}</td>
                                     </tr>
                                 ))}

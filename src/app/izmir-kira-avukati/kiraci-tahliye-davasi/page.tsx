@@ -1,3 +1,4 @@
+import { ArabuluculukKutusu, TahliyeSebepleriTablosu, TahliyeSureciAkis } from "@/components/visuals/KiraVisuals";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -185,6 +186,10 @@ export default function KiraciTahliyeDavasiPage() {
                             Her tahliye sebebi hakkında detaylı bilgi için rehberlerimizi inceleyin: <Link href="/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/">İhtiyaç nedeniyle tahliye rehberi</Link>, <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/">İki haklı ihtar rehberi</Link> ve <Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/">Ev sahibi hakları rehberi</Link>.
                         </p>
 
+                        <TahliyeSebepleriTablosu />
+
+                        <TahliyeSureciAkis />
+
                         <h2 id="surecimiz" className="scroll-mt-24">İzmir&apos;de Tahliye Davası Sürecimiz</h2>
 
                         <p>
@@ -221,6 +226,8 @@ export default function KiraciTahliyeDavasiPage() {
                             />
                             <figcaption className="text-center text-sm text-slate-500 mt-3">Kiracı tahliye davası süreci akış şeması</figcaption>
                         </figure>
+
+                        <ArabuluculukKutusu />
 
                         <h2 id="neden-avukat" className="scroll-mt-24">Tahliye Davasında Neden Avukat Gerekli?</h2>
 
