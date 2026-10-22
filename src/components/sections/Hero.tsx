@@ -30,9 +30,9 @@ export function Hero() {
 
                     <div className="space-y-6">
                         <h1 className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight">
-                            İzmir Avukat
+                            İzmir
                             <br />
-                            <span className="text-secondary italic">Kira Hukuku</span>
+                            <span className="text-secondary italic">Kira Avukatı</span>
                         </h1>
 
                         <div
