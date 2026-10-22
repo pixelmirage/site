@@ -10,16 +10,22 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: { absolute: "İzmir Avukat – Kira Hukuku | Av. Mert Kağan Çetin" },
-  description: "İzmir avukat Av. Mert Kağan Çetin: ağırlıklı olarak kira hukuku (tahliye, kira tespit, kira uyarlama, kira borcu icra); ayrıca iş, aile ve tazminat hukuku. Bayraklı.",
+  title: { absolute: "İzmir Kira Avukatı | Av. Mert Kağan Çetin" },
+  description: "İzmir kira avukatı Av. Mert Kağan Çetin: kira hukuku alanında tahliye, kira tespit, kira uyarlama ve kira borcu icra davaları. İzmir, Manisa ve Aydın.",
   alternates: {
     canonical: "https://mertkagancetin.com/",
   },
   openGraph: {
         images: ["/og-image.jpg"],
     url: "https://mertkagancetin.com/",
-    title: "İzmir Avukat – Kira Hukuku | Av. Mert Kağan Çetin",
-    description: "İzmir avukat Av. Mert Kağan Çetin: ağırlıklı olarak kira hukuku (tahliye, kira tespit, kira uyarlama, kira borcu icra); ayrıca iş, aile ve tazminat hukuku. Bayraklı.",
+    title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin: kira hukuku alanında tahliye, kira tespit, kira uyarlama ve kira borcu icra davaları. İzmir, Manisa ve Aydın.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.jpg"],
+    title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin: kira hukuku alanında tahliye, kira tespit, kira uyarlama ve kira borcu icra davaları. İzmir, Manisa ve Aydın.",
   },
 };
 
