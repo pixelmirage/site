@@ -32,13 +32,13 @@ export const metadata: Metadata = {
 };
 
 const services = [
-    { name: "Tahliye davası", desc: "İhtiyaç, temerrüt, iki haklı ihtar, 10 yıllık uzama ve yeni malik sebepleriyle tahliye.", url: "/izmir-kira-avukati/kiraci-tahliye-davasi/" },
-    { name: "Kira tespit davası", desc: "Kira bedelinin emsallere göre belirlenmesi.", url: "/izmir-kira-avukati/kira-tespit-davasi/" },
-    { name: "Kira uyarlama davası", desc: "Değişen koşullara göre kira bedelinin uyarlanması.", url: "/izmir-kira-avukati/kira-uyarlama-davasi/" },
-    { name: "Kira alacağı ve icra takibi", desc: "Ödenmeyen kira ve aidat için icra takibi ve itiraz süreci.", url: "/izmir-kira-avukati/kira-borcu-icra/" },
-    { name: "Tahliye taahhüdü ile icra", desc: "Yazılı tahliye taahhüdüne dayalı icra yoluyla tahliye.", url: "/tahliye-taahhutnamesi/" },
-    { name: "Kira sözleşmesi hazırlama ve inceleme", desc: "Konut ve işyeri kira sözleşmelerinin hazırlanması ve incelenmesi.", url: "/izmir-kira-avukati/kira-sozlesmesi-rehberi/" },
-    { name: "Arabuluculuk", desc: "Dava öncesi zorunlu arabuluculuk görüşmelerinde temsil.", url: "/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" },
+    { name: "Tahliye davası", desc: "İhtiyaç, temerrüt, iki haklı ihtar veya 10 yıllık uzama süresinin dolması gibi sebeplerden dosyanıza uygun yasal yol belirlenir; ihtarnameden karara kadar süreç takip edilir.", url: "/izmir-kira-avukati/kiraci-tahliye-davasi/" },
+    { name: "Kira tespit davası", desc: "Güncel emsal kiralar ve TÜFE sınırı esas alınarak kira bedelinin ne olması gerektiği değerlendirilir; dava süreleri kaçırılmadan açılır ve bilirkişi aşaması dahil takip edilir.", url: "/izmir-kira-avukati/kira-tespit-davasi/" },
+    { name: "Kira uyarlama davası", desc: "Beklenmedik ekonomik değişiklikler karşısında kira bedelinin sözleşmeye uyarlanması talep edilebilir; şartların oluşup oluşmadığı incelenir ve dava yürütülür.", url: "/izmir-kira-avukati/kira-uyarlama-davasi/" },
+    { name: "Kira alacağı ve icra takibi", desc: "Ödenmeyen kira bedelleri için icra takibi başlatılır, gerekirse tahliye talebi de eklenir; itiraz halinde itirazın kaldırılması veya iptali süreci takip edilir.", url: "/izmir-kira-avukati/kira-borcu-icra/" },
+    { name: "Tahliye taahhüdü ile icra", desc: "Geçerli bir tahliye taahhüdü varsa dava açmadan doğrudan icra yoluyla tahliye istenebilir; taahhüdün geçerliliği ve süreler kontrol edilerek takip başlatılır.", url: "/tahliye-taahhutnamesi/" },
+    { name: "Kira sözleşmesi hazırlama ve inceleme", desc: "Uyuşmazlık çıkmasını önleyecek şekilde sözleşme hazırlanır veya mevcut sözleşme incelenir; artış, depozito, teminat ve tahliye maddeleri tek tek değerlendirilir.", url: "/izmir-kira-avukati/kira-sozlesmesi-rehberi/" },
+    { name: "Arabuluculuk", desc: "Kira uyuşmazlıklarında dava öncesi arabuluculuk zorunludur; bu süreçte haklarınız korunarak, mümkünse dava açmadan anlaşma sağlanması hedeflenir.", url: "/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" },
 ];
 
 const steps = [
@@ -166,9 +166,12 @@ export default function IzmirKiraAvukatiPage() {
             <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-16" aria-labelledby="hizmetler">
                 <div className="container mx-auto max-w-4xl px-4">
                     <h2 id="hizmetler" className={`${H2} mb-6 text-center`}>Takip edilen işler</h2>
-                    <ul className="flex flex-wrap justify-center gap-2">
+                    <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         {services.map((s) => (
-                            <li key={s.name} className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-primary">{s.name}</li>
+                            <li key={s.name} className="rounded-xl border border-slate-200 bg-white p-5">
+                                <h3 className="mb-1 text-lg font-bold text-primary">{s.name}</h3>
+                                <p className="text-slate-700">{s.desc}</p>
+                            </li>
                         ))}
                     </ul>
                 </div>
