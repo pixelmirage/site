@@ -63,7 +63,7 @@ export function KiraFocus() {
                             href="/izmir-kira-avukati/"
                             className="px-4 py-2 text-sm font-semibold bg-primary text-white hover:bg-primary/90 rounded-sm transition-colors"
                         >
-                            İzmir Kira Avukatı Sayfası
+                            İzmir kira avukatı
                         </Link>
                     </div>
                 </div>

@@ -10,22 +10,22 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: { absolute: "İzmir Kira Avukatı | Av. Mert Kağan Çetin" },
-  description: "İzmir kira avukatı Av. Mert Kağan Çetin: kira hukuku alanında tahliye, kira tespit, kira uyarlama ve kira borcu icra davaları. İzmir, Manisa ve Aydın.",
+  title: { absolute: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu" },
+  description: "Av. Mert Kağan Çetin Hukuk Bürosu, İzmir: ağırlıklı olarak kira hukuku; borçlar hukuku, sözleşmeler ve icra takibi alanlarında avukatlık hizmeti.",
   alternates: {
     canonical: "https://mertkagancetin.com/",
   },
   openGraph: {
         images: ["/og-image.jpg"],
     url: "https://mertkagancetin.com/",
-    title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
-    description: "İzmir kira avukatı Av. Mert Kağan Çetin: kira hukuku alanında tahliye, kira tespit, kira uyarlama ve kira borcu icra davaları. İzmir, Manisa ve Aydın.",
+    title: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
+    description: "Av. Mert Kağan Çetin Hukuk Bürosu, İzmir: ağırlıklı olarak kira hukuku; borçlar hukuku, sözleşmeler ve icra takibi alanlarında avukatlık hizmeti.",
   },
   twitter: {
     card: "summary_large_image",
     images: ["/og-image.jpg"],
-    title: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
-    description: "İzmir kira avukatı Av. Mert Kağan Çetin: kira hukuku alanında tahliye, kira tespit, kira uyarlama ve kira borcu icra davaları. İzmir, Manisa ve Aydın.",
+    title: "İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu",
+    description: "Av. Mert Kağan Çetin Hukuk Bürosu, İzmir: ağırlıklı olarak kira hukuku; borçlar hukuku, sözleşmeler ve icra takibi alanlarında avukatlık hizmeti.",
   },
 };
 
