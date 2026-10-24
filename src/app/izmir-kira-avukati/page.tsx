@@ -7,7 +7,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 
 const pageTitle = "İzmir Kira Avukatı | Tahliye ve Kira Davaları";
-const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir, Manisa, Aydın. Tel: 0544 585 46 45";
+const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir genelinde. Tel: 0544 585 46 45";
 const PHONE = "tel:+905445854645";
 const WHATSAPP = `https://wa.me/905445854645?text=${encodeURIComponent("Merhaba, kira konusunda görüşmek istiyorum.")}`;
 
@@ -58,7 +58,7 @@ const documents = [
 
 const faqs = [
     { question: "Size nasıl ulaşabilirim?", answer: "Telefonla (0544 585 46 45) veya WhatsApp üzerinden ulaşabilirsiniz. Sayfadaki formu doldurursanız sizi geri ararız. Ön görüşme telefonla yapılır." },
-    { question: "Hangi şehirlerdeki kira davalarını takip ediyorsunuz?", answer: "İzmir'in tüm ilçeleri ile Manisa ve Aydın'daki kira davaları ve icra takipleri takip edilir." },
+    { question: "Hangi bölgelerde hizmet veriyorsunuz?", answer: "İzmir’in tüm bölgelerindeki kira uyuşmazlıklarında hizmet veriyorum. Ofisim Bayraklı’dadır; ön görüşme telefonla yapılabilir." },
     { question: "Görüşmeye hangi belgelerle gelmeliyim?", answer: "Kira sözleşmesi, ödeme dekontları, ihtarnameler ve varsa tahliye taahhütnamesi yeterlidir. Elinizde olmayan belge ön görüşmeye engel değildir." },
     { question: "Ofise gelmem gerekiyor mu?", answer: "Ön görüşme telefonla yapılır. Belgeler WhatsApp veya e-posta ile iletilebilir; yüz yüze görüşme Bayraklı'daki ofiste randevuyla yapılır." },
     { question: "İzmir kira avukatı ücreti ne kadar?", answer: "Avukatlık ücreti; davanın veya takibin türüne, dosyanın kapsamına ve yapılacak işlemlere göre belirlenir ve Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Dosyanızla ilgili ücret ve masraf bilgisini telefonla ön görüşmede, belgelerinizi inceledikten sonra açıkça paylaşırım." },
@@ -108,8 +108,6 @@ export default function IzmirKiraAvukatiPage() {
                             "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "addressCountry": "TR" },
                             "areaServed": [
                                 { "@type": "City", "name": "İzmir" },
-                                { "@type": "City", "name": "Manisa" },
-                                { "@type": "City", "name": "Aydın" },
                             ],
                             "hasOfferCatalog": {
                                 "@type": "OfferCatalog",
@@ -149,7 +147,7 @@ export default function IzmirKiraAvukatiPage() {
                         <ul className="mt-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-slate-300">
                             <li className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-secondary" aria-hidden="true" />İzmir Barosu · Sicil 15556</li>
                             <li className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-secondary" aria-hidden="true" />Bayraklı ofis</li>
-                            <li>İzmir · Manisa · Aydın</li>
+                            <li>İzmir genelinde</li>
                         </ul>
                     </div>
                 </div>
@@ -202,8 +200,37 @@ export default function IzmirKiraAvukatiPage() {
                 </div>
             </section>
 
+            {/* Seçerken */}
+            <section id="secerken" className="border-y border-slate-200 bg-slate-50 py-12 md:py-20" aria-labelledby="secerken-baslik">
+                <div className="container mx-auto max-w-3xl px-4">
+                    <h2 id="secerken-baslik" className={`${H2} mb-8 text-center`}>İzmir kira avukatı seçerken nelere dikkat etmelisiniz?</h2>
+                    <ol className="space-y-3">
+                        <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5">
+                            <span className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white" aria-hidden="true">1</span>
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Kira hukukunda ne kadar yoğun çalıştığına bakın</h3><p className="text-slate-700">Kira davalarında ihtar süreleri, dava açma süreleri ve zorunlu arabuluculuk gibi usul kuralları sonucu doğrudan belirler. Bu alanda düzenli dosya takip eden bir avukat, süre ve usul hatalarını baştan önler.</p></div>
+                        </li>
+                        <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5">
+                            <span className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white" aria-hidden="true">2</span>
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Dosyanızı kimin takip edeceğini sorun</h3><p className="text-slate-700">Görüşme yaptığınız avukatın dosyanızla bizzat ilgilenip ilgilenmeyeceğini ve kime ulaşacağınızı en başta netleştirin.</p></div>
+                        </li>
+                        <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5">
+                            <span className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white" aria-hidden="true">3</span>
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Ücret ve masrafları baştan netleştirin</h3><p className="text-slate-700">Avukatlık ücreti, yargılama masrafları ve ödeme şekli işe başlamadan önce açıkça konuşulmalı; süreçte hangi kalemlerin çıkabileceğini önceden bilmelisiniz.</p></div>
+                        </li>
+                        <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5">
+                            <span className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white" aria-hidden="true">4</span>
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Size gerçekçi bir değerlendirme sunulmasını bekleyin</h3><p className="text-slate-700">Hiçbir avukat dava sonucunu garanti edemez. Dosyanızın güçlü ve zayıf yönlerini açıkça anlatan, riskleri saklamayan bir değerlendirme isteyin.</p></div>
+                        </li>
+                    </ol>
+                    <div className="mt-8 flex flex-col items-center gap-4 rounded-2xl bg-gradient-to-br from-primary to-slate-800 p-6 text-center text-white">
+                        <p className="text-lg font-semibold">Dosyanızı telefonla ön görüşmede birlikte değerlendirelim.</p>
+                        <CTAs />
+                    </div>
+                </div>
+            </section>
+
             {/* Süreç */}
-            <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-20" aria-labelledby="surec">
+            <section className="py-12 md:py-20" aria-labelledby="surec">
                 <div className="container mx-auto max-w-5xl px-4">
                     <h2 id="surec" className={`${H2} mb-8 text-center`}>Nasıl çalışıyoruz?</h2>
                     <ol className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -221,7 +248,7 @@ export default function IzmirKiraAvukatiPage() {
             </section>
 
             {/* Belgeler + Form */}
-            <section className="py-12 md:py-20">
+            <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-20">
                 <div className="container mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
                     <div aria-labelledby="belgeler">
                         <h2 id="belgeler" className={`${H2} mb-5`}>Görüşmeye gelirken hazırlayın</h2>
@@ -251,7 +278,7 @@ export default function IzmirKiraAvukatiPage() {
                             <li className="flex gap-3"><Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Pazartesi - Cuma: 09:00 - 18:00</li>
                             <li className="flex gap-3"><ShieldCheck className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Av. Mert Kağan Çetin · İzmir Barosu Sicil No: 15556</li>
                         </ul>
-                        <p className="mt-4 text-slate-700">Hizmet bölgesi: İzmir (tüm ilçeler), Manisa ve Aydın.</p>
+                        <p className="mt-4 text-slate-700">Hizmet bölgesi: İzmir&apos;in tüm ilçeleri (Bayraklı, Bornova, Karşıyaka, Buca, Konak ve diğerleri).</p>
                     </div>
                     <div className="overflow-hidden rounded-xl border border-slate-200">
                         <iframe
