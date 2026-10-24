@@ -30,9 +30,9 @@ export function Hero() {
 
                     <div className="space-y-6">
                         <h1 className="text-5xl md:text-8xl font-serif font-bold text-primary leading-[1.05] tracking-tight">
-                            İzmir
+                            İzmir Avukat
                             <br />
-                            <span className="text-secondary italic">Kira Avukatı</span>
+                            <span className="text-secondary italic text-4xl md:text-6xl">Av. Mert Kağan Çetin</span>
                         </h1>
 
                         <div
@@ -44,10 +44,16 @@ export function Hero() {
                                 kira borcu icra takibi ve kira sözleşmesi konularında İzmir genelinde
                                 avukatlık ve hukuki danışmanlık hizmeti verir.
                             </p>
-                            <p className="mt-5 text-base md:text-lg text-primary">
-                                Kira ve tahliye davaları için:{" "}
-                                <Link href="/izmir-kira-avukati/" className="font-semibold text-secondary underline underline-offset-4 hover:text-primary">İzmir kira avukatı</Link>
-                            </p>
+                            <Link
+                                href="/izmir-kira-avukati/"
+                                className="mt-6 inline-flex items-center gap-3 rounded-sm border-2 border-secondary bg-white px-6 py-4 text-left shadow-md transition-colors hover:bg-secondary/5"
+                            >
+                                <span>
+                                    <span className="block text-xs uppercase tracking-widest text-muted-foreground">Kira ve tahliye davaları</span>
+                                    <span className="block font-serif text-xl md:text-2xl font-bold text-primary">İzmir kira avukatı</span>
+                                </span>
+                                <span aria-hidden="true" className="text-2xl text-secondary">→</span>
+                            </Link>
                         </div>
                     </div>
 
