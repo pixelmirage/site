@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, MapPin, ChevronRight, Home, MessageCircle, Clock, FileText, ShieldCheck } from "lucide-react";
+import { Phone, MapPin, ChevronRight, Home, MessageCircle, Clock, FileText, ShieldCheck, Scale, BookOpen, UserCheck } from "lucide-react";
 import { SituationPicker } from "@/components/kira-landing/SituationPicker";
 import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -176,8 +176,34 @@ export default function IzmirKiraAvukatiPage() {
                 </div>
             </section>
 
+
+            {/* Neden */}
+            <section className="py-12 md:py-20" aria-labelledby="neden">
+                <div className="container mx-auto max-w-5xl px-4">
+                    <h2 id="neden" className={`${H2} mb-8 text-center`}>Neden Av. Mert Kağan Çetin ile çalışmalısınız?</h2>
+                    <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <li className="flex gap-4 rounded-xl border border-slate-200 p-5">
+                            <Scale className="h-7 w-7 flex-shrink-0 text-secondary" aria-hidden="true" />
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Kira uyuşmazlıklarına odaklı çalışma</h3><p className="text-slate-700">Çalışmalarımın ağırlıklı kısmını kira hukuku oluşturur. Tahliye, kira tespit, kira uyarlama ve kira alacağı dosyalarında sürecin her aşamasını ve dikkat edilmesi gereken usul kurallarını yakından takip ederim.</p></div>
+                        </li>
+                        <li className="flex gap-4 rounded-xl border border-slate-200 p-5">
+                            <FileText className="h-7 w-7 flex-shrink-0 text-secondary" aria-hidden="true" />
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Dosyanıza özel strateji</h3><p className="text-slate-700">Her dosyada önce sözleşmeyi, ihtarları ve süreleri incelerim. Hak kaybına yol açabilecek süre ve usul hatalarını baştan tespit eder, dosyanız için net bir yol haritası çıkarırım.</p></div>
+                        </li>
+                        <li className="flex gap-4 rounded-xl border border-slate-200 p-5">
+                            <BookOpen className="h-7 w-7 flex-shrink-0 text-secondary" aria-hidden="true" />
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Güncel içtihada dayalı değerlendirme</h3><p className="text-slate-700">Hukuki değerlendirmelerimi Yargıtay ve Bölge Adliye Mahkemelerinin güncel kira kararlarına dayandırırım; böylece dosyanız mahkemelerin bugün uyguladığı ölçütlere göre hazırlanır.</p></div>
+                        </li>
+                        <li className="flex gap-4 rounded-xl border border-slate-200 p-5">
+                            <UserCheck className="h-7 w-7 flex-shrink-0 text-secondary" aria-hidden="true" />
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Bizzat takip, açık iletişim</h3><p className="text-slate-700">Dosyanızla doğrudan ben ilgilenirim. Her aşamada ne yapıldığını, sıradaki adımı ve olası sonuçları size açıkça bildiririm.</p></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
             {/* Süreç */}
-            <section className="py-12 md:py-20" aria-labelledby="surec">
+            <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-20" aria-labelledby="surec">
                 <div className="container mx-auto max-w-5xl px-4">
                     <h2 id="surec" className={`${H2} mb-8 text-center`}>Nasıl çalışıyoruz?</h2>
                     <ol className="grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -195,7 +221,7 @@ export default function IzmirKiraAvukatiPage() {
             </section>
 
             {/* Belgeler + Form */}
-            <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-20">
+            <section className="py-12 md:py-20">
                 <div className="container mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
                     <div aria-labelledby="belgeler">
                         <h2 id="belgeler" className={`${H2} mb-5`}>Görüşmeye gelirken hazırlayın</h2>

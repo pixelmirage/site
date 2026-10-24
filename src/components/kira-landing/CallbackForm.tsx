@@ -41,7 +41,7 @@ export function CallbackForm() {
             </div>
             <label className="flex items-start gap-3 text-sm text-slate-700">
                 <input type="checkbox" name="kvkk-onay" value="evet" required className="mt-1 h-5 w-5 flex-shrink-0 accent-primary" />
-                <span>Kişisel verilerimin (ad, telefon, not) yalnızca geri arama amacıyla 6698 sayılı KVKK kapsamında işlenmesini kabul ediyorum.</span>
+                <span><a href="/kvkk-aydinlatma-metni/" target="_blank" className="underline hover:text-secondary">KVKK Aydınlatma Metni</a>&apos;ni okudum; kişisel verilerimin (ad, telefon, not) geri arama amacıyla işlenmesini kabul ediyorum.</span>
             </label>
             <button type="submit" className="h-12 w-full rounded-lg bg-primary text-base font-bold text-white hover:bg-primary/90">Geri Arama İste</button>
         </form>
