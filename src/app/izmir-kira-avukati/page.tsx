@@ -1,14 +1,15 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, MapPin, ChevronRight, Home, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Phone, MapPin, ChevronRight, Home, MessageCircle, Clock, FileText, ShieldCheck } from "lucide-react";
+import { SituationPicker } from "@/components/kira-landing/SituationPicker";
+import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 
 const pageTitle = "İzmir Kira Avukatı | Tahliye ve Kira Davaları";
 const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir, Manisa, Aydın. Tel: 0544 585 46 45";
 const PHONE = "tel:+905445854645";
-const WHATSAPP = "https://wa.me/905445854645";
+const WHATSAPP = `https://wa.me/905445854645?text=${encodeURIComponent("Merhaba, kira konusunda görüşmek istiyorum.")}`;
 
 export const metadata: Metadata = {
     title: { absolute: pageTitle },
@@ -41,34 +42,48 @@ const services = [
 ];
 
 const steps = [
-    { title: "Telefonla ön görüşme", desc: "Durumunuzu telefonda dinliyor, hangi yolların açık olduğunu konuşuyoruz." },
-    { title: "Belge inceleme", desc: "Kira sözleşmesi, ihtarname, taahhütname ve ödeme kayıtlarını birlikte inceliyoruz." },
-    { title: "Süreç takibi", desc: "Arabuluculuk, dava veya icra aşamalarını takip ediyor, her adımda sizi bilgilendiriyoruz." },
+    { title: "Telefonla ön görüşme", desc: "Durumu telefonda dinliyor, izlenebilecek yolları konuşuyoruz." },
+    { title: "Belge inceleme", desc: "Sözleşme, ihtarname ve ödeme kayıtlarını birlikte inceliyoruz." },
+    { title: "Süreç takibi", desc: "Arabuluculuk, dava veya icra aşamalarını takip ediyor, sizi bilgilendiriyoruz." },
+];
+
+const documents = [
+    "Kira sözleşmesi (yazılı değilse, kira ilişkisini gösteren yazışmalar)",
+    "Kira ödeme dekontları",
+    "Gönderilen veya alınan ihtarnameler, bildirimler",
+    "Varsa tahliye taahhütnamesi",
+    "Tapu bilgisi (ev sahibiyseniz) veya satış bilgisi (ev satıldıysa)",
+    "Depozito ödemesini gösteren belge",
 ];
 
 const faqs = [
-    { question: "Size nasıl ulaşabilirim?", answer: "Ön görüşmeler telefonla yapılır: 0544 585 46 45. WhatsApp üzerinden de yazabilirsiniz. Ofis Bayraklı/İzmir'dedir; yüz yüze görüşme randevuyla yapılır." },
-    { question: "Hangi şehirlerde kira davalarını takip ediyorsunuz?", answer: "İzmir'in tüm ilçeleri ile Manisa ve Aydın'daki kira davaları ve icra takipleri takip edilir." },
-    { question: "Görüşmeye hangi belgeleri getirmeliyim?", answer: "Kira sözleşmesi, varsa tahliye taahhütnamesi, gönderilen veya alınan ihtarnameler, kira ödeme dekontları ve tapu bilgisi. Elinizde olmayan belge görüşmeye engel değildir." },
-    { question: "Kiraya veren ve kiracı olarak başvurabilir miyim?", answer: "Evet. Hem kiraya verenler hem kiracılar için tahliye, kira bedeli, depozito ve sözleşme uyuşmazlıklarında hizmet verilir." },
+    { question: "Size nasıl ulaşabilirim?", answer: "Telefonla (0544 585 46 45) veya WhatsApp üzerinden ulaşabilirsiniz. Sayfadaki formu doldurursanız sizi geri ararız. Ön görüşme telefonla yapılır." },
+    { question: "Hangi şehirlerdeki kira davalarını takip ediyorsunuz?", answer: "İzmir'in tüm ilçeleri ile Manisa ve Aydın'daki kira davaları ve icra takipleri takip edilir." },
+    { question: "Görüşmeye hangi belgelerle gelmeliyim?", answer: "Kira sözleşmesi, ödeme dekontları, ihtarnameler ve varsa tahliye taahhütnamesi yeterlidir. Elinizde olmayan belge ön görüşmeye engel değildir." },
+    { question: "Ofise gelmem gerekiyor mu?", answer: "Ön görüşme telefonla yapılır. Belgeler WhatsApp veya e-posta ile iletilebilir; yüz yüze görüşme Bayraklı'daki ofiste randevuyla yapılır." },
 ];
 
-function CallButtons({ light = false }: { light?: boolean }) {
+const btnPrimary = "inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-secondary px-6 text-lg font-bold text-white shadow-lg hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
+const btnWa = "inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-[#1f8f4e] px-6 text-lg font-bold text-white hover:bg-[#1a7a43]";
+
+function CTAs() {
     return (
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white gap-2 text-lg" asChild>
-                <a href={PHONE}><Phone className="w-5 h-5" />0544 585 46 45</a>
-            </Button>
-            <Button size="lg" variant="outline" className={light ? "border-primary text-primary hover:bg-primary hover:text-white gap-2" : "!bg-transparent border-white text-white hover:bg-white hover:text-slate-900 gap-2"} asChild>
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>
-            </Button>
+        <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+            <a href={PHONE} className={btnPrimary} aria-label="Telefonla görüşme: 0544 585 46 45">
+                <Phone className="h-5 w-5" aria-hidden="true" /> Telefonla Görüşme
+            </a>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className={btnWa}>
+                <MessageCircle className="h-5 w-5" aria-hidden="true" /> WhatsApp ile Yazın
+            </a>
         </div>
     );
 }
 
+const H2 = "text-2xl md:text-4xl font-playfair font-bold text-primary";
+
 export default function IzmirKiraAvukatiPage() {
     return (
-        <div className="bg-white">
+        <div className="bg-white pb-16 lg:pb-0">
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
@@ -115,126 +130,152 @@ export default function IzmirKiraAvukatiPage() {
                 }) }}
             />
 
+
             {/* Hero */}
-            <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24">
-                <div className="container mx-auto px-4">
-                    <nav className="flex items-center gap-2 text-sm text-slate-300 mb-8">
-                        <Link href="/" className="hover:text-white transition-colors flex items-center gap-1">
-                            <Home className="w-4 h-4" />
-                            Ana Sayfa
-                        </Link>
-                        <ChevronRight className="w-4 h-4" />
-                        <span className="text-secondary">İzmir Kira Avukatı</span>
+            <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+                <div className="container mx-auto px-4 pt-6 pb-12 md:pt-8 md:pb-20">
+                    <nav aria-label="Breadcrumb" className="mb-8 flex items-center gap-2 text-sm text-slate-300">
+                        <Link href="/" className="flex items-center gap-1 hover:text-white"><Home className="h-4 w-4" aria-hidden="true" />Ana Sayfa</Link>
+                        <ChevronRight className="h-4 w-4" aria-hidden="true" />
+                        <span className="text-secondary" aria-current="page">İzmir Kira Avukatı</span>
                     </nav>
-                    <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
-                        <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-5 leading-tight">İzmir Kira Avukatı</h1>
-                        <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
-                            Kiraya verenler ve kiracılar için tahliye, kira bedeli ve kira alacağı uyuşmazlıklarında dava ve icra takibi. Ön görüşme telefonla yapılır.
+                    <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+                        <h1 className="mb-4 font-playfair text-4xl font-bold leading-tight md:text-6xl">İzmir Kira Avukatı</h1>
+                        <p className="mb-8 text-lg leading-relaxed text-slate-300 md:text-2xl">
+                            Ev sahibi ve kiracılar için tahliye, kira bedeli ve kira alacağı uyuşmazlıklarında dava ve icra takibi.
                         </p>
-                        <CallButtons />
-                        <p className="mt-6 text-sm text-slate-400 flex flex-wrap justify-center gap-x-3 gap-y-1">
-                            <span>Av. Mert Kağan Çetin</span>
-                            <span aria-hidden="true">·</span>
-                            <span>İzmir Barosu Sicil No: 15556</span>
-                            <span aria-hidden="true">·</span>
-                            <span>Bayraklı/İzmir</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Hizmetler */}
-            <section className="py-14 md:py-20">
-                <div className="container mx-auto px-4 max-w-5xl">
-                    <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary text-center mb-3">Kira Hukuku Hizmetleri</h2>
-                    <p className="text-center text-slate-600 mb-10">Kiraya veren ve kiracı tarafında takip edilen işler</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        {services.map((s) => (
-                            <div key={s.name} className="flex gap-3 p-5 bg-slate-50 border border-slate-200 rounded-xl">
-                                <Check className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
-                                <div>
-                                    <h3 className="font-bold text-primary">{s.name}</h3>
-                                    <p className="text-slate-700">{s.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Nasıl çalışıyoruz */}
-            <section className="py-14 md:py-20 bg-slate-50 border-y border-slate-200">
-                <div className="container mx-auto px-4 max-w-5xl">
-                    <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary text-center mb-10">Nasıl Çalışıyoruz?</h2>
-                    <ol className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {steps.map((s, i) => (
-                            <li key={s.title} className="bg-white rounded-xl border border-slate-200 p-6">
-                                <span className="inline-flex w-10 h-10 items-center justify-center rounded-full bg-primary text-white font-bold mb-4">{i + 1}</span>
-                                <h3 className="font-bold text-primary text-lg mb-2">{s.title}</h3>
-                                <p className="text-slate-700">{s.desc}</p>
-                            </li>
-                        ))}
-                    </ol>
-                    <div className="mt-10"><CallButtons light /></div>
-                </div>
-            </section>
-
-            {/* Hizmet bölgesi ve ofis */}
-            <section className="py-14 md:py-20">
-                <div className="container mx-auto px-4 max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h2 className="text-2xl md:text-3xl font-playfair font-bold text-primary mb-4">Hizmet Bölgesi</h2>
-                        <p className="text-slate-700 text-lg">İzmir (tüm ilçeler), Manisa ve Aydın&apos;daki kira davaları ve icra takipleri.</p>
-                    </div>
-                    <div>
-                        <h2 className="text-2xl md:text-3xl font-playfair font-bold text-primary mb-4">Ofis</h2>
-                        <ul className="space-y-2 text-slate-700 text-lg">
-                            <li className="flex gap-2"><MapPin className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
-                            <li className="flex gap-2"><Phone className="w-5 h-5 text-secondary mt-1 flex-shrink-0" /><a href={PHONE} className="font-bold text-primary hover:text-secondary">0544 585 46 45</a></li>
-                            <li>Av. Mert Kağan Çetin · İzmir Barosu Sicil No: 15556</li>
+                        <CTAs />
+                        <ul className="mt-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-slate-300">
+                            <li className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-secondary" aria-hidden="true" />İzmir Barosu · Sicil 15556</li>
+                            <li className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-secondary" aria-hidden="true" />Bayraklı ofis</li>
+                            <li>İzmir · Manisa · Aydın</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
+            {/* Durumunuzu seçin */}
+            <section className="py-12 md:py-20" aria-labelledby="durum">
+                <div className="container mx-auto max-w-4xl px-4">
+                    <h2 id="durum" className={`${H2} mb-2 text-center`}>Durumunuzu seçin</h2>
+                    <p className="mb-8 text-center text-slate-600">Size uyan durumu seçin, telefonla veya WhatsApp üzerinden ulaşın.</p>
+                    <SituationPicker />
+                </div>
+            </section>
+
+            {/* Hizmetler */}
+            <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-16" aria-labelledby="hizmetler">
+                <div className="container mx-auto max-w-4xl px-4">
+                    <h2 id="hizmetler" className={`${H2} mb-6 text-center`}>Takip edilen işler</h2>
+                    <ul className="flex flex-wrap justify-center gap-2">
+                        {services.map((s) => (
+                            <li key={s.name} className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-primary">{s.name}</li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+
+            {/* Süreç */}
+            <section className="py-12 md:py-20" aria-labelledby="surec">
+                <div className="container mx-auto max-w-5xl px-4">
+                    <h2 id="surec" className={`${H2} mb-8 text-center`}>Nasıl çalışıyoruz?</h2>
+                    <ol className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        {steps.map((s, i) => (
+                            <li key={s.title} className="flex gap-4 rounded-xl border border-slate-200 p-5 md:flex-col">
+                                <span className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary font-bold text-white" aria-hidden="true">{i + 1}</span>
+                                <div>
+                                    <h3 className="mb-1 text-lg font-bold text-primary">{s.title}</h3>
+                                    <p className="text-slate-700">{s.desc}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ol>
+                </div>
+            </section>
+
+            {/* Belgeler + Form */}
+            <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-20">
+                <div className="container mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
+                    <div aria-labelledby="belgeler">
+                        <h2 id="belgeler" className={`${H2} mb-5`}>Görüşmeye gelirken hazırlayın</h2>
+                        <ul className="space-y-3">
+                            {documents.map((d) => (
+                                <li key={d} className="flex gap-3 text-slate-700"><FileText className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />{d}</li>
+                            ))}
+                        </ul>
+                        <p className="mt-4 text-sm text-slate-600">Hepsi elinizde olmasa da ön görüşme yapılabilir.</p>
+                    </div>
+                    <div id="geri-arama" className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-7" aria-labelledby="form-baslik">
+                        <h2 id="form-baslik" className="mb-1 font-playfair text-2xl font-bold text-primary">Sizi arayalım</h2>
+                        <p className="mb-5 text-slate-600">Bilgilerinizi bırakın, çalışma saatleri içinde dönüş yapılır.</p>
+                        <CallbackForm />
+                    </div>
+                </div>
+            </section>
+
+            {/* Ofis */}
+            <section className="py-12 md:py-20" aria-labelledby="ofis">
+                <div className="container mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2">
+                    <div>
+                        <h2 id="ofis" className={`${H2} mb-5`}>Ofis</h2>
+                        <ul className="space-y-3 text-slate-700">
+                            <li className="flex gap-3"><MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
+                            <li className="flex gap-3"><Phone className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" /><a href={PHONE} className="font-bold text-primary hover:text-secondary">0544 585 46 45</a></li>
+                            <li className="flex gap-3"><Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Pazartesi - Cuma: 09:00 - 18:00</li>
+                            <li className="flex gap-3"><ShieldCheck className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Av. Mert Kağan Çetin · İzmir Barosu Sicil No: 15556</li>
+                        </ul>
+                        <p className="mt-4 text-slate-700">Hizmet bölgesi: İzmir (tüm ilçeler), Manisa ve Aydın.</p>
+                    </div>
+                    <div className="overflow-hidden rounded-xl border border-slate-200">
+                        <iframe
+                            title="Ofis konumu – Dedemhan Plaza, Bayraklı/İzmir"
+                            src="https://www.google.com/maps?q=Dedemhan+Plaza,+Mansuro%C4%9Flu+Mah.+286%2F3+Sk.,+Bayrakl%C4%B1,+%C4%B0zmir&output=embed"
+                            className="block h-64 w-full border-0 md:h-full md:min-h-72"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* SSS */}
-            <section className="py-14 md:py-20 bg-slate-50 border-t border-slate-200">
-                <div className="container mx-auto px-4 max-w-3xl">
-                    <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary text-center mb-8">Sık Sorulan Sorular</h2>
-                    <div className="space-y-4">
+            <section className="border-t border-slate-200 bg-slate-50 py-12 md:py-20" aria-labelledby="sss">
+                <div className="container mx-auto max-w-3xl px-4">
+                    <h2 id="sss" className={`${H2} mb-6 text-center`}>Sık sorulan sorular</h2>
+                    <div className="space-y-3">
                         {faqs.map((f) => (
-                            <div key={f.question} className="rounded-xl border border-slate-200 bg-white px-5 py-4 md:px-6 md:py-5 shadow-sm">
-                                <h3 className="font-serif text-base md:text-lg font-bold leading-snug text-primary">{f.question}</h3>
-                                <p className="mt-2 text-[0.95rem] md:text-base leading-7 text-slate-600">{f.answer}</p>
-                            </div>
+                            <details key={f.question} className="group rounded-xl border border-slate-200 bg-white px-5 py-4">
+                                <summary className="cursor-pointer list-none font-bold text-primary marker:hidden">{f.question}</summary>
+                                <p className="mt-2 leading-7 text-slate-600">{f.answer}</p>
+                            </details>
                         ))}
                     </div>
                 </div>
             </section>
 
             {/* Son CTA */}
-            <section className="bg-gradient-to-br from-primary to-slate-800 text-white py-14 md:py-16">
-                <div className="container mx-auto px-4 max-w-3xl text-center">
-                    <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">Kira uyuşmazlığınızı telefonla görüşelim</h2>
-                    <p className="text-slate-300 mb-8">Ön görüşme telefonla yapılır; belgeler sonrasında birlikte incelenir.</p>
-                    <CallButtons />
+            <section className="bg-gradient-to-br from-primary to-slate-800 py-12 text-white md:py-16">
+                <div className="container mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
+                    <h2 className="mb-3 font-playfair text-2xl font-bold md:text-4xl">Kira uyuşmazlığınızı telefonla görüşelim</h2>
+                    <p className="mb-8 text-slate-300">Ön görüşme telefonla yapılır; belgeler sonrasında birlikte incelenir.</p>
+                    <CTAs />
                 </div>
             </section>
 
             {/* İlgili yazılar */}
-            <section className="py-10">
-                <div className="container mx-auto px-4 max-w-3xl">
-                    <p className="text-lg font-playfair font-bold text-primary mb-3">İlgili yazılar</p>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-slate-700">
-                        <li><Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className="hover:text-secondary underline-offset-2 hover:underline">Kiracı tahliye davası</Link></li>
-                        <li><Link href="/tahliye-taahhutnamesi/" className="hover:text-secondary underline-offset-2 hover:underline">Tahliye taahhütnamesi</Link></li>
-                        <li><Link href="/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/" className="hover:text-secondary underline-offset-2 hover:underline">İhtiyaç nedeniyle tahliye</Link></li>
-                        <li><Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className="hover:text-secondary underline-offset-2 hover:underline">İki haklı ihtar ile tahliye</Link></li>
-                        <li><Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/" className="hover:text-secondary underline-offset-2 hover:underline">Kira tespit davası ne zaman açılır?</Link></li>
-                        <li><Link href="/blog/" className="hover:text-secondary underline-offset-2 hover:underline">Tüm kira hukuku yazıları</Link></li>
-                    </ul>
-                </div>
-            </section>
+            <nav aria-label="İlgili yazılar" className="container mx-auto max-w-4xl px-4 py-8 text-sm">
+                <span className="mr-2 font-bold text-primary">İlgili yazılar:</span>
+                {[
+                    ["Kiracı tahliye davası", "/izmir-kira-avukati/kiraci-tahliye-davasi/"],
+                    ["Tahliye taahhütnamesi", "/tahliye-taahhutnamesi/"],
+                    ["İhtiyaç nedeniyle tahliye", "/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye/"],
+                    ["Kira tespit davası", "/izmir-kira-avukati/kira-tespit-davasi/"],
+                    ["Kira borcu icra", "/izmir-kira-avukati/kira-borcu-icra/"],
+                    ["Blog", "/blog/"],
+                ].map(([t, u], i) => (
+                    <span key={u}>{i > 0 && <span className="mx-1 text-slate-400" aria-hidden="true">·</span>}<Link href={u} className="text-slate-700 underline-offset-2 hover:text-secondary hover:underline">{t}</Link></span>
+                ))}
+            </nav>
         </div>
     );
 }
