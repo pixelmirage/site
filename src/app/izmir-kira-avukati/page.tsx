@@ -61,9 +61,10 @@ const faqs = [
     { question: "Hangi şehirlerdeki kira davalarını takip ediyorsunuz?", answer: "İzmir'in tüm ilçeleri ile Manisa ve Aydın'daki kira davaları ve icra takipleri takip edilir." },
     { question: "Görüşmeye hangi belgelerle gelmeliyim?", answer: "Kira sözleşmesi, ödeme dekontları, ihtarnameler ve varsa tahliye taahhütnamesi yeterlidir. Elinizde olmayan belge ön görüşmeye engel değildir." },
     { question: "Ofise gelmem gerekiyor mu?", answer: "Ön görüşme telefonla yapılır. Belgeler WhatsApp veya e-posta ile iletilebilir; yüz yüze görüşme Bayraklı'daki ofiste randevuyla yapılır." },
+    { question: "İzmir kira avukatı ücreti ne kadar?", answer: "Avukatlık ücreti; davanın veya takibin türüne, dosyanın kapsamına ve yapılacak işlemlere göre belirlenir ve Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Dosyanızla ilgili ücret ve masraf bilgisini telefonla ön görüşmede, belgelerinizi inceledikten sonra açıkça paylaşırım." },
 ];
 
-const btnPrimary = "inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-secondary px-6 text-lg font-bold text-white shadow-lg hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
+const btnPrimary = "inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-white px-6 text-lg font-bold text-primary shadow-lg hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
 const btnWa = "inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-[#1f8f4e] px-6 text-lg font-bold text-white hover:bg-[#1a7a43]";
 
 function CTAs() {
