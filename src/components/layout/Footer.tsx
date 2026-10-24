@@ -58,6 +58,8 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-border/50">
                     <p className="text-[10px] text-muted-foreground uppercase tracking-widest">
                         © {new Date().getFullYear()} Mert Kağan Çetin Hukuk Bürosu. Tüm hakları saklıdır.
+                        <span aria-hidden="true"> · </span>
+                        <Link href="/kvkk-aydinlatma-metni/" className="hover:text-primary underline-offset-2 hover:underline">KVKK Aydınlatma Metni</Link>
                     </p>
                     <div className="flex items-center gap-8">
                         <a
