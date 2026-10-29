@@ -7,15 +7,15 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-    title: "İletişim | İzmir Hukuk Bürosu",
-    description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında çalışan hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+    title: "İletişim | İzmir Kira Avukatı",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin iletişim bilgileri: 0544 585 46 45, Dedemhan Plaza D:17 Bayraklı/İzmir. Ön görüşme telefonla yapılabilir.",
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "İletişim | Av. Mert Kağan Çetin Hukuk Bürosu",
-        description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında çalışan hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+        title: "İletişim | İzmir Kira Avukatı Av. Mert Kağan Çetin",
+        description: "İzmir kira avukatı Av. Mert Kağan Çetin iletişim bilgileri: 0544 585 46 45, Dedemhan Plaza D:17 Bayraklı/İzmir. Ön görüşme telefonla yapılabilir.",
         url: "https://mertkagancetin.com/iletisim/",
     },
 };
@@ -25,7 +25,7 @@ export default function ContactPage() {
         <div className="bg-white">
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                     { name: "İletişim", url: "https://mertkagancetin.com/iletisim/" },
                 ]}
             />

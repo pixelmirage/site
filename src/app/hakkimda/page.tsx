@@ -8,15 +8,15 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata: Metadata = {
-    title: "Hakkımda | İzmir Avukat Profili",
-    description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık.",
+    title: "Hakkımda | İzmir Kira Avukatı",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin: İzmir Barosu Sicil No 15556. Ev sahibi ve kiracı uyuşmazlıklarında tahliye, kira tespit ve icra takibi.",
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Hakkımda | İzmir Avukat Profili | Av. Mert Kağan Çetin",
-        description: "İzmir avukatı Mert Kağan Çetin'in mesleki geçmişi ve çalışma alanları. Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık.",
+        title: "Hakkımda | İzmir Kira Avukatı Av. Mert Kağan Çetin",
+        description: "İzmir kira avukatı Av. Mert Kağan Çetin: İzmir Barosu Sicil No 15556. Ev sahibi ve kiracı uyuşmazlıklarında tahliye, kira tespit ve icra takibi.",
         url: "https://mertkagancetin.com/hakkimda/",
     },
 };
@@ -26,17 +26,17 @@ export default function AboutPage() {
         <div className="bg-white">
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                     { name: "Hakkımda", url: "https://mertkagancetin.com/hakkimda/" },
                 ]}
             />
-            <PersonSchema knowsAbout={["Kira Hukuku", "İş Hukuku", "Boşanma Hukuku", "Tazminat Hukuku", "Gayrimenkul Hukuku", "Aile Hukuku", "Kiracı Tahliye Davaları", "İşe İade Davası", "Velayet Davası", "Trafik Kazası Tazminatı"]} />
+            <PersonSchema knowsAbout={["Kira Hukuku", "Kiracı Tahliye Davası", "Kira Tespit Davası", "Kira Uyarlama Davası", "Kira Alacağı İcra Takibi", "Tahliye Taahhütnamesi", "Kira Sözleşmesi", "Kira Arabuluculuğu"]} />
             {/* Page Header */}
             <section className="bg-slate-50 py-20 border-b border-slate-200">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hakkımda</h1>
                     <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                        İzmir'de kira, iş, boşanma ve tazminat hukuku alanlarında hizmet veren Mert Kağan Çetin Hukuk Bürosu'nu yakından tanıyın.
+                        İzmir'de ev sahibi ve kiracı uyuşmazlıklarına odaklanan Av. Mert Kağan Çetin hakkında bilgi.
                     </p>
                 </div>
             </section>
@@ -50,19 +50,19 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    Avukat Mert Kağan Çetin, İzmir Bayraklı'da faaliyet gösteren hukuk bürosunun kurucusudur. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">Kira hukuku</Link>, <Link href="/izmir-is-avukati/" className="text-secondary hover:underline">iş hukuku</Link>, <Link href="/izmir-bosanma-avukati/" className="text-secondary hover:underline">boşanma hukuku</Link> ve <Link href="/izmir-tazminat-avukati/" className="text-secondary hover:underline">tazminat hukuku</Link> alanlarında çalışmaktadır.
+                                    Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı (Sicil No: 15556) ve Bayraklı&apos;da ofisi bulunan avukattır. Çalışmalarını <Link href="/" className="text-secondary hover:underline">İzmir&apos;deki kira uyuşmazlıklarına</Link> odaklamıştır: <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary hover:underline">kiracı tahliye davası</Link>, <Link href="/izmir-kira-tespit-davasi-avukati/" className="text-secondary hover:underline">kira tespit davası</Link>, <Link href="/izmir-kira-uyarlama-davasi-avukati/" className="text-secondary hover:underline">kira uyarlama davası</Link>, <Link href="/izmir-kira-alacagi-icra-takibi-avukati/" className="text-secondary hover:underline">kira alacağı icra takibi</Link>, <Link href="/izmir-tahliye-taahhudu-icra-avukati/" className="text-secondary hover:underline">tahliye taahhüdüne dayalı icra</Link>, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">kira sözleşmesi</Link> ve <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary hover:underline">kira arabuluculuğu</Link>.
                                 </p>
                                 <p>
-                                    Müvekkillerine yalnızca mahkeme süreçlerinde değil, dava öncesi danışmanlık aşamasında da yol göstermektedir. Uyuşmazlığın çözümünde arabuluculuk ve müzakere yöntemlerini de aktif olarak kullanmaktadır.
+                                    Ev sahibi ve kiracı tarafında; dava öncesi ihtar ve sözleşme incelemesinden zorunlu arabuluculuğa, sulh hukuk mahkemesindeki yargılamadan icra takibine kadar süreç takip edilir. Ön görüşme telefonla yapılabilir.
                                 </p>
                                 <blockquote className="border-l-4 border-secondary pl-6 py-2 italic text-primary font-medium bg-secondary/5 rounded-r-lg">
                                     "Hukuk teknik bir alan olabilir; ancak müvekkilin kendi davasını anlaması bir lütuf değil, hakkıdır."
                                 </blockquote>
                                 <p>
-                                    Çetin, İzmir&apos;deki yargılama süreçlerini ve güncel Yargıtay kararlarını yakından takip etmektedir.
+                                    İzmir&apos;deki kira yargılamaları, Türk Borçlar Kanunu&apos;nun kira hükümleri ve güncel Yargıtay kararları yakından takip edilmektedir.
                                 </p>
                                 <p>
-                                    Hukuki süreçleri herkesin anlayabileceği şekilde açıkladığı <a href="https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">YouTube kanalını</a> takip ederek kira, iş ve aile hukuku konularında kısa bilgilendirme videolarına ulaşabilirsiniz.
+                                    Hukuki süreçleri herkesin anlayabileceği şekilde açıkladığı <a href="https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">YouTube kanalını</a> takip ederek kira hukuku konularında kısa bilgilendirme videolarına ulaşabilirsiniz.
                                 </p>
                             </div>
 
@@ -88,7 +88,7 @@ export default function AboutPage() {
                                         <h3 className="font-bold text-primary">Vizyonumuz</h3>
                                     </div>
                                     <p className="text-sm text-muted-foreground">
-                                        Müvekkillerimize her aşamada şeffaf bilgi vererek, hukuki süreci anlaşılır kılmak.
+                                        Ev sahibi ve kiracılara her aşamada açık bilgi vererek kira uyuşmazlıklarındaki hukuki süreci anlaşılır kılmak.
                                     </p>
                                 </div>
                             </div>
@@ -107,18 +107,18 @@ export default function AboutPage() {
                                 <CardContent className="p-8 space-y-8">
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-center border-b pb-4">
-                                            <span className="text-muted-foreground">Çalışma Alanları</span>
-                                            <span className="font-bold text-primary text-right">Kira, İş, Aile, Tazminat</span>
+                                            <span className="text-muted-foreground">Çalışma Alanı</span>
+                                            <span className="font-bold text-primary text-right">Kira Hukuku</span>
                                         </div>
                                     </div>
 
                                     <div className="space-y-4">
-                                                        <h4 className="font-bold text-primary text-sm uppercase tracking-widest">Neden Bizi Seçmelisiniz?</h4>
+                                        <h4 className="font-bold text-primary text-sm uppercase tracking-widest">Çalışma Şekli</h4>
                                         {[
-                                            "Birebir İletişim",
-                                            "Süreç Hakkında Düzenli Bilgilendirme",
-                                            "Şeffaf Ücret Politikası",
-                                            "Hızlı Geri Dönüş"
+                                            "Telefonla ön görüşme",
+                                            "Dosyanın avukat tarafından takibi",
+                                            "Süreç hakkında düzenli bilgilendirme",
+                                            "Bayraklı ofis, İzmir geneli"
                                         ].map((item, i) => (
                                             <div key={i} className="flex items-center gap-2 text-sm">
                                                 <CheckCircle2 className="w-4 h-4 text-secondary" />
@@ -128,7 +128,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <Button className="w-full bg-primary text-white hover:bg-primary/90" asChild>
-                                        <Link href="/iletisim/">İletişime Geçin</Link>
+                                        <a href="tel:+905445854645">Ara: 0544 585 46 45</a>
                                     </Button>
                                 </CardContent>
                             </Card>
@@ -142,24 +142,24 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Mesleki İlkelerimiz</h2>
-                        <p className="text-muted-foreground">Güveniniz, bizim en büyük sorumluluğumuzdur.</p>
+                        <p className="text-muted-foreground">Kira uyuşmazlıklarında avukatlık meslek kurallarına bağlı çalışılır.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
                             {
                                 title: "Dürüstlük & Şeffaflık",
-                                desc: "Müvekkilimize davanın seyrine dair her türlü ihtimali dürüstçe açıklar, gerçekleşmeyecek vaatlerde bulunmayız.",
+                                desc: "Davanın seyrine dair olası sonuçlar açıkça anlatılır; sonuç vaadinde bulunulmaz.",
                                 icon: Scale
                             },
                             {
                                 title: "Gizlilik",
-                                desc: "Müvekkil bilgilerini ve ticari sırlarını en üst düzeyde korur, profesyonel etik standartlarına sıkı sıkıya bağlı kalırız.",
+                                desc: "Müvekkil bilgileri ve belgeler avukatlık sır saklama yükümlülüğü kapsamında korunur.",
                                 icon: ShieldCheck
                             },
                             {
                                 title: "Odaklı Çalışma",
-                                desc: "Belirli hukuk alanlarına odaklanarak her dosyayı yakından takip ederiz.",
+                                desc: "Yalnızca kira hukukuna odaklanılarak her dosya yakından takip edilir.",
                                 icon: Award
                             }
                         ].map((item, i) => (

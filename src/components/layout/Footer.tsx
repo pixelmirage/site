@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
-import { kiraHub, kiraLinks, kiraTools, otherAreas } from "@/lib/nav";
+import { kiraHub, kiraLinks, kiraTools } from "@/lib/nav";
 
 export function Footer() {
     return (
@@ -12,32 +12,29 @@ export function Footer() {
                             <Logo />
                         </Link>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                            İzmir Bayraklı merkezli hukuk bürosu. Ağırlıklı olarak kira hukuku; ayrıca iş, aile ve tazminat hukuku alanlarında avukatlık hizmeti.
+                            İzmir kira avukatı Av. Mert Kağan Çetin. Bayraklı ofis; İzmir genelinde ev sahibi ve kiracı uyuşmazlıklarında avukatlık hizmeti. İzmir Barosu Sicil No: 15556.
                         </p>
                     </div>
 
                     <div className="space-y-6">
-                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Kira Hukuku</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Hizmetler</p>
                         <ul className="space-y-4">
                             <li><Link href={kiraHub.href} className="text-sm font-semibold text-primary hover:text-secondary transition-colors">{kiraHub.name}</Link></li>
-                            {kiraLinks.slice(0, 6).map((l) => (
-                                <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
-                            ))}
-                            {kiraTools.map((l) => (
+                            {kiraLinks.map((l) => (
                                 <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
                             ))}
                         </ul>
                     </div>
 
                     <div className="space-y-6">
-                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Diğer Çalışma Alanları</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-primary">Kaynaklar</p>
                         <ul className="space-y-4">
-                            {otherAreas.map((l) => (
+                            {kiraTools.map((l) => (
                                 <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
                             ))}
-                            <li><Link href="/blog/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuki Makaleler</Link></li>
-                            <li><Link href="/sozluk/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hukuk Sözlüğü</Link></li>
-                            <li><Link href="/hakkimda/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hakkımızda</Link></li>
+                            <li><Link href="/blog/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Hukuku Makaleleri</Link></li>
+                            <li><Link href="/hakkimda/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hakkımda</Link></li>
+                            <li><Link href="/iletisim/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İletişim</Link></li>
                         </ul>
                     </div>
 

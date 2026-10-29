@@ -1,11 +1,11 @@
 // Uses the site's existing Formspree endpoint (same as /iletisim/). No new service.
 const field = "h-12 w-full rounded-lg border border-slate-300 bg-white px-3 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20";
 
-export function CallbackForm() {
+export function CallbackForm({ source = "/" }: { source?: string }) {
     return (
         <form action="https://formspree.io/f/mlglyrzp" method="POST" className="space-y-4">
-            <input type="hidden" name="_subject" value="Kira sayfası: geri arama talebi" />
-            <input type="hidden" name="kaynak" value="/izmir-kira-avukati/" />
+            <input type="hidden" name="_subject" value={`Kira sayfası: geri arama talebi (${source})`} />
+            <input type="hidden" name="kaynak" value={source} />
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
                     <label htmlFor="cb-ad" className="mb-1 block text-sm font-bold text-primary">Ad Soyad</label>
