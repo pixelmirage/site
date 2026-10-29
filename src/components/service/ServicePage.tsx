@@ -6,6 +6,7 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { CTAs } from "@/components/kira-landing/CTAs";
 import { services, serviceHref, SITE, type Service } from "@/lib/services";
+import { GBP_URL } from "@/lib/gbp";
 
 export function serviceMetadata(s: Service): Metadata {
     const url = `${SITE}${serviceHref(s)}`;
@@ -40,6 +41,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     "telephone": "+905445854645",
                     "image": `${SITE}/og-image.jpg`,
                     "provider": { "@id": `${SITE}/#attorney` },
+                    "hasMap": GBP_URL,
                     "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "addressCountry": "TR" },
                     "areaServed": { "@type": "City", "name": "İzmir" },
                     "isPartOf": { "@id": `${SITE}/#kira-service` },

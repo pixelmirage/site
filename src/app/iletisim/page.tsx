@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 
 export const metadata: Metadata = {
     title: "İletişim | İzmir Kira Avukatı",
@@ -61,7 +62,7 @@ export default function ContactPage() {
                                                 Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, <br />
                                                 Bayraklı/İzmir
                                             </p>
-                                            <a href="https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7" target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
+                                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
                                                 Google Maps'te Yol Tarifi Al &rarr;
                                             </a>
                                         </div>
@@ -182,14 +183,14 @@ export default function ContactPage() {
             {/* Map Section */}
             <section className="h-[500px] w-full bg-slate-200 border-t border-slate-300">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.5558616591056!2d27.1845286!3d38.4517266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd87a2b16be11%3A0x5f6419cacaf7ed94!2sDedemhan%20Plaza!5e0!3m2!1sen!2ssg!4v1766958056080!5m2!1sen!2ssg"
+                    src={GBP_EMBED_URL}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Mert Kağan Çetin Hukuk Bürosu Konumu"
+                    title="İzmir Kira Avukatı Mert Kağan Çetin – Google Haritalar"
                 ></iframe>
             </section>
         </div>

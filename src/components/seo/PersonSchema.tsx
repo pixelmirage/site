@@ -1,3 +1,5 @@
+import { GBP_URL } from "@/lib/gbp";
+
 interface PersonSchemaProps {
     knowsAbout: string[];
 }
@@ -39,7 +41,7 @@ export function PersonSchema({ knowsAbout }: PersonSchemaProps) {
         "knowsAbout": knowsAbout,
         "sameAs": [
             "https://www.linkedin.com/in/mert-ka%C4%9Fan-%C3%A7etin-28a264298/",
-            "https://share.google/UwexXrbcBVkpI4lc9"
+            GBP_URL
         ]
     };
 
