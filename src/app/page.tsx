@@ -9,7 +9,7 @@ import { CTAs, PHONE } from "@/components/kira-landing/CTAs";
 import { services as serviceData, serviceHref } from "@/lib/services";
 import { GBP_URL, GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 
-const pageTitle = "İzmir Kira Avukatı | Av. Mert Kağan Çetin";
+const pageTitle = "İzmir Kira Avukatı Mert Kağan Çetin";
 const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir genelinde. Tel: 0544 585 46 45";
 
 export const metadata: Metadata = {
