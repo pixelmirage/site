@@ -340,10 +340,6 @@ Türkiye'de yaşanan yüksek enflasyon dönemlerinde, özellikle uzun süreli i�
             {
                 question: "Kiracı kira uyarlama davası açabilir mi?",
                 answer: "Evet, hem kiracı hem de kiraya veren kira uyarlama davası açabilir. Kiracı kira bedelinin indirilmesini, kiraya veren ise artırılmasını talep edebilir."
-            },
-            {
-                question: "Kira uyarlama davası geriye dönük uygulanır mı?",
-                answer: "Kural olarak uyarlama kararı dava tarihinden itibaren geçerlidir, geriye dönük uygulanmaz."
             }
         ],
         keywords: ["kira uyarlama davası nedir", "kira uyarlama davası şartları", "aşırı ifa güçlüğü kira"],
