@@ -84,12 +84,6 @@ export function SchemaMarkup() {
                 },
                 "hasMap": GBP_URL,
                 "geo": { "@type": "GeoCoordinates", ...GBP_GEO },
-                "openingHoursSpecification": {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "09:00",
-                    "closes": "18:00"
-                },
                 "description": "İzmir kira avukatı: ev sahibi ve kiracı uyuşmazlıkları, kiracı tahliye davası, kira tespit ve kira uyarlama davası, kira alacağı icra takibi, tahliye taahhüdüne dayalı icra, kira sözleşmesi ve kira arabuluculuğu.",
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Kiracı Tahliye Davası", "Kira Tespit Davası", "Kira Uyarlama Davası",

@@ -141,7 +141,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     </div>
                     <div id="geri-arama" className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-7">
                         <h2 className="mb-1 font-playfair text-2xl font-bold text-primary">Sizi arayalım</h2>
-                        <p className="mb-5 text-slate-600">Bilgilerinizi bırakın, çalışma saatleri içinde dönüş yapılır.</p>
+                        <p className="mb-5 text-slate-600">Bilgilerinizi bırakın, telefonla dönüş yapılır.</p>
                         <CallbackForm source={serviceHref(s)} />
                     </div>
                 </div>

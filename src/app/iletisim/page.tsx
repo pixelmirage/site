@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Send, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
@@ -85,16 +85,6 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold text-primary mb-1">E-posta</h4>
                                             <p className="text-muted-foreground text-sm">mertkagancetin@gmail.com</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center shrink-0">
-                                            <Clock className="w-6 h-6 text-primary" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-primary mb-1">Çalışma Saatleri</h4>
-                                            <p className="text-muted-foreground text-sm">Pazartesi - Cuma: 09:00 - 18:00</p>
                                         </div>
                                     </div>
                                 </div>

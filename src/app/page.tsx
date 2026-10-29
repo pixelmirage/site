@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Phone, MapPin, Clock, FileText, ShieldCheck, Scale, BookOpen, UserCheck, ArrowRight } from "lucide-react";
+import { Phone, MapPin, FileText, ShieldCheck, Scale, BookOpen, UserCheck, ArrowRight } from "lucide-react";
 import { SituationPicker } from "@/components/kira-landing/SituationPicker";
 import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -50,7 +50,7 @@ const documents = [
 ];
 
 const faqs = [
-    { question: "Size nasıl ulaşabilirim?", answer: "Telefonla (0544 585 46 45) veya WhatsApp üzerinden ulaşabilirsiniz. Sayfadaki form doldurulursa çalışma saatleri içinde geri dönüş yapılır. Ön görüşme telefonla yapılır." },
+    { question: "Size nasıl ulaşabilirim?", answer: "Telefonla (0544 585 46 45) veya WhatsApp üzerinden ulaşabilirsiniz. Sayfadaki form doldurulursa telefonla geri dönüş yapılır. Ön görüşme telefonla yapılır." },
     { question: "Hangi bölgelerde hizmet veriyorsunuz?", answer: "İzmir’in tüm bölgelerindeki kira uyuşmazlıklarında hizmet veriyorum. Ofisim Bayraklı’dadır; ön görüşme telefonla yapılabilir." },
     { question: "Görüşmeye hangi belgelerle gelmeliyim?", answer: "Kira sözleşmesi, ödeme dekontları, ihtarnameler ve varsa tahliye taahhütnamesi yeterlidir. Elinizde olmayan belge ön görüşmeye engel değildir." },
     { question: "Ofise gelmem gerekiyor mu?", answer: "Ön görüşme telefonla yapılır. Belgeler WhatsApp veya e-posta ile iletilebilir; yüz yüze görüşme Bayraklı'daki ofiste randevuyla yapılır." },
@@ -241,7 +241,7 @@ export default function Home() {
                     </div>
                     <div id="geri-arama" className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-7" aria-labelledby="form-baslik">
                         <h2 id="form-baslik" className="mb-1 font-playfair text-2xl font-bold text-primary">Sizi arayalım</h2>
-                        <p className="mb-5 text-slate-600">Bilgilerinizi bırakın, çalışma saatleri içinde dönüş yapılır.</p>
+                        <p className="mb-5 text-slate-600">Bilgilerinizi bırakın, telefonla dönüş yapılır.</p>
                         <CallbackForm source="/" />
                     </div>
                 </div>
@@ -255,7 +255,6 @@ export default function Home() {
                         <ul className="space-y-3 text-slate-700">
                             <li className="flex gap-3"><MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
                             <li className="flex gap-3"><Phone className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" /><a href={PHONE} className="font-bold text-primary hover:text-secondary">0544 585 46 45</a></li>
-                            <li className="flex gap-3"><Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Pazartesi - Cuma: 09:00 - 18:00</li>
                             <li className="flex gap-3"><ShieldCheck className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Av. Mert Kağan Çetin · İzmir Barosu Sicil No: 15556</li>
                         </ul>
                         <p className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
