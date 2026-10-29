@@ -100,7 +100,8 @@ export default function Home() {
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
                 <div className="container mx-auto px-4 pt-10 pb-12 md:pt-14 md:pb-20">
                     <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-                        <h1 className="mb-4 font-playfair text-4xl font-bold leading-tight md:text-6xl">İzmir Kira Avukatı</h1>
+                        <h1 className="mb-3 font-playfair text-4xl font-bold leading-tight md:text-6xl">İzmir Kira Avukatı</h1>
+                        <p className="mb-6 font-playfair text-xl font-semibold tracking-wide text-secondary md:text-3xl">Av. Mert Kağan Çetin</p>
                         <p className="mb-8 text-lg leading-relaxed text-slate-300 md:text-2xl">
                             Ev sahibi ve kiracılar için tahliye, kira bedeli ve kira alacağı uyuşmazlıklarında dava ve icra takibi.
                         </p>
