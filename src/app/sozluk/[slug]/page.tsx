@@ -43,17 +43,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 const serviceHref: Record<string, string> = {
-    "#tahliye": "/izmir-kira-avukati/kiraci-tahliye-davasi/",
-    "#kira": "/izmir-kira-avukati/",
-    "#gayrimenkul": "/izmir-kira-avukati/",
-    "#is-hukuku": "/izmir-is-avukati/",
-    "#aile-hukuku": "/izmir-bosanma-avukati/",
-    "#tazminat": "/izmir-tazminat-avukati/",
+    "#tahliye": "/izmir-kiraci-tahliye-davasi-avukati/",
+    "#kira": "/",
+    "#gayrimenkul": "/izmir-kira-sozlesmesi-avukati/",
 };
 const serviceLabel: Record<string, string> = {
-    "#tahliye": "İzmir Tahliye Davası",
+    "#tahliye": "İzmir Kiracı Tahliye Davası Avukatı",
     "#kira": "İzmir Kira Avukatı",
-    "#gayrimenkul": "İzmir Kira Avukatı",
+    "#gayrimenkul": "İzmir Kira Sözleşmesi Avukatı",
 };
 
 export default async function GlossaryTermPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -75,7 +72,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                 term={term.term}
                 description={term.definition}
                 url={termUrl}
-                inDefinedTermSet="Hukuk Sözlüğü"
+                inDefinedTermSet="Kira Hukuku Sözlüğü"
                 lastUpdated={term.lastUpdated}
             />
             <FAQSchema faqs={term.faqs} />
@@ -92,8 +89,8 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             )}
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
-                    { name: "Hukuk Sözlüğü", url: "https://mertkagancetin.com/sozluk/" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Kira Hukuku Sözlüğü", url: "https://mertkagancetin.com/sozluk/" },
                     { name: term.term, url: termUrl },
                 ]}
             />
@@ -108,7 +105,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                         </Link>
                         <ChevronRight className="w-4 h-4" />
                         <Link href="/sozluk/" className="hover:text-white transition-colors">
-                            Hukuk Sözlüğü
+                            Kira Hukuku Sözlüğü
                         </Link>
                         <ChevronRight className="w-4 h-4" />
                         <span className="text-secondary">{term.term}</span>
@@ -256,21 +253,21 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             <section className="pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Hukuki Desteğe mi İhtiyacınız Var?</h3>
+                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
-                            Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık hizmeti alın. İletişime geçebilirsiniz.
+                            Kira uyuşmazlıklarında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>
                         <div className="flex flex-wrap gap-3">
                             <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
                                 İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (
-                                <Link href={serviceHref[term.relatedServiceAnchor] ?? `/hizmetler/${term.relatedServiceAnchor}`} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                                <Link href={serviceHref[term.relatedServiceAnchor] ?? "/"} className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                     {serviceLabel[term.relatedServiceAnchor] ?? "İlgili Hizmet"}
                                 </Link>
                             )}
-                            <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                                Tüm Hizmetler
+                            <Link href="/#hizmetler" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                                Kira Hukuku Hizmetleri
                             </Link>
                         </div>
                     </div>

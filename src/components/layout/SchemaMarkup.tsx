@@ -53,11 +53,7 @@ export function SchemaMarkup() {
                     { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
                     { "@type": "PropertyValue", "propertyID": "TBB Sicil No", "value": "162439" }
                 ],
-                "knowsAbout": [
-                    "Kira Hukuku", "İş Hukuku", "Boşanma Hukuku", "Tazminat Hukuku",
-                    "Tahliye Davaları", "Kira Tespit Davası", "İşe İade Davası",
-                    "Kıdem Tazminatı", "Velayet Davası", "Nafaka Davası"
-                ]
+                "knowsAbout": ["Kira Hukuku", "Tahliye Davaları", "Kira Tespit Davası", "Kira Uyarlama Davası", "Kira Alacağı İcra Takibi", "Tahliye Taahhüdü", "Kira Sözleşmesi", "Kira Arabuluculuğu"]
             },
             {
                 "@type": ["Attorney", "LegalService", "LocalBusiness"],
@@ -95,15 +91,10 @@ export function SchemaMarkup() {
                     "opens": "09:00",
                     "closes": "18:00"
                 },
-                "description": "İzmir'de ağırlıklı olarak kira hukuku alanında avukatlık hizmeti: ev sahibi ve kiracı uyuşmazlıkları, tahliye, kira tespit, kira uyarlama, kira borcu icra takibi ve kira sözleşmesi. Ayrıca iş hukuku, aile hukuku ve tazminat davaları.",
+                "description": "İzmir kira avukatı: ev sahibi ve kiracı uyuşmazlıkları, kiracı tahliye davası, kira tespit ve kira uyarlama davası, kira alacağı icra takibi, tahliye taahhüdüne dayalı icra, kira sözleşmesi ve kira arabuluculuğu.",
                 "knowsAbout": [
-                    "Kira Hukuku", "Tahliye Davaları", "Gayrimenkul Hukuku",
-                    "Kira Tespit Davası", "Kira Uyarlama Davası", "Kira Borcu İcra Takibi", "Tahliye Taahhütnamesi", "Zorunlu Arabuluculuk",
-                    "Kira Sözleşmesi", "İş Hukuku", "İşe İade Davası",
-                    "Kıdem Tazminatı", "İhbar Tazminatı", "İş Kazası Tazminatı",
-                    "Boşanma Hukuku", "Aile Hukuku", "Velayet Davası",
-                    "Nafaka Davası", "Mal Paylaşımı", "Tazminat Hukuku",
-                    "Maddi Tazminat", "Manevi Tazminat", "Trafik Kazası Tazminatı"
+                    "Kira Hukuku", "Tahliye Davaları", "Kiracı Tahliye Davası", "Kira Tespit Davası", "Kira Uyarlama Davası",
+                    "Kira Alacağı İcra Takibi", "Tahliye Taahhütnamesi", "Kira Sözleşmesi", "Zorunlu Arabuluculuk", "Türk Borçlar Kanunu Kira Hükümleri"
                 ],
                 "alumniOf": {
                     "@type": "CollegeOrUniversity",
@@ -153,24 +144,15 @@ export function SchemaMarkup() {
                 ],
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
-                    "name": "Hukuki Hizmetler",
+                    "name": "Kira Hukuku Hizmetleri",
                     "itemListElement": [
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kiracı Tahliye Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Tespit Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tahliye Taahhütnamesi İcra Takibi" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Sözleşmesi Hazırlama" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zorunlu Arabuluculuk" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gayrimenkul Devir ve Tescil" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İşe İade Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kıdem Tazminatı Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İş Kazası Tazminatı" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anlaşmalı Boşanma Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Çekişmeli Boşanma Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Velayet Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nafaka Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maddi Tazminat Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manevi Tazminat Davası" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trafik Kazası Tazminatı" } }
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kiracı Tahliye Davası", "url": "https://mertkagancetin.com/izmir-kiraci-tahliye-davasi-avukati/" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Tespit Davası", "url": "https://mertkagancetin.com/izmir-kira-tespit-davasi-avukati/" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Uyarlama Davası", "url": "https://mertkagancetin.com/izmir-kira-uyarlama-davasi-avukati/" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Alacağı İcra Takibi", "url": "https://mertkagancetin.com/izmir-kira-alacagi-icra-takibi-avukati/" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tahliye Taahhüdüne Dayalı İcra", "url": "https://mertkagancetin.com/izmir-tahliye-taahhudu-icra-avukati/" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Sözleşmesi Hazırlama ve İnceleme", "url": "https://mertkagancetin.com/izmir-kira-sozlesmesi-avukati/" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kira Uyuşmazlıklarında Arabuluculuk", "url": "https://mertkagancetin.com/izmir-kira-arabuluculuk-avukati/" } }
                     ]
                 }
             }

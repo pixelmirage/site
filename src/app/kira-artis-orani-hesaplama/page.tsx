@@ -55,7 +55,7 @@ export default function RentCalculatorPage() {
             />
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                     { name: "Kira Artış Hesaplama", url: "https://mertkagancetin.com/kira-artis-orani-hesaplama/" }
                 ]}
             />
@@ -149,7 +149,7 @@ export default function RentCalculatorPage() {
                         <h2>Hukuki Sorun mu Yaşıyorsunuz?</h2>
                         <p>
                             Kira artış oranında anlaşmazlık yaşıyorsanız veya ev sahibiniz yasal sınırın üzerinde zam talep ediyorsa,
-                            yasal sınır ve tespit davası koşullarını birlikte değerlendirmek faydalı olabilir. <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> sayfamızda kira artışı ve kira tespit süreçlerine ilişkin ayrıntılı bilgi bulabilirsiniz.
+                            yasal sınır ve tespit davası koşullarını birlikte değerlendirmek faydalı olabilir. <Link href="/izmir-kira-tespit-davasi-avukati/" className="text-secondary hover:underline">İzmir kira tespit davası avukatı</Link> sayfamızda kira artışı ve kira tespit süreçlerine ilişkin ayrıntılı bilgi bulabilirsiniz.
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
