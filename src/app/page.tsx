@@ -51,11 +51,11 @@ const documents = [
 
 const faqs = [
     { question: "Size nasıl ulaşabilirim?", answer: "Telefonla (0544 585 46 45) veya WhatsApp üzerinden ulaşabilirsiniz. Sayfadaki form doldurulursa telefonla geri dönüş yapılır. Ön görüşme telefonla yapılır." },
-    { question: "Hangi bölgelerde hizmet veriyorsunuz?", answer: "İzmir’in tüm bölgelerindeki kira uyuşmazlıklarında hizmet veriyorum. Ofisim Bayraklı’dadır; ön görüşme telefonla yapılabilir." },
+    { question: "Hangi bölgelerde hizmet veriyorsunuz?", answer: "İzmir kira avukatı olarak İzmir’in tüm bölgelerindeki kira uyuşmazlıklarında hizmet veriyorum. Ofisim Bayraklı’dadır; ön görüşme telefonla yapılabilir." },
     { question: "Görüşmeye hangi belgelerle gelmeliyim?", answer: "Kira sözleşmesi, ödeme dekontları, ihtarnameler ve varsa tahliye taahhütnamesi yeterlidir. Elinizde olmayan belge ön görüşmeye engel değildir." },
     { question: "Ofise gelmem gerekiyor mu?", answer: "Ön görüşme telefonla yapılır. Belgeler WhatsApp veya e-posta ile iletilebilir; yüz yüze görüşme Bayraklı'daki ofiste randevuyla yapılır." },
-    { question: "Kira davası açmadan önce arabulucuya gitmek zorunlu mu?", answer: "Evet. Kira ilişkisinden doğan uyuşmazlıklarda dava açmadan önce arabulucuya başvurmak dava şartıdır (HUAK m. 18/B). Arabuluculukta anlaşma sağlanamazsa sulh hukuk mahkemesinde dava açılabilir. İcra yoluyla tahliye talepleri bu şartın dışındadır." },
-    { question: "İzmir kira avukatı ücreti ne kadar?", answer: "Avukatlık ücreti; davanın veya takibin türüne, dosyanın kapsamına ve yapılacak işlemlere göre belirlenir ve Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Dosyanızla ilgili ücret ve masraf bilgisini telefonla ön görüşmede, belgelerinizi inceledikten sonra açıkça paylaşırım." },
+    { question: "Kira davası açmadan önce arabulucuya gitmek zorunlu mu?", answer: "Evet. Kira ilişkisinden doğan uyuşmazlıklarda dava açmadan önce arabulucuya başvurmak dava şartıdır (HUAK m. 18/B). Arabuluculukta anlaşma sağlanamazsa sulh hukuk mahkemesinde dava açılabilir; arabuluculuk görüşmelerine İzmir kira avukatı ile katılmak mümkündür. İcra yoluyla tahliye talepleri bu şartın dışındadır." },
+    { question: "İzmir kira avukatı ücreti ne kadar?", answer: "İzmir kira avukatı ücreti; davanın veya takibin türüne, dosyanın kapsamına ve yapılacak işlemlere göre belirlenir ve Türkiye Barolar Birliği tarafından her yıl yayımlanan Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Dosyanızla ilgili ücret ve masraf bilgisini telefonla ön görüşmede, belgelerinizi inceledikten sonra açıkça paylaşırım." },
 ];
 
 const H2 = "text-2xl md:text-4xl font-playfair font-bold text-primary";
@@ -105,7 +105,7 @@ export default function Home() {
                         <h1 className="mb-3 font-playfair text-4xl font-bold leading-tight md:text-6xl">İzmir Kira Avukatı</h1>
                         <p className="mb-6 font-playfair text-xl font-semibold tracking-wide text-secondary md:text-3xl">Av. Mert Kağan Çetin</p>
                         <p className="mb-8 text-lg leading-relaxed text-slate-300 md:text-2xl">
-                            Ev sahibi ve kiracılar için tahliye, kira bedeli ve kira alacağı uyuşmazlıklarında dava ve icra takibi.
+                            Ev sahibi ve kiracılar için İzmir kira avukatı desteği: tahliye, kira bedeli ve kira alacağı uyuşmazlıklarında dava ve icra takibi.
                         </p>
                         <CTAs />
                         <ul className="mt-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-slate-300">
@@ -129,7 +129,8 @@ export default function Home() {
             {/* Hizmetler */}
             <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-16" aria-labelledby="hizmetler">
                 <div className="container mx-auto max-w-4xl px-4">
-                    <h2 id="hizmetler" className={`${H2} mb-6 text-center`}>Takip edilen işler</h2>
+                    <h2 id="hizmetler" className={`${H2} mb-3 text-center`}>İzmir kira avukatı olarak takip edilen işler</h2>
+                    <p className="mx-auto mb-8 max-w-3xl text-center text-slate-700">İzmir kira avukatı Av. Mert Kağan Çetin tarafından takip edilen kira hukuku işleri aşağıda yer alır. Her hizmetin hukuki çerçevesi ve sürecin işleyişi ayrı sayfasında anlatılmıştır.</p>
                     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         {services.map((s) => (
                             <li key={s.name}>
@@ -151,18 +152,18 @@ export default function Home() {
                     <h2 id="cerceve" className={`${H2} mb-2`}>İzmir&apos;de kira uyuşmazlıklarında hukuki süreç</h2>
                     <p>Konut ve çatılı işyeri kiraları Türk Borçlar Kanunu&apos;nun (TBK m. 339-356) kiracıyı koruyan emredici hükümlerine tabidir. Kiraya veren, sözleşme süresi bitti diye kiracıyı çıkaramaz; tahliye ancak <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">kiracı tahliye davası</Link> için kanunda sayılan sebeplerle, çoğu zaman bir aylık dava süresi içinde istenebilir. Kira bedeline ilişkin uyuşmazlıklar <Link href="/izmir-kira-tespit-davasi-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">kira tespit davası</Link> veya olağanüstü değişikliklerde <Link href="/izmir-kira-uyarlama-davasi-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">kira uyarlama davası</Link> ile çözülür.</p>
                     <p>Ödenmeyen kira için <Link href="/izmir-kira-alacagi-icra-takibi-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">kira alacağı icra takibi</Link>, geçerli bir yazılı taahhüt varsa <Link href="/izmir-tahliye-taahhudu-icra-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">tahliye taahhüdüne dayalı icra</Link> yoluna dava açmadan başvurulabilir. Dava yoluyla ileri sürülecek kira uyuşmazlıklarında ise önce <Link href="/izmir-kira-arabuluculuk-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">zorunlu arabuluculuk</Link> aşaması tamamlanır. Uyuşmazlık çıkmadan önce <Link href="/izmir-kira-sozlesmesi-avukati/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">kira sözleşmesinin</Link> kanuna uygun hazırlanması pek çok sorunu önler.</p>
-                    <p>Kira davalarına İzmir&apos;deki sulh hukuk mahkemelerinde, icra yoluyla tahliye ve alacak taleplerine icra daireleri ve icra mahkemelerinde bakılır. Ofis Bayraklı&apos;dadır; İzmir genelindeki dosyalarda ön görüşme telefonla yapılabilir.</p>
+                    <p>Kira davalarına İzmir&apos;deki sulh hukuk mahkemelerinde, icra yoluyla tahliye ve alacak taleplerine icra daireleri ve icra mahkemelerinde bakılır. Bu aşamaların her birinde süreler hak düşürücü olabildiğinden, bir İzmir kira avukatı ile dosyanın baştan değerlendirilmesi hak kaybını önler. Ofis Bayraklı&apos;dadır; İzmir genelindeki dosyalarda ön görüşme telefonla yapılabilir.</p>
                 </div>
             </section>
 
             {/* Neden */}
             <section className="py-12 md:py-20" aria-labelledby="neden">
                 <div className="container mx-auto max-w-5xl px-4">
-                    <h2 id="neden" className={`${H2} mb-8 text-center`}>Neden Av. Mert Kağan Çetin ile çalışmalısınız?</h2>
+                    <h2 id="neden" className={`${H2} mb-8 text-center`}>Neden İzmir kira avukatı Av. Mert Kağan Çetin ile çalışmalısınız?</h2>
                     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <li className="flex gap-4 rounded-xl border border-slate-200 p-5">
                             <Scale className="h-7 w-7 flex-shrink-0 text-secondary" aria-hidden="true" />
-                            <div><h3 className="mb-1 text-lg font-bold text-primary">Kira uyuşmazlıklarına odaklı çalışma</h3><p className="text-slate-700">Çalışmalarımın ağırlıklı kısmını kira hukuku oluşturur. Tahliye, kira tespit, kira uyarlama ve kira alacağı dosyalarında sürecin her aşamasını ve dikkat edilmesi gereken usul kurallarını yakından takip ederim.</p></div>
+                            <div><h3 className="mb-1 text-lg font-bold text-primary">Kira uyuşmazlıklarına odaklı çalışma</h3><p className="text-slate-700">İzmir kira avukatı olarak çalışmalarımın ağırlıklı kısmını kira hukuku oluşturur. Tahliye, kira tespit, kira uyarlama ve kira alacağı dosyalarında sürecin her aşamasını ve dikkat edilmesi gereken usul kurallarını yakından takip ederim.</p></div>
                         </li>
                         <li className="flex gap-4 rounded-xl border border-slate-200 p-5">
                             <FileText className="h-7 w-7 flex-shrink-0 text-secondary" aria-hidden="true" />
@@ -212,7 +213,7 @@ export default function Home() {
             {/* Süreç */}
             <section className="py-12 md:py-20" aria-labelledby="surec">
                 <div className="container mx-auto max-w-5xl px-4">
-                    <h2 id="surec" className={`${H2} mb-8 text-center`}>Nasıl çalışıyoruz?</h2>
+                    <h2 id="surec" className={`${H2} mb-8 text-center`}>İzmir kira avukatı ile süreç nasıl işler?</h2>
                     <ol className="grid grid-cols-1 gap-4 md:grid-cols-3">
                         {steps.map((s, i) => (
                             <li key={s.title} className="flex gap-4 rounded-xl border border-slate-200 p-5 md:flex-col">
@@ -251,7 +252,7 @@ export default function Home() {
             <section className="py-12 md:py-20" aria-labelledby="ofis">
                 <div className="container mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2">
                     <div>
-                        <h2 id="ofis" className={`${H2} mb-5`}>Ofis</h2>
+                        <h2 id="ofis" className={`${H2} mb-5`}>Ofis ve iletişim</h2>
                         <ul className="space-y-3 text-slate-700">
                             <li className="flex gap-3"><MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17 Bayraklı/İzmir</li>
                             <li className="flex gap-3"><Phone className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" /><a href={PHONE} className="font-bold text-primary hover:text-secondary">0544 585 46 45</a></li>
@@ -261,7 +262,7 @@ export default function Home() {
                             <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary underline-offset-4 hover:text-secondary">Yol tarifi al</a>
                             <a href={GBP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary underline-offset-4 hover:text-secondary">Google profilini görüntüle</a>
                         </p>
-                        <p className="mt-4 text-slate-700">Hizmet bölgesi: İzmir&apos;in tüm ilçeleri (Bayraklı, Bornova, Karşıyaka, Buca, Konak ve diğerleri).</p>
+                        <p className="mt-4 text-slate-700">Hizmet bölgesi: İzmir kira avukatı olarak İzmir&apos;in tüm ilçeleri (Bayraklı, Bornova, Karşıyaka, Buca, Konak ve diğerleri).</p>
                     </div>
                     <div className="overflow-hidden rounded-xl border border-slate-200">
                         <iframe
@@ -278,7 +279,7 @@ export default function Home() {
             {/* SSS */}
             <section className="border-t border-slate-200 bg-slate-50 py-12 md:py-20" aria-labelledby="sss">
                 <div className="container mx-auto max-w-3xl px-4">
-                    <h2 id="sss" className={`${H2} mb-6 text-center`}>Sık sorulan sorular</h2>
+                    <h2 id="sss" className={`${H2} mb-6 text-center`}>İzmir kira avukatı hakkında sık sorulan sorular</h2>
                     <div className="space-y-3">
                         {faqs.map((f) => (
                             <details key={f.question} className="group rounded-xl border border-slate-200 bg-white px-5 py-4">
@@ -294,7 +295,7 @@ export default function Home() {
             <section className="bg-gradient-to-br from-primary to-slate-800 py-12 text-white md:py-16">
                 <div className="container mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
                     <h2 className="mb-3 font-playfair text-2xl font-bold md:text-4xl">Kira uyuşmazlığınızı telefonla görüşelim</h2>
-                    <p className="mb-8 text-slate-300">Ön görüşme telefonla yapılır; belgeler sonrasında birlikte incelenir.</p>
+                    <p className="mb-8 text-slate-300">İzmir kira avukatı Av. Mert Kağan Çetin ile ön görüşme telefonla yapılır; belgeler sonrasında birlikte incelenir.</p>
                     <CTAs />
                 </div>
             </section>

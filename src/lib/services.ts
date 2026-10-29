@@ -11,6 +11,8 @@ export type Service = {
     cardDesc: string; // ana sayfa kartı (kullanıcı onaylı metin)
     navDesc: string;
     lead: string;
+    kw: string; // tam anahtar ifade (cümle içinde kullanılır)
+    intro: string; // içerik ilk paragrafı (kw ile başlar)
     sections: ServiceSection[];
     steps: { title: string; desc: string }[];
     documents: string[];
@@ -34,6 +36,8 @@ export const services: Service[] = [
         cardDesc: "İhtiyaç, temerrüt, iki haklı ihtar veya 10 yıllık uzama süresinin dolması gibi sebeplerden dosyanıza uygun yasal yol belirlenir; ihtarnameden karara kadar süreç takip edilir.",
         navDesc: "İhtiyaç, yeni malik, iki haklı ihtar, 10 yıllık uzama",
         lead: "Konut ve çatılı işyeri kiralarında kiraya veren, sözleşme süresi bitti diye kiracıyı çıkaramaz; tahliye ancak kanunda sayılan sebeplerden biriyle ve çoğu zaman bir aylık dava süresi içinde istenebilir. Bu sayfada tahliye sebepleri, süreler, arabuluculuk aşaması ve dava sürecinin işleyişi özetlenmiştir.",
+        kw: "İzmir kiracı tahliye davası avukatı",
+        intro: "İzmir kiracı tahliye davası avukatı Av. Mert Kağan Çetin tarafından, kiraya verenin tahliye talebinde ve kiracının bu talebe karşı savunmasında ihtarnameden karara kadar süreç takip edilir.",
         sections: [
             {
                 title: "Tahliye sebepleri kanunda sınırlı olarak sayılmıştır",
@@ -106,6 +110,8 @@ export const services: Service[] = [
         cardDesc: "Güncel emsal kiralar ve TÜFE sınırı esas alınarak kira bedelinin ne olması gerektiği değerlendirilir; dava süreleri kaçırılmadan açılır ve bilirkişi aşaması dahil takip edilir.",
         navDesc: "Kira bedelinin belirlenmesi (TBK m. 344-345)",
         lead: "Kira tespit davası, yenilenen kira döneminde uygulanacak kira bedelinin mahkemece belirlenmesi için açılır. Davanın sonucu; sözleşmenin süresine, beş yıllık dönemin dolup dolmadığına ve davanın açıldığı tarihe göre önemli ölçüde değişir.",
+        kw: "İzmir kira tespit davası avukatı",
+        intro: "İzmir kira tespit davası avukatı Av. Mert Kağan Çetin tarafından, yeni dönem kira bedelinin belirlenmesi talebinde kiraya veren veya kiracı adına arabuluculuk ve dava süreci takip edilir.",
         sections: [
             {
                 title: "Kira bedeli nasıl belirlenir? (TBK m. 344)",
@@ -178,6 +184,8 @@ export const services: Service[] = [
         cardDesc: "Beklenmedik ekonomik değişiklikler karşısında kira bedelinin sözleşmeye uyarlanması talep edilebilir; şartların oluşup oluşmadığı incelenir ve dava yürütülür.",
         navDesc: "Aşırı ifa güçlüğünde uyarlama (TBK m. 138)",
         lead: "Kira uyarlama davası, sözleşme kurulduktan sonra ortaya çıkan olağanüstü bir değişiklik nedeniyle kira bedelinin yeni koşullara uyarlanması için açılır. Kira tespit davasından farklı olarak dayanağı TBK m. 138'deki aşırı ifa güçlüğü hükmüdür ve şartları sıkı yorumlanır.",
+        kw: "İzmir kira uyarlama davası avukatı",
+        intro: "İzmir kira uyarlama davası avukatı Av. Mert Kağan Çetin tarafından, sözleşme kurulurken öngörülemeyen olağanüstü değişiklikler nedeniyle kira bedelinin yeniden belirlenmesi talepleri değerlendirilir ve süreç takip edilir.",
         sections: [
             {
                 title: "Uyarlamanın şartları (TBK m. 138)",
@@ -246,6 +254,8 @@ export const services: Service[] = [
         cardDesc: "Ödenmeyen kira bedelleri için icra takibi başlatılır, gerekirse tahliye talebi de eklenir; itiraz halinde itirazın kaldırılması veya iptali süreci takip edilir.",
         navDesc: "Ödenmeyen kira, tahliye talepli takip (İİK m. 269)",
         lead: "Kira bedeli veya yan giderler ödenmediğinde kiraya veren, alacağını icra yoluyla isteyebilir ve şartları varsa aynı takipte kiracının tahliyesini de talep edebilir. Hangi takip yolunun seçileceği; alacağın türüne, kira sözleşmesinin niteliğine ve tahliye istenip istenmediğine göre belirlenir.",
+        kw: "İzmir kira alacağı icra takibi avukatı",
+        intro: "İzmir kira alacağı icra takibi avukatı Av. Mert Kağan Çetin tarafından, ödenmeyen kira bedelleri için başlatılan icra takibinde ödeme emrinden itirazın kaldırılmasına ve gerektiğinde tahliyeye kadar süreç takip edilir.",
         sections: [
             {
                 title: "Kira alacağı için başvurulabilecek yollar",
@@ -314,6 +324,8 @@ export const services: Service[] = [
         cardDesc: "Geçerli bir tahliye taahhüdü varsa dava açmadan doğrudan icra yoluyla tahliye istenebilir; taahhüdün geçerliliği ve süreler kontrol edilerek takip başlatılır.",
         navDesc: "Yazılı taahhütle icra yoluyla tahliye (TBK m. 352/1)",
         lead: "Kiracı, kiralananı belli bir tarihte boşaltacağını yazılı olarak taahhüt etmiş ve bu tarihte boşaltmamışsa, kiraya veren dava açmadan icra dairesi aracılığıyla tahliye isteyebilir. Bu yolun sonuç vermesi, taahhüdün geçerliliğine ve bir aylık sürenin kaçırılmamasına bağlıdır.",
+        kw: "İzmir tahliye taahhüdü icra avukatı",
+        intro: "İzmir tahliye taahhüdü icra avukatı Av. Mert Kağan Çetin tarafından, yazılı tahliye taahhüdüne dayanan icra takibinde taahhüdün geçerliliği incelenir; takip, itiraz ve tahliye aşamaları takip edilir.",
         sections: [
             {
                 title: "Tahliye taahhüdünün geçerlilik şartları",
@@ -380,6 +392,8 @@ export const services: Service[] = [
         cardDesc: "Uyuşmazlık çıkmasını önleyecek şekilde sözleşme hazırlanır veya mevcut sözleşme incelenir; artış, depozito, teminat ve tahliye maddeleri tek tek değerlendirilir.",
         navDesc: "Konut ve işyeri kira sözleşmesi hazırlama, inceleme",
         lead: "Kira uyuşmazlıklarının önemli bir kısmı, sözleşmedeki eksik veya kanuna aykırı maddelerden doğar. Konut ve çatılı işyeri kiralarında pek çok TBK hükmü kiracı aleyhine değiştirilemediğinden, sözleşmenin bu emredici kurallara uygun hazırlanması gerekir.",
+        kw: "İzmir kira sözleşmesi avukatı",
+        intro: "İzmir kira sözleşmesi avukatı Av. Mert Kağan Çetin tarafından, konut ve işyeri kira sözleşmelerinin hazırlanması ve incelenmesi ile sözleşmeden doğan uyuşmazlıklarda hukuki destek sağlanır.",
         sections: [
             {
                 title: "Sözleşmede dikkat edilmesi gereken başlıca maddeler",
@@ -446,6 +460,8 @@ export const services: Service[] = [
         cardDesc: "Kira uyuşmazlıklarında dava öncesi arabuluculuk zorunludur; bu süreçte haklarınız korunarak, mümkünse dava açmadan anlaşma sağlanması hedeflenir.",
         navDesc: "Dava öncesi zorunlu arabuluculuk (HUAK m. 18/B)",
         lead: "Kira ilişkisinden doğan uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulması dava şartıdır. Arabuluculuk aşaması; tahliye tarihi, kira bedeli veya alacak konusunda dava açılmadan anlaşma sağlanabilecek bir süreçtir ve burada atılan adımlar olası davayı doğrudan etkiler.",
+        kw: "İzmir kira arabuluculuk avukatı",
+        intro: "İzmir kira arabuluculuk avukatı Av. Mert Kağan Çetin tarafından, kira uyuşmazlıklarında dava öncesi zorunlu arabuluculuk başvurusu, görüşmeler ve anlaşma belgesinin hazırlanması aşamalarında taraf vekilliği yapılır.",
         sections: [
             {
                 title: "Hangi uyuşmazlıklarda arabuluculuk zorunlu?",
