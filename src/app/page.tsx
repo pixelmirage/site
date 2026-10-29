@@ -7,6 +7,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { CTAs, PHONE } from "@/components/kira-landing/CTAs";
 import { services as serviceData, serviceHref } from "@/lib/services";
+import { GBP_URL, GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 
 const pageTitle = "İzmir Kira Avukatı | Av. Mert Kağan Çetin";
 const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir genelinde. Tel: 0544 585 46 45";
@@ -81,6 +82,7 @@ export default function Home() {
                             "url": "https://mertkagancetin.com/",
                             "telephone": "+905445854645",
                             "provider": { "@id": "https://mertkagancetin.com/#attorney" },
+                            "hasMap": GBP_URL,
                             "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "addressCountry": "TR" },
                             "areaServed": [
                                 { "@type": "City", "name": "İzmir" },
@@ -256,12 +258,16 @@ export default function Home() {
                             <li className="flex gap-3"><Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Pazartesi - Cuma: 09:00 - 18:00</li>
                             <li className="flex gap-3"><ShieldCheck className="mt-0.5 h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />Av. Mert Kağan Çetin · İzmir Barosu Sicil No: 15556</li>
                         </ul>
+                        <p className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary underline-offset-4 hover:text-secondary">Yol tarifi al</a>
+                            <a href={GBP_URL} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary underline-offset-4 hover:text-secondary">Google profilini görüntüle</a>
+                        </p>
                         <p className="mt-4 text-slate-700">Hizmet bölgesi: İzmir&apos;in tüm ilçeleri (Bayraklı, Bornova, Karşıyaka, Buca, Konak ve diğerleri).</p>
                     </div>
                     <div className="overflow-hidden rounded-xl border border-slate-200">
                         <iframe
-                            title="Ofis konumu – Dedemhan Plaza, Bayraklı/İzmir"
-                            src="https://www.google.com/maps?q=Dedemhan+Plaza,+Mansuro%C4%9Flu+Mah.+286%2F3+Sk.,+Bayrakl%C4%B1,+%C4%B0zmir&output=embed"
+                            title="İzmir Kira Avukatı Mert Kağan Çetin – Google Haritalar"
+                            src={GBP_EMBED_URL}
                             className="block h-64 w-full border-0 md:h-full md:min-h-72"
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"

@@ -9,6 +9,7 @@ import { PrintButton } from "@/components/tools/PrintButton";
 import { PdfDownloadButton } from "@/components/tools/PdfDownloadButton";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { GBP_URL } from "@/lib/gbp";
 
 const PAGE_URL = "https://mertkagancetin.com/tahliye-taahhutnamesi/";
 const TITLE = "Tahliye Taahhütnamesi Nedir? Geçerlilik Şartları ve Örnek (2026)";
@@ -112,6 +113,7 @@ const legalServiceSchema = {
         "addressCountry": "TR",
     },
     "areaServed": { "@type": "City", "name": "İzmir" },
+    "hasMap": GBP_URL,
     "knowsAbout": ["Kira hukuku", "Tahliye taahhütnamesi", "İcra yoluyla tahliye"],
 };
 

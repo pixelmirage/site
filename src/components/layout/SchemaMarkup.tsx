@@ -1,3 +1,5 @@
+import { GBP_URL, GBP_GEO } from "@/lib/gbp";
+
 export function SchemaMarkup() {
     const schema = {
         "@context": "https://schema.org",
@@ -37,7 +39,7 @@ export function SchemaMarkup() {
                 "url": "https://mertkagancetin.com/hakkimda/",
                 "image": "https://mertkagancetin.com/logo.png",
                 "sameAs": [
-                    "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
+                    GBP_URL,
                     "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
                     "https://www.linkedin.com/in/mert-ka%C4%9Fan-%C3%A7etin-28a264298/",
                     "https://www.instagram.com/avukatmertkagancetin/"
@@ -68,7 +70,7 @@ export function SchemaMarkup() {
                 "telephone": "+905445854645",
                 "email": "mertkagancetin@gmail.com",
                 "sameAs": [
-                    "https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7",
+                    GBP_URL,
                     "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
                     "https://www.linkedin.com/in/mert-ka%C4%9Fan-%C3%A7etin-28a264298/",
                     "https://www.instagram.com/avukatmertkagancetin/"
@@ -80,11 +82,8 @@ export function SchemaMarkup() {
                     "addressRegion": "İzmir",
                     "addressCountry": "TR"
                 },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 38.4517,
-                    "longitude": 27.1853
-                },
+                "hasMap": GBP_URL,
+                "geo": { "@type": "GeoCoordinates", ...GBP_GEO },
                 "openingHoursSpecification": {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
