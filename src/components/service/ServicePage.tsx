@@ -72,6 +72,7 @@ export function ServicePage({ service: s }: { service: Service }) {
             {/* İçerik */}
             <div className="container mx-auto max-w-3xl px-4 py-12 md:py-16">
                 <div className="space-y-12 text-[1.0625rem] leading-8 text-slate-700">
+                    <p>{s.intro} Kira hukukundaki diğer işler için <Link href="/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">İzmir kira avukatı</Link> sayfasına bakılabilir.</p>
                     {s.sections.map((sec) => (
                         <section key={sec.title} aria-label={sec.title}>
                             <h2 className={`${H2} mb-4`}>{sec.title}</h2>
@@ -95,7 +96,7 @@ export function ServicePage({ service: s }: { service: Service }) {
 
                     {/* Süreç */}
                     <section aria-labelledby="surec">
-                        <h2 id="surec" className={`${H2} mb-6`}>Süreç nasıl işler?</h2>
+                        <h2 id="surec" className={`${H2} mb-6`}>{s.kw} ile süreç nasıl işler?</h2>
                         <ol className="space-y-3">
                             {s.steps.map((st, i) => (
                                 <li key={st.title} className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5">
@@ -126,7 +127,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                                 <li key={d} className="flex gap-3"><FileText className="mt-1.5 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" />{d}</li>
                             ))}
                         </ul>
-                        <p className="mt-3 text-sm text-slate-500">Belgelerin tamamı elinizde olmasa da ön görüşme yapılabilir.</p>
+                        <p className="mt-3 text-sm text-slate-500">Belgelerin tamamı elinizde olmasa da {s.kw} ile ön görüşme yapılabilir.</p>
                     </section>
                 </div>
             </div>
@@ -135,7 +136,7 @@ export function ServicePage({ service: s }: { service: Service }) {
             <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-16">
                 <div className="container mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 md:grid-cols-2">
                     <div className="flex flex-col justify-center gap-4 rounded-2xl bg-gradient-to-br from-primary to-slate-800 p-6 text-white md:p-8">
-                        <h2 className="font-playfair text-2xl font-bold md:text-3xl">Dosyanızı telefonla görüşelim</h2>
+                        <h2 className="font-playfair text-2xl font-bold md:text-3xl">{s.kw} ile telefonla görüşün</h2>
                         <p className="text-slate-200">Ön görüşme telefonla yapılır; belgeler WhatsApp veya e-posta ile iletilebilir. Av. Mert Kağan Çetin · İzmir Barosu Sicil No: 15556.</p>
                         <CTAs waText={s.waText} />
                     </div>
