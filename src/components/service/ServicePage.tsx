@@ -42,7 +42,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     "image": `${SITE}/og-image.jpg`,
                     "provider": { "@id": `${SITE}/#attorney` },
                     "hasMap": GBP_URL,
-                    "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "addressCountry": "TR" },
+                    "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35000", "addressCountry": "TR" },
                     "areaServed": { "@type": "City", "name": "İzmir" },
                     "isPartOf": { "@id": `${SITE}/#kira-service` },
                 }) }}

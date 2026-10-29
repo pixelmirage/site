@@ -80,10 +80,17 @@ export function SchemaMarkup() {
                     "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
                     "addressLocality": "Bayraklı",
                     "addressRegion": "İzmir",
+                    "postalCode": "35000",
                     "addressCountry": "TR"
                 },
                 "hasMap": GBP_URL,
                 "geo": { "@type": "GeoCoordinates", ...GBP_GEO },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                },
                 "description": "İzmir kira avukatı: ev sahibi ve kiracı uyuşmazlıkları, kiracı tahliye davası, kira tespit ve kira uyarlama davası, kira alacağı icra takibi, tahliye taahhüdüne dayalı icra, kira sözleşmesi ve kira arabuluculuğu.",
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Kiracı Tahliye Davası", "Kira Tespit Davası", "Kira Uyarlama Davası",

@@ -83,7 +83,7 @@ export default function Home() {
                             "telephone": "+905445854645",
                             "provider": { "@id": "https://mertkagancetin.com/#attorney" },
                             "hasMap": GBP_URL,
-                            "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "addressCountry": "TR" },
+                            "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35000", "addressCountry": "TR" },
                             "areaServed": [
                                 { "@type": "City", "name": "İzmir" },
                             ],
