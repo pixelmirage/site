@@ -241,7 +241,7 @@ export const services: Service[] = [
         slug: "izmir-kira-alacagi-icra-takibi-avukati",
         name: "Kira alacağı ve icra takibi",
         h1: "İzmir Kira Alacağı ve İcra Takibi Avukatı",
-        title: "İzmir Kira Alacağı İcra Takibi Avukatı | Mert Kağan Çetin",
+        title: "İzmir Kira Alacağı İcra Takibi Avukatı | Av. Mert Kağan Çetin",
         description: "İzmir'de ödenmeyen kira için icra takibi: İİK 269 tahliye talepli takip, 30 günlük süre, itiraz, itirazın kaldırılması ve tahliye. Tel: 0544 585 46 45",
         cardDesc: "Ödenmeyen kira bedelleri için icra takibi başlatılır, gerekirse tahliye talebi de eklenir; itiraz halinde itirazın kaldırılması veya iptali süreci takip edilir.",
         navDesc: "Ödenmeyen kira, tahliye talepli takip (İİK m. 269)",
