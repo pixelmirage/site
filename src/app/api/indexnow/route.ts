@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { services } from '@/lib/services';
 import { getAllPosts } from '@/lib/blog/utils';
 import { glossaryTerms } from '@/lib/glossary';
 
@@ -50,17 +51,13 @@ export async function GET(request: NextRequest) {
     // Static pages
     const staticUrls = [
         `${base}/`,
-        `${base}/izmir-kira-avukati/`,
-        `${base}/izmir-is-avukati/`,
-        `${base}/izmir-bosanma-avukati/`,
-        `${base}/izmir-tazminat-avukati/`,
+        ...services.map((s) => `${base}/${s.slug}/`),
         `${base}/hakkimda/`,
-        `${base}/hizmetler/`,
         `${base}/blog/`,
         `${base}/iletisim/`,
         `${base}/kira-artis-orani-hesaplama/`,
         `${base}/tahliye-taahhutnamesi/`,
-        `${base}/kidem-tazminati-hesaplama/`,
+        `${base}/kira-sozlesmesi-ornegi/`,
         `${base}/sozluk/`,
     ];
 

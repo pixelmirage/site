@@ -80,7 +80,7 @@ export default function KiraSozlesmesiPage() {
         <div className="bg-slate-50 min-h-screen pb-24">
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                     { name: "Kira Sözleşmesi Örneği", url: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/" }
                 ]}
             />
@@ -274,7 +274,7 @@ export default function KiraSozlesmesiPage() {
                         <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
                     </p>
                     <p>
-                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması faydalıdır. Sözleşmenin hazırlanmasında veya incelenmesinde <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir kira avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
+                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması faydalıdır. Sözleşmenin hazırlanmasında veya incelenmesinde <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">İzmir kira sözleşmesi avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
                     </p>
 
                     <h2 id="doldurulmus-ornek" className="scroll-mt-24">Doldurulmuş Kira Sözleşmesi Örneği</h2>
@@ -374,7 +374,7 @@ export default function KiraSozlesmesiPage() {
 
                     <h2>Hukuki Destek Alın</h2>
                     <p>
-                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarına ilişkin bilgi için <Link href="/izmir-kira-avukati/" className="text-secondary hover:underline">İzmir&apos;de kira avukatı</Link> sayfamızı inceleyebilirsiniz. <Link href="/hizmetler/" className="text-secondary hover:underline">Tüm hizmetlerimizi</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
+                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarına ilişkin bilgi için <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">İzmir&apos;de kira sözleşmesi avukatı</Link> sayfamızı inceleyebilirsiniz. <Link href="/" className="text-secondary hover:underline">Tüm kira hukuku hizmetlerini</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">

@@ -2,20 +2,21 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Send, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 
 export const metadata: Metadata = {
-    title: "İletişim | İzmir Hukuk Bürosu",
-    description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında çalışan hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+    title: "İletişim | İzmir Kira Avukatı",
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin iletişim bilgileri: 0544 585 46 45, Dedemhan Plaza D:17 Bayraklı/İzmir. Ön görüşme telefonla yapılabilir.",
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "İletişim | Av. Mert Kağan Çetin Hukuk Bürosu",
-        description: "İzmir Bayraklı'da kira, iş, boşanma ve tazminat hukuku alanında çalışan hukuk büromuza ulaşın. Randevu ve danışmanlık için iletişim bilgilerimiz.",
+        title: "İletişim | İzmir Kira Avukatı Av. Mert Kağan Çetin",
+        description: "İzmir kira avukatı Av. Mert Kağan Çetin iletişim bilgileri: 0544 585 46 45, Dedemhan Plaza D:17 Bayraklı/İzmir. Ön görüşme telefonla yapılabilir.",
         url: "https://mertkagancetin.com/iletisim/",
     },
 };
@@ -25,7 +26,7 @@ export default function ContactPage() {
         <div className="bg-white">
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                     { name: "İletişim", url: "https://mertkagancetin.com/iletisim/" },
                 ]}
             />
@@ -61,7 +62,7 @@ export default function ContactPage() {
                                                 Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, <br />
                                                 Bayraklı/İzmir
                                             </p>
-                                            <a href="https://maps.app.goo.gl/J4yG2ppHjVpBEVgY7" target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
+                                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
                                                 Google Maps'te Yol Tarifi Al &rarr;
                                             </a>
                                         </div>
@@ -84,16 +85,6 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold text-primary mb-1">E-posta</h4>
                                             <p className="text-muted-foreground text-sm">mertkagancetin@gmail.com</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center shrink-0">
-                                            <Clock className="w-6 h-6 text-primary" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-primary mb-1">Çalışma Saatleri</h4>
-                                            <p className="text-muted-foreground text-sm">Pazartesi - Cuma: 09:00 - 18:00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -182,14 +173,14 @@ export default function ContactPage() {
             {/* Map Section */}
             <section className="h-[500px] w-full bg-slate-200 border-t border-slate-300">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.5558616591056!2d27.1845286!3d38.4517266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd87a2b16be11%3A0x5f6419cacaf7ed94!2sDedemhan%20Plaza!5e0!3m2!1sen!2ssg!4v1766958056080!5m2!1sen!2ssg"
+                    src={GBP_EMBED_URL}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Mert Kağan Çetin Hukuk Bürosu Konumu"
+                    title="İzmir Kira Avukatı Mert Kağan Çetin – Google Haritalar"
                 ></iframe>
             </section>
         </div>
