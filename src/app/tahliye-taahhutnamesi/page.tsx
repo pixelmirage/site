@@ -9,6 +9,7 @@ import { PrintButton } from "@/components/tools/PrintButton";
 import { PdfDownloadButton } from "@/components/tools/PdfDownloadButton";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { GBP_URL } from "@/lib/gbp";
 
 const PAGE_URL = "https://mertkagancetin.com/tahliye-taahhutnamesi/";
 const TITLE = "Tahliye Taahhütnamesi Nedir? Geçerlilik Şartları ve Örnek (2026)";
@@ -109,9 +110,11 @@ const legalServiceSchema = {
         "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
         "addressLocality": "Bayraklı",
         "addressRegion": "İzmir",
+        "postalCode": "35000",
         "addressCountry": "TR",
     },
     "areaServed": { "@type": "City", "name": "İzmir" },
+    "hasMap": GBP_URL,
     "knowsAbout": ["Kira hukuku", "Tahliye taahhütnamesi", "İcra yoluyla tahliye"],
 };
 
@@ -143,8 +146,7 @@ export default function EvictionTemplatePage() {
         <div className="bg-slate-50 min-h-screen pb-24">
             <BreadcrumbSchema
                 items={[
-                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/izmir-kira-avukati/" },
+                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                     { name: "Tahliye Taahhütnamesi", url: PAGE_URL },
                 ]}
             />
@@ -228,7 +230,7 @@ export default function EvictionTemplatePage() {
                         Taahhüdünüzün geçerliliğini veya başlattığınız takibe yapılan itirazı değerlendirmek için <Link href="/iletisim/" className={ext}>iletişim</Link> sayfamızdan ön görüşme talep edebilirsiniz.
                     </p>
                     <p>
-                        Bu sayfa hem kiracısı taahhüt ettiği tarihte çıkmayan ev sahiplerine hem de taahhüt imzalamış kiracılara yöneliktir. Ev sahibi tarafının genel çerçevesi için <Link href="/izmir-kira-avukati/ev-sahibi-haklari-izmir/" className={ext}>ev sahibi hakları</Link>, kira uyuşmazlıklarının tamamı için <Link href="/izmir-kira-avukati/" className={ext}>İzmir kira avukatı</Link> sayfamıza bakabilirsiniz.
+                        Bu sayfa hem kiracısı taahhüt ettiği tarihte çıkmayan ev sahiplerine hem de taahhüt imzalamış kiracılara yöneliktir. Taahhüde dayalı icra sürecinin ayrıntıları için <Link href="/izmir-tahliye-taahhudu-icra-avukati/" className={ext}>İzmir tahliye taahhüdü icra avukatı</Link>, kira uyuşmazlıklarının tamamı için <Link href="/" className={ext}>İzmir kira avukatı</Link> sayfasına bakılabilir.
                     </p>
 
                     <h2 id="nedir">Kanuni dayanak: TBK m. 352/1</h2>
@@ -250,7 +252,7 @@ export default function EvictionTemplatePage() {
                         <li><strong>İki haklı ihtarda</strong> sebep, kira bedelinin ödenmemesi nedeniyle yapılan ihtarlardır.</li>
                     </ul>
                     <p>
-                        Kira borcunun ödenmemesine dayalı takip de ayrı bir yoldur; bunun için <Link href="/izmir-kira-avukati/kira-borcu-icra/" className={ext}>kira borcu nedeniyle icra takibi</Link> sayfamıza bakabilirsiniz.
+                        Kira borcunun ödenmemesine dayalı takip de ayrı bir yoldur; bunun için <Link href="/izmir-kira-alacagi-icra-takibi-avukati/" className={ext}>kira alacağı icra takibi</Link> sayfamıza bakabilirsiniz.
                     </p>
 
                     <h2 id="gecerlilik-sartlari">Tahliye taahhüdünün geçerlilik şartları</h2>
@@ -463,7 +465,7 @@ export default function EvictionTemplatePage() {
                         TBK m. 352/1 kiraya verene iki yol tanır: &quot;icraya başvurmak veya dava açmak&quot;. Her iki yolda da bir aylık süre geçerlidir. İcra yolu, imza ve tarihin tartışılmadığı dosyalarda daha doğrudan bir yol olarak düşünülebilir.
                     </p>
                     <p>
-                        İmza veya tarih inkârı beklenen, taahhüdün teslimden önce verildiği iddia edilebilecek ya da birden fazla tahliye sebebinin birlikte ileri sürüleceği durumlarda ise doğrudan <Link href="/izmir-kira-avukati/kiraci-tahliye-davasi/" className={ext}>kiracı tahliye davası</Link> açılması değerlendirilebilir.
+                        İmza veya tarih inkârı beklenen, taahhüdün teslimden önce verildiği iddia edilebilecek ya da birden fazla tahliye sebebinin birlikte ileri sürüleceği durumlarda ise doğrudan <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className={ext}>kiracı tahliye davası</Link> açılması değerlendirilebilir.
                     </p>
                     <p>
                         Hangi yolun uygun olduğu somut olaya göre değişir; hiçbir yol belirli bir sonucu garanti etmez.
@@ -483,7 +485,7 @@ export default function EvictionTemplatePage() {
                         <li><strong>Süre itirazı:</strong> Kiraya verenin bir aylık süreyi geçirip geçirmediği kontrol edilmelidir (TBK m. 352/1).</li>
                     </ul>
                     <p>
-                        Kiracı tarafının diğer hakları için <Link href="/izmir-kira-avukati/kiraci-haklari-izmir/" className={ext}>kiracı hakları</Link> sayfamıza bakabilirsiniz.
+                        Kiracı tarafının diğer hakları için <Link href="/sozluk/kiraci-haklari/" className={ext}>kiracı hakları</Link> sayfamıza bakabilirsiniz.
                     </p>
 
                     <h2 id="sss">Sık sorulan sorular</h2>
@@ -498,7 +500,7 @@ export default function EvictionTemplatePage() {
 
                     <h2 id="hukuki-destek">İzmir&apos;de tahliye taahhüdü süreçlerinde hukuki destek</h2>
                     <p>
-                        Bayraklı&apos;daki ofisimizden İzmir genelinde kira hukuku uyuşmazlıklarında avukatlık hizmeti veriyoruz. Ofis bilgilerimiz ve çalışma şeklimiz hakkında <Link href="/iletisim/" className={ext}>iletişim</Link> sayfamızdan bilgi alabilirsiniz. Ücretlendirmeye ilişkin genel bilgi <Link href="/izmir-kira-avukati/izmir-kira-avukati-ucret/" className={ext}>kira avukatı ücreti</Link> sayfasında yer almaktadır.
+                        Bayraklı&apos;daki ofisimizden İzmir genelinde kira hukuku uyuşmazlıklarında avukatlık hizmeti veriyoruz. Ofis bilgilerimiz ve çalışma şeklimiz hakkında <Link href="/iletisim/" className={ext}>iletişim</Link> sayfamızdan bilgi alabilirsiniz.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">

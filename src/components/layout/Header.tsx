@@ -7,7 +7,7 @@ import { Logo } from "@/components/ui/logo";
 import { MobileNav } from "./MobileNav";
 import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
-import { kiraHub, kiraLinks, kiraTools, otherAreas, type NavLink } from "@/lib/nav";
+import { kiraHub, kiraLinks, kiraTools, type NavLink } from "@/lib/nav";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -52,10 +52,10 @@ export function Header() {
                     <div className="hidden lg:flex items-center gap-2">
                         <NavigationMenu>
                             <NavigationMenuList className="gap-1">
-                                {/* Kira Hukuku Dropdown (primary) */}
+                                {/* Hizmetler Dropdown */}
                                 <NavigationMenuItem>
                                     <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/80 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
-                                        Kira Hukuku
+                                        Hizmetler
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
                                         <div className="grid w-[640px] grid-cols-2 gap-1 p-2">
@@ -69,22 +69,6 @@ export function Header() {
                                             {kiraTools.map((link) => (
                                                 <NavItem key={link.href} link={link} active={pathname === link.href} />
                                             ))}
-                                        </div>
-                                    </NavigationMenuContent>
-                                </NavigationMenuItem>
-
-                                {/* Diğer Çalışma Alanları Dropdown (secondary) */}
-                                <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="text-xs font-bold uppercase tracking-[0.2em] text-primary/80 hover:text-primary bg-transparent hover:bg-primary/5 data-[state=open]:bg-primary/5">
-                                        Diğer Alanlar
-                                    </NavigationMenuTrigger>
-                                    <NavigationMenuContent>
-                                        <div className="grid w-[340px] gap-1 p-2">
-                                            <p className="px-3 pt-2 pb-1 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">Diğer Çalışma Alanları</p>
-                                            {otherAreas.map((link) => (
-                                                <NavItem key={link.href} link={link} active={pathname === link.href} />
-                                            ))}
-                                            <NavItem link={{ name: "Hukuk Sözlüğü", href: "/sozluk/", desc: "Hukuki terimlerin açıklamaları" }} active={pathname === "/sozluk/"} />
                                         </div>
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
