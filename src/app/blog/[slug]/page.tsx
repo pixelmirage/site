@@ -190,7 +190,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     {isKira && (
                         <div className="mt-12 rounded-xl border border-secondary/30 bg-secondary/5 p-5 text-slate-700 leading-7">
-                            {kiraNote.before}<Link href="/izmir-kira-avukati/" className="font-semibold text-secondary underline underline-offset-2 hover:text-primary">{kiraNote.anchor}</Link>{kiraNote.after}
+                            {kiraNote.before}<Link href="/" className="font-semibold text-secondary underline underline-offset-2 hover:text-primary">{kiraNote.anchor}</Link>{kiraNote.after}
                         </div>
                     )}
 
@@ -220,16 +220,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     {/* Hub Link - İzmir Kira Avukatı */}
                     <div className="mt-12 p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de Hukuki Desteğe mi İhtiyacınız Var?</h3>
+                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
-                            Kira, iş, boşanma ve tazminat hukuku alanlarında avukatlık hizmeti alın.
+                            Tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi konularında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
-                                İletişime Geçin <ArrowRight className="w-4 h-4" />
-                            </Link>
-                            <Link href="/hizmetler/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
-                                Tüm Hizmetler
+                            <a href="tel:+905445854645" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                                Ara: 0544 585 46 45 <ArrowRight className="w-4 h-4" />
+                            </a>
+                            <Link href="/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
+                                İzmir Kira Avukatı
                             </Link>
                             <Link href="/blog/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">
                                 Tüm Makaleler
