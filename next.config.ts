@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { oldDomainMap } from './src/lib/oldDomainMap';
+import { removedPageRedirects } from './src/lib/removedPages';
 
 
 // Slashless old-domain URLs are handled in src/proxy.ts (one hop); the notfile rule skips old hosts.
@@ -42,58 +43,14 @@ const nextConfig: NextConfig = {
     return [
       ...oldDomainRedirects,
       // Slashless variants are excluded from the trailing-slash rule below and handled here / in src/proxy.ts.
-      // Merged subpages / blog posts (2026-10-16): single-hop 301.
-      { source: '/izmir-kira-avukati/izmir-kira-hukuku', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/izmir-bosanma-avukati/bosanma-sureci-izmir', destination: '/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir/', statusCode: 301 },
-      { source: '/izmir-bosanma-avukati/aile-hukuku-avukati-izmir', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
+      // 2026-10-29 kira restructure: the site is kira-only; removed pages 301 in a single hop to their final target.
+      // User sources also match an optional trailing slash, and these rules run before the trailing-slash rule below.
+      ...removedPageRedirects.map(([source, destination]) => ({ source, destination, statusCode: 301 as const })),
+      { source: '/:district((?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati)', destination: '/', statusCode: 301 },
+      { source: '/sozluk/:term(kidem-tazminati|ihbar-tazminati|ise-iade-davasi|mobbing|hakli-fesih|fazla-mesai|is-goremezlik|anlasmali-bosanma|cekismeli-bosanma|velayet|nafaka|mal-paylasimi|maddi-tazminat|manevi-tazminat|malpraktis|destekten-yoksun-kalma|haksiz-fiil|is-guvencesi|evlilik-birliginin-temelden-sarsilmasi|koruma-karari)', destination: '/sozluk/', statusCode: 301 },
+      // Merged blog posts (2026-10-16): single-hop 301.
       { source: '/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri', destination: '/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/', statusCode: 301 },
       { source: '/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati', destination: '/blog/trafik-kazasi-tazminati-alma-sureci/', statusCode: 301 },
-      // Removed district pages (2026-10-16): single-hop 301 to service hub; source matches with/without trailing slash.
-      { source: '/balcova-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/bayrakli-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/bornova-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/buca-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/cigli-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/gaziemir-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/guzelbahce-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/karabaglar-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/karsiyaka-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/konak-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/narlidere-kira-avukati', destination: '/izmir-kira-avukati/', statusCode: 301 },
-      { source: '/balcova-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/bayrakli-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/bornova-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/buca-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/cigli-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/gaziemir-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/guzelbahce-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/karabaglar-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/karsiyaka-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/konak-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/narlidere-is-avukati', destination: '/izmir-is-avukati/', statusCode: 301 },
-      { source: '/balcova-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/bayrakli-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/bornova-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/buca-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/cigli-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/gaziemir-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/guzelbahce-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/karabaglar-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/karsiyaka-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/konak-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/narlidere-bosanma-avukati', destination: '/izmir-bosanma-avukati/', statusCode: 301 },
-      { source: '/balcova-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/bayrakli-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/bornova-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/buca-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/cigli-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/gaziemir-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/guzelbahce-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/karabaglar-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/karsiyaka-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/konak-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
-      { source: '/narlidere-tazminat-avukati', destination: '/izmir-tazminat-avukati/', statusCode: 301 },
       // Same rules Next adds when trailingSlash: true (next/dist/lib/load-custom-routes.js);
       // (?!/) keeps '/x/' from matching, since user sources also match an optional trailing slash.
       {

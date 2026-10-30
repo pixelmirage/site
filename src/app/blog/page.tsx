@@ -7,12 +7,14 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-    title: "Hukuki Makaleler ve Blog Yazıları",
-    description: "Kira hukuku, iş hukuku, boşanma davaları, tahliye süreçleri ve güncel yargı kararları hakkında bilgilendirici makaleler.",
+    title: { absolute: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin" },
+    description: "İzmir kira avukatı Av. Mert Kağan Çetin'in kira hukuku yazıları: tahliye, kira tespit, kira artışı, icra takibi ve güncel Yargıtay kararları.",
     alternates: {
         canonical: "https://mertkagancetin.com/blog/",
     },
     openGraph: {
+        title: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin",
+        description: "İzmir kira avukatı Av. Mert Kağan Çetin'in kira hukuku yazıları: tahliye, kira tespit, kira artışı, icra takibi ve güncel Yargıtay kararları.",
         images: ["/og-image.jpg"],
         url: "https://mertkagancetin.com/blog/",
     },

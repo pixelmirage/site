@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog/utils';
 import { glossaryTerms } from '@/lib/glossary';
+import { services } from '@/lib/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://mertkagancetin.com';
@@ -16,51 +17,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Static Routes — individual last modified dates per page
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
-        '': { lastModified: '2026-10-16', priority: 1 },
-        '/izmir-kira-avukati': { lastModified: '2026-10-16', priority: 1 },
-        '/izmir-is-avukati': { lastModified: '2026-10-15', priority: 1 },
-        '/izmir-bosanma-avukati': { lastModified: '2026-10-16', priority: 1 },
-        '/izmir-tazminat-avukati': { lastModified: '2026-10-15', priority: 1 },
-        '/hakkimda': { lastModified: '2026-10-15', priority: 0.8 },
-        '/hizmetler': { lastModified: '2026-03-04', priority: 0.8 },
-        '/blog': { lastModified: '2026-10-16', priority: 0.8 },
-        '/iletisim': { lastModified: '2026-10-15', priority: 0.8 },
-        '/kira-artis-orani-hesaplama': { lastModified: '2026-10-16', priority: 0.8 },
-        '/tahliye-taahhutnamesi': { lastModified: '2026-10-16', priority: 0.8 },
-        '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-16', priority: 0.8 },
-        '/kidem-tazminati-hesaplama': { lastModified: '2026-03-16', priority: 0.8 },
-        '/sozluk': { lastModified: '2026-10-16', priority: 0.8 },
-        // Kira alt sayfaları
-        '/izmir-kira-avukati/kiraci-tahliye-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/kira-tespit-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/kira-uyarlama-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/kiraci-haklari-izmir': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/ev-sahibi-haklari-izmir': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/kira-sozlesmesi-rehberi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/kira-borcu-icra': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/ihtiyac-nedeniyle-tahliye': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/on-yillik-kiraci-tahliye': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-kira-avukati/izmir-kira-avukati-ucret': { lastModified: '2026-10-16', priority: 0.9 },
-        // İş alt sayfaları
-        '/izmir-is-avukati/ise-iade-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-is-avukati/kidem-tazminati-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-is-avukati/mobbing-davasi': { lastModified: '2026-10-15', priority: 0.9 },
-        // Boşanma alt sayfaları
-        '/izmir-bosanma-avukati/anlasmali-bosanma': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-bosanma-avukati/velayet-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-bosanma-avukati/nafaka-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-bosanma-avukati/cekismeli-bosanma-izmir': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-bosanma-avukati/mal-paylasimi-izmir': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-bosanma-avukati/aldatma-bosanma-izmir': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-bosanma-avukati/bosanma-davasi-nasil-acilir-izmir': { lastModified: '2026-10-16', priority: 0.9 },
-        // Tazminat alt sayfaları
-        '/izmir-tazminat-avukati/trafik-kazasi-tazminati': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-tazminat-avukati/malpraktis-davasi': { lastModified: '2026-10-16', priority: 0.9 },
-        '/izmir-tazminat-avukati/destekten-yoksun-kalma': { lastModified: '2026-10-16', priority: 0.9 },
+        '': { lastModified: '2026-10-29', priority: 1 },
+        // Kira hizmet sayfaları
+        ...Object.fromEntries(services.map((sv) => [`/${sv.slug}`, { lastModified: '2026-10-29', priority: 0.9 }])),
+        '/hakkimda': { lastModified: '2026-10-29', priority: 0.6 },
+        '/iletisim': { lastModified: '2026-10-29', priority: 0.7 },
+        '/blog': { lastModified: '2026-10-29', priority: 0.7 },
+        '/kira-artis-orani-hesaplama': { lastModified: '2026-10-29', priority: 0.7 },
+        '/tahliye-taahhutnamesi': { lastModified: '2026-10-29', priority: 0.7 },
+        '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-29', priority: 0.7 },
+        '/sozluk': { lastModified: '2026-10-29', priority: 0.6 },
     };
 
     const routes = Object.entries(staticRoutes).map(([route, config]) => ({
-        url: `${baseUrl}${route}/`,
+        url: route ? `${baseUrl}${route}/` : `${baseUrl}/`,
         lastModified: new Date(config.lastModified),
         changeFrequency: 'weekly' as const,
         priority: config.priority,

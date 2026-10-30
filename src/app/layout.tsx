@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),
   title: {
     template: "%s | Av. Mert Kağan Çetin",
-    default: "İzmir Avukat – Kira Hukuku | Av. Mert Kağan Çetin",
+    default: "İzmir Kira Avukatı | Av. Mert Kağan Çetin",
   },
-  description: "İzmir avukat Av. Mert Kağan Çetin Hukuk Bürosu: iş, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık. Bayraklı, İzmir.",
+  description: "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi, kira sözleşmesi ve arabuluculuk. Bayraklı, İzmir.",
   authors: [{ name: "Av. Mert Kağan Çetin" }],
   creator: "Mert Kağan Çetin Hukuk Bürosu",
   publisher: "Mert Kağan Çetin Hukuk Bürosu",
@@ -38,21 +38,21 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     url: 'https://mertkagancetin.com',
     siteName: 'Av. Mert Kağan Çetin',
-    title: 'İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu',
-    description: 'İzmir\'de iş hukuku, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık.',
+    title: 'İzmir Kira Avukatı | Av. Mert Kağan Çetin',
+    description: 'İzmir\'de ev sahibi ve kiracı uyuşmazlıklarında avukatlık: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Av. Mert Kağan Çetin - İzmir Avukat',
+        alt: 'Av. Mert Kağan Çetin - İzmir Kira Avukatı',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'İzmir Avukat | Av. Mert Kağan Çetin Hukuk Bürosu',
-    description: 'İzmir\'de iş hukuku, boşanma, tazminat ve kira hukuku alanlarında avukatlık ve hukuki danışmanlık.',
+    title: 'İzmir Kira Avukatı | Av. Mert Kağan Çetin',
+    description: 'İzmir\'de ev sahibi ve kiracı uyuşmazlıklarında avukatlık: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi.',
     images: ['/og-image.jpg'],
   },
   icons: {
