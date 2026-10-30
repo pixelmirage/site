@@ -4,10 +4,11 @@ import { useEffect } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { trackContact } from "@/components/analytics/track";
 
-const WA_TEXT = "Merhaba, web sitenizden ulaşıyorum. Hukuki bir konuda ön görüşme yapmak istiyorum.";
+const WA_TEXT = "Merhaba, kira konusunda görüşmek istiyorum.";
 export const WHATSAPP_URL = `https://wa.me/905445854645?text=${encodeURIComponent(WA_TEXT)}`;
 
 export function StickyContact() {
+    const waUrl = WHATSAPP_URL;
     // Sitewide delegate: every tel:/wa.me link click (header, hero, footer, content) fires a GA4-ready event.
     useEffect(() => {
         const onClick = (e: MouseEvent) => {
@@ -33,7 +34,7 @@ export function StickyContact() {
                 <Phone className="h-5 w-5" /> Telefonla Ara
             </a>
             <a
-                href={WHATSAPP_URL}
+                href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-tracked="1"

@@ -17,7 +17,7 @@ export function proxy(req: NextRequest) {
   if (!OLD_HOST_RE.test(host)) {
     // Removed district pages: 301 in one hop, also for slashless URLs (runs before the trailing-slash redirect).
     const m = DISTRICT_RE.exec(req.nextUrl.pathname);
-    if (m) return NextResponse.redirect(`${NEW}/izmir-${m[1]}-avukati/`, 301);
+    if (m) return NextResponse.redirect(`${NEW}/`, 301);
     return NextResponse.next();
   }
   const p = norm(req.nextUrl.pathname);

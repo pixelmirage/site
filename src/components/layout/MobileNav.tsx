@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { kiraHub, kiraLinks, kiraTools, otherAreas } from "@/lib/nav";
+import { kiraHub, kiraLinks, kiraTools } from "@/lib/nav";
 import { Logo } from "@/components/ui/logo";
 
 export function MobileNav() {
     const [open, setOpen] = useState(false);
-    const [servicesOpen, setServicesOpen] = useState(false);
+    const [servicesOpen, setServicesOpen] = useState(true);
     const [toolsOpen, setToolsOpen] = useState(false);
 
     return (
@@ -32,12 +32,12 @@ export function MobileNav() {
                             onClick={() => setServicesOpen(!servicesOpen)}
                             className="flex items-center justify-between text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
-                            Kira Hukuku
+                            Hizmetler
                             <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} />
                         </button>
                         {servicesOpen && (
                             <div className="ml-4 flex flex-col gap-0.5">
-                                {[kiraHub, ...kiraLinks, ...kiraTools].map((item) => (
+                                {[kiraHub, ...kiraLinks].map((item) => (
                                     <Link
                                         key={item.href}
                                         href={item.href}
@@ -50,17 +50,17 @@ export function MobileNav() {
                             </div>
                         )}
 
-                        {/* Diğer Çalışma Alanları Collapsible */}
+                        {/* Kaynaklar Collapsible */}
                         <button
                             onClick={() => setToolsOpen(!toolsOpen)}
                             className="flex items-center justify-between text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
-                            Diğer Çalışma Alanları
+                            Kaynaklar
                             <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${toolsOpen ? "rotate-180" : ""}`} />
                         </button>
                         {toolsOpen && (
                             <div className="ml-4 flex flex-col gap-0.5">
-                                {[...otherAreas, { name: "Hukuk Sözlüğü", href: "/sozluk/" }].map((item) => (
+                                {kiraTools.map((item) => (
                                     <Link
                                         key={item.href}
                                         href={item.href}
@@ -97,9 +97,9 @@ export function MobileNav() {
                         </Button>
                         <Link
                             href="tel:+905445854645"
-                            className="flex items-center justify-center gap-2 text-sm text-muted-foreground mt-4 hover:text-primary transition-colors"
+                            className="flex items-center justify-center gap-2 text-base font-bold text-primary mt-4 hover:text-secondary transition-colors"
                         >
-                            0544 585 46 45
+                            Ara: 0544 585 46 45
                         </Link>
                     </div>
                 </div>
