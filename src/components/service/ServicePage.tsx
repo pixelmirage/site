@@ -7,6 +7,7 @@ import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { CTAs } from "@/components/kira-landing/CTAs";
 import { services, serviceHref, SITE, type Service } from "@/lib/services";
 import { GBP_URL } from "@/lib/gbp";
+import { ictihatTopicForService, ICTIHAT_PATH } from "@/lib/blog/ictihat";
 
 export function serviceMetadata(s: Service): Metadata {
     const url = `${SITE}${serviceHref(s)}`;
@@ -24,6 +25,8 @@ const H2 = "font-playfair text-2xl font-bold text-primary md:text-3xl";
 export function ServicePage({ service: s }: { service: Service }) {
     const url = `${SITE}${serviceHref(s)}`;
     const siblings = services.filter((x) => x.slug !== s.slug);
+    const ictihat = ictihatTopicForService(s.slug);
+    const ictihatHref = ictihat && ictihat.posts.length > 0 ? `${ICTIHAT_PATH}#${ictihat.key}` : ICTIHAT_PATH;
     return (
         <div className="bg-white pb-16 lg:pb-0">
             <BreadcrumbSchema items={[{ name: "İzmir Kira Avukatı", url: `${SITE}/` }, { name: s.h1, url }]} />
@@ -162,6 +165,32 @@ export function ServicePage({ service: s }: { service: Service }) {
                             </details>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* İlgili Yargıtay ve BAM kararları */}
+            <section className="py-12 md:py-14" aria-labelledby="ictihatlar">
+                <div className="container mx-auto max-w-3xl px-4">
+                    <h2 id="ictihatlar" className={`${H2} mb-4`}>İlgili Yargıtay ve BAM kararları</h2>
+                    {ictihat && ictihat.posts.length > 0 ? (
+                        <>
+                            <p className="mb-5 leading-7 text-slate-700">{ictihat.desc}</p>
+                            <ul className="mb-6 space-y-3">
+                                {ictihat.posts.slice(0, 4).map((p) => (
+                                    <li key={p.slug} className="rounded-xl border border-slate-200 bg-white p-4">
+                                        <Link href={`/blog/${p.slug}/`} className="font-semibold text-primary hover:text-secondary">{p.title}</Link>
+                                        {p.decision.court && <p className="mt-1 text-sm text-slate-500">{p.decision.court}{p.decision.esas && `, E. ${p.decision.esas}`}{p.decision.karar && ` K. ${p.decision.karar}`}</p>}
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    ) : (
+                        <p className="mb-5 leading-7 text-slate-700">Kira hukukuna ilişkin Yargıtay ve BAM karar notları konu başlıklarına göre içtihat sayfasında toplanır; bu başlıktaki yeni kararlar yayımlandıkça eklenir.</p>
+                    )}
+                    <Link href={ictihatHref} className="inline-flex items-center gap-2 font-bold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">
+                        <Scale className="h-4 w-4 text-secondary" aria-hidden="true" />
+                        {ictihat && ictihat.posts.length > 0 ? `Kira Hukuku İçtihatları: ${ictihat.title}` : "Kira Hukuku İçtihatları"}
+                    </Link>
                 </div>
             </section>
 

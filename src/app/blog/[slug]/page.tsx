@@ -1,4 +1,5 @@
-import { getPostBySlug, getAllPosts } from "@/lib/blog/utils";
+import { getPostBySlug, getAllPosts, isIndexablePost } from "@/lib/blog/utils";
+import { isIctihatPost, ICTIHAT_PATH } from "@/lib/blog/ictihat";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
@@ -56,6 +57,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         alternates: {
             canonical: url,
         },
+        // Kira hukuku dışındaki eski yazılar: erişilebilir, ancak dizine eklenmez
+        ...(isIndexablePost(post) ? {} : { robots: { index: false, follow: true } }),
     };
 }
 
@@ -212,6 +215,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             </Link>
                         </Button>
                     </div>
+
+                    {isIctihatPost(post) && (
+                        <div className="mt-10 flex flex-col gap-3 rounded-2xl border border-secondary/30 bg-secondary/5 p-6 sm:flex-row sm:items-center sm:justify-between">
+                            <p className="text-sm leading-relaxed text-slate-700">Bu karar notu, kira hukukuna ilişkin diğer Yargıtay ve BAM kararlarıyla birlikte konu başlıklarına göre listelenir.</p>
+                            <Link href={ICTIHAT_PATH} className="inline-flex flex-shrink-0 items-center gap-1 text-sm font-bold text-primary hover:text-secondary">
+                                Kira Hukuku İçtihatları <ArrowRight className="h-4 w-4" />
+                            </Link>
+                        </div>
+                    )}
 
                     {/* Related Posts - Internal Linking */}
                     <RelatedPosts

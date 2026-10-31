@@ -23,6 +23,9 @@ export interface PostData {
     videoDuration?: string;
     readingTime: number;
     lang?: string;
+    ictihat?: boolean; // Yargıtay/BAM karar notu → /kira-hukuku-ictihatlari/ hub'ında listelenir
+    ictihatKonu?: string; // hub bölümü: tahliye | kira-tespit | kira-uyarlama | kira-alacagi-icra | tahliye-taahhudu | kira-sozlesmesi | arabuluculuk
+    noindex?: boolean;
 }
 
 export function getAllPosts(): PostData[] {
@@ -46,7 +49,7 @@ export function getAllPosts(): PostData[] {
                 slug,
                 content,
                 readingTime,
-                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string }),
+                ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string; ictihat?: boolean; ictihatKonu?: string; noindex?: boolean }),
             };
         });
 
@@ -66,9 +69,19 @@ export function getPostBySlug(slug: string): PostData | null {
             slug,
             content,
             readingTime,
-            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string }),
+            ...(data as { title: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string; ictihat?: boolean; ictihatKonu?: string; noindex?: boolean }),
         };
     } catch (e) {
         return null;
     }
+}
+
+// Site kira hukukuna ayrılmıştır. "kira hukuku" etiketi olmayan (boşanma, iş, tazminat vb.) yazılar
+// URL'den erişilebilir kalır ama noindex,follow alır; sitemap, /blog/ listesi ve ilgili yazı alanlarında yer almaz.
+export function isIndexablePost(p: Pick<PostData, "tags" | "noindex">): boolean {
+    return !p.noindex && (p.tags || []).some((t) => t.toLocaleLowerCase("tr") === "kira hukuku");
+}
+
+export function getListedPosts(): PostData[] {
+    return getAllPosts().filter(isIndexablePost);
 }

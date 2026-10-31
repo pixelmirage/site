@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { services } from '@/lib/services';
-import { getAllPosts } from '@/lib/blog/utils';
+import { getListedPosts } from '@/lib/blog/utils';
 import { glossaryTerms } from '@/lib/glossary';
 
 const INDEXNOW_KEY = '8bb539d0a5f7442b92ff3b3b983189d3';
@@ -59,10 +59,11 @@ export async function GET(request: NextRequest) {
         `${base}/tahliye-taahhutnamesi/`,
         `${base}/kira-sozlesmesi-ornegi/`,
         `${base}/sozluk/`,
+        `${base}/kira-hukuku-ictihatlari/`,
     ];
 
     // Blog posts
-    const posts = getAllPosts();
+    const posts = getListedPosts();
     const blogUrls = posts.map((post) => `${base}/blog/${post.slug}/`);
 
     // Glossary terms
