@@ -9,7 +9,7 @@ const btnWa = "inline-flex h-14 items-center justify-center gap-2 rounded-xl bg-
 export function CTAs({ waText }: { waText?: string }) {
     return (
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-            <a href={PHONE} className={btnPrimary} aria-label="Telefonla görüşme: 0544 585 46 45">
+            <a href={PHONE} className={btnPrimary}>
                 <Phone className="h-5 w-5" aria-hidden="true" /> Ara: 0544 585 46 45
             </a>
             <a href={waLink(waText)} target="_blank" rel="noopener noreferrer" className={btnWa}>
