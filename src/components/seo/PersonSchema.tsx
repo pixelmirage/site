@@ -1,4 +1,5 @@
 import { GBP_URL } from "@/lib/gbp";
+import { PHOTO_OBJECT } from "@/lib/photo";
 
 interface PersonSchemaProps {
     knowsAbout: string[];
@@ -14,7 +15,7 @@ export function PersonSchema({ knowsAbout }: PersonSchemaProps) {
         "familyName": "Çetin",
         "jobTitle": "Avukat",
         "url": "https://mertkagancetin.com/hakkimda/",
-        "image": "https://mertkagancetin.com/logo.png",
+        "image": PHOTO_OBJECT,
         "telephone": "+905445854645",
         "email": "mertkagancetin@gmail.com",
         "worksFor": { "@id": "https://mertkagancetin.com/#organization" },

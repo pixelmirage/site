@@ -7,7 +7,7 @@ import { Logo } from "@/components/ui/logo";
 import { MobileNav } from "./MobileNav";
 import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
-import { kiraHub, kiraLinks, kiraTools, type NavLink } from "@/lib/nav";
+import { kiraHub, kiraLinks, kiraTools, ictihatLink, type NavLink } from "@/lib/nav";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -90,6 +90,18 @@ export function Header() {
 
                                 <NavigationMenuItem>
                                     <Link
+                                        href={ictihatLink.href}
+                                        className={cn(
+                                            "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
+                                            pathname === ictihatLink.href ? "text-primary" : "text-primary/80"
+                                        )}
+                                    >
+                                        İçtihatlar
+                                    </Link>
+                                </NavigationMenuItem>
+
+                                <NavigationMenuItem>
+                                    <Link
                                         href="/hakkimda/"
                                         className={cn(
                                             "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:text-primary",
@@ -114,12 +126,13 @@ export function Header() {
                     <div className="hidden lg:flex items-center gap-6">
                         <Link
                             href="tel:+905445854645"
+                            aria-label="Telefon: 0544 585 46 45"
                             className="flex items-center gap-2 text-sm font-serif font-bold text-primary group"
                         >
                             <div className="w-8 h-8 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
                                 <Phone className="w-3.5 h-3.5" />
                             </div>
-                            <span className="tracking-widest">0544 585 46 45</span>
+                            <span className="hidden xl:inline whitespace-nowrap tracking-widest">0544 585 46 45</span>
                         </Link>
                     </div>
 

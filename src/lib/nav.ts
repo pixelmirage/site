@@ -7,6 +7,8 @@ export const kiraHub: NavLink = { name: "İzmir Kira Avukatı", href: "/", desc:
 
 export const kiraLinks: NavLink[] = services.map((s) => ({ name: s.name, href: serviceHref(s), desc: s.navDesc }));
 
+export const ictihatLink: NavLink = { name: "Kira Hukuku İçtihatları", href: "/kira-hukuku-ictihatlari/", desc: "Yargıtay ve BAM karar notları" };
+
 export const kiraTools: NavLink[] = [
     { name: "Kira Artış Hesaplama", href: "/kira-artis-orani-hesaplama/", desc: "TÜFE bazlı kira artış oranı" },
     { name: "Kira Sözleşmesi Örneği", href: "/kira-sozlesmesi-ornegi/", desc: "Yazdırılabilir sözleşme şablonu" },
