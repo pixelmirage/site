@@ -39,7 +39,7 @@ export function StickyContact() {
                 rel="noopener noreferrer"
                 data-tracked="1"
                 onClick={() => trackContact("whatsapp_click", "sticky_mobile")}
-                className="flex h-14 items-center justify-center gap-2 bg-[#1f8f4e] text-sm font-bold text-white"
+                className="flex h-14 items-center justify-center gap-2 bg-[#1c8549] text-sm font-bold text-white"
                 aria-label="WhatsApp ile yazın"
             >
                 <MessageCircle className="h-5 w-5" /> WhatsApp

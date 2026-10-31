@@ -239,12 +239,12 @@ export default function KiraSozlesmesiPage() {
                             <div className="text-center">
                                 <p className="font-bold mb-2">KİRAYA VEREN</p>
                                 <p className="text-sm mb-12">Ad Soyad:</p>
-                                <p className="text-sm text-slate-400">(İmza)</p>
+                                <p className="text-sm text-slate-500">(İmza)</p>
                             </div>
                             <div className="text-center">
                                 <p className="font-bold mb-2">KİRACI</p>
                                 <p className="text-sm mb-12">Ad Soyad:</p>
-                                <p className="text-sm text-slate-400">(İmza)</p>
+                                <p className="text-sm text-slate-500">(İmza)</p>
                             </div>
                         </div>
 
@@ -271,10 +271,10 @@ export default function KiraSozlesmesiPage() {
                         Kira sözleşmesi, kiraya verenin bir taşınmazın kullanımını kiracıya bırakmayı, kiracının ise bunun karşılığında kira bedeli ödemeyi taahhüt ettiği bir sözleşmedir. Türk Borçlar Kanunu&apos;nun 299-378. maddeleri arasında düzenlenmiştir.
                     </p>
                     <p>
-                        <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
+                        <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
                     </p>
                     <p>
-                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması faydalıdır. Sözleşmenin hazırlanmasında veya incelenmesinde <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">İzmir kira sözleşmesi avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
+                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması faydalıdır. Sözleşmenin hazırlanmasında veya incelenmesinde <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">İzmir kira sözleşmesi avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
                     </p>
 
                     <h2 id="doldurulmus-ornek" className="scroll-mt-24">Doldurulmuş Kira Sözleşmesi Örneği</h2>
@@ -322,7 +322,7 @@ export default function KiraSozlesmesiPage() {
                         <li>Sözleşmeyi imzalamadan önce tüm maddeleri dikkatli okuyun</li>
                         <li>Depozito tutarının 3 aylık kiradan fazla olmamasına dikkat edin</li>
                         <li>Taşınmazın mevcut durumunu (hasarlar, eksikler) sözleşmeye ek olarak tutanakla kaydedin</li>
-                        <li><Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary hover:underline">Fesih koşullarını</Link> net bir şekilde anlayın</li>
+                        <li><Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Fesih koşullarını</Link> net bir şekilde anlayın</li>
                         <li>Aidat ve yan giderlerin kime ait olduğunu sözleşmede netleştirin</li>
                     </ul>
 
@@ -330,9 +330,9 @@ export default function KiraSozlesmesiPage() {
                     <ul>
                         <li>Kiracının kimlik bilgilerini mutlaka doğrulayın</li>
                         <li>Kira bedelinin banka hesabına yatırılmasını tercih edin (ispat kolaylığı)</li>
-                        <li><Link href="/kira-artis-orani-hesaplama/" className="text-secondary hover:underline">Kira artış oranını</Link> yasal sınırlar dahilinde belirleyin</li>
+                        <li><Link href="/kira-artis-orani-hesaplama/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Kira artış oranını</Link> yasal sınırlar dahilinde belirleyin</li>
                         <li>Taşınmazın teslim durumunu fotoğrafla belgeleyin</li>
-                        <li><Link href="/tahliye-taahhutnamesi/" className="text-secondary hover:underline">Tahliye taahhütnamesi</Link> almayı düşünün (kira sözleşmesinden sonra)</li>
+                        <li><Link href="/tahliye-taahhutnamesi/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Tahliye taahhütnamesi</Link> almayı düşünün (kira sözleşmesinden sonra)</li>
                     </ul>
 
                     <h2>Kira Sözleşmesinin Süresi ve Yenilenmesi</h2>
@@ -345,7 +345,7 @@ export default function KiraSozlesmesiPage() {
 
                     <h2>Kira Sözleşmesiyle İlgili Uyuşmazlıklar</h2>
                     <p>
-                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">depozito iadesi</Link>, aidat borcu vb.) 2024 yılından itibaren <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary hover:underline">zorunlu arabuluculuk</Link> uygulanmaktadır.
+                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">depozito iadesi</Link>, aidat borcu vb.) 2024 yılından itibaren <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">zorunlu arabuluculuk</Link> uygulanmaktadır.
                     </p>
                     <p>
                         Dava açılmadan önce arabulucuya başvurulması şarttır. Arabuluculuk sürecinde anlaşma sağlanamaması halinde sulh hukuk mahkemesinde dava açılabilir.
@@ -374,7 +374,7 @@ export default function KiraSozlesmesiPage() {
 
                     <h2>Hukuki Destek Alın</h2>
                     <p>
-                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarına ilişkin bilgi için <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">İzmir&apos;de kira sözleşmesi avukatı</Link> sayfamızı inceleyebilirsiniz. <Link href="/" className="text-secondary hover:underline">Tüm kira hukuku hizmetlerini</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
+                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarına ilişkin bilgi için <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">İzmir&apos;de kira sözleşmesi avukatı</Link> sayfamızı inceleyebilirsiniz. <Link href="/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Tüm kira hukuku hizmetlerini</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">

@@ -220,7 +220,7 @@ export function KiraSozlesmesiPdfButton() {
             onClick={generatePdf}
             disabled={loading}
             size="lg"
-            className="bg-secondary text-white hover:bg-secondary/90 font-bold gap-2 text-lg px-8 shadow-xl"
+            className="bg-secondary text-primary hover:bg-secondary/90 font-bold gap-2 text-lg px-8 shadow-xl"
         >
             {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Download className="w-5 h-5" />}
             {loading ? "Hazırlanıyor..." : "PDF İndir"}

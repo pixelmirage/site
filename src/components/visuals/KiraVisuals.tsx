@@ -35,7 +35,7 @@ export function KiraTespitAdimlari() {
 export function ArabuluculukKutusu() {
     return (
         <aside id="arabuluculuk-zorunlulugu" className="not-prose my-10 rounded-2xl border-l-4 border-secondary bg-secondary/5 p-5 md:p-6" aria-label="Kira uyuşmazlıklarında zorunlu arabuluculuk">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">HUAK m. 18/B</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-secondary-ink">HUAK m. 18/B</p>
             <p className="mt-1 font-serif text-xl font-bold text-primary">Kira uyuşmazlıklarında arabuluculuk zorunludur</p>
             <ul className="mt-4 space-y-2 text-[15px] leading-6 text-slate-700">
                 <li><strong>Kapsam:</strong> Kira ilişkisinden doğan uyuşmazlıklarda (tahliye, kira tespit, kira uyarlama, alacak) dava açmadan önce arabulucuya başvurmak dava şartıdır. Düzenleme 7445 sayılı Kanunla eklenmiş, 1 Eylül 2023 itibarıyla uygulanmaktadır.</li>
@@ -73,7 +73,7 @@ export function TahliyeSebepleriTablosu() {
                         {sebepler.map((r) => (
                             <tr key={r.sebep} className="align-top even:bg-slate-50">
                                 <td className="px-4 py-3 font-semibold text-primary">{r.sebep}</td>
-                                <td data-label="Kanun maddesi" className="md:whitespace-nowrap px-4 py-3 font-semibold text-secondary">{r.madde}</td>
+                                <td data-label="Kanun maddesi" className="md:whitespace-nowrap px-4 py-3 font-semibold text-secondary-ink">{r.madde}</td>
                                 <td data-label="Temel koşul" className="px-4 py-3">{r.kosul}</td>
                                 <td data-label="Süre" className="px-4 py-3">{r.sure}</td>
                                 <td data-label="Hukuki yol" className="px-4 py-3">{r.yol}</td>

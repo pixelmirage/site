@@ -188,7 +188,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/sozluk/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    <Link href="/sozluk/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary-ink mt-4 hover:gap-2 transition-all">
                                         Tüm Terimler <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
@@ -212,13 +212,13 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/kira-hukuku-ictihatlari/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    <Link href="/kira-hukuku-ictihatlari/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary-ink mt-4 hover:gap-2 transition-all">
                                         Kira Hukuku İçtihatları <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
                             )}
 
-                            <p className="text-xs text-slate-400 italic not-prose">
+                            <p className="text-xs text-slate-500 italic not-prose">
                                 Son güncelleme: {new Date(term.lastUpdated).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}
                             </p>
                         </div>
@@ -230,7 +230,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                 <p className="text-slate-300 mb-6">
                                     {term.term} konusunda profesyonel hukuki danışmanlık için bizimle iletişime geçin.
                                 </p>
-                                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold" asChild>
+                                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold" asChild>
                                     <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                         WhatsApp ile Yazın
                                     </a>
@@ -261,7 +261,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             Kira uyuşmazlıklarında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-primary px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
                                 İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (

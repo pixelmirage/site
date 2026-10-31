@@ -94,7 +94,7 @@ export function SituationPicker() {
                                     <a href="tel:+905445854645" className="flex h-11 items-center justify-center gap-2 rounded-lg bg-primary text-sm font-bold text-white">
                                         <Phone className="h-4 w-4" /> Ara
                                     </a>
-                                    <a href={wa(msg)} target="_blank" rel="noopener noreferrer" className="flex h-11 items-center justify-center gap-2 rounded-lg bg-[#1f8f4e] text-sm font-bold text-white">
+                                    <a href={wa(msg)} target="_blank" rel="noopener noreferrer" className="flex h-11 items-center justify-center gap-2 rounded-lg bg-[#1c8549] text-sm font-bold text-white">
                                         <MessageCircle className="h-4 w-4" /> WhatsApp
                                     </a>
                                 </div>
