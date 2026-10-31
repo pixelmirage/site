@@ -8,6 +8,8 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { CTAs, PHONE } from "@/components/kira-landing/CTAs";
 import { services as serviceData, serviceHref } from "@/lib/services";
 import { GBP_URL, GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
+import Image from "next/image";
+import { PHOTO, PHOTO_OBJECT } from "@/lib/photo";
 
 const pageTitle = "İzmir Kira Avukatı | Av. Mert Kağan Çetin";
 const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir genelinde. Tel: 0544 585 46 45";
@@ -21,13 +23,13 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/",
         type: "website",
         locale: "tr_TR",
-        images: [{ url: "/og-image.jpg", alt: "Av. Mert Kağan Çetin - İzmir Kira Avukatı" }],
+        images: [{ url: PHOTO.og, width: 1200, height: 630, alt: "İzmir Kira Avukatı Av. Mert Kağan Çetin, hukuk bürosunda" }],
     },
     twitter: {
         card: "summary_large_image",
         title: pageTitle,
         description: pageDescription,
-        images: ["/og-image.jpg"],
+        images: [PHOTO.og],
     },
     alternates: { canonical: "https://mertkagancetin.com/" },
 };
@@ -83,6 +85,7 @@ export default function Home() {
                             "url": "https://mertkagancetin.com/",
                             "telephone": "+905445854645",
                             "provider": { "@id": "https://mertkagancetin.com/#attorney" },
+                            "image": PHOTO_OBJECT,
                             "hasMap": GBP_URL,
                             "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35000", "addressCountry": "TR" },
                             "areaServed": [
@@ -102,7 +105,8 @@ export default function Home() {
             {/* Hero */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
                 <div className="container mx-auto px-4 pt-10 pb-12 md:pt-14 md:pb-20">
-                    <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+                    <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 md:grid-cols-[1.15fr_1fr] md:gap-12">
+                    <div className="flex flex-col items-center text-center">
                         <h1 className="mb-3 font-playfair text-4xl font-bold leading-tight md:text-6xl">İzmir Kira Avukatı</h1>
                         <p className="mb-6 font-playfair text-xl font-semibold tracking-wide text-secondary md:text-3xl">Av. Mert Kağan Çetin</p>
                         <p className="mb-8 text-lg leading-relaxed text-slate-300 md:text-2xl">
@@ -114,6 +118,18 @@ export default function Home() {
                             <li className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-secondary" aria-hidden="true" />Bayraklı ofis</li>
                             <li>İzmir genelinde</li>
                         </ul>
+                    </div>
+                    <figure className="mx-auto w-full max-w-md md:max-w-none">
+                        <Image
+                            src={PHOTO.src}
+                            alt={PHOTO.alt}
+                            width={PHOTO.width}
+                            height={PHOTO.height}
+                            priority
+                            sizes="(min-width: 1152px) 520px, (min-width: 768px) 45vw, (min-width: 448px) 448px, 100vw"
+                            className="h-auto w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10"
+                        />
+                    </figure>
                     </div>
                 </div>
             </section>
