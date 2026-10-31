@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { glossaryTerms, getGlossaryTerm, getRelatedTerms, categoryLabels } from "@/lib/glossary";
+import { getPostBySlug, postHref } from "@/lib/blog/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Home, ChevronRight, BookOpen, ArrowRight, Scale, Phone } from "lucide-react";
@@ -62,6 +63,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
     }
 
     const relatedTerms = getRelatedTerms(slug);
+    const relatedPosts = term.relatedBlogSlugs.map((s) => getPostBySlug(s, "ictihat") || getPostBySlug(s, "blog")).filter((p): p is NonNullable<typeof p> => p !== null);
     const termUrl = `https://mertkagancetin.com/sozluk/${slug}/`;
 
     const paragraphs = term.detailedExplanation.split("\n\n").filter(Boolean);
@@ -192,25 +194,25 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             )}
 
                             {/* Related Blog Posts */}
-                            {term.relatedBlogSlugs.length > 0 && (
+                            {relatedPosts.length > 0 && (
                                 <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
                                     <h3 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                         <BookOpen className="w-5 h-5 text-secondary" />
-                                        İlgili Makaleler
+                                        İlgili Yargıtay ve BAM Kararları
                                     </h3>
                                     <div className="space-y-3">
-                                        {term.relatedBlogSlugs.map((blogSlug) => (
+                                        {relatedPosts.map((rp) => (
                                             <Link
-                                                key={blogSlug}
-                                                href={`/blog/${blogSlug}/`}
+                                                key={rp.slug}
+                                                href={postHref(rp)}
                                                 className="block text-sm text-slate-700 hover:text-primary transition-colors font-medium"
                                             >
-                                                → {blogSlug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")}
+                                                → {rp.title}
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/blog/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
-                                        Tüm Makaleler <ArrowRight className="w-3 h-3" />
+                                    <Link href="/kira-hukuku-ictihatlari/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                        Kira Hukuku İçtihatları <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
                             )}

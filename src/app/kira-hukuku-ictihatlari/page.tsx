@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChevronRight, Home, Gavel, ArrowRight, Scale } from "lucide-react";
 import { getIctihatByTopic, ICTIHAT_PATH, type IctihatPost } from "@/lib/blog/ictihat";
 import { services, serviceHref, SITE } from "@/lib/services";
+import { postHref } from "@/lib/blog/utils";
 
 const URL = `${SITE}${ICTIHAT_PATH}`;
 const TITLE = "Kira Hukuku İçtihatları | İzmir Kira Avukatı Av. Mert Kağan Çetin";
@@ -33,7 +34,7 @@ function DecisionCard({ p }: { p: IctihatPost }) {
                     {d.court && <span className="text-slate-600">{d.court}</span>}
                 </div>
                 <h3 className="mb-2 font-playfair text-lg font-bold leading-snug text-primary md:text-xl">
-                    <Link href={`/blog/${p.slug}/`} className="hover:text-secondary">{p.title}</Link>
+                    <Link href={postHref(p)} className="hover:text-secondary">{p.title}</Link>
                 </h3>
                 <p className="mb-3 text-sm text-slate-500">
                     {d.esas && <>E. {d.esas}{d.karar && <> · K. {d.karar}</>}</>}
@@ -41,7 +42,7 @@ function DecisionCard({ p }: { p: IctihatPost }) {
                     {d.esas && " · "}Yayın <time dateTime={p.date}>{trDate(p.date)}</time>
                 </p>
                 <p className="mb-4 leading-7 text-slate-700">{p.excerpt}</p>
-                <Link href={`/blog/${p.slug}/`} className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:gap-2 hover:text-secondary" aria-label={`Karar notunu oku: ${p.title}`}>
+                <Link href={postHref(p)} className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:gap-2 hover:text-secondary" aria-label={`Karar notunu oku: ${p.title}`}>
                     Karar notunu oku <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
             </article>
@@ -73,7 +74,7 @@ export default function IctihatHubPage() {
             "itemListElement": all.map((p, i) => ({
                 "@type": "ListItem",
                 "position": i + 1,
-                "url": `${SITE}/blog/${p.slug}/`,
+                "url": `${SITE}${postHref(p)}`,
                 "name": p.title,
             })),
         },
@@ -100,7 +101,7 @@ export default function IctihatHubPage() {
                     </nav>
                     <div className="mx-auto max-w-3xl text-center">
                         <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-slate-200">
-                            <Gavel className="h-3.5 w-3.5 text-secondary" aria-hidden="true" />{all.length} karar notu
+                            <Gavel className="h-3.5 w-3.5 text-secondary" aria-hidden="true" />Yargıtay ve BAM kararları
                         </div>
                         <h1 className="mb-5 font-playfair text-3xl font-bold leading-tight md:text-5xl">Kira Hukuku İçtihatları</h1>
                         <p className="text-base leading-relaxed text-slate-200 md:text-lg">
@@ -117,7 +118,7 @@ export default function IctihatHubPage() {
                         {topics.map((t) => (
                             <li key={t.key}>
                                 <a href={`#${t.key}`} className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-primary hover:border-secondary hover:bg-secondary/10">
-                                    {t.title}<span className="rounded-full bg-white px-2 text-xs text-slate-500">{t.posts.length}</span>
+                                    {t.title}
                                 </a>
                             </li>
                         ))}
