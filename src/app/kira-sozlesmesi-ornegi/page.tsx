@@ -322,7 +322,7 @@ export default function KiraSozlesmesiPage() {
                         <li>Sözleşmeyi imzalamadan önce tüm maddeleri dikkatli okuyun</li>
                         <li>Depozito tutarının 3 aylık kiradan fazla olmamasına dikkat edin</li>
                         <li>Taşınmazın mevcut durumunu (hasarlar, eksikler) sözleşmeye ek olarak tutanakla kaydedin</li>
-                        <li><Link href="/blog/kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec/" className="text-secondary hover:underline">Fesih koşullarını</Link> net bir şekilde anlayın</li>
+                        <li><Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary hover:underline">Fesih koşullarını</Link> net bir şekilde anlayın</li>
                         <li>Aidat ve yan giderlerin kime ait olduğunu sözleşmede netleştirin</li>
                     </ul>
 
@@ -345,7 +345,7 @@ export default function KiraSozlesmesiPage() {
 
                     <h2>Kira Sözleşmesiyle İlgili Uyuşmazlıklar</h2>
                     <p>
-                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec/" className="text-secondary hover:underline">depozito iadesi</Link>, <Link href="/blog/kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari/" className="text-secondary hover:underline">aidat borcu</Link> vb.) 2024 yılından itibaren <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary hover:underline">zorunlu arabuluculuk</Link> uygulanmaktadır.
+                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">depozito iadesi</Link>, aidat borcu vb.) 2024 yılından itibaren <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary hover:underline">zorunlu arabuluculuk</Link> uygulanmaktadır.
                     </p>
                     <p>
                         Dava açılmadan önce arabulucuya başvurulması şarttır. Arabuluculuk sürecinde anlaşma sağlanamaması halinde sulh hukuk mahkemesinde dava açılabilir.
