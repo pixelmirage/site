@@ -134,6 +134,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                         <div className="lg:col-span-2 min-w-0 doc-prose">
                             {/* Featured Snippet Definition */}
+                            <h2 className="mt-0">Tanım</h2>
                             <div className="not-prose bg-slate-50 border-l-4 border-secondary p-6 rounded-r-xl mb-8">
                                 <p className="text-xl leading-relaxed font-medium text-slate-800">
                                     <strong>{term.term}</strong>, {term.definition.split(". ").slice(1).join(". ")}
@@ -163,7 +164,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
 
                             {/* Legal Basis Callout */}
                             <div className="not-prose bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-                                <h4 className="font-bold text-blue-900 text-lg mb-2">Yasal Dayanak: {term.legalBasis}</h4>
+                                <p className="font-serif tracking-tight font-bold text-blue-900 text-lg mb-2">Yasal Dayanak: {term.legalBasis}</p>
                                 <p className="text-blue-800 text-sm leading-relaxed">
                                     Bu terim {term.legalBasis} kapsamında düzenlenmiştir. Detaylı hukuki değerlendirme için bir avukattan danışmanlık almanız tavsiye edilir.
                                 </p>
@@ -172,10 +173,10 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {/* Related Glossary Terms */}
                             {relatedTerms.length > 0 && (
                                 <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
-                                    <h3 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
+                                    <h2 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                         <Scale className="w-5 h-5 text-secondary" />
                                         İlgili Hukuki Terimler
-                                    </h3>
+                                    </h2>
                                     <div className="space-y-3">
                                         {relatedTerms.map((rt) => (
                                             <Link
@@ -196,10 +197,10 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {/* Related Blog Posts */}
                             {relatedPosts.length > 0 && (
                                 <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
-                                    <h3 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
+                                    <h2 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                         <BookOpen className="w-5 h-5 text-secondary" />
                                         İlgili Yargıtay ve BAM Kararları
-                                    </h3>
+                                    </h2>
                                     <div className="space-y-3">
                                         {relatedPosts.map((rp) => (
                                             <Link
@@ -225,7 +226,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                         {/* Sidebar */}
                         <div className="space-y-8">
                             <div className="bg-primary text-white p-8 rounded-2xl sticky top-24">
-                                <h3 className="text-2xl font-playfair font-bold mb-4">Hukuki Destek Alın</h3>
+                                <p className="font-serif tracking-tight text-2xl font-playfair font-bold mb-4">Hukuki Destek Alın</p>
                                 <p className="text-slate-300 mb-6">
                                     {term.term} konusunda profesyonel hukuki danışmanlık için bizimle iletişime geçin.
                                 </p>
@@ -243,7 +244,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             </div>
 
                             <div className="border border-slate-200 rounded-2xl p-8">
-                                <h3 className="font-bold text-lg mb-4">Sıkça Sorulan Sorular</h3>
+                                <h2 className="font-bold text-lg mb-4">Sıkça Sorulan Sorular</h2>
                                 <FAQAccordion faqs={term.faqs} />
                             </div>
                         </div>
@@ -255,7 +256,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             <section className="pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
+                        <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</p>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
                             Kira uyuşmazlıklarında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>

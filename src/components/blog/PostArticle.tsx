@@ -195,7 +195,7 @@ export function PostArticle({ post }: { post: PostData }) {
                         <div className="flex items-center gap-4">
                             <Image src={PHOTO.avatar} alt="Av. Mert Kağan Çetin" width={56} height={56} sizes="56px" className="h-14 w-14 flex-shrink-0 rounded-full object-cover ring-2 ring-secondary/40" />
                             <div>
-                                <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
+                                <p className="font-serif tracking-tight font-bold text-primary">Av. Mert Kağan Çetin</p>
                             </div>
                         </div>
                         <Button className="bg-primary text-white hover:bg-primary/90 gap-2 px-8" asChild>
@@ -223,7 +223,7 @@ export function PostArticle({ post }: { post: PostData }) {
 
                     {/* Hub Link - İzmir Kira Avukatı */}
                     <div className="mt-12 p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
+                        <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</p>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
                             Tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi konularında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>

@@ -109,7 +109,7 @@ export default function AboutPage() {
                                     className="h-auto w-full object-cover"
                                 />
                                 <div className="bg-primary p-8 text-center text-white">
-                                    <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
+                                    <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</p>
                                     <p className="text-sm text-secondary font-medium uppercase tracking-widest">Kurucu Avukat</p>
                                 </div>
                                 <CardContent className="p-8 space-y-8">
@@ -121,7 +121,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <div className="space-y-4">
-                                        <h4 className="font-bold text-primary text-sm uppercase tracking-widest">Çalışma Şekli</h4>
+                                        <p className="font-serif font-bold text-primary text-sm uppercase tracking-widest">Çalışma Şekli</p>
                                         {[
                                             "Telefonla ön görüşme",
                                             "Dosyanın avukat tarafından takibi",

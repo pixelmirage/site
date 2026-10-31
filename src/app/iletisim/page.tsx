@@ -70,7 +70,7 @@ export default function ContactPage() {
                                             <MapPin className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary mb-1">Ofis Adresi</h4>
+                                            <p className="font-serif tracking-tight font-bold text-primary mb-1">Ofis Adresi</p>
                                             <p className="text-muted-foreground text-sm leading-relaxed">
                                                 Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, <br />
                                                 Bayraklı/İzmir
@@ -86,7 +86,7 @@ export default function ContactPage() {
                                             <Phone className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary mb-1">Telefon</h4>
+                                            <p className="font-serif tracking-tight font-bold text-primary mb-1">Telefon</p>
                                             <p className="text-muted-foreground text-sm">0544 585 46 45</p>
                                         </div>
                                     </div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                                             <Mail className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary mb-1">E-posta</h4>
+                                            <p className="font-serif tracking-tight font-bold text-primary mb-1">E-posta</p>
                                             <p className="text-muted-foreground text-sm">mertkagancetin@gmail.com</p>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                         <div className="lg:w-2/3">
                             <Card className="border-none shadow-2xl bg-white">
                                 <CardContent className="p-8 md:p-12">
-                                    <h3 className="text-3xl font-playfair font-bold text-primary mb-4">Hukuki Danışmanlık Formu</h3>
+                                    <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Hukuki Danışmanlık Formu</h2>
                                     <p className="text-muted-foreground mb-8">
                                         Aşağıdaki formu doldurarak durumunuz hakkında ön bilgi iletebilirsiniz. Mesajınıza en kısa sürede dönüş sağlanacaktır.
                                     </p>
