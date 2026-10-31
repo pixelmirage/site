@@ -12,7 +12,7 @@ export function FlowSteps({ steps, caption, id }: { steps: FlowStep[]; caption: 
                             <span className="font-serif text-base font-bold leading-snug text-primary">{s.title}</span>
                         </div>
                         <p className="text-[15px] leading-6 text-slate-700">{s.text}</p>
-                        {s.law && <p className="mt-auto pt-3 text-xs font-semibold uppercase tracking-wide text-secondary">{s.law}</p>}
+                        {s.law && <p className="mt-auto pt-3 text-xs font-semibold uppercase tracking-wide text-secondary-ink">{s.law}</p>}
                         {i < steps.length - 1 && (
                             <span aria-hidden="true" className="pointer-events-none absolute -bottom-3 left-1/2 z-10 -translate-x-1/2 text-lg leading-none text-secondary md:hidden">▼</span>
                         )}

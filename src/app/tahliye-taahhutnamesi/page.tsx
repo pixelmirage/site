@@ -139,7 +139,7 @@ const articleSchema = {
     },
 };
 
-const ext = "text-secondary hover:underline";
+const ext = "text-secondary-ink underline underline-offset-2 hover:text-primary";
 
 export default function EvictionTemplatePage() {
     return (
@@ -364,7 +364,7 @@ export default function EvictionTemplatePage() {
                                 </div>
                                 <div className="text-center">
                                     <p className="font-bold mb-8">TAAHHÜT EDEN (KİRACI)</p>
-                                    <p className="text-sm text-slate-400 mb-8">(İmza)</p>
+                                    <p className="text-sm text-slate-500 mb-8">(İmza)</p>
                                 </div>
                             </div>
                         </div>

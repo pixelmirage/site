@@ -75,7 +75,7 @@ export default function ContactPage() {
                                                 Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, <br />
                                                 Bayraklı/İzmir
                                             </p>
-                                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
+                                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary-ink hover:text-primary transition-colors mt-1 inline-block">
                                                 Google Maps'te Yol Tarifi Al &rarr;
                                             </a>
                                         </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                                 "Ofisimiz İzmir Adliyesi'ne yürüme mesafesinde, merkezi bir konumdadır. Randevu alarak gelmeniz, size daha iyi hizmet vermemizi sağlar."
                             </div>
 
-                            <Button className="w-full bg-green-600 hover:bg-green-700 text-white gap-2 h-14 text-lg font-bold" asChild>
+                            <Button className="w-full bg-[#1c8549] hover:bg-[#1a7a43] text-white gap-2 h-14 text-lg font-bold" asChild>
                                 <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                     <MessageCircle className="w-6 h-6" />
                                     WhatsApp ile Yazın

@@ -110,13 +110,13 @@ export default function RentCalculatorPage() {
 
                         <h3>5 Yılı Dolduran Kiracılar İçin Durum Farklı mı?</h3>
                         <p>
-                            Evet. 5 yıllık kira süresi dolduğunda, mülk sahibi &quot;<Link href="/sozluk/kira-tespit-davasi/" className="text-secondary hover:underline">Kira Tespit Davası</Link>&quot; açma hakkına sahip olur. Bu davada mahkeme,
+                            Evet. 5 yıllık kira süresi dolduğunda, mülk sahibi &quot;<Link href="/sozluk/kira-tespit-davasi/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Kira Tespit Davası</Link>&quot; açma hakkına sahip olur. Bu davada mahkeme,
                             sadece TÜFE oranına değil, taşınmazın durumu ve <strong>emsal kira bedellerine</strong> bakarak hakkaniyete uygun yeni bir kira belirler.
                         </p>
 
                         <h3>Kira Artışında Anlaşmazlık Çıkarsa Ne Yapılır?</h3>
                         <p>
-                            Ev sahibi yasal sınırın üzerinde artış talep ederse, kiracı önceki bedel üzerinden ödeme yapabilir. Ev sahibi zam farkını alabilmek için <Link href="/sozluk/kira-tespit-davasi/" className="text-secondary hover:underline">kira tespit davası</Link> açmalıdır. Kiracı, <Link href="/tahliye-taahhutnamesi/" className="text-secondary hover:underline">tahliye taahhütnamesi</Link> imzalamamış olduğu sürece, zam anlaşmazlığı sebebiyle tahliye edilemez.
+                            Ev sahibi yasal sınırın üzerinde artış talep ederse, kiracı önceki bedel üzerinden ödeme yapabilir. Ev sahibi zam farkını alabilmek için <Link href="/sozluk/kira-tespit-davasi/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira tespit davası</Link> açmalıdır. Kiracı, <Link href="/tahliye-taahhutnamesi/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">tahliye taahhütnamesi</Link> imzalamamış olduğu sürece, zam anlaşmazlığı sebebiyle tahliye edilemez.
                         </p>
 
                         <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
@@ -149,7 +149,7 @@ export default function RentCalculatorPage() {
                         <h2>Hukuki Sorun mu Yaşıyorsunuz?</h2>
                         <p>
                             Kira artış oranında anlaşmazlık yaşıyorsanız veya ev sahibiniz yasal sınırın üzerinde zam talep ediyorsa,
-                            yasal sınır ve tespit davası koşullarını birlikte değerlendirmek faydalı olabilir. <Link href="/izmir-kira-tespit-davasi-avukati/" className="text-secondary hover:underline">İzmir kira tespit davası avukatı</Link> sayfamızda kira artışı ve kira tespit süreçlerine ilişkin ayrıntılı bilgi bulabilirsiniz.
+                            yasal sınır ve tespit davası koşullarını birlikte değerlendirmek faydalı olabilir. <Link href="/izmir-kira-tespit-davasi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">İzmir kira tespit davası avukatı</Link> sayfamızda kira artışı ve kira tespit süreçlerine ilişkin ayrıntılı bilgi bulabilirsiniz.
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
@@ -168,10 +168,10 @@ export default function RentCalculatorPage() {
                         <h2>İlgili Hukuki Makaleler</h2>
                         <p>Kira artışı ve kira tespitiyle ilgili Yargıtay ve BAM kararları üzerine hazırlanan yazılar:</p>
                         <ul>
-                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-davasi-emsal-bilirkisi/" className="text-secondary hover:underline">Kira Tespit Davasında Emsal Nasıl Belirlenir? Bilirkişi Raporu ve Harç</Link></li>
-                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-5-yil-yenilenen-sozlesme/" className="text-secondary hover:underline">Yenilenen Kira Sözleşmesi 5 Yıllık Süreyi Sıfırlar mı?</Link></li>
-                            <li><Link href="/kira-hukuku-ictihatlari/kira-bedeli-kdv-stopaj-net-brut/" className="text-secondary hover:underline">Kira Bedeli + KDV: Kira Net mi, Brüt mü?</Link></li>
-                            <li><Link href="/kira-hukuku-ictihatlari/" className="text-secondary hover:underline">Kira Hukuku İçtihatları</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-davasi-emsal-bilirkisi/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Kira Tespit Davasında Emsal Nasıl Belirlenir? Bilirkişi Raporu ve Harç</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-5-yil-yenilenen-sozlesme/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Yenilenen Kira Sözleşmesi 5 Yıllık Süreyi Sıfırlar mı?</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-bedeli-kdv-stopaj-net-brut/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Kira Bedeli + KDV: Kira Net mi, Brüt mü?</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Kira Hukuku İçtihatları</Link></li>
                         </ul>
 
                     </div>
