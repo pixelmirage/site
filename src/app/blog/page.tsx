@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/blog/utils";
+import { getListedPosts } from "@/lib/blog/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-    const posts = getAllPosts();
+    const posts = getListedPosts();
 
     return (
         <div className="bg-slate-50 min-h-screen">
@@ -37,7 +37,7 @@ export default function BlogPage() {
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hukuki Makaleler</h1>
                         <p className="text-xl text-muted-foreground">
-                            Kira, iş, boşanma ve tazminat hukuku alanlarındaki güncel gelişmeleri, değişen mevzuatı ve emsal Yargıtay kararlarını takip edin.
+                            Kira hukukundaki güncel gelişmeler, değişen mevzuat ve emsal kararlar üzerine yazılar. Yargıtay ve BAM karar notları konu başlıklarına göre <Link href="/kira-hukuku-ictihatlari/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">Kira Hukuku İçtihatları</Link> sayfasında da listelenir.
                         </p>
                     </div>
                 </div>

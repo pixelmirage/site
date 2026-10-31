@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
-import { kiraHub, kiraLinks, kiraTools } from "@/lib/nav";
+import { kiraHub, kiraLinks, kiraTools, ictihatLink } from "@/lib/nav";
 import { GBP_URL, GBP_DIRECTIONS_URL } from "@/lib/gbp";
 
 export function Footer() {
@@ -33,6 +33,7 @@ export function Footer() {
                             {kiraTools.map((l) => (
                                 <li key={l.href}><Link href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{l.name}</Link></li>
                             ))}
+                            <li><Link href={ictihatLink.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">{ictihatLink.name}</Link></li>
                             <li><Link href="/blog/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Kira Hukuku Makaleleri</Link></li>
                             <li><Link href="/hakkimda/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Hakkımda</Link></li>
                             <li><Link href="/iletisim/" className="text-sm text-muted-foreground hover:text-primary transition-colors">İletişim</Link></li>
