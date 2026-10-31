@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getListedPosts } from '@/lib/blog/utils';
+import { getListedPosts, postHref } from '@/lib/blog/utils';
 import { glossaryTerms } from '@/lib/glossary';
 import { services } from '@/lib/services';
 
@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Yalnızca kira hukuku yazıları (noindex yazılar hariç)
     const posts = getListedPosts();
     const blogSitemap = posts.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}/`,
+        url: `${baseUrl}${postHref(post)}`,
         lastModified: new Date(post.dateModified || post.date),
         changeFrequency: 'weekly' as const,
         priority: 0.7,

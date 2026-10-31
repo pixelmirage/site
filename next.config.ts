@@ -24,6 +24,18 @@ const oldDomainRedirects = [
   { source: '/:path*', has: OLD_HOST, destination: `${NEW}/`, statusCode: 301 as const },
 ];
 
+// Slashless removed URLs must not hit the trailing-slash rule first (that would add a second hop).
+const NOTFILE_SKIP = [
+  'izmir-kira-avukati/izmir-kira-hukuku',
+  'izmir-bosanma-avukati/bosanma-sureci-izmir',
+  'izmir-bosanma-avukati/aile-hukuku-avukati-izmir',
+  'izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir',
+  ...removedPageRedirects
+    .map(([src]) => src.slice(1))
+    .filter((src) => /^[a-z0-9\-/]+(?:\/:path\*)?$/.test(src))
+    .map((src) => (src.endsWith('/:path*') ? `${src.slice(0, -7)}(?:/.*)?` : src)),
+].join('|');
+
 const nextConfig: NextConfig = {
   experimental: {},
   trailingSlash: true,
@@ -57,7 +69,7 @@ const nextConfig: NextConfig = {
         missing: [{ type: 'header', key: 'x-nextjs-data' }],
       },
       {
-        source: '/:notfile((?!\\.well-known(?:/.*)?)(?!(?:izmir-kira-avukati/izmir-kira-hukuku|izmir-bosanma-avukati/bosanma-sureci-izmir|izmir-bosanma-avukati/aile-hukuku-avukati-izmir|izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir|blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri|blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati)$)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))',
+        source: `/:notfile((?!\\.well-known(?:/.*)?)(?!(?:${NOTFILE_SKIP})$)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))`,
         destination: '/:notfile/',
         permanent: true,
         missing: OLD_HOST,
