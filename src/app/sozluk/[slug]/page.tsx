@@ -45,13 +45,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const serviceHref: Record<string, string> = {
     "#tahliye": "/izmir-kiraci-tahliye-davasi-avukati/",
-    "#kira": "/",
+    "#tespit": "/izmir-kira-tespit-davasi-avukati/",
+    "#uyarlama": "/izmir-kira-uyarlama-davasi-avukati/",
+    "#alacak": "/izmir-kira-alacagi-icra-takibi-avukati/",
+    "#taahhut": "/izmir-tahliye-taahhudu-icra-avukati/",
     "#gayrimenkul": "/izmir-kira-sozlesmesi-avukati/",
+    "#arabuluculuk": "/izmir-kira-arabuluculuk-avukati/",
+    "#kira": "/",
 };
 const serviceLabel: Record<string, string> = {
-    "#tahliye": "İzmir Kiracı Tahliye Davası Avukatı",
+    "#tahliye": "Kiracı tahliye davası",
+    "#tespit": "Kira tespit davası",
+    "#uyarlama": "Kira uyarlama davası",
+    "#alacak": "Kira alacağı ve icra takibi",
+    "#taahhut": "Tahliye taahhüdü ile icra",
+    "#gayrimenkul": "Kira sözleşmesi hazırlama ve inceleme",
+    "#arabuluculuk": "Kira arabuluculuğu",
     "#kira": "İzmir Kira Avukatı",
-    "#gayrimenkul": "İzmir Kira Sözleşmesi Avukatı",
 };
 
 export default async function GlossaryTermPage({ params }: { params: Promise<{ slug: string }> }) {
