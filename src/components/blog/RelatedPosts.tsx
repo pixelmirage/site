@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/blog/utils";
+import { getListedPosts } from "@/lib/blog/utils";
 import { ArrowRight } from "lucide-react";
 
 interface RelatedPostsProps {
@@ -9,7 +9,7 @@ interface RelatedPostsProps {
 }
 
 export function RelatedPosts({ currentSlug, currentTags = [], limit = 3 }: RelatedPostsProps) {
-    const allPosts = getAllPosts();
+    const allPosts = getListedPosts();
 
     // Filter out current post and find related ones based on tags
     const relatedPosts = allPosts

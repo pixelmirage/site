@@ -1,5 +1,5 @@
 import { glossaryTerms } from '@/lib/glossary';
-import { getAllPosts } from '@/lib/blog/utils';
+import { getListedPosts } from '@/lib/blog/utils';
 
 interface VideoEntry {
     pageUrl: string;
@@ -29,7 +29,7 @@ export async function GET() {
     }
 
     // Blog posts with videos
-    const posts = getAllPosts();
+    const posts = getListedPosts();
     for (const post of posts) {
         if (post.youtubeVideoId) {
             entries.push({

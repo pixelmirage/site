@@ -1,4 +1,5 @@
 import { GBP_URL, GBP_GEO } from "@/lib/gbp";
+import { PHOTO_OBJECT } from "@/lib/photo";
 
 export function SchemaMarkup() {
     const schema = {
@@ -37,7 +38,7 @@ export function SchemaMarkup() {
                 "name": "Av. Mert Kağan Çetin",
                 "jobTitle": "Avukat",
                 "url": "https://mertkagancetin.com/hakkimda/",
-                "image": "https://mertkagancetin.com/logo.png",
+                "image": PHOTO_OBJECT,
                 "sameAs": [
                     GBP_URL,
                     "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
@@ -63,7 +64,7 @@ export function SchemaMarkup() {
                 "founder": { "@id": "https://mertkagancetin.com/#person" },
                 "parentOrganization": { "@id": "https://mertkagancetin.com/#organization" },
                 "name": "Av. Mert Kağan Çetin",
-                "image": "https://mertkagancetin.com/logo.png",
+                "image": PHOTO_OBJECT,
                 "url": "https://mertkagancetin.com/",
                 "employee": { "@id": "https://mertkagancetin.com/#person" },
                 "identifier": { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts } from '@/lib/blog/utils';
+import { getListedPosts } from '@/lib/blog/utils';
 import { glossaryTerms } from '@/lib/glossary';
 import { services } from '@/lib/services';
 
@@ -7,7 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://mertkagancetin.com';
 
     // Blog Posts — use actual post dates for lastModified
-    const posts = getAllPosts();
+    // Yalnızca kira hukuku yazıları (noindex yazılar hariç)
+    const posts = getListedPosts();
     const blogSitemap = posts.map((post) => ({
         url: `${baseUrl}/blog/${post.slug}/`,
         lastModified: new Date(post.dateModified || post.date),
@@ -27,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/tahliye-taahhutnamesi': { lastModified: '2026-10-29', priority: 0.7 },
         '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-29', priority: 0.7 },
         '/sozluk': { lastModified: '2026-10-29', priority: 0.6 },
+        '/kira-hukuku-ictihatlari': { lastModified: posts.filter((p) => p.ictihat || p.tags?.includes('emsal karar')).map((p) => p.dateModified || p.date).sort().pop() || '2026-10-31', priority: 0.8 },
     };
 
     const routes = Object.entries(staticRoutes).map(([route, config]) => ({

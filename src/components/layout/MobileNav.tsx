@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { kiraHub, kiraLinks, kiraTools } from "@/lib/nav";
+import { kiraHub, kiraLinks, kiraTools, ictihatLink } from "@/lib/nav";
 import { Logo } from "@/components/ui/logo";
 
 export function MobileNav() {
@@ -80,6 +80,13 @@ export function MobileNav() {
                             className="flex items-center text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
                         >
                             Makaleler
+                        </Link>
+                        <Link
+                            href={ictihatLink.href}
+                            onClick={() => setOpen(false)}
+                            className="flex items-center text-lg font-medium px-4 py-3 hover:bg-muted rounded-md transition-colors"
+                        >
+                            Kira Hukuku İçtihatları
                         </Link>
                         <Link
                             href="/hakkimda/"

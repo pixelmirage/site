@@ -1,10 +1,12 @@
-import { getPostBySlug, getAllPosts } from "@/lib/blog/utils";
+import { getPostBySlug, getAllPosts, isIndexablePost } from "@/lib/blog/utils";
+import { isIctihatPost, ICTIHAT_PATH } from "@/lib/blog/ictihat";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { Calendar, Clock, ChevronLeft, Share2, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { InitialsBadge } from "@/components/ui/InitialsBadge";
+import Image from "next/image";
+import { PHOTO } from "@/lib/photo";
 import { Button } from "@/components/ui/button";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -55,6 +57,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         alternates: {
             canonical: url,
         },
+        // Kira hukuku dışındaki eski yazılar: erişilebilir, ancak dizine eklenmez
+        ...(isIndexablePost(post) ? {} : { robots: { index: false, follow: true } }),
     };
 }
 
@@ -200,7 +204,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 p-8 bg-slate-50 rounded-3xl">
                         <div className="flex items-center gap-4">
-                            <InitialsBadge className="w-14 h-14" />
+                            <Image src={PHOTO.avatar} alt="Av. Mert Kağan Çetin" width={56} height={56} sizes="56px" className="h-14 w-14 flex-shrink-0 rounded-full object-cover ring-2 ring-secondary/40" />
                             <div>
                                 <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
                             </div>
@@ -211,6 +215,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             </Link>
                         </Button>
                     </div>
+
+                    {isIctihatPost(post) && (
+                        <div className="mt-10 flex flex-col gap-3 rounded-2xl border border-secondary/30 bg-secondary/5 p-6 sm:flex-row sm:items-center sm:justify-between">
+                            <p className="text-sm leading-relaxed text-slate-700">Bu karar notu, kira hukukuna ilişkin diğer Yargıtay ve BAM kararlarıyla birlikte konu başlıklarına göre listelenir.</p>
+                            <Link href={ICTIHAT_PATH} className="inline-flex flex-shrink-0 items-center gap-1 text-sm font-bold text-primary hover:text-secondary">
+                                Kira Hukuku İçtihatları <ArrowRight className="h-4 w-4" />
+                            </Link>
+                        </div>
+                    )}
 
                     {/* Related Posts - Internal Linking */}
                     <RelatedPosts

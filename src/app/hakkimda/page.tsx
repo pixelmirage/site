@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Award, BookOpen, Scale } from "lucide-react";
 import Link from "next/link";
-import { InitialsBadge } from "@/components/ui/InitialsBadge";
+import Image from "next/image";
+import { PHOTO } from "@/lib/photo";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
@@ -97,10 +98,15 @@ export default function AboutPage() {
                         {/* Sidebar / Stats Card */}
                         <div className="lg:w-1/3 w-full sticky top-[100px]">
                             <Card className="border-2 border-primary/5 shadow-2xl overflow-hidden bg-white">
+                                <Image
+                                    src={PHOTO.src}
+                                    alt="Av. Mert Kağan Çetin, İzmir'deki hukuk bürosunda – İzmir kira avukatı"
+                                    width={PHOTO.width}
+                                    height={PHOTO.height}
+                                    sizes="(min-width: 1024px) 400px, 100vw"
+                                    className="h-auto w-full object-cover"
+                                />
                                 <div className="bg-primary p-8 text-center text-white">
-                                    <div className="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white/20">
-                                        <InitialsBadge className="w-full h-full" />
-                                    </div>
                                     <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
                                     <p className="text-sm text-secondary font-medium uppercase tracking-widest">Kurucu Avukat</p>
                                 </div>
