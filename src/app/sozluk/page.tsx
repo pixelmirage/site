@@ -146,7 +146,7 @@ export default function GlossaryPage() {
             <section className="pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
+                        <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</p>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
                             Hukuki terimleri anlamak önemlidir ancak süreçlerde avukat desteği almak hak kaybını önler. Kira uyuşmazlıklarında ön görüşme telefonla yapılabilir.
                         </p>

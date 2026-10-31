@@ -113,14 +113,14 @@ export default function KiraSozlesmesiPage() {
                     <div className="print-content font-serif leading-relaxed [overflow-wrap:anywhere]">
 
                         {/* Başlık */}
-                        <h2 className="text-center font-bold text-2xl mb-10 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">
+                        <p className="font-serif tracking-tight text-center font-bold text-2xl mb-10 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">
                             Kira Sözleşmesi
-                        </h2>
+                        </p>
 
                         <p className="text-right text-sm mb-8">Düzenleme Tarihi: ..... / ..... / 20.....</p>
 
                         {/* Taraflar */}
-                        <h3 className="font-bold text-lg mb-4 uppercase">Taraflar</h3>
+                        <p className="font-serif tracking-tight font-bold text-lg mb-4 uppercase">Taraflar</p>
 
                         <div className="mb-6">
                             <p className="font-bold mb-2">KİRAYA VEREN (Ev Sahibi)</p>
@@ -141,7 +141,7 @@ export default function KiraSozlesmesiPage() {
                         </div>
 
                         {/* Kiralanan */}
-                        <h3 className="font-bold text-lg mb-4 uppercase">Kiralanan Taşınmaz</h3>
+                        <p className="font-serif tracking-tight font-bold text-lg mb-4 uppercase">Kiralanan Taşınmaz</p>
                         <div className="space-y-2 pl-4 text-[15px] mb-8">
                             <p>Adres: ..................................................................</p>
                             <p>..................................................................</p>
@@ -150,7 +150,7 @@ export default function KiraSozlesmesiPage() {
                         </div>
 
                         {/* Kira Süresi ve Bedeli */}
-                        <h3 className="font-bold text-lg mb-4 uppercase">Kira Süresi ve Bedeli</h3>
+                        <p className="font-serif tracking-tight font-bold text-lg mb-4 uppercase">Kira Süresi ve Bedeli</p>
                         <div className="space-y-2 pl-4 text-[15px] mb-8">
                             <p>Kira Başlangıç Tarihi: ..... / ..... / 20.....</p>
                             <p>Kira Bitiş Tarihi: ..... / ..... / 20.....</p>
@@ -161,7 +161,7 @@ export default function KiraSozlesmesiPage() {
                         </div>
 
                         {/* Sözleşme Hükümleri */}
-                        <h3 className="font-bold text-lg mb-6 uppercase border-t border-black pt-4">Sözleşme Hükümleri</h3>
+                        <p className="font-serif tracking-tight font-bold text-lg mb-6 uppercase border-t border-black pt-4">Sözleşme Hükümleri</p>
 
                         <div className="space-y-5 text-[14px] leading-relaxed">
                             <div>
@@ -256,7 +256,7 @@ export default function KiraSozlesmesiPage() {
                     <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg flex gap-4">
                         <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
                         <div>
-                            <h4 className="font-bold text-amber-800 mb-2">Dikkat Edilmesi Gerekenler</h4>
+                            <p className="font-serif tracking-tight font-bold text-amber-800 mb-2">Dikkat Edilmesi Gerekenler</p>
                             <p className="text-sm text-amber-700 leading-relaxed">
                                 Bu şablon genel bilgilendirme amaçlıdır ve tüm kira ilişkilerine birebir uygun olmayabilir. Özellikle <strong>işyeri kiraları</strong>, <strong>yüksek bedelli kira sözleşmeleri</strong> veya <strong>özel durumlar</strong> için bir avukattan hukuki danışmanlık almanız tavsiye edilir.
                             </p>
@@ -378,7 +378,7 @@ export default function KiraSozlesmesiPage() {
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                        <h3 className="text-2xl font-serif font-bold text-primary mb-4">Kira Sözleşmenizi İnceleyelim</h3>
+                        <p className="tracking-tight text-2xl font-serif font-bold text-primary mb-4">Kira Sözleşmenizi İnceleyelim</p>
                         <p className="mb-6 text-muted-foreground">Kira sözleşmesi hazırlama veya mevcut sözleşmenizin hukuki incelemesi için bizimle iletişime geçin.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <Button size="lg" className="bg-primary text-white" asChild>

@@ -91,10 +91,10 @@ export default function RentCalculatorPage() {
                         </p>
 
                         <div className="not-prose bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-lg">
-                            <h4 className="flex items-center gap-2 font-bold text-amber-800 text-lg mb-2">
+                            <p className="font-serif tracking-tight flex items-center gap-2 font-bold text-amber-800 text-lg mb-2">
                                 <AlertTriangle className="w-5 h-5" />
                                 Önemli Bilgi: %25 Sınırı Sona Erdi
-                            </h4>
+                            </p>
                             <p className="text-amber-700 text-sm">
                                 Konut kiraları için uygulanan %25'lik artış tavanı uygulaması 1 Temmuz 2024 tarihi itibariyle sona ermiştir.
                                 Artık konut kiralarında da TÜFE ortalaması esas alınmaktadır.
@@ -153,7 +153,7 @@ export default function RentCalculatorPage() {
                         </p>
 
                         <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                            <h3 className="text-2xl font-serif font-bold text-primary mb-4">İletişime Geçin</h3>
+                            <p className="tracking-tight text-2xl font-serif font-bold text-primary mb-4">İletişime Geçin</p>
                             <p className="mb-6 text-muted-foreground">Kira artışına ilişkin sorularınız için telefonla ön görüşme yapabilirsiniz.</p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-primary text-white" asChild>
