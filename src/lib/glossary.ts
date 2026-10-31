@@ -44,7 +44,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
         legalBasis: "TBK m. 352/1",
         category: "tahliye",
         relatedTermSlugs: ["kira-sozlesmesi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
+        relatedBlogSlugs: ["bos-tahliye-taahhutnamesi-yemin-delili", "tahliye-taahhudu-icra-itirazin-iptali"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "0I5No4QamYA",
         faqs: [
@@ -80,7 +80,7 @@ Dava, yeni kira döneminin başlangıcından en az otuz gün önce açılmalı v
         legalBasis: "TBK m. 344",
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-artis-orani", "kira-uyarlama-davasi", "kira-sozlesmesi"],
-        relatedBlogSlugs: ["hangi-durumlarda-kira-tespit-davasi-acilabilir"],
+        relatedBlogSlugs: ["kira-tespit-davasi-emsal-bilirkisi", "kira-tespit-davasi-hakkaniyet-indirimi", "kira-tespit-5-yil-yenilenen-sozlesme"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "7mChnFfudwY",
         faqs: [
@@ -116,7 +116,7 @@ Tahliye gerçekleştikten sonra, kiraya veren üç yıl süreyle taşınmazı es
         legalBasis: "TBK m. 350",
         category: "tahliye",
         relatedTermSlugs: ["tahliye-taahhutnamesi", "10-yillik-uzama-suresi", "kiraci-haklari"],
-        relatedBlogSlugs: ["ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
+        relatedBlogSlugs: ["yeni-malik-ihtiyac-tahliye-yurt-disi", "tahliye-davasi-arabuluculuk-erken-basvuru"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "KrgeQm3tm_Q",
         faqs: [
@@ -152,7 +152,7 @@ Arabuluculukta anlaşma sağlanamazsa, son tutanağın düzenlendiği tarihten i
         legalBasis: "7445 sayılı Kanun",
         category: "haklar",
         relatedTermSlugs: ["kira-tespit-davasi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
-        relatedBlogSlugs: ["kira-hukukunda-zorunlu-arabuluculuk-sureci", "kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari"],
+        relatedBlogSlugs: ["tahliye-davasi-arabuluculuk-erken-basvuru"],
         relatedServiceAnchor: "#tahliye",
         faqs: [
             {
@@ -187,7 +187,7 @@ TBK m. 352/2'ye göre, kiracı bir yıldan kısa süreli kira sözleşmelerinde 
         legalBasis: "TBK m. 352/2",
         category: "tahliye",
         relatedTermSlugs: ["tahliye-taahhutnamesi", "kira-sozlesmesi", "kiraci-haklari"],
-        relatedBlogSlugs: ["kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir", "ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: ["iki-hakli-ihtar-fazla-kira-odemesi", "kiracinin-kendi-evi-tahliye-davasi"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "r-MYOrgjhYI",
         faqs: [
@@ -223,7 +223,7 @@ Belirli süreli kira sözleşmeleri süre sonunda kiracı tarafından kendiliği
         legalBasis: "TBK m. 299-378",
         category: "sozlesme",
         relatedTermSlugs: ["depozito", "kira-artis-orani", "tahliye-taahhutnamesi"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
+        relatedBlogSlugs: ["kira-bedeli-kdv-stopaj-net-brut", "10-yillik-uzama-suresi-tadil-sozlesmesi"],
         relatedServiceAnchor: "#gayrimenkul",
         faqs: [
             {
@@ -258,7 +258,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
         legalBasis: "TBK m. 342",
         category: "sozlesme",
         relatedTermSlugs: ["kira-sozlesmesi", "kiraci-haklari", "kira-artis-orani"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "depozito-iadesi-davasi-kiracinin-haklari-ve-surec"],
+        relatedBlogSlugs: [],
         relatedServiceAnchor: "#gayrimenkul",
         youtubeVideoId: "oY99NMJ2oo0",
         faqs: [
@@ -294,7 +294,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
         legalBasis: "TBK m. 344",
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-tespit-davasi", "kira-uyarlama-davasi", "kira-sozlesmesi"],
-        relatedBlogSlugs: ["isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar", "hangi-durumlarda-kira-tespit-davasi-acilabilir"],
+        relatedBlogSlugs: ["kira-tespit-5-yil-yenilenen-sozlesme"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "1ylsHk_vUH4",
         faqs: [
@@ -361,7 +361,7 @@ Fuzuli işgalci, iyiniyetli veya kötüniyetli olmasına göre farklı hukuki so
         legalBasis: "TMK m. 683, TBK m. 77",
         category: "tahliye",
         relatedTermSlugs: ["ihtiyac-nedeniyle-tahliye", "kira-sozlesmesi", "kiraci-haklari"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir"],
+        relatedBlogSlugs: [],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "zXHqOaEiklI",
         faqs: [
@@ -397,7 +397,7 @@ Süre hesaplamasında, sözleşmede belirtilen sürenin bitiminden itibaren on y
         legalBasis: "TBK m. 347",
         category: "tahliye",
         relatedTermSlugs: ["ihtiyac-nedeniyle-tahliye", "kira-sozlesmesi", "kira-tespit-davasi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
+        relatedBlogSlugs: ["10-yillik-uzama-suresi-tadil-sozlesmesi"],
         relatedServiceAnchor: "#tahliye",
         youtubeVideoId: "CNK9e52vzlo",
         faqs: [
@@ -433,7 +433,7 @@ Kiracının yükümlülükleri ise kira bedelini zamanında ödeme, kiralananı 
         legalBasis: "TBK m. 339-356",
         category: "haklar",
         relatedTermSlugs: ["kira-sozlesmesi", "depozito", "kira-artis-orani", "10-yillik-uzama-suresi"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "hangi-durumlarda-kira-tespit-davasi-acilabilir", "kira-sozlesmesi-fesih-sebepleri-ve-hukuki-surec", "depozito-iadesi-davasi-kiracinin-haklari-ve-surec", "kiracinin-aidat-borcu-ve-ev-sahibinin-sorumluluklari", "10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi"],
+        relatedBlogSlugs: ["kiraci-tahliye-tazminati-tbk-355", "kiracinin-kendi-evi-tahliye-davasi"],
         relatedServiceAnchor: "#kira",
         youtubeVideoId: "UJ35T2zOXH0",
         faqs: [
@@ -469,7 +469,7 @@ Ecrimisil talebi geriye dönük olarak 5 yıla kadar yapılabilir. Hazine taşı
         legalBasis: "TMK m. 995, TBK m. 77",
         category: "haklar",
         relatedTermSlugs: ["fuzuli-isgal"],
-        relatedBlogSlugs: ["ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir", "izmir-gayrimenkul-piyasasinda-guncel-hukuki-gelismeler"],
+        relatedBlogSlugs: [],
         relatedServiceAnchor: "#tahliye",
         faqs: [
             {

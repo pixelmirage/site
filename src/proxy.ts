@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { OLD_HOST_RE, oldDomainMap } from './lib/oldDomainMap';
+import { removedPageRedirects } from './lib/removedPages';
 
 const NEW = 'https://mertkagancetin.com';
 const norm = (p: string) => {
@@ -10,6 +11,9 @@ const norm = (p: string) => {
 };
 const DISTRICT_RE = /^\/(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(kira|is|bosanma|tazminat)-avukati\/?$/;
 const MAP = new Map(oldDomainMap.map(([s, d]) => [norm(s), d]));
+// Removed pages/posts (same list as next.config.ts): also catches slashless URLs in one hop.
+const REMOVED = removedPageRedirects.map(([s, d]) => (s.endsWith('/:path*') ? { base: norm(s.slice(0, -7)), wild: true, d } : { base: norm(s), wild: false, d }));
+const removedTarget = (p: string) => REMOVED.find((r) => p === r.base || (r.wild && p.startsWith(`${r.base}/`)))?.d;
 
 // One-hop 301 for every request on the old domain (runs before Vercel's trailing-slash redirect).
 export function proxy(req: NextRequest) {
@@ -18,6 +22,8 @@ export function proxy(req: NextRequest) {
     // Removed district pages: 301 in one hop, also for slashless URLs (runs before the trailing-slash redirect).
     const m = DISTRICT_RE.exec(req.nextUrl.pathname);
     if (m) return NextResponse.redirect(`${NEW}/`, 301);
+    const removed = removedTarget(norm(req.nextUrl.pathname));
+    if (removed) return NextResponse.redirect(`${NEW}${removed}`, 301);
     return NextResponse.next();
   }
   const p = norm(req.nextUrl.pathname);

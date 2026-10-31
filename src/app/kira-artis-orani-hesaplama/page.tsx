@@ -166,12 +166,12 @@ export default function RentCalculatorPage() {
                         </div>
 
                         <h2>İlgili Hukuki Makaleler</h2>
-                        <p>Kira hukuku konusundaki güncel makalelerimizi okuyarak haklarınız hakkında detaylı bilgi edinin:</p>
+                        <p>Kira artışı ve kira tespitiyle ilgili Yargıtay ve BAM kararları üzerine hazırlanan yazılar:</p>
                         <ul>
-                            <li><Link href="/blog/hangi-durumlarda-kira-tespit-davasi-acilabilir/" className="text-secondary hover:underline">Hangi Durumlarda Kira Tespit Davası Açılabilir?</Link></li>
-                            <li><Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className="text-secondary hover:underline">Kira Hukukunda Zorunlu Arabuluculuk Süreci</Link></li>
-                            <li><Link href="/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir/" className="text-secondary hover:underline">Ev Sahibi Hangi Durumlarda Kiracıyı Çıkarabilir?</Link></li>
-                            <li><Link href="/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/" className="text-secondary hover:underline">İşyeri Kira Sözleşmelerinde Dikkat Edilmesi Gerekenler</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-davasi-emsal-bilirkisi/" className="text-secondary hover:underline">Kira Tespit Davasında Emsal Nasıl Belirlenir? Bilirkişi Raporu ve Harç</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-5-yil-yenilenen-sozlesme/" className="text-secondary hover:underline">Yenilenen Kira Sözleşmesi 5 Yıllık Süreyi Sıfırlar mı?</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-bedeli-kdv-stopaj-net-brut/" className="text-secondary hover:underline">Kira Bedeli + KDV: Kira Net mi, Brüt mü?</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/" className="text-secondary hover:underline">Kira Hukuku İçtihatları</Link></li>
                         </ul>
 
                     </div>

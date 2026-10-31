@@ -24,6 +24,18 @@ const oldDomainRedirects = [
   { source: '/:path*', has: OLD_HOST, destination: `${NEW}/`, statusCode: 301 as const },
 ];
 
+// Slashless removed URLs must not hit the trailing-slash rule first (that would add a second hop).
+const NOTFILE_SKIP = [
+  'izmir-kira-avukati/izmir-kira-hukuku',
+  'izmir-bosanma-avukati/bosanma-sureci-izmir',
+  'izmir-bosanma-avukati/aile-hukuku-avukati-izmir',
+  'izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir',
+  ...removedPageRedirects
+    .map(([src]) => src.slice(1))
+    .filter((src) => /^[a-z0-9\-/]+(?:\/:path\*)?$/.test(src))
+    .map((src) => (src.endsWith('/:path*') ? `${src.slice(0, -7)}(?:/.*)?` : src)),
+].join('|');
+
 const nextConfig: NextConfig = {
   experimental: {},
   trailingSlash: true,
@@ -48,9 +60,6 @@ const nextConfig: NextConfig = {
       ...removedPageRedirects.map(([source, destination]) => ({ source, destination, statusCode: 301 as const })),
       { source: '/:district((?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati)', destination: '/', statusCode: 301 },
       { source: '/sozluk/:term(kidem-tazminati|ihbar-tazminati|ise-iade-davasi|mobbing|hakli-fesih|fazla-mesai|is-goremezlik|anlasmali-bosanma|cekismeli-bosanma|velayet|nafaka|mal-paylasimi|maddi-tazminat|manevi-tazminat|malpraktis|destekten-yoksun-kalma|haksiz-fiil|is-guvencesi|evlilik-birliginin-temelden-sarsilmasi|koruma-karari)', destination: '/sozluk/', statusCode: 301 },
-      // Merged blog posts (2026-10-16): single-hop 301.
-      { source: '/blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri', destination: '/blog/velayet-davasi-sureci-ve-mahkeme-kriterleri/', statusCode: 301 },
-      { source: '/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati', destination: '/blog/trafik-kazasi-tazminati-alma-sureci/', statusCode: 301 },
       // Same rules Next adds when trailingSlash: true (next/dist/lib/load-custom-routes.js);
       // (?!/) keeps '/x/' from matching, since user sources also match an optional trailing slash.
       {
@@ -60,20 +69,10 @@ const nextConfig: NextConfig = {
         missing: [{ type: 'header', key: 'x-nextjs-data' }],
       },
       {
-        source: '/:notfile((?!\\.well-known(?:/.*)?)(?!(?:izmir-kira-avukati/izmir-kira-hukuku|izmir-bosanma-avukati/bosanma-sureci-izmir|izmir-bosanma-avukati/aile-hukuku-avukati-izmir|izmir-bosanma-avukati/bosanma-avukati-ucretleri-izmir|blog/velayet-degisikligi-davasi-sartlari-ve-mahkeme-kriterleri|blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati)$)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))',
+        source: `/:notfile((?!\\.well-known(?:/.*)?)(?!(?:${NOTFILE_SKIP})$)(?!(?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati$)(?:[^/]+/)*[^/\\.]+(?!/))`,
         destination: '/:notfile/',
         permanent: true,
         missing: OLD_HOST,
-      },
-      {
-        source: '/blog/ihtiyac-nedeniyle-tahliye-davasi/',
-        destination: '/blog/ihtiyac-nedeniyle-tahliye-davasi-nasil-acilir/',
-        permanent: true,
-      },
-      {
-        source: '/blog/isyeri-kira-sozlesmesi-rehberi/',
-        destination: '/blog/isyeri-kira-sozlesmelerinde-dikkat-edilmesi-gereken-hususlar/',
-        permanent: true,
       },
     ];
   },

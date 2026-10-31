@@ -1,5 +1,6 @@
 // Kira Hukuku İçtihatları hub — karar notları (Yargıtay / BAM) yazı verisinden otomatik üretilir.
-// Bir yazı hub'da listelenir: frontmatter `ictihat: true` VEYA tags içinde "emsal karar".
+// Karar notları src/content/ictihat/<slug>.mdx dosyalarıdır ve /kira-hukuku-ictihatlari/<slug>/ adresinde yayımlanır.
+// Hub'da listelenmek için: frontmatter `ictihat: true` VEYA tags içinde "emsal karar".
 // Konu: frontmatter `ictihatKonu` (aşağıdaki anahtarlardan biri); yoksa etiketlerden tahmin edilir.
 // Mahkeme / E. / K. / karar tarihi: yazıdaki "> - **Mahkeme:** ..." künye satırından okunur.
 import { getListedPosts, type PostData } from "@/lib/blog/utils";
@@ -64,7 +65,7 @@ export function parseDecision(p: PostData): Decision {
 }
 
 export function getIctihatPosts(): IctihatPost[] {
-    return getListedPosts()
+    return getListedPosts("ictihat")
         .filter(isIctihatPost)
         .map((p) => ({ ...p, konu: guessKonu(p), decision: parseDecision(p) }));
 }
