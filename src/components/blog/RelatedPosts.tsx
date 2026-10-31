@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { getListedPosts } from "@/lib/blog/utils";
+import { getListedPosts, postHref, type PostSection } from "@/lib/blog/utils";
 import { ArrowRight } from "lucide-react";
 
 interface RelatedPostsProps {
     currentSlug: string;
     currentTags?: string[];
     limit?: number;
+    section?: PostSection;
 }
 
-export function RelatedPosts({ currentSlug, currentTags = [], limit = 3 }: RelatedPostsProps) {
-    const allPosts = getListedPosts();
+export function RelatedPosts({ currentSlug, currentTags = [], limit = 3, section = "blog" }: RelatedPostsProps) {
+    const allPosts = getListedPosts(section);
 
     // Filter out current post and find related ones based on tags
     const relatedPosts = allPosts
@@ -29,13 +30,13 @@ export function RelatedPosts({ currentSlug, currentTags = [], limit = 3 }: Relat
     return (
         <section className="mt-16 pt-16 border-t border-slate-200">
             <h3 className="text-2xl font-playfair font-bold text-primary mb-8">
-                İlgili Makaleler
+                {section === "ictihat" ? "İlgili Kararlar" : "İlgili Makaleler"}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedPosts.map((post) => (
                     <Link
                         key={post.slug}
-                        href={`/blog/${post.slug}/`}
+                        href={postHref(post)}
                         className="group block bg-slate-50 rounded-2xl p-6 hover:bg-slate-100 transition-colors"
                     >
                         <div className="text-xs text-muted-foreground mb-2 font-medium">

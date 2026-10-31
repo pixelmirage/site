@@ -1,5 +1,5 @@
 import { glossaryTerms } from '@/lib/glossary';
-import { getListedPosts } from '@/lib/blog/utils';
+import { getListedPosts, postHref } from '@/lib/blog/utils';
 
 interface VideoEntry {
     pageUrl: string;
@@ -33,7 +33,7 @@ export async function GET() {
     for (const post of posts) {
         if (post.youtubeVideoId) {
             entries.push({
-                pageUrl: `${baseUrl}/blog/${post.slug}/`,
+                pageUrl: `${baseUrl}${postHref(post)}`,
                 videoId: post.youtubeVideoId,
                 title: `${post.title} | Kısa Video`,
                 description: post.excerpt,

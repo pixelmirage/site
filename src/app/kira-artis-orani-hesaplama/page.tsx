@@ -168,9 +168,9 @@ export default function RentCalculatorPage() {
                         <h2>İlgili Hukuki Makaleler</h2>
                         <p>Kira artışı ve kira tespitiyle ilgili Yargıtay ve BAM kararları üzerine hazırlanan yazılar:</p>
                         <ul>
-                            <li><Link href="/blog/kira-tespit-davasi-bilirkisi-raporu-emsal-harc/" className="text-secondary hover:underline">Kira Tespit Davasında Emsal Nasıl Belirlenir? Bilirkişi Raporu ve Harç</Link></li>
-                            <li><Link href="/blog/yenilenen-kira-sozlesmesi-5-yil-kira-tespit-ilk-sozlesme/" className="text-secondary hover:underline">Yenilenen Kira Sözleşmesi 5 Yıllık Süreyi Sıfırlar mı?</Link></li>
-                            <li><Link href="/blog/kira-bedeli-kdv-yeni-malik-stopaj-net-kira/" className="text-secondary hover:underline">Kira Bedeli + KDV: Kira Net mi, Brüt mü?</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-davasi-emsal-bilirkisi/" className="text-secondary hover:underline">Kira Tespit Davasında Emsal Nasıl Belirlenir? Bilirkişi Raporu ve Harç</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-tespit-5-yil-yenilenen-sozlesme/" className="text-secondary hover:underline">Yenilenen Kira Sözleşmesi 5 Yıllık Süreyi Sıfırlar mı?</Link></li>
+                            <li><Link href="/kira-hukuku-ictihatlari/kira-bedeli-kdv-stopaj-net-brut/" className="text-secondary hover:underline">Kira Bedeli + KDV: Kira Net mi, Brüt mü?</Link></li>
                             <li><Link href="/kira-hukuku-ictihatlari/" className="text-secondary hover:underline">Kira Hukuku İçtihatları</Link></li>
                         </ul>
 

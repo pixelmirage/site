@@ -1,4 +1,4 @@
-import { getListedPosts } from "@/lib/blog/utils";
+import { getListedPosts, postHref } from "@/lib/blog/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-    const posts = getListedPosts();
+    const posts = getListedPosts("blog");
 
     return (
         <div className="bg-slate-50 min-h-screen">
@@ -37,7 +37,7 @@ export default function BlogPage() {
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">Hukuki Makaleler</h1>
                         <p className="text-xl text-muted-foreground">
-                            Kira hukukundaki güncel gelişmeler, değişen mevzuat ve emsal kararlar üzerine yazılar. Yargıtay ve BAM karar notları konu başlıklarına göre <Link href="/kira-hukuku-ictihatlari/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">Kira Hukuku İçtihatları</Link> sayfasında da listelenir.
+                            Kira hukukundaki güncel gelişmeler, değişen mevzuat ve emsal kararlar üzerine yazılar. Yargıtay ve BAM karar notları konu başlıklarına göre <Link href="/kira-hukuku-ictihatlari/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">Kira Hukuku İçtihatları</Link> sayfasında yayımlanır.
                         </p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ export default function BlogPage() {
                     {posts.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {posts.map((post) => (
-                                <Link key={post.slug} href={`/blog/${post.slug}/`} className="group">
+                                <Link key={post.slug} href={postHref(post)} className="group">
                                     <Card className="h-full border border-border/50 shadow-sm group-hover:shadow-2xl transition-all duration-500 bg-white overflow-hidden rounded-sm">
                                         <div className="aspect-[16/10] bg-slate-100 relative overflow-hidden">
                                             <Image

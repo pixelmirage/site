@@ -9,7 +9,8 @@ const [slug, given] = process.argv.slice(2);
 if (!slug) { console.error("usage: node scripts/set-post-date.mjs <slug> [YYYY-MM-DD]"); process.exit(1); }
 const day = given || new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Istanbul" }).format(new Date());
 if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) { console.error("bad date: " + day); process.exit(1); }
-const file = `src/content/blog/${slug}.mdx`;
+const file = ["ictihat", "blog"].map((d) => `src/content/${d}/${slug}.mdx`).find((f) => fs.existsSync(f));
+if (!file) { console.error("post not found: " + slug); process.exit(1); }
 let s = fs.readFileSync(file, "utf8");
 const end = s.indexOf("\n---", 3);
 let fm = s.slice(0, end), body = s.slice(end);

@@ -49,4 +49,17 @@ export const removedPageRedirects: [string, string][] = [
   ['/blog/sigorta-tahkim-komisyonu-basvurusu-trafik-kazasi-tazminati', '/'],
   ['/blog/ihtiyac-nedeniyle-tahliye-davasi', '/izmir-kiraci-tahliye-davasi-avukati/'],
   ['/blog/isyeri-kira-sozlesmesi-rehberi', '/izmir-kira-sozlesmesi-avukati/'],
+  // 2026-10-31: içtihat karar notları /blog/ altından /kira-hukuku-ictihatlari/<yeni-slug>/ altına taşındı.
+  ['/blog/10-yillik-uzama-suresi-tadil-sozlesmesi-yeni-kira-sozlesmesi', '/kira-hukuku-ictihatlari/10-yillik-uzama-suresi-tadil-sozlesmesi/'],
+  ['/blog/bos-imzali-tahliye-taahhutnamesi-yemin-delili', '/kira-hukuku-ictihatlari/bos-tahliye-taahhutnamesi-yemin-delili/'],
+  ['/blog/ihtiyac-tahliye-arabulucuya-erken-basvuru-usulden-ret', '/kira-hukuku-ictihatlari/tahliye-davasi-arabuluculuk-erken-basvuru/'],
+  ['/blog/kendiliginden-tahliye-eden-kiraci-tbk-355-tazminat', '/kira-hukuku-ictihatlari/kiraci-tahliye-tazminati-tbk-355/'],
+  ['/blog/kira-bedeli-kdv-yeni-malik-stopaj-net-kira', '/kira-hukuku-ictihatlari/kira-bedeli-kdv-stopaj-net-brut/'],
+  ['/blog/kira-bedelini-fazla-odemek-sozlesmeyi-degistirmez-iki-hakli-ihtar', '/kira-hukuku-ictihatlari/iki-hakli-ihtar-fazla-kira-odemesi/'],
+  ['/blog/kira-tespit-davasi-bilirkisi-raporu-emsal-harc', '/kira-hukuku-ictihatlari/kira-tespit-davasi-emsal-bilirkisi/'],
+  ['/blog/kira-tespit-davasi-hakkaniyet-indirimi-vekalet-ucreti', '/kira-hukuku-ictihatlari/kira-tespit-davasi-hakkaniyet-indirimi/'],
+  ['/blog/kiracinin-kendi-evi-varsa-tahliye-yeni-malik-aidat', '/kira-hukuku-ictihatlari/kiracinin-kendi-evi-tahliye-davasi/'],
+  ['/blog/tahliye-taahhudu-icra-itirazin-iptali-takibe-devam', '/kira-hukuku-ictihatlari/tahliye-taahhudu-icra-itirazin-iptali/'],
+  ['/blog/yeni-malik-ihtiyac-nedeniyle-tahliye-yurt-disinda-yasayan-ev-sahibi', '/kira-hukuku-ictihatlari/yeni-malik-ihtiyac-tahliye-yurt-disi/'],
+  ['/blog/yenilenen-kira-sozlesmesi-5-yil-kira-tespit-ilk-sozlesme', '/kira-hukuku-ictihatlari/kira-tespit-5-yil-yenilenen-sozlesme/'],
 ];
