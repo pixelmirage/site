@@ -6,6 +6,8 @@ import { MapPin, Phone, Mail, Send, MessageCircle } from "lucide-react";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
+import Image from "next/image";
+import { PHOTO } from "@/lib/photo";
 
 export const metadata: Metadata = {
     title: "İletişim | İzmir Kira Avukatı",
@@ -49,6 +51,17 @@ export default function ContactPage() {
                     <div className="flex flex-col lg:flex-row gap-16">
                         {/* Contact Details */}
                         <div className="lg:w-1/3 space-y-12">
+                            <figure>
+                                <Image
+                                    src={PHOTO.src}
+                                    alt="Av. Mert Kağan Çetin, Bayraklı'daki hukuk bürosunda – İzmir kira avukatı"
+                                    width={PHOTO.width}
+                                    height={PHOTO.height}
+                                    sizes="(min-width: 1024px) 380px, 100vw"
+                                    className="h-auto w-full rounded-2xl object-cover shadow-lg"
+                                />
+                                <figcaption className="mt-3 text-sm text-muted-foreground">Av. Mert Kağan Çetin, Bayraklı&apos;daki hukuk bürosunda</figcaption>
+                            </figure>
                             <div>
                                 <h2 className="text-3xl font-playfair font-bold text-primary mb-8">Bize Ulaşın</h2>
                                 <div className="space-y-8">
