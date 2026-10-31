@@ -23,7 +23,7 @@ export function postMetadata(post: PostData) {
     const url = `${SITE_URL}${postHref(post)}`;
 
     return {
-        title: post.title,
+        title: post.metaTitle ?? post.title,
         description: post.excerpt,
         authors: [{ name: "Av. Mert Kağan Çetin" }],
         openGraph: {

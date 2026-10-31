@@ -86,7 +86,7 @@ export default function BlogPage() {
                                                 {post.excerpt}
                                             </p>
                                             <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest group-hover:gap-4 transition-all">
-                                                Haberin Devamı
+                                                Yazının devamı
                                                 <ChevronRight className="w-4 h-4" />
                                             </div>
                                         </CardContent>
