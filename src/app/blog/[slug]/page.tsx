@@ -4,7 +4,8 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { Calendar, Clock, ChevronLeft, Share2, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { InitialsBadge } from "@/components/ui/InitialsBadge";
+import Image from "next/image";
+import { PHOTO } from "@/lib/photo";
 import { Button } from "@/components/ui/button";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -200,7 +201,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
                     <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 p-8 bg-slate-50 rounded-3xl">
                         <div className="flex items-center gap-4">
-                            <InitialsBadge className="w-14 h-14" />
+                            <Image src={PHOTO.avatar} alt="Av. Mert Kağan Çetin" width={56} height={56} sizes="56px" className="h-14 w-14 flex-shrink-0 rounded-full object-cover ring-2 ring-secondary/40" />
                             <div>
                                 <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
                             </div>
