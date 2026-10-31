@@ -29,4 +29,6 @@ ictihatKonu: "tahliye"   # tahliye | kira-tespit | kira-uyarlama | kira-alacagi-
 
 Site kira hukukuna ayrılmıştır. `tags` içinde `"kira hukuku"` olmayan yazılar (veya `noindex: true` olanlar)
 URL'den açılır ama `noindex, follow` alır; sitemap, `/blog/` listesi ve "İlgili Makaleler" alanında görünmez.
+İstisna: frontmatter'da `index: true` olan yazı etiketten bağımsız indekslenir (ör. `how-to-get-divorced-in-turkey`).
+Hub sayfasında yazı sayısı gösterilmez (liste sürekli güncellenir).
 Yeni kira yazılarında `"kira hukuku"` etiketi unutulmamalıdır.

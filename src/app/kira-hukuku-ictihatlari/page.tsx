@@ -100,7 +100,7 @@ export default function IctihatHubPage() {
                     </nav>
                     <div className="mx-auto max-w-3xl text-center">
                         <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold text-slate-200">
-                            <Gavel className="h-3.5 w-3.5 text-secondary" aria-hidden="true" />{all.length} karar notu
+                            <Gavel className="h-3.5 w-3.5 text-secondary" aria-hidden="true" />Yargıtay ve BAM kararları
                         </div>
                         <h1 className="mb-5 font-playfair text-3xl font-bold leading-tight md:text-5xl">Kira Hukuku İçtihatları</h1>
                         <p className="text-base leading-relaxed text-slate-200 md:text-lg">
@@ -117,7 +117,7 @@ export default function IctihatHubPage() {
                         {topics.map((t) => (
                             <li key={t.key}>
                                 <a href={`#${t.key}`} className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-primary hover:border-secondary hover:bg-secondary/10">
-                                    {t.title}<span className="rounded-full bg-white px-2 text-xs text-slate-500">{t.posts.length}</span>
+                                    {t.title}
                                 </a>
                             </li>
                         ))}
