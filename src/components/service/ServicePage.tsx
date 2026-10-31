@@ -8,6 +8,7 @@ import { CTAs } from "@/components/kira-landing/CTAs";
 import { services, serviceHref, SITE, type Service } from "@/lib/services";
 import { GBP_URL } from "@/lib/gbp";
 import { ictihatTopicForService, ICTIHAT_PATH } from "@/lib/blog/ictihat";
+import { postHref, hrefForSlug } from "@/lib/blog/utils";
 
 export function serviceMetadata(s: Service): Metadata {
     const url = `${SITE}${serviceHref(s)}`;
@@ -178,7 +179,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                             <ul className="mb-6 space-y-3">
                                 {ictihat.posts.slice(0, 4).map((p) => (
                                     <li key={p.slug} className="rounded-xl border border-slate-200 bg-white p-4">
-                                        <Link href={`/blog/${p.slug}/`} className="font-semibold text-primary hover:text-secondary">{p.title}</Link>
+                                        <Link href={postHref(p)} className="font-semibold text-primary hover:text-secondary">{p.title}</Link>
                                         {p.decision.court && <p className="mt-1 text-sm text-slate-500">{p.decision.court}{p.decision.esas && `, E. ${p.decision.esas}`}{p.decision.karar && ` K. ${p.decision.karar}`}</p>}
                                     </li>
                                 ))}
@@ -200,8 +201,8 @@ export function ServicePage({ service: s }: { service: Service }) {
                     <div>
                         <h2 id="ilgili" className="mb-4 flex items-center gap-2 font-playfair text-xl font-bold text-primary"><BookOpen className="h-5 w-5 text-secondary" aria-hidden="true" />İlgili makaleler</h2>
                         <ul className="space-y-2">
-                            {s.blogs.map((b) => (
-                                <li key={b.slug}><Link href={`/blog/${b.slug}/`} className="text-slate-700 underline-offset-2 hover:text-secondary hover:underline">{b.title}</Link></li>
+                            {s.blogs.map((b) => ({ ...b, href: hrefForSlug(b.slug) })).filter((b) => b.href).map((b) => (
+                                <li key={b.slug}><Link href={b.href!} className="text-slate-700 underline-offset-2 hover:text-secondary hover:underline">{b.title}</Link></li>
                             ))}
                             {s.extraLinks?.map((l) => (
                                 <li key={l.href}><Link href={l.href} className="font-semibold text-slate-700 underline-offset-2 hover:text-secondary hover:underline">{l.title}</Link></li>

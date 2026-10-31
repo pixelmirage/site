@@ -245,7 +245,7 @@ export default function EvictionTemplatePage() {
                         &quot;Kiracı, kiralananın teslim edilmesinden sonra, kiraya verene karşı, kiralananı belli bir tarihte boşaltmayı yazılı olarak üstlendiği hâlde boşaltmamışsa kiraya veren, kira sözleşmesini bu tarihten başlayarak bir ay içinde icraya başvurmak veya dava açmak suretiyle sona erdirebilir.&quot; (<a href={TBK_URL} target="_blank" rel="noopener noreferrer" className={ext}>TBK m. 352/1, mevzuat.gov.tr</a>)
                     </blockquote>
                     <p>
-                        Aynı maddenin ikinci fıkrası ise farklı bir tahliye sebebi olan <Link href="/blog/kiracinin-tahliyesi-icin-iki-hakli-ihtar-nedir/" className={ext}>iki haklı ihtar</Link> durumunu düzenler. Bu ikisi sıkça karıştırılır.
+                        Aynı maddenin ikinci fıkrası ise farklı bir tahliye sebebi olan <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className={ext}>iki haklı ihtar</Link> durumunu düzenler. Bu ikisi sıkça karıştırılır.
                     </p>
                     <ul>
                         <li><strong>Tahliye taahhüdünde</strong> sebep, kiracının kendi yazılı beyanıdır.</li>
@@ -471,7 +471,7 @@ export default function EvictionTemplatePage() {
                         Hangi yolun uygun olduğu somut olaya göre değişir; hiçbir yol belirli bir sonucu garanti etmez.
                     </p>
                     <p>
-                        Dava yolunu tercih etmeden önce dava şartı arabuluculuğun somut uyuşmazlığa uygulanıp uygulanmadığı güncel mevzuat çerçevesinde kontrol edilmelidir. Genel bilgi için <Link href="/blog/kira-hukukunda-zorunlu-arabuluculuk-sureci/" className={ext}>kira uyuşmazlıklarında arabuluculuk</Link> yazımızı inceleyebilirsiniz.
+                        Dava yolunu tercih etmeden önce dava şartı arabuluculuğun somut uyuşmazlığa uygulanıp uygulanmadığı güncel mevzuat çerçevesinde kontrol edilmelidir. Genel bilgi için <Link href="/izmir-kira-arabuluculuk-avukati/" className={ext}>kira uyuşmazlıklarında arabuluculuk</Link> sayfamızı inceleyebilirsiniz.
                     </p>
 
                     <h2 id="kiraci-acisindan">Kiracı açısından: taahhüde nasıl itiraz edilir?</h2>
