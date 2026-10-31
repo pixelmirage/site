@@ -150,12 +150,11 @@ export default function ContactPage() {
                                             <select id="iletisim-konu" name="konu" className="flex h-12 w-full rounded-md border border-transparent bg-slate-50 px-3 py-2 text-base font-sans">
                                                 <option>Tahliye Davası</option>
                                                 <option>Kira Tespit Davası</option>
-                                                <option>Gayrimenkul Hukuku</option>
-                                                <option>İşe İade / Kıdem Tazminatı</option>
-                                                <option>İş Kazası Tazminatı</option>
-                                                <option>Boşanma Davası</option>
-                                                <option>Velayet / Nafaka</option>
-                                                <option>Maddi / Manevi Tazminat</option>
+                                                <option>Kira Uyarlama Davası</option>
+                                                <option>Kira Alacağı / İcra Takibi</option>
+                                                <option>Tahliye Taahhüdü</option>
+                                                <option>Kira Sözleşmesi</option>
+                                                <option>Arabuluculuk</option>
                                                 <option>Diğer</option>
                                             </select>
                                         </div>

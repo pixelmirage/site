@@ -76,7 +76,9 @@ export default function AboutPage() {
                                         <h3 className="font-bold text-primary">Eğitim & Yetkinlik</h3>
                                     </div>
                                     <ul className="space-y-2 text-sm text-muted-foreground">
-                                        <li>• İzmir Barosu Üyeliği</li>
+                                        <li>• İzmir Ekonomi Üniversitesi Hukuk Fakültesi</li>
+                                        <li>• İzmir Barosu Sicil No: 15556</li>
+                                        <li>• TBB Sicil No: 162439</li>
                                         <li>• Arabuluculuk Süreç Yönetimi Eğitimi</li>
                                         <li>• Hukuk Mevzuatı Güncelleme Seminerleri</li>
                                     </ul>
