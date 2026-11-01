@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { ChevronRight, Home, ShieldCheck, MapPin, FileText, Scale, Users, ArrowRight, BookOpen } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -22,6 +23,21 @@ export function serviceMetadata(s: Service): Metadata {
 }
 
 const H2 = "font-playfair text-2xl font-bold text-primary md:text-3xl";
+
+const LINK_RE = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+/** Renders `[anchor](/path/)` inside service copy as internal links. */
+function rich(text: string): ReactNode {
+    const out: ReactNode[] = [];
+    let last = 0;
+    for (const m of text.matchAll(LINK_RE)) {
+        if (m.index! > last) out.push(text.slice(last, m.index));
+        out.push(<Link key={m.index} href={m[2]} className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">{m[1]}</Link>);
+        last = m.index! + m[0].length;
+    }
+    if (last === 0) return text;
+    if (last < text.length) out.push(text.slice(last));
+    return out;
+}
 
 export function ServicePage({ service: s }: { service: Service }) {
     const url = `${SITE}${serviceHref(s)}`;
@@ -80,7 +96,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     {s.sections.map((sec) => (
                         <section key={sec.title} aria-label={sec.title}>
                             <h2 className={`${H2} mb-4`}>{sec.title}</h2>
-                            {sec.paragraphs && sec.list && <p className="mb-4">{sec.paragraphs[0]}</p>}
+                            {sec.paragraphs && sec.list && <p className="mb-4">{rich(sec.paragraphs[0])}</p>}
                             {sec.list && (
                                 <ul className="space-y-3">
                                     {sec.list.map((li) => {
@@ -88,13 +104,13 @@ export function ServicePage({ service: s }: { service: Service }) {
                                         return (
                                             <li key={li} className="flex gap-3">
                                                 <Scale className="mt-1.5 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" />
-                                                <span>{i > 0 && i < 90 ? (<><strong className="text-primary">{li.slice(0, i)}:</strong>{li.slice(i + 1)}</>) : li}</span>
+                                                <span>{i > 0 && i < 90 ? (<><strong className="text-primary">{rich(li.slice(0, i))}:</strong>{rich(li.slice(i + 1))}</>) : rich(li)}</span>
                                             </li>
                                         );
                                     })}
                                 </ul>
                             )}
-                            {(sec.list ? sec.paragraphs?.slice(1) : sec.paragraphs)?.map((p) => <p key={p} className="mt-4">{p}</p>)}
+                            {(sec.list ? sec.paragraphs?.slice(1) : sec.paragraphs)?.map((p) => <p key={p} className="mt-4">{rich(p)}</p>)}
                         </section>
                     ))}
 
@@ -114,7 +130,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     {/* Arabuluculuk */}
                     <section aria-labelledby="arabuluculuk" className="rounded-2xl border border-secondary/30 bg-secondary/5 p-6">
                         <h2 id="arabuluculuk" className="mb-3 flex items-center gap-2 font-playfair text-xl font-bold text-primary md:text-2xl"><Users className="h-6 w-6 text-secondary" aria-hidden="true" />Arabuluculuk şartı</h2>
-                        <p>{s.mediation}</p>
+                        <p>{rich(s.mediation)}</p>
                     </section>
 
                     {/* Mahkeme */}
@@ -213,7 +229,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                         <h2 className="mb-4 font-playfair text-xl font-bold text-primary">Diğer kira hukuku hizmetleri</h2>
                         <ul className="space-y-2">
                             {siblings.map((x) => (
-                                <li key={x.slug}><Link href={serviceHref(x)} className="inline-flex items-center gap-1 text-slate-700 hover:text-secondary"><ArrowRight className="h-4 w-4 text-secondary" aria-hidden="true" />{x.h1}</Link></li>
+                                <li key={x.slug}><Link href={serviceHref(x)} className="inline-flex items-center gap-1 text-slate-700 hover:text-secondary"><ArrowRight className="h-4 w-4 text-secondary" aria-hidden="true" />{x.name}</Link></li>
                             ))}
                             <li><Link href="/" className="inline-flex items-center gap-1 font-semibold text-primary hover:text-secondary"><ArrowRight className="h-4 w-4 text-secondary" aria-hidden="true" />İzmir kira avukatı – tüm hizmetler</Link></li>
                         </ul>

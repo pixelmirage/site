@@ -139,7 +139,7 @@ const articleSchema = {
     },
 };
 
-const ext = "text-secondary hover:underline";
+const ext = "text-secondary-ink underline underline-offset-2 hover:text-primary";
 
 export default function EvictionTemplatePage() {
     return (
@@ -318,7 +318,7 @@ export default function EvictionTemplatePage() {
                 <div className="max-w-[210mm] mx-auto bg-white shadow-xl p-6 sm:p-[20mm] min-h-[297mm] text-black print:shadow-none print:p-0 print:w-full print:max-w-none">
 
                     <div className="print-content font-serif leading-relaxed">
-                        <h2 className="text-center font-bold text-2xl mb-12 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">Tahliye Taahhütnamesi</h2>
+                        <p className="font-serif tracking-tight text-center font-bold text-2xl mb-12 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">Tahliye Taahhütnamesi</p>
 
                         <div className="space-y-6 text-base sm:text-lg [overflow-wrap:anywhere]">
                             <p>
@@ -364,7 +364,7 @@ export default function EvictionTemplatePage() {
                                 </div>
                                 <div className="text-center">
                                     <p className="font-bold mb-8">TAAHHÜT EDEN (KİRACI)</p>
-                                    <p className="text-sm text-slate-400 mb-8">(İmza)</p>
+                                    <p className="text-sm text-slate-500 mb-8">(İmza)</p>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +377,7 @@ export default function EvictionTemplatePage() {
                     <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg flex gap-4">
                         <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
                         <div>
-                            <h4 className="font-bold text-amber-800 mb-2">Örneği kullanmadan önce</h4>
+                            <p className="font-serif tracking-tight font-bold text-amber-800 mb-2">Örneği kullanmadan önce</p>
                             <p className="text-sm text-amber-700 leading-relaxed">
                                 Taahhütname, kiralananın kiracıya <strong>tesliminden sonra</strong> imzalanmalı ve boşaltma tarihi açıkça yazılmalıdır (TBK m. 352/1). Örnek genel bilgilendirme amaçlıdır; somut durumunuza uygunluğu ayrıca değerlendirilmelidir.
                             </p>
@@ -504,7 +504,7 @@ export default function EvictionTemplatePage() {
                     </p>
 
                     <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                        <h3 className="text-2xl font-serif font-bold text-primary mb-4">Tahliye Sürecinde Hukuki Destek</h3>
+                        <p className="tracking-tight text-2xl font-serif font-bold text-primary mb-4">Tahliye Sürecinde Hukuki Destek</p>
                         <p className="mb-6 text-muted-foreground">Tahliye taahhüdünüzün geçerliliğini veya başlattığınız takibe yapılan itirazı değerlendirmek için ön görüşme talep edebilirsiniz.</p>
                         <p className="mb-6 text-sm text-slate-600">Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, Bayraklı/İzmir · 0544 585 46 45</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">

@@ -25,7 +25,7 @@ export function ArticleSchema({
         "image": image || "https://mertkagancetin.com/og-image.jpg",
         "inLanguage": "tr-TR",
         "author": {
-            "@id": "https://mertkagancetin.com/#attorney"
+            "@id": "https://mertkagancetin.com/#person"
         },
         "publisher": {
             "@id": "https://mertkagancetin.com/#organization"

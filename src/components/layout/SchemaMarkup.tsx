@@ -56,6 +56,34 @@ export function SchemaMarkup() {
                     { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
                     { "@type": "PropertyValue", "propertyID": "TBB Sicil No", "value": "162439" }
                 ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "İzmir Ekonomi Üniversitesi",
+                    "department": {
+                        "@type": "Organization",
+                        "name": "Hukuk Fakültesi"
+                    }
+                },
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Bar Admission",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "İzmir Barosu"
+                        },
+                        "identifier": "15556"
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Bar Admission",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "Türkiye Barolar Birliği"
+                        },
+                        "identifier": "162439"
+                    }
+                ],
                 "knowsAbout": ["Kira Hukuku", "Tahliye Davaları", "Kira Tespit Davası", "Kira Uyarlama Davası", "Kira Alacağı İcra Takibi", "Tahliye Taahhüdü", "Kira Sözleşmesi", "Kira Arabuluculuğu"]
             },
             {
@@ -96,34 +124,6 @@ export function SchemaMarkup() {
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Kiracı Tahliye Davası", "Kira Tespit Davası", "Kira Uyarlama Davası",
                     "Kira Alacağı İcra Takibi", "Tahliye Taahhütnamesi", "Kira Sözleşmesi", "Zorunlu Arabuluculuk", "Türk Borçlar Kanunu Kira Hükümleri"
-                ],
-                "alumniOf": {
-                    "@type": "CollegeOrUniversity",
-                    "name": "İzmir Ekonomi Üniversitesi",
-                    "department": {
-                        "@type": "Organization",
-                        "name": "Hukuk Fakültesi"
-                    }
-                },
-                "hasCredential": [
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "Bar Admission",
-                        "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "İzmir Barosu"
-                        },
-                        "identifier": "15556"
-                    },
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "Bar Admission",
-                        "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "Türkiye Barolar Birliği"
-                        },
-                        "identifier": "162439"
-                    }
                 ],
                 "memberOf": {
                     "@type": "Organization",

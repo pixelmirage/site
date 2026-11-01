@@ -16,17 +16,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    // /blog/ listesi: en yeni blog yazısının tarihi
+    const blogDates = posts
+        .filter((p) => p.section === 'blog')
+        .map((p) => p.dateModified || p.date)
+        .sort();
+    const newestBlog = blogDates[blogDates.length - 1] ?? '2026-11-01';
+
     // Static Routes — individual last modified dates per page
     const staticRoutes: Record<string, { lastModified: string; priority: number }> = {
         '': { lastModified: '2026-10-29', priority: 1 },
         // Kira hizmet sayfaları
         ...Object.fromEntries(services.map((sv) => [`/${sv.slug}`, { lastModified: '2026-10-31', priority: 0.9 }])),
-        '/hakkimda': { lastModified: '2026-10-29', priority: 0.6 },
-        '/iletisim': { lastModified: '2026-10-29', priority: 0.7 },
-        '/blog': { lastModified: '2026-10-31', priority: 0.7 },
+        '/hakkimda': { lastModified: '2026-10-31', priority: 0.6 },
+        '/iletisim': { lastModified: '2026-10-31', priority: 0.7 },
+        '/blog': { lastModified: newestBlog, priority: 0.7 },
         '/kira-artis-orani-hesaplama': { lastModified: '2026-10-31', priority: 0.7 },
         '/tahliye-taahhutnamesi': { lastModified: '2026-10-31', priority: 0.7 },
         '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-31', priority: 0.7 },
+        '/kvkk-aydinlatma-metni': { lastModified: '2026-10-31', priority: 0.3 },
         '/sozluk': { lastModified: '2026-10-29', priority: 0.6 },
         '/kira-hukuku-ictihatlari': { lastModified: posts.filter((p) => p.ictihat || p.tags?.includes('emsal karar')).map((p) => p.dateModified || p.date).sort().pop() || '2026-10-31', priority: 0.8 },
     };
