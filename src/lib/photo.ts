@@ -9,6 +9,27 @@ export const PHOTO = {
     alt: "İzmir Kira Avukatı Av. Mert Kağan Çetin hukuk bürosunda",
 };
 
+const SITE = "https://mertkagancetin.com";
+
+/** Google Görsel meta verisi: sitedeki her ImageObject'e eklenir. */
+export const IMAGE_RIGHTS = {
+    "creditText": "Av. Mert Kağan Çetin",
+    "creator": { "@id": `${SITE}/#person` },
+    "copyrightNotice": "© Av. Mert Kağan Çetin",
+    "license": `${SITE}/iletisim/`,
+    "acquireLicensePage": `${SITE}/iletisim/`,
+};
+
+/**
+ * Site görseli için ImageObject. Göreli yol mutlak URL'ye çevrilir.
+ * Harici (başka alan adındaki) görseller bize ait olmadığından düz URL olarak bırakılır.
+ */
+export function imageObject(src: string, extra: Record<string, unknown> = {}) {
+    const url = src.startsWith("/") ? `${SITE}${src}` : src;
+    if (!url.startsWith(SITE)) return url;
+    return { "@type": "ImageObject", "url": url, "contentUrl": url, ...extra, ...IMAGE_RIGHTS };
+}
+
 export const PHOTO_OBJECT = {
     "@type": "ImageObject",
     "@id": "https://mertkagancetin.com/#photo",
@@ -17,6 +38,5 @@ export const PHOTO_OBJECT = {
     "caption": "İzmir kira avukatı Av. Mert Kağan Çetin, İzmir'deki hukuk bürosunda",
     "width": PHOTO.width,
     "height": PHOTO.height,
-    "creator": { "@type": "Person", "name": "Av. Mert Kağan Çetin" },
-    "copyrightNotice": "© Av. Mert Kağan Çetin",
+    ...IMAGE_RIGHTS,
 };
