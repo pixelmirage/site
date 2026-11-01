@@ -1,3 +1,5 @@
+import { imageObject } from "@/lib/photo";
+
 interface ArticleSchemaProps {
     title: string;
     description: string;
@@ -22,7 +24,7 @@ export function ArticleSchema({
         "@type": "BlogPosting",
         "headline": title,
         "description": description,
-        "image": image || "https://mertkagancetin.com/og-image.jpg",
+        "image": imageObject(image || "/og-image.jpg"),
         "inLanguage": "tr-TR",
         "author": {
             "@id": "https://mertkagancetin.com/#person"

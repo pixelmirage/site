@@ -10,6 +10,7 @@ import { PdfDownloadButton } from "@/components/tools/PdfDownloadButton";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GBP_URL } from "@/lib/gbp";
+import { imageObject } from "@/lib/photo";
 
 const PAGE_URL = "https://mertkagancetin.com/tahliye-taahhutnamesi/";
 const TITLE = "Tahliye Taahhütnamesi Nedir? Geçerlilik Şartları ve Örnek (2026)";
@@ -124,7 +125,7 @@ const articleSchema = {
     "headline": "Tahliye Taahhütnamesi: Nedir, Geçerlilik Şartları, Örnek ve İcra Yoluyla Tahliye",
     "description": DESCRIPTION,
     "mainEntityOfPage": PAGE_URL,
-    "image": "https://mertkagancetin.com/og-image.jpg",
+    "image": imageObject("/og-image.jpg"),
     "inLanguage": "tr-TR",
     "dateModified": DATE_MODIFIED,
     "author": {

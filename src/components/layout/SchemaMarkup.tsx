@@ -1,5 +1,5 @@
 import { GBP_URL, GBP_GEO } from "@/lib/gbp";
-import { PHOTO_OBJECT } from "@/lib/photo";
+import { PHOTO_OBJECT, imageObject } from "@/lib/photo";
 
 export function SchemaMarkup() {
     const schema = {
@@ -10,10 +10,7 @@ export function SchemaMarkup() {
                 "@id": "https://mertkagancetin.com/#organization",
                 "name": "Mert Kağan Çetin Hukuk Bürosu",
                 "url": "https://mertkagancetin.com",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://mertkagancetin.com/logo.png"
-                },
+                "logo": imageObject("/logo.png"),
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+905445854645",
