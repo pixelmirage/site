@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/blog': { lastModified: newestBlog, priority: 0.7 },
         '/kira-artis-orani-hesaplama': { lastModified: '2026-10-31', priority: 0.7 },
         '/tahliye-taahhutnamesi': { lastModified: '2026-10-31', priority: 0.7 },
-        '/kira-sozlesmesi-ornegi': { lastModified: '2026-10-31', priority: 0.7 },
+        '/kira-sozlesmesi-ornegi': { lastModified: '2026-11-02', priority: 0.7 },
         '/kvkk-aydinlatma-metni': { lastModified: '2026-10-31', priority: 0.3 },
         '/sozluk': { lastModified: '2026-10-29', priority: 0.6 },
         '/kira-hukuku-ictihatlari': { lastModified: posts.filter((p) => p.ictihat || p.tags?.includes('emsal karar')).map((p) => p.dateModified || p.date).sort().pop() || '2026-10-31', priority: 0.8 },

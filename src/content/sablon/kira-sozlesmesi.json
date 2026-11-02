@@ -1,0 +1,326 @@
+{
+  "title": "KİRA SÖZLEŞMESİ",
+  "subtitle": "Konut ve Çatılı İşyeri Kirası",
+  "header": [
+    {
+      "key": "duzenlemeYeri",
+      "label": "Düzenleme yeri"
+    },
+    {
+      "key": "duzenlemeTarihi",
+      "label": "Düzenleme tarihi",
+      "kind": "date"
+    }
+  ],
+  "parties": {
+    "title": "1. TARAFLAR",
+    "columns": [
+      {
+        "key": "kv",
+        "label": "KİRAYA VEREN"
+      },
+      {
+        "key": "kc",
+        "label": "KİRACI"
+      }
+    ],
+    "rows": [
+      {
+        "key": "ad",
+        "label": "Ad Soyad / Unvan"
+      },
+      {
+        "key": "tckn",
+        "label": "T.C. Kimlik No / Vergi No"
+      },
+      {
+        "key": "adres",
+        "label": "Tebligat adresi",
+        "lines": 2
+      },
+      {
+        "key": "tel",
+        "label": "Telefon"
+      },
+      {
+        "key": "eposta",
+        "label": "E-posta"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "title": "2. KİRALANAN",
+      "fields": [
+        {
+          "key": "kiralananAdres",
+          "label": "Açık adres",
+          "lines": 2
+        },
+        {
+          "key": "tapu",
+          "label": "Tapu bilgisi (ada / parsel / bağımsız bölüm)"
+        },
+        {
+          "key": "nitelik",
+          "label": "Niteliği",
+          "options": [
+            "Konut",
+            "Çatılı işyeri"
+          ]
+        },
+        {
+          "key": "bolum",
+          "label": "Oda sayısı / kat / daire no"
+        },
+        {
+          "key": "amac",
+          "label": "Kullanım amacı"
+        },
+        {
+          "key": "esya",
+          "label": "Birlikte teslim edilen eşya ve demirbaş",
+          "note": "Ek-1 Teslim Tutanağında gösterilir."
+        }
+      ]
+    },
+    {
+      "title": "3. SÜRE, KİRA BEDELİ VE GÜVENCE",
+      "fields": [
+        {
+          "key": "baslangic",
+          "label": "Kira başlangıç tarihi",
+          "kind": "date"
+        },
+        {
+          "key": "sure",
+          "label": "Kira süresi",
+          "suffix": "yıl (belirli süreli)"
+        },
+        {
+          "key": "bitis",
+          "label": "Kira bitiş tarihi",
+          "kind": "date"
+        },
+        {
+          "key": "aylikKira",
+          "label": "Aylık kira bedeli (rakam ve yazıyla)",
+          "suffix": "TL"
+        },
+        {
+          "key": "odemeGunu",
+          "label": "Ödeme günü",
+          "prefix": "Her ayın",
+          "suffix": ". günü, peşin"
+        },
+        {
+          "key": "odemeSekli",
+          "label": "Ödeme şekli",
+          "options": [
+            "Banka havalesi / EFT",
+            "Diğer"
+          ]
+        },
+        {
+          "key": "iban",
+          "label": "Kiraya verenin IBAN ve hesap sahibi"
+        },
+        {
+          "key": "guvence",
+          "label": "Güvence bedeli (depozito)",
+          "suffix": "TL",
+          "note": "Üç aylık kira bedelini aşamaz (TBK m. 342)."
+        }
+      ]
+    }
+  ],
+  "articlesTitle": "4. GENEL ŞARTLAR",
+  "articles": [
+    {
+      "title": "Teslim",
+      "text": [
+        "Kiraya veren, kiralananı kararlaştırılan tarihte, sözleşmede amaçlanan kullanıma elverişli bir durumda teslim etmek ve sözleşme süresince bu durumda bulundurmakla yükümlüdür (TBK m. 301).",
+        "Kiralananın teslim anındaki durumu, sayaç endeksleri, teslim edilen anahtarlar, eşya ve demirbaşlar taraflarca imzalanan teslim tutanağında (Ek-1) gösterilir."
+      ]
+    },
+    {
+      "title": "Kira Bedelinin Ödenmesi",
+      "text": [
+        "Kiracı, aylık kira bedelini her ayın yukarıda belirtilen gününde peşin olarak ve kiraya verenin bildirdiği banka hesabına, açıklama kısmında hangi aya ait olduğunu belirterek öder.",
+        "Kiracı kira bedelini ödemezse kiraya veren, en az otuz gün süre vererek ve bu süre içinde ödeme yapılmazsa sözleşmeyi feshedeceğini bildirerek kiracıya yazılı süre verebilir (TBK m. 315)."
+      ]
+    },
+    {
+      "title": "Kira Bedelinin Artırılması",
+      "text": [
+        "Taraflar, yenilenen her kira yılında kira bedelinin, bir önceki kira yılında tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalara göre değişim oranında artırılacağını kararlaştırmıştır. Bu oranı aşan artış anlaşmaları geçersizdir (TBK m. 344/1).",
+        "Beş yıldan uzun süreli kira sözleşmelerinde ve beş yıldan sonra yenilenen kira yıllarında kira bedeli, TBK m. 344/3 uyarınca belirlenebilir."
+      ]
+    },
+    {
+      "title": "Güvence Bedeli (Depozito)",
+      "text": [
+        "Güvence bedeli üç aylık kira bedelini aşamaz. Güvence olarak para verilmesi kararlaştırılmışsa kiracı bu parayı, kiraya verenin onayı olmadan çekilmemek üzere bir bankada vadeli tasarruf hesabına yatırır. Banka, güvenceyi ancak iki tarafın rızasıyla veya icra takibi ya da kesinleşmiş mahkeme kararına dayanarak geri verebilir.",
+        "Kiraya veren, kira sözleşmesinin sona ermesini izleyen üç ay içinde kiracıya karşı kira sözleşmesiyle ilgili dava açtığını veya icra takibine giriştiğini bankaya yazılı olarak bildirmezse banka, kiracının istemi üzerine güvenceyi geri verir (TBK m. 342)."
+      ]
+    },
+    {
+      "title": "Kullanım ve Özen Borcu",
+      "text": [
+        "Kiracı, kiralananı sözleşmede belirtilen kullanım amacına uygun ve özenle kullanmak, kiralananın bulunduğu taşınmazda oturan kişilere ve komşulara gerekli saygıyı göstermekle yükümlüdür (TBK m. 316)."
+      ]
+    },
+    {
+      "title": "Bakım, Onarım ve Ayıplar",
+      "text": [
+        "Kiracı, kiralananın olağan kullanımı için gerekli temizlik ve bakım giderlerini yerel âdete göre öder (TBK m. 317). Kiracı, kendisinin gidermekle yükümlü olmadığı ayıpları kiraya verene gecikmeksizin bildirir; aksi hâlde doğan zarardan sorumludur (TBK m. 318).",
+        "Kiracı, ayıpların giderilmesi veya zararların önlenmesi için yapılacak çalışmalara katlanır. Kiraya veren, bakım, satış veya sonraki kiralama amacıyla kiralananı gezip görme gününü uygun bir süre önce kiracıya bildirir (TBK m. 320)."
+      ]
+    },
+    {
+      "title": "Yenilik ve Değişiklik",
+      "text": [
+        "Kiracı, kiralananda ancak kiraya verenin yazılı rızasıyla yenilik ve değişiklik yapabilir (TBK m. 321)."
+      ]
+    },
+    {
+      "title": "Alt Kira ve Kullanım Hakkının Devri",
+      "text": [
+        "Kiracı, kiraya verenin yazılı rızası olmadıkça kiralananı başkasına kiralayamaz ve kullanım hakkını başkasına devredemez (TBK m. 322)."
+      ]
+    },
+    {
+      "title": "Yan Giderler",
+      "text": [
+        "Kiralananın kullanımına ilişkin elektrik, su, doğal gaz ve internet giderleri ile kat malikleri kurulunca belirlenen olağan yönetim giderleri (aidat) kiracıya aittir (TBK m. 341). Abonelikler kiracı adına açılır.",
+        "Ana yapının esaslı onarımı, yenilenmesi ve demirbaş niteliğindeki tesislerin değiştirilmesine ilişkin olağanüstü giderler ile emlak vergisi kiraya verene aittir."
+      ]
+    },
+    {
+      "title": "Sözleşmenin Süresi ve Sona Ermesi",
+      "text": [
+        "Kiracı, belirli süreli sözleşmenin bitiminden en az on beş gün önce bildirimde bulunmadıkça sözleşme aynı koşullarla bir yıl için uzamış sayılır. Kiraya veren, sözleşme süresinin bitimine dayanarak sözleşmeyi sona erdiremez; ancak on yıllık uzama süresi sonunda, izleyen her uzama yılının bitiminden en az üç ay önce bildirimde bulunmak koşuluyla sebep göstermeksizin sona erdirebilir (TBK m. 347).",
+        "Kiraya verenin tahliye talepleri kanunda sayılan sebeplere bağlıdır (TBK m. 350-352). Fesih bildirimleri yazılı yapılır (TBK m. 348)."
+      ]
+    },
+    {
+      "title": "Kiralananın Geri Verilmesi",
+      "text": [
+        "Kiracı, kira sözleşmesi sona erdiğinde kiralananı hangi durumda teslim almışsa o durumda geri verir; sözleşmeye uygun kullanımdan doğan eskime ve bozulmalardan sorumlu değildir (TBK m. 334). Geri verme sırasında taraflar Ek-1 tutanağına göre durum tespiti yapar."
+      ]
+    },
+    {
+      "title": "Bildirimler",
+      "text": [
+        "Taraflar, bu sözleşmede yazılı adreslerini tebligat adresi olarak kabul eder. Adres değişikliği karşı tarafa yazılı olarak bildirilmedikçe sözleşmedeki adrese yapılan bildirimler geçerli sayılır."
+      ]
+    },
+    {
+      "title": "Kanuna Aykırı Şartlar",
+      "text": [
+        "Kiracıya kira bedeli ve yan giderler dışında başka bir ödeme yükümlülüğü getirilemez; kira bedelinin zamanında ödenmemesi hâlinde ceza koşulu ödeneceğine veya sonraki kira bedellerinin muaccel olacağına ilişkin anlaşmalar geçersizdir (TBK m. 346). Konut ve çatılı işyeri kiralarına ilişkin hükümlerin kiracı aleyhine değiştirilmesi geçersizdir (TBK m. 354). Sözleşmede hüküm bulunmayan hâllerde Türk Borçlar Kanunu uygulanır."
+      ]
+    },
+    {
+      "title": "Uyuşmazlıkların Çözümü",
+      "text": [
+        "Bu sözleşmeden doğan uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulması dava şartıdır (6325 sayılı Kanun m. 18/B). Kiralananın ilamsız icra yoluyla tahliyesine ilişkin takipler bu şartın dışındadır. Arabuluculukta anlaşma sağlanamazsa sulh hukuk mahkemesinde dava açılabilir."
+      ]
+    }
+  ],
+  "special": {
+    "title": "5. ÖZEL ŞARTLAR",
+    "note": "Evcil hayvan, eşyalı kiralama, otopark veya depo kullanımı gibi tarafların ayrıca kararlaştırdığı şartlar yazılır. Yukarıdaki genel şartlara ve kanunun emredici hükümlerine aykırı şart yazılmamalıdır.",
+    "lines": 4,
+    "key": "ozelSartlar"
+  },
+  "closing": "İşbu sözleşme, Ek-1 teslim tutanağı ile birlikte iki nüsha olarak düzenlenmiş, taraflarca okunarak imzalanmış ve her tarafa birer nüsha verilmiştir.",
+  "signatures": {
+    "title": "6. İMZALAR",
+    "columns": [
+      {
+        "key": "kv",
+        "label": "KİRAYA VEREN"
+      },
+      {
+        "key": "kc",
+        "label": "KİRACI"
+      }
+    ],
+    "rows": [
+      "Ad Soyad",
+      "Tarih",
+      "İmza"
+    ]
+  },
+  "annex": {
+    "title": "EK-1: TESLİM TUTANAĞI VE DEMİRBAŞ LİSTESİ",
+    "intro": "Kiralanan, aşağıdaki durumda kiracıya teslim edilmiştir.",
+    "fields": [
+      {
+        "key": "teslimTarihi",
+        "label": "Teslim tarihi",
+        "kind": "date"
+      },
+      {
+        "key": "anahtar",
+        "label": "Teslim edilen anahtar sayısı"
+      },
+      {
+        "key": "elektrik",
+        "label": "Elektrik sayaç endeksi"
+      },
+      {
+        "key": "su",
+        "label": "Su sayaç endeksi"
+      },
+      {
+        "key": "gaz",
+        "label": "Doğal gaz sayaç endeksi"
+      }
+    ],
+    "tableTitle": "Eşya, demirbaş ve mevcut durum",
+    "tableHead": [
+      "Eşya / bölüm",
+      "Adet",
+      "Teslim anındaki durumu"
+    ],
+    "tableRows": 6,
+    "signNote": "Taraflar, teslim tutanağının kiralananın teslim anındaki durumunu yansıttığını kabul eder. Fotoğraflar tutanağın eki sayılır."
+  },
+  "footer": "Bu şablon genel bilgilendirme amacıyla hazırlanmıştır; somut kira ilişkisine göre uyarlanması gerekebilir. Kaynak: mertkagancetin.com/kira-sozlesmesi-ornegi/",
+  "example": {
+    "duzenlemeYeri": "İzmir",
+    "duzenlemeTarihi": "01.11.2026",
+    "kv.ad": "Ayşe Yılmaz",
+    "kv.tckn": "XXXXXXXXXXX",
+    "kv.adres": "Örnek Mah. 100 Sk. No:1, Bayraklı/İzmir",
+    "kv.tel": "05XX XXX XX XX",
+    "kv.eposta": "ornek@ornek.com",
+    "kc.ad": "Mehmet Demir",
+    "kc.tckn": "XXXXXXXXXXX",
+    "kc.adres": "Deneme Mah. 200 Sk. No:2, Bornova/İzmir",
+    "kc.tel": "05XX XXX XX XX",
+    "kc.eposta": "ornek2@ornek.com",
+    "kiralananAdres": "Örnek Mah. 300 Sk. No:3 D:5, Bayraklı/İzmir",
+    "tapu": "Ada 0000, parsel 00, bağımsız bölüm 5",
+    "nitelik": "Konut",
+    "bolum": "3+1, 2. kat, daire 5",
+    "amac": "Konut (aile ile birlikte oturma)",
+    "esya": "Ek-1'de gösterilmiştir",
+    "baslangic": "01.11.2026",
+    "sure": "1",
+    "bitis": "31.10.2027",
+    "aylikKira": "[tarafların belirlediği tutar]",
+    "odemeGunu": "5",
+    "odemeSekli": "Banka havalesi / EFT",
+    "iban": "TR.. .... (Ayşe Yılmaz)",
+    "guvence": "[en fazla üç aylık kira]",
+    "ozelSartlar": "Evcil hayvan beslenmesi kiraya verenin yazılı iznine bağlıdır. Kiralananla birlikte bir adet otopark yeri teslim edilmiştir.",
+    "teslimTarihi": "01.11.2026",
+    "anahtar": "3",
+    "elektrik": "[endeks]",
+    "su": "[endeks]",
+    "gaz": "[endeks]"
+  }
+}
