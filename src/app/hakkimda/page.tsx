@@ -7,6 +7,7 @@ import { PHOTO } from "@/lib/photo";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
     title: "Hakkımda | İzmir Kira Avukatı",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
         title: "Hakkımda | İzmir Kira Avukatı Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin: İzmir Barosu Sicil No 15556. Ev sahibi ve kiracı uyuşmazlıklarında tahliye, kira tespit ve icra takibi.",

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, ChevronRight, Search } from "lucide-react";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
     title: { absolute: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin" },
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://mertkagancetin.com/blog/",
     },
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         title: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin'in kira hukuku yazıları: tahliye, kira tespit, kira artışı, icra takibi ve güncel Yargıtay kararları.",
         images: ["/og-image.jpg"],

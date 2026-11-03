@@ -1,3 +1,4 @@
+import { SITE_URL, SITE_NAME, SITE_ALTERNATE_NAMES } from "@/lib/site";
 import { GBP_URL, GBP_GEO } from "@/lib/gbp";
 import { PHOTO_OBJECT, imageObject } from "@/lib/photo";
 
@@ -21,9 +22,9 @@ export function SchemaMarkup() {
             {
                 "@type": "WebSite",
                 "@id": "https://mertkagancetin.com/#website",
-                "url": "https://mertkagancetin.com/",
-                "name": "Av. Mert Kağan Çetin",
-                "alternateName": "Mert Kağan Çetin Hukuk Bürosu",
+                "url": SITE_URL,
+                "name": SITE_NAME,
+                "alternateName": SITE_ALTERNATE_NAMES,
                 "publisher": {
                     "@id": "https://mertkagancetin.com/#organization"
                 },

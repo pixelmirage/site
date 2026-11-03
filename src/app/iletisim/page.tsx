@@ -8,6 +8,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 import Image from "next/image";
 import { PHOTO } from "@/lib/photo";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
     title: "İletişim | İzmir Kira Avukatı",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://mertkagancetin.com/iletisim/",
     },
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
         title: "İletişim | İzmir Kira Avukatı Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin iletişim bilgileri: 0544 585 46 45, Dedemhan Plaza D:17 Bayraklı/İzmir. Ön görüşme telefonla yapılabilir.",

@@ -8,6 +8,7 @@ import { SchemaMarkup } from "@/components/layout/SchemaMarkup";
 import { StickyContact } from "@/components/layout/StickyContact";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { cn } from "@/lib/utils";
+import { SITE_NAME } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], weight: ["700"], variable: "--font-playfair", display: "swap" });
@@ -33,11 +34,10 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  openGraph: {
+  openGraph: { siteName: SITE_NAME,
     type: 'website',
     locale: 'tr_TR',
     url: 'https://mertkagancetin.com',
-    siteName: 'Av. Mert Kağan Çetin',
     title: 'İzmir Kira Avukatı | Av. Mert Kağan Çetin',
     description: 'İzmir\'de ev sahibi ve kiracı uyuşmazlıklarında avukatlık: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi.',
     images: [

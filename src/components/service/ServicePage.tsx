@@ -11,6 +11,7 @@ import { GBP_URL } from "@/lib/gbp";
 import { imageObject } from "@/lib/photo";
 import { ictihatTopicForService, ICTIHAT_PATH } from "@/lib/blog/ictihat";
 import { postHref, hrefForSlug } from "@/lib/blog/utils";
+import { SITE_NAME } from "@/lib/site";
 
 export function serviceMetadata(s: Service): Metadata {
     const url = `${SITE}${serviceHref(s)}`;
@@ -18,7 +19,7 @@ export function serviceMetadata(s: Service): Metadata {
         title: { absolute: s.title },
         description: s.description,
         alternates: { canonical: url },
-        openGraph: { title: s.title, description: s.description, url, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: s.h1 }] },
+        openGraph: { siteName: SITE_NAME, title: s.title, description: s.description, url, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: s.h1 }] },
         twitter: { card: "summary_large_image", title: s.title, description: s.description, images: ["/og-image.jpg"] },
     };
 }

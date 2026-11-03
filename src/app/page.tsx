@@ -10,6 +10,7 @@ import { services as serviceData, serviceHref } from "@/lib/services";
 import { GBP_URL, GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 import Image from "next/image";
 import { PHOTO, PHOTO_OBJECT } from "@/lib/photo";
+import { SITE_NAME } from "@/lib/site";
 
 const pageTitle = "İzmir Kira Avukatı | Av. Mert Kağan Çetin";
 const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi. İzmir genelinde. Tel: 0544 585 46 45";
@@ -17,7 +18,7 @@ const pageDescription = "İzmir kira avukatı Av. Mert Kağan Çetin: tahliye, k
 export const metadata: Metadata = {
     title: { absolute: pageTitle },
     description: pageDescription,
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         title: pageTitle,
         description: pageDescription,
         url: "https://mertkagancetin.com/",

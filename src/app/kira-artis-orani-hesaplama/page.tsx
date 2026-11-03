@@ -7,11 +7,12 @@ import { HowToSchema } from "@/components/seo/HowToSchema";
 import { CheckCircle, AlertTriangle, Info } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
     title: "Kira Artış Oranı Hesaplama 2026",
     description: "2026 güncel TÜFE oranları ile işyeri ve konut kira artış oranını hesaplayın. Yasal zam sınırı, TEFE-TÜFE farkı ve ev sahibi hakları hakkında detaylı bilgi.",
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
         title: "Kira Artış Oranı Hesaplama Aracı | Av. Mert Kağan Çetin",
         description: "Yasal kira artış oranını saniyeler içinde hesaplayın. Güncel TÜFE verileriyle hatasız sonuç.",
