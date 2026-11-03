@@ -31,7 +31,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     {
         term: "Tahliye Taahhütnamesi",
         slug: "tahliye-taahhutnamesi",
-        pillarLink: { href: "/izmir-tahliye-taahhudu-icra-avukati/", before: "Taahhüde dayalı tahliyede süreler kısa olduğundan, sürecin bir ", anchor: "kiracı tahliye avukatı", after: " ile baştan planlanması faydalıdır." },
+        pillarLink: { href: "/izmir-tahliye-taahhudu-icra-avukati/", before: "Taahhüde dayalı tahliyede süreler kısa olduğundan, ", anchor: "tahliye taahhüdüne dayalı icra", after: " sürecinin baştan planlanması faydalıdır." },
         shortDescription: "Kiracının belirli bir tarihte taşınmazı boşaltacağını yazılı olarak taahhüt ettiği hukuki belge. TBK m. 352/1 kapsamında düzenlenir.",
         definition: "Tahliye taahhütnamesi, kiracının kiralanmış taşınmazı belirli bir tarihte boşaltacağını yazılı olarak taahhüt ettiği hukuki belgedir. Türk Borçlar Kanunu m. 352/1 uyarınca, kiralananın tesliminden sonra alınan bu taahhütname ile kiraya veren, taahhüt edilen tarihte tahliye davası açabilir.",
         detailedExplanation: `Tahliye taahhütnamesi, kira hukukunda ev sahibinin en güçlü tahliye araçlarından biridir. TBK m. 352/1'e göre, kiracı kiralananın teslim edilmesinden sonra yazılı olarak belirli bir tarihte taşınmazı boşaltacağını taahhüt etmişse, bu tarih geldiğinde kiraya veren icra takibi başlatabilir veya tahliye davası açabilir.
@@ -45,7 +45,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
         category: "tahliye",
         relatedTermSlugs: ["kira-sozlesmesi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
         relatedBlogSlugs: ["bos-tahliye-taahhutnamesi-yemin-delili", "tahliye-taahhudu-icra-itirazin-iptali"],
-        relatedServiceAnchor: "#tahliye",
+        relatedServiceAnchor: "#taahhut",
         youtubeVideoId: "0I5No4QamYA",
         faqs: [
             {
@@ -67,7 +67,7 @@ Taahhüt edilen tarihten itibaren bir ay içinde icra takibi başlatılmalı vey
     {
         term: "Kira Tespit Davası",
         slug: "kira-tespit-davasi",
-        pillarLink: { href: "/izmir-kira-tespit-davasi-avukati/", before: "İzmir'de kira tespit davası açmadan önce bir ", anchor: "İzmir kira avukatı", after: " ile emsal kiraları değerlendirmek faydalı olabilir." },
+        pillarLink: { href: "/izmir-kira-tespit-davasi-avukati/", before: "İzmir'de ", anchor: "kira tespit davası", after: " açmadan önce bir İzmir kira avukatı ile emsal kiraları değerlendirmek faydalı olabilir." },
         shortDescription: "Kira bedelinin güncel rayiçlere uygun olarak mahkeme tarafından yeniden belirlenmesini amaçlayan dava türü.",
         definition: "Kira tespit davası, kira bedelinin güncel piyasa koşullarına uygun olarak mahkeme tarafından yeniden belirlenmesini sağlayan hukuki süreçtir. TBK m. 344 uyarınca, beş yıldan uzun süreli kira ilişkilerinde taraflardan biri hakkaniyete uygun kira bedeli tespiti için dava açabilir.",
         detailedExplanation: `Kira tespit davası, özellikle uzun süreli kira ilişkilerinde kira bedelinin piyasa değerinin çok altında veya üstünde kalması durumunda başvurulan önemli bir hukuki yoldur.
@@ -81,7 +81,7 @@ Dava, yeni kira döneminin başlangıcından en az otuz gün önce açılmalı v
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-artis-orani", "kira-uyarlama-davasi", "kira-sozlesmesi"],
         relatedBlogSlugs: ["kira-tespit-davasi-emsal-bilirkisi", "kira-tespit-davasi-hakkaniyet-indirimi", "kira-tespit-5-yil-yenilenen-sozlesme"],
-        relatedServiceAnchor: "#kira",
+        relatedServiceAnchor: "#tespit",
         youtubeVideoId: "7mChnFfudwY",
         faqs: [
             {
@@ -153,7 +153,7 @@ Arabuluculukta anlaşma sağlanamazsa, son tutanağın düzenlendiği tarihten i
         category: "haklar",
         relatedTermSlugs: ["kira-tespit-davasi", "ihtiyac-nedeniyle-tahliye", "iki-hakli-ihtar"],
         relatedBlogSlugs: ["tahliye-davasi-arabuluculuk-erken-basvuru"],
-        relatedServiceAnchor: "#tahliye",
+        relatedServiceAnchor: "#arabuluculuk",
         faqs: [
             {
                 question: "Kira davası öncesi arabuluculuk zorunlu mu?",
@@ -281,7 +281,7 @@ Uygulamada depozito genellikle elden verilmekte, bu durum iade aşamasında ispa
     {
         term: "Kira Artış Oranı",
         slug: "kira-artis-orani",
-        pillarLink: { href: "/izmir-kira-tespit-davasi-avukati/", before: "TÜFE sınırı ve beş yıl sonrası belirleme konusunda bir ", anchor: "kira hukuku avukatından", after: " bilgi alabilirsiniz." },
+        pillarLink: { href: "/izmir-kira-tespit-davasi-avukati/", before: "TÜFE sınırı ve ", anchor: "beş yıl sonrası belirleme", after: " konusunda bir kira hukuku avukatından bilgi alabilirsiniz." },
         shortDescription: "Kira bedelinin yıllık yenilenmesinde uygulanabilecek azami artış oranını belirleyen yasal sınır. TBK m. 344 uyarınca TÜFE oranıyla sınırlıdır.",
         definition: "Kira artış oranı, konut kiralarında yıllık kira yenilemesinde uygulanabilecek azami artış oranıdır. TBK m. 344'e göre, taraflar arasında kira artışına ilişkin anlaşma yapılmışsa bile bu artış bir önceki kira yılında tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalardaki değişim oranını geçemez.",
         detailedExplanation: `Kira artış oranı, kiracıları aşırı kira artışlarından koruyan önemli bir yasal düzenlemedir. TBK m. 344 uyarınca, konut kiralarında yıllık artış oranı TÜFE on iki aylık ortalamasını geçemez.
@@ -295,7 +295,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-tespit-davasi", "kira-uyarlama-davasi", "kira-sozlesmesi"],
         relatedBlogSlugs: ["kira-tespit-5-yil-yenilenen-sozlesme"],
-        relatedServiceAnchor: "#kira",
+        relatedServiceAnchor: "#tespit",
         youtubeVideoId: "1ylsHk_vUH4",
         faqs: [
             {
@@ -317,7 +317,7 @@ TBK m. 344 kapsamındaki TÜFE sınırlaması hem konut hem de çatılı işyeri
     {
         term: "Kira Uyarlama Davası",
         slug: "kira-uyarlama-davasi",
-        pillarLink: { href: "/izmir-kira-uyarlama-davasi-avukati/", before: "Uyarlama koşulları dar yorumlandığından ", anchor: "İzmir'de kira avukatı", after: " ile ön değerlendirme yapılabilir." },
+        pillarLink: { href: "/izmir-kira-uyarlama-davasi-avukati/", before: "", anchor: "Uyarlama koşulları", after: " dar yorumlandığından İzmir'de kira avukatı ile ön değerlendirme yapılabilir." },
         shortDescription: "Olağanüstü koşullar nedeniyle kira bedelinin değişen şartlara uyarlanmasını talep eden dava. TBK m. 138 aşırı ifa güçlüğü hükmüne dayanır.",
         definition: "Kira uyarlama davası, sözleşmenin kurulmasından sonra ortaya çıkan olağanüstü durumlar (ekonomik kriz, aşırı enflasyon, pandemi vb.) nedeniyle kira bedelinin veya sözleşme koşullarının değişen şartlara uyarlanmasını talep eden dava türüdür. TBK m. 138 (aşırı ifa güçlüğü) hükmüne dayanır.",
         detailedExplanation: `Kira uyarlama davası, olağanüstü koşullar sebebiyle kira ilişkisinin taraflarından biri için sözleşmeye devam etmenin çekilmez hale geldiği durumlarda başvurulan hukuki yoldur.
@@ -331,7 +331,7 @@ Türkiye'de yaşanan yüksek enflasyon dönemlerinde, özellikle uzun süreli i�
         category: "kira-bedeli",
         relatedTermSlugs: ["kira-tespit-davasi", "kira-artis-orani", "kira-sozlesmesi"],
         relatedBlogSlugs: [],
-        relatedServiceAnchor: "#kira",
+        relatedServiceAnchor: "#uyarlama",
         faqs: [
             {
                 question: "Kira uyarlama davası ile kira tespit davası arasındaki fark nedir?",

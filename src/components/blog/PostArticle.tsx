@@ -23,7 +23,7 @@ export function postMetadata(post: PostData) {
     const url = `${SITE_URL}${postHref(post)}`;
 
     return {
-        title: post.title,
+        title: post.metaTitle ?? post.title,
         description: post.excerpt,
         authors: [{ name: "Av. Mert Kağan Çetin" }],
         openGraph: {
@@ -183,11 +183,11 @@ export function PostArticle({ post }: { post: PostData }) {
 
                     {isKira && (
                         <div className="mt-12 rounded-xl border border-secondary/30 bg-secondary/5 p-5 text-slate-700 leading-7">
-                            {kiraNote.before}<Link href="/" className="font-semibold text-secondary underline underline-offset-2 hover:text-primary">{kiraNote.anchor}</Link>{kiraNote.after}
+                            {kiraNote.before}<Link href="/" className="font-semibold text-secondary-ink underline underline-offset-2 hover:text-primary">{kiraNote.anchor}</Link>{kiraNote.after}
                         </div>
                     )}
 
-                    <div className="mt-16 pt-16 border-t border-slate-100 italic text-slate-400 text-sm">
+                    <div className="mt-16 pt-16 border-t border-slate-100 italic text-slate-500 text-sm">
                         Uyarı: Bu makale bilgilendirme amaçlıdır. Hukuki işlemlerinizde hak kaybı yaşamamak için mutlaka bir avukat ile iletişime geçiniz.
                     </div>
 
@@ -195,7 +195,7 @@ export function PostArticle({ post }: { post: PostData }) {
                         <div className="flex items-center gap-4">
                             <Image src={PHOTO.avatar} alt="Av. Mert Kağan Çetin" width={56} height={56} sizes="56px" className="h-14 w-14 flex-shrink-0 rounded-full object-cover ring-2 ring-secondary/40" />
                             <div>
-                                <h4 className="font-bold text-primary">Av. Mert Kağan Çetin</h4>
+                                <p className="font-serif tracking-tight font-bold text-primary">Av. Mert Kağan Çetin</p>
                             </div>
                         </div>
                         <Button className="bg-primary text-white hover:bg-primary/90 gap-2 px-8" asChild>
@@ -223,12 +223,12 @@ export function PostArticle({ post }: { post: PostData }) {
 
                     {/* Hub Link - İzmir Kira Avukatı */}
                     <div className="mt-12 p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
+                        <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</p>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
                             Tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi konularında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <a href="tel:+905445854645" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <a href="tel:+905445854645" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-primary px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
                                 Ara: 0544 585 46 45 <ArrowRight className="w-4 h-4" />
                             </a>
                             <Link href="/" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors">

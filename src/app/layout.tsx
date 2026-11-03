@@ -10,7 +10,7 @@ import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["700"], variable: "--font-playfair", display: "swap" });
+const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], weight: ["700"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mertkagancetin.com'),

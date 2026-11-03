@@ -70,12 +70,12 @@ export default function ContactPage() {
                                             <MapPin className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary mb-1">Ofis Adresi</h4>
+                                            <p className="font-serif tracking-tight font-bold text-primary mb-1">Ofis Adresi</p>
                                             <p className="text-muted-foreground text-sm leading-relaxed">
                                                 Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17, <br />
                                                 Bayraklı/İzmir
                                             </p>
-                                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary hover:text-primary transition-colors mt-1 inline-block">
+                                            <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-medium text-secondary-ink hover:text-primary transition-colors mt-1 inline-block">
                                                 Google Maps'te Yol Tarifi Al &rarr;
                                             </a>
                                         </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                                             <Phone className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary mb-1">Telefon</h4>
+                                            <p className="font-serif tracking-tight font-bold text-primary mb-1">Telefon</p>
                                             <p className="text-muted-foreground text-sm">0544 585 46 45</p>
                                         </div>
                                     </div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                                             <Mail className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-primary mb-1">E-posta</h4>
+                                            <p className="font-serif tracking-tight font-bold text-primary mb-1">E-posta</p>
                                             <p className="text-muted-foreground text-sm">mertkagancetin@gmail.com</p>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                                 "Ofisimiz İzmir Adliyesi'ne yürüme mesafesinde, merkezi bir konumdadır. Randevu alarak gelmeniz, size daha iyi hizmet vermemizi sağlar."
                             </div>
 
-                            <Button className="w-full bg-green-600 hover:bg-green-700 text-white gap-2 h-14 text-lg font-bold" asChild>
+                            <Button className="w-full bg-[#1c8549] hover:bg-[#1a7a43] text-white gap-2 h-14 text-lg font-bold" asChild>
                                 <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">
                                     <MessageCircle className="w-6 h-6" />
                                     WhatsApp ile Yazın
@@ -119,7 +119,7 @@ export default function ContactPage() {
                         <div className="lg:w-2/3">
                             <Card className="border-none shadow-2xl bg-white">
                                 <CardContent className="p-8 md:p-12">
-                                    <h3 className="text-3xl font-playfair font-bold text-primary mb-4">Hukuki Danışmanlık Formu</h3>
+                                    <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Hukuki Danışmanlık Formu</h2>
                                     <p className="text-muted-foreground mb-8">
                                         Aşağıdaki formu doldurarak durumunuz hakkında ön bilgi iletebilirsiniz. Mesajınıza en kısa sürede dönüş sağlanacaktır.
                                     </p>
@@ -150,12 +150,11 @@ export default function ContactPage() {
                                             <select id="iletisim-konu" name="konu" className="flex h-12 w-full rounded-md border border-transparent bg-slate-50 px-3 py-2 text-base font-sans">
                                                 <option>Tahliye Davası</option>
                                                 <option>Kira Tespit Davası</option>
-                                                <option>Gayrimenkul Hukuku</option>
-                                                <option>İşe İade / Kıdem Tazminatı</option>
-                                                <option>İş Kazası Tazminatı</option>
-                                                <option>Boşanma Davası</option>
-                                                <option>Velayet / Nafaka</option>
-                                                <option>Maddi / Manevi Tazminat</option>
+                                                <option>Kira Uyarlama Davası</option>
+                                                <option>Kira Alacağı / İcra Takibi</option>
+                                                <option>Tahliye Taahhüdü</option>
+                                                <option>Kira Sözleşmesi</option>
+                                                <option>Arabuluculuk</option>
                                                 <option>Diğer</option>
                                             </select>
                                         </div>

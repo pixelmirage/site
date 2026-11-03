@@ -48,9 +48,9 @@ export const services: Service[] = [
                     "Kiraya verenin gereksinimi (TBK m. 350/1): Kiralananın kiraya verenin kendisi, eşi, altsoyu, üstsoyu veya kanun gereği bakmakla yükümlü olduğu kişiler için konut ya da işyeri olarak kullanılması zorunluluğu. Gereksinimin gerçek, samimi ve sürekli olması aranır.",
                     "Yeniden inşa ve imar (TBK m. 350/2): Esaslı onarım, genişletme veya değişiklik gerekli ve bu işler sırasında kiralananın kullanımı imkânsızsa.",
                     "Yeni malikin gereksinimi (TBK m. 351): Taşınmazı sonradan edinen kişi, edinmeden itibaren bir ay içinde kiracıya yazılı bildirimde bulunursa altı ay sonra dava açabilir; dilerse sözleşme süresinin bitiminden itibaren bir ay içinde de dava açabilir.",
-                    "İki haklı ihtar (TBK m. 352/2): Bir kira yılı içinde kira bedelinin ödenmemesi nedeniyle kiracıya yazılı olarak iki haklı ihtarda bulunulmasına sebep olunmuşsa, ihtarların yapıldığı kira yılının bitiminden itibaren bir ay içinde dava açılabilir.",
+                    "[İki haklı ihtar](/sozluk/iki-hakli-ihtar/) (TBK m. 352/2): Bir kira yılı içinde kira bedelinin ödenmemesi nedeniyle kiracıya yazılı olarak iki haklı ihtarda bulunulmasına sebep olunmuşsa, ihtarların yapıldığı kira yılının bitiminden itibaren bir ay içinde dava açılabilir.",
                     "Kiracının veya eşinin aynı ilçede konutu bulunması (TBK m. 352/3): Kiracının veya birlikte yaşadığı eşinin aynı ilçe veya belde belediye sınırları içinde oturmaya elverişli bir konutu varsa ve kiraya veren bunu sözleşme kurulurken bilmiyorsa, sözleşmenin bitiminden itibaren bir ay içinde dava açılabilir.",
-                    "On yıllık uzama süresinin dolması (TBK m. 347): Belirli süreli sözleşmelerde on yıllık uzama süresi sonunda kiraya veren, izleyen her uzama yılının bitiminden en az üç ay önce yazılı bildirimde bulunarak sebep göstermeksizin sözleşmeyi sona erdirebilir. Belirsiz süreli sözleşmelerde kiranın başlangıcından on yıl geçtikten sonra genel hükümlere göre fesih bildirimi yapılabilir.",
+                    "On yıllık uzama süresinin dolması (TBK m. 347): Belirli süreli sözleşmelerde [on yıllık uzama süresi](/sozluk/10-yillik-uzama-suresi/) sonunda kiraya veren, izleyen her uzama yılının bitiminden en az üç ay önce yazılı bildirimde bulunarak sebep göstermeksizin sözleşmeyi sona erdirebilir. Belirsiz süreli sözleşmelerde kiranın başlangıcından on yıl geçtikten sonra genel hükümlere göre fesih bildirimi yapılabilir.",
                     "Yazılı tahliye taahhüdü (TBK m. 352/1) ve kira bedelinin ödenmemesi (TBK m. 315): Bu iki yolda dava yerine icra takibi de mümkündür; ayrıntılar ilgili hizmet sayfalarında anlatılmıştır.",
                 ],
             },
@@ -83,7 +83,7 @@ export const services: Service[] = [
             "Görevli mahkeme, dava değerine bakılmaksızın sulh hukuk mahkemesidir (HMK m. 4/1-a). Sulh hukuk mahkemesinde görülen davalar basit yargılama usulüne tabidir (HMK m. 316/1-a).",
             "Yetkili mahkeme genel kurala göre davalının yerleşim yeri mahkemesidir (HMK m. 6); sözleşmeden doğan davalar sözleşmenin ifa edileceği yerde de açılabilir (HMK m. 10). İzmir'deki taşınmazlara ilişkin davalar uygulamada çoğunlukla taşınmazın bulunduğu yerdeki sulh hukuk mahkemesinde açılır.",
         ],
-        mediation: "Kira ilişkisinden doğan uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulması dava şartıdır (HUAK m. 18/B). Arabulucuya başvurulmadan açılan dava usulden reddedilir. Başvuru tarihinden son tutanağın düzenlendiği tarihe kadar hak düşürücü süreler işlemez (HUAK m. 18/A-15). Başvurunun zamanlaması da önemlidir: dava açma koşulları oluşmadan yapılan başvuru, sonradan açılacak davayı etkileyebilir.",
+        mediation: "Kira ilişkisinden doğan uyuşmazlıklarda dava açılmadan önce [arabulucuya başvurulması dava şartıdır](/sozluk/zorunlu-arabuluculuk/) (HUAK m. 18/B). Arabulucuya başvurulmadan açılan dava usulden reddedilir. Başvuru tarihinden son tutanağın düzenlendiği tarihe kadar hak düşürücü süreler işlemez (HUAK m. 18/A-15). Başvurunun zamanlaması da önemlidir: dava açma koşulları oluşmadan yapılan başvuru, sonradan açılacak davayı etkileyebilir.",
         faqs: [
             { question: "Kira sözleşmesinin süresi bitince ev veya dükkân sahibi kiracıyı çıkarabilir mi?", answer: "Hayır. Konut ve çatılı işyeri kiralarında kiracı süre bitiminden en az on beş gün önce bildirimde bulunmazsa sözleşme aynı koşullarla bir yıl uzar ve kiraya veren süre bitimine dayanarak sözleşmeyi sona erdiremez (TBK m. 347). Tahliye için kanunda sayılan sebeplerden birinin bulunması veya on yıllık uzama süresinin dolması gerekir." },
             { question: "İhtiyaç nedeniyle tahliye davası ne zaman açılmalıdır?", answer: "Belirli süreli sözleşmelerde kira süresinin bitiminden itibaren bir ay içinde açılmalıdır (TBK m. 350). Bu süre içinde kiracıya dava açılacağı yazılı olarak bildirilirse süre bir kira yılı uzar (TBK m. 353). Yeni malik ise edinmeden itibaren bir ay içinde yazılı bildirim yaparak altı ay sonra dava açabilir (TBK m. 351)." },
@@ -117,7 +117,7 @@ export const services: Service[] = [
             {
                 title: "Kira bedeli nasıl belirlenir? (TBK m. 344)",
                 list: [
-                    "İlk beş yıl içinde: Tarafların yenilenen kira dönemine ilişkin artış anlaşmaları, bir önceki kira yılında tüketici fiyat endeksindeki (TÜFE) on iki aylık ortalamalara göre değişim oranını geçmemek koşuluyla geçerlidir. Anlaşma yoksa hâkim, bu oranı geçmemek üzere kiralananın durumunu dikkate alarak hakkaniyete göre karar verir.",
+                    "İlk beş yıl içinde: Tarafların yenilenen kira dönemine ilişkin artış anlaşmaları, bir önceki kira yılında tüketici fiyat endeksindeki (TÜFE) [on iki aylık ortalamalara göre değişim oranını](/sozluk/kira-artis-orani/) geçmemek koşuluyla geçerlidir. Anlaşma yoksa hâkim, bu oranı geçmemek üzere kiralananın durumunu dikkate alarak hakkaniyete göre karar verir.",
                     "Beş yıldan uzun süreli veya beş yıldan sonra yenilenen sözleşmelerde ve her beş yılın sonunda: Yeni kira yılındaki bedel; TÜFE değişim oranı, kiralananın durumu ve emsal kira bedelleri göz önünde tutularak hakkaniyete uygun biçimde belirlenir. Bu şekilde belirlenen bedel, izleyen yıllarda yine TÜFE sınırına göre değiştirilebilir.",
                     "Yabancı para cinsinden kira: Beş yıl geçmedikçe kira bedelinde değişiklik yapılamaz; ancak aşırı ifa güçlüğü hükmü (TBK m. 138) saklıdır. Beş yıl sonra yabancı paranın değerindeki değişiklikler de dikkate alınır.",
                 ],
@@ -125,7 +125,7 @@ export const services: Service[] = [
             {
                 title: "Dava açma süresi ve kararın etkisi (TBK m. 345)",
                 paragraphs: [
-                    "Kira tespit davası her zaman açılabilir. Ancak mahkemenin belirleyeceği bedelin hangi dönemden itibaren geçerli olacağı, davanın açılma zamanına bağlıdır:",
+                    "[Kira tespit davası](/sozluk/kira-tespit-davasi/) her zaman açılabilir. Ancak mahkemenin belirleyeceği bedelin hangi dönemden itibaren geçerli olacağı, davanın açılma zamanına bağlıdır:",
                 ],
                 list: [
                     "Dava yeni kira döneminin başlangıcından en geç otuz gün önce açılırsa veya kiraya veren bu süre içinde kiracıya kira bedelinin artırılacağını yazılı olarak bildirmiş ve dava izleyen yeni kira dönemi sonuna kadar açılmışsa, belirlenen bedel yeni dönemin başından itibaren geçerlidir.",
@@ -204,7 +204,7 @@ export const services: Service[] = [
                     "Uyarlama isteyen tarafın borcunu henüz ifa etmemiş olması veya aşırı ifa güçlüğünden doğan haklarını saklı tutarak (ihtirazi kayıtla) ifa etmiş olması",
                 ],
                 paragraphs: [
-                    "Bu şartlar oluşmuşsa hâkimden sözleşmenin yeni koşullara uyarlanması istenebilir; uyarlama mümkün değilse sürekli edimli sözleşmelerde kural olarak fesih hakkı kullanılır. Hüküm yabancı para borçlarında da uygulanır.",
+                    "Bu şartlar oluşmuşsa hâkimden [sözleşmenin yeni koşullara uyarlanması](/sozluk/kira-uyarlama-davasi/) istenebilir; uyarlama mümkün değilse sürekli edimli sözleşmelerde kural olarak fesih hakkı kullanılır. Hüküm yabancı para borçlarında da uygulanır.",
                 ],
             },
             {
@@ -217,7 +217,7 @@ export const services: Service[] = [
             {
                 title: "Uyarlama ve kira tespiti arasındaki fark",
                 paragraphs: [
-                    "Kira tespit davası, kanunun öngördüğü dönemlerde (özellikle beş yıllık dönem sonunda) kira bedelinin TBK m. 344'e göre belirlenmesini amaçlar. Uyarlama davası ise süre koşuluna bağlı olmaksızın, ancak olağanüstü bir değişiklik ispatlandığında sözleşme dengesinin yeniden kurulmasını sağlar. Hangi yolun izleneceği, sözleşmenin süresine ve değişikliğin niteliğine göre belirlenir.",
+                    "[Kira tespit davası](/izmir-kira-tespit-davasi-avukati/), kanunun öngördüğü dönemlerde (özellikle beş yıllık dönem sonunda) kira bedelinin TBK m. 344'e göre belirlenmesini amaçlar. Uyarlama davası ise süre koşuluna bağlı olmaksızın, ancak olağanüstü bir değişiklik ispatlandığında sözleşme dengesinin yeniden kurulmasını sağlar. Hangi yolun izleneceği, sözleşmenin süresine ve değişikliğin niteliğine göre belirlenir.",
                 ],
             },
         ],
@@ -356,7 +356,7 @@ export const services: Service[] = [
             {
                 title: "İcra yoluyla tahliye nasıl işler? (İİK m. 272-275)",
                 paragraphs: [
-                    "İcra dairesine taahhütname ile başvurulduğunda kiracıya tahliye emri gönderilir. Tahliye emri, taşınmazın on beş gün içinde tahliye ve teslimini ister; kiracı yedi gün içinde itiraz edebilir ve itiraz takibi durdurur (İİK m. 272, 274).",
+                    "İcra dairesine [taahhütname](/sozluk/tahliye-taahhutnamesi/) ile başvurulduğunda kiracıya tahliye emri gönderilir. Tahliye emri, taşınmazın on beş gün içinde tahliye ve teslimini ister; kiracı yedi gün içinde itiraz edebilir ve itiraz takibi durdurur (İİK m. 272, 274).",
                     "İtiraz edilmez ve süre içinde tahliye edilmezse taşınmaz zorla tahliye edilerek kiraya verene teslim edilir (İİK m. 273). İtiraz halinde kiraya veren icra mahkemesinden itirazın kaldırılmasını isteyebilir (İİK m. 275). Belgenin niteliğine ve itirazın içeriğine göre icra mahkemesinde sonuç alınamazsa, genel hükümlere göre sulh hukuk mahkemesinde dava açma hakkı saklıdır.",
                 ],
             },
@@ -413,10 +413,10 @@ export const services: Service[] = [
             {
                 title: "Sözleşmede dikkat edilmesi gereken başlıca maddeler",
                 list: [
-                    "Şekil ve ispat: Kira sözleşmesi kanunen yazılı şekle bağlı değildir; ancak ispat kolaylığı için yazılı yapılması ve teslim tutanağıyla desteklenmesi önerilir.",
+                    "Şekil ve ispat: [Kira sözleşmesi](/sozluk/kira-sozlesmesi/) kanunen yazılı şekle bağlı değildir; ancak ispat kolaylığı için yazılı yapılması ve teslim tutanağıyla desteklenmesi önerilir.",
                     "Süre: Belirli veya belirsiz süreli olabilir (TBK m. 300). Konut ve çatılı işyerinde kiracı bildirimde bulunmazsa sözleşme bir yıl uzar; kiraya veren süre bitimine dayanarak sözleşmeyi sona erdiremez (TBK m. 347).",
                     "Kira artışı: Yenilenen dönemlerde artış, bir önceki kira yılındaki TÜFE on iki aylık ortalama değişim oranını geçemez (TBK m. 344).",
-                    "Güvence (depozito): Üç aylık kira bedelini aşamaz; para olarak verilmişse kiraya verenin onayı olmadan çekilmemek üzere vadeli tasarruf hesabına yatırılır (TBK m. 342).",
+                    "[Güvence (depozito)](/sozluk/depozito/): Üç aylık kira bedelini aşamaz; para olarak verilmişse kiraya verenin onayı olmadan çekilmemek üzere vadeli tasarruf hesabına yatırılır (TBK m. 342).",
                     "Ek ödeme yasağı: Kiracıya kira bedeli ve yan giderler dışında ödeme yükümlülüğü getirilemez; geç ödemede ceza koşulu veya sonraki kiraların muaccel olacağı anlaşmaları geçersizdir (TBK m. 346).",
                     "Kiracı aleyhine değişiklik yasağı: Kira bedelinin belirlenmesi dışında kiracı aleyhine değişiklik yapılamaz (TBK m. 343).",
                     "Alt kira ve devir: Konut ve çatılı işyeri kiralarında kiracı, kiraya verenin yazılı rızası olmadan alt kiraya veremez veya kullanım hakkını devredemez (TBK m. 322-323).",
@@ -483,7 +483,7 @@ export const services: Service[] = [
             {
                 title: "Hangi uyuşmazlıklarda arabuluculuk zorunlu?",
                 paragraphs: [
-                    "6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu'nun (HUAK) 18/B maddesine göre, kiralanan taşınmazların İcra ve İflas Kanunu'na göre ilamsız icra yoluyla tahliyesine ilişkin hükümler hariç olmak üzere, kira ilişkisinden kaynaklanan uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulması dava şartıdır.",
+                    "6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu'nun (HUAK) 18/B maddesine göre, kiralanan taşınmazların İcra ve İflas Kanunu'na göre ilamsız icra yoluyla tahliyesine ilişkin hükümler hariç olmak üzere, kira ilişkisinden kaynaklanan uyuşmazlıklarda dava açılmadan önce [arabulucuya başvurulması dava şartıdır](/sozluk/zorunlu-arabuluculuk/).",
                 ],
                 list: [
                     "Tahliye davaları (gereksinim, yeni malik, iki haklı ihtar, on yıllık uzama)",

@@ -51,7 +51,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-playfair font-bold text-primary">Av. Mert Kağan Çetin</h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı (Sicil No: 15556) ve Bayraklı&apos;da ofisi bulunan avukattır. Çalışmalarını <Link href="/" className="text-secondary hover:underline">İzmir&apos;deki kira uyuşmazlıklarına</Link> odaklamıştır: <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary hover:underline">kiracı tahliye davası</Link>, <Link href="/izmir-kira-tespit-davasi-avukati/" className="text-secondary hover:underline">kira tespit davası</Link>, <Link href="/izmir-kira-uyarlama-davasi-avukati/" className="text-secondary hover:underline">kira uyarlama davası</Link>, <Link href="/izmir-kira-alacagi-icra-takibi-avukati/" className="text-secondary hover:underline">kira alacağı icra takibi</Link>, <Link href="/izmir-tahliye-taahhudu-icra-avukati/" className="text-secondary hover:underline">tahliye taahhüdüne dayalı icra</Link>, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">kira sözleşmesi</Link> ve <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary hover:underline">kira arabuluculuğu</Link>.
+                                    Av. Mert Kağan Çetin, İzmir Barosu&apos;na kayıtlı (Sicil No: 15556) ve Bayraklı&apos;da ofisi bulunan avukattır. Çalışmalarını <Link href="/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">İzmir&apos;deki kira uyuşmazlıklarına</Link> odaklamıştır: <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kiracı tahliye davası</Link>, <Link href="/izmir-kira-tespit-davasi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira tespit davası</Link>, <Link href="/izmir-kira-uyarlama-davasi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira uyarlama davası</Link>, <Link href="/izmir-kira-alacagi-icra-takibi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira alacağı icra takibi</Link>, <Link href="/izmir-tahliye-taahhudu-icra-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">tahliye taahhüdüne dayalı icra</Link>, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira sözleşmesi</Link> ve <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira arabuluculuğu</Link>.
                                 </p>
                                 <p>
                                     Ev sahibi ve kiracı tarafında; dava öncesi ihtar ve sözleşme incelemesinden zorunlu arabuluculuğa, sulh hukuk mahkemesindeki yargılamadan icra takibine kadar süreç takip edilir. Ön görüşme telefonla yapılabilir.
@@ -63,7 +63,7 @@ export default function AboutPage() {
                                     İzmir&apos;deki kira yargılamaları, Türk Borçlar Kanunu&apos;nun kira hükümleri ve güncel Yargıtay kararları yakından takip edilmektedir.
                                 </p>
                                 <p>
-                                    Hukuki süreçleri herkesin anlayabileceği şekilde açıkladığı <a href="https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">YouTube kanalını</a> takip ederek kira hukuku konularında kısa bilgilendirme videolarına ulaşabilirsiniz.
+                                    Hukuki süreçleri herkesin anlayabileceği şekilde açıkladığı <a href="https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ" target="_blank" rel="noopener noreferrer" className="text-secondary-ink underline underline-offset-2 hover:text-primary">YouTube kanalını</a> takip ederek kira hukuku konularında kısa bilgilendirme videolarına ulaşabilirsiniz.
                                 </p>
                             </div>
 
@@ -76,7 +76,9 @@ export default function AboutPage() {
                                         <h3 className="font-bold text-primary">Eğitim & Yetkinlik</h3>
                                     </div>
                                     <ul className="space-y-2 text-sm text-muted-foreground">
-                                        <li>• İzmir Barosu Üyeliği</li>
+                                        <li>• İzmir Ekonomi Üniversitesi Hukuk Fakültesi</li>
+                                        <li>• İzmir Barosu Sicil No: 15556</li>
+                                        <li>• TBB Sicil No: 162439</li>
                                         <li>• Arabuluculuk Süreç Yönetimi Eğitimi</li>
                                         <li>• Hukuk Mevzuatı Güncelleme Seminerleri</li>
                                     </ul>
@@ -107,7 +109,7 @@ export default function AboutPage() {
                                     className="h-auto w-full object-cover"
                                 />
                                 <div className="bg-primary p-8 text-center text-white">
-                                    <h3 className="text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</h3>
+                                    <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-1">Mert Kağan Çetin</p>
                                     <p className="text-sm text-secondary font-medium uppercase tracking-widest">Kurucu Avukat</p>
                                 </div>
                                 <CardContent className="p-8 space-y-8">
@@ -119,7 +121,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <div className="space-y-4">
-                                        <h4 className="font-bold text-primary text-sm uppercase tracking-widest">Çalışma Şekli</h4>
+                                        <p className="font-serif font-bold text-primary text-sm uppercase tracking-widest">Çalışma Şekli</p>
                                         {[
                                             "Telefonla ön görüşme",
                                             "Dosyanın avukat tarafından takibi",

@@ -45,13 +45,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const serviceHref: Record<string, string> = {
     "#tahliye": "/izmir-kiraci-tahliye-davasi-avukati/",
-    "#kira": "/",
+    "#tespit": "/izmir-kira-tespit-davasi-avukati/",
+    "#uyarlama": "/izmir-kira-uyarlama-davasi-avukati/",
+    "#alacak": "/izmir-kira-alacagi-icra-takibi-avukati/",
+    "#taahhut": "/izmir-tahliye-taahhudu-icra-avukati/",
     "#gayrimenkul": "/izmir-kira-sozlesmesi-avukati/",
+    "#arabuluculuk": "/izmir-kira-arabuluculuk-avukati/",
+    "#kira": "/",
 };
 const serviceLabel: Record<string, string> = {
-    "#tahliye": "İzmir Kiracı Tahliye Davası Avukatı",
+    "#tahliye": "Kiracı tahliye davası",
+    "#tespit": "Kira tespit davası",
+    "#uyarlama": "Kira uyarlama davası",
+    "#alacak": "Kira alacağı ve icra takibi",
+    "#taahhut": "Tahliye taahhüdü ile icra",
+    "#gayrimenkul": "Kira sözleşmesi hazırlama ve inceleme",
+    "#arabuluculuk": "Kira arabuluculuğu",
     "#kira": "İzmir Kira Avukatı",
-    "#gayrimenkul": "İzmir Kira Sözleşmesi Avukatı",
 };
 
 export default async function GlossaryTermPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -134,6 +144,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                         <div className="lg:col-span-2 min-w-0 doc-prose">
                             {/* Featured Snippet Definition */}
+                            <h2 className="mt-0">Tanım</h2>
                             <div className="not-prose bg-slate-50 border-l-4 border-secondary p-6 rounded-r-xl mb-8">
                                 <p className="text-xl leading-relaxed font-medium text-slate-800">
                                     <strong>{term.term}</strong>, {term.definition.split(". ").slice(1).join(". ")}
@@ -163,7 +174,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
 
                             {/* Legal Basis Callout */}
                             <div className="not-prose bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-                                <h4 className="font-bold text-blue-900 text-lg mb-2">Yasal Dayanak: {term.legalBasis}</h4>
+                                <p className="font-serif tracking-tight font-bold text-blue-900 text-lg mb-2">Yasal Dayanak: {term.legalBasis}</p>
                                 <p className="text-blue-800 text-sm leading-relaxed">
                                     Bu terim {term.legalBasis} kapsamında düzenlenmiştir. Detaylı hukuki değerlendirme için bir avukattan danışmanlık almanız tavsiye edilir.
                                 </p>
@@ -172,10 +183,10 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {/* Related Glossary Terms */}
                             {relatedTerms.length > 0 && (
                                 <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
-                                    <h3 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
+                                    <h2 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                         <Scale className="w-5 h-5 text-secondary" />
                                         İlgili Hukuki Terimler
-                                    </h3>
+                                    </h2>
                                     <div className="space-y-3">
                                         {relatedTerms.map((rt) => (
                                             <Link
@@ -187,7 +198,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/sozluk/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    <Link href="/sozluk/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary-ink mt-4 hover:gap-2 transition-all">
                                         Tüm Terimler <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
@@ -196,10 +207,10 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             {/* Related Blog Posts */}
                             {relatedPosts.length > 0 && (
                                 <div className="not-prose bg-white border border-slate-200 rounded-xl p-6 my-8">
-                                    <h3 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
+                                    <h2 className="flex items-center gap-2 font-bold text-primary text-lg mb-4">
                                         <BookOpen className="w-5 h-5 text-secondary" />
                                         İlgili Yargıtay ve BAM Kararları
-                                    </h3>
+                                    </h2>
                                     <div className="space-y-3">
                                         {relatedPosts.map((rp) => (
                                             <Link
@@ -211,13 +222,13 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href="/kira-hukuku-ictihatlari/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary mt-4 hover:gap-2 transition-all">
+                                    <Link href="/kira-hukuku-ictihatlari/" className="inline-flex items-center gap-1 text-xs font-bold text-secondary-ink mt-4 hover:gap-2 transition-all">
                                         Kira Hukuku İçtihatları <ArrowRight className="w-3 h-3" />
                                     </Link>
                                 </div>
                             )}
 
-                            <p className="text-xs text-slate-400 italic not-prose">
+                            <p className="text-xs text-slate-500 italic not-prose">
                                 Son güncelleme: {new Date(term.lastUpdated).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}
                             </p>
                         </div>
@@ -225,11 +236,11 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                         {/* Sidebar */}
                         <div className="space-y-8">
                             <div className="bg-primary text-white p-8 rounded-2xl sticky top-24">
-                                <h3 className="text-2xl font-playfair font-bold mb-4">Hukuki Destek Alın</h3>
+                                <p className="font-serif tracking-tight text-2xl font-playfair font-bold mb-4">Hukuki Destek Alın</p>
                                 <p className="text-slate-300 mb-6">
                                     {term.term} konusunda profesyonel hukuki danışmanlık için bizimle iletişime geçin.
                                 </p>
-                                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold" asChild>
+                                <Button size="lg" className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold" asChild>
                                     <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                                         WhatsApp ile Yazın
                                     </a>
@@ -243,7 +254,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                             </div>
 
                             <div className="border border-slate-200 rounded-2xl p-8">
-                                <h3 className="font-bold text-lg mb-4">Sıkça Sorulan Sorular</h3>
+                                <h2 className="font-bold text-lg mb-4">Sıkça Sorulan Sorular</h2>
                                 <FAQAccordion faqs={term.faqs} />
                             </div>
                         </div>
@@ -255,12 +266,12 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             <section className="pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl text-white">
-                        <h3 className="text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</h3>
+                        <p className="font-serif tracking-tight text-xl font-playfair font-bold mb-3">İzmir&apos;de kira uyuşmazlığınız mı var?</p>
                         <p className="text-slate-300 text-sm leading-relaxed mb-5">
                             Kira uyuşmazlıklarında ön görüşme telefonla yapılabilir: 0544 585 46 45.
                         </p>
                         <div className="flex flex-wrap gap-3">
-                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
+                            <Link href="/iletisim/" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-primary px-5 py-2.5 rounded-lg text-sm font-bold transition-colors">
                                 İletişime Geçin <ArrowRight className="w-4 h-4" />
                             </Link>
                             {term.relatedServiceAnchor && (

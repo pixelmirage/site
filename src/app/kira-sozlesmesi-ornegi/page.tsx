@@ -1,397 +1,288 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import { ChevronRight, Home, ShieldCheck, FileText, Percent, CalendarClock, KeyRound, Receipt, Users, Ban, ClipboardList, Scale } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { HowToSchema } from "@/components/seo/HowToSchema";
-import { AlertCircle } from "lucide-react";
-import { PrintButton } from "@/components/tools/PrintButton";
-import { KiraSozlesmesiPdfButton } from "@/components/tools/KiraSozlesmesiPdfButton";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { ContractDocument } from "@/components/sablon/ContractDocument";
+import { DocActions } from "@/components/sablon/DocActions";
+import { CTAs } from "@/components/kira-landing/CTAs";
+import { DOWNLOADS } from "@/lib/kira-sozlesmesi";
+
+const URL = "https://mertkagancetin.com/kira-sozlesmesi-ornegi/";
+const MODIFIED = "2026-11-02";
 
 export const metadata: Metadata = {
-    title: "Kira Sözleşmesi Örneği 2026 - PDF İndir",
-    description: "2026 güncel kira sözleşmesi örneğini PDF olarak indirin. TBK'ya uygun, konut ve işyeri kira kontratı şablonu. Kira bedeli, depozito, fesih şartları ve tüm maddeler.",
+    title: "Kira Sözleşmesi Örneği 2026 - Word ve PDF İndir",
+    description: "2026 kira sözleşmesi örneği: TBK'ya göre hazırlanmış konut ve çatılı işyeri kira kontratı şablonu. Word (DOCX) ve PDF olarak indirin veya yazdırın; depozito, kira artışı, fesih ve teslim tutanağı dahil.",
     openGraph: {
         images: ["/og-image.jpg"],
-        title: "Kira Sözleşmesi Örneği 2026 | PDF İndir",
-        description: "TBK'ya uygun güncel kira sözleşmesi şablonunu PDF formatında indirin.",
-        url: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/",
+        title: "Kira Sözleşmesi Örneği 2026 | Word ve PDF İndir",
+        description: "TBK'ya göre hazırlanmış kira sözleşmesi şablonu: Word ve PDF indir, yazdır.",
+        url: URL,
         type: "article",
     },
-    other: {
-        "article:modified_time": "2026-10-15",
-    },
-    alternates: {
-        canonical: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/",
-    },
+    other: { "article:modified_time": MODIFIED },
+    alternates: { canonical: URL },
 };
 
 const filledExample: [string, string][] = [
-    ["Düzenleme tarihi", "01.11.2026"],
+    ["Düzenleme yeri ve tarihi", "İzmir, 01.11.2026"],
     ["Kiraya veren", "Ayşe Yılmaz – Örnek Mah. 100 Sk. No:1, Bayraklı/İzmir"],
     ["Kiracı", "Mehmet Demir – Deneme Mah. 200 Sk. No:2, Bornova/İzmir"],
     ["Kiralanan", "Örnek Mah. 300 Sk. No:3 D:5, Bayraklı/İzmir – 3+1, 2. kat, konut"],
     ["Kira süresi", "01.11.2026 – 31.10.2027 (1 yıl, belirli süreli)"],
     ["Aylık kira / ödeme günü", "[tarafların belirlediği tutar] TL – her ayın 5'i, banka havalesi"],
-    ["Depozito", "[tutar] TL – en fazla üç aylık kira (TBK m. 342)"],
-    ["Kira artışı", "Yıllık, önceki 12 aylık TÜFE ortalamasını aşmamak üzere (TBK m. 344)"],
-    ["Özel şart", "Evcil hayvan beslenmesi kiraya verenin yazılı iznine bağlıdır; teslim tutanağı ektedir."],
-    ["İmza", "Her iki taraf, 2 nüsha"],
+    ["Güvence bedeli", "[tutar] TL – en fazla üç aylık kira (TBK m. 342)"],
+    ["Kira artışı", "Yenilenen kira yılında, önceki kira yılının 12 aylık TÜFE ortalamasına göre değişim oranında (TBK m. 344)"],
+    ["Özel şart", "Evcil hayvan beslenmesi kiraya verenin yazılı iznine bağlıdır."],
+    ["Ek-1", "Teslim tutanağı: anahtar sayısı, sayaç endeksleri, eşya listesi"],
 ];
 
 const howToSteps = [
-    { name: "Tarafları yazın", text: "Kiraya veren ve kiracının ad soyad, T.C. kimlik numarası ve tebligat adreslerini eksiksiz doldurun." },
-    { name: "Kiralananı tanımlayın", text: "Taşınmazın açık adresini, oda sayısını, kat ve daire numarasını ve konut/işyeri kullanım amacını belirtin." },
-    { name: "Süre ve bedeli belirleyin", text: "Başlangıç ve bitiş tarihini, aylık kira bedelini, ödeme gününü ve ödeme şeklini yazın; banka ile ödeme ispat açısından kolaylık sağlar." },
-    { name: "Depozitoyu kararlaştırın", text: "Güvence bedeli üç aylık kirayı aşamaz ve konutlarda vadeli bir banka hesabına yatırılır (TBK m. 342)." },
-    { name: "Özel şartları ekleyin", text: "Evcil hayvan, eşya listesi, aidat gibi konuları özel şartlar bölümüne yazın; kanuna aykırı şartlar geçersizdir." },
-    { name: "İmzalayın ve teslim tutanağı düzenleyin", text: "Sözleşmeyi iki nüsha imzalayın ve taşınmazın teslim anındaki durumunu fotoğraflı bir tutanakla kayıt altına alın." },
+    { name: "Tarafları yazın", text: "Kiraya veren ve kiracının ad soyadı, T.C. kimlik numarası, tebligat adresi ve iletişim bilgileri eksiksiz yazılır." },
+    { name: "Kiralananı tanımlayın", text: "Açık adres, tapu bilgisi, oda sayısı, kat ve daire numarası ile konut veya çatılı işyeri niteliği belirtilir." },
+    { name: "Süre, bedel ve güvenceyi belirleyin", text: "Başlangıç ve bitiş tarihi, aylık kira bedeli (rakam ve yazıyla), ödeme günü, IBAN ve güvence bedeli yazılır. Güvence üç aylık kirayı aşamaz (TBK m. 342)." },
+    { name: "Özel şartları ekleyin", text: "Evcil hayvan, otopark veya eşyalı kiralama gibi konular özel şartlara yazılır; kanunun emredici hükümlerine aykırı şartlar geçersizdir." },
+    { name: "İmzalayın ve teslim tutanağını doldurun", text: "Sözleşme iki nüsha imzalanır; Ek-1 teslim tutanağına sayaç endeksleri, anahtar sayısı ve mevcut durum yazılarak fotoğraflarla desteklenir." },
+];
+
+const keyClauses = [
+    { icon: Receipt, title: "Güvence bedeli (depozito)", text: <>Güvence üç aylık kira bedelini aşamaz; para olarak verilirse kiracı adına vadeli tasarruf hesabına yatırılır (TBK m. 342). Ayrıntı: <Link href="/sozluk/depozito/">depozito</Link>.</> },
+    { icon: Percent, title: "Kira artış oranı", text: <>Yenilenen kira yılında artış, önceki kira yılının 12 aylık TÜFE ortalamasına göre değişim oranını aşamaz (TBK m. 344). Hesap için <Link href="/kira-artis-orani-hesaplama/">kira artış oranı hesaplama</Link> aracı kullanılabilir.</> },
+    { icon: CalendarClock, title: "Süre, uzama ve fesih", text: <>Kiracı süre bitiminden 15 gün önce bildirimde bulunmazsa sözleşme bir yıl uzar; kiraya veren sebep göstermeksizin ancak <Link href="/sozluk/10-yillik-uzama-suresi/">10 yıllık uzama süresi</Link> sonunda fesih bildirebilir (TBK m. 347).</> },
+    { icon: KeyRound, title: "Tahliye taahhüdü", text: <>Tahliye taahhüdü, kiralananın tesliminden sonra yazılı olarak verilmelidir; sözleşmeyle aynı anda alınan taahhüt geçersizlik tartışmasına yol açar. Örnek: <Link href="/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link>.</> },
+    { icon: Users, title: "Kefil", text: <>Kefalet yazılı yapılır; kefil, sorumlu olacağı azami miktarı, kefalet tarihini ve müteselsil kefil ise bunu kendi el yazısıyla belirtir (TBK m. 583). Evli kefilde eşin yazılı rızası aranır (TBK m. 584).</> },
+    { icon: Ban, title: "Geçersiz şartlar", text: <>Kira geç ödenirse ceza koşulu veya sonraki kiraların muaccel olacağı gibi şartlar geçersizdir (TBK m. 346). Kiracı aleyhine değiştirilemeyen hükümler için TBK m. 354 uygulanır.</> },
+    { icon: ClipboardList, title: "Teslim tutanağı", text: <>Teslim anındaki durumun sayaç endeksleri, anahtar sayısı ve fotoğraflarla kayda geçirilmesi, iade sırasında güvence bedeli tartışmalarını azaltır (TBK m. 334).</> },
+    { icon: Scale, title: "Uyuşmazlıkta arabuluculuk", text: <>1 Eylül 2023&apos;ten bu yana kira uyuşmazlıklarında dava açmadan önce arabulucuya başvurmak zorunludur (6325 sayılı Kanun m. 18/B). Bkz. <Link href="/sozluk/zorunlu-arabuluculuk/">zorunlu arabuluculuk</Link>.</> },
 ];
 
 const faqs = [
-    {
-        question: "Kira sözleşmesi yazılı olmak zorunda mı?",
-        answer: "Hayır, kira sözleşmesi yazılı olmak zorunda değildir. Sözlü olarak da geçerlidir. Ancak ispat kolaylığı açısından yazılı sözleşme yapılması faydalıdır. Yazılı sözleşme, ileride çıkabilecek uyuşmazlıklarda tarafların haklarını korur."
-    },
-    {
-        question: "Kira sözleşmesi noter onayı gerektirir mi?",
-        answer: "Kira sözleşmesinin noter onayına tabi tutulması zorunlu değildir. Tarafların kendi aralarında imzaladıkları adi yazılı sözleşme hukuken geçerlidir. Ancak noter onaylı sözleşme, imza inkarını önlediği için daha güçlü bir ispat aracıdır."
-    },
-    {
-        question: "Kira sözleşmesi en fazla kaç yıllık yapılabilir?",
-        answer: "Kira sözleşmesi herhangi bir süre sınırı olmaksızın yapılabilir. 1 yıllık, 3 yıllık, 5 yıllık veya daha uzun süreli sözleşmeler geçerlidir. Belirli süreli sözleşmeler süre sonunda kendiliğinden sona ermez; kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunmazsa sözleşme aynı koşullarla 1 yıl uzar (TBK m. 347)."
-    },
-    {
-        question: "Kira sözleşmesinde depozito ne kadar olabilir?",
-        answer: "Türk Borçlar Kanunu'nun 342. maddesine göre konut ve çatılı işyeri kiralarında depozito (güvence bedeli) en fazla üç aylık kira bedelini geçemez. Depozito para olarak veriliyorsa vadeli bir tasarruf hesabına yatırılması gerekir."
-    },
-    {
-        question: "Kira artış oranı nasıl belirlenir?",
-        answer: "Konut kiralarında yıllık artış oranı, bir önceki kira yılının on iki aylık TÜFE ortalamasını geçemez (TBK m. 344). Taraflar sözleşmede daha yüksek bir oran belirlemiş olsalar bile yasal üst sınır uygulanır. Güncel kira artış oranını hesaplamak için kira artış hesaplama aracımızı kullanabilirsiniz."
-    },
-    {
-        question: "Kiracı kira sözleşmesini nasıl fesheder?",
-        answer: "Belirli süreli kira sözleşmelerinde kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunarak sözleşmeyi feshedebilir. Belirsiz süreli sözleşmelerde ise her 6 aylık kira döneminin sonu için, en az 3 ay önceden yazılı bildirimde bulunmalıdır (TBK m. 347)."
-    },
+    { question: "Kira sözleşmesi yazılı olmak zorunda mı?", answer: "Hayır. Kira sözleşmesi herhangi bir şekle bağlı değildir ve sözlü olarak da kurulabilir. Ancak kira bedeli, süre ve güvence gibi konuların ispatı için yazılı sözleşme yapılması faydalıdır." },
+    { question: "Kırtasiyeden alınan kira kontratı geçerli mi?", answer: "Evet, taraflarca imzalanan matbu kira sözleşmesi geçerlidir. Ancak matbu metinlerde yer alan ve kanunun emredici hükümlerine aykırı şartlar, örneğin üç aylık kirayı aşan güvence veya geç ödemede ceza koşulu, geçersizdir (TBK m. 342, 346)." },
+    { question: "Kira sözleşmesi noter onayı gerektirir mi?", answer: "Hayır. Tarafların kendi aralarında imzaladığı adi yazılı sözleşme geçerlidir. Noterde düzenleme veya onaylatma, imza inkârı riskini azaltan bir ispat kolaylığı sağlar." },
+    { question: "1 yıllık kira sözleşmesi kaç yıl geçerli?", answer: "Bir yıllık belirli süreli sözleşme, kiracı süre bitiminden en az 15 gün önce bildirimde bulunmazsa aynı koşullarla birer yıl uzar. Kiraya veren, sözleşme süresinin bitmesini tek başına tahliye sebebi olarak kullanamaz; sebep göstermeksizin fesih ancak 10 yıllık uzama süresinin sonunda mümkündür (TBK m. 347)." },
+    { question: "1 yıllık kira sözleşmesi bitmeden kiracı evden çıkabilir mi?", answer: "Kiracı süreye uymadan kiralananı geri verirse, kiralananın benzer koşullarla kiraya verilebileceği makul süre boyunca kira bedelini ödemekle yükümlü olabilir. Kiracının önerdiği, ödeme gücü olan ve kiraya veren için kabul edilebilir yeni bir kiracı bulunursa bu yükümlülük sona erer (TBK m. 325)." },
+    { question: "Kira sözleşmesinde depozito ne kadar olabilir?", answer: "Konut ve çatılı işyeri kiralarında güvence bedeli en fazla üç aylık kira bedeli kadar olabilir. Para olarak verilen güvence, kiraya verenin onayı olmadan çekilmemek üzere vadeli tasarruf hesabına yatırılır (TBK m. 342)." },
+    { question: "Kira artış oranı nasıl belirlenir?", answer: "Yenilenen kira yıllarında artış, bir önceki kira yılında TÜFE'nin on iki aylık ortalamalara göre değişim oranını geçemez (TBK m. 344). Daha yüksek oran kararlaştırılmış olsa bile yasal üst sınır uygulanır." },
+    { question: "Kiracı kira sözleşmesini nasıl fesheder?", answer: "Belirli süreli sözleşmede kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunarak sözleşmeyi sona erdirebilir. Belirsiz süreli sözleşmede yerel âdetteki kira dönemi, yoksa altı aylık dönem sonu için üç ay önceden yazılı fesih bildirimi yapılır (TBK m. 329, 347, 348)." },
 ];
+
+const glossary = [
+    { href: "/sozluk/kira-sozlesmesi/", label: "Kira sözleşmesi" },
+    { href: "/sozluk/depozito/", label: "Depozito" },
+    { href: "/sozluk/kira-artis-orani/", label: "Kira artış oranı" },
+    { href: "/sozluk/10-yillik-uzama-suresi/", label: "10 yıllık uzama süresi" },
+    { href: "/sozluk/tahliye-taahhutnamesi/", label: "Tahliye taahhütnamesi" },
+    { href: "/sozluk/kiraci-haklari/", label: "Kiracı hakları" },
+    { href: "/sozluk/zorunlu-arabuluculuk/", label: "Zorunlu arabuluculuk" },
+];
+
+const linkCls = "text-secondary-ink font-semibold underline underline-offset-2 hover:text-primary";
 
 export default function KiraSozlesmesiPage() {
     return (
-        <div className="bg-slate-50 min-h-screen pb-24">
+        <div className="bg-slate-50 min-h-screen print:bg-white">
             <BreadcrumbSchema
                 items={[
                     { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
-                    { name: "Kira Sözleşmesi Örneği", url: "https://mertkagancetin.com/kira-sozlesmesi-ornegi/" }
+                    { name: "Kira Sözleşmesi Örneği", url: URL },
                 ]}
             />
-
             <FAQSchema faqs={faqs} />
             <HowToSchema name="Kira sözleşmesi nasıl doldurulur?" description="Kira sözleşmesi şablonunun adım adım doldurulması." steps={howToSteps} />
 
-            {/* Hero - Hidden in Print */}
-            <section className="bg-primary text-white py-16 print:hidden">
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-3xl md:text-5xl font-playfair font-bold mb-4">Kira Sözleşmesi Örneği 2026</h1>
-                    <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-                        Türk Borçlar Kanunu&apos;na uygun kira sözleşmesi şablonunu Word (DOCX) veya PDF olarak indirin, yazdırın ya da doldurulmuş örneği inceleyin.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <PrintButton />
-                        <KiraSozlesmesiPdfButton />
+            {/* Hero */}
+            <section className="relative overflow-hidden bg-primary text-white print:hidden">
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.08),transparent_55%)]" aria-hidden="true" />
+                <div className="container relative mx-auto px-4 pt-6 pb-14 md:pb-16">
+                    <nav aria-label="Sayfa konumu" className="mb-8 text-sm text-slate-200">
+                        <ol className="flex flex-wrap items-center gap-1.5">
+                            <li><Link href="/" className="inline-flex items-center gap-1 hover:text-white"><Home className="h-3.5 w-3.5" aria-hidden="true" />Ana Sayfa</Link></li>
+                            <li aria-hidden="true"><ChevronRight className="h-3.5 w-3.5" /></li>
+                            <li aria-current="page" className="text-white">Kira Sözleşmesi Örneği</li>
+                        </ol>
+                    </nav>
+                    <div className="mx-auto max-w-3xl text-center">
+                        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary/40 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
+                            <FileText className="h-3.5 w-3.5" aria-hidden="true" /> Word · PDF · Yazdırılabilir
+                        </p>
+                        <h1 className="mb-5 font-playfair text-4xl font-bold leading-tight md:text-6xl">Kira Sözleşmesi Örneği 2026</h1>
+                        <p className="mx-auto mb-8 max-w-2xl text-base text-slate-200 md:text-lg">
+                            Türk Borçlar Kanunu&apos;nun kira hükümlerine (TBK m. 299 vd.) göre hazırlanmış konut ve çatılı işyeri kira sözleşmesi şablonu. Word veya PDF olarak indirilebilir, doğrudan yazdırılabilir; teslim tutanağı ektedir.
+                        </p>
+                        <DocActions variant="dark" />
+                        <p className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-slate-300">
+                            <ShieldCheck className="h-4 w-4 text-secondary" aria-hidden="true" />
+                            Hazırlayan: Av. Mert Kağan Çetin, İzmir Barosu · Son güncelleme: 2 Kasım 2026
+                        </p>
                     </div>
-                    <div className="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
-                        <a href="/indir/kira-sozlesmesi-ornegi-2026.docx" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-6 text-sm font-semibold text-white hover:bg-white hover:text-primary transition-colors">Word (DOCX) İndir</a>
-                        <a href="/indir/kira-sozlesmesi-ornegi-2026.pdf" download className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-6 text-sm font-semibold text-white hover:bg-white hover:text-primary transition-colors">Boş Şablon PDF</a>
-                        <a href="#doldurulmus-ornek" className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-white/60 px-6 text-sm font-semibold text-white hover:bg-white hover:text-primary transition-colors">Doldurulmuş Örnek</a>
-                    </div>
+                    <dl className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-3">
+                        {[
+                            ["Güvence bedeli", "En fazla 3 aylık kira", "TBK m. 342"],
+                            ["Yıllık kira artışı", "12 aylık TÜFE ortalaması", "TBK m. 344"],
+                            ["Sözleşme süresi", "Kendiliğinden 1 yıl uzar", "TBK m. 347"],
+                        ].map(([k, v, s]) => (
+                            <div key={k} className="rounded-xl border border-white/15 bg-white/5 px-5 py-4 text-left">
+                                <dt className="text-xs font-semibold uppercase tracking-wider text-secondary">{k}</dt>
+                                <dd className="mt-1 font-semibold text-white">{v} <span className="font-normal text-slate-300">· {s}</span></dd>
+                            </div>
+                        ))}
+                    </dl>
                 </div>
             </section>
 
-            {/* Template Preview */}
-            <section className="py-12 container mx-auto px-4">
-                <div className="max-w-[210mm] mx-auto bg-white shadow-xl p-6 sm:p-[15mm] md:p-[20mm] min-h-[297mm] text-black print:shadow-none print:p-0 print:w-full print:max-w-none">
-                    <div className="print-content font-serif leading-relaxed [overflow-wrap:anywhere]">
+            {/* Nasıl doldurulur */}
+            <section className="container mx-auto px-4 py-12 print:hidden" aria-labelledby="nasil">
+                <h2 id="nasil" className="mb-6 text-center font-playfair text-2xl font-bold text-primary md:text-3xl">Kira Sözleşmesi Nasıl Doldurulur?</h2>
+                <ol className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                    {howToSteps.map((st, i) => (
+                        <li key={st.name} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                            <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-white" aria-hidden="true">{i + 1}</span>
+                            <h3 className="mb-1.5 text-base font-bold text-primary">{st.name}</h3>
+                            <p className="text-sm leading-relaxed text-slate-600">{st.text}</p>
+                        </li>
+                    ))}
+                </ol>
+            </section>
 
-                        {/* Başlık */}
-                        <h2 className="text-center font-bold text-2xl mb-10 uppercase border-b-2 border-black pb-2 inline-block relative left-1/2 -translate-x-1/2">
-                            Kira Sözleşmesi
-                        </h2>
-
-                        <p className="text-right text-sm mb-8">Düzenleme Tarihi: ..... / ..... / 20.....</p>
-
-                        {/* Taraflar */}
-                        <h3 className="font-bold text-lg mb-4 uppercase">Taraflar</h3>
-
-                        <div className="mb-6">
-                            <p className="font-bold mb-2">KİRAYA VEREN (Ev Sahibi)</p>
-                            <div className="space-y-2 pl-4 text-[15px]">
-                                <p>Ad Soyad: ..................................................................</p>
-                                <p>T.C. Kimlik No: ..................................................................</p>
-                                <p>Adres: ..................................................................</p>
-                            </div>
-                        </div>
-
-                        <div className="mb-8">
-                            <p className="font-bold mb-2">KİRACI</p>
-                            <div className="space-y-2 pl-4 text-[15px]">
-                                <p>Ad Soyad: ..................................................................</p>
-                                <p>T.C. Kimlik No: ..................................................................</p>
-                                <p>Adres: ..................................................................</p>
-                            </div>
-                        </div>
-
-                        {/* Kiralanan */}
-                        <h3 className="font-bold text-lg mb-4 uppercase">Kiralanan Taşınmaz</h3>
-                        <div className="space-y-2 pl-4 text-[15px] mb-8">
-                            <p>Adres: ..................................................................</p>
-                            <p>..................................................................</p>
-                            <p>Oda Sayısı: ............&emsp;Kat: ............&emsp;Daire No: ............</p>
-                            <p>Kullanım Amacı: &ensp;[ ] Konut&emsp;[ ] İşyeri</p>
-                        </div>
-
-                        {/* Kira Süresi ve Bedeli */}
-                        <h3 className="font-bold text-lg mb-4 uppercase">Kira Süresi ve Bedeli</h3>
-                        <div className="space-y-2 pl-4 text-[15px] mb-8">
-                            <p>Kira Başlangıç Tarihi: ..... / ..... / 20.....</p>
-                            <p>Kira Bitiş Tarihi: ..... / ..... / 20.....</p>
-                            <p>Aylık Kira Bedeli: ................................. TL</p>
-                            <p>Ödeme Günü: Her ayın ..... &apos;inde / &apos;ünde</p>
-                            <p>Ödeme Şekli: &ensp;[ ] Banka Havalesi&emsp;[ ] Elden&emsp;[ ] Diğer: ...............</p>
-                            <p>Depozito (Güvence Bedeli): ................................. TL</p>
-                        </div>
-
-                        {/* Sözleşme Hükümleri */}
-                        <h3 className="font-bold text-lg mb-6 uppercase border-t border-black pt-4">Sözleşme Hükümleri</h3>
-
-                        <div className="space-y-5 text-[14px] leading-relaxed">
-                            <div>
-                                <p className="font-bold mb-1">MADDE 1 - KİRA BEDELİNİN ÖDENMESİ</p>
-                                <p className="text-justify">Kiracı, kira bedelini her ayın belirtilen gününde peşin olarak kiraya verenin bildireceği banka hesabına ödeyecektir. Kira bedelinin zamanında ödenmemesi halinde kiracı temerrüde düşmüş sayılır. Kiraya veren, Türk Borçlar Kanunu&apos;nun 315. maddesi uyarınca kiracıya yazılı ihtarda bulunarak 30 gün içinde ödeme yapılmasını isteyebilir.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 2 - KİRA BEDELİNİN ARTIRILMASI</p>
-                                <p className="text-justify">Kira bedeli, her yıl kira başlangıç tarihinin yıl dönümünde, bir önceki kira yılının on iki aylık TÜFE (Tüketici Fiyat Endeksi) ortalamasındaki değişim oranını geçmemek koşuluyla artırılacaktır (TBK m. 344). Taraflar aksini kararlaştırmış olsa dahi yasal sınırı aşan artış oranı uygulanamaz.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 3 - DEPOZİTO (GÜVENCE BEDELİ)</p>
-                                <p className="text-justify">Kiracı, sözleşme imzasında belirtilen depozito bedelini kiraya verene teslim edecektir. Depozito, kiralananın sözleşmeye uygun olarak tahliye edilmesi ve kiracının borçsuz olması halinde iade edilir. Kiraya veren, kiracının borçları veya hasarlar için depozitodan kesinti yapabilir (TBK m. 342).</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 4 - KİRALANANIN TESLİMİ VE KULLANIMI</p>
-                                <p className="text-justify">Kiralanan, sözleşmede belirtilen kullanım amacına uygun olarak kullanılacaktır. Kiracı, kiralananı özenle kullanmak ve komşulara saygı göstermekle yükümlüdür (TBK m. 316). Kiracı, kiraya verenin yazılı izni olmaksızın kiralananın tamamını veya bir kısmını başkasına devredemez ya da alt kiraya veremez.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 5 - BAKIM VE ONARIM</p>
-                                <p className="text-justify">Kiralananın olağan kullanımından kaynaklanan küçük onarımlar (musluk contası, ampul, sigorta vb.) kiracıya aittir. Yapısal onarımlar, tesisat arızaları ve doğal yıpranmadan kaynaklanan tamirler kiraya verene aittir (TBK m. 317). Kiracı, acil onarım gerektiren durumlarda kiraya vereni derhal bilgilendirmekle yükümlüdür.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 6 - KİRALANANIN İADESİ</p>
-                                <p className="text-justify">Kiracı, sözleşme süresinin sonunda kiralananı aldığı şekilde, olağan kullanımdan doğan yıpranmalar dışında, temiz ve hasarsız olarak kiraya verene teslim edecektir. Teslim sırasında taraflar birlikte durum tespiti yapacaktır.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 7 - AİDAT VE YAN GİDERLER</p>
-                                <p className="text-justify">Kiralananın kullanımına bağlı giderler (elektrik, su, doğalgaz, internet, aidat gibi) kiracıya aittir. Kiracı, apartman/site aidatını düzenli olarak ödeyecektir. Çatı, dış cephe, asansör gibi ortak alan bakım ve onarım giderleri kiraya verene aittir.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 8 - DEVİR VE ALT KİRA YASAĞI</p>
-                                <p className="text-justify">Kiracı, kiraya verenin yazılı izni olmaksızın kiralananı kısmen veya tamamen üçüncü bir kişiye devredemez, alt kiraya veremez veya kullanım hakkını başkasına bırakamaz (TBK m. 322).</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 9 - FESİH VE TAHLİYE</p>
-                                <p className="text-justify">Belirli süreli kira sözleşmesi, süre sonunda kendiliğinden sona ermez; kiracı, sözleşme süresinin bitiminden en az 15 gün önce yazılı bildirimde bulunarak sözleşmeyi feshedebilir (TBK m. 347). Kiraya veren, ancak kanunda sayılan haklı sebeplerin varlığında tahliye davası açabilir.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 10 - TEBLİGAT ADRESİ</p>
-                                <p className="text-justify">Taraflar, bu sözleşmede belirtilen adreslerini tebligat adresi olarak kabul ederler. Adres değişikliği yazılı olarak karşı tarafa bildirilmediği sürece, sözleşmedeki adrese yapılan tebligatlar geçerli sayılır.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 11 - UYUŞMAZLIKLARIN ÇÖZÜMÜ</p>
-                                <p className="text-justify">Bu sözleşmeden doğan uyuşmazlıklarda, 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu m. 18/B uyarınca dava açılmadan önce arabulucuya başvurulması zorunludur. Arabuluculukta anlaşma sağlanamaması halinde yetkili sulh hukuk mahkemesinde dava açılabilir; icra yoluyla tahliye talepleri bu şartın dışındadır.</p>
-                            </div>
-
-                            <div>
-                                <p className="font-bold mb-1">MADDE 12 - ÖZEL ŞARTLAR</p>
-                                <p>............................................................................................................................</p>
-                                <p>............................................................................................................................</p>
-                                <p>............................................................................................................................</p>
-                            </div>
-                        </div>
-
-                        {/* İmza Beyanı */}
-                        <div className="mt-10 text-[14px]">
-                            <p className="text-justify mb-2">
-                                İşbu sözleşme 2 (iki) nüsha olarak düzenlenmiş olup, taraflar sözleşme hükümlerini okuduklarını, anladıklarını ve kabul ettiklerini beyan ederek imzalamışlardır.
-                            </p>
-                        </div>
-
-                        {/* İmza Alanları */}
-                        <div className="flex justify-between mt-16 px-4">
-                            <div className="text-center">
-                                <p className="font-bold mb-2">KİRAYA VEREN</p>
-                                <p className="text-sm mb-12">Ad Soyad:</p>
-                                <p className="text-sm text-slate-400">(İmza)</p>
-                            </div>
-                            <div className="text-center">
-                                <p className="font-bold mb-2">KİRACI</p>
-                                <p className="text-sm mb-12">Ad Soyad:</p>
-                                <p className="text-sm text-slate-400">(İmza)</p>
-                            </div>
-                        </div>
-
+            {/* Şablon */}
+            <section className="pb-12 print:p-0" aria-labelledby="sablon">
+                <div className="container mx-auto px-4 print:max-w-none print:p-0">
+                    <div className="mx-auto mb-5 flex max-w-[210mm] flex-col items-center gap-4 print:hidden">
+                        <h2 id="sablon" className="text-center font-playfair text-2xl font-bold text-primary md:text-3xl">Kira Sözleşmesi Şablonu</h2>
+                        <DocActions variant="light" />
                     </div>
+                    <div className="mx-auto max-w-[210mm] rounded-sm border border-slate-200 bg-white px-5 py-8 shadow-[0_10px_40px_-12px_rgba(15,23,42,0.25)] sm:px-[14mm] sm:py-[16mm] md:px-[20mm] md:py-[20mm] print:max-w-none print:border-0 print:p-0 print:shadow-none">
+                        <ContractDocument />
+                    </div>
+                    <p className="mx-auto mt-4 max-w-[210mm] text-center text-sm text-slate-600 print:hidden">
+                        Şablon genel bilgilendirme amaçlıdır; işyeri kiraları, eşyalı veya döviz cinsinden kiralar gibi durumlarda somut ilişkiye göre uyarlanması gerekebilir.
+                    </p>
                 </div>
+            </section>
 
-                {/* Warning Box - Hidden in Print */}
-                <div className="max-w-[210mm] mx-auto mt-8 print:hidden">
-                    <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg flex gap-4">
-                        <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
-                        <div>
-                            <h4 className="font-bold text-amber-800 mb-2">Dikkat Edilmesi Gerekenler</h4>
-                            <p className="text-sm text-amber-700 leading-relaxed">
-                                Bu şablon genel bilgilendirme amaçlıdır ve tüm kira ilişkilerine birebir uygun olmayabilir. Özellikle <strong>işyeri kiraları</strong>, <strong>yüksek bedelli kira sözleşmeleri</strong> veya <strong>özel durumlar</strong> için bir avukattan hukuki danışmanlık almanız tavsiye edilir.
-                            </p>
+            <div className="print:hidden">
+                {/* Doldurulmuş örnek */}
+                <section className="bg-white py-14" aria-labelledby="doldurulmus-ornek">
+                    <div className="container mx-auto max-w-4xl px-4">
+                        <h2 id="doldurulmus-ornek" className="mb-3 scroll-mt-24 font-playfair text-2xl font-bold text-primary md:text-3xl">Doldurulmuş Kira Sözleşmesi Örneği</h2>
+                        <p className="mb-6 text-slate-600">
+                            Aşağıdaki tablo, şablonun nasıl doldurulacağını gösteren hayali bir örnektir; kişi, adres ve bedeller gerçek değildir. Doldurulmuş örneğin tamamı <a href={DOWNLOADS.filledDocx} download className={linkCls}>Word (DOCX)</a> veya <a href={DOWNLOADS.filledPdf} download className={linkCls}>PDF</a> olarak indirilebilir.
+                        </p>
+                        <div className="overflow-x-auto rounded-xl border border-slate-200">
+                            <table className="w-full text-left text-[15px]">
+                                <caption className="sr-only">Doldurulmuş kira sözleşmesi örneği</caption>
+                                <tbody className="divide-y divide-slate-200">
+                                    {filledExample.map(([k, v]) => (
+                                        <tr key={k}>
+                                            <th scope="row" className="w-2/5 bg-slate-50 px-4 py-3 align-top font-semibold text-slate-800">{k}</th>
+                                            <td className="px-4 py-3 text-slate-700">{v}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                {/* SEO Content - Hidden in Print */}
-                <div className="mx-auto mt-12 doc-prose print:hidden">
-                    <h2>Kira Sözleşmesi Nedir?</h2>
-                    <p>
-                        Kira sözleşmesi, kiraya verenin bir taşınmazın kullanımını kiracıya bırakmayı, kiracının ise bunun karşılığında kira bedeli ödemeyi taahhüt ettiği bir sözleşmedir. Türk Borçlar Kanunu&apos;nun 299-378. maddeleri arasında düzenlenmiştir.
-                    </p>
-                    <p>
-                        <Link href="/sozluk/kira-sozlesmesi/" className="text-secondary hover:underline">Kira sözleşmesi</Link> konut veya işyeri kirası için yapılabilir.
-                    </p>
-                    <p>
-                        Kira sözleşmesinin yazılı yapılması zorunlu değildir, sözlü olarak da geçerlidir. Ancak ileride yaşanabilecek uyuşmazlıklarda ispat kolaylığı sağlaması açısından yazılı sözleşme yapılması faydalıdır. Sözleşmenin hazırlanmasında veya incelenmesinde <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">İzmir kira sözleşmesi avukatı</Link> sayfamızdaki bilgilerden yararlanabilirsiniz.
-                    </p>
-
-                    <h2 id="doldurulmus-ornek" className="scroll-mt-24">Doldurulmuş Kira Sözleşmesi Örneği</h2>
-                    <p>
-                        Aşağıdaki tablo, şablonun nasıl doldurulacağını gösteren hayali bir örnektir. Kişi, adres ve bedeller gerçek değildir; kira bedeli ve depozito alanları bilinçli olarak boş bırakılmıştır. Doldurulmuş örneğin tamamını <a href="/indir/kira-sozlesmesi-doldurulmus-ornek-2026.docx" download>Word (DOCX)</a> veya <a href="/indir/kira-sozlesmesi-doldurulmus-ornek-2026.pdf" download>PDF</a> olarak indirebilirsiniz.
-                    </p>
-                    <div className="not-prose overflow-x-auto rounded-xl border border-slate-200">
-                        <table className="w-full text-left text-[15px]">
-                            <tbody className="divide-y divide-slate-200">
-                                {filledExample.map(([k, v]) => (
-                                    <tr key={k}>
-                                        <td className="w-2/5 bg-slate-50 px-4 py-3 font-semibold text-slate-800 align-top">{k}</td>
-                                        <td className="px-4 py-3 text-slate-700">{v}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h2>Kira Sözleşmesi Nasıl Doldurulur?</h2>
-                    <ol>
-                        {howToSteps.map((st) => (
-                            <li key={st.name}><strong>{st.name}:</strong> {st.text}</li>
-                        ))}
-                    </ol>
-
-                    <h2>Kira Sözleşmesinde Bulunması Gereken Bilgiler</h2>
-                    <p>
-                        Hukuki açıdan geçerli ve tarafların haklarını koruyan bir kira sözleşmesinde aşağıdaki unsurlar mutlaka yer almalıdır:
-                    </p>
-                    <ul>
-                        <li><strong>Taraf bilgileri:</strong> Kiraya verenin ve kiracının ad-soyad, T.C. kimlik numarası ve iletişim bilgileri</li>
-                        <li><strong>Taşınmaz bilgileri:</strong> Kiralanan taşınmazın tam adresi, oda sayısı ve kullanım amacı</li>
-                        <li><strong>Kira süresi:</strong> Sözleşmenin başlangıç ve bitiş tarihi</li>
-                        <li><strong>Kira bedeli:</strong> Aylık kira tutarı, ödeme günü ve ödeme şekli</li>
-                        <li><strong>Depozito:</strong> Güvence bedeli tutarı (en fazla 3 aylık kira - TBK m. 342)</li>
-                        <li><strong>Artış şartı:</strong> Yıllık kira artış oranının belirlenmesi (TÜFE sınırı - TBK m. 344)</li>
-                        <li><strong>Özel şartlar:</strong> Tarafların üzerinde anlaştığı ek koşullar</li>
-                    </ul>
-
-                    <h2>Kira Sözleşmesinde Dikkat Edilmesi Gerekenler</h2>
-
-                    <h3>Kiracı Açısından</h3>
-                    <ul>
-                        <li>Sözleşmeyi imzalamadan önce tüm maddeleri dikkatli okuyun</li>
-                        <li>Depozito tutarının 3 aylık kiradan fazla olmamasına dikkat edin</li>
-                        <li>Taşınmazın mevcut durumunu (hasarlar, eksikler) sözleşmeye ek olarak tutanakla kaydedin</li>
-                        <li><Link href="/izmir-kiraci-tahliye-davasi-avukati/" className="text-secondary hover:underline">Fesih koşullarını</Link> net bir şekilde anlayın</li>
-                        <li>Aidat ve yan giderlerin kime ait olduğunu sözleşmede netleştirin</li>
-                    </ul>
-
-                    <h3>Ev Sahibi Açısından</h3>
-                    <ul>
-                        <li>Kiracının kimlik bilgilerini mutlaka doğrulayın</li>
-                        <li>Kira bedelinin banka hesabına yatırılmasını tercih edin (ispat kolaylığı)</li>
-                        <li><Link href="/kira-artis-orani-hesaplama/" className="text-secondary hover:underline">Kira artış oranını</Link> yasal sınırlar dahilinde belirleyin</li>
-                        <li>Taşınmazın teslim durumunu fotoğrafla belgeleyin</li>
-                        <li><Link href="/tahliye-taahhutnamesi/" className="text-secondary hover:underline">Tahliye taahhütnamesi</Link> almayı düşünün (kira sözleşmesinden sonra)</li>
-                    </ul>
-
-                    <h2>Kira Sözleşmesinin Süresi ve Yenilenmesi</h2>
-                    <p>
-                        Belirli süreli kira sözleşmeleri, süre sonunda kendiliğinden sona ermez. Kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunmadıkça sözleşme aynı koşullarla 1 yıl uzamış sayılır (TBK m. 347).
-                    </p>
-                    <p>
-                        Kiraya veren, sözleşme süresinin bitmesi sebebiyle tek taraflı olarak sözleşmeyi feshedemez; ancak 10 yıllık uzama süresinin sonunda fesih hakkı doğar.
-                    </p>
-
-                    <h2>Kira Sözleşmesiyle İlgili Uyuşmazlıklar</h2>
-                    <p>
-                        Kira sözleşmesinden kaynaklanan uyuşmazlıklarda (kira bedeli, tahliye, <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">depozito iadesi</Link>, aidat borcu vb.) 2024 yılından itibaren <Link href="/izmir-kira-arabuluculuk-avukati/" className="text-secondary hover:underline">zorunlu arabuluculuk</Link> uygulanmaktadır.
-                    </p>
-                    <p>
-                        Dava açılmadan önce arabulucuya başvurulması şarttır. Arabuluculuk sürecinde anlaşma sağlanamaması halinde sulh hukuk mahkemesinde dava açılabilir.
-                    </p>
-
-                    <h2>Sıkça Sorulan Sorular</h2>
-                    <div className="not-prose space-y-3 my-8">
-                        {faqs.map((faq, i) => (
-                            <details
-                                key={i}
-                                className="group border border-slate-200 rounded-xl overflow-hidden"
-                                {...(i === 0 ? { open: true } : {})}
-                            >
-                                <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer font-bold text-primary text-base md:text-lg bg-white hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                    <span>{faq.question}</span>
-                                    <svg className="w-5 h-5 text-slate-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </summary>
-                                <div className="px-5 pb-5 text-slate-600 leading-relaxed text-[0.95rem] border-t border-slate-100 pt-4">
-                                    {faq.answer}
+                {/* Dikkat edilmesi gereken maddeler */}
+                <section className="py-14" aria-labelledby="dikkat">
+                    <div className="container mx-auto max-w-6xl px-4">
+                        <h2 id="dikkat" className="mb-3 text-center font-playfair text-2xl font-bold text-primary md:text-3xl">Kira Sözleşmesinde Dikkat Edilmesi Gereken Maddeler</h2>
+                        <p className="mx-auto mb-8 max-w-2xl text-center text-slate-600">Konut ve çatılı işyeri kiralarında aşağıdaki konular kanunla sınırlandırılmıştır; sözleşmeye aykırı şart yazılsa bile kanun hükmü uygulanır.</p>
+                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                            {keyClauses.map(({ icon: Icon, title, text }) => (
+                                <div key={title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm [&_a]:font-semibold [&_a]:text-secondary-ink [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-primary">
+                                    <span className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5 text-primary"><Icon className="h-5 w-5" aria-hidden="true" /></span>
+                                    <h3 className="mb-1.5 text-base font-bold text-primary">{title}</h3>
+                                    <p className="text-sm leading-relaxed text-slate-600">{text}</p>
                                 </div>
-                            </details>
-                        ))}
-                    </div>
-
-                    <h2>Hukuki Destek Alın</h2>
-                    <p>
-                        Kira sözleşmesi hazırlanması, mevcut sözleşmenin incelenmesi veya kira uyuşmazlıklarına ilişkin bilgi için <Link href="/izmir-kira-sozlesmesi-avukati/" className="text-secondary hover:underline">İzmir&apos;de kira sözleşmesi avukatı</Link> sayfamızı inceleyebilirsiniz. <Link href="/" className="text-secondary hover:underline">Tüm kira hukuku hizmetlerini</Link> inceleyebilir veya ön görüşme için bizimle iletişime geçebilirsiniz.
-                    </p>
-
-                    <div className="not-prose mt-8 text-center bg-slate-100 p-8 rounded-2xl">
-                        <h3 className="text-2xl font-serif font-bold text-primary mb-4">Kira Sözleşmenizi İnceleyelim</h3>
-                        <p className="mb-6 text-muted-foreground">Kira sözleşmesi hazırlama veya mevcut sözleşmenizin hukuki incelemesi için bizimle iletişime geçin.</p>
-                        <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Button size="lg" className="bg-primary text-white" asChild>
-                                <Link href="/iletisim/">İletişime Geçin</Link>
-                            </Button>
-                            <Button size="lg" variant="outline" asChild>
-                                <a href="https://wa.me/905445854645" target="_blank" rel="noopener noreferrer">WhatsApp ile Yazın</a>
-                            </Button>
+                            ))}
                         </div>
                     </div>
-                </div>
+                </section>
 
-            </section>
+                {/* Bilgi */}
+                <section className="bg-white py-14">
+                    <div className="mx-auto doc-prose px-4">
+                        <h2>Kira Sözleşmesi Nedir?</h2>
+                        <p>
+                            <Link href="/sozluk/kira-sozlesmesi/" className={linkCls}>Kira sözleşmesi</Link>, kiraya verenin bir şeyin kullanılmasını veya kullanmayla birlikte ondan yararlanılmasını kiracıya bırakmayı, kiracının da buna karşılık kira bedeli ödemeyi üstlendiği sözleşmedir (TBK m. 299). Konut ve çatılı işyeri kiralarına ilişkin özel hükümler TBK m. 339-356 arasında yer alır ve bu hükümler kiracı aleyhine değiştirilemez (TBK m. 354).
+                        </p>
+                        <p>
+                            Sözleşme yazılı olmak zorunda değildir; ancak kira bedeli, süre, güvence ve teslim durumu gibi konuların ispatı için yazılı sözleşme ve teslim tutanağı düzenlenmesi faydalıdır. Sözleşmenin hazırlanması veya incelenmesi hakkında bilgi <Link href="/izmir-kira-sozlesmesi-avukati/" className={linkCls}>İzmir kira sözleşmesi avukatı</Link> sayfasında yer alır.
+                        </p>
+
+                        <h2>Kira Sözleşmesinde Bulunması Gereken Bilgiler</h2>
+                        <ul>
+                            <li><strong>Taraf bilgileri:</strong> Ad soyad veya unvan, T.C. kimlik veya vergi numarası, tebligat adresi ve iletişim bilgileri</li>
+                            <li><strong>Kiralanan:</strong> Açık adres, tapu bilgisi, oda sayısı, kat ve daire numarası, konut veya işyeri niteliği</li>
+                            <li><strong>Süre:</strong> Başlangıç ve bitiş tarihi</li>
+                            <li><strong>Kira bedeli:</strong> Aylık tutar (rakam ve yazıyla), ödeme günü, ödeme şekli ve IBAN</li>
+                            <li><strong>Güvence bedeli:</strong> En fazla üç aylık kira (TBK m. 342)</li>
+                            <li><strong>Artış şartı:</strong> 12 aylık TÜFE ortalamasıyla sınırlı artış (TBK m. 344)</li>
+                            <li><strong>Yan giderler:</strong> Aidat, abonelikler ve olağanüstü giderlerin kime ait olduğu (TBK m. 341)</li>
+                            <li><strong>Ek:</strong> Teslim tutanağı ve demirbaş listesi</li>
+                        </ul>
+
+                        <h2>Kiracı ve Ev Sahibi Açısından Kontrol Listesi</h2>
+                        <h3>Kiracı açısından</h3>
+                        <ul>
+                            <li>Güvence bedelinin üç aylık kirayı aşmadığı ve vadeli hesaba yatırılacağı kontrol edilebilir.</li>
+                            <li>Teslim anındaki eksik ve hasarlar tutanağa yazılıp fotoğraflanabilir.</li>
+                            <li>Aidat ve yan giderlerin paylaşımı sözleşmede açıkça yazılabilir.</li>
+                            <li>Sözleşme süresi ve <Link href="/izmir-kiraci-tahliye-davasi-avukati/" className={linkCls}>tahliye sebepleri</Link> hakkında bilgi edinilebilir.</li>
+                        </ul>
+                        <h3>Ev sahibi açısından</h3>
+                        <ul>
+                            <li>Kiracının kimlik bilgileri ve tebligat adresi doğrulanabilir.</li>
+                            <li>Kira ödemelerinin banka yoluyla ve açıklamalı yapılması ispat kolaylığı sağlar.</li>
+                            <li>Yıllık artış <Link href="/kira-artis-orani-hesaplama/" className={linkCls}>kira artış oranı</Link> sınırına göre hesaplanabilir.</li>
+                            <li><Link href="/tahliye-taahhutnamesi/" className={linkCls}>Tahliye taahhütnamesi</Link>, kiralananın tesliminden sonra ayrı bir belge olarak alınabilir.</li>
+                        </ul>
+
+                        <h2>Kira Sözleşmesiyle İlgili Uyuşmazlıklar</h2>
+                        <p>
+                            Kira bedeli, tahliye, güvence iadesi ve aidat gibi kira sözleşmesinden doğan uyuşmazlıklarda 1 Eylül 2023&apos;ten bu yana dava açmadan önce <Link href="/izmir-kira-arabuluculuk-avukati/" className={linkCls}>kira arabuluculuğu</Link> zorunludur. Arabuluculukta anlaşma sağlanamazsa sulh hukuk mahkemesinde dava açılabilir; ilamsız icra yoluyla tahliye takipleri bu şartın dışındadır.
+                        </p>
+
+                        <h2>Sıkça Sorulan Sorular</h2>
+                        <div className="not-prose space-y-3">
+                            {faqs.map((faq, i) => (
+                                <details key={faq.question} className="group overflow-hidden rounded-xl border border-slate-200 bg-white" {...(i === 0 ? { open: true } : {})}>
+                                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-base font-bold text-primary transition-colors hover:bg-slate-50 md:text-lg [&::-webkit-details-marker]:hidden">
+                                        <h3 className="font-[inherit] text-[inherit] tracking-[inherit]">{faq.question}</h3>
+                                        <ChevronRight className="h-5 w-5 flex-shrink-0 rotate-90 text-slate-500 transition-transform duration-200 group-open:-rotate-90" aria-hidden="true" />
+                                    </summary>
+                                    <div className="border-t border-slate-100 px-5 pb-5 pt-4 text-[0.95rem] leading-relaxed text-slate-600">{faq.answer}</div>
+                                </details>
+                            ))}
+                        </div>
+
+                        <h2>İlgili Terimler</h2>
+                        <ul className="not-prose flex flex-wrap gap-2" aria-label="Kira hukuku sözlüğü">
+                            {glossary.map((g) => (
+                                <li key={g.href}>
+                                    <Link href={g.href} className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-primary hover:border-secondary hover:bg-white">{g.label}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+
+                {/* CTA */}
+                <section className="bg-primary py-14 text-white" aria-labelledby="destek">
+                    <div className="container mx-auto flex max-w-4xl flex-col items-center px-4 text-center">
+                        <h2 id="destek" className="mb-3 font-playfair text-2xl font-bold md:text-3xl">Kira Sözleşmesinin Hazırlanması veya İncelenmesi</h2>
+                        <p className="mb-7 max-w-2xl text-slate-200">
+                            Mevcut bir kira sözleşmesi WhatsApp üzerinden iletilebilir; ön görüşme telefonla yapılabilir. Hizmet kapsamı <Link href="/izmir-kira-sozlesmesi-avukati/" className="font-semibold text-secondary underline underline-offset-2 hover:text-white">kira sözleşmesi hazırlama ve inceleme</Link> sayfasında açıklanmıştır.
+                        </p>
+                        <CTAs waText="Merhaba, kira sözleşmesi hakkında görüşmek istiyorum." />
+                    </div>
+                </section>
+            </div>
         </div>
     );
 }
