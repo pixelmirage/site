@@ -8,6 +8,7 @@ import { ContractDocument } from "@/components/sablon/ContractDocument";
 import { DocActions } from "@/components/sablon/DocActions";
 import { CTAs } from "@/components/kira-landing/CTAs";
 import { DOWNLOADS } from "@/lib/kira-sozlesmesi";
+import { SITE_NAME } from "@/lib/site";
 
 const URL = "https://mertkagancetin.com/kira-sozlesmesi-ornegi/";
 const MODIFIED = "2026-11-02";
@@ -15,7 +16,7 @@ const MODIFIED = "2026-11-02";
 export const metadata: Metadata = {
     title: "Kira Sözleşmesi Örneği 2026 - Word ve PDF İndir",
     description: "2026 kira sözleşmesi örneği: TBK'ya göre hazırlanmış konut ve çatılı işyeri kira kontratı şablonu. Word (DOCX) ve PDF olarak indirin veya yazdırın; depozito, kira artışı, fesih ve teslim tutanağı dahil.",
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
         title: "Kira Sözleşmesi Örneği 2026 | Word ve PDF İndir",
         description: "TBK'ya göre hazırlanmış kira sözleşmesi şablonu: Word ve PDF indir, yazdır.",

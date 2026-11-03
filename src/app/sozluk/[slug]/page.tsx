@@ -12,6 +12,7 @@ import { VideoSchema } from "@/components/seo/VideoSchema";
 import dynamic from "next/dynamic";
 const YouTubeShorts = dynamic(() => import("@/components/ui/YouTubeShorts").then(m => ({ default: m.YouTubeShorts })));
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { SITE_NAME } from "@/lib/site";
 
 export async function generateStaticParams() {
     return glossaryTerms.map((term) => ({
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
         title: `${term.term} Nedir?`,
         description: term.shortDescription,
-        openGraph: {
+        openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
             title: `${term.term} Nedir?`,
             description: term.shortDescription,

@@ -4,6 +4,7 @@ import { ChevronRight, Home, Gavel, ArrowRight, Scale } from "lucide-react";
 import { getIctihatByTopic, ICTIHAT_PATH, type IctihatPost } from "@/lib/blog/ictihat";
 import { services, serviceHref, SITE } from "@/lib/services";
 import { postHref } from "@/lib/blog/utils";
+import { SITE_NAME } from "@/lib/site";
 
 const URL = `${SITE}${ICTIHAT_PATH}`;
 const TITLE = "Kira Hukuku İçtihatları | İzmir Kira Avukatı Av. Mert Kağan Çetin";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: { absolute: TITLE },
     description: DESC,
     alternates: { canonical: URL },
-    openGraph: { title: TITLE, description: DESC, url: URL, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: "Kira Hukuku İçtihatları" }] },
+    openGraph: { siteName: SITE_NAME, title: TITLE, description: DESC, url: URL, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: "Kira Hukuku İçtihatları" }] },
     twitter: { card: "summary_large_image", title: TITLE, description: DESC, images: ["/og-image.jpg"] },
 };
 

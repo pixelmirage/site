@@ -16,6 +16,7 @@ const YouTubeShorts = dynamic(() => import("@/components/ui/YouTubeShorts").then
 import { RelatedPosts } from "@/components/blog/RelatedPosts";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 import { articleProseClasses } from "@/lib/prose-classes";
+import { SITE_NAME } from "@/lib/site";
 
 export const SITE_URL = "https://mertkagancetin.com";
 
@@ -26,13 +27,12 @@ export function postMetadata(post: PostData) {
         title: post.metaTitle ?? post.title,
         description: post.excerpt,
         authors: [{ name: "Av. Mert Kağan Çetin" }],
-        openGraph: {
+        openGraph: { siteName: SITE_NAME,
             type: 'article',
             locale: post.lang === 'en' ? 'en_US' : 'tr_TR',
             url: url,
             title: post.title,
             description: post.excerpt,
-            siteName: 'Av. Mert Kağan Çetin - İzmir Kira Avukatı',
             publishedTime: post.date,
             modifiedTime: post.dateModified || post.date,
             authors: ['Av. Mert Kağan Çetin'],

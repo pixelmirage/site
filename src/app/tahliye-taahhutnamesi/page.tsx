@@ -11,6 +11,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GBP_URL } from "@/lib/gbp";
 import { imageObject } from "@/lib/photo";
+import { SITE_NAME } from "@/lib/site";
 
 const PAGE_URL = "https://mertkagancetin.com/tahliye-taahhutnamesi/";
 const TITLE = "Tahliye Taahhütnamesi Nedir? Geçerlilik Şartları ve Örnek (2026)";
@@ -22,7 +23,7 @@ const IIK_URL = "https://www.mevzuat.gov.tr/MevzuatMetin/1.3.2004.pdf";
 export const metadata: Metadata = {
     title: { absolute: TITLE },
     description: DESCRIPTION,
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
         title: TITLE,
         description: DESCRIPTION,

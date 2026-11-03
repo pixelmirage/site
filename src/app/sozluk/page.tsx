@@ -4,6 +4,7 @@ import { getAllGlossaryTerms, getGlossaryTermsByCategory, categoryLabels, Glossa
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { Scale, ArrowRight, BookOpen, Home, ChevronRight, HelpCircle } from "lucide-react";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
     title: "Kira Hukuku Sözlüğü | Kira Terimleri",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://mertkagancetin.com/sozluk/",
     },
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         images: ["/og-image.jpg"],
         title: "Kira Hukuku Sözlüğü | Av. Mert Kağan Çetin",
         description: "Kira hukuku terimlerinin anlaşılır açıklamaları.",
