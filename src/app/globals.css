@@ -26,6 +26,7 @@
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
+  --color-secondary-ink: var(--secondary-ink);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
   --color-popover-foreground: var(--popover-foreground);
@@ -49,6 +50,8 @@
     --primary-foreground: oklch(0.98 0.01 45);
     --secondary: oklch(0.85 0.05 70);
     /* Muted Gold / Bronze */
+    --secondary-ink: oklch(0.55 0.07 70);
+    /* Same bronze hue, darkened for text on light backgrounds (WCAG AA >= 4.5:1) */
     --secondary-foreground: oklch(0.2 0.03 260);
     --muted: oklch(0.95 0.005 45);
     --muted-foreground: oklch(0.35 0.01 250);
@@ -163,7 +166,7 @@
 }
 
 .article-prose :where(a) {
-  color: var(--secondary);
+  color: var(--secondary-ink);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -325,7 +328,7 @@
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--secondary);
+    color: var(--secondary-ink);
   }
 
   .not-prose td:first-child {
@@ -386,7 +389,7 @@
 /* doc-prose: unclassed links (e.g. district/glossary pages) */
 @layer components {
 .doc-prose :where(a:not([class])) {
-  color: var(--secondary);
+  color: var(--secondary-ink);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -408,3 +411,90 @@
 .doc-prose blockquote li { margin-bottom: 0.375rem; padding-left: 0.125rem; }
 .article-prose blockquote li::marker,
 .doc-prose blockquote li::marker { color: var(--secondary); }
+
+/* ===== Kira sözleşmesi şablonu (belge görünümü + yazdırma) ===== */
+.kira-doc {
+  font-family: Georgia, Cambria, "Times New Roman", "Noto Serif", "Liberation Serif", serif;
+  color: #111827;
+  font-size: 15px;
+  line-height: 1.6;
+  hyphens: auto;
+  page: kirasozlesmesi;
+}
+.kira-doc p { margin: 0; }
+.kira-doc .kd-head { text-align: center; margin-bottom: 1.25rem; }
+.kira-doc .kd-title { font-size: 1.5rem; font-weight: 700; letter-spacing: 0.14em; }
+.kira-doc .kd-subtitle { font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: #4b5563; margin-top: 0.15rem; }
+.kira-doc .kd-head::after { content: ""; display: block; width: 4.5rem; height: 2px; background: currentColor; margin: 0.75rem auto 0; }
+.kira-doc .kd-meta { display: grid; gap: 0.25rem 2rem; margin-bottom: 0.5rem; }
+.kira-doc .kd-section { margin-top: 1.5rem; }
+.kira-doc .kd-h {
+  font-family: inherit; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  border-bottom: 1px solid #111827; padding-bottom: 0.25rem; margin: 0 0 0.75rem;
+  break-after: avoid; page-break-after: avoid;
+}
+.kira-doc .kd-field { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.4rem; row-gap: 0.1rem; min-height: 2rem; padding-top: 0.25rem; }
+.kira-doc .kd-label { font-weight: 600; }
+.kira-doc .kd-line { flex: 1 1 7rem; min-width: 5rem; border-bottom: 1px dotted #4b5563; height: 1.35em; }
+.kira-doc .kd-line-wide { flex-basis: 100%; }
+.kira-doc .kd-short { display: inline-block; flex: none; min-width: 0; width: 2.4em; }
+.kira-doc .kd-date { display: inline-flex; align-items: baseline; gap: 0.2rem; white-space: nowrap; }
+.kira-doc .kd-filled { border-bottom-style: solid; height: auto; font-style: italic; }
+.kira-doc .kd-filled-block { font-style: italic; border-bottom: 1px solid #4b5563; padding-bottom: 0.25rem; }
+.kira-doc .kd-options { display: inline-flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.kira-doc .kd-option { display: inline-flex; align-items: center; gap: 0.4rem; }
+.kira-doc .kd-box { display: inline-flex; align-items: center; justify-content: center; width: 0.95em; height: 0.95em; border: 1.5px solid #111827; font-size: 0.8em; line-height: 1; }
+.kira-doc .kd-note { font-size: 0.8rem; color: #4b5563; font-style: italic; margin: 0.15rem 0 0.25rem; }
+.kira-doc .kd-parties, .kira-doc .kd-signs { display: grid; gap: 1rem; }
+.kira-doc .kd-party { border: 1px solid #d1d5db; padding: 0.75rem 0.9rem 0.6rem; }
+.kira-doc .kd-party-title { font-weight: 700; letter-spacing: 0.06em; font-size: 0.85rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.3rem; margin-bottom: 0.15rem; }
+.kira-doc .kd-articles { list-style: none; padding: 0; margin: 0; }
+.kira-doc .kd-article + .kd-article { margin-top: 0.9rem; }
+.kira-doc .kd-article { break-inside: avoid; page-break-inside: avoid; orphans: 3; widows: 3; }
+.kira-doc .kd-article p + p { margin-top: 0.35rem; }
+.kira-doc .kd-article-title { font-weight: 700; margin-bottom: 0.15rem !important; }
+.kira-doc .kd-closing { margin: 0 0 1.25rem; }
+.kira-doc .kd-sign-section { break-inside: avoid; page-break-inside: avoid; }
+.kira-doc .kd-signs { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.kira-doc .kd-sign .kd-party-title { text-align: center; }
+.kira-doc .kd-sign-row { min-height: 4rem; align-items: flex-end; padding-bottom: 0.2rem; }
+.kira-doc .kd-signs-compact { margin-top: 0.5rem; }
+.kira-doc .kd-annex { border-top: 2px solid #111827; padding-top: 1.25rem; margin-top: 2.5rem; }
+.kira-doc .kd-table-title { font-weight: 700; margin: 0.9rem 0 0.4rem; }
+.kira-doc .kd-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-bottom: 0.4rem; }
+.kira-doc .kd-table th, .kira-doc .kd-table td { border: 1px solid #6b7280; padding: 0.3rem 0.45rem; text-align: left; height: 1.9rem; }
+.kira-doc .kd-table th { background: #f3f4f6; font-weight: 700; }
+.kira-doc .kd-table th:nth-child(2) { width: 15%; }
+.kira-doc .kd-footer { margin-top: 1.75rem; padding-top: 0.6rem; border-top: 1px solid #e5e7eb; font-size: 0.75rem; color: #4b5563; text-align: center; }
+@media (min-width: 640px) {
+  .kira-doc .kd-meta { grid-template-columns: 1fr 1fr; }
+  .kira-doc .kd-parties { grid-template-columns: 1fr 1fr; }
+  .kira-doc .kd-article p { text-align: justify; }
+}
+@media (max-width: 420px) {
+  .kira-doc { font-size: 14.5px; }
+  .kira-doc .kd-signs { gap: 0.75rem; }
+}
+
+@page kirasozlesmesi { size: A4; margin: 16mm 17mm 16mm; }
+@media print {
+  body:has(.kira-doc) > header,
+  body:has(.kira-doc) > footer,
+  body:has(.kira-doc) header,
+  body:has(.kira-doc) footer { display: none !important; }
+  body:has(.kira-doc) main { padding-top: 0 !important; }
+  body:has(.kira-doc) { background: #fff !important; }
+  .kira-doc { font-size: 10.5pt; line-height: 1.4; color: #000; }
+  .kira-doc .kd-section { margin-top: 1.1rem; }
+  .kira-doc .kd-article + .kd-article { margin-top: 0.7rem; }
+  .kira-doc .kd-closing { margin-bottom: 0.8rem; }
+  .kira-doc .kd-meta, .kira-doc .kd-parties { grid-template-columns: 1fr 1fr; }
+  .kira-doc .kd-article p { text-align: justify; }
+  .kira-doc .kd-field { min-height: 1.6rem; }
+  .kira-doc .kd-sign-row { min-height: 4.5rem; }
+  .kira-doc .kd-special .kd-field { min-height: 2.3rem; }
+  .kira-doc .kd-sign-section { margin-top: 2rem; }
+  .kira-doc .kd-special { break-before: page; page-break-before: always; margin-top: 0; }
+  .kira-doc .kd-annex { break-before: page; page-break-before: always; border-top: 0; padding-top: 0; margin-top: 0; }
+  .kira-doc .kd-table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

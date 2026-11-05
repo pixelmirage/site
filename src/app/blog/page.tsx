@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, ChevronRight, Search } from "lucide-react";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
     title: { absolute: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin" },
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://mertkagancetin.com/blog/",
     },
-    openGraph: {
+    openGraph: { siteName: SITE_NAME,
         title: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin'in kira hukuku yazıları: tahliye, kira tespit, kira artışı, icra takibi ve güncel Yargıtay kararları.",
         images: ["/og-image.jpg"],
@@ -78,7 +79,7 @@ export default function BlogPage() {
                                                 </span>
                                             </div>
                                             <CardTitle className="text-xl font-playfair font-bold text-primary group-hover:text-secondary-foreground transition-colors leading-tight">
-                                                {post.title}
+                                                <h2 className="font-[inherit] tracking-[inherit]">{post.title}</h2>
                                             </CardTitle>
                                         </CardHeader>
                                         <CardContent className="p-6 pt-2">
@@ -86,7 +87,7 @@ export default function BlogPage() {
                                                 {post.excerpt}
                                             </p>
                                             <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest group-hover:gap-4 transition-all">
-                                                Haberin Devamı
+                                                Yazının devamı
                                                 <ChevronRight className="w-4 h-4" />
                                             </div>
                                         </CardContent>
@@ -99,7 +100,7 @@ export default function BlogPage() {
                             <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6">
                                 <Search className="w-10 h-10 text-slate-300" />
                             </div>
-                            <h3 className="text-2xl font-playfair font-bold text-primary mb-2">Henüz Makale Bulunmuyor</h3>
+                            <h2 className="text-2xl font-playfair font-bold text-primary mb-2">Henüz Makale Bulunmuyor</h2>
                             <p className="text-muted-foreground">Makalelerimiz çok yakında burada paylaşılacaktır.</p>
                         </div>
                     )}

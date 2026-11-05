@@ -4,6 +4,7 @@ import { ChevronRight, Home, Gavel, ArrowRight, Scale } from "lucide-react";
 import { getIctihatByTopic, ICTIHAT_PATH, type IctihatPost } from "@/lib/blog/ictihat";
 import { services, serviceHref, SITE } from "@/lib/services";
 import { postHref } from "@/lib/blog/utils";
+import { SITE_NAME } from "@/lib/site";
 
 const URL = `${SITE}${ICTIHAT_PATH}`;
 const TITLE = "Kira Hukuku İçtihatları | İzmir Kira Avukatı Av. Mert Kağan Çetin";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: { absolute: TITLE },
     description: DESC,
     alternates: { canonical: URL },
-    openGraph: { title: TITLE, description: DESC, url: URL, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: "Kira Hukuku İçtihatları" }] },
+    openGraph: { siteName: SITE_NAME, title: TITLE, description: DESC, url: URL, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: "Kira Hukuku İçtihatları" }] },
     twitter: { card: "summary_large_image", title: TITLE, description: DESC, images: ["/og-image.jpg"] },
 };
 
@@ -146,7 +147,7 @@ export default function IctihatHubPage() {
                     <h2 id="hizmetler" className="mb-4 font-playfair text-xl font-bold text-primary md:text-2xl">Kira hukuku hizmetleri</h2>
                     <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                         {services.map((s) => (
-                            <li key={s.slug}><Link href={serviceHref(s)} className="inline-flex items-center gap-2 text-slate-700 hover:text-secondary"><Scale className="h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" />{s.h1}</Link></li>
+                            <li key={s.slug}><Link href={serviceHref(s)} className="inline-flex items-center gap-2 text-slate-700 hover:text-secondary"><Scale className="h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" />{s.name}</Link></li>
                         ))}
                     </ul>
                     <p className="mt-6 text-sm text-slate-600">Ön görüşme telefonla yapılabilir: <a href="tel:+905445854645" className="font-semibold text-primary">0544 585 46 45</a>. Tüm yazılar için <Link href="/blog/" className="font-semibold text-primary underline underline-offset-2">kira hukuku makaleleri</Link>.</p>

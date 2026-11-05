@@ -1,5 +1,6 @@
+import { SITE_URL, SITE_NAME, SITE_ALTERNATE_NAMES } from "@/lib/site";
 import { GBP_URL, GBP_GEO } from "@/lib/gbp";
-import { PHOTO_OBJECT } from "@/lib/photo";
+import { PHOTO_OBJECT, imageObject } from "@/lib/photo";
 
 export function SchemaMarkup() {
     const schema = {
@@ -10,10 +11,7 @@ export function SchemaMarkup() {
                 "@id": "https://mertkagancetin.com/#organization",
                 "name": "Mert Kağan Çetin Hukuk Bürosu",
                 "url": "https://mertkagancetin.com",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://mertkagancetin.com/logo.png"
-                },
+                "logo": imageObject("/logo.png"),
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+905445854645",
@@ -24,9 +22,9 @@ export function SchemaMarkup() {
             {
                 "@type": "WebSite",
                 "@id": "https://mertkagancetin.com/#website",
-                "url": "https://mertkagancetin.com/",
-                "name": "Av. Mert Kağan Çetin",
-                "alternateName": "Mert Kağan Çetin Hukuk Bürosu",
+                "url": SITE_URL,
+                "name": SITE_NAME,
+                "alternateName": SITE_ALTERNATE_NAMES,
                 "publisher": {
                     "@id": "https://mertkagancetin.com/#organization"
                 },
@@ -55,6 +53,34 @@ export function SchemaMarkup() {
                 "identifier": [
                     { "@type": "PropertyValue", "propertyID": "İzmir Barosu Sicil No", "value": "15556" },
                     { "@type": "PropertyValue", "propertyID": "TBB Sicil No", "value": "162439" }
+                ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "İzmir Ekonomi Üniversitesi",
+                    "department": {
+                        "@type": "Organization",
+                        "name": "Hukuk Fakültesi"
+                    }
+                },
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Bar Admission",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "İzmir Barosu"
+                        },
+                        "identifier": "15556"
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "Bar Admission",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "Türkiye Barolar Birliği"
+                        },
+                        "identifier": "162439"
+                    }
                 ],
                 "knowsAbout": ["Kira Hukuku", "Tahliye Davaları", "Kira Tespit Davası", "Kira Uyarlama Davası", "Kira Alacağı İcra Takibi", "Tahliye Taahhüdü", "Kira Sözleşmesi", "Kira Arabuluculuğu"]
             },
@@ -96,34 +122,6 @@ export function SchemaMarkup() {
                 "knowsAbout": [
                     "Kira Hukuku", "Tahliye Davaları", "Kiracı Tahliye Davası", "Kira Tespit Davası", "Kira Uyarlama Davası",
                     "Kira Alacağı İcra Takibi", "Tahliye Taahhütnamesi", "Kira Sözleşmesi", "Zorunlu Arabuluculuk", "Türk Borçlar Kanunu Kira Hükümleri"
-                ],
-                "alumniOf": {
-                    "@type": "CollegeOrUniversity",
-                    "name": "İzmir Ekonomi Üniversitesi",
-                    "department": {
-                        "@type": "Organization",
-                        "name": "Hukuk Fakültesi"
-                    }
-                },
-                "hasCredential": [
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "Bar Admission",
-                        "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "İzmir Barosu"
-                        },
-                        "identifier": "15556"
-                    },
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "Bar Admission",
-                        "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "Türkiye Barolar Birliği"
-                        },
-                        "identifier": "162439"
-                    }
                 ],
                 "memberOf": {
                     "@type": "Organization",

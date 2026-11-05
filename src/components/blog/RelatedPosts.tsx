@@ -29,9 +29,9 @@ export function RelatedPosts({ currentSlug, currentTags = [], limit = 3, section
 
     return (
         <section className="mt-16 pt-16 border-t border-slate-200">
-            <h3 className="text-2xl font-playfair font-bold text-primary mb-8">
+            <h2 className="text-2xl font-playfair font-bold text-primary mb-8">
                 {section === "ictihat" ? "İlgili Kararlar" : "İlgili Makaleler"}
-            </h3>
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedPosts.map((post) => (
                     <Link
@@ -42,9 +42,9 @@ export function RelatedPosts({ currentSlug, currentTags = [], limit = 3, section
                         <div className="text-xs text-muted-foreground mb-2 font-medium">
                             {post.date}
                         </div>
-                        <h4 className="font-bold text-primary group-hover:text-secondary-foreground transition-colors line-clamp-2 mb-3">
+                        <h3 className="font-bold text-primary group-hover:text-secondary-foreground transition-colors line-clamp-2 mb-3">
                             {post.title}
-                        </h4>
+                        </h3>
                         <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
                             {post.excerpt}
                         </p>
