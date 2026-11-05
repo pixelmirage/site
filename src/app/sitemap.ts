@@ -28,6 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '': { lastModified: '2026-10-29', priority: 1 },
         // Kira hizmet sayfaları
         ...Object.fromEntries(services.map((sv) => [`/${sv.slug}`, { lastModified: '2026-10-31', priority: 0.9 }])),
+        // İlgili kararlar bölümü yeni karar notlarıyla güncellenen hizmet sayfaları
+        ...Object.fromEntries(['izmir-kira-tespit-davasi-avukati', 'izmir-tahliye-taahhudu-icra-avukati', 'izmir-kira-alacagi-icra-takibi-avukati', 'izmir-kiraci-tahliye-davasi-avukati'].filter((s) => services.some((sv) => sv.slug === s)).map((s) => [`/${s}`, { lastModified: '2026-11-05', priority: 0.9 }])),
         '/hakkimda': { lastModified: '2026-10-31', priority: 0.6 },
         '/iletisim': { lastModified: '2026-10-31', priority: 0.7 },
         '/blog': { lastModified: newestBlog, priority: 0.7 },
