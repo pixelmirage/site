@@ -30,6 +30,24 @@ export function imageObject(src: string, extra: Record<string, unknown> = {}) {
     return { "@type": "ImageObject", "url": url, "contentUrl": url, ...extra, ...IMAGE_RIGHTS };
 }
 
+/** Gerçek büro odası fotoğrafı (Dedemhan Plaza, Bayraklı). EXIF/GPS temizlendi. */
+export const OFFICE = {
+    src: "/images/izmir-kira-avukati-ofis-dedemhan-plaza.webp",
+    width: 1200,
+    height: 1600,
+};
+
+export const OFFICE_OBJECT = {
+    "@type": "ImageObject",
+    "@id": "https://mertkagancetin.com/#office-photo",
+    "url": `https://mertkagancetin.com${OFFICE.src}`,
+    "contentUrl": `https://mertkagancetin.com${OFFICE.src}`,
+    "caption": "Av. Mert Kağan Çetin'in Bayraklı Dedemhan Plaza'daki büro odası",
+    "width": OFFICE.width,
+    "height": OFFICE.height,
+    ...IMAGE_RIGHTS,
+};
+
 export const PHOTO_OBJECT = {
     "@type": "ImageObject",
     "@id": "https://mertkagancetin.com/#photo",
