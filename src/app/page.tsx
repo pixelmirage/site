@@ -9,7 +9,7 @@ import { CTAs, PHONE } from "@/components/kira-landing/CTAs";
 import { services as serviceData, serviceHref } from "@/lib/services";
 import { GBP_URL, GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 import Image from "next/image";
-import { PHOTO, PHOTO_OBJECT } from "@/lib/photo";
+import { PHOTO, PHOTO_OBJECT, OFFICE_OBJECT } from "@/lib/photo";
 import { SITE_NAME } from "@/lib/site";
 
 const pageTitle = "İzmir Kira Avukatı | Av. Mert Kağan Çetin";
@@ -89,7 +89,7 @@ export default function Home() {
                             "url": "https://mertkagancetin.com/",
                             "telephone": "+905445854645",
                             "provider": { "@id": "https://mertkagancetin.com/#attorney" },
-                            "image": PHOTO_OBJECT,
+                            "image": [PHOTO_OBJECT, OFFICE_OBJECT],
                             "hasMap": GBP_URL,
                             "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35000", "addressCountry": "TR" },
                             "areaServed": [

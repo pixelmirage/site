@@ -8,7 +8,14 @@ import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { CTAs } from "@/components/kira-landing/CTAs";
 import { services, serviceHref, SITE, type Service } from "@/lib/services";
 import { GBP_URL } from "@/lib/gbp";
-import { imageObject } from "@/lib/photo";
+import Image from "next/image";
+import { imageObject, OFFICE } from "@/lib/photo";
+
+const OFFICE_ALT: Record<string, string> = {
+    "izmir-kiraci-tahliye-davasi-avukati": "Deri koltuklar ve çalışma masasıyla avukatlık bürosu",
+    "izmir-kira-tespit-davasi-avukati": "Büro odasında Atatürk portresi ve pencere önündeki masa",
+    "izmir-kira-arabuluculuk-avukati": "Görüşmeler için hazırlanmış büro odası",
+};
 import { ictihatTopicForService, ICTIHAT_PATH } from "@/lib/blog/ictihat";
 import { postHref, hrefForSlug } from "@/lib/blog/utils";
 import { SITE_NAME } from "@/lib/site";
@@ -153,6 +160,23 @@ export function ServicePage({ service: s }: { service: Service }) {
                     </section>
                 </div>
             </div>
+
+            {OFFICE_ALT[s.slug] && (
+                <section className="py-10">
+                    <figure className="container mx-auto max-w-md px-4">
+                        <Image
+                            src={OFFICE.src}
+                            alt={OFFICE_ALT[s.slug]}
+                            width={OFFICE.width}
+                            height={OFFICE.height}
+                            loading="lazy"
+                            sizes="(min-width: 768px) 448px, 100vw"
+                            className="h-auto w-full rounded-2xl object-cover shadow-lg"
+                        />
+                        <figcaption className="mt-2 text-center text-sm text-slate-500">Bayraklı Dedemhan Plaza&apos;daki büro</figcaption>
+                    </figure>
+                </section>
+            )}
 
             {/* CTA + Form */}
             <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-16">

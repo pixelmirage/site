@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 import Image from "next/image";
-import { PHOTO } from "@/lib/photo";
+import { OFFICE, PHOTO } from "@/lib/photo";
 import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -65,6 +65,18 @@ export default function ContactPage() {
                             </figure>
                             <div>
                                 <h2 className="text-3xl font-playfair font-bold text-primary mb-8">Bize Ulaşın</h2>
+                                <figure className="mb-8">
+                                    <Image
+                                        src={OFFICE.src}
+                                        alt="Bayraklı Dedemhan Plaza'daki büroda görüşme alanı ve çalışma masası"
+                                        width={OFFICE.width}
+                                        height={OFFICE.height}
+                                        loading="lazy"
+                                        sizes="(min-width: 1024px) 380px, 100vw"
+                                        className="h-auto w-full rounded-2xl object-cover shadow-lg"
+                                    />
+                                    <figcaption className="mt-2 text-sm text-muted-foreground">Dedemhan Plaza D:17, Bayraklı</figcaption>
+                                </figure>
                                 <div className="space-y-8">
                                     <div className="flex items-start gap-4">
                                         <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center shrink-0">

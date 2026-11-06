@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Award, BookOpen, Scale } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { PHOTO } from "@/lib/photo";
+import { OFFICE, PHOTO } from "@/lib/photo";
 import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
@@ -141,6 +141,18 @@ export default function AboutPage() {
                                     </Button>
                                 </CardContent>
                             </Card>
+                            <figure className="mt-6">
+                                <Image
+                                    src={OFFICE.src}
+                                    alt="İzmir kira avukatı Av. Mert Kağan Çetin'in Dedemhan Plaza'daki büro odası"
+                                    width={OFFICE.width}
+                                    height={OFFICE.height}
+                                    loading="lazy"
+                                    sizes="(min-width: 1024px) 400px, 100vw"
+                                    className="h-auto w-full rounded-2xl object-cover shadow-lg"
+                                />
+                                <figcaption className="mt-2 text-sm text-muted-foreground">Bayraklı Dedemhan Plaza&apos;daki büro</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
