@@ -73,7 +73,7 @@ export default function ContactPage() {
                                         height={OFFICE.height}
                                         loading="lazy"
                                         sizes="(min-width: 1024px) 380px, 100vw"
-                                        className="h-auto w-full rounded-2xl object-cover shadow-lg"
+                                        className="aspect-[4/3] h-auto w-full rounded-2xl object-cover object-[50%_60%] shadow-lg"
                                     />
                                     <figcaption className="mt-2 text-sm text-muted-foreground">Dedemhan Plaza D:17, Bayraklı</figcaption>
                                 </figure>
