@@ -163,15 +163,15 @@ export function ServicePage({ service: s }: { service: Service }) {
 
             {OFFICE_ALT[s.slug] && (
                 <section className="py-10">
-                    <figure className="container mx-auto max-w-md px-4">
+                    <figure className="container mx-auto max-w-4xl px-4">
                         <Image
                             src={OFFICE.src}
                             alt={OFFICE_ALT[s.slug]}
                             width={OFFICE.width}
                             height={OFFICE.height}
                             loading="lazy"
-                            sizes="(min-width: 768px) 448px, 100vw"
-                            className="h-auto w-full rounded-2xl object-cover shadow-lg"
+                            sizes="(min-width: 1024px) 896px, 100vw"
+                            className="aspect-[16/9] h-auto w-full rounded-2xl object-cover object-[50%_60%] shadow-lg"
                         />
                         <figcaption className="mt-2 text-center text-sm text-slate-500">Bayraklı Dedemhan Plaza&apos;daki büro</figcaption>
                     </figure>
