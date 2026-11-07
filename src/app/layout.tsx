@@ -10,7 +10,7 @@ import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { cn } from "@/lib/utils";
 import { SITE_NAME } from "@/lib/site";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const inter = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-inter", display: "swap" });
 const playfair = Playfair_Display({ subsets: ["latin", "latin-ext"], weight: ["700"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
