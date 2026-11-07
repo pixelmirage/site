@@ -4,7 +4,18 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/ui/logo";
-import { MobileNav } from "./MobileNav";
+import dynamic from "next/dynamic";
+import { Menu } from "lucide-react";
+
+// Mobil menü (Radix Sheet) ilk yüklemede gerekmediği için ayrı parçada yüklenir.
+const MobileNav = dynamic(() => import("./MobileNav").then((m) => m.MobileNav), {
+    ssr: false,
+    loading: () => (
+        <span className="inline-flex h-10 w-10 items-center justify-center lg:hidden" aria-hidden="true">
+            <Menu className="h-6 w-6" />
+        </span>
+    ),
+});
 import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
 import { kiraHub, kiraLinks, kiraTools, ictihatLink, type NavLink } from "@/lib/nav";
@@ -24,10 +35,17 @@ export function Header() {
     const pathname = usePathname();
 
     useEffect(() => {
+        let ticking = false;
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+                setIsScrolled(window.scrollY > 20);
+                ticking = false;
+            });
         };
-        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 

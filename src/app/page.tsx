@@ -129,7 +129,9 @@ export default function Home() {
                             alt={PHOTO.alt}
                             width={PHOTO.width}
                             height={PHOTO.height}
-                            priority
+                            preload
+                            loading="eager"
+                            fetchPriority="high"
                             sizes="(min-width: 1152px) 520px, (min-width: 768px) 45vw, (min-width: 448px) 448px, 100vw"
                             className="h-auto w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10"
                         />
