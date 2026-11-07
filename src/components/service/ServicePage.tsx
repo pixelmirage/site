@@ -26,8 +26,8 @@ export function serviceMetadata(s: Service): Metadata {
         title: { absolute: s.title },
         description: s.description,
         alternates: { canonical: url },
-        openGraph: { siteName: SITE_NAME, title: s.title, description: s.description, url, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: s.h1 }] },
-        twitter: { card: "summary_large_image", title: s.title, description: s.description, images: ["/og-image.jpg"] },
+        openGraph: { siteName: SITE_NAME, title: s.title, description: s.description, url, type: "website", locale: "tr_TR", images: [{ url: "/images/izmir-kira-avukati-og.jpg", alt: s.h1 }] },
+        twitter: { card: "summary_large_image", title: s.title, description: s.description, images: ["/images/izmir-kira-avukati-og.jpg"] },
     };
 }
 
@@ -68,7 +68,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     "description": s.description,
                     "url": url,
                     "telephone": "+905445854645",
-                    "image": imageObject("/og-image.jpg"),
+                    "image": imageObject("/images/izmir-kira-avukati-og.jpg"),
                     "provider": { "@id": `${SITE}/#attorney` },
                     "hasMap": GBP_URL,
                     "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35000", "addressCountry": "TR" },

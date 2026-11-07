@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/hakkimda/",
     },
     openGraph: { siteName: SITE_NAME,
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
         title: "Hakkımda | İzmir Kira Avukatı Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin: İzmir Barosu Sicil No 15556. Ev sahibi ve kiracı uyuşmazlıklarında tahliye, kira tespit ve icra takibi.",
         url: "https://mertkagancetin.com/hakkimda/",

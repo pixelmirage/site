@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     title: { absolute: TITLE },
     description: DESC,
     alternates: { canonical: URL },
-    openGraph: { siteName: SITE_NAME, title: TITLE, description: DESC, url: URL, type: "website", locale: "tr_TR", images: [{ url: "/og-image.jpg", alt: "Kira Hukuku İçtihatları" }] },
-    twitter: { card: "summary_large_image", title: TITLE, description: DESC, images: ["/og-image.jpg"] },
+    openGraph: { siteName: SITE_NAME, title: TITLE, description: DESC, url: URL, type: "website", locale: "tr_TR", images: [{ url: "/images/izmir-kira-avukati-og.jpg", alt: "Kira Hukuku İçtihatları" }] },
+    twitter: { card: "summary_large_image", title: TITLE, description: DESC, images: ["/images/izmir-kira-avukati-og.jpg"] },
 };
 
 const trDate = (iso: string) => {

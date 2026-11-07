@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         title: `${term.term} Nedir?`,
         description: term.shortDescription,
         openGraph: { siteName: SITE_NAME,
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
             title: `${term.term} Nedir?`,
             description: term.shortDescription,
             url: url,

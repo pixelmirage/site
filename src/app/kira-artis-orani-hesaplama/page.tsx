@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Kira Artış Oranı Hesaplama 2026",
     description: "2026 güncel TÜFE oranları ile işyeri ve konut kira artış oranını hesaplayın. Yasal zam sınırı, TEFE-TÜFE farkı ve ev sahibi hakları hakkında detaylı bilgi.",
     openGraph: { siteName: SITE_NAME,
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
         title: "Kira Artış Oranı Hesaplama Aracı | Av. Mert Kağan Çetin",
         description: "Yasal kira artış oranını saniyeler içinde hesaplayın. Güncel TÜFE verileriyle hatasız sonuç.",
         url: "https://mertkagancetin.com/kira-artis-orani-hesaplama/",

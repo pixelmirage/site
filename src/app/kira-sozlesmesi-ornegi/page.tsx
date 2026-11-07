@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Kira Sözleşmesi Örneği 2026 - Word ve PDF İndir",
     description: "2026 kira sözleşmesi örneği: TBK'ya göre hazırlanmış konut ve çatılı işyeri kira kontratı şablonu. Word (DOCX) ve PDF olarak indirin veya yazdırın; depozito, kira artışı, fesih ve teslim tutanağı dahil.",
     openGraph: { siteName: SITE_NAME,
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
         title: "Kira Sözleşmesi Örneği 2026 | Word ve PDF İndir",
         description: "TBK'ya göre hazırlanmış kira sözleşmesi şablonu: Word ve PDF indir, yazdır.",
         url: URL,
