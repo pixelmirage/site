@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     description: 'İzmir\'de ev sahibi ve kiracı uyuşmazlıklarında avukatlık: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/images/izmir-kira-avukati-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Av. Mert Kağan Çetin - İzmir Kira Avukatı',
+        alt: 'İzmir kira avukatı: Saat Kulesi manzaralı hukuk bürosu masası',
       },
     ],
   },
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'İzmir Kira Avukatı | Av. Mert Kağan Çetin',
     description: 'İzmir\'de ev sahibi ve kiracı uyuşmazlıklarında avukatlık: tahliye, kira tespit, kira uyarlama, kira alacağı ve icra takibi.',
-    images: ['/og-image.jpg'],
+    images: ['/images/izmir-kira-avukati-og.jpg'],
   },
   icons: {
     icon: [

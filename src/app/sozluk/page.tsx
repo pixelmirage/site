@@ -13,7 +13,7 @@ export const metadata: Metadata = {
         canonical: "https://mertkagancetin.com/sozluk/",
     },
     openGraph: { siteName: SITE_NAME,
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
         title: "Kira Hukuku Sözlüğü | Av. Mert Kağan Çetin",
         description: "Kira hukuku terimlerinin anlaşılır açıklamaları.",
         url: "https://mertkagancetin.com/sozluk/",

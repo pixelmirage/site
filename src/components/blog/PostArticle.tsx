@@ -38,7 +38,7 @@ export function postMetadata(post: PostData) {
             authors: ['Av. Mert Kağan Çetin'],
             images: [
                 {
-                    url: post.coverImage || '/og-image.jpg',
+                    url: post.coverImage || '/images/izmir-kira-avukati-og.jpg',
                     width: 1200,
                     height: 630,
                     alt: post.title,
@@ -49,7 +49,7 @@ export function postMetadata(post: PostData) {
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt,
-            images: [post.coverImage || '/og-image.jpg'],
+            images: [post.coverImage || '/images/izmir-kira-avukati-og.jpg'],
         },
         alternates: {
             canonical: url,

@@ -24,7 +24,7 @@ export function ArticleSchema({
         "@type": "BlogPosting",
         "headline": title,
         "description": description,
-        "image": imageObject(image || "/og-image.jpg"),
+        "image": imageObject(image || "/images/izmir-kira-avukati-og.jpg"),
         "inLanguage": "tr-TR",
         "author": {
             "@id": "https://mertkagancetin.com/#person"

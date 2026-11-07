@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     openGraph: { siteName: SITE_NAME,
         title: "Kira Hukuku Blogu | İzmir Kira Avukatı Av. Mert Kağan Çetin",
         description: "İzmir kira avukatı Av. Mert Kağan Çetin'in kira hukuku yazıları: tahliye, kira tespit, kira artışı, icra takibi ve güncel Yargıtay kararları.",
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
         url: "https://mertkagancetin.com/blog/",
     },
 };

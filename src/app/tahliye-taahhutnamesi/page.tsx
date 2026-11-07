@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: { absolute: TITLE },
     description: DESCRIPTION,
     openGraph: { siteName: SITE_NAME,
-        images: ["/og-image.jpg"],
+        images: ["/images/izmir-kira-avukati-og.jpg"],
         title: TITLE,
         description: DESCRIPTION,
         url: PAGE_URL,
@@ -126,7 +126,7 @@ const articleSchema = {
     "headline": "Tahliye Taahhütnamesi: Nedir, Geçerlilik Şartları, Örnek ve İcra Yoluyla Tahliye",
     "description": DESCRIPTION,
     "mainEntityOfPage": PAGE_URL,
-    "image": imageObject("/og-image.jpg"),
+    "image": imageObject("/images/izmir-kira-avukati-og.jpg"),
     "inLanguage": "tr-TR",
     "dateModified": DATE_MODIFIED,
     "author": {
