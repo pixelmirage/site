@@ -37,7 +37,7 @@ const NOTFILE_SKIP = [
 ].join('|');
 
 const nextConfig: NextConfig = {
-  experimental: { inlineCss: true },
+  experimental: {},
   trailingSlash: true,
   // Built-in trailing-slash redirect is re-declared below (after the old-domain rules)
   // so old-domain URLs 301 to mertkagancetin.com in a single hop.
