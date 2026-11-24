@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { services } from '@/lib/services';
 import { getListedPosts, postHref } from '@/lib/blog/utils';
-import { glossaryTerms } from '@/lib/glossary';
 
 const INDEXNOW_KEY = '8bb539d0a5f7442b92ff3b3b983189d3';
 const HOST = 'mertkagancetin.com';
@@ -55,10 +54,8 @@ export async function GET(request: NextRequest) {
         `${base}/hakkimda/`,
         `${base}/blog/`,
         `${base}/iletisim/`,
-        `${base}/kira-artis-orani-hesaplama/`,
         `${base}/tahliye-taahhutnamesi/`,
         `${base}/kira-sozlesmesi-ornegi/`,
-        `${base}/sozluk/`,
         `${base}/kira-hukuku-ictihatlari/`,
     ];
 
@@ -66,10 +63,7 @@ export async function GET(request: NextRequest) {
     const posts = getListedPosts();
     const blogUrls = posts.map((post) => `${base}${postHref(post)}`);
 
-    // Glossary terms
-    const glossaryUrls = glossaryTerms.map((term) => `${base}/sozluk/${term.slug}/`);
-
-    const allUrls = [...staticUrls, ...blogUrls, ...glossaryUrls];
+    const allUrls = [...staticUrls, ...blogUrls];
 
     const payload = {
         host: HOST,

@@ -1,6 +1,5 @@
 import { MetadataRoute } from 'next';
 import { getListedPosts, postHref } from '@/lib/blog/utils';
-import { glossaryTerms } from '@/lib/glossary';
 import { services } from '@/lib/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -31,11 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/hakkimda': { lastModified: '2026-11-24', priority: 0.6 },
         '/iletisim': { lastModified: '2026-11-24', priority: 0.7 },
         '/blog': { lastModified: newestBlog, priority: 0.7 },
-        '/kira-artis-orani-hesaplama': { lastModified: '2026-10-31', priority: 0.7 },
         '/tahliye-taahhutnamesi': { lastModified: '2026-10-31', priority: 0.7 },
         '/kira-sozlesmesi-ornegi': { lastModified: '2026-11-24', priority: 0.7 },
         '/kvkk-aydinlatma-metni': { lastModified: '2026-10-31', priority: 0.3 },
-        '/sozluk': { lastModified: '2026-10-29', priority: 0.6 },
         '/kira-hukuku-ictihatlari': { lastModified: posts.filter((p) => p.ictihat || p.tags?.includes('emsal karar')).map((p) => p.dateModified || p.date).sort().pop() || '2026-10-31', priority: 0.8 },
     };
 
@@ -46,13 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: config.priority,
     }));
 
-    // Glossary Term Pages
-    const glossarySitemap = glossaryTerms.map((term) => ({
-        url: `${baseUrl}/sozluk/${term.slug}/`,
-        lastModified: new Date(term.lastUpdated),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-    }));
 
-    return [...routes, ...glossarySitemap, ...blogSitemap];
+    return [...routes, ...blogSitemap];
 }

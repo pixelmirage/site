@@ -59,7 +59,7 @@ const nextConfig: NextConfig = {
       // User sources also match an optional trailing slash, and these rules run before the trailing-slash rule below.
       ...removedPageRedirects.map(([source, destination]) => ({ source, destination, statusCode: 301 as const })),
       { source: '/:district((?:balcova|bayrakli|bornova|buca|cigli|gaziemir|guzelbahce|karabaglar|karsiyaka|konak|narlidere)-(?:kira|is|bosanma|tazminat)-avukati)', destination: '/', statusCode: 301 },
-      { source: '/sozluk/:term(kidem-tazminati|ihbar-tazminati|ise-iade-davasi|mobbing|hakli-fesih|fazla-mesai|is-goremezlik|anlasmali-bosanma|cekismeli-bosanma|velayet|nafaka|mal-paylasimi|maddi-tazminat|manevi-tazminat|malpraktis|destekten-yoksun-kalma|haksiz-fiil|is-guvencesi|evlilik-birliginin-temelden-sarsilmasi|koruma-karari)', destination: '/sozluk/', statusCode: 301 },
+      { source: '/sozluk/:term(kidem-tazminati|ihbar-tazminati|ise-iade-davasi|mobbing|hakli-fesih|fazla-mesai|is-goremezlik|anlasmali-bosanma|cekismeli-bosanma|velayet|nafaka|mal-paylasimi|maddi-tazminat|manevi-tazminat|malpraktis|destekten-yoksun-kalma|haksiz-fiil|is-guvencesi|evlilik-birliginin-temelden-sarsilmasi|koruma-karari)', destination: '/', statusCode: 301 },
       // Same rules Next adds when trailingSlash: true (next/dist/lib/load-custom-routes.js);
       // (?!/) keeps '/x/' from matching, since user sources also match an optional trailing slash.
       {

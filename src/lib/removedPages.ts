@@ -17,6 +17,23 @@ export const removedPageRedirects: [string, string][] = [
   // 2026-10-31 blog cleanup: only BAM/Yargıtay içtihat posts remain.
   // 2026-11-24: English divorce guide removed (off-topic for a kira-only site).
   ['/blog/how-to-get-divorced-in-turkey', '/'],
+  // 2026-11-24: kira artış oranı hesaplama aracı kaldırıldı.
+  ['/kira-artis-orani-hesaplama', '/izmir-kira-tespit-davasi-avukati/'],
+  // 2026-11-24: kira hukuku sözlüğü kaldırıldı; terimler konuyu kapsamlı işleyen sayfaya.
+  ['/sozluk/tahliye-taahhutnamesi', '/tahliye-taahhutnamesi/'],
+  ['/sozluk/kira-tespit-davasi', '/izmir-kira-tespit-davasi-avukati/'],
+  ['/sozluk/ihtiyac-nedeniyle-tahliye', '/izmir-kiraci-tahliye-davasi-avukati/'],
+  ['/sozluk/zorunlu-arabuluculuk', '/izmir-kira-arabuluculuk-avukati/'],
+  ['/sozluk/iki-hakli-ihtar', '/izmir-kiraci-tahliye-davasi-avukati/'],
+  ['/sozluk/kira-sozlesmesi', '/kira-sozlesmesi-ornegi/'],
+  ['/sozluk/depozito', '/izmir-kira-sozlesmesi-avukati/'],
+  ['/sozluk/kira-artis-orani', '/izmir-kira-tespit-davasi-avukati/'],
+  ['/sozluk/kira-uyarlama-davasi', '/izmir-kira-uyarlama-davasi-avukati/'],
+  ['/sozluk/fuzuli-isgal', '/izmir-kiraci-tahliye-davasi-avukati/'],
+  ['/sozluk/10-yillik-uzama-suresi', '/izmir-kiraci-tahliye-davasi-avukati/'],
+  ['/sozluk/kiraci-haklari', '/blog/kiracilar-icin-kira-avukati/'],
+  ['/sozluk/ecrimisil', '/izmir-kiraci-tahliye-davasi-avukati/'],
+  ['/sozluk', '/'],
   ['/blog/10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi', '/izmir-kiraci-tahliye-davasi-avukati/'],
   ['/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec', '/izmir-kira-sozlesmesi-avukati/'],
   ['/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir', '/izmir-kiraci-tahliye-davasi-avukati/'],

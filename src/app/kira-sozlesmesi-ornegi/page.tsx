@@ -48,14 +48,14 @@ const howToSteps = [
 ];
 
 const keyClauses = [
-    { icon: Receipt, title: "Güvence bedeli (depozito)", text: <>Güvence üç aylık kira bedelini aşamaz; para olarak verilirse kiracı adına vadeli tasarruf hesabına yatırılır (TBK m. 342). Ayrıntı: <Link href="/sozluk/depozito/">depozito</Link>.</> },
-    { icon: Percent, title: "Kira artış oranı", text: <>Yenilenen kira yılında artış, önceki kira yılının 12 aylık TÜFE ortalamasına göre değişim oranını aşamaz (TBK m. 344). Hesap için <Link href="/kira-artis-orani-hesaplama/">kira artış oranı hesaplama</Link> aracı kullanılabilir.</> },
-    { icon: CalendarClock, title: "Süre, uzama ve fesih", text: <>Kiracı süre bitiminden 15 gün önce bildirimde bulunmazsa sözleşme bir yıl uzar; kiraya veren sebep göstermeksizin ancak <Link href="/sozluk/10-yillik-uzama-suresi/">10 yıllık uzama süresi</Link> sonunda fesih bildirebilir (TBK m. 347).</> },
+    { icon: Receipt, title: "Güvence bedeli (depozito)", text: <>Güvence üç aylık kira bedelini aşamaz; para olarak verilirse kiracı adına vadeli tasarruf hesabına yatırılır (TBK m. 342). Ayrıntı: <Link href="/izmir-kira-sozlesmesi-avukati/">depozito</Link>.</> },
+    { icon: Percent, title: "Kira artış oranı", text: <>Yenilenen kira yılında artış, önceki kira yılının 12 aylık TÜFE ortalamasına göre değişim oranını aşamaz (TBK m. 344). Ayrıntı için <Link href="/izmir-kira-tespit-davasi-avukati/">kira artış oranı</Link> aracı kullanılabilir.</> },
+    { icon: CalendarClock, title: "Süre, uzama ve fesih", text: <>Kiracı süre bitiminden 15 gün önce bildirimde bulunmazsa sözleşme bir yıl uzar; kiraya veren sebep göstermeksizin ancak <Link href="/izmir-kiraci-tahliye-davasi-avukati/">10 yıllık uzama süresi</Link> sonunda fesih bildirebilir (TBK m. 347).</> },
     { icon: KeyRound, title: "Tahliye taahhüdü", text: <>Tahliye taahhüdü, kiralananın tesliminden sonra yazılı olarak verilmelidir; sözleşmeyle aynı anda alınan taahhüt geçersizlik tartışmasına yol açar. Örnek: <Link href="/tahliye-taahhutnamesi/">tahliye taahhütnamesi</Link>.</> },
     { icon: Users, title: "Kefil", text: <>Kefalet yazılı yapılır; kefil, sorumlu olacağı azami miktarı, kefalet tarihini ve müteselsil kefil ise bunu kendi el yazısıyla belirtir (TBK m. 583). Evli kefilde eşin yazılı rızası aranır (TBK m. 584).</> },
     { icon: Ban, title: "Geçersiz şartlar", text: <>Kira geç ödenirse ceza koşulu veya sonraki kiraların muaccel olacağı gibi şartlar geçersizdir (TBK m. 346). Kiracı aleyhine değiştirilemeyen hükümler için TBK m. 354 uygulanır.</> },
     { icon: ClipboardList, title: "Teslim tutanağı", text: <>Teslim anındaki durumun sayaç endeksleri, anahtar sayısı ve fotoğraflarla kayda geçirilmesi, iade sırasında güvence bedeli tartışmalarını azaltır (TBK m. 334).</> },
-    { icon: Scale, title: "Uyuşmazlıkta arabuluculuk", text: <>1 Eylül 2023&apos;ten bu yana kira uyuşmazlıklarında dava açmadan önce arabulucuya başvurmak zorunludur (6325 sayılı Kanun m. 18/B). Bkz. <Link href="/sozluk/zorunlu-arabuluculuk/">zorunlu arabuluculuk</Link>.</> },
+    { icon: Scale, title: "Uyuşmazlıkta arabuluculuk", text: <>1 Eylül 2023&apos;ten bu yana kira uyuşmazlıklarında dava açmadan önce arabulucuya başvurmak zorunludur (6325 sayılı Kanun m. 18/B). Bkz. <Link href="/izmir-kira-arabuluculuk-avukati/">zorunlu arabuluculuk</Link>.</> },
 ];
 
 const faqs = [
@@ -69,15 +69,6 @@ const faqs = [
     { question: "Kiracı kira sözleşmesini nasıl fesheder?", answer: "Belirli süreli sözleşmede kiracı, süre bitiminden en az 15 gün önce yazılı bildirimde bulunarak sözleşmeyi sona erdirebilir. Belirsiz süreli sözleşmede yerel âdetteki kira dönemi, yoksa altı aylık dönem sonu için üç ay önceden yazılı fesih bildirimi yapılır (TBK m. 329, 347, 348)." },
 ];
 
-const glossary = [
-    { href: "/sozluk/kira-sozlesmesi/", label: "Kira sözleşmesi" },
-    { href: "/sozluk/depozito/", label: "Depozito" },
-    { href: "/sozluk/kira-artis-orani/", label: "Kira artış oranı" },
-    { href: "/sozluk/10-yillik-uzama-suresi/", label: "10 yıllık uzama süresi" },
-    { href: "/sozluk/tahliye-taahhutnamesi/", label: "Tahliye taahhütnamesi" },
-    { href: "/sozluk/kiraci-haklari/", label: "Kiracı hakları" },
-    { href: "/sozluk/zorunlu-arabuluculuk/", label: "Zorunlu arabuluculuk" },
-];
 
 const linkCls = "text-secondary-ink font-semibold underline underline-offset-2 hover:text-primary";
 
@@ -208,7 +199,7 @@ export default function KiraSozlesmesiPage() {
                     <div className="mx-auto doc-prose px-4">
                         <h2>Kira Sözleşmesi Nedir?</h2>
                         <p>
-                            <Link href="/sozluk/kira-sozlesmesi/" className={linkCls}>Kira sözleşmesi</Link>, kiraya verenin bir şeyin kullanılmasını veya kullanmayla birlikte ondan yararlanılmasını kiracıya bırakmayı, kiracının da buna karşılık kira bedeli ödemeyi üstlendiği sözleşmedir (TBK m. 299). Konut ve çatılı işyeri kiralarına ilişkin özel hükümler TBK m. 339-356 arasında yer alır ve bu hükümler kiracı aleyhine değiştirilemez (TBK m. 354).
+                            Kira sözleşmesi, kiraya verenin bir şeyin kullanılmasını veya kullanmayla birlikte ondan yararlanılmasını kiracıya bırakmayı, kiracının da buna karşılık kira bedeli ödemeyi üstlendiği sözleşmedir (TBK m. 299). Konut ve çatılı işyeri kiralarına ilişkin özel hükümler TBK m. 339-356 arasında yer alır ve bu hükümler kiracı aleyhine değiştirilemez (TBK m. 354).
                         </p>
                         <p>
                             Sözleşme yazılı olmak zorunda değildir; ancak kira bedeli, süre, güvence ve teslim durumu gibi konuların ispatı için yazılı sözleşme ve teslim tutanağı düzenlenmesi faydalıdır. Sözleşmenin hazırlanması veya incelenmesi hakkında bilgi <Link href="/izmir-kira-sozlesmesi-avukati/" className={linkCls}>İzmir kira sözleşmesi avukatı</Link> sayfasında yer alır.
@@ -238,7 +229,7 @@ export default function KiraSozlesmesiPage() {
                         <ul>
                             <li>Kiracının kimlik bilgileri ve tebligat adresi doğrulanabilir.</li>
                             <li>Kira ödemelerinin banka yoluyla ve açıklamalı yapılması ispat kolaylığı sağlar.</li>
-                            <li>Yıllık artış <Link href="/kira-artis-orani-hesaplama/" className={linkCls}>kira artış oranı</Link> sınırına göre hesaplanabilir.</li>
+                            <li>Yıllık artış <Link href="/izmir-kira-tespit-davasi-avukati/" className={linkCls}>kira artış oranı</Link> sınırına göre hesaplanabilir.</li>
                             <li><Link href="/tahliye-taahhutnamesi/" className={linkCls}>Tahliye taahhütnamesi</Link>, kiralananın tesliminden sonra ayrı bir belge olarak alınabilir.</li>
                         </ul>
 
@@ -259,15 +250,6 @@ export default function KiraSozlesmesiPage() {
                                 </details>
                             ))}
                         </div>
-
-                        <h2>İlgili Terimler</h2>
-                        <ul className="not-prose flex flex-wrap gap-2" aria-label="Kira hukuku sözlüğü">
-                            {glossary.map((g) => (
-                                <li key={g.href}>
-                                    <Link href={g.href} className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-primary hover:border-secondary hover:bg-white">{g.label}</Link>
-                                </li>
-                            ))}
-                        </ul>
                     </div>
                 </section>
 

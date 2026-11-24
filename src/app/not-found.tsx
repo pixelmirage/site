@@ -48,7 +48,6 @@ export default function NotFound() {
                                 { label: "Kira Tespit Davası", href: "/izmir-kira-tespit-davasi-avukati/" },
                                 { label: "Kira Alacağı İcra Takibi", href: "/izmir-kira-alacagi-icra-takibi-avukati/" },
                                 { label: "Kira Hukuku Makaleleri", href: "/blog/" },
-                                { label: "Kira Hukuku Sözlüğü", href: "/sozluk/" },
                             ].map((item) => (
                                 <Link
                                     key={item.href}

@@ -75,7 +75,7 @@ export function postHref(p: Pick<PostData, "slug" | "section">): string {
     return `${SECTION_BASE[p.section]}${p.slug}/`;
 }
 
-/** Yalnızca slug bilinen yerler (services.ts, glossary.ts) için: önce içtihat, sonra blog bölümüne bakar. */
+/** Yalnızca slug bilinen yerler (services.ts) için: önce içtihat, sonra blog bölümüne bakar. */
 export function hrefForSlug(slug: string): string | null {
     const p = getPostBySlug(slug, "ictihat") || getPostBySlug(slug, "blog");
     return p ? postHref(p) : null;

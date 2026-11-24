@@ -241,7 +241,7 @@ export default function EvictionTemplatePage() {
                         title="Tahliye Taahhütnamesi Nedir? - Kısa Video ile Açıklama"
                     />
                     <p>
-                        <Link href="/sozluk/tahliye-taahhutnamesi/" className={ext}>Tahliye taahhütnamesi (sözlük)</Link>, kiracının kiraladığı taşınmazı belli bir tarihte boşaltacağını kiraya verene yazılı olarak bildirdiği belgedir. Dayanağı Türk Borçlar Kanunu&apos;nun 352. maddesinin birinci fıkrasıdır:
+                        Tahliye taahhütnamesi, kiracının kiraladığı taşınmazı belli bir tarihte boşaltacağını kiraya verene yazılı olarak bildirdiği belgedir. Dayanağı Türk Borçlar Kanunu&apos;nun 352. maddesinin birinci fıkrasıdır:
                     </p>
                     <blockquote>
                         &quot;Kiracı, kiralananın teslim edilmesinden sonra, kiraya verene karşı, kiralananı belli bir tarihte boşaltmayı yazılı olarak üstlendiği hâlde boşaltmamışsa kiraya veren, kira sözleşmesini bu tarihten başlayarak bir ay içinde icraya başvurmak veya dava açmak suretiyle sona erdirebilir.&quot; (<a href={TBK_URL} target="_blank" rel="noopener noreferrer" className={ext}>TBK m. 352/1, mevzuat.gov.tr</a>)
@@ -487,7 +487,7 @@ export default function EvictionTemplatePage() {
                         <li><strong>Süre itirazı:</strong> Kiraya verenin bir aylık süreyi geçirip geçirmediği kontrol edilmelidir (TBK m. 352/1).</li>
                     </ul>
                     <p>
-                        Kiracı tarafının diğer hakları için <Link href="/sozluk/kiraci-haklari/" className={ext}>kiracı hakları</Link> sayfamıza bakabilirsiniz.
+                        Kiracı tarafının diğer hakları için <Link href="/blog/kiracilar-icin-kira-avukati/" className={ext}>kiracı hakları</Link> sayfamıza bakabilirsiniz.
                     </p>
 
                     <h2 id="sss">Sık sorulan sorular</h2>

@@ -327,10 +327,8 @@ export default function Home() {
             <nav aria-label="Kira hukuku kaynakları" className="container mx-auto max-w-4xl px-4 py-8 text-sm">
                 <span className="mr-2 font-bold text-primary">Kaynaklar:</span>
                 {[
-                    ["Kira artış oranı hesaplama", "/kira-artis-orani-hesaplama/"],
                     ["Kira sözleşmesi örneği", "/kira-sozlesmesi-ornegi/"],
                     ["Tahliye taahhütnamesi örneği", "/tahliye-taahhutnamesi/"],
-                    ["Kira hukuku sözlüğü", "/sozluk/"],
                     ["Makaleler", "/blog/"],
                 ].map(([t, u], i) => (
                     <span key={u}>{i > 0 && <span className="mx-1 text-slate-400" aria-hidden="true">·</span>}<Link href={u} className="text-slate-700 underline-offset-2 hover:text-secondary hover:underline">{t}</Link></span>

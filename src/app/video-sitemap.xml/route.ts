@@ -1,4 +1,3 @@
-import { glossaryTerms } from '@/lib/glossary';
 import { getListedPosts, postHref } from '@/lib/blog/utils';
 
 interface VideoEntry {
@@ -13,20 +12,6 @@ interface VideoEntry {
 export async function GET() {
     const baseUrl = 'https://mertkagancetin.com';
     const entries: VideoEntry[] = [];
-
-    // Glossary terms with videos
-    for (const term of glossaryTerms) {
-        if (term.youtubeVideoId) {
-            entries.push({
-                pageUrl: `${baseUrl}/sozluk/${term.slug}/`,
-                videoId: term.youtubeVideoId,
-                title: `${term.term} Nedir? | Kısa Video`,
-                description: term.shortDescription,
-                date: term.lastUpdated,
-                duration: term.videoDuration,
-            });
-        }
-    }
 
     // Blog posts with videos
     const posts = getListedPosts();
