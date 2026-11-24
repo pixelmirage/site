@@ -111,6 +111,16 @@ export default function Home() {
                 <div className="container mx-auto px-4 pt-10 pb-12 md:pt-14 md:pb-20">
                     <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 md:grid-cols-[1.15fr_1fr] md:gap-12">
                     <div className="flex flex-col items-center text-center">
+                        {/* Mobil: büyük hero fotoğrafı yerine portre (LCP metinde kalır, yüz ilk ekranda görünür) */}
+                        <Image
+                            src={PHOTO.avatar}
+                            alt="Av. Mert Kağan Çetin"
+                            width={256}
+                            height={256}
+                            sizes="88px"
+                            loading="eager"
+                            className="mb-4 h-[88px] w-[88px] rounded-full object-cover ring-2 ring-secondary/60 md:hidden"
+                        />
                         <h1 className="mb-3 font-playfair text-4xl font-bold leading-tight md:text-6xl">İzmir Kira Avukatı</h1>
                         <p className="mb-6 font-playfair text-xl font-semibold tracking-wide text-secondary md:text-3xl">Av. Mert Kağan Çetin</p>
                         <p className="mb-8 text-lg leading-relaxed text-slate-300 md:text-2xl">
@@ -123,7 +133,7 @@ export default function Home() {
                             <li>İzmir genelinde</li>
                         </ul>
                     </div>
-                    <figure className="mx-auto w-full max-w-md md:max-w-none">
+                    <figure className="mx-auto hidden w-full max-w-md md:block md:max-w-none">
                         <Image
                             src={PHOTO.src}
                             alt={PHOTO.alt}
@@ -132,7 +142,7 @@ export default function Home() {
                             preload
                             loading="eager"
                             fetchPriority="high"
-                            sizes="(min-width: 1152px) 520px, (min-width: 768px) 45vw, (min-width: 448px) 448px, 100vw"
+                            sizes="(min-width: 1152px) 520px, (min-width: 768px) 45vw, 1px"
                             className="h-auto w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10"
                         />
                     </figure>
