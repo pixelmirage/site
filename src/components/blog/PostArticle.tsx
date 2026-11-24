@@ -17,22 +17,30 @@ import { RelatedPosts } from "@/components/blog/RelatedPosts";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 import { articleProseClasses } from "@/lib/prose-classes";
 import { SITE_NAME } from "@/lib/site";
+import { format, parseISO } from "date-fns";
+import { tr } from "date-fns/locale";
+
+/** "2026-11-01" -> "1 Kasım 2026" */
+function trDate(iso: string): string {
+    try { return format(parseISO(iso), "d MMMM yyyy", { locale: tr }); } catch { return iso; }
+}
 
 export const SITE_URL = "https://mertkagancetin.com";
 
 export function postMetadata(post: PostData) {
     const url = `${SITE_URL}${postHref(post)}`;
+    const description = post.metaDescription ?? post.excerpt;
 
     return {
         title: post.metaTitle ?? post.title,
-        description: post.excerpt,
+        description,
         authors: [{ name: "Av. Mert Kağan Çetin" }],
         openGraph: { siteName: SITE_NAME,
             type: 'article',
             locale: post.lang === 'en' ? 'en_US' : 'tr_TR',
             url: url,
             title: post.title,
-            description: post.excerpt,
+            description,
             publishedTime: post.date,
             modifiedTime: post.dateModified || post.date,
             authors: ['Av. Mert Kağan Çetin'],
@@ -48,7 +56,7 @@ export function postMetadata(post: PostData) {
         twitter: {
             card: 'summary_large_image',
             title: post.title,
-            description: post.excerpt,
+            description,
             images: [post.coverImage || '/images/izmir-kira-avukati-og.jpg'],
         },
         alternates: {
@@ -121,7 +129,7 @@ export function PostArticle({ post }: { post: PostData }) {
                 <div className="container mx-auto px-4 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary mb-6 shadow-sm">
                         <Calendar className="w-3 h-3 text-secondary-foreground" />
-                        {post.date}
+                        <time dateTime={post.date}>{trDate(post.date)}</time>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary max-w-4xl mx-auto leading-tight mb-8">
                         {post.title}
@@ -132,11 +140,11 @@ export function PostArticle({ post }: { post: PostData }) {
                             {post.readingTime} Dakika Okuma
                         </span>
                         <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-                        <span>Yazar: Av. Mert Kağan Çetin</span>
+                        <span>Yazar: <Link href="/hakkimda/" rel="author" className="font-semibold text-primary underline-offset-2 hover:underline">Av. Mert Kağan Çetin</Link></span>
                         {post.dateModified && post.dateModified !== post.date && (
                             <>
                                 <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-                                <span>Güncelleme: {post.dateModified}</span>
+                                <span>Güncelleme: <time dateTime={post.dateModified}>{trDate(post.dateModified)}</time></span>
                             </>
                         )}
                     </div>
@@ -195,7 +203,8 @@ export function PostArticle({ post }: { post: PostData }) {
                         <div className="flex items-center gap-4">
                             <Image src={PHOTO.avatar} alt="Av. Mert Kağan Çetin" width={56} height={56} sizes="56px" className="h-14 w-14 flex-shrink-0 rounded-full object-cover ring-2 ring-secondary/40" />
                             <div>
-                                <p className="font-serif tracking-tight font-bold text-primary">Av. Mert Kağan Çetin</p>
+                                <p className="font-serif tracking-tight font-bold text-primary"><Link href="/hakkimda/" rel="author" className="hover:underline">Av. Mert Kağan Çetin</Link></p>
+                                <p className="text-sm text-slate-600">İzmir Barosu · Sicil No 15556 · Kira hukuku</p>
                             </div>
                         </div>
                         <Button className="bg-primary text-white hover:bg-primary/90 gap-2 px-8" asChild>

@@ -99,6 +99,9 @@ export const services: Service[] = [
             { title: "Arabulucuya erken başvuru ve usulden ret", slug: "tahliye-davasi-arabuluculuk-erken-basvuru" },
             { title: "Kiracının kendi evi varsa tahliye", slug: "kiracinin-kendi-evi-tahliye-davasi" },
             { title: "Kendiliğinden tahliye eden kiracı ve TBK 355 tazminatı", slug: "kiraci-tahliye-tazminati-tbk-355" },
+            { title: "Kira ihtarnamesi nasıl gönderilir?", slug: "kira-ihtarnamesi-nasil-gonderilir" },
+            { title: "Kiracılı ev alan yeni malik nelere dikkat etmeli?", slug: "kiracili-ev-alan-yeni-malik" },
+            { title: "Ev sahibi evden çık diyor: kiracı ne yapmalı?", slug: "ev-sahibi-evden-cik-diyor" },
         ],
         waText: "Merhaba, kiracı tahliyesi konusunda görüşmek istiyorum.",
     },
@@ -179,6 +182,7 @@ export const services: Service[] = [
             { title: "Kira tespitinde emsal, bilirkişi raporu ve harç", slug: "kira-tespit-davasi-emsal-bilirkisi" },
             { title: "Kira tespitinde hakkaniyet indirimi ve masraflar", slug: "kira-tespit-davasi-hakkaniyet-indirimi" },
             { title: "Kira bedeli, KDV ve stopaj", slug: "kira-bedeli-kdv-stopaj-net-brut" },
+            { title: "İşyeri kirası uyuşmazlıkları", slug: "izmir-isyeri-kira-uyusmazliklari" },
         ],
         extraLinks: [{ title: "Kira artış oranı hesaplama", href: "/kira-artis-orani-hesaplama/" }],
         waText: "Merhaba, kira tespit davası konusunda görüşmek istiyorum.",
@@ -251,6 +255,7 @@ export const services: Service[] = [
         blogs: [
             { title: "Yenilenen kira sözleşmesi 5 yıllık süreyi sıfırlar mı?", slug: "kira-tespit-5-yil-yenilenen-sozlesme" },
             { title: "Kira tespitinde hakkaniyet indirimi ve masraflar", slug: "kira-tespit-davasi-hakkaniyet-indirimi" },
+            { title: "İşyeri kiralarında uyarlama ve kira artışı", slug: "izmir-isyeri-kira-uyusmazliklari" },
         ],
         waText: "Merhaba, kira uyarlama davası konusunda görüşmek istiyorum.",
     },
@@ -323,6 +328,9 @@ export const services: Service[] = [
             { title: "Kirayı fazla ödemek, eksik ödeme ihtarı ve iki haklı ihtar", slug: "iki-hakli-ihtar-fazla-kira-odemesi" },
             { title: "Tahliye taahhüdüne dayalı takipte itirazın iptali", slug: "tahliye-taahhudu-icra-itirazin-iptali" },
             { title: "Kiracının kendi evi varsa tahliye ve aidat borcu", slug: "kiracinin-kendi-evi-tahliye-davasi" },
+            { title: "Aidat borcu için Örnek 13 takibi ve tahliye", slug: "aidat-icra-takibi-ornek-13-tahliye" },
+            { title: "Örnek 14 takibinde itirazın iptali ve tahliye", slug: "ornek-14-itirazin-iptali-tahliye" },
+            { title: "Kira ihtarnamesi nasıl gönderilir?", slug: "kira-ihtarnamesi-nasil-gonderilir" },
         ],
         waText: "Merhaba, ödenmeyen kira ve icra takibi konusunda görüşmek istiyorum.",
     },
@@ -394,6 +402,8 @@ export const services: Service[] = [
         blogs: [
             { title: "Tahliye taahhüdüne dayalı takipte itirazın iptali", slug: "tahliye-taahhudu-icra-itirazin-iptali" },
             { title: "Boş imzalı tahliye taahhütnamesine itiraz", slug: "bos-tahliye-taahhutnamesi-yemin-delili" },
+            { title: "Tarihleri boş tahliye taahhüdü ve itirazın kaldırılması", slug: "bos-tarihli-tahliye-taahhudu-itirazin-kaldirilmasi" },
+            { title: "Kaşesiz tahliye taahhüdü şirketi bağlar mı?", slug: "sirket-tahliye-taahhudu-imza-yetkisi" },
         ],
         extraLinks: [{ title: "Tahliye taahhütnamesi örneği", href: "/tahliye-taahhutnamesi/" }],
         waText: "Merhaba, tahliye taahhüdü ile icra konusunda görüşmek istiyorum.",
@@ -461,6 +471,8 @@ export const services: Service[] = [
         blogs: [
             { title: "Yeni kira sözleşmesi 10 yıllık süreyi sıfırlar mı?", slug: "10-yillik-uzama-suresi-tadil-sozlesmesi" },
             { title: "Kira bedeli, KDV ve stopaj", slug: "kira-bedeli-kdv-stopaj-net-brut" },
+            { title: "Kiracı veya ev sahibi vefat ederse kira sözleşmesi", slug: "kiraci-veya-ev-sahibi-vefat-kira" },
+            { title: "İşyeri kirası uyuşmazlıkları", slug: "izmir-isyeri-kira-uyusmazliklari" },
         ],
         extraLinks: [
             { title: "Kira sözleşmesi örneği", href: "/kira-sozlesmesi-ornegi/" },
@@ -539,6 +551,8 @@ export const services: Service[] = [
         ],
         blogs: [
             { title: "Arabulucuya erken başvuru ve usulden ret", slug: "tahliye-davasi-arabuluculuk-erken-basvuru" },
+            { title: "Kira davası ne kadar sürer?", slug: "kira-davasi-ne-kadar-surer" },
+            { title: "İzmir'de kira davası hangi adliyede açılır?", slug: "izmir-kira-davasi-hangi-adliye" },
         ],
         waText: "Merhaba, kira arabuluculuğu konusunda görüşmek istiyorum.",
     },

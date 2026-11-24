@@ -21,6 +21,8 @@ export interface PostData {
     title: string;
     /** Opsiyonel kısa <title>; verilmezse title kullanılır. */
     metaTitle?: string;
+    /** Opsiyonel kısa meta description (~155 karakter); verilmezse excerpt kullanılır. */
+    metaDescription?: string;
     date: string;
     dateModified?: string;
     excerpt: string;
@@ -39,7 +41,7 @@ export interface PostData {
     index?: boolean;
 }
 
-type FrontMatter = { title: string; metaTitle?: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string; ictihat?: boolean; ictihatKonu?: string; noindex?: boolean; index?: boolean };
+type FrontMatter = { title: string; metaTitle?: string; metaDescription?: string; date: string; dateModified?: string; excerpt: string; coverImage?: string; tags?: string[]; faqs?: FAQItem[]; youtubeVideoId?: string; videoDuration?: string; lang?: string; ictihat?: boolean; ictihatKonu?: string; noindex?: boolean; index?: boolean };
 
 function readPost(section: PostSection, fileName: string): PostData {
     const slug = fileName.replace(/\.(mdx|md)$/, "");

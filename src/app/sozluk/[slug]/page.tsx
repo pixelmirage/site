@@ -27,13 +27,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!term) return {};
 
     const url = `https://mertkagancetin.com/sozluk/${slug}/`;
+    // Kapsamlı rehberi olan terimlerde sözlük sayfası "kısa tanım" niyetiyle ayrışır.
+    const title = term.primaryGuide ? `${term.term} Nedir? (Kısa Tanım)` : `${term.term} Nedir?`;
 
     return {
-        title: `${term.term} Nedir?`,
+        title,
         description: term.shortDescription,
         openGraph: { siteName: SITE_NAME,
         images: ["/images/izmir-kira-avukati-og.jpg"],
-            title: `${term.term} Nedir?`,
+            title,
             description: term.shortDescription,
             url: url,
             type: "article",
@@ -151,6 +153,15 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
                                     <strong>{term.term}</strong>, {term.definition.split(". ").slice(1).join(". ")}
                                 </p>
                             </div>
+
+                            {term.primaryGuide && (
+                                <div className="not-prose mb-8 flex flex-col gap-2 rounded-xl border border-secondary/40 bg-secondary/5 p-5 sm:flex-row sm:items-center sm:justify-between">
+                                    <p className="text-sm text-slate-700">Bu sayfa kısa bir tanımdır. Konunun ayrıntılı anlatımı:</p>
+                                    <Link href={term.primaryGuide.href} className="inline-flex items-center gap-1 font-bold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">
+                                        {term.primaryGuide.label}<ArrowRight className="h-4 w-4" aria-hidden="true" />
+                                    </Link>
+                                </div>
+                            )}
 
                             {/* Detailed Explanation */}
                             {paragraphs.map((p, i) => (

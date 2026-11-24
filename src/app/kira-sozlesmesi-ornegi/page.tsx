@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ChevronRight, Home, ShieldCheck, FileText, Percent, CalendarClock, KeyRound, Receipt, Users, Ban, ClipboardList, Scale } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
-import { HowToSchema } from "@/components/seo/HowToSchema";
 import { ContractDocument } from "@/components/sablon/ContractDocument";
 import { DocActions } from "@/components/sablon/DocActions";
 import { CTAs } from "@/components/kira-landing/CTAs";
@@ -14,8 +13,8 @@ const URL = "https://mertkagancetin.com/kira-sozlesmesi-ornegi/";
 const MODIFIED = "2026-11-02";
 
 export const metadata: Metadata = {
-    title: "Kira Sözleşmesi Örneği 2026 - Word ve PDF İndir",
-    description: "2026 kira sözleşmesi örneği: TBK'ya göre hazırlanmış konut ve çatılı işyeri kira kontratı şablonu. Word (DOCX) ve PDF olarak indirin veya yazdırın; depozito, kira artışı, fesih ve teslim tutanağı dahil.",
+    title: "Kira Sözleşmesi Örneği 2026 (Word ve PDF)",
+    description: "TBK'ya uygun 2026 kira sözleşmesi örneği: konut ve işyeri kira kontratı şablonu. Word ve PDF indirin; depozito, kira artışı, fesih ve teslim tutanağı dahil.",
     openGraph: { siteName: SITE_NAME,
         images: ["/images/izmir-kira-avukati-og.jpg"],
         title: "Kira Sözleşmesi Örneği 2026 | Word ve PDF İndir",
@@ -92,7 +91,6 @@ export default function KiraSozlesmesiPage() {
                 ]}
             />
             <FAQSchema faqs={faqs} />
-            <HowToSchema name="Kira sözleşmesi nasıl doldurulur?" description="Kira sözleşmesi şablonunun adım adım doldurulması." steps={howToSteps} />
 
             {/* Hero */}
             <section className="relative overflow-hidden bg-primary text-white print:hidden">

@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 import { SITE_NAME } from "@/lib/site";
+import { getListedPosts, postHref } from "@/lib/blog/utils";
 
 export const metadata: Metadata = {
     title: "Hakkımda | İzmir Kira Avukatı",
@@ -24,8 +25,23 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+    const ictihatlar = getListedPosts("ictihat");
+    const yazilar = getListedPosts("blog");
     return (
         <div className="bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "ProfilePage",
+                    "@id": "https://mertkagancetin.com/hakkimda/#profilepage",
+                    "url": "https://mertkagancetin.com/hakkimda/",
+                    "name": "Av. Mert Kağan Çetin – Hakkımda",
+                    "inLanguage": "tr-TR",
+                    "isPartOf": { "@id": "https://mertkagancetin.com/#website" },
+                    "mainEntity": { "@id": "https://mertkagancetin.com/#person" },
+                }) }}
+            />
             <BreadcrumbSchema
                 items={[
                     { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
@@ -96,6 +112,28 @@ export default function AboutPage() {
                                     </p>
                                 </div>
                             </div>
+                            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                                <h2 className="mb-3 text-2xl font-playfair font-bold text-primary">Baro kaydını doğrulayın</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Av. Mert Kağan Çetin&apos;in baro kaydı resmi kaynaklardan sorgulanabilir: <a href="https://www.barobirlik.org.tr/AvukatArama/" target="_blank" rel="noopener noreferrer" className="text-secondary-ink underline underline-offset-2 hover:text-primary">Türkiye Barolar Birliği Avukat Arama</a> (TBB Sicil No: 162439) ve <a href="https://www.izmirbarosu.org.tr/BaroLevha.aspx" target="_blank" rel="noopener noreferrer" className="text-secondary-ink underline underline-offset-2 hover:text-primary">İzmir Barosu Baro Levhası</a> (İzmir Barosu Sicil No: 15556). Avukat seçerken nelere bakılabileceği <Link href="/blog/izmir-kira-avukati-secerken/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">bu yazıda</Link> anlatılmıştır.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2 className="mb-3 text-2xl font-playfair font-bold text-primary">Kira hukuku yayınları</h2>
+                                <p className="mb-5 text-muted-foreground leading-relaxed">
+                                    Bu sitede Yargıtay ve Bölge Adliye Mahkemesi kararlarını inceleyen {ictihatlar.length} karar notu ile kira uyuşmazlıklarına ilişkin {yazilar.length} rehber yazı yayımlanmıştır. Tüm karar notları <Link href="/kira-hukuku-ictihatlari/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira hukuku içtihatları</Link> sayfasında konu başlıklarına göre listelenir. Son karar notları:
+                                </p>
+                                <ul className="space-y-2">
+                                    {ictihatlar.slice(0, 6).map((p) => (
+                                        <li key={p.slug} className="flex gap-2 text-muted-foreground">
+                                            <BookOpen className="mt-1 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" />
+                                            <Link href={postHref(p)} className="text-primary underline-offset-2 hover:underline">{p.title}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
                             <figure className="pt-8">
                                 <Image
                                     src={OFFICE.src}

@@ -9,6 +9,7 @@ import { GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 import Image from "next/image";
 import { OFFICE, PHOTO } from "@/lib/photo";
 import { SITE_NAME } from "@/lib/site";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "İletişim | İzmir Kira Avukatı",
@@ -40,7 +41,7 @@ export default function ContactPage() {
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6">İletişim</h1>
                         <p className="text-xl text-primary-foreground/80">
-                            Hukuki süreçlerinizde yanınızdayız. Sorularınız, randevu talepleriniz ve danışmanlık ihtiyaçlarınız için bize dilediğiniz zaman ulaşabilirsiniz.
+                            İzmir&apos;deki kira uyuşmazlıkları için ön görüşme telefonla yapılır. Kira sözleşmesi, ihtarname ve ödeme belgeleri WhatsApp veya e-posta ile iletilebilir; yüz yüze görüşme Bayraklı&apos;daki ofiste randevuyla yapılır.
                         </p>
                     </div>
                 </div>
@@ -100,7 +101,7 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <p className="font-serif tracking-tight font-bold text-primary mb-1">Telefon</p>
-                                            <p className="text-muted-foreground text-sm">0544 585 46 45</p>
+                                            <a href="tel:+905445854645" className="text-muted-foreground text-sm hover:text-primary">0544 585 46 45</a>
                                         </div>
                                     </div>
 
@@ -110,7 +111,7 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <p className="font-serif tracking-tight font-bold text-primary mb-1">E-posta</p>
-                                            <p className="text-muted-foreground text-sm">mertkagancetin@gmail.com</p>
+                                            <a href="mailto:mertkagancetin@gmail.com" className="text-muted-foreground text-sm hover:text-primary">mertkagancetin@gmail.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -118,6 +119,11 @@ export default function ContactPage() {
 
                             <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 italic text-muted-foreground text-sm leading-relaxed">
                                 "Ofisimiz İzmir Adliyesi'ne yürüme mesafesinde, merkezi bir konumdadır. Randevu alarak gelmeniz, size daha iyi hizmet vermemizi sağlar."
+                            </div>
+
+                            <div className="text-sm leading-relaxed text-muted-foreground">
+                                <p className="mb-2 font-serif font-bold text-primary">Görüşmeden önce</p>
+                                <p>Kira davalarının hangi adliyede görüleceği <Link href="/blog/izmir-kira-davasi-hangi-adliye/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">bu rehberde</Link>, takip edilen işler ise <Link href="/" className="text-secondary-ink underline underline-offset-2 hover:text-primary">kira hukuku hizmetleri</Link> sayfasında anlatılmıştır. Hazırlanacak belgeler: kira sözleşmesi, ödeme dekontları, ihtarnameler ve varsa tahliye taahhütnamesi.</p>
                             </div>
 
                             <Button className="w-full bg-[#1c8549] hover:bg-[#1a7a43] text-white gap-2 h-14 text-lg font-bold" asChild>

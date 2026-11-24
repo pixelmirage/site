@@ -27,7 +27,12 @@ export function ArticleSchema({
         "image": imageObject(image || "/images/izmir-kira-avukati-og.jpg"),
         "inLanguage": "tr-TR",
         "author": {
-            "@id": "https://mertkagancetin.com/#person"
+            "@type": "Person",
+            "@id": "https://mertkagancetin.com/#person",
+            "name": author,
+            "url": "https://mertkagancetin.com/hakkimda/",
+            "jobTitle": "Avukat",
+            "memberOf": { "@type": "Organization", "name": "İzmir Barosu" }
         },
         "publisher": {
             "@id": "https://mertkagancetin.com/#organization"

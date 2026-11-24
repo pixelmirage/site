@@ -39,7 +39,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/'],
             },
         ],
-        host: 'https://mertkagancetin.com',
         sitemap: [
             'https://mertkagancetin.com/sitemap.xml',
             'https://mertkagancetin.com/video-sitemap.xml',

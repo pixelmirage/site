@@ -15,7 +15,7 @@ import { SITE_NAME } from "@/lib/site";
 
 const PAGE_URL = "https://mertkagancetin.com/tahliye-taahhutnamesi/";
 const TITLE = "Tahliye Taahhütnamesi Nedir? Geçerlilik Şartları ve Örnek (2026)";
-const DESCRIPTION = "Tahliye taahhütnamesi nedir, ne zaman geçerli olur? Yazılı şekil, teslimden sonra imza, belli tarih şartları; örnek metin ve 1 ay içinde icra veya dava ile tahliye (TBK 352/1, İİK 272-275).";
+const DESCRIPTION = "Tahliye taahhütnamesi nedir, ne zaman geçerlidir? Yazılı şekil, teslimden sonra imza ve belli tarih şartları; örnek metin ve icra yoluyla tahliye (TBK 352/1).";
 const DATE_MODIFIED = "2026-10-15";
 const TBK_URL = "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6098.pdf";
 const IIK_URL = "https://www.mevzuat.gov.tr/MevzuatMetin/1.3.2004.pdf";
