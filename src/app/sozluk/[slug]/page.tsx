@@ -102,7 +102,7 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
             )}
             <BreadcrumbSchema
                 items={[
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
                     { name: "Kira Hukuku Sözlüğü", url: "https://mertkagancetin.com/sozluk/" },
                     { name: term.term, url: termUrl },
                 ]}

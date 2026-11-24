@@ -55,7 +55,7 @@ export function ServicePage({ service: s }: { service: Service }) {
     const ictihatHref = ictihat && ictihat.posts.length > 0 ? `${ICTIHAT_PATH}#${ictihat.key}` : ICTIHAT_PATH;
     return (
         <div className="bg-white pb-16 lg:pb-0">
-            <BreadcrumbSchema items={[{ name: "İzmir Kira Avukatı", url: `${SITE}/` }, { name: s.h1, url }]} />
+            <BreadcrumbSchema items={[{ name: "Ana Sayfa", url: `${SITE}/` }, { name: s.h1, url }]} />
             <FAQSchema faqs={s.faqs} />
             <script
                 type="application/ld+json"
@@ -71,7 +71,7 @@ export function ServicePage({ service: s }: { service: Service }) {
                     "image": imageObject("/images/izmir-kira-avukati-og.jpg"),
                     "provider": { "@id": `${SITE}/#attorney` },
                     "hasMap": GBP_URL,
-                    "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35000", "addressCountry": "TR" },
+                    "address": { "@type": "PostalAddress", "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17", "addressLocality": "Bayraklı", "addressRegion": "İzmir", "postalCode": "35535", "addressCountry": "TR" },
                     "areaServed": { "@type": "City", "name": "İzmir" },
                     "isPartOf": { "@id": `${SITE}/#kira-service` },
                 }) }}
@@ -81,7 +81,7 @@ export function ServicePage({ service: s }: { service: Service }) {
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
                 <div className="container mx-auto px-4 pt-6 pb-12 md:pt-8 md:pb-16">
                     <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-sm text-slate-300">
-                        <Link href="/" className="flex items-center gap-1 hover:text-white"><Home className="h-4 w-4" aria-hidden="true" />İzmir Kira Avukatı</Link>
+                        <Link href="/" className="flex items-center gap-1 hover:text-white"><Home className="h-4 w-4" aria-hidden="true" />Ana Sayfa</Link>
                         <ChevronRight className="h-4 w-4" aria-hidden="true" />
                         <span className="text-secondary" aria-current="page">{s.name}</span>
                     </nav>

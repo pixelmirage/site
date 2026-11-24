@@ -81,7 +81,7 @@ export function hrefForSlug(slug: string): string | null {
 
 // Site kira hukukuna ayrılmıştır. "kira hukuku" etiketi olmayan (boşanma, iş, tazminat vb.) yazılar
 // URL'den erişilebilir kalır ama noindex,follow alır; sitemap, /blog/ listesi ve ilgili yazı alanlarında yer almaz.
-// İstisna: frontmatter'da `index: true` olan yazı (ör. how-to-get-divorced-in-turkey) indekslenir.
+// İstisna: frontmatter'da `index: true` olan yazı etiketten bağımsız indekslenir.
 export function isIndexablePost(p: Pick<PostData, "tags" | "noindex" | "index">): boolean {
     if (p.noindex) return false;
     if (p.index) return true;

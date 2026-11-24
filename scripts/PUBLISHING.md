@@ -19,7 +19,7 @@ Karar notları blogda değil, içtihat bölümünde yayımlanır:
   mahkeme/daire adı, yıl ve "ve, mi, ile, için" gibi dolgu kelimeleri yok.
   Örnek: `kira-tespit-davasi-emsal-bilirkisi`, `yeni-malik-ihtiyac-tahliye-yurt-disi`.
 - Site içi linklerde karar notlarına `/kira-hukuku-ictihatlari/<slug>/` ile link verilir (`/blog/` değil).
-- `/blog/` yalnızca blog yazılarını (şu an `how-to-get-divorced-in-turkey`) listeler.
+- `/blog/` yalnızca blog yazılarını listeler.
 
 `/kira-hukuku-ictihatlari/` sayfası yazı verisinden otomatik üretilir (`src/lib/blog/ictihat.ts`).
 Her karar notunun frontmatter'ına, `tags` satırının hemen altına şunlar eklenir:
@@ -44,6 +44,6 @@ Kaldırılan veya taşınan her URL için `src/lib/removedPages.ts` listesine `[
 
 Site kira hukukuna ayrılmıştır. `tags` içinde `"kira hukuku"` olmayan yazılar (veya `noindex: true` olanlar)
 URL'den açılır ama `noindex, follow` alır; sitemap, `/blog/` listesi ve "İlgili Makaleler" alanında görünmez.
-İstisna: frontmatter'da `index: true` olan yazı etiketten bağımsız indekslenir (ör. `how-to-get-divorced-in-turkey`).
+İstisna: frontmatter'da `index: true` olan yazı etiketten bağımsız indekslenir.
 Hub sayfasında yazı sayısı gösterilmez (liste sürekli güncellenir).
 Yeni kira yazılarında `"kira hukuku"` etiketi unutulmamalıdır.

@@ -56,7 +56,7 @@ export default function RentCalculatorPage() {
             />
             <BreadcrumbSchema
                 items={[
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
                     { name: "Kira Artış Hesaplama", url: "https://mertkagancetin.com/kira-artis-orani-hesaplama/" }
                 ]}
             />

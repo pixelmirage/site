@@ -14,7 +14,9 @@ export const removedPageRedirects: [string, string][] = [
   ['/izmir-tazminat-avukati/:path*', '/'],
   ['/hizmetler/:path*', '/'],
   ['/kidem-tazminati-hesaplama', '/'],
-  // 2026-10-31 blog cleanup: only BAM/Yargıtay içtihat posts + how-to-get-divorced-in-turkey remain.
+  // 2026-10-31 blog cleanup: only BAM/Yargıtay içtihat posts remain.
+  // 2026-11-24: English divorce guide removed (off-topic for a kira-only site).
+  ['/blog/how-to-get-divorced-in-turkey', '/'],
   ['/blog/10-yillik-uzama-suresi-dolan-kiracinin-tahliyesi', '/izmir-kiraci-tahliye-davasi-avukati/'],
   ['/blog/depozito-iadesi-davasi-kiracinin-haklari-ve-surec', '/izmir-kira-sozlesmesi-avukati/'],
   ['/blog/ev-sahibi-hangi-durumlarda-kiraciyi-hemen-cikarabilir', '/izmir-kiraci-tahliye-davasi-avukati/'],

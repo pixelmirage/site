@@ -87,7 +87,7 @@ export default function KiraSozlesmesiPage() {
         <div className="bg-slate-50 min-h-screen print:bg-white">
             <BreadcrumbSchema
                 items={[
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
                     { name: "Kira Sözleşmesi Örneği", url: URL },
                 ]}
             />

@@ -29,7 +29,7 @@ export default function ContactPage() {
         <div className="bg-white">
             <BreadcrumbSchema
                 items={[
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
                     { name: "İletişim", url: "https://mertkagancetin.com/iletisim/" },
                 ]}
             />

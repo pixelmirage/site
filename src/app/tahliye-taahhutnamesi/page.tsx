@@ -112,7 +112,7 @@ const legalServiceSchema = {
         "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
         "addressLocality": "Bayraklı",
         "addressRegion": "İzmir",
-        "postalCode": "35000",
+        "postalCode": "35535",
         "addressCountry": "TR",
     },
     "areaServed": { "@type": "City", "name": "İzmir" },
@@ -148,7 +148,7 @@ export default function EvictionTemplatePage() {
         <div className="bg-slate-50 min-h-screen pb-24">
             <BreadcrumbSchema
                 items={[
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
                     { name: "Tahliye Taahhütnamesi", url: PAGE_URL },
                 ]}
             />

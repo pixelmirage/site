@@ -107,7 +107,7 @@ export function SchemaMarkup() {
                     "streetAddress": "Mansuroğlu Mah. 286/3 Sk. Dedemhan Plaza D:17",
                     "addressLocality": "Bayraklı",
                     "addressRegion": "İzmir",
-                    "postalCode": "35000",
+                    "postalCode": "35535",
                     "addressCountry": "TR"
                 },
                 "hasMap": GBP_URL,

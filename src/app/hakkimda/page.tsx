@@ -28,7 +28,7 @@ export default function AboutPage() {
         <div className="bg-white">
             <BreadcrumbSchema
                 items={[
-                    { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
+                    { name: "Ana Sayfa", url: "https://mertkagancetin.com/" },
                     { name: "Hakkımda", url: "https://mertkagancetin.com/hakkimda/" },
                 ]}
             />

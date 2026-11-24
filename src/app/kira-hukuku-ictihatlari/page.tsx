@@ -83,7 +83,7 @@ export default function IctihatHubPage() {
             "@type": "BreadcrumbList",
             "@id": `${URL}#breadcrumb`,
             "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "İzmir Kira Avukatı", "item": `${SITE}/` },
+                { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": `${SITE}/` },
                 { "@type": "ListItem", "position": 2, "name": "Kira Hukuku İçtihatları", "item": URL },
             ],
         }],
@@ -96,7 +96,7 @@ export default function IctihatHubPage() {
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
                 <div className="container mx-auto px-4 pt-6 pb-12 md:pt-8 md:pb-16">
                     <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 text-sm text-slate-300">
-                        <Link href="/" className="flex items-center gap-1 hover:text-white"><Home className="h-4 w-4" aria-hidden="true" />İzmir Kira Avukatı</Link>
+                        <Link href="/" className="flex items-center gap-1 hover:text-white"><Home className="h-4 w-4" aria-hidden="true" />Ana Sayfa</Link>
                         <ChevronRight className="h-4 w-4" aria-hidden="true" />
                         <span className="text-secondary" aria-current="page">Kira Hukuku İçtihatları</span>
                     </nav>
