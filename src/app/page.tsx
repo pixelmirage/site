@@ -149,6 +149,26 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Kısaca (GEO: alıntılanabilir varlık özeti) */}
+            <section className="pb-4" aria-labelledby="kisaca">
+                <div className="container mx-auto max-w-3xl px-4">
+                    <div className="rounded-2xl border border-secondary/40 bg-secondary/5 p-6">
+                        <h2 id="kisaca" className="mb-4 font-playfair text-xl font-bold text-primary md:text-2xl">Kısaca</h2>
+                        <ul className="space-y-3 text-slate-700">
+                            {[
+                                "Av. Mert Kağan Çetin, İzmir Barosu'na 15556 sicil numarasıyla kayıtlı, ofisi Bayraklı'da (Dedemhan Plaza) bulunan ve çalışmalarını kira hukukuna odaklayan avukattır.",
+                                "Ev sahibi ve kiracı tarafında kiracı tahliye davası, kira tespit ve kira uyarlama davası, kira alacağı icra takibi, tahliye taahhüdüne dayalı icra, kira sözleşmesi ve kira arabuluculuğu işlerini takip eder.",
+                                "İzmir'de kira davalarına sulh hukuk mahkemeleri bakar; dava açmadan önce arabulucuya başvurmak dava şartıdır, ilamsız icra yoluyla tahliye talepleri ise bu şartın dışındadır (HMK m. 4, HUAK m. 18/B).",
+                                "Konut ve çatılı işyeri kiralarında sözleşme süresinin bitmesi tek başına tahliye sebebi değildir; tahliye ancak kanunda sayılan sebeplerle ve süresi içinde istenebilir (TBK m. 347, 350-352).",
+                                "Ön görüşme telefonla yapılır (0544 585 46 45); belgeler WhatsApp veya e-posta ile iletilebilir, yüz yüze görüşme Bayraklı'daki ofiste randevuyla yapılır.",
+                            ].map((t) => (
+                                <li key={t} className="flex gap-3"><ShieldCheck className="mt-1 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" /><span>{t}</span></li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             {/* Hizmetler */}
             <section className="border-y border-slate-200 bg-slate-50 py-12 md:py-16" aria-labelledby="hizmetler">
                 <div className="container mx-auto max-w-4xl px-4">

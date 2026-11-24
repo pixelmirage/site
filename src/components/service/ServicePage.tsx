@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ChevronRight, Home, ShieldCheck, MapPin, FileText, Scale, Users, ArrowRight, BookOpen } from "lucide-react";
+import { ChevronRight, Home, ShieldCheck, MapPin, FileText, Scale, Users, ArrowRight, BookOpen, CheckCircle2 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { CTAs } from "@/components/kira-landing/CTAs";
-import { services, serviceHref, SITE, type Service } from "@/lib/services";
+import { services, serviceHref, SITE, LAWS, SERVICES_REVIEWED, type Service } from "@/lib/services";
 import { GBP_URL } from "@/lib/gbp";
 import Image from "next/image";
 import { imageObject, OFFICE } from "@/lib/photo";
@@ -32,6 +32,13 @@ export function serviceMetadata(s: Service): Metadata {
 }
 
 const H2 = "font-playfair text-2xl font-bold text-primary md:text-3xl";
+
+/** "2026-11-24" -> "24 Kasım 2026" */
+function trDate(iso: string): string {
+    const [y, m, d] = iso.split("-").map(Number);
+    const ay = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"][m - 1];
+    return `${d} ${ay} ${y}`;
+}
 
 const LINK_RE = /\[([^\]]+)\]\(([^)\s]+)\)/g;
 /** Renders `[anchor](/path/)` inside service copy as internal links. */
@@ -76,6 +83,24 @@ export function ServicePage({ service: s }: { service: Service }) {
                     "isPartOf": { "@id": `${SITE}/#kira-service` },
                 }) }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    "@id": `${url}#webpage`,
+                    "url": url,
+                    "name": s.h1,
+                    "inLanguage": "tr-TR",
+                    "isPartOf": { "@id": `${SITE}/#website` },
+                    "about": { "@id": `${url}#service` },
+                    "lastReviewed": SERVICES_REVIEWED,
+                    "dateModified": SERVICES_REVIEWED,
+                    "reviewedBy": { "@id": `${SITE}/#person` },
+                    "author": { "@id": `${SITE}/#person` },
+                    "citation": s.sources.map((src) => ({ "@type": "Legislation", "name": LAWS[src.law].name, "url": LAWS[src.law].url })),
+                }) }}
+            />
 
             {/* Hero */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
@@ -101,7 +126,17 @@ export function ServicePage({ service: s }: { service: Service }) {
             {/* İçerik */}
             <div className="container mx-auto max-w-3xl px-4 py-12 md:py-16">
                 <div className="space-y-12 text-[1.0625rem] leading-8 text-slate-700">
+                    <p className="text-sm text-slate-500">Yazan: <Link href="/hakkimda/" rel="author" className="font-semibold text-primary underline-offset-2 hover:underline">Av. Mert Kağan Çetin</Link> (İzmir Barosu, Sicil No 15556) · Son güncelleme: <time dateTime={SERVICES_REVIEWED}>{trDate(SERVICES_REVIEWED)}</time></p>
                     <p>{s.intro} Kira hukukundaki diğer işler için <Link href="/" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">İzmir kira avukatı</Link> sayfasına bakılabilir.</p>
+                    <section aria-labelledby="onemli" className="rounded-2xl border border-secondary/40 bg-secondary/5 p-6">
+                        <h2 id="onemli" className="mb-4 font-playfair text-xl font-bold text-primary md:text-2xl">Önemli noktalar</h2>
+                        <ul className="space-y-3">
+                            {s.keyPoints.map((k) => (
+                                <li key={k} className="flex gap-3"><CheckCircle2 className="mt-1.5 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" /><span>{rich(k)}</span></li>
+                            ))}
+                        </ul>
+                    </section>
+
                     {s.sections.map((sec) => (
                         <section key={sec.title} aria-label={sec.title}>
                             <h2 className={`${H2} mb-4`}>{sec.title}</h2>
@@ -157,6 +192,17 @@ export function ServicePage({ service: s }: { service: Service }) {
                             ))}
                         </ul>
                         <p className="mt-3 text-sm text-slate-500">Belgelerin tamamı elinizde olmasa da {s.kw} ile ön görüşme yapılabilir.</p>
+                    </section>
+
+                    {/* Kaynaklar */}
+                    <section aria-labelledby="kaynaklar">
+                        <h2 id="kaynaklar" className={`${H2} mb-4`}>Kaynaklar</h2>
+                        <ul className="space-y-2">
+                            {s.sources.map((src) => (
+                                <li key={src.law} className="flex gap-3"><BookOpen className="mt-1.5 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" /><span><a href={LAWS[src.law].url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">{LAWS[src.law].name}</a>, {src.articles}</span></li>
+                            ))}
+                        </ul>
+                        <p className="mt-3 text-sm text-slate-500">Bu sayfa genel bilgilendirme amaçlıdır; mevzuat değişiklikleri ve somut dosyanın özellikleri sonucu etkileyebilir.</p>
                     </section>
                 </div>
             </div>

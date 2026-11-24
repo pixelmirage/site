@@ -2,6 +2,18 @@
 // Hukuki atıflar 6098 sayılı TBK, 2004 sayılı İİK, 6100 sayılı HMK ve 6325 sayılı HUAK güncel metinlerinden kontrol edilmiştir.
 
 export type ServiceSection = { title: string; paragraphs?: string[]; list?: string[] };
+
+/** Birincil kaynaklar (mevzuat.gov.tr). */
+export const LAWS = {
+    TBK: { name: "6098 sayılı Türk Borçlar Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&MevzuatTur=1&MevzuatTertip=5" },
+    IIK: { name: "2004 sayılı İcra ve İflas Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2004&MevzuatTur=1&MevzuatTertip=3" },
+    HMK: { name: "6100 sayılı Hukuk Muhakemeleri Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6100&MevzuatTur=1&MevzuatTertip=5" },
+    HUAK: { name: "6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6325&MevzuatTur=1&MevzuatTertip=5" },
+} as const;
+export type LawKey = keyof typeof LAWS;
+
+/** Hizmet sayfalarının son hukuki gözden geçirme tarihi (görünür "Son güncelleme" ve WebPage.lastReviewed). */
+export const SERVICES_REVIEWED = "2026-11-24";
 export type Service = {
     slug: string;
     name: string; // kısa ad (menü / kart)
@@ -19,6 +31,10 @@ export type Service = {
     court: string[];
     mediation: string;
     faqs: { question: string; answer: string }[];
+    /** GEO: sayfanın alıntılanabilir özeti (her madde tek başına anlaşılır, kanun maddesiyle). */
+    keyPoints: string[];
+    /** GEO: birincil kaynaklar ve ilgili maddeler. */
+    sources: { law: LawKey; articles: string }[];
     blogs: { title: string; slug: string }[];
     extraLinks?: { title: string; href: string }[];
     waText: string;
@@ -93,6 +109,19 @@ export const services: Service[] = [
             { question: "Kaç yıl oturan kiracı çıkarılabilir?", answer: "Belirli süreli sözleşmelerde on yıllık uzama süresi dolduktan sonra kiraya veren, izleyen her uzama yılının bitiminden en az üç ay önce yazılı bildirimde bulunarak sebep göstermeden sözleşmeyi sona erdirebilir (TBK m. 347). Yargıtay uygulamasında on yıllık süre, ilk sözleşme süresinin bitiminden itibaren hesaplanır; bir yıllık sözleşmede bu yolla tahliye, en erken on ikinci kira yılının sonu için istenebilir. Belirsiz süreli sözleşmelerde kiranın başlangıcından on yıl geçtikten sonra genel hükümlere göre fesih bildirimi yapılabilir." },
             { question: "Kiracıyı tahliye etmenin en kısa yolu hangisidir?", answer: "Hangi yolun izleneceği tahliye sebebine bağlıdır. Geçerli bir yazılı tahliye taahhüdü veya ödenmeyen kira varsa, dava açmadan ve arabulucuya gitmeden icra yoluyla tahliye istenebilir (İİK m. 269-275). Gereksinim, iki haklı ihtar veya on yıllık uzama gibi sebeplerde ise önce zorunlu arabuluculuk, anlaşma sağlanamazsa sulh hukuk mahkemesinde dava yoluna gidilir." },
             { question: "Tahliye davası açma süresi ne kadardır?", answer: "Gereksinim, imar, iki haklı ihtar ve kiracının aynı ilçede konutu bulunması sebeplerinde dava, kanunda belirtilen tarihten itibaren bir ay içinde açılmalıdır (TBK m. 350, 352). Yeni malik, edinmeden itibaren bir ay içinde yazılı bildirim yaparak altı ay sonra dava açabilir (TBK m. 351). Bu süreler içinde kiracıya dava açılacağının yazılı olarak bildirilmesi halinde süre bir kira yılı uzar (TBK m. 353)." },
+        ],
+        keyPoints: [
+            "Konut ve çatılı işyeri kiralarında sözleşme süresinin bitmesi tek başına tahliye sebebi değildir; kiracı bildirimde bulunmazsa sözleşme aynı koşullarla bir yıl uzar (TBK m. 347).",
+            "Tahliye sebepleri kanunda sınırlı olarak sayılmıştır ve kiracı aleyhine değiştirilemez: kiraya verenin gereksinimi, yeniden inşa, yeni malikin gereksinimi, iki haklı ihtar, kiracının aynı ilçede konutu, on yıllık uzama, yazılı tahliye taahhüdü ve kiranın ödenmemesi (TBK m. 315, 347, 350-352, 354).",
+            "Gereksinim ve imar nedeniyle tahliye davası, belirli süreli sözleşmelerde sürenin sonundan itibaren bir ay içinde açılmalıdır; tahliye davalarındaki süreler hak düşürücüdür (TBK m. 350).",
+            "Yeni malik, taşınmazı edindiği tarihten itibaren bir ay içinde kiracıya yazılı bildirimde bulunursa altı ay sonra tahliye davası açabilir (TBK m. 351).",
+            "Gereksinim amacıyla boşaltılan taşınmaz, haklı sebep olmaksızın üç yıl geçmedikçe eski kiracıdan başkasına kiralanamaz (TBK m. 355).",
+            "Tahliye davası açılmadan önce arabulucuya başvurmak dava şartıdır; görevli mahkeme dava değerine bakılmaksızın sulh hukuk mahkemesidir (HUAK m. 18/B, HMK m. 4/1-a).",
+        ],
+        sources: [
+            { law: "TBK", articles: "m. 315, 347, 348, 350-355" },
+            { law: "HUAK", articles: "m. 18/A, 18/B" },
+            { law: "HMK", articles: "m. 4, 6, 10, 316" },
         ],
         blogs: [
             { title: "Yeni malikin ihtiyaç nedeniyle tahliye talebi", slug: "yeni-malik-ihtiyac-tahliye-yurt-disi" },
@@ -178,6 +207,19 @@ export const services: Service[] = [
             { question: "Kira tespit davası avukatlık ücreti ne kadar tutar?", answer: "Avukatlık ücreti; dosyanın kapsamına, kira farkının tutarına ve yapılacak işlemlere göre belirlenir ve Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Harç, bilirkişi ve tebligat gibi yargılama giderleri ayrıca doğar. Dosyaya ilişkin ücret ve masraf bilgisi, İzmir kira tespit davası avukatı Av. Mert Kağan Çetin ile telefonla yapılan ön görüşmede verilir." },
             { question: "Kira tespit davası ne kadar sürer?", answer: "Süre; arabuluculuk aşamasına, tebligatlara, keşif ve bilirkişi incelemesine ve mahkemenin iş yüküne göre değişir. Dava basit yargılama usulüne tabi olduğundan dilekçe aşaması kısadır (HMK m. 316); dosyaya ilişkin değerlendirme belgeler incelendikten sonra yapılabilir." },
         ],
+        keyPoints: [
+            "Kira tespit davası, yenilenen kira döneminde uygulanacak kira bedelinin mahkemece belirlenmesi için açılır ve her zaman açılabilir (TBK m. 344, 345).",
+            "İlk beş yıl içinde yenilenen dönemdeki artış, bir önceki kira yılının on iki aylık TÜFE ortalamasındaki değişim oranını geçemez (TBK m. 344).",
+            "Beş yıldan sonra ve her beş yılın sonunda kira bedeli; TÜFE değişim oranı, kiralananın durumu ve emsal kira bedelleri dikkate alınarak hakkaniyete göre belirlenir (TBK m. 344).",
+            "Dava yeni kira döneminden en geç otuz gün önce açılırsa veya bu süre içinde yazılı artış bildirimi yapılırsa, belirlenen bedel yeni dönemin başından itibaren geçerli olur (TBK m. 345).",
+            "Yabancı para cinsinden kirada beş yıl geçmedikçe kira bedeli değiştirilemez; aşırı ifa güçlüğü hükmü saklıdır (TBK m. 344/4).",
+            "Kira tespit davasından önce arabulucuya başvurmak dava şartıdır; görevli mahkeme sulh hukuk mahkemesidir (HUAK m. 18/B, HMK m. 4/1-a).",
+        ],
+        sources: [
+            { law: "TBK", articles: "m. 138, 344, 345" },
+            { law: "HUAK", articles: "m. 18/B" },
+            { law: "HMK", articles: "m. 4, 316" },
+        ],
         blogs: [
             { title: "Kira tespitinde emsal, bilirkişi raporu ve harç", slug: "kira-tespit-davasi-emsal-bilirkisi" },
             { title: "Kira tespitinde hakkaniyet indirimi ve masraflar", slug: "kira-tespit-davasi-hakkaniyet-indirimi" },
@@ -251,6 +293,19 @@ export const services: Service[] = [
             { question: "Hangi durumlarda kira uyarlama davası açılabilir?", answer: "Uyarlama için sözleşme kurulurken taraflarca öngörülemeyen ve onlardan kaynaklanmayan olağanüstü bir durumun ortaya çıkması, bu durumun sözleşmenin kurulduğu andaki koşulları kiracı veya kiraya veren aleyhine aşırı ölçüde değiştirmesi ve borçlunun borcunu henüz ifa etmemiş ya da ihtirazi kayıtla ifa etmiş olması gerekir (TBK m. 138). Olağan enflasyon artışı tek başına yeterli sayılmaz." },
             { question: "Kiracı da kira uyarlama davası açabilir mi?", answer: "Evet. Uyarlama davası, koşulları oluşması halinde hem kiraya veren hem kiracı tarafından açılabilir. Örneğin olağanüstü ekonomik gelişmeler nedeniyle kira bedelinin kiracı aleyhine aşırı ölçüde ağırlaşması halinde kiracı da bedelin indirilmesini isteyebilir." },
         ],
+        keyPoints: [
+            "Kira uyarlama davası, sözleşme kurulduktan sonra ortaya çıkan olağanüstü bir değişiklik nedeniyle kira bedelinin yeni koşullara uyarlanması için açılır; dayanağı aşırı ifa güçlüğüdür (TBK m. 138).",
+            "Uyarlama için değişikliğin öngörülemez olması, uyarlama isteyen taraftan kaynaklanmaması ve ifanın istenmesini dürüstlük kurallarına aykırı kılacak ağırlıkta olması gerekir.",
+            "Uyarlama isteyen taraf borcunu henüz ifa etmemiş olmalı veya aşırı ifa güçlüğünden doğan haklarını saklı tutarak (ihtirazi kayıtla) ifa etmiş olmalıdır.",
+            "Kira tespit davasından farklı olarak uyarlama süre koşuluna bağlı değildir; ancak olağanüstü değişikliğin somut verilerle ispatlanması gerekir.",
+            "Yabancı para cinsinden kiralarda beş yıl dolmadan kira bedeli, aşırı ifa güçlüğü hükmüne dayanılarak uyarlanabilir (TBK m. 344/4).",
+            "Uyarlama davasından önce arabulucuya başvurmak dava şartıdır; dava süresince kiranın sözleşmeye göre ödenmesi temerrüt ve tahliye riskini önler (HUAK m. 18/B).",
+        ],
+        sources: [
+            { law: "TBK", articles: "m. 138, 344" },
+            { law: "HUAK", articles: "m. 18/B" },
+            { law: "HMK", articles: "m. 4, 316" },
+        ],
         blogs: [
             { title: "Yenilenen kira sözleşmesi 5 yıllık süreyi sıfırlar mı?", slug: "kira-tespit-5-yil-yenilenen-sozlesme" },
             { title: "Kira tespitinde hakkaniyet indirimi ve masraflar", slug: "kira-tespit-davasi-hakkaniyet-indirimi" },
@@ -322,6 +377,20 @@ export const services: Service[] = [
             { question: "Kirayı ödemeyen kiracıya icra takibi nasıl yapılır?", answer: "İcra dairesine başvurularak kiracıya ödeme emri gönderilir; konut ve çatılı işyeri kiralarında ödeme süresi otuz gündür ve ödeme emrinde, bu süre içinde ödeme yapılmazsa tahliye istenebileceği ihtar edilir (İİK m. 269). Kiracı yedi gün içinde itiraz edebilir; itiraz edilmez ve borç süresinde ödenmezse kiraya veren icra mahkemesinden tahliye isteyebilir (İİK m. 269 vd.). Bu yol için arabuluculuğa başvurmak gerekmez." },
             { question: "Tahliye kararı kesinleşmeden icraya konulabilir mi?", answer: "Evet. Taşınmazın tahliyesine ilişkin mahkeme kararları, kesinleşmesi beklenmeden icraya konulabilir. Ancak kanun yoluna başvuran kiracı, mahkemenin belirleyeceği teminatı göstererek icranın geri bırakılmasını isteyebilir (İİK m. 36)." },
             { question: "İcra yoluyla tahliye masrafı ne kadar?", answer: "Masraflar; takip tutarına göre değişen harçlar, tebligat giderleri ve tahliye aşamasındaki giderlerden oluşur, avukatlık ücreti ise Avukatlık Asgari Ücret Tarifesi'nin altında olamaz. Takip giderleri ve icra vekâlet ücreti borçlu kiracıdan istenebilir. Dosyaya ilişkin masraf bilgisi, İzmir kira alacağı icra takibi avukatı ile telefonla yapılan ön görüşmede verilir." },
+        ],
+        keyPoints: [
+            "Ödenmeyen kira için tahliye talepli ilamsız takipte kiracıya, konut ve çatılı işyeri kiralarında birikmiş kirayı otuz gün içinde ödemesi gerektiği bildirilir (İİK m. 269, TBK m. 315).",
+            "Kiracı ödeme emrinin tebliğinden itibaren yedi gün içinde itiraz edebilir; itiraz takibi durdurur (İİK m. 269).",
+            "İtiraz edilmez ve süre içinde kira ödenmezse, ihtar süresinin bitiminden itibaren altı ay içinde icra mahkemesinden tahliye istenebilir (İİK m. 269/a).",
+            "İtiraz edilmişse kiraya veren altı ay içinde icra mahkemesinden itirazın kaldırılmasını ve tahliyeyi ya da bir yıl içinde genel mahkemede itirazın iptalini isteyebilir (İİK m. 67, 269/a).",
+            "İlamsız icra yoluyla tahliye talepleri zorunlu arabuluculuk dışındadır; itirazın iptali, alacak ve tahliye davalarından önce ise arabulucuya başvurmak dava şartıdır (HUAK m. 18/B).",
+            "Kira bedelleri beş yıllık zamanaşımına tabidir; geç ödemeye ceza koşulu veya sonraki kiraların muaccel olacağı anlaşmaları geçersizdir (TBK m. 147/1, 346).",
+        ],
+        sources: [
+            { law: "IIK", articles: "m. 67, 269-269/c" },
+            { law: "TBK", articles: "m. 147, 315, 346, 352/2" },
+            { law: "HUAK", articles: "m. 18/B" },
+            { law: "HMK", articles: "m. 4" },
         ],
         blogs: [
             { title: "Kirayı fazla ödemek, eksik ödeme ihtarı ve iki haklı ihtar", slug: "iki-hakli-ihtar-fazla-kira-odemesi" },
@@ -398,6 +467,20 @@ export const services: Service[] = [
             { question: "Tahliye taahhütnamesinde eşin imzası gerekli mi?", answer: "Kiralanan aile konutu olarak kullanılıyorsa, Yargıtay uygulamasında diğer eşin açık rızası olmadan verilen tahliye taahhüdünün aile konutuna ilişkin koruma (TMK m. 194) karşısında geçersiz sayılabileceği kabul edilmektedir. Bu nedenle aile konutlarında taahhüdün her iki eş tarafından imzalanması önerilir." },
             { question: "Tahliye taahhütnamesi hangi hallerde geçersiz olur ve kiracı kendiliğinden çıkar mı?", answer: "Kiralananın tesliminden önce veya sözleşmeyle birlikte kiracı üzerinde baskı oluşturacak şekilde alınan, tahliye tarihi belirli olmayan, irade sakatlığıyla verilen ya da aile konutunda eş rızası bulunmayan taahhütler geçersiz sayılabilir. Geçerli bir taahhüt bulunsa bile kiracı çıkmazsa tahliye kendiliğinden gerçekleşmez; icra takibi veya dava yoluyla tahliye istenmesi gerekir." },
         ],
+        keyPoints: [
+            "Kiracı kiralananı belli bir tarihte boşaltacağını yazılı olarak taahhüt etmişse, kiraya veren dava açmadan icra dairesi aracılığıyla tahliye isteyebilir (TBK m. 352/1, İİK m. 272).",
+            "Tahliye taahhüdü yazılı olmalı, kiracı tarafından imzalanmalı, kiralananın tesliminden sonra verilmeli ve boşaltma tarihi belirli olmalıdır.",
+            "Kiraya veren, taahhüt edilen tarihten başlayarak bir ay içinde icraya başvurmalı veya dava açmalıdır; bu süre hak düşürücüdür (TBK m. 352/1).",
+            "Tahliye emri taşınmazın on beş gün içinde boşaltılmasını ister; kiracı yedi gün içinde itiraz edebilir ve itiraz takibi durdurur (İİK m. 272, 274).",
+            "İtiraz halinde kiraya veren icra mahkemesinden itirazın kaldırılmasını isteyebilir (İİK m. 275).",
+            "Taahhüde dayalı ilamsız icra yoluyla tahliye zorunlu arabuluculuk dışındadır; aynı talep dava yoluyla ileri sürülecekse önce arabulucuya başvurulmalıdır (HUAK m. 18/B).",
+        ],
+        sources: [
+            { law: "TBK", articles: "m. 352/1, 353" },
+            { law: "IIK", articles: "m. 272-275" },
+            { law: "HUAK", articles: "m. 18/B" },
+            { law: "HMK", articles: "m. 4" },
+        ],
         blogs: [
             { title: "Tahliye taahhüdüne dayalı takipte itirazın iptali", slug: "tahliye-taahhudu-icra-itirazin-iptali" },
             { title: "Boş imzalı tahliye taahhütnamesine itiraz", slug: "bos-tahliye-taahhutnamesi-yemin-delili" },
@@ -466,6 +549,19 @@ export const services: Service[] = [
             { question: "Kırtasiyeden alınan kira kontratı geçerli mi?", answer: "Geçerlidir; kira sözleşmesi için kanunda özel bir şekil öngörülmemiştir. Ancak matbu sözleşmelerde kiracıya kira ve yan giderler dışında ödeme yükümlülüğü getiren ceza koşulları veya muacceliyet şartları gibi kanuna aykırı maddeler bulunabilir; bu maddeler geçersizdir (TBK m. 346). Özel şartlar bölümünün tarafların anlaşmasına göre dikkatle doldurulması önerilir." },
             { question: "1 yıllık kira sözleşmesi kaç yıl geçerli olur?", answer: "Konut ve çatılı işyeri kiralarında kiracı, süre bitiminden en az on beş gün önce bildirimde bulunmazsa sözleşme aynı koşullarla birer yıl uzar (TBK m. 347). Kiraya veren on yıllık uzama süresi dolmadan süre bitimine dayanarak sözleşmeyi sona erdiremez; bu süre içinde ancak kanundaki tahliye sebepleriyle tahliye istenebilir." },
             { question: "Kiracı sözleşme bitmeden evden çıkabilir mi?", answer: "Çıkabilir; ancak kiralananı süresinden önce boşaltan kiracının kira borcu, kiralananın benzer koşullarla yeniden kiraya verilebileceği makul süre boyunca devam eder (TBK m. 325). Kiracı, kiralananı devralmaya hazır ve ödeme gücüne sahip yeni bir kiracı önerirse bu sorumluluktan kurtulabilir. Makul süre her dosyada ayrıca değerlendirilir." },
+        ],
+        keyPoints: [
+            "Kira sözleşmesi kanunen yazılı şekle bağlı değildir; ancak ispat kolaylığı için yazılı yapılması ve teslim tutanağıyla desteklenmesi önerilir.",
+            "Konut ve çatılı işyeri kiralarında kira bedelinin belirlenmesi dışında kiracı aleyhine değişiklik yapılamaz (TBK m. 343).",
+            "Yenilenen kira dönemlerinde artış, bir önceki kira yılının on iki aylık TÜFE ortalamasındaki değişim oranını geçemez (TBK m. 344).",
+            "Kiracıya kira bedeli ve yan giderler dışında ödeme yükümlülüğü getirilemez; geç ödemede ceza koşulu veya sonraki kiraların muaccel olacağı anlaşmaları geçersizdir (TBK m. 346).",
+            "Kiracı, kiraya verenin yazılı rızası olmadan kiralananı alt kiraya veremez veya kullanım hakkını devredemez (TBK m. 322-323).",
+            "Aile konutu olarak kiralanan taşınmazda kiracı, eşinin açık rızası olmadıkça sözleşmeyi feshedemez (TBK m. 349).",
+        ],
+        sources: [
+            { law: "TBK", articles: "m. 300-301, 322-323, 334, 343-349" },
+            { law: "HUAK", articles: "m. 18/B" },
+            { law: "HMK", articles: "m. 4" },
         ],
         blogs: [
             { title: "Yeni kira sözleşmesi 10 yıllık süreyi sıfırlar mı?", slug: "10-yillik-uzama-suresi-tadil-sozlesmesi" },
@@ -547,6 +643,19 @@ export const services: Service[] = [
             { question: "Kira alacağı için menfi tespit davasında arabuluculuk zorunlu mu?", answer: "Kira borcu bulunmadığının tespitine ilişkin menfi tespit davası da kira ilişkisinden kaynaklandığından, kural olarak dava açılmadan önce arabulucuya başvurulması dava şartıdır (HUAK m. 18/B). İlamsız icra yoluyla tahliye talepleri ise bu şartın dışında tutulmuştur." },
             { question: "Arabuluculuğa başvurmak için ne gerekir?", answer: "Başvuru, uyuşmazlık konusu dava için yetkili mahkemenin bulunduğu yerdeki adliye arabuluculuk bürosuna yapılır (HUAK m. 18/A). Başvuruda tarafların kimlik ve iletişim bilgileri, kiralananın adresi ve talebin konusu bildirilir; kira sözleşmesi, ödeme kayıtları ve ihtarnameler gibi belgelerin hazır bulundurulması görüşmeleri kolaylaştırır." },
             { question: "Kira tespitinde arabuluculuk ücretini kim öder?", answer: "Taraflar anlaşırsa arabuluculuk ücreti, aksi kararlaştırılmadıkça Arabuluculuk Asgari Ücret Tarifesi'ne göre taraflarca eşit olarak ödenir. Anlaşma sağlanamazsa iki saatlik ücret Adalet Bakanlığı bütçesinden karşılanır ve daha sonra açılan davada yargılama giderinden sayılır (HUAK m. 18/A). İzmir kira arabuluculuk avukatı ile ön görüşme telefonla yapılabilir." },
+        ],
+        keyPoints: [
+            "Kira ilişkisinden doğan uyuşmazlıklarda dava açmadan önce arabulucuya başvurmak dava şartıdır; başvurmadan açılan dava usulden reddedilir (HUAK m. 18/B, 18/A-2).",
+            "İlamsız icra yoluyla tahliye talepleri, yani ödenmeyen kira nedeniyle tahliye talepli takip ve tahliye taahhüdüne dayalı takip, zorunlu arabuluculuk kapsamı dışındadır.",
+            "Arabulucu, görevlendirildiği tarihten itibaren üç hafta içinde süreci sonuçlandırır; bu süre zorunlu hallerde en fazla bir hafta uzatılabilir (HUAK m. 18/A-9).",
+            "İlk toplantıya mazeretsiz katılmayan taraf, davayı kazansa bile karşı tarafın yargılama giderlerinin yarısından sorumlu tutulur ve karşı taraf lehine vekâlet ücretinin yarısına hükmedilir (HUAK m. 18/A-11).",
+            "Arabuluculuk bürosuna başvurudan son tutanağın düzenlendiği tarihe kadar zamanaşımı durur ve hak düşürücü süreler işlemez (HUAK m. 18/A-15).",
+            "Kira uyuşmazlıklarında anlaşma belgesine, taşınmazın bulunduğu yer sulh hukuk mahkemesinden icra edilebilirlik şerhi alınması zorunludur (HUAK m. 18/B-3).",
+        ],
+        sources: [
+            { law: "HUAK", articles: "m. 18/A, 18/B" },
+            { law: "TBK", articles: "m. 344, 347, 350-352" },
+            { law: "HMK", articles: "m. 4" },
         ],
         blogs: [
             { title: "Arabulucuya erken başvuru ve usulden ret", slug: "tahliye-davasi-arabuluculuk-erken-basvuru" },
