@@ -25,13 +25,13 @@ export const metadata: Metadata = {
         url: "https://mertkagancetin.com/",
         type: "website",
         locale: "tr_TR",
-        images: [{ url: "/images/izmir-kira-avukati-og.jpg", width: 1200, height: 630, alt: "İzmir kira avukatı: Saat Kulesi manzaralı hukuk bürosu masası" }],
+        images: [{ url: "/images/izmir-kira-avukati-mert-kagan-cetin-og.jpg", width: 1200, height: 630, alt: "Av. Mert Kağan Çetin, Bayraklı'daki hukuk bürosunda" }],
     },
     twitter: {
         card: "summary_large_image",
         title: pageTitle,
         description: pageDescription,
-        images: ["/images/izmir-kira-avukati-og.jpg"],
+        images: ["/images/izmir-kira-avukati-mert-kagan-cetin-og.jpg"],
     },
     alternates: { canonical: "https://mertkagancetin.com/" },
 };

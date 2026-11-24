@@ -48,11 +48,14 @@ export const OFFICE_OBJECT = {
     ...IMAGE_RIGHTS,
 };
 
+/** 1200x630 portre: kişi ve kurum sayfalarının paylaşım görseli (og:image) ve Person.image ikinci görseli. */
+export const PHOTO_OG = { src: PHOTO.og, width: 1200, height: 630, alt: "Av. Mert Kağan Çetin, Bayraklı'daki hukuk bürosunda" };
+
 export const PHOTO_OBJECT = {
     "@type": "ImageObject",
     "@id": "https://mertkagancetin.com/#photo",
-    "url": `https://mertkagancetin.com${PHOTO.src}`,
-    "contentUrl": `https://mertkagancetin.com${PHOTO.src}`,
+    "url": `https://mertkagancetin.com${PHOTO.jpg}`,
+    "contentUrl": `https://mertkagancetin.com${PHOTO.jpg}`,
     "caption": "İzmir kira avukatı Av. Mert Kağan Çetin, İzmir'deki hukuk bürosunda",
     "width": PHOTO.width,
     "height": PHOTO.height,

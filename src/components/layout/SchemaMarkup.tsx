@@ -1,6 +1,6 @@
 import { SITE_URL, SITE_NAME, SITE_ALTERNATE_NAMES } from "@/lib/site";
 import { GBP_URL, GBP_GEO } from "@/lib/gbp";
-import { PHOTO_OBJECT, OFFICE_OBJECT, imageObject } from "@/lib/photo";
+import { PHOTO_OBJECT, PHOTO_OG, OFFICE_OBJECT, imageObject } from "@/lib/photo";
 
 export function SchemaMarkup() {
     const schema = {
@@ -36,7 +36,7 @@ export function SchemaMarkup() {
                 "name": "Av. Mert Kağan Çetin",
                 "jobTitle": "Avukat",
                 "url": "https://mertkagancetin.com/hakkimda/",
-                "image": PHOTO_OBJECT,
+                "image": [PHOTO_OBJECT, imageObject(PHOTO_OG.src, { "width": PHOTO_OG.width, "height": PHOTO_OG.height, "caption": PHOTO_OG.alt })],
                 "sameAs": [
                     GBP_URL,
                     "https://www.youtube.com/channel/UCUFW-qTe-nvUmkxkRisriYQ",
