@@ -6,7 +6,8 @@ import { CallbackForm } from "@/components/kira-landing/CallbackForm";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { CTAs, PHONE } from "@/components/kira-landing/CTAs";
-import { services as serviceData, serviceHref } from "@/lib/services";
+import { services as serviceData, serviceHref, SERVICES_REVIEWED } from "@/lib/services";
+import { LAWS, type LawKey } from "@/lib/laws";
 import { GBP_URL, GBP_DIRECTIONS_URL, GBP_EMBED_URL } from "@/lib/gbp";
 import Image from "next/image";
 import { PHOTO, PHOTO_OBJECT, OFFICE_OBJECT } from "@/lib/photo";
@@ -67,6 +68,21 @@ const faqs = [
 
 const H2 = "text-2xl md:text-4xl font-playfair font-bold text-primary";
 
+/** Ana sayfa metninde atıf yapılan mevzuat (GEO: görünür Kaynaklar + WebPage.citation). */
+const HOME_SOURCES: { law: LawKey; articles: string }[] = [
+    { law: "TBK", articles: "m. 339-356 (özellikle m. 347, 350-352)" },
+    { law: "HUAK", articles: "m. 18/B" },
+    { law: "HMK", articles: "m. 4, 326" },
+    { law: "AVK", articles: "m. 164" },
+];
+
+/** "2026-11-24" -> "24 Kasım 2026" */
+function trDate(iso: string): string {
+    const [y, m, d] = iso.split("-").map(Number);
+    const ay = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"][m - 1];
+    return `${d} ${ay} ${y}`;
+}
+
 export default function Home() {
     return (
         <div className="bg-white pb-16 lg:pb-0">
@@ -74,6 +90,13 @@ export default function Home() {
                 items={[
                     { name: "İzmir Kira Avukatı", url: "https://mertkagancetin.com/" },
                 ]}
+                page={{
+                    "lastReviewed": SERVICES_REVIEWED,
+                    "dateModified": SERVICES_REVIEWED,
+                    "reviewedBy": { "@id": "https://mertkagancetin.com/#person" },
+                    "author": { "@id": "https://mertkagancetin.com/#person" },
+                    "citation": HOME_SOURCES.map((src) => ({ "@type": "Legislation", "name": LAWS[src.law].name, "url": LAWS[src.law].url })),
+                }}
             />
             <FAQSchema faqs={faqs} />
             <script
@@ -163,7 +186,8 @@ export default function Home() {
             <section className="pb-4" aria-labelledby="kisaca">
                 <div className="container mx-auto max-w-3xl px-4">
                     <div className="rounded-2xl border border-secondary/40 bg-secondary/5 p-6">
-                        <h2 id="kisaca" className="mb-4 font-playfair text-xl font-bold text-primary md:text-2xl">Kısaca</h2>
+                        <h2 id="kisaca" className="mb-2 font-playfair text-xl font-bold text-primary md:text-2xl">Kısaca</h2>
+                        <p className="mb-4 text-sm text-slate-500">Yazan: <Link href="/hakkimda/" rel="author" className="font-semibold text-primary underline-offset-2 hover:underline">Av. Mert Kağan Çetin</Link> (İzmir Barosu, Sicil No 15556) · Son güncelleme: <time dateTime={SERVICES_REVIEWED}>{trDate(SERVICES_REVIEWED)}</time></p>
                         <ul className="space-y-3 text-slate-700">
                             {[
                                 "Av. Mert Kağan Çetin, İzmir Barosu'na 15556 sicil numarasıyla kayıtlı, ofisi Bayraklı'da (Dedemhan Plaza) bulunan ve çalışmalarını kira hukukuna odaklayan avukattır.",
@@ -344,6 +368,19 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Kaynaklar (mevzuat) */}
+            <section className="py-12" aria-labelledby="kaynaklar">
+                <div className="container mx-auto max-w-3xl px-4">
+                    <h2 id="kaynaklar" className={`${H2} mb-4`}>Kaynaklar</h2>
+                    <ul className="space-y-2 text-slate-700">
+                        {HOME_SOURCES.map((src) => (
+                            <li key={src.law} className="flex gap-3"><BookOpen className="mt-1 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" /><span><a href={LAWS[src.law].url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">{LAWS[src.law].name}</a>, {src.articles}</span></li>
+                        ))}
+                    </ul>
+                    <p className="mt-3 text-sm text-slate-500">Bu sayfa genel bilgilendirme amaçlıdır; mevzuat değişiklikleri ve somut dosyanın özellikleri sonucu etkileyebilir.</p>
+                </div>
+            </section>
+
             {/* Son CTA */}
             <section className="bg-gradient-to-br from-primary to-slate-800 py-12 text-white md:py-16">
                 <div className="container mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
@@ -355,7 +392,7 @@ export default function Home() {
 
             {/* Kaynaklar */}
             <nav aria-label="Kira hukuku kaynakları" className="container mx-auto max-w-4xl px-4 py-8 text-sm">
-                <span className="mr-2 font-bold text-primary">Kaynaklar:</span>
+                <span className="mr-2 font-bold text-primary">Ayrıca bakınız:</span>
                 {[
                     ["Kira sözleşmesi örneği", "/kira-sozlesmesi-ornegi/"],
                     ["Tahliye taahhütnamesi örneği", "/tahliye-taahhutnamesi/"],
