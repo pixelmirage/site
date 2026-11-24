@@ -8,6 +8,10 @@ interface ArticleSchemaProps {
     author?: string;
     image?: string;
     url: string;
+    /** GEO: "Kısa Cevap" paragrafı */
+    abstract?: string;
+    /** GEO: yazıda atıf yapılan mevzuat ve (içtihat notlarında) karar */
+    citations?: Record<string, unknown>[];
 }
 
 export function ArticleSchema({
@@ -17,7 +21,9 @@ export function ArticleSchema({
     dateModified,
     author = "Av. Mert Kağan Çetin",
     image,
-    url
+    url,
+    abstract,
+    citations,
 }: ArticleSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
@@ -47,7 +53,9 @@ export function ArticleSchema({
         },
         "isPartOf": {
             "@id": "https://mertkagancetin.com/#website"
-        }
+        },
+        ...(abstract ? { "abstract": abstract } : {}),
+        ...(citations && citations.length ? { "citation": citations } : {}),
     };
 
     return (

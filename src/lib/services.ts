@@ -3,14 +3,9 @@
 
 export type ServiceSection = { title: string; paragraphs?: string[]; list?: string[] };
 
-/** Birincil kaynaklar (mevzuat.gov.tr). */
-export const LAWS = {
-    TBK: { name: "6098 sayılı Türk Borçlar Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&MevzuatTur=1&MevzuatTertip=5" },
-    IIK: { name: "2004 sayılı İcra ve İflas Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2004&MevzuatTur=1&MevzuatTertip=3" },
-    HMK: { name: "6100 sayılı Hukuk Muhakemeleri Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6100&MevzuatTur=1&MevzuatTertip=5" },
-    HUAK: { name: "6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu", url: "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6325&MevzuatTur=1&MevzuatTertip=5" },
-} as const;
-export type LawKey = keyof typeof LAWS;
+import { LAWS, type LawKey } from "@/lib/laws";
+export { LAWS };
+export type { LawKey };
 
 /** Hizmet sayfalarının son hukuki gözden geçirme tarihi (görünür "Son güncelleme" ve WebPage.lastReviewed). */
 export const SERVICES_REVIEWED = "2026-11-24";

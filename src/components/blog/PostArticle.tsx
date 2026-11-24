@@ -17,6 +17,8 @@ import { RelatedPosts } from "@/components/blog/RelatedPosts";
 import { BreadcrumbNav } from "@/components/ui/BreadcrumbNav";
 import { articleProseClasses } from "@/lib/prose-classes";
 import { SITE_NAME } from "@/lib/site";
+import { LAWS, extractLawCitations, extractShortAnswer } from "@/lib/laws";
+import { parseDecision } from "@/lib/blog/ictihat";
 import { format, parseISO } from "date-fns";
 import { tr } from "date-fns/locale";
 
@@ -84,6 +86,19 @@ export function PostArticle({ post }: { post: PostData }) {
 
     const articleUrl = `${SITE_URL}${postHref(post)}`;
 
+    // GEO: metinden türeyen kaynaklar (yeni hukuki iddia eklenmez)
+    const lawSources = extractLawCitations(post.content);
+    const decision = isIctihat ? parseDecision(post) : undefined;
+    const decisionLabel = decision?.court && decision.esas && decision.karar
+        ? `${decision.court}, E. ${decision.esas}, K. ${decision.karar}${decision.tarih ? `, karar tarihi ${decision.tarih}` : ""}`
+        : undefined;
+    const hasOwnSources = /^##\s*Kaynaklar\s*$/m.test(post.content);
+    const shortAnswer = extractShortAnswer(post.content);
+    const citations = [
+        ...(decisionLabel ? [{ "@type": "CreativeWork", "name": decisionLabel }] : []),
+        ...lawSources.map((src) => ({ "@type": "Legislation", "name": LAWS[src.law].name, "url": LAWS[src.law].url })),
+    ];
+
     return (
         <article lang={post.lang || "tr"} className="bg-white min-h-screen pb-24">
             {/* SEO Schemas */}
@@ -94,6 +109,8 @@ export function PostArticle({ post }: { post: PostData }) {
                 dateModified={post.dateModified}
                 image={post.coverImage}
                 url={articleUrl}
+                abstract={shortAnswer}
+                citations={citations}
             />
             {post.faqs && post.faqs.length > 0 && (
                 <FAQSchema faqs={post.faqs} />
@@ -173,6 +190,19 @@ export function PostArticle({ post }: { post: PostData }) {
                     <div className={articleProseClasses}>
                         <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
                     </div>
+
+                    {/* Kaynaklar (otomatik) */}
+                    {!hasOwnSources && (decisionLabel || lawSources.length > 0) && (
+                        <section className="mt-12" aria-labelledby="kaynaklar">
+                            <h2 id="kaynaklar" className="font-serif text-2xl md:text-3xl font-extrabold text-primary mb-4">Kaynaklar</h2>
+                            <ul className="space-y-2 text-slate-700 leading-7">
+                                {decisionLabel && <li><span className="font-semibold text-primary">İncelenen karar:</span> {decisionLabel}</li>}
+                                {lawSources.map((src) => (
+                                    <li key={src.law}><a href={LAWS[src.law].url} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline decoration-secondary decoration-2 underline-offset-4 hover:text-secondary">{LAWS[src.law].name}</a>, {src.articles}</li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
 
                     {/* Visible FAQ: frontmatter FAQs not already in the body (keeps FAQPage schema == visible content) */}
                     {extraFaqs.length > 0 && (
