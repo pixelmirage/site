@@ -481,6 +481,7 @@ export const services: Service[] = [
             { title: "Boş imzalı tahliye taahhütnamesine itiraz", slug: "bos-tahliye-taahhutnamesi-yemin-delili" },
             { title: "Tarihleri boş tahliye taahhüdü ve itirazın kaldırılması", slug: "bos-tarihli-tahliye-taahhudu-itirazin-kaldirilmasi" },
             { title: "Kaşesiz tahliye taahhüdü şirketi bağlar mı?", slug: "sirket-tahliye-taahhudu-imza-yetkisi" },
+            { title: "Tahliye taahhüdündeki cezai şartın indirilmesi", slug: "tahliye-taahhudu-cezai-sart-indirimi" },
         ],
         extraLinks: [{ title: "Tahliye taahhütnamesi örneği", href: "/tahliye-taahhutnamesi/" }],
         waText: "Merhaba, tahliye taahhüdü ile icra konusunda görüşmek istiyorum.",
